@@ -7,6 +7,6 @@ UV 編輯器既是影像檢視器，也是 UV 座標編輯器：你可以直觀�
 
 |
 
-想深入瞭解 Blender 的 UV 座標，看 `Blender 手冊：UV 說明 <https://docs.blender.org/manual/zh-hans/latest/editors/uv/introduction.html#uvs-explained>`_。
+想深入瞭解 Blender 的 UV 座標，看 `Blender 手冊：UV 說明 <https://docs.blender.org/manual/zh-hant/latest/editors/uv/introduction.html#uvs-explained>`_。
 
 |

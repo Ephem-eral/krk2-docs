@@ -60,7 +60,7 @@ Open Image Denoise
 
 |
 
-想深入瞭解降噪，看 `Blender 手冊：減少雜訊 <https://docs.blender.org/manual/zh-hans/latest/render/cycles/optimizations/reducing_noise.html>`_。
+想深入瞭解降噪，看 `Blender 手冊：減少雜訊 <https://docs.blender.org/manual/zh-hant/latest/render/cycles/optimizations/reducing_noise.html>`_。
 
 
 |

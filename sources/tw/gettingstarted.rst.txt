@@ -25,6 +25,6 @@ KRK2 的上手流程和初代 KRK 一樣簡單。用 Blender（3.3 或更高版�
 加入我們的社群：
 `Discord <https://discord.gg/fVkGTunzT3>`_
 
-配套資料可以查 `Blender 官方手冊 <https://docs.blender.org/manual/zh-hans/latest/index.html>`_。
+配套資料可以查 `Blender 官方手冊 <https://docs.blender.org/manual/zh-hant/latest/index.html>`_。
 
 |
