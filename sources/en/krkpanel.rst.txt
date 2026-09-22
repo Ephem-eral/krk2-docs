@@ -63,6 +63,8 @@ Due to the fact that different manufacturers and keycap profiles use different r
 
 Some profiles have an interchangeable first and/or last row.
 
+(Uniform in the table means all rows have the same height; enter it as-is.)
+
 |
 
 Size
