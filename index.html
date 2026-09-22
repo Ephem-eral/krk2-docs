@@ -1003,9 +1003,10 @@ div.math:hover a.headerlink {
 
 
 #sp-cover { max-width: 980px; margin: 0 auto; padding: 8px 0 40px; }
-#sp-cover header { background: var(--accent); color: #0f2417; padding: 30px 24px 26px; border-radius: 4px; text-align: center; }
+#sp-cover header { background: var(--cover-bg); color: var(--on-accent); padding: 30px 24px 26px; border-radius: 4px; text-align: center; }
 #sp-cover header h1 { margin: 0 0 6px; font-size: 26px; }
 #sp-cover header p { margin: 0; opacity: .9; font-size: 14px; }
+#sp-cover header h1, #sp-cover header p { color: var(--on-accent); }
 #sp-cover h2 { font-size: 15px; margin: 26px 0 10px; color: var(--text-muted); font-weight: 600;
   letter-spacing: .04em; text-transform: uppercase; }
 #sp-cover .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
@@ -1020,7 +1021,7 @@ div.math:hover a.headerlink {
 #sp-cover .card .lang { font-size: 18px; font-weight: 700; }
 #sp-cover .card .sub { color: var(--text-muted); font-size: 13px; margin-top: 5px; }
 #sp-cover .badge { display: inline-block; margin-left: 8px; padding: 2px 7px; border-radius: 10px;
-  background: var(--accent); color: #0f2417; font-size: 11px; vertical-align: 2px; }
+  background: var(--badge-bg); color: var(--badge-fg); font-size: 11px; vertical-align: 2px; }
 #sp-cover footer { border-top: 1px solid var(--border); margin-top: 28px; padding-top: 14px; color: var(--text-muted);
   font-size: 13px; line-height: 1.7; }
 .sp-more { margin-top: 16px; padding: 12px 14px; border: 1px dashed var(--border); border-radius: 6px;
@@ -1033,29 +1034,39 @@ div.math:hover a.headerlink {
   --accent: #4f9e6b;
   --accent-strong: #3d7f56;
   --accent-soft: #eaf7ef;
+  --accent-text: #2f7a4d;
+  --on-accent: #0a2013;
+  --badge-bg: #2f7a4d;
+  --badge-fg: #ffffff;
+  --cover-bg: #6cbf8b;
   --page-bg: #fbfdfb;
   --content-bg: #ffffff;
-  --sidebar-bg: #bfe3c6;
-  --sidebar-head: #a9d8b3;
-  --sidebar-text: #1e3a29;
-  --sidebar-muted: #3f5c4a;
+  --sidebar-bg: #e7f4ea;
+  --sidebar-head: #d2e9d8;
+  --sidebar-text: #14301f;
+  --sidebar-muted: #4a6553;
   --border: #dfe8e2;
   --text: #24312a;
-  --text-muted: #60726a;
+  --text-muted: #5b6d64;
   --table-stripe: #f4faf6;
   --code-bg: #f2f7f4;
-  --chip-bg: rgba(255,255,255,.45);
-  --chip-bg-hover: rgba(255,255,255,.75);
-  --chip-fg: #1e3a29;
-  --chip-border: rgba(30,58,41,.22);
-  --chip-active-bg: #ffffff;
-  --chip-active-fg: #2f6b45;
+  --chip-bg: rgba(255,255,255,.72);
+  --chip-bg-hover: #ffffff;
+  --chip-fg: #14301f;
+  --chip-border: rgba(20,48,31,.18);
+  --chip-active-bg: #2f7a4d;
+  --chip-active-fg: #ffffff;
   --top-btn-bg: #4f9e6b;
 }
 html[data-theme="dark"] {
   --accent: #8fd3a2;
   --accent-strong: #a9e3ba;
   --accent-soft: #1b2a21;
+  --accent-text: #8fd3a2;
+  --on-accent: #0a2013;
+  --badge-bg: #8fd3a2;
+  --badge-fg: #12291c;
+  --cover-bg: #8fd3a2;
   --page-bg: #10161a;
   --content-bg: #161d21;
   --sidebar-bg: #131e19;
@@ -1086,7 +1097,7 @@ body { color: var(--text); }
 .wy-side-nav-search > a, .wy-side-nav-search .version, .wy-nav-top a, .wy-nav-top i { color: var(--sidebar-text) !important; }
 .wy-menu-vertical a, .wy-menu-vertical p.caption { color: var(--sidebar-text); }
 .wy-menu-vertical p.caption { color: var(--sidebar-muted); }
-.wy-menu-vertical li.current > a, .wy-menu-vertical li.on > a { background: rgba(255,255,255,.55); color: #1b3b28; }
+.wy-menu-vertical li.current > a, .wy-menu-vertical li.on > a { background: rgba(255,255,255,.85); color: #10301c; }
 .wy-menu-vertical li.current, .wy-menu-vertical li.current > ul, .wy-menu-vertical li.current ul { background-color: transparent; }
 html[data-theme="dark"] .wy-menu-vertical li.current,
 html[data-theme="dark"] .wy-menu-vertical li.current > ul,
@@ -1097,7 +1108,7 @@ html[data-theme="dark"] .wy-menu-vertical li.on > a { background: rgba(143,211,1
 .wy-menu-vertical a:hover { background: var(--chip-bg-hover); }
 .wy-menu-vertical li.current > a button.toctree-expand, .wy-menu-vertical li.on > a button.toctree-expand { color: #2f6b45; }
 html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand { color: #cfe9d6; }
-.rst-content a, .wy-breadcrumbs a { color: var(--accent); }
+.rst-content a, .wy-breadcrumbs a { color: var(--accent-text); }
 .rst-content a:hover { color: var(--accent-strong); }
 .rst-content h1, .rst-content h2, .rst-content h3, .rst-content h4,
 .rst-content h5, .rst-content h6, .rst-content dt, .rst-content p, .rst-content li { color: var(--text); }
