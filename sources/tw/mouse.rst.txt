@@ -1,0 +1,6 @@
+滑鼠
+====
+
+.. image:: img/KRKMouse.jpg
+
+KRK 滑鼠可以調整外殼顏色和 logo 顏色，還能讓 logo 漸隱。

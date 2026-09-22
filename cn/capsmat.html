@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capsmat（键帽材质） &mdash; Keyboard Render Kit 2 中文文档</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.cn.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.cn.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Inkscape" href="leg_inkscape.html" />
+    <link rel="prev" title="色彩管理" href="colourman.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/capsmat.html">English</a><a class="active" href="../cn/capsmat.html">简体</a><a class="" href="../tw/capsmat.html">繁體</a><a class="" href="../ja/capsmat.html">日本語</a><a class="" href="../ko/capsmat.html">한국어</a><a class="" href="../ru/capsmat.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">概览</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">快速上手</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">包装内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">开始使用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">获取帮助</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">界面</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id2">资产浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#uv">UV 编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#d">3D 视图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id3">着色器编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id5">大纲视图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id7">属性</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK 面板</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink（重新链接）</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">导入 KLE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile（高度）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row（行）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size（尺寸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key（按键）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing（定位键）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material（链接材质）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings（复制设置）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data（数据）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color（颜色）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties（属性）</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">资产浏览器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">配件资产</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">键盘资产</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">材质资产</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">材质工具</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV 编辑器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">着色器编辑器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">大纲视图</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">套件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">键盘</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">配列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">配件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">摄像机</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">灯光</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">结构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">键帽高度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV 设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">零件</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">属性编辑器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">渲染属性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">渲染设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">采样</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">降噪</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">胶片透明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">色彩管理</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">输出属性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">分辨率</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">场景属性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">活动摄像机</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">物体数据属性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">物体数据</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UV 贴图</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">材质属性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">材质索引</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">材质链接</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">色彩管理</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">材质</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capsmat（键帽材质）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">设置项</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cap">Cap（键帽底色）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legend">Legend（字符）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legend-mask">Legend Mask（字符遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sharpen-legend">Sharpen Legend（字符锐化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legend-weight">Legend Weight（字符粗细）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sub">Sub（副字符）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submask">SubMask（副字符遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sharpen-sub">Sharpen Sub（副字符锐化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sub-weight">Sub Weight（副字符粗细）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#front">Front（侧刻）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#front-mask">Front Mask（侧刻遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shapen-front">Shapen Front（侧刻锐化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#front-weight">Front Weight（侧刻粗细）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roughness">Roughness（粗糙度）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bump-scale">Bump Scale（凹凸比例）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#top-bump">Top Bump（顶部凹凸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#side-bump">Side Bump（侧面凹凸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legend-seam">Legend Seam（字符接缝）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">遮罩</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">色板工作流</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">制作字符</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">配件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">桌垫</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">尺寸</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">包边</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">边缘印刷</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">包边颜色</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">材质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">导出</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">添加自己的桌垫设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB 线材</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">设置项</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color（颜色）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip（翻转）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror（镜像）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（编织网管）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">直线线材</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">材质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">导出线材</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">鼠标</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">你的第一次套件渲染</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">你的第一次键盘渲染</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">添加轴体与卫星轴</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">自定义键盘准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE 到 KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">进阶信息</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">优化你的渲染</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">分辨率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">渲染采样</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">降噪</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id6">实际应用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 素材</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">环境</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK 到 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK 到 Cinema 4D</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">参考</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">常见问题（FAQ）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">如何安装 Keyboard Render Kit？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">为什么 Blender 提示我要运行脚本？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">我的键帽去哪儿了？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">我的资产浏览器是空的。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">键盘没有出现在资产浏览器里。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">我的键帽上没有材质。</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">键帽配方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">键帽高度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">额外高度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">键盘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">更新日志</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">恢复集合实例</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Capsmat（键帽材质）</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/cn/capsmat.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="capsmat">
+<h1>Capsmat（键帽材质）<a class="headerlink" href="#capsmat" title="此标题的永久链接"></a></h1>
+<img alt="../images/Capsmat.jpg" src="../images/Capsmat.jpg" />
+<section id="id1">
+<h2>设置项<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h2>
+<section id="cap">
+<h3>Cap（键帽底色）<a class="headerlink" href="#cap" title="此标题的永久链接"></a></h3>
+<p>键帽的底色。可以直接用颜色字段调，也可以接入色板（palette）来控制。</p>
+</section>
+<section id="legend">
+<h3>Legend（字符）<a class="headerlink" href="#legend" title="此标题的永久链接"></a></h3>
+<p>字符的颜色。可以选一个颜色、接色板来控制，也可以把图像接入插槽，做出全彩字符。</p>
+</section>
+<section id="legend-mask">
+<h3>Legend Mask（字符遮罩）<a class="headerlink" href="#legend-mask" title="此标题的永久链接"></a></h3>
+<p>接入一张黑底白字的图像，用来在键帽底色和字符颜色之间做混合。</p>
+</section>
+<section id="sharpen-legend">
+<h3>Sharpen Legend（字符锐化）<a class="headerlink" href="#sharpen-legend" title="此标题的永久链接"></a></h3>
+<img alt="../images/SharpenLegend.gif" src="../images/SharpenLegend.gif" />
+<p>用来锐化字符边缘，做出二色成型（doubleshot）字符的效果。默认拉满，可以滑到 0，模拟更接近热升华（dye sublimation）的观感。</p>
+</section>
+<section id="legend-weight">
+<h3>Legend Weight（字符粗细）<a class="headerlink" href="#legend-weight" title="此标题的永久链接"></a></h3>
+<img alt="../images/LegendWeight.gif" src="../images/LegendWeight.gif" />
+<p>因为字符锐化的原理所限，你还可以用它来加粗字符：数值越小，字符越粗。</p>
+</section>
+<section id="sub">
+<h3>Sub（副字符）<a class="headerlink" href="#sub" title="此标题的永久链接"></a></h3>
+<p>这是副字符的颜色。</p>
+</section>
+<section id="submask">
+<h3>SubMask（副字符遮罩）<a class="headerlink" href="#submask" title="此标题的永久链接"></a></h3>
+<p>用来接入副字符文件的插槽。</p>
+</section>
+<section id="sharpen-sub">
+<h3>Sharpen Sub（副字符锐化）<a class="headerlink" href="#sharpen-sub" title="此标题的永久链接"></a></h3>
+<p>和字符锐化一样，只是作用于副字符。</p>
+</section>
+<section id="sub-weight">
+<h3>Sub Weight（副字符粗细）<a class="headerlink" href="#sub-weight" title="此标题的永久链接"></a></h3>
+<p>和字符粗细一样，只是作用于副字符。</p>
+</section>
+<section id="front">
+<h3>Front（侧刻）<a class="headerlink" href="#front" title="此标题的永久链接"></a></h3>
+<p>这是侧刻的颜色。</p>
+</section>
+<section id="front-mask">
+<h3>Front Mask（侧刻遮罩）<a class="headerlink" href="#front-mask" title="此标题的永久链接"></a></h3>
+<p>这是侧刻遮罩的插槽。</p>
+</section>
+<section id="shapen-front">
+<h3>Shapen Front（侧刻锐化）<a class="headerlink" href="#shapen-front" title="此标题的永久链接"></a></h3>
+<p>和字符锐化一样，只是作用于侧刻。</p>
+</section>
+<section id="front-weight">
+<h3>Front Weight（侧刻粗细）<a class="headerlink" href="#front-weight" title="此标题的永久链接"></a></h3>
+<p>和字符粗细一样，只是作用于侧刻。</p>
+</section>
+<section id="roughness">
+<h3>Roughness（粗糙度）<a class="headerlink" href="#roughness" title="此标题的永久链接"></a></h3>
+<img alt="../images/Roughness.jpg" src="../images/Roughness.jpg" />
+<p>键帽材质整体的粗糙度（也就是光泽感）。具体数值取决于你想要哪种塑料或表面处理，比如 PBT 通常比 ABS 更粗糙。</p>
+</section>
+<section id="bump-scale">
+<h3>Bump Scale（凹凸比例）<a class="headerlink" href="#bump-scale" title="此标题的永久链接"></a></h3>
+<img alt="../images/BumpScale.jpg" src="../images/BumpScale.jpg" />
+<p>凹凸噪波的缩放比例（也就是颗粒大小）。可以理解成砂纸的目数：数值越大，颗粒越密。</p>
+</section>
+<section id="top-bump">
+<h3>Top Bump（顶部凹凸）<a class="headerlink" href="#top-bump" title="此标题的永久链接"></a></h3>
+<img alt="../images/KeycapBump.JPG" src="../images/KeycapBump.JPG" />
+<p>这是键帽顶部凹凸的强度。</p>
+</section>
+<section id="side-bump">
+<h3>Side Bump（侧面凹凸）<a class="headerlink" href="#side-bump" title="此标题的永久链接"></a></h3>
+<p>键帽后侧、前侧和左右两侧凹凸的强度。</p>
+</section>
+<section id="legend-seam">
+<h3>Legend Seam（字符接缝）<a class="headerlink" href="#legend-seam" title="此标题的永久链接"></a></h3>
+<img alt="../images/LegendSeam.jpg" src="../images/LegendSeam.jpg" />
+<p>有些二色成型工艺会在字符和键帽之间留下更明显的接缝。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="id2">
+<h2>遮罩<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<img alt="../images/LegendsDemo.jpg" src="../images/LegendsDemo.jpg" />
+<p>遮罩是一张黑底白字的图像，用来定义两个颜色或两个元素如何混合。可以这样理解：白色是「开」，黑色是「关」。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/LegendMask.JPG" src="../images/LegendMask.JPG" />
+<p>在 capsmat 里，遮罩用来把键帽底色与字符、副字符、侧刻分别混合。任何一项缺失，该部分就按黑色（关闭）处理。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/LegendsTemplate.png" src="../images/LegendsTemplate.png" />
+<p>KRK 自带模板，做这些遮罩会简单很多。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id3">
+<h2>色板工作流<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
+<p>KRK2 引入了新的工作流，帮你探索配色、做设计。前面你已经看到，KRK 面板能逐个控制键帽的颜色：可以先给每个键帽单独配色，再把这些颜色拖进色板，定义自己的配色方案。
+色板节点组是这套工作流的另一部分。</p>
+<img alt="../images/Palettes.jpg" src="../images/Palettes.jpg" />
+<p>色板从 A 到 E，另有一个独立色板用于在材质编辑器里驱动颜色。每个色板有八个颜色槽位，Palette E 则是四个颜色槽加四个 alpha 槽。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="colourman.html" class="btn btn-neutral float-left" title="色彩管理" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="leg_inkscape.html" class="btn btn-neutral float-right" title="Inkscape" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, ImperfectLink.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

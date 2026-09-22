@@ -1,0 +1,44 @@
+Affinity Designer
+=================
+
+이제 각 높이마다 개별 템플릿이 있습니다. KRK1에서는 모든 높이를 하나의 파일에 담았지만, 새로 모델링한 키캡은 UV 공간이 달라서 이제는 각각 독립된 템플릿으로 분리되었습니다.
+
+|
+
+Inkscape와 마찬가지로, svg를 열면 오른쪽 레이어 패널에 문자가 있고 키캡 상단과 측면의 템플릿도 있습니다.
+
+.. image:: img/AffinityScreen.jpg
+
+|
+
+템플릿은 기본적으로 켜져 있어서 키캡의 손가락 접촉 영역을 참고해 문자와 노벨티를 정렬하기 편합니다. 다만 최종 결과물은 반드시 흰 글자 검은 배경 이미지여야 합니다.
+
+.. image:: img/AffinityLegends.jpg
+
+|
+
+새 레이어를 만들고 문자를 붙여넣습니다. 방향키로 위치를 미세 조정할 수 있고, Shift를 누르면 이동 폭이 커집니다.
+
+.. image:: img/AffinityLayers.jpg
+
+|
+
+정렬 도구로 개별 키캡에 맞춰 정렬하려면 템플릿을 분리해야 합니다. 템플릿을 선택하고 Layer > Geometry > Separate Curves를 클릭합니다.
+
+.. image:: img/AffinitySeparate.jpg
+
+|
+
+문자 배치가 끝나면 File > Export 또는 Ctrl+Alt+Shift+S로 내보내기 하여 흰 글자 검은 배경(WoB) 이미지를 4096x4096 또는 8192x8192 png로 내보냅니다. 사실 해상도와 형식은 상관없고 정사각형 이미지만 아니면 됩니다.
+
+.. image:: img/AffinityExport.jpg
+
+|
+
+노벨티나 문자가 여러 색이라면 검은 배경을 끄고 투명 채널이 있는 이미지로 내보냅니다. 알파 채널을 마스크로 사용하고 색상을 문자 색상에 연결합니다.
+
+|
+
+.. image:: img/AffinityColor.jpg
+
+|

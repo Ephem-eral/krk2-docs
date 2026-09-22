@@ -1,0 +1,74 @@
+你的第一次鍵盤渲染
+==================
+
+基礎操作你已經會了，現在來渲染一整把鍵盤，順便把第一個教學學到的東西擴充一下。
+
+|
+
+新增一個 KRK2 檔案，在視圖裡按 A 全選，再按 KRK 面板 Relink 區域裡的 Set，把它們設為 Cherry 高度。
+從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 點一下這個鍵帽讓它成為啟用物件，再按 KRK 面板 Data 區域裡的 Copy。
+
+.. image:: img/SetCapsmatCopy.gif
+
+|
+
+接著點 KRK 面板 Color 區域裡的 Copy，把顏色資訊存下來，供之後取用。
+
+.. image:: img/CopyColors.JPG
+
+|
+
+.. note:: 如果你不打算對最終影像做任何後期處理（不推薦這樣），那至少把色彩管理方案設為 "Standard"，或者把 look 設為 "Medium High Contrast"。
+
+|
+
+現在用大綱視圖的可見性選項把 Kits 集合隱藏起來。
+
+.. image:: img/TurnOffKits.gif
+
+|
+
+從資產瀏覽器把 Dalco 959 Mini WKL 鍵盤拖出來，按 Alt+G 重設位置，再按 Restore Collections 按鈕讓它變成可編輯狀態。
+
+.. image:: img/DalcoRestore.gif
+
+在 959 Mini 上選一個佔位符，框選全部佔位符，再按 KRK 面板 Relink 區域裡的 Set。
+
+.. image:: img/BoardPopulate.gif
+
+點 Color 區域裡的 Setup，再按 Paste，就把之前從套件存下的顏色調回來了。
+
+|
+
+下面搭個場景。
+
+|
+
+展開場景集合裡的 Lights，關掉 KitLightingHigh 的可見性，開啟 SoftBoxStudio。
+在 Floors 集合裡開啟 FloorWood6。
+
+.. image:: img/LightsFloor6.jpg
+
+|
+
+在場景屬性裡，把攝影機設為 Camera_Board2。
+
+.. image:: img/SetCamera.jpg
+
+|
+
+把視圖轉到一個好看的角度，然後點 View > Align View > Align Active Camera To View（Ctrl+Alt+小鍵盤 0），把目前視角設為作用中攝影機。
+
+.. image:: img/SetActiveCamera.gif
+
+|
+
+現在渲染你的場景。
+
+.. image:: img/TutBoardRender.jpg
+
+|
+
+第二個範例工作流程教學到此完成。
+
+|

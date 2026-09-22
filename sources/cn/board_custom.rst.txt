@@ -1,0 +1,126 @@
+自定义键盘准备
+==============
+
+本教程不涉及你所用 CAD 软件的导出设置：先把设计导出成 OBJ 或 FBX，再导入 Blender。另一种做法是用 Stepper 这款 Blender 插件直接导入 STEP/STP 文件。
+
+|
+
+这里以 Alchemist Keyboards Aella 的渲染文件转成 OBJ 为例。`右键另存为 <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
+
+|
+
+.. image:: img/DelAll.gif
+
+新建 Blender 文件，按 A X D 删掉默认内容（立方体、摄像机、灯光），然后到属性面板的 Scene Properties 标签页把单位设为毫米（millimeters）。
+
+.. image:: img/SetUnitsMM.jpg
+
+|
+
+现在导入 Aella 的 OBJ：点 File > Import > Wavefront Obj（F4 I W）。
+
+.. image:: img/ImportObj.jpg
+
+|
+
+你会立刻发现比例不对——这里毫米单位被当成米导入了。
+
+.. image:: img/Resize1.jpg
+
+|
+
+按 S 0.001，把键盘缩到千分之一。缩放后可能就看不见它了，按 Home 键重新框住视图。
+
+.. image:: img/Resize2.jpg
+
+|
+
+现在应用缩放和旋转：按 Ctrl+A，再按一次 A，选 All Transforms（应用全部变换）。
+
+.. image:: img/Resize3.jpg
+
+|
+
+接下来做移动手柄：Add > Mesh > Plane（Shift+A M P）。
+
+.. image:: img/MoveHandle1.jpg
+
+|
+
+按住 Shift 点击键盘底壳，把它加入选择，然后用 Object > Transform > Align Objects 对齐平面：在对话框里按住 Shift 同时点选 X 和 Y 两个轴。
+
+.. image:: img/MoveHandle2.jpg
+
+|
+
+再重复一次 Align Objects，这次把 Align Mode 设为 Negative Sides（负方向侧），轴选择 Z。
+
+.. image:: img/MoveHandle3.gif
+
+|
+
+平面位置正确了，把它缩到比键盘底面略大一点（S X，再 S Y），然后应用缩放。
+
+.. image:: img/MoveHandle4.gif
+
+|
+
+用 Object > Convert > Curve 把它转成曲线。移动手柄就做好了。
+
+.. image:: img/MoveHandle5.jpg
+
+|
+
+把键盘的所有物体都父级到这个移动手柄上：保持移动手柄选中，按 A 全选，然后 Ctrl+P > Object (Keep Transform)。这样以后移动手柄时，其他部分会跟着动。按 Alt+G 清空位置，把移动手柄和它所有子物体重置到世界原点。
+
+.. image:: img/MoveHandle6.gif
+
+|
+
+现在导入键帽配列，这里用 75% 配列：点 File > Append，浏览到 KRK201 文件并双击打开（blend 文件的行为和文件夹一样），进入 Collections，搜索 75，追加上 75 集合。
+
+.. image:: img/ImportLayout.jpg
+
+|
+
+你可能还要打开该集合的视口可见性：在大纲视图里打开视口禁用过滤（viewport disable filter），为 75 集合勾选。
+
+.. image:: img/75Vis.gif
+
+|
+
+选中配列自带的移动手柄（十字形的空物体），参照主键区（Alphas）把配列移到合适位置，然后在 X 轴上旋转 7 度（这是 Aella 的倾角）。
+
+.. image:: img/75MoveLayout.gif
+
+|
+
+把配列的移动手柄父级到键盘的移动手柄上。
+
+.. image:: img/75MoveLayoutParent.gif
+
+|
+
+占位符要逐个移动才能和键盘配列对齐。在网格尺寸（grid size）里输入 0.002381，可以把吸附增量设为 1/8 单位。
+
+.. image:: img/SnapIncrementGrid.jpg
+
+|
+
+打开 Tsangan 底排。
+
+.. image:: img/75BottomRow.gif
+
+|
+
+选中要移动的占位符，用轴向约束移动：G X 沿 X 轴，G YY 沿局部 Y 轴，依此类推。Win 键要删掉，Alt 键用左侧的按键关联复制过来（Ctrl+L 再按 O）。按住 Ctrl，或者点磁铁图标打开吸附，就能用上吸附增量。
+
+.. image:: img/AellaLayoutAjust.gif
+
+|
+
+现在键盘就准备好了，也兼容 KRK2。把它另存为压缩 blend 文件用于分发，再导入 KRK2 即可。
+
+.. image:: img/AellaExport.jpg
+
+|

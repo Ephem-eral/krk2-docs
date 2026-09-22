@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shader Editor &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Outliner" href="outliner.html" />
+    <link rel="prev" title="UV Editor" href="uveditor.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/materials.html">English</a><a class="" href="../cn/materials.html">简体</a><a class="" href="../tw/materials.html">繁體</a><a class="" href="../ja/materials.html">日本語</a><a class="" href="../ko/materials.html">한국어</a><a class="" href="../ru/materials.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Shader Editor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/materials.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="shader-editor">
+<h1>Shader Editor<a class="headerlink" href="#shader-editor" title="Permalink to this heading"></a></h1>
+<p>After you select an object, the material that is applied to it will be available to edit in the material editor. This is only for the active or highlighted object.</p>
+<img alt="../images/SelectMat.gif" src="../images/SelectMat.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The dropdown will allow you to select and apply another material to the object.</p>
+<img alt="../images/MatDropdown.gif" src="../images/MatDropdown.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If you would like to duplicate a material so that it will not affect the material on other objects, you can click the number (which signifies how many objects carry that material) and a duplicate will be made. You can also click the add new material button to the same effect.</p>
+<img alt="../images/DupeMat.gif" src="../images/DupeMat.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Image texture nodes require coordinates to know how to use a 2d image on a 3d object. If no coordinates are plugged into the vector input, the active UV will be used.</p>
+<p>Some materials contain muted nodes or grey nodes. They are not considered when rendering. To enable these nodes you can select the node by left clicking on it and press M to unmute.</p>
+<img alt="../images/UnmuteNode.gif" src="../images/UnmuteNode.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The world material is also accessible from the material editor. In the top left, click on the dropdown that currently says Object and choose World.</p>
+<img alt="../images/ObjWorld.gif" src="../images/ObjWorld.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="uveditor.html" class="btn btn-neutral float-left" title="UV Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="outliner.html" class="btn btn-neutral float-right" title="Outliner" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

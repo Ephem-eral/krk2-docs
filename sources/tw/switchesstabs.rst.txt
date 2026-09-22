@@ -1,0 +1,46 @@
+新增軸體與衛星軸
+================
+
+有時你想在渲染裡露出軸體和衛星軸：可能是要拍低角度、鍵帽是透明的，或者乾脆想把鍵帽藏起來，單純展示鍵盤本體。
+
+先展開鍵盤所在的集合，對鍵帽／配列集合做一次「關聯複製」，這個副本接下來就當成軸體。
+
+.. image:: img/DupeLayout.gif
+
+|
+
+關掉原鍵帽集合的可見性，專注在即將變成軸體的部分上。
+
+.. image:: img/LayoutVis.gif
+
+|
+
+右鍵點選這個副本集合，選 "select objects"（選取物件）。確認其中有一個處於啟用（高亮）狀態，如果沒有，在 3D 視圖裡按住 Shift 左鍵點它一下設為啟用。然後在物件資料下拉選單裡輸入 "switch"，按需要選擇 Switch_Simple 或 Switch_Complex。
+
+.. image:: img/SwitchObj.jpg
+
+|
+
+現在有一個已經變成軸體了。按 Ctrl+L 開啟 Link（關聯）選單，再按 O 選 Object Data（物件資料），其餘物件就都會變成軸體，這樣你就得到一整把鍵盤的軸體。
+
+.. image:: img/SwitchPop.jpg
+
+|
+
+接下來加衛星軸：選取一個需要配衛星軸的軸體，用 Alt+D 關聯複製，然後右鍵或按 Esc 取消移動。
+
+.. image:: img/DupeSwitch.gif
+
+|
+
+保持新軸體處於選取狀態，開啟 Object Data（物件資料）下拉選單，輸入 "stab" 篩選出衛星軸，再按需要選簡單或複雜的模型，以及衛星軸的尺寸和方向。
+
+.. image:: img/StabData.gif
+
+|
+
+其餘衛星軸照此處理，就完成了。
+
+.. image:: img/StabPopulated.jpg
+
+|

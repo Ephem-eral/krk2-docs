@@ -1,0 +1,74 @@
+첫 번째 키보드 렌더링
+=====================
+
+기본 조작은 이미 익혔으니, 이제 키보드 한 대를 통째로 렌더링하면서 첫 번째 튜토리얼에서 배운 내용을 확장해 보겠습니다.
+
+|
+
+새 KRK2 파일을 만들고 뷰포트에서 A를 눌러 전체 선택한 뒤, KRK 패널 Relink 영역의 Set을 눌러 체리 높이로 설정합니다.
+에셋 브라우저에서 Capsmat을 키캡 중 하나로 드래그하고, Shift를 누른 채 해당 키캡을 클릭해 활성 오브젝트로 만든 다음, KRK 패널 Data 영역의 Copy를 누릅니다.
+
+.. image:: img/SetCapsmatCopy.gif
+
+|
+
+이어서 KRK 패널 Color 영역의 Copy를 눌러 색상 정보를 저장해 나중에 불러올 수 있게 합니다.
+
+.. image:: img/CopyColors.JPG
+
+|
+
+.. note:: 최종 이미지에 후처리를 전혀 하지 않을 계획이라면(권장하지 않음), 최소한 색 관리 방식을 "Standard"로 설정하거나 look을 "Medium High Contrast"로 설정하세요.
+
+|
+
+이제 아웃라이너의 가시성 옵션으로 Kits 컬렉션을 숨깁니다.
+
+.. image:: img/TurnOffKits.gif
+
+|
+
+에셋 브라우저에서 Dalco 959 Mini WKL 키보드를 드래그해 놓고, Alt+G로 위치를 초기화한 뒤 Restore Collections 버튼을 눌러 편집 가능한 상태로 만듭니다.
+
+.. image:: img/DalcoRestore.gif
+
+959 Mini에서 플레이스홀더 하나를 선택하고 모든 플레이스홀더를 박스 선택한 뒤, KRK 패널 Relink 영역의 Set을 누릅니다.
+
+.. image:: img/BoardPopulate.gif
+
+Color 영역의 Setup을 누르고 Paste를 누르면 앞서 키트에서 저장한 색상이 다시 적용됩니다.
+
+|
+
+이제 씬을 구성합니다.
+
+|
+
+씬 컬렉션 안의 Lights를 펼치고 KitLightingHigh의 가시성을 끈 다음, SoftBoxStudio를 켭니다.
+Floors 컬렉션에서 FloorWood6을 켭니다.
+
+.. image:: img/LightsFloor6.jpg
+
+|
+
+씬 속성에서 카메라를 Camera_Board2로 설정합니다.
+
+.. image:: img/SetCamera.jpg
+
+|
+
+뷰포트를 보기 좋은 각도로 돌린 뒤 View > Align View > Align Active Camera To View(Ctrl+Alt+넘패드 0)를 눌러 현재 시점을 활성 카메라로 설정합니다.
+
+.. image:: img/SetActiveCamera.gif
+
+|
+
+이제 씬을 렌더링합니다.
+
+.. image:: img/TutBoardRender.jpg
+
+|
+
+두 번째 예제 워크플로 튜토리얼을 마칩니다.
+
+|

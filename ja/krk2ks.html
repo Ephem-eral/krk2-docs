@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRKからKeyShotへ &mdash; Keyboard Render Kit 2 日本語ドキュメント</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.ja.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.ja.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/krk2ks.html">English</a><a class="" href="../cn/krk2ks.html">简体</a><a class="" href="../tw/krk2ks.html">繁體</a><a class="active" href="../ja/krk2ks.html">日本語</a><a class="" href="../ko/krk2ks.html">한국어</a><a class="" href="../ru/krk2ks.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">概要</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">クイックスタート</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">パッケージ内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">使い始める</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">ヘルプの入手</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">インターフェース</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id2">アセットブラウザー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#uv">UV エディター</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#d">3D ビューポート</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id3">シェーダーエディター</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id5">アウトライナー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id7">プロパティ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRKパネル</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink（再リンク）</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">KLEのインポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile（高さ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row（行）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size（サイズ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key（キー）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing（ホーミングキー）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material（マテリアルをリンク）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings（設定をコピー）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data（データ）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color（カラー）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties（プロパティ）</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">アセットブラウザー</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">アクセサリーアセット</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">キーボードアセット</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">マテリアルアセット</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">マテリアルツール</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UVエディター</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">シェーダーエディター</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">アウトライナー</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">キット</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">キーボード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">レイアウト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">アクセサリー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">シーン</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">カメラ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">ライト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">床</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">構造</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">キーキャップの高さ（プロファイル）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">パーツ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">プロパティエディター</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">レンダープロパティ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">レンダーデバイス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">サンプル数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">ノイズ除去</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">フィルム透明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">カラーマネジメント</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">出力プロパティ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">解像度</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">シーンプロパティ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">アクティブカメラ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">オブジェクトデータプロパティ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">オブジェクトデータ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UVマップ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">マテリアルプロパティ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">マテリアルインデックス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">マテリアルリンク</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">カラーマネジメント</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">マテリアル</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat（キーキャップマテリアル）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">設定項目</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap（キーキャップのベースカラー）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（レジェンド）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（レジェンドマスク）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（レジェンドシャープ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（レジェンドの太さ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（サブレジェンド）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（サブレジェンドマスク）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（サブレジェンドシャープ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（サブレジェンドの太さ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front（側面レジェンド）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask（側面レジェンドマスク）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front（側面レジェンドシャープ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight（側面レジェンドの太さ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness（ラフネス）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale（バンプスケール）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump（上面バンプ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump（側面バンプ）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（レジェンドの継ぎ目）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">マスク</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">パレットワークフロー</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">レジェンドの作成</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">アクセサリー</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">デスクマット</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">サイズ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">縁処理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">縁の印刷</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">縁の色</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">マテリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">エクスポート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">自分のデスクマットデザインを追加する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USBケーブル</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color（カラー）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip（反転）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror（ミラー）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（編組スリーブ）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">ストレートケーブル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">マテリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">ケーブルのエクスポート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">マウス</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">チュートリアル</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">初めてのキットレンダリング</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">最初のキーボードレンダリング</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">スイッチとスタビライザーの追加</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">カスタムキーボードの準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE から KRK へ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">詳細情報</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">レンダリングを最適化する</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">解像度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">レンダリングサンプル数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">ノイズ除去</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id6">実践での使用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Havenの素材</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">環境</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK から 3ds Max へ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK から Cinema 4D へ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">リファレンス</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">よくある質問（FAQ）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">Keyboard Render Kit のインストール方法は？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">なぜ Blender がスクリプトの実行を求めてくるのですか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">キーキャップはどこへ行ったのですか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">アセットブラウザーが空です。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">キーボードがアセットブラウザーに表示されません。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">キーキャップにマテリアルがありません。</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">キーキャップレシピ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">キーキャップの高さ（プロファイル）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">追加の高さ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">キーボード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">更新履歴</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">リソース</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">コレクションインスタンスを復元</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">KRKからKeyShotへ</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/ja/krk2ks.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="krkkeyshot">
+<h1>KRKからKeyShotへ<a class="headerlink" href="#krkkeyshot" title="この見出しへのパーマリンク"></a></h1>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

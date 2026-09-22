@@ -1,0 +1,75 @@
+인터페이스
+==========
+
+.. image:: img/UIOverview.PNG
+
+KRK2의 인터페이스 레이아웃은 Blender의 「셰이딩」(Shading) 작업 공간과 가장 비슷합니다. 다른 점은 왼쪽 패널이 파일 브라우저와 이미지 에디터 대신 에셋 브라우저와 UV 에디터로 바뀌고, 사이드바에 KRK 탭이 하나 더 추가된다는 것입니다.
+
+|
+
+에셋 브라우저
+-------------
+
+.. image:: img/UI_Asset.png
+
+에셋 브라우저에는 유형과 제조사별로 분류된 다양한 실용적인 머티리얼이 들어 있습니다.
+
+`Blender 매뉴얼: 에셋 브라우저 <https://docs.blender.org/manual/ko/latest/editors/asset_browser.html>`_
+
+|
+
+UV 에디터
+---------
+
+.. image:: img/UI_UV.png
+
+이 패널은 이미지 뷰어로도 쓸 수 있고, 키캡의 레전드(키캡 각인) 좌표를 표시할 수도 있습니다.
+
+`Blender 매뉴얼: UV 에디터 <https://docs.blender.org/manual/ko/latest/editors/uv/introduction.html>`_
+
+|
+
+3D 뷰포트
+---------
+
+.. image:: img/UI_VP.png
+
+여기에서 키트, 레이아웃(배열), 조명, 카메라 앵글 등을 편집합니다. 사이드바에는 키캡을 제어하는 KRK 패널이 붙어 있습니다.
+
+`Blender 매뉴얼: 3D 뷰포트 <https://docs.blender.org/manual/ko/latest/editors/3dview/introduction.html>`_
+
+|
+
+셰이더 에디터
+-------------
+
+.. image:: img/UI_Mats.png
+
+여기에서 머티리얼의 외관과 속성을 제어합니다.
+
+`Blender 매뉴얼: 셰이더 에디터 <https://docs.blender.org/manual/ko/latest/editors/shader_editor.html>`_
+
+|
+
+아웃라이너
+----------
+
+.. image:: img/UI_Out.png
+
+여기에는 blend 파일의 계층 구조가 표시됩니다. 키트, 키보드, 레이아웃(배열), 액세서리, 카메라, 조명, 바닥, 키캡 프로파일(높이) 등이 모두 여기에 있으며, 각 항목의 가시성도 제어할 수 있습니다.
+
+`Blender 매뉴얼: 아웃라이너 <https://docs.blender.org/manual/ko/latest/editors/outliner/introduction.html>`_
+
+|
+
+속성
+----
+
+.. image:: img/UI_Props.png
+
+나머지 속성은 대부분 각 탭에 나누어져 있습니다.
+
+`Blender 매뉴얼: 속성 에디터 <https://docs.blender.org/manual/ko/latest/editors/properties_editor.html>`_
+
+
+|

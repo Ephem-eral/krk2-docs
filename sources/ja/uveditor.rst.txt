@@ -1,0 +1,12 @@
+UVエディター
+=============
+
+UVエディターは画像ビューアーであり、UV座標エディターでもあります。2D画像が3D空間に文字として貼り付けられたときにどのように見えるかを視覚的に確認できます。
+
+.. image:: img/UVs.jpg
+
+|
+
+BlenderのUV座標について詳しくは、`Blenderマニュアル：UVの説明 <https://docs.blender.org/manual/ja/latest/editors/uv/introduction.html#uvs-explained>`_ を参照してください。
+
+|

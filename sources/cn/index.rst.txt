@@ -1,0 +1,112 @@
+欢迎使用 Keyboard Render Kit！
+==============================
+
+.. image:: img/KRK2Banner.png
+
+欢迎使用 Keyboard Render Kit 2，感谢你的支持！
+
+KRK2 延续了 KRK1 的物体数据替换工作流，并让它更灵活、更独立、颗粒度更细。键帽高度不再依赖其他模型的几何体，键盘可以自由移植，各组件都能独立于版本单独更新。
+
+|
+
+运行要求
+--------
+
+**Blender 3.3 或更高版本**
+
+**一台能跑 Blender Cycles 的电脑**
+
+相关链接
+--------
+
+`Gumroad <https://imperfectlink.gumroad.com/l/KRK2>`_
+|
+`BlenderMarket <https://blendermarket.com/products/krk2>`_
+|
+`Instagram <https://www.instagram.com/keyboardrenderkit/>`_
+|
+`Discord <https://discord.gg/fVkGTunzT3>`_
+|
+`字符资源库 <https://github.com/imperfectlink/KRKLegendsRepo>`_
+
+|
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 概览
+
+   gettingstarted
+   interface
+   krkpanel
+   assetbrowser
+   uveditor
+   materials
+   outliner
+   properties
+   colourman
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 材质
+
+   capsmat
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 制作字符
+
+   leg_inkscape
+   leg_illustrator
+   leg_designer
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 配件
+
+   deskmat
+   deskmat_custom
+   cables
+   mouse
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 教程
+
+   workflow1
+   workflow2
+   switchesstabs
+   board_custom
+   kle2krk
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 进阶信息
+
+   optimization
+   polyhaven
+   krk2max
+   krk2c4d
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 参考
+
+   troubleshooting
+   recipes
+   profiles
+   boards
+   releases
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 资源
+
+   rci

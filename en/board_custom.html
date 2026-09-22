@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Board Preparation &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="KLE To KRK" href="kle2krk.html" />
+    <link rel="prev" title="Add Switches &amp; Stabilizers" href="switchesstabs.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/board_custom.html">English</a><a class="" href="../cn/board_custom.html">简体</a><a class="" href="../tw/board_custom.html">繁體</a><a class="" href="../ja/board_custom.html">日本語</a><a class="" href="../ko/board_custom.html">한국어</a><a class="" href="../ru/board_custom.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Custom Board Preparation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/board_custom.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="custom-board-preparation">
+<h1>Custom Board Preparation<a class="headerlink" href="#custom-board-preparation" title="Permalink to this heading"></a></h1>
+<p>This tutorial isn’t going to cover export settings from your CAD software. Export your design as an OBJ or FBX and import it into Blender. Alternately, you can use the Stepper Blender addon to import the STEP/STP file directly.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>As an example, let’s use Alchemist Keyboards Aella render file converted to OBJ. <a class="reference external" href="https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj">Right Click &gt; Save</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/DelAll.gif" src="../images/DelAll.gif" />
+<p>In a new Blender file, delete the contents (cube, camera, light) (A X D) and set your Units to millimeters in the Scene Properties tab of the Properties Panel.</p>
+<img alt="../images/SetUnitsMM.jpg" src="../images/SetUnitsMM.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now you can import the Aella OBJ by clicking File &gt; Import &gt; Wavefront Obj (F4 I W)</p>
+<img alt="../images/ImportObj.jpg" src="../images/ImportObj.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The first thing you’ll notice is that the scale is incorrect. In this case the millimeter units were plugged into meters.</p>
+<img alt="../images/Resize1.jpg" src="../images/Resize1.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Scale the board to a thousandth by pressing S 0.001 . You may have to reframe your board so you can see it using the Home key.</p>
+<img alt="../images/Resize2.jpg" src="../images/Resize2.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now apply the scale and rotation by pressing ctrl+A then A again to apply All Transforms.</p>
+<img alt="../images/Resize3.jpg" src="../images/Resize3.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now let’s create a move handle. Press Add &gt; Mesh &gt; Plane (Shift+A M P)</p>
+<img alt="../images/MoveHandle1.jpg" src="../images/MoveHandle1.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Hold Shift and click on the board’s bottom case to add it to the selection. Then align the plane using Object &gt; Transform &gt; Align Objects and enable X and Y axes by shift clicking both X and Y in the dialogue.</p>
+<img alt="../images/MoveHandle2.jpg" src="../images/MoveHandle2.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now repeat the Align Objects, this time with Align Mode set to Negative Sides and the Z axis selected.</p>
+<img alt="../images/MoveHandle3.gif" src="../images/MoveHandle3.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Your plane is now in the right position, next it needs to be scaled to be a little larger than the board footprint (S X + S Y) then apply the scale.</p>
+<img alt="../images/MoveHandle4.gif" src="../images/MoveHandle4.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Convert it into a curve using Object &gt; Convert &gt; Curve. Your move handle is done.</p>
+<img alt="../images/MoveHandle5.jpg" src="../images/MoveHandle5.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Parent all of the board objects to the move handle. With it selected, press A to select all then ctrl+P &gt; Object (Keep Transform). Now when you move the move handle, the rest will come with it. Clear the location with Alt+G to reset the move handle and all of its children to world 0.</p>
+<img alt="../images/MoveHandle6.gif" src="../images/MoveHandle6.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Now it’s time to import the keycap layout. In this case it’s the 75% layout. File &gt; Append then navigate to the KRK201 file and double click on it. Blend files behave like folders. Now enter the Collections, search for 75 and append the 75 collection.</p>
+<img alt="../images/ImportLayout.jpg" src="../images/ImportLayout.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>You may have to enable the viewport visibility for the collection. In the outliner, enable viewport disable filter and enable it for the 75 collection.</p>
+<img alt="../images/75Vis.gif" src="../images/75Vis.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Select the layout’s move handle (cross shaped empty) and move the layout into position based on the Alphas section and rotate it 7 degrees on the X axis (type angle for Aella).</p>
+<img alt="../images/75MoveLayout.gif" src="../images/75MoveLayout.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Parent the layout’s move handle to the board’s move handle.</p>
+<img alt="../images/75MoveLayoutParent.gif" src="../images/75MoveLayoutParent.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The placeholders will need to be moved around to match the board’s layout. You can set the snap increment amount to 1/8th unit by entering 0.002381 into the grid size.</p>
+<img alt="../images/SnapIncrementGrid.jpg" src="../images/SnapIncrementGrid.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Turn on the Tsangan bottom row.</p>
+<img alt="../images/75BottomRow.gif" src="../images/75BottomRow.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Select the placeholders you want to move and use axis constraints to move them around. G X for move on X axis, G YY for moving on local Y etc. The Win keys need to be deleted and the Alt key needs to be linked from the left side (Ctrl+L O). Hold Ctrl or turn on snapping with the magnet icon to use snapping increment.</p>
+<img alt="../images/AellaLayoutAjust.gif" src="../images/AellaLayoutAjust.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Your board is now ready and KRK2 compatible. Save it out as a compressed blend file for distribution and import into KRK2.</p>
+<img alt="../images/AellaExport.jpg" src="../images/AellaExport.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="switchesstabs.html" class="btn btn-neutral float-left" title="Add Switches &amp; Stabilizers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="kle2krk.html" class="btn btn-neutral float-right" title="KLE To KRK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

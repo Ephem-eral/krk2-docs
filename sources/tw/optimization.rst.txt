@@ -1,0 +1,66 @@
+最佳化你的渲染
+==============
+
+除了場景複雜度，還有幾個主要因素會影響渲染時間和畫質。
+
+|
+
+解析度
+------
+
+解析度對渲染耗時影響很大。太低會讓畫面出現畫素塊，斜線發鋸齒，細節也缺少應有的銳利度。
+
+.. image:: img/ResLow.png
+
+.. image:: img/ResHi.png
+
+舉例：把百分比滑桿設為 200%，解析度從 2K 翻倍到 4K，畫質確實更精細，但電腦要處理的畫素量變成四倍。換來的影像更清晰，代價是渲染時間大幅增加。
+
+|
+
+渲染取樣
+--------
+
+取樣數也是最佳化渲染的關鍵。取樣太少，畫面會出現雜訊；和解析度一樣，提高取樣能改善畫質，但渲染時間呈指數增長。
+
+.. image:: img/Samples16.png
+
+.. image:: img/Samples1600.png
+
+|
+
+降噪
+----
+
+從有數字影像那天起，就有了降噪需求。不管素材是數字照片、掃描件，還是完全由電腦產生，處理方法都通用。近年來，路徑追蹤渲染推動了新演算法的發展，甚至開始用機器學習來解決。
+Blender 提供了幾種降噪演算法，我們重點看下面兩種。
+
+Optix
+-----
+
+.. image:: img/Optix.jpg
+
+這是 Nvidia 的機器學習降噪演算法，可在 RTX 20 系及之後的 Nvidia 顯示卡上執行。因為它用了專用張量核心，速度非常快，代價是僅限 Nvidia 使用者。更多資訊見 `NVIDIA 官方頁面 <https://developer.nvidia.com/optix-denoiser>`_。
+
+Open Image Denoise
+------------------
+
+.. image:: img/OID.jpg
+
+這是另一套機器學習降噪演算法，來自 Intel。顧名思義，它開源，能在多種 CPU 型號和架構上執行。速度不如 Optix，但效果非常出色，在帶透明度的場景裡更有優勢，比如渲染聚碳酸酯（PC）鍵盤。關於 Open Image Denoise 的更多資訊見 `官網 <https://www.openimagedenoise.org/>`_。
+
+實際應用
+--------
+
+.. image:: img/CompositorDenoise.jpg
+
+兩種演算法都能在選項裡啟用，用於視埠和最終渲染；不過在合成器裡使用時，Open Image Denoise 更快。KRK 已經把合成器節點搭好了，你只要用合成器面板左上角的核取方塊啟用即可。
+
+.. image:: img/Denoised256.png
+
+|
+
+想深入瞭解降噪，看 `Blender 手冊：減少雜訊 <https://docs.blender.org/manual/zh-hans/latest/render/cycles/optimizations/reducing_noise.html>`_。
+
+
+|

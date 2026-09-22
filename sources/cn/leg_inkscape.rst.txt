@@ -1,0 +1,46 @@
+Inkscape
+========
+
+字符文件在 Inkscape 里制作，可以免费下载：
+
+`Inkscape <https://inkscape.org/>`_
+
+今后每个高度都会有各自的模板。KRK1 把所有高度放在一个文件里，但新建模的键帽 UV 空间不同，所以现在也拆分成了各自独立的模板。
+
+|
+
+打开 svg 后，右侧的图层面板里有字符，也有键帽顶部和侧面的模板。看不到图层面板的话，点 Layer > Layers and Objects，或按 Shift+Ctrl+L 调出来。
+
+.. image:: img/InkscapeScreen.jpg
+
+|
+
+模板默认开启，方便你参照键帽的手指接触区域对齐字符和个性图案。不过记住，最终产出必须是白字黑底的图像。
+
+.. image:: img/LegendsDemo.jpg
+
+|
+
+新建一个图层，把字符粘贴进去。用方向键可以微调位置：按住 Shift 步长更大，按住 Alt 步长更小。模板图层默认锁定，避免误选。
+
+.. image:: img/InkscapeLayers.jpg
+
+|
+
+想用对齐工具按单个键帽对齐，就需要把模板拆开：选中它，点 Path > Break Apart 或按 Ctrl+Shift+K。
+
+.. image:: img/InkscapeAlign.jpg
+
+|
+
+字符摆好后，用 File > Export 或 Ctrl+Shift+E 导出，把白字黑底（WoB）图像导成 4096x4096 或 8192x8192 的 png。其实分辨率和格式都无所谓，只要是正方形图像。
+
+.. image:: img/InkscapeExport.jpg
+
+|
+
+如果个性图案或字符是多彩的，就关掉黑色背景，导出带透明通道的图像：用 Alpha 通道当遮罩，再把颜色接到字符颜色上。
+
+.. image:: img/InkscapeFullColor.jpg
+
+|

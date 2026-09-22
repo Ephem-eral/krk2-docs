@@ -1,0 +1,34 @@
+添加自己的桌垫设计
+==================
+
+编辑 Deskmat_Mat、Deskmat_Edging 和 Deskmat_Stitching 这三个材质，就能给桌垫换上自己的设计。它们在材质属性面板里。
+
+.. image:: img/Deskmat_Slots.jpg
+
+|
+
+在每个材质里找到图像纹理节点，载入你要用的图片。
+
+.. image:: img/Deskmat_Thoughts.jpg
+
+|
+
+桌垫默认可以缩放到 1m x 1m，所以设计图应当放在 1m x 1m 的正方形内。
+
+.. image:: img/Deskmat_Square.jpg
+
+|
+
+如果你想用别的尺寸的图片，把映射（Mapping）节点的位置设为桌垫尺寸的一半，比例设为以米为单位的尺寸。
+
+.. figure:: img/Deskmat_Image.jpg
+
+图：Milky Way by metalbender and the spacey
+
+|
+
+你也可以用图案（pattern）替换图像纹理节点。
+
+.. image:: img/Deskmat_Pattern.jpg
+
+|

@@ -1,0 +1,64 @@
+桌墊
+====
+
+桌墊是程式化建模的，邊緣縫線同樣程式化產生。
+
+.. image:: img/DeskmatStitching.gif
+
+|
+
+尺寸
+----
+
+它可以在 KRK 面板裡自訂：最大 1m x 1m，圓角最大 500mm，厚度最大 1cm。
+
+.. image:: img/DeskmatDims.gif
+
+|
+
+包邊
+----
+
+.. image:: img/DeskmatEdging.gif
+
+這個選項會完全關閉邊緣縫線。
+
+邊緣印刷
+--------
+
+.. image:: img/DeskmatEdgePrint.gif
+
+用這個選項關掉邊緣印刷，改用純色包邊。
+
+|
+
+包邊顏色
+--------
+
+.. image:: img/DeskmatEdgeColor.gif
+
+包邊用純色時，在這裡設顏色。
+
+|
+
+材質
+----
+
+要換材質，得編輯已經應用上的材質：在材質屬性裡選取它，到著色器編輯器裡改。
+
+.. image:: img/DeskmatMats.gif
+
+也可以在物件屬性的修改器面板裡替換目前材質、換成別的材質。
+
+.. image:: img/DeskmatModiMat.gif
+
+|
+
+匯出
+----
+
+要把桌墊匯出到其他軟體，需要先轉換縫線，再把 UV 屬性轉成 UV 貼圖。具體做法參見 USB 線材頁面裡的匯出章節。
+
+:ref:`匯出線材 <ExportingCables>`
+
+|

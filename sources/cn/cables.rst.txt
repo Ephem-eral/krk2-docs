@@ -1,0 +1,117 @@
+.. _cables:
+
+USB 线材
+========
+
+USB 线材有几种不同的配置可选。
+
+.. image:: img/USBCables.JPG
+
+|
+
+用控制手柄把线摆成想要的形状。
+
+.. image:: img/CableHandle.gif
+
+|
+
+USB 接头可以通过物体数据换成其他类型。
+
+.. image:: img/CableHeads.gif
+
+|
+
+航插和雷莫接头可以互换，也可以拔开。
+
+.. image:: img/CableLEMO.gif
+
+|
+
+设置项
+------
+
+设置按物体、按线段分开，每一段都能单独调整。
+
+.. image:: img/CableProps.JPG
+
+|
+
+Plug（接合）
+------------
+
+这个设置把雷莫或航插接头重新接合起来。
+
+.. image:: img/CablePlug.gif
+
+|
+
+Color（颜色）
+-------------
+
+颜色 1 和颜色 2 分别为材质提供主色和点缀色。
+
+.. image:: img/CableColor.gif
+
+|
+
+Flip（翻转）
+------------
+
+这个设置会把弹簧线部分上下翻转。
+
+.. image:: img/CableFlip.gif
+
+|
+
+Mirror（镜像）
+--------------
+
+这个设置会把线材水平镜像。
+
+.. image:: img/CableMirror.gif
+
+Tech Flex（编织网管）
+---------------------
+
+这个设置会把线材从普通编织换成 Tech Flex 网管。
+
+.. image:: img/CableTechFlex.gif
+
+|
+
+直线线材
+--------
+
+普通 USB 线是个例外：它设计成可以通过编辑曲线物体、细分线段、添加顶点来无限延长。
+
+.. image:: img/CableSubdiv.gif
+
+|
+
+材质
+----
+
+和桌垫一样，要换材质得编辑已应用的材质，或者通过物体属性的修改器面板替换。
+
+.. image:: img/CableMaterial.jpg
+
+|
+
+.. _ExportingCables:
+
+导出线材
+--------
+
+要把线材导出到其他软件，注意线材没有 UV 贴图，需要从属性（attribute）转换而来。选中线材（曲线）物体，按 Ctrl+A，然后选择 Visual Geometry to Mesh（可视几何体转网格）。
+
+.. image:: img/CurveToMesh.gif
+
+|
+
+完成后，物体数据里会多出一个属性，用物体数据属性里 Attributes（属性）的下拉菜单就能把它转成 UV 贴图：模式设为 UV Map，然后确认。
+
+.. image:: img/AttrToUV.gif
+
+|
+
+现在线材就可以导出了。

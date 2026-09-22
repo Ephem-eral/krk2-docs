@@ -1,19 +1,16 @@
-# Keyboard Render Kit 2 documentation · one HTML file, 6 languages
+# KRK2 documentation · multi-page, 6 languages
 
-Author: **E3e** ([@Ephem-eral](https://github.com/Ephem-eral))  
-Unofficial multi-language build of the Keyboard Render Kit 2 documentation.
+Keyboard Render Kit 2 (v2.0.1) documentation in six languages, published with
+GitHub Pages. Each chapter is its own HTML page, like the original Read the Docs
+site.
 
-- `index.html` — the whole site: language cover + all six languages in one document
-- `images/` — 194 shared images
-- `fonts/` — theme icon fonts
+- `index.html` — language cover
+- `en/ cn/ tw/ ja/ ko/ ru/` — one folder per language, one page per chapter
+- `single/index.html` — the single-page build (all languages in one file)
+- `static/` — shared theme assets, light-green theme and dark mode
+- `images/`, `fonts/` — shared images and fonts
 
-Open `index.html`, pick a language, and use the sidebar to switch languages at any time
-(English / 简体 / 繁體 / 日本語 / 한국어 / Русский). The choice is remembered in the browser and
-switching keeps you in the same chapter. `images/` and `fonts/` are referenced by relative
-path, so keep the folder together.
+> **More languages may be added in the future.** / 后续可能上线更多语言 · 後續可能上線更多語言
 
-> **More languages may be added in the future.** / 后续可能上线更多语言。
-> 後續可能上線更多語言。 / 今後さらに言語を追加する可能性があります。
-> 추후 더 많은 언어가 추가될 수 있습니다. / В будущем могут появиться и другие языки.
-
-Documentation content © 2022 ImperfectLink (Keyboard Render Kit 2 v2.0.1).
+Unofficial multi-language build by [E3e](https://github.com/Ephem-eral).
+Documentation content © 2022 ImperfectLink.

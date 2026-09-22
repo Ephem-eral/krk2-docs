@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Logs &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Restore Collection Instances" href="rci.html" />
+    <link rel="prev" title="Boards" href="boards.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/releases.html">English</a><a class="" href="../cn/releases.html">简体</a><a class="" href="../tw/releases.html">繁體</a><a class="" href="../ja/releases.html">日本語</a><a class="" href="../ko/releases.html">한국어</a><a class="" href="../ru/releases.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Logs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Release Logs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/releases.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-logs">
+<h1>Release Logs<a class="headerlink" href="#release-logs" title="Permalink to this heading"></a></h1>
+<section id="krk211">
+<h2>KRK211<a class="headerlink" href="#krk211" title="Permalink to this heading"></a></h2>
+<p>Added: KitLighting_005 as new default kit lighting</p>
+<p>Added: F1-8X WKL board</p>
+<p>Added: F1-8X WK board</p>
+<p>Added: Vanquish65 board</p>
+<p>Added: Serendipity board</p>
+<p>Added: Zoom98 board</p>
+<p>Added: Zoom75 board</p>
+<p>Added: Switch_Complex_Box</p>
+<p>Added: Switch category with switch 12 colourways</p>
+<p>Added: Keyboard Stand accessory (thanks SpikedSynapse for base model)</p>
+<p>Added: Floor_MarbleTile</p>
+<p>Improved: Colour conversion from Filmic to sRGB by default in compositor and enabled in viewport</p>
+<p>Improved: Tweaked AluShimmer node to add bump effect</p>
+<p>Improved: Tweaked palette colours</p>
+<p>Improved: Added plate geometry to Event Horizon</p>
+<p>Improved: Separated Pheonix45 into 3 variations</p>
+<p>Improved: Added Polycarb to relegendables by default</p>
+<p>Fixed:Naming for Blanks on KAT and SA</p>
+<p>Fixed: Added CHE K0 (R0) Home, End, Del keys</p>
+<p>Fixed: Added CHE K7 (R5) 1.50 Super, 1.00 Alt and Ctrl</p>
+<p>Fixed: Added windowed numlock to CHE profile</p>
+<p>Fixed: Adjusted sand material</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk210">
+<h2>KRK210<a class="headerlink" href="#krk210" title="Permalink to this heading"></a></h2>
+<p>Move to Blender 4.0</p>
+<p>Added:ISOGR board</p>
+<p>Added: Event Horizon board</p>
+<p>Added: Bakeneko-60 board</p>
+<p>Added: Bakeneko-60PLA board</p>
+<p>Added: Bakeneko-65 board</p>
+<p>Added: Bakeneko-65_PLA board</p>
+<p>Added: Monsgeek M1 board</p>
+<p>Added: F# board</p>
+<p>Improved: Updated KLE table to make KLE import more robust (thanks SpikedSynapse)</p>
+<p>Improved: Updated KRK script for 4.+ compatibility</p>
+<p>Improved: Moved compositor tab to be next to the KRK tab</p>
+<p>Fixed: Added AOV to fix diffuse colour pass issue</p>
+<p>Fixed: Updated Color JSON to fix the copied accents</p>
+<p>Fixed: Deskmat texture coordinated switched to texture from point</p>
+<p>Fixed: KAT K3 1.5 Backspace model</p>
+<p>Fixed: Normals on Che-2 6.25 Spacebar</p>
+<p>Fixed: OGR Bottom row default</p>
+<p>Fixed: Front UV on CHE-2 Question was in wrong position</p>
+<p>Fixed: Switch position relative to CHE-2 stem</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk209">
+<h2>KRK209<a class="headerlink" href="#krk209" title="Permalink to this heading"></a></h2>
+<p>Move to Blender 3.6 from 3.3</p>
+<p>Added: USBCableV3</p>
+<p>Added: DeskmatV3_Leather</p>
+<p>Added: Legend Offset settings</p>
+<p>Added: Floor_TechPanel</p>
+<p>Added: Floor_CarbonFibre</p>
+<p>Added: Floor_DiamondPlate</p>
+<p>Improved: DeskMatV3 with more edging control</p>
+<p>Improved: Wristrest reworked to V2</p>
+<p>Improved: Separated Custom and Palette toggle so that cap modes aren’t changed when you view them</p>
+<p>Fixed: W1AT bottom row layer turned off</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk208">
+<h2>KRK208<a class="headerlink" href="#krk208" title="Permalink to this heading"></a></h2>
+<p>Added: Stickers</p>
+<p>Added: Giga40 Keyboard</p>
+<p>Added: Thok Artisan Display accessory</p>
+<p>Added: LegendSeam Width value to Capsmat</p>
+<p>Added: Coil setting to coiled cables to control tightness</p>
+<p>Improved: Reworked cable materials</p>
+<p>Improved: Updated Model Thirteen</p>
+<p>Improved: Reworked cables to start as mesh lines in prep for future update</p>
+<p>Improved: Noise Detail and Noise Roughness on Alu_Shimmer nodegroup</p>
+<p>Improved: Removed some duplicate material node groups</p>
+<p>Improved: Renamed Capsmat node groups</p>
+<p>Improved: Added custom colour values to default kit keycaps</p>
+<p>Improved: Renamed Palette to Palette8 to denote the number of slots</p>
+<p>Improved: Reworked UV on the Ikki68 Aurora to allow for graphics</p>
+<p>Improved: Exposed some settings on the cables</p>
+<p>Fixed: LShift in kits had a different palette value and as a result wasn’t part of default select group</p>
+<p>Fixed: Stucco floor was -1mm in the Z axis</p>
+<p>Fixed: Switch puller origin</p>
+<p>Fixed: G305 face orientation</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk207">
+<h2>KRK207<a class="headerlink" href="#krk207" title="Permalink to this heading"></a></h2>
+<p>Added: Model Thirteen board</p>
+<p>Added: Akuma board</p>
+<p>Added: Floor_Stucco</p>
+<p>Added: Floor_HexTile</p>
+<p>Added: Palette16 nodegroup</p>
+<p>Added: Palette_E4 nodegroup (now default for legends)</p>
+<p>Added: Palette_E8 nodegroup</p>
+<p>Added: 1.5U Cherry Space Convex</p>
+<p>Added: Legends Mask output for shader mixing</p>
+<p>Added: Ability to call up variations for geometry legended cap models</p>
+<p>Added: Ability to import and export colour schemes (custom colour mode)</p>
+<p>Improved: Renamed Palette_E to Palette_E4A to denote 4 slots with alphas</p>
+<p>Improved: Added custom shape option to deskmat (find it in modifiers)</p>
+<p>Improved: Keycap homing options now renamed to Variation to add functionality</p>
+<p>Fixed: Some profiles were missing keycaps: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe</p>
+<p>Fixed: Separated all Homing variants (F,J,Num5,H,A,U,N,T) from shapekeys in profiles DSA, DSS, KAM, KAT, OEM, SA</p>
+<p>Fixed: Moved SwitchComplex geometry 0.33mm on Y axis to align better with stems</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk206">
+<h2>KRK206<a class="headerlink" href="#krk206" title="Permalink to this heading"></a></h2>
+<p>Added: Akko ACR75 board</p>
+<p>Added: Akko Alice board</p>
+<p>Added: SLK Profile in downloads</p>
+<p>Added: PBS Profile in downloads</p>
+<p>Added: XDA profile in downloads</p>
+<p>Fixed: Fixed USB cable UV breaking in Blender 3.4</p>
+<p>Fixed: Fixed regression where the Collection Restore would break the USB cable controls</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk205">
+<h2>KRK205<a class="headerlink" href="#krk205" title="Permalink to this heading"></a></h2>
+<p>Added: Werk One board</p>
+<p>Added: Kailh Choc V1 Switch</p>
+<p>Added: Kailh Choc Keycap Blank</p>
+<p>Added: MBK Keycap Blank</p>
+<p>Improved: Added Gloss Colour to Polycarbonate2</p>
+<p>Improved: Improvements to Restore Collections</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk204">
+<h2>KRK204<a class="headerlink" href="#krk204" title="Permalink to this heading"></a></h2>
+<p>Added: KLE importer</p>
+<p>Added: Grid Cap model</p>
+<p>Added: 1U Caps</p>
+<p>Added: IRON165 R2 board</p>
+<p>Added: IRON165 FE board</p>
+<p>Added: IRON180 board</p>
+<p>Improved:Added general Ctrl+Alt+Super keys</p>
+<p>Improved: Switched Isometria to Iso by default</p>
+<p>Improved: Palette E now says Legend in KRK Panel</p>
+<p>Improved: Added regular named Ctrl, Alt, Super keys as well as the existing CtrlL, AltL etc.</p>
+<p>Fixed:Moved origins for CapsStepped, BigEnter, EnterIso</p>
+<p>Fixed: Renamed &gt;&lt; key to LessGreater</p>
+<p>Fixed: Renamed FN to Fn</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk203">
+<h2>KRK203<a class="headerlink" href="#krk203" title="Permalink to this heading"></a></h2>
+<p>Added: NK65 Board</p>
+<p>Improved: Moved Board assets to Asset Browser</p>
+<p>Improved: Moved Layouts to Asset Browser</p>
+<p>Improved: Moved Accessories to Asset Browser</p>
+<p>Improved: Moved shader out of Capsmat</p>
+<p>Fixed: Enabled scene lights and world for viewport</p>
+<p>Fixed: Some keys in kits didn’t have palette info preloaded</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk202">
+<h2>KRK202<a class="headerlink" href="#krk202" title="Permalink to this heading"></a></h2>
+<p>Added:Keycap Puller Accessory</p>
+<p>Improved:Preloaded colour JSON with default KRK theme so you can jump straight to boards</p>
+<p>Fixed:DCS ISO Not,2,3 keys wrong row</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="krk201">
+<h2>KRK201<a class="headerlink" href="#krk201" title="Permalink to this heading"></a></h2>
+<p>Added: New KRK Panel</p>
+<p>Added: Placeholder profile</p>
+<p>Added: New Cherry models</p>
+<p>Added: New DCS Models</p>
+<p>Added: Front legend support to capsmat (For new cherry and dcs)</p>
+<p>Added: Palette material utilities</p>
+<p>Added: W1-AT board</p>
+<p>Added: Vector65 board</p>
+<p>Added: MAN40 and MAN60 board</p>
+<p>Added: Zoom65 board</p>
+<p>Added: Beak 6.5 board</p>
+<p>Added: Piggy board</p>
+<p>Added: Mammoth75 board</p>
+<p>Added: Austin board</p>
+<p>Added: Frog board</p>
+<p>Added: Cake60 board</p>
+<p>Added: Plates to most boards and modified models to accomodate transparent switches</p>
+<p>Added: Switch Complex</p>
+<p>Added: Stab Complex</p>
+<p>Added: Stab Simple 7U</p>
+<p>Added: Switch Puller Accessory</p>
+<p>Added: Polycarb2 material group</p>
+<p>Added: More cable variations</p>
+<p>Added: Lemo connectors</p>
+<p>Added: USB microconnector</p>
+<p>Added: USB mini connector</p>
+<p>Improved: Separated keycap profiles</p>
+<p>Improved: Organized boards in outliner</p>
+<p>Improved: Remodeled Aviator connector</p>
+<p>Improved: Rebuilt Deskmat to be more versatile</p>
+<p>Improved: Rebuilt USB cable to be more versatile</p>
+<p>Improved: G305 material and added properties</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="boards.html" class="btn btn-neutral float-left" title="Boards" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rci.html" class="btn btn-neutral float-right" title="Restore Collection Instances" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

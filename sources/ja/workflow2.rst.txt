@@ -1,0 +1,74 @@
+最初のキーボードレンダリング
+============================
+
+基本操作はもう覚えたはずなので、ここではキーボード全体をレンダリングし、最初のチュートリアルで学んだことをさらに広げていきます。
+
+|
+
+新しい KRK2 ファイルを作成し、ビューポートで A を押してすべて選択し、KRK パネルの Relink エリアの Set を押して、Cherry の高さに設定します。
+アセットブラウザーから Capsmat をいずれかのキーキャップにドラッグし、Shift を押しながらそのキーキャップをクリックしてアクティブオブジェクトにし、KRK パネルの Data エリアの Copy を押します。
+
+.. image:: img/SetCapsmatCopy.gif
+
+|
+
+次に KRK パネルの Color エリアの Copy を押し、カラー情報を保存して後で使えるようにします。
+
+.. image:: img/CopyColors.JPG
+
+|
+
+.. note:: 最終画像にポストプロセスを一切施さない場合（推奨しません）、少なくともカラーマネジメントを "Standard" に設定するか、look を "Medium High Contrast" に設定してください。
+
+|
+
+ここでアウトライナーの可視性オプションを使って Kits コレクションを非表示にします。
+
+.. image:: img/TurnOffKits.gif
+
+|
+
+アセットブラウザーから Dalco 959 Mini WKL キーボードをドラッグし、Alt+G で位置をリセットしてから Restore Collections ボタンを押して編集可能な状態にします。
+
+.. image:: img/DalcoRestore.gif
+
+959 Mini 上でプレースホルダーを 1 つ選択し、すべてのプレースホルダーをボックス選択して、KRK パネルの Relink エリアの Set を押します。
+
+.. image:: img/BoardPopulate.gif
+
+Color エリアの Setup をクリックし、Paste を押すと、先ほどキットから保存したカラーが呼び戻されます。
+
+|
+
+次にシーンを組み立てます。
+
+|
+
+シーンコレクション内の Lights を展開し、KitLightingHigh の可視性をオフにして、SoftBoxStudio をオンにします。
+Floors コレクション内の FloorWood6 をオンにします。
+
+.. image:: img/LightsFloor6.jpg
+
+|
+
+シーンプロパティで、カメラを Camera_Board2 に設定します。
+
+.. image:: img/SetCamera.jpg
+
+|
+
+ビューを見栄えの良い角度に回し、View > Align View > Align Active Camera To View（Ctrl+Alt+テンキー 0）をクリックして、現在の視点をアクティブカメラに設定します。
+
+.. image:: img/SetActiveCamera.gif
+
+|
+
+これでシーンをレンダリングします。
+
+.. image:: img/TutBoardRender.jpg
+
+|
+
+2 つ目のサンプルワークフローチュートリアルは以上です。
+
+|

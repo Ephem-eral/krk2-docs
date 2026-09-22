@@ -1,0 +1,34 @@
+KRK から Cinema 4D へ
+======================
+
+Cinema 4D への書き出しは簡単です。
+
+キーボードまたはキットの準備ができたら、書き出したくない他のオブジェクトを非表示にするか、表示をオフにします。
+
+.. image:: img/MammothBlender.jpg
+
+|
+
+キーボードの A キーを押してすべて選択します。
+
+.. image:: img/MammothBlenderSelection.jpg
+
+|
+
+File > Export > FBX をクリックし、ファイル名を入力して、Limit to Selected Objects（選択したオブジェクトのみ）にチェックを入れるのを忘れないでください。
+
+.. image:: img/MammothExport.jpg
+
+|
+
+次に Cinema 4D で FBX をインポートし、Tools > Axis > Reset Scale をクリックして、隣の歯車アイコンでスケールを適用します。
+
+.. image:: img/MammothC4d.png
+
+|
+
+オプションで両方のチェックボックスにチェックを入れます。
+
+.. image:: img/MammothC4dOption.png
+
+|

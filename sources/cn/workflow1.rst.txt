@@ -1,0 +1,79 @@
+你的第一次套件渲染
+==================
+
+刚上手时你首先会注意到：场景里没有键帽，视图里只有一堆平面。这些就是占位符，可以替换成键帽。
+
+.. image:: img/Placeholders.PNG
+
+|
+
+框选这些占位符，按 KRK 面板 Relink（重新链接）区域里的 Set 按钮。重新链接会忽略除键帽以外的所有物体，现在你应该得到 Cherry 高度的键帽了；没有对应目标物体数据的键帽同样会被跳过。各高度的前缀可以在 Profile 集合里查到。
+
+.. image:: img/setcherry.gif
+
+|
+
+从资产浏览器把 Capsmat 拖到其中一个键帽上，让它保持激活（高亮），再按 KRK 面板 Data（数据）区域里的 Copy 按钮，就能把材质链接到其他键帽。它等同于 Ctrl+L 再按 M（链接材质），但会忽略非键帽物体。
+
+.. image:: img/copymat.gif
+
+|
+
+.. note:: 如果你不打算对最终图像做任何后期处理（不推荐这样），那至少把色彩管理方案设为 "Standard"，或者把 look 设为 "Medium High Contrast"。
+
+|
+
+色板系统就是为了方便探索配色：你可以先逐个物体自定义颜色，之后再回到材质编辑器里用定义好的色板，走更规范的流程。
+
+.. image:: img/CustomPalette.gif
+
+|
+
+色板本质上是通用节点组，但默认配置如下：
+
+- **A** 键帽底色
+- **B** 字符颜色
+- **C** 副字符颜色（未套用）
+- **D** 侧刻颜色（未套用）
+- **E** 字符遮罩
+
+.. image:: img/Palettes.PNG
+
+|
+
+在键帽上拖拖这些滑块，切到 custom 就能调自己的颜色。调到满意后，把那个键帽留作最后选中，再按 Color（颜色）区域里的 Set，就会应用到所有选中的键帽上。
+
+.. image:: img/SetColor.gif
+
+|
+
+   现在键帽颜色可以存在物体上，而不只是存在材质里。如果你更习惯传统做法，也可以把色板从材质里移除。
+
+|
+
+用 Palette E 的滑块，可以把修饰键的字符在 Text（文字）、Icon（图标）或 Text+Icon（文字+图标）之间切换。
+
+.. image:: img/PaletteE.gif
+
+|
+
+在大纲视图里打开 FloorLightGrey 的可见性就能加一个地面，它在 Scene > Floors 的第一项。
+
+.. image:: img/floorvis.gif
+
+|
+
+点击 Render > Render Image，或按 F12，渲染你的第一张图。
+
+.. image:: img/w1render.jpg
+
+|
+
+第一个示例工作流教程到此完成。
+
+|
+
+   加分项：
+   在场景属性里把摄像机切换到 Camera_Kit_Tilted。
+   
+|

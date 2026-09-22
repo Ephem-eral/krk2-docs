@@ -1,0 +1,75 @@
+界面
+====
+
+.. image:: img/UIOverview.PNG
+
+KRK2 的界面布局最接近 Blender 的「着色」（Shading）工作区，区别是左栏由文件浏览器和图像编辑器换成了资产浏览器和 UV 编辑器，侧边栏里还多了一个 KRK 标签页。
+
+|
+
+资产浏览器
+----------
+
+.. image:: img/UI_Asset.png
+
+资产浏览器收录了大量实用材质，按类型和厂商分类。
+
+`Blender 手册：资产浏览器 <https://docs.blender.org/manual/zh-hans/latest/editors/asset_browser.html>`_
+
+|
+
+UV 编辑器
+---------
+
+.. image:: img/UI_UV.png
+
+这个面板既能当图像查看器，也能显示键帽上字符的坐标。
+
+`Blender 手册：UV 编辑器 <https://docs.blender.org/manual/zh-hans/latest/editors/uv/introduction.html>`_
+
+|
+
+3D 视图
+-------
+
+.. image:: img/UI_VP.png
+
+你在这里编辑套件、配列、灯光、机位角度等。侧边栏上挂着 KRK 面板，用来控制键帽。
+
+`Blender 手册：3D 视图 <https://docs.blender.org/manual/zh-hans/latest/editors/3dview/introduction.html>`_
+
+|
+
+着色器编辑器
+------------
+
+.. image:: img/UI_Mats.png
+
+你在这里控制材质的外观与属性。
+
+`Blender 手册：着色器编辑器 <https://docs.blender.org/manual/zh-hans/latest/editors/shader_editor.html>`_
+
+|
+
+大纲视图
+--------
+
+.. image:: img/UI_Out.png
+
+这里展示 blend 文件的层级结构。套件、键盘、配列、配件、摄像机、灯光、地面、键帽高度等都在这里，同时也能控制它们的可见性。
+
+`Blender 手册：大纲视图 <https://docs.blender.org/manual/zh-hans/latest/editors/outliner/introduction.html>`_
+
+|
+
+属性
+----
+
+.. image:: img/UI_Props.png
+
+其余大部分属性分布在各标签页中。
+
+`Blender 手册：属性编辑器 <https://docs.blender.org/manual/zh-hans/latest/editors/properties_editor.html>`_
+
+
+|

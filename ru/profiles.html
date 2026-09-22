@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профили (высоты) кейкапов &mdash; Keyboard Render Kit 2 Документация</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.ru.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.ru.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Клавиатуры" href="boards.html" />
+    <link rel="prev" title="Рецепт кейкапов" href="recipes.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/profiles.html">English</a><a class="" href="../cn/profiles.html">简体</a><a class="" href="../tw/profiles.html">繁體</a><a class="" href="../ja/profiles.html">日本語</a><a class="" href="../ko/profiles.html">한국어</a><a class="active" href="../ru/profiles.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Обзор</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Быстрый старт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">Содержимое архива</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">Начало работы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">Получение помощи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Интерфейс</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id2">Браузер ассетов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#uv">UV-редактор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#d">3D-вьюпорт</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id3">Редактор шейдеров</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#outliner">Структура (Outliner)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id5">Свойства</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">Панель KRK</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink (перелинковка)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">Импорт KLE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile (высота)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши позиционирования)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data (данные)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color (цвет)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties (свойства)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Браузер ассетов</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">Ассеты аксессуаров</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">Ассеты клавиатур</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">Ассеты материалов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">Инструменты материалов</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV-редактор</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Редактор шейдеров</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Структура (Outliner)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id1">Киты</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">Клавиатура</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">Раскладка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">Аксессуары</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">Сцена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">Камера</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">Свет</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">Пол</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">Структура</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">Профиль (высота) кейкапов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">Настройка UV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">Детали</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Редактор свойств</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">Свойства рендера</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">Устройство рендера</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">Сэмплы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">Шумоподавление</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">Прозрачный фон</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">Управление цветом</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">Свойства вывода</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">Разрешение</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">Свойства сцены</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">Активная камера</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">Свойства данных объекта</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">Данные объекта</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UV-развёртки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">Свойства материала</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">Индекс материала</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">Привязка материала</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Управление цветом</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Материалы</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat (материал кейкапов)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">Настройки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap (основной цвет кейкапа)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend (легенда)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask (маска легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend (резкость легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight (толщина легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub (дополнительная легенда)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask (маска дополнительной легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub (резкость дополнительной легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight (толщина дополнительной легенды)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front (легенда на передней грани)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask (маска легенды на передней грани)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front (резкость легенды на передней грани)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight (толщина легенды на передней грани)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness (шероховатость)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale (масштаб рельефа)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump (рельеф сверху)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump (рельеф сбоку)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam (шов легенды)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Создание легенд</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Аксессуары</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Коврик</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">Размеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">Окантовка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">Печать по краю</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">Цвет окантовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">Материалы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">Экспорт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Добавление собственного дизайна коврика</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">Кабели USB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">Настройки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug (Соединение)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color (Цвет)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip (Переворот)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror (Зеркало)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex (Оплётка)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">Прямой кабель</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">Материалы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">Экспорт кабелей</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Мышь</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Уроки</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Твой первый рендер клавиатуры</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Оптимизация рендера</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">Разрешение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">Сэмплы рендера</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">Шумоподавление</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id6">Практическое применение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Часто задаваемые вопросы (FAQ)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">Как установить Keyboard Render Kit?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Рецепт кейкапов</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Профили (высоты) кейкапов</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">Дополнительные высоты</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pla">PLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Клавиатуры</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">История изменений</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ресурсы</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Восстановление экземпляров коллекций</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Профили (высоты) кейкапов</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/ru/profiles.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Профили (высоты) кейкапов<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<section id="che">
+<h2>CHE<a class="headerlink" href="#che" title="Permalink to this heading"></a></h2>
+<p>Переработанная модель Cherry (в сообществе известна как «заводская высота») на основе Endeavour. Нижняя поверхность использует расширение -2, применяется шаблон легенд Cherry, поддерживается легенда на передней грани.</p>
+</section>
+<section id="dcs">
+<h2>DCS<a class="headerlink" href="#dcs" title="Permalink to this heading"></a></h2>
+<p>Переработанная модель DCS на основе Fooblitzky. Нижняя поверхность использует расширение -2, применяется шаблон легенд DCS, поддерживается легенда на передней грани.</p>
+</section>
+<section id="dsa">
+<h2>DSA<a class="headerlink" href="#dsa" title="Permalink to this heading"></a></h2>
+<p>Производная от модели DSA из KRK1, боковые поверхности сглажены модификатором подразбиения (subdivision).</p>
+</section>
+<section id="dss">
+<h2>DSS<a class="headerlink" href="#dss" title="Permalink to this heading"></a></h2>
+<p>Производная от модели DSS из KRK1, боковые поверхности сглажены модификатором подразбиения (subdivision).</p>
+</section>
+<section id="kam">
+<h2>KAM<a class="headerlink" href="#kam" title="Permalink to this heading"></a></h2>
+<p>Производная от модели KAM из KRK1, боковые поверхности сглажены модификатором подразбиения (subdivision).</p>
+</section>
+<section id="kat">
+<h2>KAT<a class="headerlink" href="#kat" title="Permalink to this heading"></a></h2>
+<p>Производная от модели KAT из KRK1, боковые поверхности сглажены модификатором подразбиения (subdivision).</p>
+</section>
+<section id="oem">
+<h2>OEM<a class="headerlink" href="#oem" title="Permalink to this heading"></a></h2>
+<p>Производная от модели OEM из KRK1.</p>
+</section>
+<section id="sa">
+<h2>SA<a class="headerlink" href="#sa" title="Permalink to this heading"></a></h2>
+<p>Производная от модели SA из KRK1, боковые поверхности сглажены модификатором подразбиения (subdivision).</p>
+</section>
+</section>
+<section id="id2">
+<h1>Дополнительные высоты<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h1>
+<section id="krk">
+<h2>KRK<a class="headerlink" href="#krk" title="Permalink to this heading"></a></h2>
+<p>Модель кейкапов из KRK1, включает UI свитчей. Требуется ручной импорт.</p>
+</section>
+<section id="pbs">
+<h2>PBS<a class="headerlink" href="#pbs" title="Permalink to this heading"></a></h2>
+<p>Высота PBS, со штоком (крестовиной). Требуется ручной импорт.</p>
+</section>
+<section id="pla">
+<h2>PLA<a class="headerlink" href="#pla" title="Permalink to this heading"></a></h2>
+<p>Высота-плейсхолдер.</p>
+</section>
+<section id="slk">
+<h2>SLK<a class="headerlink" href="#slk" title="Permalink to this heading"></a></h2>
+<p>Высота SLK, со штоком (крестовиной). Требуется ручной импорт.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="recipes.html" class="btn btn-neutral float-left" title="Рецепт кейкапов" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="boards.html" class="btn btn-neutral float-right" title="Клавиатуры" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

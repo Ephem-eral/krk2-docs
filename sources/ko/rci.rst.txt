@@ -1,0 +1,33 @@
+컬렉션 인스턴스 복원
+=====================
+
+.. image:: img/RCI_Banner.jpg
+
+
+Restore Collection Instances(컬렉션 인스턴스 복원)는 Blender의 기능 공백을 메우는 작은 애드온입니다. 컬렉션 에셋은 Blender 기본 제공 "Make Instances Real"로는 제대로 복원할 수 없습니다. 부모-자식 계층은 유지되지만 원래의 컬렉션 계층은 보존되지 않습니다.
+
+|
+
+아래는 「계층 유지」 옵션을 켰을 때의 Make Instances Real과 Restore Collection Instances의 결과 비교입니다.
+
+.. image:: img/RCIvsMIR.jpg
+
+이 예시에서 원본 컬렉션 에셋에는 176개의 오브젝트가 있으며, 그중 일부는 가시성이 꺼져 있습니다. Make Instances Real은 161개만 복원했고, 모든 컬렉션 구조와 구성 방식, 색상까지 잃어버렸습니다.
+
+|
+
+.. image:: img/KRK2Divider.jpg
+
+|
+
+Restore Collection Instances는 처음에는 Keyboard Render Kit의 일부였지만, 곧 범용 도구로 쓸 수 있다는 것을 알게 되었습니다.
+
+|
+
+.. image:: img/KRK2Divider2.jpg
+
+|
+
+사용법은 간단합니다. Ctrl+A를 누르면 Apply(적용) 메뉴에서 찾을 수 있습니다.
+
+.. image:: img/RestoreCollectionInstances.jpg

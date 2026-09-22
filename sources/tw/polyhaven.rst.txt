@@ -1,0 +1,87 @@
+Poly Haven 素材
+===============
+
+鍵盤準備好了，鍵帽高度和配色也定了，攝影機取景也不錯，但燈光和地面就是達不到想要的效果。
+
+.. image:: img/PolyHaven_01.jpg
+
+|
+
+KRK 預置了多種地面和燈光方案供你起步，不過你可能想換別的地面和燈光，讓畫面更豐富。Poly Haven 是個很好的資源站，既有用來承載鍵盤的表面，也有用來照亮場景的 HDRI（高動態範圍影像）。下面走一遍匯入流程。
+
+
+|
+
+如果你已經裝了 Poly Haven 外掛，這套流程大部分都能跳過；如果你經常這麼做，我強烈推薦裝一個。
+
+|
+
+地面
+----
+
+先存取 Poly Haven 網站（polyhaven.com），點選頂部欄的 Assets > Textures。
+
+.. image:: img/PolyHaven_02.jpg
+
+|
+
+裡面有多個分類，這裡點 Floor > Indoor > Man-Made，然後選 Slab Tiles。
+
+.. image:: img/PolyHaven_03.jpg
+
+|
+
+點下載按鈕，等 zip 下完，把它解壓縮到對應資料夾。你會看到資料夾裡有一個 blend 檔案，說明裡面已經有一個配置好、可以直接用的物件。
+
+.. image:: img/PolyHaven_04.jpg
+
+|
+
+要匯入 blend 檔案的內容，得用 Append 或 Link。這裡選擇 append 地面，並且不與原檔案保持連結。在 Blender 裡點選 File > Append，開始匯入 Poly Haven 地面，接著選擇 Object 子分類，找到地面物件，它很可能叫 "Plane"。
+
+.. image:: img/PolyHaven_05.jpg
+
+|
+
+它會被追加到大綱視圖裡目前啟用的集合中。地面進場景之後，就可以動手調整了。
+
+.. image:: img/PolyHaven_06.jpg
+
+|
+
+預設的幾何體太少，置換（displacement）推不出細節，而且貼圖比例在這個場景裡偏大。接一個 Value 節點到比例（scale）上設為 2，把比例放大一倍。按我的機位角度，我還用對映節點把貼圖移了 80mm。再到修改器頁籤裡把細分修改器級別改成 10，讓幾何體足夠密，撐得起置換影像的細節。
+
+.. image:: img/PolyHaven_07.jpg
+
+|
+
+既然用了置換，把地面往下移一點也很有必要：這一個往下移了 7mm。地面現在可以用於渲染了。
+
+.. image:: img/PolyHaven_08b.jpg
+
+|
+
+環境
+----
+
+記住：HDRI 能提升真實感，但也會影響顏色。拍鍵盤和場景沒問題，但對顏色準確性要求很高的套件渲染就不合適了。要加 HDRI，到 Poly Haven 點 Assets > HDRIs，挑一個下載。這裡用 Leadenhall Market，下載下來是 EXR 影像檔案。
+
+.. image:: img/PolyHaven_09.jpg
+
+|
+
+在大綱視圖裡停用 Lights 集合。
+
+.. image:: img/PolyHaven_10.jpg
+
+|
+
+然後在材質編輯器裡點左上角的下拉選單，從 Object 切到 World。世界材質已經搭好了：選取影像節點按 M 取消靜音，再點 Open 載入 Leadenhall Market 影像。
+
+.. image:: img/PolyHaven_11b.jpg
+
+|
+
+想調整這張圖，可以新增 Mapping 節點和 Texture Coordinate 節點，按圖裡那樣連線。這裡我把影像轉了 52 度，讓鍵盤右側邊緣出現一道好看的高光，同時把 HDRI 強度提高一倍。
+
+.. image:: img/PolyHaven_12b.jpg

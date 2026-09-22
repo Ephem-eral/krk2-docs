@@ -1,0 +1,82 @@
+大綱視圖
+========
+
+大綱視圖收納場景中的所有項目，並把它們組織成集合。
+
+.. image:: img/Outliner.jpg
+
+套件
+----
+
+.. image:: img/KitsCollection.jpg
+
+Kits（套件）集合預設開啟。
+
+鍵盤
+----
+
+.. image:: img/BoardCollection.jpg
+
+鍵盤先按尺寸分組，同尺寸內按字母順序排列。點選三角箭頭可以逐層展開子集合，再往下就是鍵盤的配列選項，例如階梯 CapsLock 或 Tsangan 底排。
+
+配列
+----
+
+.. image:: img/DuplicateLinkedCollection.gif
+
+這些是備用配列，可用來填充自己匯入的鍵盤。右鍵點選配列並選擇「關聯複製」，產生一個關聯集合，再把它移到你的鍵盤所屬的集合裡。
+
+配件
+----
+
+這裡列出可用的配件，包括桌墊模型、滑鼠、USB 線和手托。
+
+場景
+----
+
+.. image:: img/SceneCollection.jpg
+
+在這裡可以檢視場景元素，比如燈光、攝影機和背景。
+
+攝影機
+------
+
+KRK2 對攝影機做了精簡，不過你可以複製它們，自行設定機位和角度。
+
+燈光
+------
+
+.. image:: img/LightsCollection.jpg
+
+我們準備了多套燈光方案，幫你確定場景的整體觀感。它們參考了流行的影棚燈光 HDRI 方案，可調性更高，強度和位置都能隨意調整。
+
+地面
+------
+
+.. image:: img/FloorsCollection.jpg
+
+KRK 自帶一組挺有意思的地面，方便你快速上手。其中包括陰影捕捉（ShadowCatcher）地面，它以 FloorLightGrey 為基礎，專門捕捉陰影，用於渲染透明背景。
+
+結構
+----
+
+鍵帽高度
+--------
+
+.. image:: img/ProfilesCollection.jpg
+
+所有鍵帽高度都在這裡。
+
+UV 設定
+--------
+
+.. image:: img/UVSetup.jpg
+
+這個集合包含為鍵帽做 UV 投影所需的全部內容。
+
+零件
+--------
+
+.. image:: img/PartsCollection.jpg
+
+這裡收錄了一些額外零件，可以透過物件資料替換加到自己的鍵盤上。

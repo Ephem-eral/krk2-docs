@@ -1,0 +1,24 @@
+KLE 到 KRK
+==========
+
+Keyboard Layout Editor 不给物体命名，但命名是 Blender 和 Keyboard Render Kit 正常工作的必要条件。Blender 会分别给物体和物体数据命名。Keyboard Render Kit 基本上不看物体名，却非常依赖物体数据名来运作。明白这一点，从 KLE 到 KRK 的转换就相当可靠了。
+
+|
+
+哪些东西能转换进 KRK？转换器会处理尺寸、字符、行（row）、颜色（键帽色和字符色）、位置和旋转。后三项你可以随便改；但改了前三项、又没有对应的目标物体数据，键帽就可能导入不了。
+
+|
+
+`Keyboard Layout Editor 示例 <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
+
+|
+
+这个配列是 KLE 到 KRK 转换的测试基准，能顺利载入 KRK，是很好的参考样板。如果你还没开始做自己的配列，从这里起步很合适。它看起来可能有点眼熟——KRK 里键帽的 UV 和贴图用的就是这个配列。
+
+|
+
+.. image:: img/KLEKRK2.jpg
+
+|
+
+留意字符和行的命名，因为它们才是转换时真正起作用的东西；改了它们可能就完全转换不过去。记住，字符本身不会被转换，它只充当键帽的名字——进入 Blender 之后，通过字符遮罩，键帽可以显示任意字符。

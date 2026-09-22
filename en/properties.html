@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Editor &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Colour Management" href="colourman.html" />
+    <link rel="prev" title="Outliner" href="outliner.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/properties.html">English</a><a class="" href="../cn/properties.html">简体</a><a class="" href="../tw/properties.html">繁體</a><a class="" href="../ja/properties.html">日本語</a><a class="" href="../ko/properties.html">한국어</a><a class="" href="../ru/properties.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Property Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#render-properties">Render Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#render-device">Render Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sampling">Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#denoise">Denoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#film-transparent">Film Transparent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#color-management">Color Management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#output-properties">Output Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resolution">Resolution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#scene-properties">Scene Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#active-camera">Active Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#object-data-properties">Object Data Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#object-data">Object Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uv-maps">UV Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#material-properties">Material Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#material-index">Material Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#material-link">Material Link</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Property Editor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/properties.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="property-editor">
+<h1>Property Editor<a class="headerlink" href="#property-editor" title="Permalink to this heading"></a></h1>
+<p>The properties section of the Blender UI is massive so I’m only going to call out a few of the most pertinent areas.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="render-properties">
+<h2>Render Properties<a class="headerlink" href="#render-properties" title="Permalink to this heading"></a></h2>
+<section id="render-device">
+<h3>Render Device<a class="headerlink" href="#render-device" title="Permalink to this heading"></a></h3>
+<img alt="../images/RenderDevice.jpg" src="../images/RenderDevice.jpg" />
+<p>You may choose to accelerate your render by utilitizing the GPU (graphics card). Keep in mind you also need to set up the compute device in the preferences for this to work.</p>
+<img alt="../images/RenderDevice2.jpg" src="../images/RenderDevice2.jpg" />
+</section>
+<section id="sampling">
+<h3>Sampling<a class="headerlink" href="#sampling" title="Permalink to this heading"></a></h3>
+<p>Default sampling is set to 32 in the viewport and 256 at render time. If you are rendering polycarbonate, I highly recommend you choose at least 512 samples.</p>
+</section>
+<section id="denoise">
+<h3>Denoise<a class="headerlink" href="#denoise" title="Permalink to this heading"></a></h3>
+<p>Denoising can be set here. I usually check the denoise on for viewport and set it to automatic. Set the start sample to 2 or more to keep your viewport responsive. Denoising for final render is also available in the compositor.</p>
+</section>
+<section id="film-transparent">
+<h3>Film Transparent<a class="headerlink" href="#film-transparent" title="Permalink to this heading"></a></h3>
+<img alt="../images/FilmTransparent.jpg" src="../images/FilmTransparent.jpg" />
+<p>If you are rendering transparent background images, you need to turn on Film&gt;Transparent.</p>
+</section>
+<section id="color-management">
+<h3>Color Management<a class="headerlink" href="#color-management" title="Permalink to this heading"></a></h3>
+<img alt="../images/ColorSF.png" src="../images/ColorSF.png" />
+<p>This is an important section. Blender’s default setting for color management is Filmic which I have left here with no look applied. Some users prefer to set this to Standard because it feels as though it is easier to color match. I generally prefer Filmic because of the light rolloff and set to a Medium High Contrast to get a very similar feel to Standard but with better shading. If you plan to export to EXR, the choice you make doesn’t matter. It will just export the full buffer.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="output-properties">
+<h2>Output Properties<a class="headerlink" href="#output-properties" title="Permalink to this heading"></a></h2>
+<section id="resolution">
+<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this heading"></a></h3>
+<p>This is where you set the resolution of the output image. This resolution also matters when you are doing UV related things such as projections.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Tip: If you want to set 4k when it is currently at 2k resolution, you can type a 200% in the field instead of 100%.</p>
+</div></blockquote>
+<img alt="../images/200P.jpg" src="../images/200P.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="scene-properties">
+<h2>Scene Properties<a class="headerlink" href="#scene-properties" title="Permalink to this heading"></a></h2>
+<section id="active-camera">
+<h3>Active Camera<a class="headerlink" href="#active-camera" title="Permalink to this heading"></a></h3>
+<img alt="../images/SetActiveCamera.jpg" src="../images/SetActiveCamera.jpg" />
+<p>This is where you set the active camera that Blender will use when you press render.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="object-data-properties">
+<h2>Object Data Properties<a class="headerlink" href="#object-data-properties" title="Permalink to this heading"></a></h2>
+<section id="object-data">
+<h3>Object Data<a class="headerlink" href="#object-data" title="Permalink to this heading"></a></h3>
+<img alt="../images/ObjectDataSwitch2.gif" src="../images/ObjectDataSwitch2.gif" />
+<p>Don’t skip over the Object Data dropdown as it allows you to turn any object into any other object by choosing it from the dropdown.</p>
+</section>
+<section id="uv-maps">
+<h3>UV Maps<a class="headerlink" href="#uv-maps" title="Permalink to this heading"></a></h3>
+<img alt="../images/UVMaps.jpg" src="../images/UVMaps.jpg" />
+<p>If you need to access an object’s UV map, this is where you’ll find it.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="material-properties">
+<h2>Material Properties<a class="headerlink" href="#material-properties" title="Permalink to this heading"></a></h2>
+<section id="material-index">
+<h3>Material Index<a class="headerlink" href="#material-index" title="Permalink to this heading"></a></h3>
+<img alt="../images/MatIndex.jpg" src="../images/MatIndex.jpg" />
+<p>Objects can have more than one material attached to them. Eg. the windowed and relegendable keycaps have 2 material slots for the keycap material and the polycarbonate.</p>
+</section>
+<section id="material-link">
+<h3>Material Link<a class="headerlink" href="#material-link" title="Permalink to this heading"></a></h3>
+<img alt="../images/MatObjectData.gif" src="../images/MatObjectData.gif" />
+<p>You can tell Blender whether to use the material attached to the object data or the object on a per object basis.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="outliner.html" class="btn btn-neutral float-left" title="Outliner" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="colourman.html" class="btn btn-neutral float-right" title="Colour Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

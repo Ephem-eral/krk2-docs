@@ -1,0 +1,117 @@
+.. _cables:
+
+USB 케이블
+==========
+
+USB 케이블은 몇 가지 다른 구성으로 제공됩니다.
+
+.. image:: img/USBCables.JPG
+
+|
+
+컨트롤 핸들로 케이블을 원하는 모양으로 배치할 수 있습니다.
+
+.. image:: img/CableHandle.gif
+
+|
+
+USB 커넥터는 오브젝트 데이터에서 다른 유형으로 교체할 수 있습니다.
+
+.. image:: img/CableHeads.gif
+
+|
+
+아비에이터 커넥터와 LEMO 커넥터는 서로 교체할 수 있으며, 분리했다가 다시 결합할 수도 있습니다.
+
+.. image:: img/CableLEMO.gif
+
+|
+
+설정
+----
+
+설정은 오브젝트별, 세그먼트별로 나뉘어 있어 각 구간을 개별적으로 조정할 수 있습니다.
+
+.. image:: img/CableProps.JPG
+
+|
+
+Plug(연결)
+----------
+
+이 설정은 LEMO 또는 아비에이터 커넥터를 다시 결합합니다.
+
+.. image:: img/CablePlug.gif
+
+|
+
+Color(색상)
+-----------
+
+색상 1과 색상 2는 각각 머티리얼의 주 색상과 포인트 색상을 담당합니다.
+
+.. image:: img/CableColor.gif
+
+|
+
+Flip(뒤집기)
+------------
+
+이 설정은 코일 케이블 부분을 위아래로 뒤집습니다.
+
+.. image:: img/CableFlip.gif
+
+|
+
+Mirror(미러)
+------------
+
+이 설정은 케이블을 수평으로 미러링합니다.
+
+.. image:: img/CableMirror.gif
+
+Tech Flex(슬리브)
+-------------------
+
+이 설정은 케이블을 일반 직조에서 Tech Flex 슬리빙으로 변경합니다.
+
+.. image:: img/CableTechFlex.gif
+
+|
+
+직선 케이블
+-----------
+
+일반 USB 케이블은 예외로, 커브 오브젝트를 편집하고 세그먼트를 세분화하며 버텍스를 추가해 무한히 연장할 수 있도록 설계되었습니다.
+
+.. image:: img/CableSubdiv.gif
+
+|
+
+머티리얼
+--------
+
+데스크매트와 마찬가지로, 머티리얼을 교체하려면 적용된 머티리얼을 편집하거나 오브젝트 속성의 모디파이어 패널에서 교체해야 합니다.
+
+.. image:: img/CableMaterial.jpg
+
+|
+
+.. _ExportingCables:
+
+케이블 내보내기
+---------------
+
+케이블을 다른 소프트웨어로 내보내려면, 케이블에 UV 맵이 없으므로 속성(attribute)에서 변환해야 합니다. 케이블(커브) 오브젝트를 선택하고 Ctrl+A를 누른 뒤 Visual Geometry to Mesh(보이는 지오메트리를 메시로 변환)를 선택합니다.
+
+.. image:: img/CurveToMesh.gif
+
+|
+
+완료하면 오브젝트 데이터에 속성이 하나 추가되며, 오브젝트 데이터 속성의 Attributes(속성) 드롭다운 메뉴에서 UV 맵으로 변환할 수 있습니다. 모드를 UV Map으로 설정한 뒤 확인합니다.
+
+.. image:: img/AttrToUV.gif
+
+|
+
+이제 케이블을 내보낼 수 있습니다.

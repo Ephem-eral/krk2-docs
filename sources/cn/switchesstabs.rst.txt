@@ -1,0 +1,46 @@
+添加轴体与卫星轴
+================
+
+有时你想在渲染里露出轴体和卫星轴：可能是要拍低角度、键帽是透明的，或者干脆想把键帽藏起来，单纯展示键盘本体。
+
+先展开键盘所在的集合，对键帽／配列集合做一次「关联复制」，这个副本接下来就当成轴体。
+
+.. image:: img/DupeLayout.gif
+
+|
+
+关掉原键帽集合的可见性，专注在即将变成轴体的部分上。
+
+.. image:: img/LayoutVis.gif
+
+|
+
+右键点击这个副本集合，选 "select objects"（选中物体）。确认其中有一个处于激活（高亮）状态，如果没有，在 3D 视图里按住 Shift 左键点它一下设为激活。然后在物体数据下拉菜单里输入 "switch"，按需要选择 Switch_Simple 或 Switch_Complex。
+
+.. image:: img/SwitchObj.jpg
+
+|
+
+现在有一个已经变成轴体了。按 Ctrl+L 打开 Link（关联）菜单，再按 O 选 Object Data（物体数据），其余物体就都会变成轴体，这样你就得到一整把键盘的轴体。
+
+.. image:: img/SwitchPop.jpg
+
+|
+
+接下来加卫星轴：选中一个需要配卫星轴的轴体，用 Alt+D 关联复制，然后右键或按 Esc 取消移动。
+
+.. image:: img/DupeSwitch.gif
+
+|
+
+保持新轴体处于选中状态，打开 Object Data（物体数据）下拉菜单，输入 "stab" 筛选出卫星轴，再按需要选简单或复杂的模型，以及卫星轴的尺寸和方向。
+
+.. image:: img/StabData.gif
+
+|
+
+其余卫星轴照此处理，就完成了。
+
+.. image:: img/StabPopulated.jpg
+
+|

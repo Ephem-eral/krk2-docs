@@ -1,0 +1,68 @@
+KRK 到 3ds Max
+==============
+
+匯出到 3D Studio Max 相當簡單，不過有幾件事要先做：3ds Max 處理多邊形（N 邊形）不如 Blender，但它很喜歡三角形和四邊形，所以我們就給它想要的。
+
+.. image:: img/krk2maxstart.jpg
+
+|
+
+鍵盤或套件準備好後，把不參與匯出的其他物件都隱藏起來——通常包括場景集合，把它關掉。
+
+.. image:: img/TurnOffSceneCollection.gif
+
+|
+
+只剩它可見時，選取其中一個物件，按 A 全選，再按 Tab 讓所有選取的物件一起進入編輯模式。
+
+.. image:: img/KeyboardVertices.jpg
+
+|
+
+需要處在面選擇模式，快速鍵是數字行的 3。
+
+.. image:: img/FaceMode.jpg
+
+|
+
+連按兩次 A（或按 Alt+A）取消所有選擇。
+
+.. image:: img/KeyboardFaces.jpg
+
+|
+
+接著點 Select > Select By Trait > Faces By Sides。
+
+.. image:: img/FaceBySides.gif
+
+|
+
+用左下角的彈出面板把類型設為 Greater Than（大於）。
+
+.. image:: img/SelectGreaterThan.jpg
+
+|
+
+現在所有 N 邊形（而且只有 N 邊形）都被選取了。
+
+.. image:: img/KeyboardNgons.jpg
+
+|
+
+然後點 Face > Triangulate Faces，或按 Ctrl+T 三角化，再按 Tab 退出編輯模式。
+
+.. image:: img/KeyboardTriangulate.gif
+
+|
+
+鍵盤現在可以匯出了：點 File > Export > FBX，起個檔名，把 Path Mode 設為 Copy，記得勾選 Limit to Selected Objects（僅限選取物件）。
+
+.. image:: img/krk2maxexportsettings.png
+
+|
+
+接著在 Max 裡匯入這個 FBX。
+
+.. image:: img/krk2maximported.png
+
+|

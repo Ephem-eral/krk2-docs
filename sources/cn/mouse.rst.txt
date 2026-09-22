@@ -1,0 +1,6 @@
+鼠标
+====
+
+.. image:: img/KRKMouse.jpg
+
+KRK 鼠标可以调整外壳颜色和 logo 颜色，还能让 logo 渐隐。

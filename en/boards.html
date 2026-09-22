@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boards &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Release Logs" href="releases.html" />
+    <link rel="prev" title="Profiles" href="profiles.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/boards.html">English</a><a class="" href="../cn/boards.html">简体</a><a class="" href="../tw/boards.html">繁體</a><a class="" href="../ja/boards.html">日本語</a><a class="" href="../ko/boards.html">한국어</a><a class="" href="../ru/boards.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Boards</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/boards.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="boards">
+<h1>Boards<a class="headerlink" href="#boards" title="Permalink to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Plate</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Macro</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>40s</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Candybar by The Key Company</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>MB-44 by MelonBred</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Moonlight by Misonoworks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Giga40 by Sneakbox</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Phoenix45 HHKB by projectcain</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Phoenix45 Standard by projectcain</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Phoenix45 WKL by projectcain</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Ribbon by Misonoworks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Tilted40 by Swishy</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>QAZ by Whydobearsxplod</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Serendipity WK by Dededecline</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Serendipity WKL by Dededecline</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>v4n by Trash Man</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Whimsy by PRKNS</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>60s</p></td>
+<td><p>Name</p></td>
+<td><p>Plate</p></td>
+<td><p>Board</p></td>
+<td><p>Macro</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Bakeneko60 by kkatano</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Bakeneko60PLA by kkatano</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Bakeneko65 by kkatano</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Bakeneko65PLA by kkatano</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Beak 6.5 by Stilou Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>CAKE60 Standard by HaytCo</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>CAKE60 Blockerless by HaytCo</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>CAKE60 HHKB by HaytCo</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Dalco 959 Mini WK by Hand Engineering</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Dalco 959 Mini WKL by Hand Engineering</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>D60_Lite by KBDFans</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Event Horizon by MVKB</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>F# by ImperfectLink</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Fuji65 by CMM Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Gentleman65 by JKeys Design</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Haus by Hand Engineering</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Ikki68 Aurora by Wuque Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>IRON165 FE by Smith + Rune</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>IRON165 R2 by Smith + Rune</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Koyu by Rama Works</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>M0lly by The Key Company</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>M60-A by Rama Works</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>M65-A by Rama Works</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>MAN60 by Geon Works</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Nemui by Bachoo</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>NK65 by Novelkeys</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>OGR by AlchemistKeyboards</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Piggy by Jacky Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Pillow65 by KeliumWorks</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Portico by The Key Company</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Rotor by PopSmoke</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Saka68 by CMM Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Titan65 by Phase Studio</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Vector65 by Thok</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Zoom65 by Wuque Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>70s</p></td>
+<td><p>Name</p></td>
+<td><p>Plate</p></td>
+<td><p>Board</p></td>
+<td><p>Macro</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>ACR75 by Akko</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Isometria by ebastler</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Launch by System76</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Mammoth75 by Wuque Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>M1 by Monsgeek</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>The Paragon by Artemis Design Studio</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Portico75 by The Key Company</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Werk One by werk.technica</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Zoom75 by Meletrix</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>80s+</p></td>
+<td><p>Name</p></td>
+<td><p>Plate</p></td>
+<td><p>Board</p></td>
+<td><p>Macro</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>8XMK2 by KBDFANS</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Akuma by MightySetup</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Aperture Board by Elmo</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Austin by Drift Mechanics</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Boston 120 by BluePylons</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Cypher by Cable Car Designs</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Dino104 by nFaiz</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>F1-8x by WK Geonworks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>F1-8x by WKL Geonworks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Frog by Geon Works</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Glare TKL by Geonworks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>IRON180 by Smith + Rune</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Model Thirteen by Plyktra</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Petrichor by Alchemist Keyboard</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Phoenix by Cable Car Designs</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>TKC1800 by The Key Company</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>U80 by Rama Works</p></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>U80-A by Rama Works</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>W1-AT by Geon Works</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>WITF by Ramlord</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Zoom98 by Meletrix</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Ergo</p></td>
+<td><p>Name</p></td>
+<td><p>Plate</p></td>
+<td><p>Board</p></td>
+<td><p>Macro</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Alice by Akko</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Amano by h40.io</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Maja by Vulcan</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>SP-111 by BlindAssassin111</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Macro</p></td>
+<td><p>Name</p></td>
+<td><p>Plate</p></td>
+<td><p>Board</p></td>
+<td><p>Macro</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Bloq by THOK</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>isOGR by AlchemistKeyboards</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>M6-C by Rama Works</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>M6-A by Rama Works</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>M10-A by Rama Works</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>MAN-40 by GeonWorks</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Phoenix NUM by Cable Car Designs</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Total</p></td>
+<td></td>
+<td><p>83</p></td>
+<td><p>7</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="profiles.html" class="btn btn-neutral float-left" title="Profiles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="releases.html" class="btn btn-neutral float-right" title="Release Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

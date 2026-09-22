@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poly Haven Assets &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="KRK to 3ds Max" href="krk2max.html" />
+    <link rel="prev" title="Optimizing Your Render" href="optimization.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/polyhaven.html">English</a><a class="" href="../cn/polyhaven.html">简体</a><a class="" href="../tw/polyhaven.html">繁體</a><a class="" href="../ja/polyhaven.html">日本語</a><a class="" href="../ko/polyhaven.html">한국어</a><a class="" href="../ru/polyhaven.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Poly Haven Assets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#floor">Floor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment">Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Poly Haven Assets</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/polyhaven.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="poly-haven-assets">
+<h1>Poly Haven Assets<a class="headerlink" href="#poly-haven-assets" title="Permalink to this heading"></a></h1>
+<p>Okay, you’ve set up your board, and added your keycap profile and colourway. The camera is framing the subject nicely, but the lighting and floor are just not what you want.</p>
+<img alt="../images/PolyHaven_01.jpg" src="../images/PolyHaven_01.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>KRK comes preloaded with various floors and light setups to get you started, but you may wish to try alternative floors and lighting to add more variety. Polyhaven is a great resource for surfaces to render your boards on as well as HDRIs (High Dynamic Range Image) to light your scene. Let’s go through the process of loading them in.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Much of this process can be skipped if you own the Poly Haven addon. If you find yourself doing this often, I highly recommend it.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="floor">
+<h2>Floor<a class="headerlink" href="#floor" title="Permalink to this heading"></a></h2>
+<p>First visit the Poly Haven site (polyhaven.com) and click on Assets&gt;Textures in the top bar.</p>
+<img alt="../images/PolyHaven_02.jpg" src="../images/PolyHaven_02.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>There are several categories to choose from. For this example click on the Floor&gt;Indoor&gt;Man-Made category and choose Slab Tiles.</p>
+<img alt="../images/PolyHaven_03.jpg" src="../images/PolyHaven_03.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Click on the download button and allow the zip file to download. Browse to the download location and extract the zip file to it’s respective folder. You’ll notice that there is a blend file in the folder. This means that there is already an object in there that is already set up for use.</p>
+<img alt="../images/PolyHaven_04.jpg" src="../images/PolyHaven_04.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In order to import Blend file contents, you need to use the Append or Link function to bring it in. For this process, we’ll append the floor and not maintain a link to the original. In Blender, click on File&gt;Append to initiate the import of the Poly Haven floor. From here, choose the Object subcategory and find the floor which is likely named “Plane”.</p>
+<img alt="../images/PolyHaven_05.jpg" src="../images/PolyHaven_05.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>It will append into whichever collection you have active in the outliner. With the floor in your scene, you can now make changes to it.</p>
+<img alt="../images/PolyHaven_06.jpg" src="../images/PolyHaven_06.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By default, there is not enough geometry for the displacement to push and the scale of the texture feels too large for the context. Change that by plugging a Value node into the scale and set that to 2 to double the scale. Based on my camera angle, I also used the mapping node to move the texture 80mm. In the modifier tab, find the subdivision modifier and change the subdivision level to 10 in order to have more geometry to support the detail of the displacement image.</p>
+<img alt="../images/PolyHaven_07.jpg" src="../images/PolyHaven_07.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Since there is a displacement, It is also a good idea to move the floor object down. This one has been moved 7mm. The floor is now ready for rendering.</p>
+<img alt="../images/PolyHaven_08b.jpg" src="../images/PolyHaven_08b.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="environment">
+<h2>Environment<a class="headerlink" href="#environment" title="Permalink to this heading"></a></h2>
+<p>Keep in mind that while HDRI lighting adds a degree of realism, it also affects colour, which is fine for board and scene renders but not for kit renders where colour accuracy is critical. To add one in, go to Poly Haven and click on Assets&gt;HDRIs and choose one to download. In this example, we’re using Leadenhall Market which downloads as an EXR image file.</p>
+<img alt="../images/PolyHaven_09.jpg" src="../images/PolyHaven_09.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Disable the Lights collection in the Outliner.</p>
+<img alt="../images/PolyHaven_10.jpg" src="../images/PolyHaven_10.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Then in the Material Editor, click on the dropdown in the top left and switch it from Object to World. There is already a world set up. Unmute the image node by selecting it and pressing M, then click on Open to load in the Leadenhall Market image.</p>
+<img alt="../images/PolyHaven_11b.jpg" src="../images/PolyHaven_11b.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>You may wish to manipulate the image so create a Mapping node and Texture Coordinate and connect it as seen in the image. Here I’ve rotated the image 52 degrees to find an interesting highlight on the right edge of the board and also doubled the intensity of the HDRI.</p>
+<img alt="../images/PolyHaven_12b.jpg" src="../images/PolyHaven_12b.jpg" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="optimization.html" class="btn btn-neutral float-left" title="Optimizing Your Render" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="krk2max.html" class="btn btn-neutral float-right" title="KRK to 3ds Max" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

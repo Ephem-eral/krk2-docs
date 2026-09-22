@@ -1,0 +1,12 @@
+UV 에디터
+=========
+
+UV 에디터는 이미지 뷰어이자 UV 좌표 에디터입니다. 2D 이미지가 3D 공간에 매핑되었을 때 어떻게 보이는지 직관적으로 확인할 수 있습니다.
+
+.. image:: img/UVs.jpg
+
+|
+
+Blender의 UV 좌표에 대해 더 자세히 알아보려면 `Blender 매뉴얼: UV 설명 <https://docs.blender.org/manual/ko/latest/editors/uv/introduction.html#uvs-explained>`_ 을 참고하세요.
+
+|

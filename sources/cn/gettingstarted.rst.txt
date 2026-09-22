@@ -1,0 +1,30 @@
+快速上手
+========
+
+包装内容
+--------
+
+在下载页面里，你会拿到一个压缩包，里面包含一个 blend 文件、一个 txt 文件，以及若干与字符模板（legend template）相关的 SVG 和其他素材。请解压到同一个文件夹，让它们放在一起。这个 txt 文件是 Blender 资产管理的配套文件（sidecar），必须和 blend 文件放在一起。
+
+.. image:: img/KRK2Files.JPG
+
+|
+
+开始使用
+--------
+
+KRK2 的上手流程和初代 KRK 一样简单。用 Blender（3.3 或更高版本）打开 blend 文件，你需要的东西全都打包在文件里了。打开时 Blender 会询问是允许还是忽略文件内置的脚本——KRK2 面板依赖这个脚本运行，所以这里选「允许」。
+
+.. image:: img/allowscript.jpg
+
+|
+
+获取帮助
+--------
+
+加入我们的社区：
+`Discord <https://discord.gg/fVkGTunzT3>`_
+
+配套资料可以查 `Blender 官方手册 <https://docs.blender.org/manual/zh-hans/latest/index.html>`_。
+
+|

@@ -1,0 +1,46 @@
+Inkscape
+========
+
+레전드 파일은 Inkscape에서 제작하며, 무료로 내려받을 수 있습니다:
+
+`Inkscape <https://inkscape.org/>`_
+
+앞으로는 각 높이마다 개별 템플릿이 제공됩니다. KRK1은 모든 높이를 하나의 파일에 담았지만, 새로 모델링한 키캡은 UV 공간이 달라서 이제는 각각 독립된 템플릿으로 분리되었습니다.
+
+|
+
+svg를 열면 오른쪽 레이어 패널에 레전드와 키캡 상단 및 측면 템플릿이 있습니다. 레이어 패널이 보이지 않으면 Layer > Layers and Objects를 클릭하거나 Shift+Ctrl+L을 눌러 표시합니다.
+
+.. image:: img/InkscapeScreen.jpg
+
+|
+
+템플릿은 기본적으로 켜져 있어서 키캡의 손가락 접촉 영역을 참고해 레전드와 노벨티를 정렬할 수 있습니다. 다만 최종 결과물은 반드시 흰색 글자에 검은색 배경인 이미지여야 합니다.
+
+.. image:: img/LegendsDemo.jpg
+
+|
+
+새 레이어를 만들고 레전드를 붙여 넣습니다. 방향키로 위치를 미세 조정할 수 있습니다: Shift를 누르면 이동 폭이 커지고, Alt를 누르면 작아집니다. 템플릿 레이어는 실수로 선택하지 않도록 기본적으로 잠겨 있습니다.
+
+.. image:: img/InkscapeLayers.jpg
+
+|
+
+정렬 도구로 개별 키캡에 맞춰 정렬하려면 템플릿을 분리해야 합니다: 템플릿을 선택하고 Path > Break Apart를 클릭하거나 Ctrl+Shift+K를 누릅니다.
+
+.. image:: img/InkscapeAlign.jpg
+
+|
+
+레전드 배치가 끝나면 File > Export 또는 Ctrl+Shift+E로 내보내기 하여, 흰색 글자에 검은색 배경(WoB) 이미지를 4096x4096 또는 8192x8192 png로 내보냅니다. 사실 해상도와 형식은 상관없으며, 정사각형 이미지이기만 하면 됩니다.
+
+.. image:: img/InkscapeExport.jpg
+
+|
+
+노벨티나 레전드가 여러 색상이라면 검은색 배경을 끄고 투명 채널이 있는 이미지로 내보냅니다: Alpha 채널을 마스크로 사용하고, 색상을 레전드 색상에 연결합니다.
+
+.. image:: img/InkscapeFullColor.jpg
+
+|

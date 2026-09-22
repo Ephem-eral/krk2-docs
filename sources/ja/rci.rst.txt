@@ -1,0 +1,33 @@
+コレクションインスタンスを復元
+================================
+
+.. image:: img/RCI_Banner.jpg
+
+
+Restore Collection Instances（コレクションインスタンスを復元）は、Blender の機能の隙間を埋める小さなアドオンです。コレクションアセットは Blender 標準の "Make Instances Real" では正しく復元できません。親子階層は維持されますが、元のコレクション階層は保持されません。
+
+|
+
+以下は、「階層を保持」オプションを有効にした場合の Make Instances Real と Restore Collection Instances の結果の比較です。
+
+.. image:: img/RCIvsMIR.jpg
+
+この例では、元のコレクションアセットには 176 個のオブジェクトがあり、その一部は可視性がオフになっています。Make Instances Real では 161 個しか復元されず、さらにすべてのコレクション構造、構成、カラーが失われます。
+
+|
+
+.. image:: img/KRK2Divider.jpg
+
+|
+
+Restore Collection Instances はもともと Keyboard Render Kit の一部でしたが、汎用ツールとしても使えることがすぐに分かりました。
+
+|
+
+.. image:: img/KRK2Divider2.jpg
+
+|
+
+使い方は簡単です。Ctrl+A を押すと、適用メニューに表示されます。
+
+.. image:: img/RestoreCollectionInstances.jpg

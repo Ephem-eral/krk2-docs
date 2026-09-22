@@ -1,0 +1,370 @@
+更新日志
+========
+
+KRK211
+------
+
+新增：KitLighting_005 成为新的默认套件灯光
+
+新增：F1-8X WKL 键盘
+
+新增：F1-8X WK 键盘
+
+新增：Vanquish65 键盘
+
+新增：Serendipity 键盘
+
+新增：Zoom98 键盘
+
+新增：Zoom75 键盘
+
+新增：Switch_Complex_Box
+
+新增：Switch 分类，含 12 种配色的轴体
+
+新增：键盘支架配件（基础模型感谢 SpikedSynapse）
+
+新增：Floor_MarbleTile
+
+改进：合成器默认启用 Filmic → sRGB 色彩转换，并在视口中启用
+
+改进：调整 AluShimmer 节点，加入凹凸效果
+
+改进：微调色板颜色
+
+改进：为 Event Horizon 添加定位板几何体
+
+改进：把 Pheonix45 拆分为 3 个变体
+
+改进：可换字键帽默认加上聚碳酸酯（PC）
+
+修复：KAT 和 SA 上无刻键帽的命名
+
+修复：补充 CHE K0（R0）的 Home、End、Del 键
+
+修复：补充 CHE K7（R5）的 1.50 Super、1.00 Alt 和 Ctrl
+
+修复：为 CHE 高度补充开窗 NumLock
+
+修复：调整沙子材质
+
+|
+
+KRK210
+------
+
+升级到 Blender 4.0
+
+新增：ISOGR 键盘
+
+新增：Event Horizon 键盘
+
+新增：Bakeneko-60 键盘
+
+新增：Bakeneko-60PLA 键盘
+
+新增：Bakeneko-65 键盘
+
+新增：Bakeneko-65_PLA 键盘
+
+新增：Monsgeek M1 键盘
+
+新增：F# 键盘
+
+改进：更新 KLE 表格，让 KLE 导入更稳定（感谢 SpikedSynapse）
+
+改进：更新 KRK 脚本以兼容 4.x
+
+改进：把合成器标签页移到 KRK 标签页旁边
+
+修复：添加 AOV，修复漫反射颜色通道的问题
+
+修复：更新颜色 JSON，修复被复制的点缀色
+
+修复：桌垫纹理坐标从 Texture 改为 Point
+
+修复：KAT K3 1.5 Backspace 模型
+
+修复：Che-2 6.25 空格键的法线
+
+修复：OGR 底排默认值
+
+修复：CHE-2 问号的侧刻 UV 位置错误
+
+修复：轴体相对于 CHE-2 轴心的位置
+
+|
+
+KRK209
+------
+
+从 Blender 3.3 升级到 3.6
+
+新增：USBCableV3
+
+新增：DeskmatV3_Leather
+
+新增：字符偏移（Legend Offset）设置
+
+新增：Floor_TechPanel
+
+新增：Floor_CarbonFibre
+
+新增：Floor_DiamondPlate
+
+改进：DeskMatV3 提供更多包边控制
+
+改进：手托重制为 V2
+
+改进：拆分 Custom 和 Palette 开关，查看时不再改变键帽模式
+
+修复：W1AT 底排图层被关闭的问题
+
+|
+
+KRK208
+------
+
+新增：贴纸
+
+新增：Giga40 键盘
+
+新增：Thok Artisan Display 配件
+
+新增：Capsmat 里的 LegendSeam 宽度值
+
+新增：弹簧线材的线圈（Coil）设置，用于控制松紧
+
+改进：重做线材材质
+
+改进：更新 Model Thirteen
+
+改进：重做线材，改为以网格线起步，为后续更新做准备
+
+改进：Alu_Shimmer 节点组的噪波细节与噪波粗糙度
+
+改进：移除一些重复的材质节点组
+
+改进：重命名 Capsmat 节点组
+
+改进：为默认套件键帽添加自定义颜色值
+
+改进：把 Palette 重命名为 Palette8，以标明槽位数量
+
+改进：重做 Ikki68 Aurora 的 UV，以支持图案
+
+改进：线材上暴露更多设置
+
+修复：套件里的 LShift 色板值不一致，导致它不在默认选中组里
+
+修复：Stucco 地面在 Z 轴上偏低 1mm
+
+修复：拔轴器原点
+
+修复：G305 的朝向
+
+|
+
+KRK207
+------
+
+新增：Model Thirteen 键盘
+
+新增：Akuma 键盘
+
+新增：Floor_Stucco
+
+新增：Floor_HexTile
+
+新增：Palette16 节点组
+
+新增：Palette_E4 节点组（现在是字符的默认设置）
+
+新增：Palette_E8 节点组
+
+新增：1.5U Cherry 凸面空格
+
+新增：用于着色器混合的字符遮罩输出
+
+新增：可以调用带几何体字符的键帽模型的各种变体
+
+新增：可以导入导出配色方案（自定义颜色模式）
+
+改进：把 Palette_E 重命名为 Palette_E4A，标明是 4 个槽位并带 alpha
+
+改进：桌垫新增自定义形状选项（在修改器里找）
+
+改进：键帽定位键选项改名为 Variation，以承载更多功能
+
+修复：部分高度缺失键帽：K2 PgDn、K3 PgUp、K3 NumMinus、K4 End、K6 Fn、K3 1.5 Del、K4 1.5 Caps、K4 Pipe、K3 Pipe
+
+修复：把 DSA、DSS、KAM、KAT、OEM、SA 高度中所有定位键变体（F、J、Num5、H、A、U、N、T）从形态键中拆出来
+
+修复：SwitchComplex 几何体沿 Y 轴移动 0.33mm，更好地与轴心（十字柱）对齐
+
+|
+
+KRK206
+------
+
+新增：Akko ACR75 键盘
+
+新增：Akko Alice 键盘
+
+新增：下载内容中的 SLK 高度
+
+新增：下载内容中的 PBS 高度
+
+新增：下载内容中的 XDA 高度
+
+修复：修复 Blender 3.4 中 USB 线材 UV 损坏的问题
+
+修复：修复集合恢复会破坏 USB 线材控制的问题
+
+|
+
+KRK205
+------
+
+新增：Werk One 键盘
+
+新增：Kailh Choc V1 轴体
+
+新增：Kailh Choc 无刻键帽
+
+新增：MBK 无刻键帽
+
+改进：为 Polycarbonate2 添加光泽颜色
+
+改进：Restore Collections 的多项改进
+
+|
+
+KRK204
+------
+
+新增：KLE 导入器
+
+新增：Grid Cap 模型
+
+新增：1U Caps
+
+新增：IRON165 R2 键盘
+
+新增：IRON165 FE 键盘
+
+新增：IRON180 键盘
+
+改进：新增通用的 Ctrl+Alt+Super 键
+
+改进：Isometria 默认切换为 Iso
+
+改进：KRK 面板里的 Palette E 现在显示为 Legend
+
+改进：在原有的 CtrlL、AltL 等之外，新增按常规命名的 Ctrl、Alt、Super 键
+
+修复：移动 CapsStepped、BigEnter、EnterIso 的原点
+
+修复：把 >< 键重命名为 LessGreater
+
+修复：把 FN 重命名为 Fn
+
+|
+
+KRK203
+------
+
+新增：NK65 键盘
+
+改进：把键盘资产移到资产浏览器
+
+改进：把配列移到资产浏览器
+
+改进：把配件移到资产浏览器
+
+改进：把着色器从 Capsmat 中移出
+
+修复：为视口启用场景灯光和世界环境
+
+修复：套件里有些按键没有预载色板信息
+
+|
+
+KRK202
+------
+
+新增：拔键器配件
+
+改进：颜色 JSON 预载 KRK 默认主题，可以直接开始做键盘
+
+修复：DCS 的 ISO Not、2、3 键行号错误
+
+
+|
+
+KRK201
+------
+
+新增：全新的 KRK 面板
+
+新增：占位符高度
+
+新增：新的 Cherry 模型
+
+新增：新的 DCS 模型
+
+新增：capsmat 支持侧刻（适用于新的 Cherry 和 DCS）
+
+新增：色板材质工具
+
+新增：W1-AT 键盘
+
+新增：Vector65 键盘
+
+新增：MAN40 和 MAN60 键盘
+
+新增：Zoom65 键盘
+
+新增：Beak 6.5 键盘
+
+新增：Piggy 键盘
+
+新增：Mammoth75 键盘
+
+新增：Austin 键盘
+
+新增：Frog 键盘
+
+新增：Cake60 键盘
+
+新增：为大多数键盘添加定位板，并修改模型以容纳透明轴体
+
+新增：Switch Complex
+
+新增：Stab Complex
+
+新增：Stab Simple 7U
+
+新增：拔轴器配件
+
+新增：Polycarb2 材质组
+
+新增：更多线材变体
+
+新增：雷莫接头
+
+新增：USB Micro 接头
+
+新增：USB Mini 接头
+
+改进：拆分键帽高度
+
+改进：整理大纲视图中的键盘
+
+改进：重新建模航插接头
+
+改进：重建桌垫，使其更通用
+
+改进：重建 USB 线材，使其更通用
+
+改进：G305 材质，并添加属性

@@ -1,0 +1,12 @@
+UV 編輯器
+=========
+
+UV 編輯器既是影像檢視器，也是 UV 座標編輯器：你可以直觀地看到一張 2D 影像作為字根貼到 3D 空間後會是什麼效果。
+
+.. image:: img/UVs.jpg
+
+|
+
+想深入瞭解 Blender 的 UV 座標，看 `Blender 手冊：UV 說明 <https://docs.blender.org/manual/zh-hans/latest/editors/uv/introduction.html#uvs-explained>`_。
+
+|

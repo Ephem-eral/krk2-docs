@@ -1,0 +1,24 @@
+色彩管理
+========
+
+.. image:: img/AGX_F2sRGB.jpg
+
+Blender 的色彩管理基于线性色彩空间，视图变换（View Transform）默认是 AGX（4.0 之前为 Filmic）。这些视图变换能容纳很宽的动态范围，但不做后期处理时，你选好的颜色会显得发灰、对比度偏低。
+
+.. image:: img/ColourManagement.jpg
+
+|
+
+这套工作流的前提是你打算做后期处理，把颜色调得更接近真实效果。愿意这么做的人并不多（尤其是新用户），所以从 KRK 211 起，KRK 默认采用 Filmic + Medium High Contrast，再在后期（合成器）里把 Filmic 转成 sRGB，得到更符合预期的结果。
+
+.. image:: img/Compositor_Filmic2sRGB.jpg
+
+|
+
+视口已经设置好，你看到的内容都会经过合成器处理。如果新建 3D 视口，记得把合成（compositing）设为 Always，颜色才会被正确还原。
+
+.. image:: img/ViewportComp.jpg
+
+|
+
+记住，最终以你的眼睛为准：永远拿实物参考做对比。

@@ -1,0 +1,112 @@
+Keyboard Render Kit에 오신 것을 환영합니다!
+============================================
+
+.. image:: img/KRK2Banner.png
+
+Keyboard Render Kit 2를 사용해 주시고 지원해 주셔서 감사합니다!
+
+KRK2는 KRK1의 오브젝트 데이터 교체 워크플로를 계승하면서 더 유연하고 독립적이며 세분화된 구조로 발전시켰습니다. 키캡 프로파일(높이)은 더 이상 다른 모델의 지오메트리에 의존하지 않으며, 키보드는 자유롭게 이식할 수 있고, 각 구성 요소는 버전과 무관하게 개별적으로 업데이트할 수 있습니다.
+
+|
+
+실행 요구 사항
+--------------
+
+**Blender 3.3 이상**
+
+**Blender Cycles를 실행할 수 있는 컴퓨터**
+
+관련 링크
+---------
+
+`Gumroad <https://imperfectlink.gumroad.com/l/KRK2>`_
+|
+`BlenderMarket <https://blendermarket.com/products/krk2>`_
+|
+`Instagram <https://www.instagram.com/keyboardrenderkit/>`_
+|
+`Discord <https://discord.gg/fVkGTunzT3>`_
+|
+`레전드 리소스 저장소 <https://github.com/imperfectlink/KRKLegendsRepo>`_
+
+|
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 개요
+
+   gettingstarted
+   interface
+   krkpanel
+   assetbrowser
+   uveditor
+   materials
+   outliner
+   properties
+   colourman
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 재질
+
+   capsmat
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 레전드 제작
+
+   leg_inkscape
+   leg_illustrator
+   leg_designer
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 액세서리
+
+   deskmat
+   deskmat_custom
+   cables
+   mouse
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 튜토리얼
+
+   workflow1
+   workflow2
+   switchesstabs
+   board_custom
+   kle2krk
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 고급 정보
+
+   optimization
+   polyhaven
+   krk2max
+   krk2c4d
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 참고
+
+   troubleshooting
+   recipes
+   profiles
+   boards
+   releases
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: 리소스
+
+   rci

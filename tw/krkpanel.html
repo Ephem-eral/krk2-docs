@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRK 面板 &mdash; Keyboard Render Kit 2 繁體中文文件</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.tw.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.tw.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜尋" href="search.html" />
+    <link rel="next" title="資產瀏覽器" href="assetbrowser.html" />
+    <link rel="prev" title="介面" href="interface.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/krkpanel.html">English</a><a class="" href="../cn/krkpanel.html">简体</a><a class="active" href="../tw/krkpanel.html">繁體</a><a class="" href="../ja/krkpanel.html">日本語</a><a class="" href="../ko/krkpanel.html">한국어</a><a class="" href="../ru/krkpanel.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">概覽</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">快速上手</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">包裝內容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">開始使用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">取得幫助</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">介面</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id2">資產瀏覽器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#uv">UV 編輯器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#d">3D 視圖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id3">著色器編輯器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id5">大綱視圖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id7">屬性</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KRK 面板</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#relink">Relink（重新連結）</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#kle">匯入 KLE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#profile">Profile（高度）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#row">Row（行）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#size">Size（尺寸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key">Key（按鍵）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#homing">Homing（定位鍵）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#link-material">Link Material（連結材質）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-settings">Copy Settings（複製設定）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data">Data（資料）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#color">Color（顏色）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties（屬性）</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">資產瀏覽器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">配件資產</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">鍵盤資產</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">材質資產</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">材質工具</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV 編輯器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">著色器編輯器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">大綱視圖</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">套件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">鍵盤</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">配列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">配件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">場景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">攝影機</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">燈光</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">結構</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">鍵帽高度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV 設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">零件</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">屬性編輯器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">渲染屬性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">渲染裝置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">取樣</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">降噪</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">膠片透明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">色彩管理</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">輸出屬性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">解析度</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">場景屬性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">作用中攝影機</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">物件資料屬性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">物件資料</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UV 貼圖</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">材質屬性</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">材質索引</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">材質連結</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">色彩管理</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">材質</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat（鍵帽材質）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">設定項</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap（鍵帽底色）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（字根）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（字根遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（字根銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（字根粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（副字根）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（副字根遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（副字根銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（副字根粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front（側刻）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask（側刻遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front（側刻銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight（側刻粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness（粗糙度）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale（凹凸比例）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump（頂部凹凸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump（側面凹凸）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（字根接縫）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">遮罩</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">色板工作流程</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">製作字根</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">配件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">桌墊</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">尺寸</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">包邊</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">邊緣印刷</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">包邊顏色</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">材質</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">匯出</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">新增自己的桌墊設計</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB 線材</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">設定項</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color（顏色）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip（翻轉）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror（鏡像）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（編織網管）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">直線線材</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">材質</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">匯出線材</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">滑鼠</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">教學</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">你的第一次套件渲染</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">你的第一次鍵盤渲染</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">新增軸體與衛星軸</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">自訂鍵盤準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE 到 KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">進階資訊</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">最佳化你的渲染</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">解析度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">渲染取樣</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">降噪</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#id6">實際應用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 素材</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">環境</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK 到 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK 到 Cinema 4D</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">參考</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">常見問題（FAQ）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">如何安裝 Keyboard Render Kit？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">為什麼 Blender 提示我要執行腳本？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">我的鍵帽去哪兒了？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">我的資產瀏覽器是空的。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">鍵盤沒有出現在資產瀏覽器裡。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">我的鍵帽上沒有材質。</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">鍵帽配方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">鍵帽高度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">額外高度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">鍵盤</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">更新日誌</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">資源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">還原集合實例</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">KRK 面板</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/tw/krkpanel.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="krk">
+<h1>KRK 面板<a class="headerlink" href="#krk" title="本標頭的永久連結"></a></h1>
+<img alt="../images/krkpanel204.jpg" src="../images/krkpanel204.jpg" />
+<p>KRK 面板在側邊欄（按 N 呼出）裡，分為四個區域：Relink、Data、Color 和 Properties。最後兩個區域只在對應屬性可用時才出現。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="relink">
+<h2>Relink（重新連結）<a class="headerlink" href="#relink" title="本標頭的永久連結"></a></h2>
+<p>Relink 是物件資料管理器，用來快速切換鍵帽高度、行、尺寸、按鍵類型和定位鍵（homing）。凡是勾選的選項，按 Set 時都會生效。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="kle">
+<h3>匯入 KLE<a class="headerlink" href="#kle" title="本標頭的永久連結"></a></h3>
+<p>KRK 可以匯入 Keyboard Layout Editor 的 JSON 檔案。KLE 不給物件命名，所以匯入器會根據字根和行（K1-K6）來推斷按鍵，並在能推斷的地方放置佔位符。可以用這個 KLE 作為範例，或者以它為基礎產生你自己的配列：</p>
+<p><a class="reference external" href="http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a">http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="profile">
+<h3>Profile（高度）<a class="headerlink" href="#profile" title="本標頭的永久連結"></a></h3>
+<img alt="../images/KRK2ProfileSwitch.gif" src="../images/KRK2ProfileSwitch.gif" />
+<p>可用的高度和它們的前綴在大綱視圖的 Profile 集合裡；行和其他選項用幾次就有感覺了。把選項填進對應輸入框（區分大小寫），勾選後按 Set 生效。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="row">
+<h3>Row（行）<a class="headerlink" href="#row" title="本標頭的永久連結"></a></h3>
+<img alt="../images/KRKRows.jpg" src="../images/KRKRows.jpg" />
+<p>由於不同廠商、不同鍵帽高度使用的行編號體系各不相同，KRK 又引入了一套自己的編號，以鍵盤上的實際位置為準，從最後排開始數。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>高度</p></th>
+<th class="head"><p>可選</p></th>
+<th class="head"><p>行</p></th>
+<th class="head"><p>可選</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>KRK</p></td>
+<td><p>0</p></td>
+<td><p>1-2-3-4-5-6</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cherry</p></td>
+<td><p>0</p></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>DCS</p></td>
+<td><p>5</p></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSA</p></td>
+<td></td>
+<td><p>Uniform</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSS</p></td>
+<td></td>
+<td><p>1-1-2-3-4-3</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>KAM</p></td>
+<td></td>
+<td><p>Uniform</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>KAT</p></td>
+<td><p>5</p></td>
+<td><p>4-4-3-2-1-1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>OEM</p></td>
+<td></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SA</p></td>
+<td></td>
+<td><p>1-1-2-3-4-3</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+<p>有些高度的第一行和／或最後一行可以互換。</p>
+<p>（表中的 Uniform 表示所有行同高，需要原樣輸入。）</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="size">
+<h3>Size（尺寸）<a class="headerlink" href="#size" title="本標頭的永久連結"></a></h3>
+<img alt="../images/KRK2ShiftSize.gif" src="../images/KRK2ShiftSize.gif" />
+<p>在輸入框裡填入四位字根的尺寸單位（unit size）就能改變鍵帽尺寸；只要目標幾何體存在，鍵帽就會變成你要的大小。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="key">
+<h3>Key（按鍵）<a class="headerlink" href="#key" title="本標頭的永久連結"></a></h3>
+<img alt="../images/Releg.jpg" src="../images/Releg.jpg" />
+<p>在輸入框裡填鍵帽名稱，就能把鍵帽換成別的鍵帽。想換成可換字鍵帽（Releg）、無刻鍵帽（Blank）或開窗鍵帽（<code class="docutils literal notranslate"><span class="pre">*_WIN</span></code>）時特別方便。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="homing">
+<h3>Homing（定位鍵）<a class="headerlink" href="#homing" title="本標頭的永久連結"></a></h3>
+<img alt="../images/KRK2Homing.gif" src="../images/KRK2Homing.gif" />
+<p>用這個下拉選單在橫槓／凸點／凹面（bar/nub/scoop）之間切換定位鍵類型，然後點 Set。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="link-material">
+<h3>Link Material（連結材質）<a class="headerlink" href="#link-material" title="本標頭的永久連結"></a></h3>
+<p>Link Material 可以把目前已應用的材質帶到目標物件資料上。要開還是要關取決於你想要的結果：比如換成佔位符高度（PLA）時，就該把它關掉，免得 Capsmat 也帶到佔位符上。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="copy-settings">
+<h3>Copy Settings（複製設定）<a class="headerlink" href="#copy-settings" title="本標頭的永久連結"></a></h3>
+<img alt="../images/CopySettings.jpg" src="../images/CopySettings.jpg" />
+<p>Set 按鈕右側是 Copy Settings，它把物件資料名複製到物件資料下拉選單裡，方便查詢某個特定按鍵。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>以下區域只顯示目前啟用（高亮）物件對應的選項。</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="data">
+<h2>Data（資料）<a class="headerlink" href="#data" title="本標頭的永久連結"></a></h2>
+<p>Data 把屬性面板裡的物件資料和材質指派搬了過來，存取更方便。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>在這裡可以快速搜尋物件資料，把目前的換成另一個。例如複製或實例化一個鍵帽，再把副本變成軸體或衛星軸。</p>
+<img alt="../images/ObjectDataSwitch.gif" src="../images/ObjectDataSwitch.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>鍵帽因為複製、匯入或貼上而無法重新連結時，用 Restore Meshes 就能把它和檔案裡同名的版本重新接上。如果你想以匯入進來的那個為基準，就把它的物件資料重新命名，去掉結尾的 .001。</p>
+<img alt="../images/RestoreMesh.gif" src="../images/RestoreMesh.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Restore Collections 只在選取集合資產時出現，用來把它還原成可編輯狀態。</p>
+<img alt="../images/RestoreCollection.jpg" src="../images/RestoreCollection.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>這裡的 Copy 會把目前啟用鍵帽上的材質連結到其他所有選取的鍵帽，同時忽略非鍵帽物件。</p>
+<img alt="../images/MatCopy.gif" src="../images/MatCopy.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="color">
+<h2>Color（顏色）<a class="headerlink" href="#color" title="本標頭的永久連結"></a></h2>
+<p>Color 是一套顏色與色板管理系統，幫你控制 Capsmat 裡和顏色相關的屬性，只在顏色屬性可用時顯示。
+如果選取的鍵帽沒有顏色屬性，會出現 Setup 按鈕，用來給這個鍵帽補上所需的全部屬性。</p>
+<img alt="../images/ColorSetup.jpg" src="../images/ColorSetup.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Custom/Palette 開關讓你在自訂顏色和色板兩套工作流程之間切換。顏色 A-E 和色板滑桿 A-E 透過色板節點組，讓你逐個物件地控制 Capsmat 的這些部分。選好後按 Set 會應用到所有選取的鍵帽；也可以按各自的複製按鈕，一次只複製一項。底部的 Copy 和 Paste 用來為所有選取物件建立並叫回一套選項記錄。</p>
+<img alt="../images/ColorSetPaste.gif" src="../images/ColorSetPaste.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="properties">
+<h2>Properties（屬性）<a class="headerlink" href="#properties" title="本標頭的永久連結"></a></h2>
+<p>Properties 同樣只在自訂屬性可用時顯示：選取 USB 線材顯示線材選項，比如編織／TechFlex 和接頭熱縮管的顏色；選取桌墊則顯示尺寸和包邊選項。</p>
+<img alt="../images/KRK2PanelProps.gif" src="../images/KRK2PanelProps.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="interface.html" class="btn btn-neutral float-left" title="介面" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="assetbrowser.html" class="btn btn-neutral float-right" title="資產瀏覽器" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版權所有 2022, ImperfectLink。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

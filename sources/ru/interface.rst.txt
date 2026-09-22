@@ -1,0 +1,75 @@
+Интерфейс
+=========
+
+.. image:: img/UIOverview.PNG
+
+По расположению интерфейс KRK2 ближе всего к рабочей области Blender «Шейдинг» (Shading): отличие в том, что левая колонка вместо файлового браузера и редактора изображений занята браузером ассетов и UV-редактором, а на боковой панели добавлена вкладка KRK.
+
+|
+
+Браузер ассетов
+---------------
+
+.. image:: img/UI_Asset.png
+
+Браузер ассетов содержит множество полезных материалов, сгруппированных по типу и производителю.
+
+`Руководство Blender: Браузер ассетов <https://docs.blender.org/manual/ru/latest/editors/asset_browser.html>`_
+
+|
+
+UV-редактор
+-----------
+
+.. image:: img/UI_UV.png
+
+Эта панель служит и средством просмотра изображений, и отображением координат легенд на кейкапах.
+
+`Руководство Blender: UV-редактор <https://docs.blender.org/manual/ru/latest/editors/uv/introduction.html>`_
+
+|
+
+3D-вьюпорт
+----------
+
+.. image:: img/UI_VP.png
+
+Здесь вы редактируете киты, раскладки, освещение, ракурсы камеры и т. д. На боковой панели расположена панель KRK для управления кейкапами.
+
+`Руководство Blender: 3D-вьюпорт <https://docs.blender.org/manual/ru/latest/editors/3dview/introduction.html>`_
+
+|
+
+Редактор шейдеров
+-----------------
+
+.. image:: img/UI_Mats.png
+
+Здесь вы управляете внешним видом и свойствами материалов.
+
+`Руководство Blender: Редактор шейдеров <https://docs.blender.org/manual/ru/latest/editors/shader_editor.html>`_
+
+|
+
+Структура (Outliner)
+--------------------
+
+.. image:: img/UI_Out.png
+
+Здесь отображается иерархия blend-файла. Киты, клавиатуры, раскладки, аксессуары, камеры, освещение, поверхность, профили кейкапов и т. д. находятся здесь, и здесь же можно управлять их видимостью.
+
+`Руководство Blender: Структура (Outliner) <https://docs.blender.org/manual/ru/latest/editors/outliner/introduction.html>`_
+
+|
+
+Свойства
+--------
+
+.. image:: img/UI_Props.png
+
+Остальные свойства распределены по вкладкам.
+
+`Руководство Blender: Редактор свойств <https://docs.blender.org/manual/ru/latest/editors/properties_editor.html>`_
+
+
+|

@@ -1,0 +1,44 @@
+Affinity Designer
+=================
+
+今後每個高度都會有各自的模板。KRK1 把所有高度放在一個檔案裡，但新建模的鍵帽 UV 空間不同，所以現在也拆分成了各自獨立的模板。
+
+|
+
+和 Inkscape 類似，開啟 svg 後，右側的圖層面板裡有字根，也有鍵帽頂部和側面的模板。
+
+.. image:: img/AffinityScreen.jpg
+
+|
+
+模板預設開啟，方便你參照鍵帽的手指接觸區域對齊字根和個性圖案。不過記住，最終產出必須是白字黑底的影像。
+
+.. image:: img/AffinityLegends.jpg
+
+|
+
+新增一個圖層，把字根貼進去。用方向鍵可以微調位置，按住 Shift 步長更大。
+
+.. image:: img/AffinityLayers.jpg
+
+|
+
+想用對齊工具按單個鍵帽對齊，就需要把模板拆開：選取它，點 Layer > Geometry > Separate Curves。
+
+.. image:: img/AffinitySeparate.jpg
+
+|
+
+字根擺好後，用 File > Export 或 Ctrl+Alt+Shift+S 匯出，把白字黑底（WoB）影像導成 4096x4096 或 8192x8192 的 png。其實解析度和格式都無所謂，只要是正方形影像。
+
+.. image:: img/AffinityExport.jpg
+
+|
+
+如果個性圖案或字根是多彩的，就關掉黑色背景，匯出帶透明通道的影像：用 Alpha 通道當遮罩，再把顏色接到字根顏色上。
+
+|
+
+.. image:: img/AffinityColor.jpg
+
+|

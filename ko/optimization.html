@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>렌더링 최적화 &mdash; Keyboard Render Kit 2 한국어 문서</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.ko.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.ko.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Poly Haven 에셋" href="polyhaven.html" />
+    <link rel="prev" title="KLE에서 KRK로" href="kle2krk.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/optimization.html">English</a><a class="" href="../cn/optimization.html">简体</a><a class="" href="../tw/optimization.html">繁體</a><a class="" href="../ja/optimization.html">日本語</a><a class="active" href="../ko/optimization.html">한국어</a><a class="" href="../ru/optimization.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">개요</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">빠른 시작</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">패키지 내용물</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">시작하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">도움말</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">인터페이스</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id2">에셋 브라우저</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#uv">UV 에디터</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#d">3D 뷰포트</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id3">셰이더 에디터</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id5">아웃라이너</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#id7">속성</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK 패널</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink(재링크)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">KLE 가져오기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile(높이)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row(행)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size(크기)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key(키)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing(위치 키)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material(재질 링크)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings(설정 복사)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data(데이터)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color(색상)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties(속성)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">에셋 브라우저</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">액세서리 에셋</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">키보드 에셋</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">머티리얼 에셋</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">머티리얼 도구</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">셰이더 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">아웃라이너</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">키트</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">키보드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">레이아웃(배열)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">액세서리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">씬</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">카메라</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">조명</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">바닥</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">구조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">키캡 프로파일(높이)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">부품</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">속성 에디터</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">렌더 속성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">렌더 장치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">샘플 수</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">노이즈 제거</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">필름 투명</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">색 관리</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">출력 속성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">해상도</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">씬 속성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">활성 카메라</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">오브젝트 데이터 속성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">오브젝트 데이터</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UV 맵</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">재질 속성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">재질 인덱스</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">재질 링크</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">색 관리</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">재질</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat(키캡 재질)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">설정 항목</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap(키캡 바탕색)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend(레전드)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask(레전드 마스크)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend(레전드 샤픈)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight(레전드 굵기)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub(서브 레전드)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask(서브 레전드 마스크)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub(서브 레전드 샤픈)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight(서브 레전드 굵기)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front(측면 레전드)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask(측면 레전드 마스크)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front(측면 레전드 샤픈)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight(측면 레전드 굵기)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness(러프니스)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale(범프 비율)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump(상단 범프)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump(측면 범프)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam(레전드 이음새)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">마스크</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">팔레트 워크플로</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">레전드 제작</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">액세서리</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">데스크매트</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">치수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">가장자리 마감</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">가장자리 인쇄</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">가장자리 마감 색상</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">재질</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">내보내기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">데스크매트에 나만의 디자인 추가하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB 케이블</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug(연결)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color(색상)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip(뒤집기)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror(미러)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex(슬리브)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">직선 케이블</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">머티리얼</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">케이블 내보내기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">마우스</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">튜토리얼</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">첫 번째 키트 렌더링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">첫 번째 키보드 렌더링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">스위치와 스태빌라이저 추가하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">커스텀 키보드 준비</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE에서 KRK로</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">고급 정보</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">렌더링 최적화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">해상도</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">샘플 수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">노이즈 제거</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optix">Optix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">실제 적용</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 에셋</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">바닥</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">환경</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK에서 3ds Max로</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK에서 Cinema 4D로 내보내기</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">참고</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">자주 묻는 질문(FAQ)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">Keyboard Render Kit은 어떻게 설치하나요?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Blender가 스크립트를 실행하라고 하는 이유는 무엇인가요?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">제 키캡은 어디로 갔나요?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">제 에셋 브라우저가 비어 있습니다.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">키보드가 에셋 브라우저에 나타나지 않습니다.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">제 키캡에 머티리얼이 없습니다.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">키캡 레시피</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">키캡 높이</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">추가 높이</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">키보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">변경 로그</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">리소스</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">컬렉션 인스턴스 복원</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">렌더링 최적화</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/ko/optimization.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>렌더링 최적화<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h1>
+<p>씬 복잡도 외에도 렌더링 시간과 화질에 영향을 주는 주요 요인이 몇 가지 있습니다.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="id2">
+<h2>해상도<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>해상도는 렌더링 소요 시간에 큰 영향을 줍니다. 너무 낮으면 화면에 픽셀 블록이 생기고, 대각선에 계단 현상이 나타나며, 디테일도 마땅히 가져야 할 선명도를 잃습니다.</p>
+<img alt="../images/ResLow.png" src="../images/ResLow.png" />
+<img alt="../images/ResHi.png" src="../images/ResHi.png" />
+<p>예를 들어: 백분율 슬라이더를 200%로 설정하면 해상도가 2K에서 4K로 두 배가 됩니다. 화질은 확실히 더 정교해지지만, 컴퓨터가 처리해야 할 픽셀 수는 네 배가 됩니다. 더 선명한 이미지를 얻는 대신 렌더링 시간이 크게 늘어납니다.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id3">
+<h2>샘플 수<a class="headerlink" href="#id3" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>샘플 수도 렌더링 최적화의 핵심입니다. 샘플 수가 너무 적으면 화면에 노이즈가 생깁니다. 해상도와 마찬가지로 샘플 수를 높이면 화질이 개선되지만, 렌더링 시간이 기하급수적으로 증가합니다.</p>
+<img alt="../images/Samples16.png" src="../images/Samples16.png" />
+<img alt="../images/Samples1600.png" src="../images/Samples1600.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id4">
+<h2>노이즈 제거<a class="headerlink" href="#id4" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>디지털 이미지가 등장한 이래로 노이즈 제거에 대한 수요도 함께 있었습니다. 소재가 디지털 사진이든, 스캔본이든, 완전히 컴퓨터로 생성한 것이든 처리 방법은 통용됩니다. 최근에는 패스 트레이싱 렌더링이 새로운 알고리즘의 발전을 이끌었고, 심지어 머신 러닝으로 해결하기 시작했습니다.
+Blender는 몇 가지 노이즈 제거 알고리즘을 제공하는데, 아래 두 가지를 중점적으로 살펴보겠습니다.</p>
+</section>
+<section id="optix">
+<h2>Optix<a class="headerlink" href="#optix" title="이 제목에 대한 퍼머링크"></a></h2>
+<img alt="../images/Optix.jpg" src="../images/Optix.jpg" />
+<p>Nvidia의 머신 러닝 노이즈 제거 알고리즘으로, RTX 20 시리즈 이후의 Nvidia 그래픽 카드에서 실행할 수 있습니다. 전용 텐서 코어를 사용하기 때문에 속도가 매우 빠르지만, Nvidia 사용자로 제한됩니다. 더 많은 정보는 <a class="reference external" href="https://developer.nvidia.com/optix-denoiser">NVIDIA 공식 페이지</a> 를 참조하세요.</p>
+</section>
+<section id="open-image-denoise">
+<h2>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="이 제목에 대한 퍼머링크"></a></h2>
+<img alt="../images/OID.jpg" src="../images/OID.jpg" />
+<p>Intel에서 만든 또 다른 머신 러닝 노이즈 제거 알고리즘입니다. 이름에서 알 수 있듯이 오픈 소스이며, 다양한 CPU 모델과 아키텍처에서 실행할 수 있습니다. 속도는 Optix보다 느리지만 효과가 매우 뛰어나며, 투명도가 있는 씬, 예를 들어 폴리카보네이트(PC) 키보드를 렌더링할 때 더 유리합니다. Open Image Denoise에 대한 더 많은 정보는 <a class="reference external" href="https://www.openimagedenoise.org/">공식 사이트</a> 를 참조하세요.</p>
+</section>
+<section id="id6">
+<h2>실제 적용<a class="headerlink" href="#id6" title="이 제목에 대한 퍼머링크"></a></h2>
+<img alt="../images/CompositorDenoise.jpg" src="../images/CompositorDenoise.jpg" />
+<p>두 알고리즘 모두 옵션에서 활성화하여 뷰포트와 최종 렌더링에 사용할 수 있습니다. 다만 컴포지터에서 사용할 때는 Open Image Denoise가 더 빠릅니다. KRK는 이미 컴포지터 노드를 구성해 두었으므로, 컴포지터 패널 왼쪽 상단의 체크박스로 활성화하기만 하면 됩니다.</p>
+<img alt="../images/Denoised256.png" src="../images/Denoised256.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>노이즈 제거를 더 깊이 이해하려면 <a class="reference external" href="https://docs.blender.org/manual/ko/latest/render/cycles/optimizations/reducing_noise.html">Blender 매뉴얼: 노이즈 줄이기</a> 를 참조하세요.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="kle2krk.html" class="btn btn-neutral float-left" title="KLE에서 KRK로" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="polyhaven.html" class="btn btn-neutral float-right" title="Poly Haven 에셋" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 저작권 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

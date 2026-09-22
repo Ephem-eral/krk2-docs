@@ -1,0 +1,33 @@
+恢复集合实例
+============
+
+.. image:: img/RCI_Banner.jpg
+
+
+Restore Collection Instances（恢复集合实例）是一个小插件，用来补上 Blender 的一个功能缺口：集合资产（collection asset）用 Blender 自带的 "Make Instances Real" 无法正确还原——它能保留父子层级，却保不住原始的集合层级。
+
+|
+
+下面是开启「保持层级」选项时的 Make Instances Real 与 Restore Collection Instances 的结果对比。
+
+.. image:: img/RCIvsMIR.jpg
+
+这个例子里，原始集合资产有 176 个物体，其中一部分关闭了可见性。Make Instances Real 只还原了 161 个，而且丢掉了所有集合结构、组织方式和颜色。
+
+|
+
+.. image:: img/KRK2Divider.jpg
+
+|
+
+Restore Collection Instances 最初只是 Keyboard Render Kit 的一部分，但我们很快发现它可以当通用工具用。
+
+|
+
+.. image:: img/KRK2Divider2.jpg
+
+|
+
+用法很简单：按 Ctrl+A，在 apply（应用）菜单里就能找到它。
+
+.. image:: img/RestoreCollectionInstances.jpg

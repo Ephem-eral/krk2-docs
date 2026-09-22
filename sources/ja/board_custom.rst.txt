@@ -1,0 +1,126 @@
+カスタムキーボードの準備
+========================
+
+このチュートリアルでは、使用するCADソフトウェアのエクスポート設定については扱いません。まず設計をOBJまたはFBXとしてエクスポートし、その後Blenderにインポートします。別の方法として、BlenderアドオンのStepperを使ってSTEP/STPファイルを直接インポートすることもできます。
+
+|
+
+ここでは、Alchemist Keyboards AellaのレンダリングファイルをOBJに変換したものを例として使用します。`右クリックして名前を付けて保存 <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
+
+|
+
+.. image:: img/DelAll.gif
+
+新しいBlenderファイルを作成し、A X Dを押してデフォルトの内容（立方体、カメラ、ライト）を削除し、プロパティパネルのScene Propertiesタブで単位をミリメートル（millimeters）に設定します。
+
+.. image:: img/SetUnitsMM.jpg
+
+|
+
+次にAellaのOBJをインポートします：File > Import > Wavefront Obj（F4 I W）をクリックします。
+
+.. image:: img/ImportObj.jpg
+
+|
+
+すぐにスケールが正しくないことがわかります。ここではミリメートル単位がメートルとしてインポートされています。
+
+.. image:: img/Resize1.jpg
+
+|
+
+S 0.001を押して、キーボードを1000分の1に縮小します。縮小後は見えなくなる可能性があるので、Homeキーを押してビューを再びフレームに収めます。
+
+.. image:: img/Resize2.jpg
+
+|
+
+次にスケールと回転を適用します：Ctrl+Aを押し、もう一度Aを押して、All Transforms（すべてのトランスフォームを適用）を選択します。
+
+.. image:: img/Resize3.jpg
+
+|
+
+次に移動ハンドルを作成します：Add > Mesh > Plane（Shift+A M P）。
+
+.. image:: img/MoveHandle1.jpg
+
+|
+
+Shiftを押しながらキーボードのボトムケースをクリックして選択に追加し、Object > Transform > Align Objectsで平面を整列させます：ダイアログでShiftを押しながらX軸とY軸の両方をクリックして選択します。
+
+.. image:: img/MoveHandle2.jpg
+
+|
+
+もう一度Align Objectsを繰り返しますが、今回はAlign ModeをNegative Sides（負方向側）に設定し、軸にZを選択します。
+
+.. image:: img/MoveHandle3.gif
+
+|
+
+平面の位置が正しくなったら、キーボードの底面より少し大きくなるように縮小し（S X、次にS Y）、スケールを適用します。
+
+.. image:: img/MoveHandle4.gif
+
+|
+
+Object > Convert > Curveでカーブに変換します。移動ハンドルが完成しました。
+
+.. image:: img/MoveHandle5.jpg
+
+|
+
+キーボードのすべてのオブジェクトをこの移動ハンドルにペアレント化します：移動ハンドルを選択したまま、Aを押してすべて選択し、Ctrl+P > Object (Keep Transform)を実行します。これで移動ハンドルを動かすと、他の部分も一緒に動きます。Alt+Gを押して位置をクリアし、移動ハンドルとそのすべての子オブジェクトをワールド原点にリセットします。
+
+.. image:: img/MoveHandle6.gif
+
+|
+
+次にキーキャップのレイアウトをインポートします。ここでは75%レイアウトを使用します：File > Appendをクリックし、KRK201ファイルを参照してダブルクリックで開きます（blendファイルはフォルダーと同じように動作します）。Collectionsに入り、75を検索して75コレクションを追加します。
+
+.. image:: img/ImportLayout.jpg
+
+|
+
+そのコレクションのビューポート表示も有効にする必要があるかもしれません：アウトライナーでビューポート無効化フィルター（viewport disable filter）を開き、75コレクションにチェックを入れます。
+
+.. image:: img/75Vis.gif
+
+|
+
+レイアウトに付属する移動ハンドル（十字形の空オブジェクト）を選択し、メインキーエリア（Alphas）を参照してレイアウトを適切な位置に移動し、X軸で7度回転させます（これがAellaの傾斜角です）。
+
+.. image:: img/75MoveLayout.gif
+
+|
+
+レイアウトの移動ハンドルをキーボードの移動ハンドルにペアレント化します。
+
+.. image:: img/75MoveLayoutParent.gif
+
+|
+
+プレースホルダーはキーボードのレイアウトに合わせて1つずつ移動する必要があります。グリッドサイズ（grid size）に0.002381を入力すると、スナップ増分を1/8単位に設定できます。
+
+.. image:: img/SnapIncrementGrid.jpg
+
+|
+
+Tsangan配列の最下段を開きます。
+
+.. image:: img/75BottomRow.gif
+
+|
+
+移動するプレースホルダーを選択し、軸拘束を使って移動します：G XでX軸に沿って、G YYでローカルY軸に沿って、といった具合です。Winキーは削除し、Altキーは左側のキーからリンク複製します（Ctrl+Lを押してからO）。Ctrlを押すか、磁石アイコンをクリックしてスナップを有効にすると、スナップ増分を使用できます。
+
+.. image:: img/AellaLayoutAjust.gif
+
+|
+
+これでキーボードの準備が整い、KRK2にも対応しました。配布用に圧縮blendファイルとして保存し、KRK2にインポートします。
+
+.. image:: img/AellaExport.jpg
+
+|

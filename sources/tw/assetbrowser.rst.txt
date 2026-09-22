@@ -1,0 +1,34 @@
+資產瀏覽器
+==========
+
+配件資產
+--------
+
+配件在 Accessory（配件）分類下。
+
+.. image:: img/AccessorySection.jpg
+
+鍵盤資產
+--------
+
+鍵盤模型在 Boards（鍵盤）分類下。
+
+.. image:: img/BoardSection.jpg
+
+材質資產
+--------
+
+資產瀏覽器預置了許多實用材質，並按類型和廠商分類，可以直接拖到 3D 視圖裡的物件上。
+
+.. image:: img/AssetBrowserMaterial.gif
+
+|
+
+材質工具
+--------
+
+.. image:: img/MaterialUtilities.JPG
+
+自己動手做材質時，可以把這些工具拖進材質編輯器來新增效果。
+
+|

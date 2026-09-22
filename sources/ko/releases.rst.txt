@@ -1,0 +1,370 @@
+변경 로그
+=========
+
+KRK211
+------
+
+추가: KitLighting_005가 새로운 기본 키트 조명이 됨
+
+추가: F1-8X WKL 키보드
+
+추가: F1-8X WK 키보드
+
+추가: Vanquish65 키보드
+
+추가: Serendipity 키보드
+
+추가: Zoom98 키보드
+
+추가: Zoom75 키보드
+
+추가: Switch_Complex_Box
+
+추가: Switch 카테고리, 12가지 색상의 스위치 포함
+
+추가: 키보드 스탠드 액세서리 (기본 모델 제공: SpikedSynapse)
+
+추가: Floor_MarbleTile
+
+개선: 컴포지터에서 Filmic → sRGB 색 변환이 기본으로 활성화되고 뷰포트에서도 활성화됨
+
+개선: AluShimmer 노드 조정, 범프 효과 추가
+
+개선: 팔레트 색상 미세 조정
+
+개선: Event Horizon에 플레이트 지오메트리 추가
+
+개선: Pheonix45를 3가지 변형으로 분리
+
+개선: 레전드 교체형 키캡에 폴리카보네이트(PC) 기본 추가
+
+수정: KAT 및 SA의 무각 키캡 이름 지정
+
+수정: CHE K0(R0)의 Home, End, Del 키 추가
+
+수정: CHE K7(R5)의 1.50 Super, 1.00 Alt 및 Ctrl 추가
+
+수정: CHE 높이에 개구부 NumLock 추가
+
+수정: 모래 재질 조정
+
+|
+
+KRK210
+------
+
+Blender 4.0으로 업그레이드
+
+추가: ISOGR 키보드
+
+추가: Event Horizon 키보드
+
+추가: Bakeneko-60 키보드
+
+추가: Bakeneko-60PLA 키보드
+
+추가: Bakeneko-65 키보드
+
+추가: Bakeneko-65_PLA 키보드
+
+추가: Monsgeek M1 키보드
+
+추가: F# 키보드
+
+개선: KLE 표 업데이트, KLE 가져오기가 더 안정적으로 작동 (제공: SpikedSynapse)
+
+개선: 4.x 호환을 위한 KRK 스크립트 업데이트
+
+개선: 컴포지터 탭을 KRK 탭 옆으로 이동
+
+수정: AOV 추가, 디퓨즈 색상 채널 문제 수정
+
+수정: 색상 JSON 업데이트, 복제된 포인트 색상 수정
+
+수정: 데스크매트 텍스처 좌표를 Texture에서 Point로 변경
+
+수정: KAT K3 1.5 Backspace 모델
+
+수정: Che-2 6.25 스페이스바의 노멀
+
+수정: OGR 하단열 기본값
+
+수정: CHE-2 물음표의 측면 레전드 UV 위치 오류
+
+수정: CHE-2 축 중심을 기준으로 한 스위치 위치
+
+|
+
+KRK209
+------
+
+Blender 3.3에서 3.6으로 업그레이드
+
+추가: USBCableV3
+
+추가: DeskmatV3_Leather
+
+추가: 레전드 오프셋(Legend Offset) 설정
+
+추가: Floor_TechPanel
+
+추가: Floor_CarbonFibre
+
+추가: Floor_DiamondPlate
+
+개선: DeskMatV3에 더 많은 가장자리 마감 제어 제공
+
+개선: 손목 받침대를 V2로 재제작
+
+개선: Custom과 Palette 토글 분리, 확인 시 키캡 모드가 더 이상 변경되지 않음
+
+수정: W1AT 하단열 레이어가 꺼져 있던 문제
+
+|
+
+KRK208
+------
+
+추가: 스티커
+
+추가: Giga40 키보드
+
+추가: Thok Artisan Display 액세서리
+
+추가: Capsmat의 LegendSeam 너비 값
+
+추가: 코일 케이블의 코일(Coil) 설정, 장력 제어용
+
+개선: 케이블 재질 재제작
+
+개선: Model Thirteen 업데이트
+
+개선: 케이블 재제작, 메시 선 기반으로 변경하여 향후 업데이트 준비
+
+개선: Alu_Shimmer 노드 그룹의 노이즈 디테일 및 노이즈 러프니스
+
+개선: 중복된 재질 노드 그룹 일부 제거
+
+개선: Capsmat 노드 그룹 이름 변경
+
+개선: 기본 키트 키캡에 사용자 정의 색상 값 추가
+
+개선: Palette를 Palette8로 이름 변경, 슬롯 수 명시
+
+개선: Ikki68 Aurora의 UV 재제작, 패턴 지원
+
+개선: 케이블에 더 많은 설정 노출
+
+수정: 키트의 LShift 팔레트 값 불일치로 기본 선택 그룹에 없던 문제
+
+수정: Stucco 바닥이 Z축에서 1mm 낮던 문제
+
+수정: 스위치 리무버 원점
+
+수정: G305 방향
+
+|
+
+KRK207
+------
+
+추가: Model Thirteen 키보드
+
+추가: Akuma 키보드
+
+추가: Floor_Stucco
+
+추가: Floor_HexTile
+
+추가: Palette16 노드 그룹
+
+추가: Palette_E4 노드 그룹 (이제 레전드의 기본 설정)
+
+추가: Palette_E8 노드 그룹
+
+추가: 1.5U 체리 볼록 스페이스바
+
+추가: 셰이더 혼합용 레전드 마스크 출력
+
+추가: 지오메트리가 있는 레전드 키캡 모델의 다양한 변형 호출 가능
+
+추가: 색상 구성 가져오기/내보내기 가능 (사용자 정의 색상 모드)
+
+개선: Palette_E를 Palette_E4A로 이름 변경, 4개 슬롯 및 알파 명시
+
+개선: 데스크매트에 사용자 정의 형상 옵션 추가 (모디파이어에서 찾기)
+
+개선: 키캡 위치 키 옵션을 Variation으로 이름 변경, 더 많은 기능 지원
+
+수정: 일부 높이 누락 키캡: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe
+
+수정: DSA, DSS, KAM, KAT, OEM, SA 높이의 모든 위치 키 변형(F, J, Num5, H, A, U, N, T)을 형태 키에서 분리
+
+수정: SwitchComplex 지오메트리를 Y축으로 0.33mm 이동, 스템(십자 기둥)과 더 잘 정렬
+
+|
+
+KRK206
+------
+
+추가: Akko ACR75 키보드
+
+추가: Akko Alice 키보드
+
+추가: 다운로드 콘텐츠의 SLK 높이
+
+추가: 다운로드 콘텐츠의 PBS 높이
+
+추가: 다운로드 콘텐츠의 XDA 높이
+
+수정: Blender 3.4에서 USB 케이블 UV 손상 문제 수정
+
+수정: 컬렉션 복원이 USB 케이블 제어를 손상시키던 문제 수정
+
+|
+
+KRK205
+------
+
+추가: Werk One 키보드
+
+추가: Kailh Choc V1 스위치
+
+추가: Kailh Choc 무각 키캡
+
+추가: MBK 무각 키캡
+
+개선: Polycarbonate2에 광택 색상 추가
+
+개선: Restore Collections 다수 개선
+
+|
+
+KRK204
+------
+
+추가: KLE 가져오기
+
+추가: Grid Cap 모델
+
+추가: 1U Caps
+
+추가: IRON165 R2 키보드
+
+추가: IRON165 FE 키보드
+
+추가: IRON180 키보드
+
+개선: 범용 Ctrl+Alt+Super 키 추가
+
+개선: Isometria 기본값을 Iso로 전환
+
+개선: KRK 패널의 Palette E가 이제 Legend로 표시됨
+
+개선: 기존 CtrlL, AltL 등 외에 일반 명명 방식의 Ctrl, Alt, Super 키 추가
+
+수정: CapsStepped, BigEnter, EnterIso의 원점 이동
+
+수정: >< 키를 LessGreater로 이름 변경
+
+수정: FN을 Fn으로 이름 변경
+
+|
+
+KRK203
+------
+
+추가: NK65 키보드
+
+개선: 키보드 에셋을 에셋 브라우저로 이동
+
+개선: 레이아웃(배열)을 에셋 브라우저로 이동
+
+개선: 액세서리를 에셋 브라우저로 이동
+
+개선: 셰이더를 Capsmat에서 분리
+
+수정: 뷰포트에 씬 조명 및 월드 환경 활성화
+
+수정: 키트의 일부 키에 팔레트 정보가 미리 로드되지 않던 문제
+
+|
+
+KRK202
+------
+
+추가: 키캡 리무버 액세서리
+
+개선: 색상 JSON에 KRK 기본 테마 미리 로드, 바로 키보드 제작 가능
+
+수정: DCS의 ISO Not, 2, 3 키 행 번호 오류
+
+
+|
+
+KRK201
+------
+
+추가: 완전히 새로운 KRK 패널
+
+추가: 플레이스홀더 높이
+
+추가: 새로운 체리 모델
+
+추가: 새로운 DCS 모델
+
+추가: capsmat 측면 레전드 지원 (새로운 체리 및 DCS에 적용)
+
+추가: 팔레트 재질 도구
+
+추가: W1-AT 키보드
+
+추가: Vector65 키보드
+
+추가: MAN40 및 MAN60 키보드
+
+추가: Zoom65 키보드
+
+추가: Beak 6.5 키보드
+
+추가: Piggy 키보드
+
+추가: Mammoth75 키보드
+
+추가: Austin 키보드
+
+추가: Frog 키보드
+
+추가: Cake60 키보드
+
+추가: 대부분의 키보드에 플레이트 추가, 투명 스위치를 수용하도록 모델 수정
+
+추가: Switch Complex
+
+추가: Stab Complex
+
+추가: Stab Simple 7U
+
+추가: 스위치 리무버 액세서리
+
+추가: Polycarb2 재질 그룹
+
+추가: 더 많은 케이블 변형
+
+추가: LEMO 커넥터
+
+추가: USB Micro 커넥터
+
+추가: USB Mini 커넥터
+
+개선: 키캡 높이 분리
+
+개선: 아웃라이너에서 키보드 정리
+
+개선: 아비에이터 커넥터 재모델링
+
+개선: 데스크매트 재제작, 더 범용적으로
+
+개선: USB 케이블 재제작, 더 범용적으로
+
+개선: G305 재질, 속성 추가

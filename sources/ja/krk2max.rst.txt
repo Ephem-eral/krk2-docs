@@ -1,0 +1,68 @@
+KRK から 3ds Max へ
+====================
+
+3D Studio Max へのエクスポートはそれほど難しくありませんが、事前にいくつか準備が必要です。3ds Max は Blender ほどポリゴン（Nゴン）の扱いが得意ではなく、三角形と四角形を好んで扱います。そのため、Max が扱いやすい形に整えておきましょう。
+
+.. image:: img/krk2maxstart.jpg
+
+|
+
+キーボードまたはキットの準備ができたら、エクスポートに含めたくない他のオブジェクトをすべて非表示にします。通常はシーンコレクションが含まれているので、それをオフにします。
+
+.. image:: img/TurnOffSceneCollection.gif
+
+|
+
+それが表示されている状態で、いずれかのオブジェクトを選択し、A を押してすべて選択し、Tab を押して選択したすべてのオブジェクトをまとめて編集モードに入ります。
+
+.. image:: img/KeyboardVertices.jpg
+
+|
+
+面選択モードである必要があります。ショートカットは数字行の 3 です。
+
+.. image:: img/FaceMode.jpg
+
+|
+
+A を 2 回押す（または Alt+A を押す）と、すべての選択が解除されます。
+
+.. image:: img/KeyboardFaces.jpg
+
+|
+
+次に Select > Select By Trait > Faces By Sides をクリックします。
+
+.. image:: img/FaceBySides.gif
+
+|
+
+左下のポップアップパネルでタイプを Greater Than（より大きい）に設定します。
+
+.. image:: img/SelectGreaterThan.jpg
+
+|
+
+これで、すべての Nゴン（Nゴンのみ）が選択されました。
+
+.. image:: img/KeyboardNgons.jpg
+
+|
+
+次に Face > Triangulate Faces をクリックするか、Ctrl+T で三角化し、Tab を押して編集モードを終了します。
+
+.. image:: img/KeyboardTriangulate.gif
+
+|
+
+これでキーボードをエクスポートできます。File > Export > FBX をクリックし、ファイル名を入力し、Path Mode を Copy に設定し、Limit to Selected Objects（選択したオブジェクトのみ）にチェックを入れるのを忘れないでください。
+
+.. image:: img/krk2maxexportsettings.png
+
+|
+
+次に Max でこの FBX をインポートします。
+
+.. image:: img/krk2maximported.png
+
+|

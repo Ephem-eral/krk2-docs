@@ -1,0 +1,82 @@
+大纲视图
+========
+
+大纲视图收纳场景中的所有项目，并把它们组织成集合。
+
+.. image:: img/Outliner.jpg
+
+套件
+----
+
+.. image:: img/KitsCollection.jpg
+
+Kits（套件）集合默认开启。
+
+键盘
+----
+
+.. image:: img/BoardCollection.jpg
+
+键盘先按尺寸分组，同尺寸内按字母顺序排列。点击三角箭头可以逐层展开子集合，再往下就是键盘的配列选项，例如阶梯 CapsLock 或 Tsangan 底排。
+
+配列
+----
+
+.. image:: img/DuplicateLinkedCollection.gif
+
+这些是备用配列，可用来填充自己导入的键盘。右键点击配列并选择「关联复制」，生成一个关联集合，再把它移到你的键盘所属的集合里。
+
+配件
+----
+
+这里列出可用的配件，包括桌垫模型、鼠标、USB 线和手托。
+
+场景
+----
+
+.. image:: img/SceneCollection.jpg
+
+在这里可以访问场景元素，比如灯光、摄像机和背景。
+
+摄像机
+------
+
+KRK2 对摄像机做了精简，不过你可以复制它们，自行设置机位和角度。
+
+灯光
+------
+
+.. image:: img/LightsCollection.jpg
+
+我们准备了多套灯光方案，帮你确定场景的整体观感。它们参考了流行的影棚灯光 HDRI 方案，可调性更高，强度和位置都能随意调整。
+
+地面
+------
+
+.. image:: img/FloorsCollection.jpg
+
+KRK 自带一组挺有意思的地面，方便你快速上手。其中包括阴影捕捉（ShadowCatcher）地面，它以 FloorLightGrey 为基础，专门捕捉阴影，用于渲染透明背景。
+
+结构
+----
+
+键帽高度
+--------
+
+.. image:: img/ProfilesCollection.jpg
+
+所有键帽高度都在这里。
+
+UV 设置
+--------
+
+.. image:: img/UVSetup.jpg
+
+这个集合包含为键帽做 UV 投影所需的全部内容。
+
+零件
+--------
+
+.. image:: img/PartsCollection.jpg
+
+这里收录了一些额外零件，可以通过物体数据替换加到自己的键盘上。

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRK Panel &mdash; Keyboard Render Kit 2 Documentation</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Asset Browser" href="assetbrowser.html" />
+    <link rel="prev" title="Interface" href="interface.html" /> 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
+  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+</div>
+  <div class="lang-switch"><a class="active" href="../en/krkpanel.html">English</a><a class="" href="../cn/krkpanel.html">简体</a><a class="" href="../tw/krkpanel.html">繁體</a><a class="" href="../ja/krkpanel.html">日本語</a><a class="" href="../ko/krkpanel.html">한국어</a><a class="" href="../ru/krkpanel.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KRK Panel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#relink">Relink</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-kle">Import KLE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#profile">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#row">Row</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#size">Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key">Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#homing">Homing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#link-material">Link Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-settings">Copy Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">USB Cables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">KRK Panel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/en/krkpanel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="krk-panel">
+<h1>KRK Panel<a class="headerlink" href="#krk-panel" title="Permalink to this heading"></a></h1>
+<img alt="../images/krkpanel204.jpg" src="../images/krkpanel204.jpg" />
+<p>The KRK panel can be found in the sidebar (N) and is is separated into four sections: Relink, Data, Color and Properties. The last two are only visible when the relevant properties are available.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="relink">
+<h2>Relink<a class="headerlink" href="#relink" title="Permalink to this heading"></a></h2>
+<p>Relink is an object data manager designed to quickly swap between keycap profiles, rows, sizes, keys and homing options. Any option that has the checkbox enabled will be taken into account when you press the Set button.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="import-kle">
+<h3>Import KLE<a class="headerlink" href="#import-kle" title="Permalink to this heading"></a></h3>
+<p>KRK has the ability to import Keyboard Layout Editor JSON files. KLE doesn’t name its objects so the importer tries to interpret the keys based on the legend and the row (K1-K6) and sets a placeholder wheverver it can. Use this KLE as an example or as a basis to generate your own:</p>
+<p><a class="reference external" href="http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a">http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="profile">
+<h3>Profile<a class="headerlink" href="#profile" title="Permalink to this heading"></a></h3>
+<img alt="../images/KRK2ProfileSwitch.gif" src="../images/KRK2ProfileSwitch.gif" />
+<p>Available profiles and their prefixes are listed in the Profile collection in the outliner while rows and other options you will develop an intuition for. Type the option into the relevant field (case sensitive) with the checkbox enabled and press Set to set the option.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="row">
+<h3>Row<a class="headerlink" href="#row" title="Permalink to this heading"></a></h3>
+<img alt="../images/KRKRows.jpg" src="../images/KRKRows.jpg" />
+<p>Due to the fact that different manufacturers and keycap profiles use different row numbering systems, KRK introduces yet another based on the actual position on the keyboard starting from the rear.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile</p></th>
+<th class="head"><p>Optional</p></th>
+<th class="head"><p>Rows</p></th>
+<th class="head"><p>Optional</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>KRK</p></td>
+<td><p>0</p></td>
+<td><p>1-2-3-4-5-6</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cherry</p></td>
+<td><p>0</p></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>DCS</p></td>
+<td><p>5</p></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSA</p></td>
+<td></td>
+<td><p>Uniform</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSS</p></td>
+<td></td>
+<td><p>1-1-2-3-4-3</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>KAM</p></td>
+<td></td>
+<td><p>Uniform</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>KAT</p></td>
+<td><p>5</p></td>
+<td><p>4-4-3-2-1-1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>OEM</p></td>
+<td></td>
+<td><p>1-1-2-3-4-4</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SA</p></td>
+<td></td>
+<td><p>1-1-2-3-4-3</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+<p>Some profiles have an interchangeable first and/or last row.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="size">
+<h3>Size<a class="headerlink" href="#size" title="Permalink to this heading"></a></h3>
+<img alt="../images/KRK2ShiftSize.gif" src="../images/KRK2ShiftSize.gif" />
+<p>You can change the size of a keycap by typing the four character unit size into the field. If the destination geometry is available, it will change to the desired size.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="key">
+<h3>Key<a class="headerlink" href="#key" title="Permalink to this heading"></a></h3>
+<img alt="../images/Releg.jpg" src="../images/Releg.jpg" />
+<p>Type the keycap name into the field to change keycaps over to a different keycap. This is handy for changing to a relegendable (Releg), a blank keycap (Blank) or windowed (<code class="docutils literal notranslate"><span class="pre">*_WIN</span></code>).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="homing">
+<h3>Homing<a class="headerlink" href="#homing" title="Permalink to this heading"></a></h3>
+<img alt="../images/KRK2Homing.gif" src="../images/KRK2Homing.gif" />
+<p>You can change the type of homing key between bar/nub/scoop by using this dropdown and clicking Set.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="link-material">
+<h3>Link Material<a class="headerlink" href="#link-material" title="Permalink to this heading"></a></h3>
+<p>Link Material is an option that allows you to carry over the current applied material to the destination object data. You may want to have this on or off depending on what the desired outcome is. For example, if you were swapping over to the placeholder profile (PLA) you will want the Link Material option turned off so the Capsmat isn’t carried over to the placeholders.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="copy-settings">
+<h3>Copy Settings<a class="headerlink" href="#copy-settings" title="Permalink to this heading"></a></h3>
+<img alt="../images/CopySettings.jpg" src="../images/CopySettings.jpg" />
+<p>To the right side of the Set button is the Copy Settings button That helps you copy the object data name into the object data dropdown to aid in searching for a particular key.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>The following sections will only display options for the active (highlighted) object.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading"></a></h2>
+<p>Data mirrors the object data and material assignment sections from the properties panel to make them more convenient to access.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Easily search through object data to replace the active object data with another. Eg. duplicate or instance a keycap and make the copy into a switch or stabilizer.</p>
+<img alt="../images/ObjectDataSwitch.gif" src="../images/ObjectDataSwitch.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Restore Meshes can be used when a keycap is unable to be relinked because it was duplicated, imported or pasted. What it does is reconnects it with the similarly named version that is already in the file. If you would like to use the imported one as the base then rename its object data to not have .001 at the end.</p>
+<img alt="../images/RestoreMesh.gif" src="../images/RestoreMesh.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Restore Collections only appears when you have a collection asset selected. This allows you restore it to an editable state.</p>
+<img alt="../images/RestoreCollection.jpg" src="../images/RestoreCollection.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Copy button here links the material from the active keycap object to all of the other selected keycaps while ingnoring non-keycap objects.</p>
+<img alt="../images/MatCopy.gif" src="../images/MatCopy.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="color">
+<h2>Color<a class="headerlink" href="#color" title="Permalink to this heading"></a></h2>
+<p>Color is a color and palette management system to help you control the color aspects of your Capsmat. It will only display when there are color properties available.
+If you have a keycap selected that does not hold color properties, the Setup button will be available to apply all the necessary properties to the keycap object.</p>
+<img alt="../images/ColorSetup.jpg" src="../images/ColorSetup.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Custom/Palette switcher allows you to switch between the custom color and palette workflows. Colors A-E and Palette sliders A-E allow you to control those aspects of the Capsmat on a per object basis through the palette node groups. Choose your options and press Set to propagate them to all of the selected keycap objects or press the individual copy buttons to limit it to one option at a time. Copy and Paste buttons are at the bottom to create and recall an index of options for all of the selected objects.</p>
+<img alt="../images/ColorSetPaste.gif" src="../images/ColorSetPaste.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading"></a></h2>
+<p>Properties is also only visible when custom properties are available. For the USB cables, it displays the cable options such as braid/techflex and heatshrink color for the heads. If the deskmat is selected, it will display the dimension and edging options instead.</p>
+<img alt="../images/KRK2PanelProps.gif" src="../images/KRK2PanelProps.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="interface.html" class="btn btn-neutral float-left" title="Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="assetbrowser.html" class="btn btn-neutral float-right" title="Asset Browser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

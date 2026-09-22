@@ -1,0 +1,34 @@
+资产浏览器
+==========
+
+配件资产
+--------
+
+配件在 Accessory（配件）分类下。
+
+.. image:: img/AccessorySection.jpg
+
+键盘资产
+--------
+
+键盘模型在 Boards（键盘）分类下。
+
+.. image:: img/BoardSection.jpg
+
+材质资产
+--------
+
+资产浏览器预置了许多实用材质，并按类型和厂商分类，可以直接拖到 3D 视图里的物体上。
+
+.. image:: img/AssetBrowserMaterial.gif
+
+|
+
+材质工具
+--------
+
+.. image:: img/MaterialUtilities.JPG
+
+自己动手做材质时，可以把这些工具拖进材质编辑器来添加效果。
+
+|

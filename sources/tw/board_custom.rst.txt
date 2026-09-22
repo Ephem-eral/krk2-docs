@@ -1,0 +1,126 @@
+自訂鍵盤準備
+==============
+
+本教學不涉及你所用 CAD 軟體的匯出設定：先把設計匯出成 OBJ 或 FBX，再匯入 Blender。另一種做法是用 Stepper 這款 Blender 外掛直接匯入 STEP/STP 檔案。
+
+|
+
+這裡以 Alchemist Keyboards Aella 的渲染檔案轉成 OBJ 為例。`右鍵另存為 <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
+
+|
+
+.. image:: img/DelAll.gif
+
+新增 Blender 檔案，按 A X D 刪掉預設內容（立方體、攝影機、燈光），然後到屬性面板的 Scene Properties 頁籤把單位設為毫米（millimeters）。
+
+.. image:: img/SetUnitsMM.jpg
+
+|
+
+現在匯入 Aella 的 OBJ：點 File > Import > Wavefront Obj（F4 I W）。
+
+.. image:: img/ImportObj.jpg
+
+|
+
+你會立刻發現比例不對——這裡毫米單位被當成米匯入了。
+
+.. image:: img/Resize1.jpg
+
+|
+
+按 S 0.001，把鍵盤縮到千分之一。縮放後可能就看不見它了，按 Home 鍵重新框住視圖。
+
+.. image:: img/Resize2.jpg
+
+|
+
+現在應用縮放和旋轉：按 Ctrl+A，再按一次 A，選 All Transforms（應用全部變換）。
+
+.. image:: img/Resize3.jpg
+
+|
+
+接下來做移動把手：Add > Mesh > Plane（Shift+A M P）。
+
+.. image:: img/MoveHandle1.jpg
+
+|
+
+按住 Shift 點選鍵盤底殼，把它加入選擇，然後用 Object > Transform > Align Objects 對齊平面：在對話方塊裡按住 Shift 同時點選 X 和 Y 兩個軸。
+
+.. image:: img/MoveHandle2.jpg
+
+|
+
+再重複一次 Align Objects，這次把 Align Mode 設為 Negative Sides（負方向側），軸選擇 Z。
+
+.. image:: img/MoveHandle3.gif
+
+|
+
+平面位置正確了，把它縮到比鍵盤底面略大一點（S X，再 S Y），然後應用縮放。
+
+.. image:: img/MoveHandle4.gif
+
+|
+
+用 Object > Convert > Curve 把它轉成曲線。移動把手就做好了。
+
+.. image:: img/MoveHandle5.jpg
+
+|
+
+把鍵盤的所有物件都父級到這個移動把手上：保持移動把手選取，按 A 全選，然後 Ctrl+P > Object (Keep Transform)。這樣以後移動把手時，其他部分會跟著動。按 Alt+G 清空位置，把移動把手和它所有子物件重設到世界原點。
+
+.. image:: img/MoveHandle6.gif
+
+|
+
+現在匯入鍵帽配列，這裡用 75% 配列：點 File > Append，瀏覽到 KRK201 檔案並雙擊開啟（blend 檔案的行為和資料夾一樣），進入 Collections，搜尋 75，追加上 75 集合。
+
+.. image:: img/ImportLayout.jpg
+
+|
+
+你可能還要開啟該集合的視埠可見性：在大綱視圖裡開啟視埠禁用過濾（viewport disable filter），為 75 集合勾選。
+
+.. image:: img/75Vis.gif
+
+|
+
+選取配列自帶的移動把手（十字形的空物件），參照主鍵區（Alphas）把配列移到合適位置，然後在 X 軸上旋轉 7 度（這是 Aella 的傾角）。
+
+.. image:: img/75MoveLayout.gif
+
+|
+
+把配列的移動把手父級到鍵盤的移動把手上。
+
+.. image:: img/75MoveLayoutParent.gif
+
+|
+
+佔位符要逐個移動才能和鍵盤配列對齊。在網格尺寸（grid size）裡輸入 0.002381，可以把吸附增量設為 1/8 單位。
+
+.. image:: img/SnapIncrementGrid.jpg
+
+|
+
+開啟 Tsangan 底排。
+
+.. image:: img/75BottomRow.gif
+
+|
+
+選取要移動的佔位符，用軸向約束移動：G X 沿 X 軸，G YY 沿局部 Y 軸，依此類推。Win 鍵要刪掉，Alt 鍵用左側的按鍵關聯複製過來（Ctrl+L 再按 O）。按住 Ctrl，或者點磁鐵圖示開啟吸附，就能用上吸附增量。
+
+.. image:: img/AellaLayoutAjust.gif
+
+|
+
+現在鍵盤就準備好了，也相容 KRK2。把它另存為壓縮 blend 檔案用於分發，再匯入 KRK2 即可。
+
+.. image:: img/AellaExport.jpg
+
+|

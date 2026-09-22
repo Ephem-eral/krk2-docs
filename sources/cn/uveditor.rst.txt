@@ -1,0 +1,12 @@
+UV 编辑器
+=========
+
+UV 编辑器既是图像查看器，也是 UV 坐标编辑器：你可以直观地看到一张 2D 图像作为字符贴到 3D 空间后会是什么效果。
+
+.. image:: img/UVs.jpg
+
+|
+
+想深入了解 Blender 的 UV 坐标，看 `Blender 手册：UV 说明 <https://docs.blender.org/manual/zh-hans/latest/editors/uv/introduction.html#uvs-explained>`_。
+
+|

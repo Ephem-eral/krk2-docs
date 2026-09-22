@@ -1,0 +1,34 @@
+KRK в Cinema 4D
+================
+
+Экспорт в Cinema 4D — дело нехитрое.
+
+Когда клавиатура или кит готовы, скройте или отключите отображение остальных объектов, которые не нужно экспортировать.
+
+.. image:: img/MammothBlender.jpg
+
+|
+
+Нажмите клавишу A, чтобы выделить всё.
+
+.. image:: img/MammothBlenderSelection.jpg
+
+|
+
+Нажмите File > Export > FBX, задайте имя файла и не забудьте установить флажок Limit to Selected Objects (только выделенные объекты).
+
+.. image:: img/MammothExport.jpg
+
+|
+
+Затем импортируйте FBX в Cinema 4D и нажмите Tools > Axis > Reset Scale, а также значок шестерёнки рядом, чтобы применить масштаб.
+
+.. image:: img/MammothC4d.png
+
+|
+
+В параметрах установите оба флажка.
+
+.. image:: img/MammothC4dOption.png
+
+|

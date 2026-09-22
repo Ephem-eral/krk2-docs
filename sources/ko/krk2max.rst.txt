@@ -1,0 +1,68 @@
+KRK에서 3ds Max로
+====================
+
+3D Studio Max로 내보내는 것은 상당히 간단하지만, 먼저 해야 할 일이 몇 가지 있습니다. 3ds Max는 Blender만큼 다각형(N각형)을 잘 처리하지 못하지만, 삼각형과 사각형은 아주 좋아하므로 원하는 대로 만들어 줍시다.
+
+.. image:: img/krk2maxstart.jpg
+
+|
+
+키보드나 키트가 준비되면 내보내기에 포함되지 않을 다른 오브젝트를 모두 숨깁니다. 보통 씬 컬렉션이 여기에 해당하므로 꺼 둡니다.
+
+.. image:: img/TurnOffSceneCollection.gif
+
+|
+
+이것만 보이게 되면 그중 하나의 오브젝트를 선택하고 A를 눌러 전체 선택한 뒤, Tab을 눌러 선택된 모든 오브젝트를 함께 편집 모드로 전환합니다.
+
+.. image:: img/KeyboardVertices.jpg
+
+|
+
+면 선택 모드에 있어야 하며, 단축키는 숫자 행의 3입니다.
+
+.. image:: img/FaceMode.jpg
+
+|
+
+A를 두 번 연속 누르거나(또는 Alt+A) 모든 선택을 해제합니다.
+
+.. image:: img/KeyboardFaces.jpg
+
+|
+
+이어서 Select > Select By Trait > Faces By Sides를 클릭합니다.
+
+.. image:: img/FaceBySides.gif
+
+|
+
+왼쪽 아래의 팝업 패널에서 유형을 Greater Than(초과)으로 설정합니다.
+
+.. image:: img/SelectGreaterThan.jpg
+
+|
+
+이제 모든 N각형(그리고 N각형만)이 선택되었습니다.
+
+.. image:: img/KeyboardNgons.jpg
+
+|
+
+그런 다음 Face > Triangulate Faces를 클릭하거나 Ctrl+T로 삼각화하고, Tab을 눌러 편집 모드를 종료합니다.
+
+.. image:: img/KeyboardTriangulate.gif
+
+|
+
+이제 키보드를 내보낼 수 있습니다. File > Export > FBX를 클릭하고 파일 이름을 지정한 뒤, Path Mode를 Copy로 설정하고 Limit to Selected Objects(선택한 오브젝트만)를 반드시 체크합니다.
+
+.. image:: img/krk2maxexportsettings.png
+
+|
+
+이어서 Max에서 이 FBX를 가져옵니다.
+
+.. image:: img/krk2maximported.png
+
+|

@@ -1,0 +1,34 @@
+KRK 到 Cinema 4D
+================
+
+匯出到 Cinema 4D 很簡單。
+
+鍵盤或套件準備好後，把不想匯出的其他物件隱藏或關閉顯示。
+
+.. image:: img/MammothBlender.jpg
+
+|
+
+按鍵盤上的 A 鍵全選。
+
+.. image:: img/MammothBlenderSelection.jpg
+
+|
+
+點 File > Export > FBX，起個檔名，別忘了勾選 Limit to Selected Objects（僅限選取物件）。
+
+.. image:: img/MammothExport.jpg
+
+|
+
+接著在 Cinema 4D 裡匯入 FBX，然後點 Tools > Axis > Reset Scale，以及旁邊的齒輪圖示來應用縮放。
+
+.. image:: img/MammothC4d.png
+
+|
+
+在選項裡把兩個核取方塊都勾選。
+
+.. image:: img/MammothC4dOption.png
+
+|

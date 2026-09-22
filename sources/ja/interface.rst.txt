@@ -1,0 +1,75 @@
+インターフェース
+======================
+
+.. image:: img/UIOverview.PNG
+
+KRK2 のインターフェースレイアウトは Blender の「シェーディング」（Shading）ワークスペースに最も近く、左カラムがファイルブラウザーと画像エディターからアセットブラウザーと UV エディターに置き換わり、サイドバーに KRK タブが追加されている点が異なります。
+
+|
+
+アセットブラウザー
+------------------
+
+.. image:: img/UI_Asset.png
+
+アセットブラウザーには多数の実用的なマテリアルが収録されており、種類とメーカー別に分類されています。
+
+`Blender マニュアル：アセットブラウザー <https://docs.blender.org/manual/ja/latest/editors/asset_browser.html>`_
+
+|
+
+UV エディター
+-------------
+
+.. image:: img/UI_UV.png
+
+このパネルは画像ビューアーとしても、キーキャップ上のレジェンドの座標を表示するためにも使用できます。
+
+`Blender マニュアル：UV エディター <https://docs.blender.org/manual/ja/latest/editors/uv/introduction.html>`_
+
+|
+
+3D ビューポート
+---------------
+
+.. image:: img/UI_VP.png
+
+ここではキット、レイアウト、ライト、カメラアングルなどを編集します。サイドバーにはキーキャップを制御する KRK パネルがあります。
+
+`Blender マニュアル：3D ビューポート <https://docs.blender.org/manual/ja/latest/editors/3dview/introduction.html>`_
+
+|
+
+シェーダーエディター
+--------------------
+
+.. image:: img/UI_Mats.png
+
+ここではマテリアルの外観とプロパティを制御します。
+
+`Blender マニュアル：シェーダーエディター <https://docs.blender.org/manual/ja/latest/editors/shader_editor.html>`_
+
+|
+
+アウトライナー
+--------------
+
+.. image:: img/UI_Out.png
+
+ここには blend ファイルの階層構造が表示されます。キット、キーボード、レイアウト、アクセサリー、カメラ、ライト、地面、キーキャップの高さ（プロファイル）などがここにあり、それらの可視性も制御できます。
+
+`Blender マニュアル：アウトライナー <https://docs.blender.org/manual/ja/latest/editors/outliner/introduction.html>`_
+
+|
+
+プロパティ
+----------
+
+.. image:: img/UI_Props.png
+
+残りのほとんどのプロパティは各タブに分散しています。
+
+`Blender マニュアル：プロパティエディター <https://docs.blender.org/manual/ja/latest/editors/properties_editor.html>`_
+
+
+|

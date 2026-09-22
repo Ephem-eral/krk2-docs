@@ -1,0 +1,34 @@
+KRK에서 Cinema 4D로 내보내기
+=============================
+
+Cinema 4D로 내보내는 방법은 간단합니다.
+
+키보드나 키트가 준비되면, 내보내지 않을 다른 오브젝트는 숨기거나 표시를 꺼둡니다.
+
+.. image:: img/MammothBlender.jpg
+
+|
+
+키보드에서 A 키를 눌러 전체를 선택합니다.
+
+.. image:: img/MammothBlenderSelection.jpg
+
+|
+
+File > Export > FBX를 클릭하고 파일 이름을 지정한 뒤, Limit to Selected Objects(선택한 오브젝트만)를 체크하는 것을 잊지 마세요.
+
+.. image:: img/MammothExport.jpg
+
+|
+
+그다음 Cinema 4D에서 FBX를 임포트한 후, Tools > Axis > Reset Scale을 클릭하고 옆의 톱니바퀴 아이콘을 눌러 스케일을 적용합니다.
+
+.. image:: img/MammothC4d.png
+
+|
+
+옵션에서 두 체크박스를 모두 체크합니다.
+
+.. image:: img/MammothC4dOption.png
+
+|
