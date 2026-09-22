@@ -1112,17 +1112,45 @@ body { color: var(--text); }
 .wy-nav-top a, .wy-nav-top i { color: var(--nav-top-fg) !important; }
 .wy-menu-vertical a, .wy-menu-vertical p.caption { color: var(--sidebar-text); }
 .wy-menu-vertical p.caption { color: var(--sidebar-muted); }
-.wy-menu-vertical li.current > a, .wy-menu-vertical li.on > a { background: #e6f4ea; color: #10301c; }
-.wy-menu-vertical li.current > a, .wy-menu-vertical li.on > a { box-shadow: inset 3px 0 0 var(--accent); }
-.wy-menu-vertical li.current, .wy-menu-vertical li.current > ul, .wy-menu-vertical li.current ul { background-color: transparent; }
-html[data-theme="dark"] .wy-menu-vertical li.current,
-html[data-theme="dark"] .wy-menu-vertical li.current > ul,
-html[data-theme="dark"] .wy-menu-vertical li.current ul { background-color: transparent; }
-html[data-theme="dark"] .wy-menu-vertical li.current ul a { color: #cfe4d6; }
-html[data-theme="dark"] .wy-menu-vertical li.current > a,
-html[data-theme="dark"] .wy-menu-vertical li.on > a { background: rgba(143,211,162,.18); color: #e6f6ea; }
+/* --- sidebar: the current chapter and its section list --------------- */
+/* The Read the Docs theme paints "li.current" with light greys (#e3e3e3 /
+   #c9c9c9 / #bdbdbd) and turns the sub-items grey; in dark mode that leaves
+   near-invisible text, so every one of those selectors is overridden here
+   with !important. */
+.wy-menu-vertical li.current > a, .wy-menu-vertical li.on > a,
+.wy-menu-vertical li.toctree-l2.current > a, .wy-menu-vertical li.toctree-l3.current > a {
+  background: #e6f4ea !important; color: #10301c !important;
+  box-shadow: inset 3px 0 0 var(--accent); }
+.wy-menu-vertical li.current, .wy-menu-vertical li.current > ul, .wy-menu-vertical li.current ul,
+.wy-menu-vertical li.toctree-l2.current, .wy-menu-vertical li.toctree-l2.current > ul,
+.wy-menu-vertical li.toctree-l3.current, .wy-menu-vertical li.toctree-l3.current > ul {
+  background-color: transparent !important; }
+.wy-menu-vertical li.current ul a, .wy-menu-vertical li.current > ul a {
+  color: var(--sidebar-text) !important; border-right-color: transparent !important; }
+/* 主题给“当前章节下的二级/三级条目”涂了 #c9c9c9 / #bdbdbd，透明化 */
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
+  background-color: transparent !important; color: var(--sidebar-text) !important; }
 .wy-menu-vertical a:hover { background: var(--chip-bg-hover); }
 .wy-menu-vertical li.current > a button.toctree-expand, .wy-menu-vertical li.on > a button.toctree-expand { color: #2f6b45; }
+html[data-theme="dark"] .wy-menu-vertical li.current > a,
+html[data-theme="dark"] .wy-menu-vertical li.on > a,
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l2.current > a,
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l3.current > a {
+  background: rgba(143,211,162,.18) !important; color: #e6f6ea !important;
+  box-shadow: inset 3px 0 0 #8fd3a2; }
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a,
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
+  background-color: transparent !important; color: #cfe4d6 !important; }
+html[data-theme="dark"] .wy-menu-vertical li.current,
+html[data-theme="dark"] .wy-menu-vertical li.current > ul,
+html[data-theme="dark"] .wy-menu-vertical li.current ul,
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l2.current,
+html[data-theme="dark"] .wy-menu-vertical li.toctree-l3.current {
+  background-color: transparent !important; }
+html[data-theme="dark"] .wy-menu-vertical li.current ul a,
+html[data-theme="dark"] .wy-menu-vertical li.current > ul a {
+  color: #cfe4d6 !important; border-right-color: transparent !important; }
 html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand { color: #cfe9d6; }
 .rst-content a, .wy-breadcrumbs a { color: var(--accent-text); }
 .rst-content a:hover { color: var(--accent-strong); }
