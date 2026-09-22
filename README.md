@@ -12,4 +12,8 @@ Open `index.html`, pick a language, and use the sidebar to switch languages at a
 switching keeps you in the same chapter. `images/` and `fonts/` are referenced by relative
 path, so keep the folder together.
 
+> **More languages may be added in the future.** / 后续可能上线更多语言。
+> 後續可能上線更多語言。 / 今後さらに言語を追加する可能性があります。
+> 추후 더 많은 언어가 추가될 수 있습니다. / В будущем могут появиться и другие языки.
+
 Documentation content © 2022 ImperfectLink (Keyboard Render Kit 2 v2.0.1).
