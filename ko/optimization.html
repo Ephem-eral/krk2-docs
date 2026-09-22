@@ -112,14 +112,18 @@
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">키보드</a></li>
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">레이아웃(배열)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">액세서리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">씬</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">카메라</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">조명</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">바닥</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">구조</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">키캡 프로파일(높이)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV 설정</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">부품</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">씬</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id7">카메라</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id8">조명</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id9">바닥</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">구조</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id11">키캡 프로파일(높이)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#uv">UV 설정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id12">부품</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">속성 에디터</a><ul>
@@ -201,12 +205,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">데스크매트에 나만의 디자인 추가하기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cables.html">USB 케이블</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">설정</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug(연결)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color(색상)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip(뒤집기)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror(미러)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex(슬리브)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">설정</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#plug">Plug(연결)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#color">Color(색상)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#flip">Flip(뒤집기)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#mirror">Mirror(미러)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#tech-flex">Tech Flex(슬리브)</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#id2">직선 케이블</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#id3">머티리얼</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">케이블 내보내기</a></li>
@@ -227,10 +233,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">렌더링 최적화</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">해상도</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">샘플 수</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">노이즈 제거</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#optix">Optix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#open-image-denoise">Open Image Denoise</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">실제 적용</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">노이즈 제거</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#optix">Optix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">실제 적용</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 에셋</a><ul>
@@ -345,19 +353,18 @@
 <h2>노이즈 제거<a class="headerlink" href="#id4" title="이 제목에 대한 퍼머링크"></a></h2>
 <p>디지털 이미지가 등장한 이래로 노이즈 제거에 대한 수요도 함께 있었습니다. 소재가 디지털 사진이든, 스캔본이든, 완전히 컴퓨터로 생성한 것이든 처리 방법은 통용됩니다. 최근에는 패스 트레이싱 렌더링이 새로운 알고리즘의 발전을 이끌었고, 심지어 머신 러닝으로 해결하기 시작했습니다.
 Blender는 몇 가지 노이즈 제거 알고리즘을 제공하는데, 아래 두 가지를 중점적으로 살펴보겠습니다.</p>
-</section>
 <section id="optix">
-<h2>Optix<a class="headerlink" href="#optix" title="이 제목에 대한 퍼머링크"></a></h2>
+<h3>Optix<a class="headerlink" href="#optix" title="이 제목에 대한 퍼머링크"></a></h3>
 <img alt="../images/Optix.jpg" src="../images/Optix.jpg" />
 <p>Nvidia의 머신 러닝 노이즈 제거 알고리즘으로, RTX 20 시리즈 이후의 Nvidia 그래픽 카드에서 실행할 수 있습니다. 전용 텐서 코어를 사용하기 때문에 속도가 매우 빠르지만, Nvidia 사용자로 제한됩니다. 더 많은 정보는 <a class="reference external" href="https://developer.nvidia.com/optix-denoiser">NVIDIA 공식 페이지</a> 를 참조하세요.</p>
 </section>
 <section id="open-image-denoise">
-<h2>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="이 제목에 대한 퍼머링크"></a></h2>
+<h3>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="이 제목에 대한 퍼머링크"></a></h3>
 <img alt="../images/OID.jpg" src="../images/OID.jpg" />
 <p>Intel에서 만든 또 다른 머신 러닝 노이즈 제거 알고리즘입니다. 이름에서 알 수 있듯이 오픈 소스이며, 다양한 CPU 모델과 아키텍처에서 실행할 수 있습니다. 속도는 Optix보다 느리지만 효과가 매우 뛰어나며, 투명도가 있는 씬, 예를 들어 폴리카보네이트(PC) 키보드를 렌더링할 때 더 유리합니다. Open Image Denoise에 대한 더 많은 정보는 <a class="reference external" href="https://www.openimagedenoise.org/">공식 사이트</a> 를 참조하세요.</p>
 </section>
 <section id="id6">
-<h2>실제 적용<a class="headerlink" href="#id6" title="이 제목에 대한 퍼머링크"></a></h2>
+<h3>실제 적용<a class="headerlink" href="#id6" title="이 제목에 대한 퍼머링크"></a></h3>
 <img alt="../images/CompositorDenoise.jpg" src="../images/CompositorDenoise.jpg" />
 <p>두 알고리즘 모두 옵션에서 활성화하여 뷰포트와 최종 렌더링에 사용할 수 있습니다. 다만 컴포지터에서 사용할 때는 Open Image Denoise가 더 빠릅니다. KRK는 이미 컴포지터 노드를 구성해 두었으므로, 컴포지터 패널 왼쪽 상단의 체크박스로 활성화하기만 하면 됩니다.</p>
 <img alt="../images/Denoised256.png" src="../images/Denoised256.png" />
@@ -368,6 +375,7 @@ Blender는 몇 가지 노이즈 제거 알고리즘을 제공하는데, 아래 �
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</section>
 </section>
 </section>
 

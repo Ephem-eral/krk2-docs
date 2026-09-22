@@ -112,14 +112,18 @@
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">键盘</a></li>
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">配列</a></li>
 <li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">配件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">场景</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id7">摄像机</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id8">灯光</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id9">地面</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id11">键帽高度</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#uv">UV 设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id12">零件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">场景</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id7">摄像机</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id8">灯光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id9">地面</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">结构</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id11">键帽高度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#uv">UV 设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#id12">零件</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">属性编辑器</a><ul>
@@ -201,12 +205,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">添加自己的桌垫设计</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cables.html">USB 线材</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">设置项</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#color">Color（颜色）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#flip">Flip（翻转）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#mirror">Mirror（镜像）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（编织网管）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">设置项</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#color">Color（颜色）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#flip">Flip（翻转）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#mirror">Mirror（镜像）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（编织网管）</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#id2">直线线材</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#id3">材质</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">导出线材</a></li>
@@ -227,10 +233,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">优化你的渲染</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">分辨率</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">渲染采样</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">降噪</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#optix">Optix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#open-image-denoise">Open Image Denoise</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">实际应用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">降噪</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#optix">Optix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">实际应用</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 素材</a><ul>
@@ -345,19 +353,18 @@
 <h2>降噪<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h2>
 <p>从有数字图像那天起，就有了降噪需求。不管素材是数字照片、扫描件，还是完全由计算机生成，处理方法都通用。近年来，路径追踪渲染推动了新算法的发展，甚至开始用机器学习来解决。
 Blender 提供了几种降噪算法，我们重点看下面两种。</p>
-</section>
 <section id="optix">
-<h2>Optix<a class="headerlink" href="#optix" title="此标题的永久链接"></a></h2>
+<h3>Optix<a class="headerlink" href="#optix" title="此标题的永久链接"></a></h3>
 <img alt="../images/Optix.jpg" src="../images/Optix.jpg" />
 <p>这是 Nvidia 的机器学习降噪算法，可在 RTX 20 系及之后的 Nvidia 显卡上运行。因为它用了专用张量核心，速度非常快，代价是仅限 Nvidia 用户。更多信息见 <a class="reference external" href="https://developer.nvidia.com/optix-denoiser">NVIDIA 官方页面</a>。</p>
 </section>
 <section id="open-image-denoise">
-<h2>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="此标题的永久链接"></a></h2>
+<h3>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="此标题的永久链接"></a></h3>
 <img alt="../images/OID.jpg" src="../images/OID.jpg" />
 <p>这是另一套机器学习降噪算法，来自 Intel。顾名思义，它开源，能在多种 CPU 型号和架构上运行。速度不如 Optix，但效果非常出色，在带透明度的场景里更有优势，比如渲染聚碳酸酯（PC）键盘。关于 Open Image Denoise 的更多信息见 <a class="reference external" href="https://www.openimagedenoise.org/">官网</a>。</p>
 </section>
 <section id="id6">
-<h2>实际应用<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h2>
+<h3>实际应用<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h3>
 <img alt="../images/CompositorDenoise.jpg" src="../images/CompositorDenoise.jpg" />
 <p>两种算法都能在选项里启用，用于视口和最终渲染；不过在合成器里使用时，Open Image Denoise 更快。KRK 已经把合成器节点搭好了，你只要用合成器面板左上角的复选框启用即可。</p>
 <img alt="../images/Denoised256.png" src="../images/Denoised256.png" />
@@ -368,6 +375,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</section>
 </section>
 </section>
 

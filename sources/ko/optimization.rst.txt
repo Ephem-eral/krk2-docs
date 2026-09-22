@@ -36,21 +36,21 @@
 Blender는 몇 가지 노이즈 제거 알고리즘을 제공하는데, 아래 두 가지를 중점적으로 살펴보겠습니다.
 
 Optix
------
+~~~~~
 
 .. image:: img/Optix.jpg
 
 Nvidia의 머신 러닝 노이즈 제거 알고리즘으로, RTX 20 시리즈 이후의 Nvidia 그래픽 카드에서 실행할 수 있습니다. 전용 텐서 코어를 사용하기 때문에 속도가 매우 빠르지만, Nvidia 사용자로 제한됩니다. 더 많은 정보는 `NVIDIA 공식 페이지 <https://developer.nvidia.com/optix-denoiser>`_ 를 참조하세요.
 
 Open Image Denoise
-------------------
+~~~~~~~~~~~~~~~~~~
 
 .. image:: img/OID.jpg
 
 Intel에서 만든 또 다른 머신 러닝 노이즈 제거 알고리즘입니다. 이름에서 알 수 있듯이 오픈 소스이며, 다양한 CPU 모델과 아키텍처에서 실행할 수 있습니다. 속도는 Optix보다 느리지만 효과가 매우 뛰어나며, 투명도가 있는 씬, 예를 들어 폴리카보네이트(PC) 키보드를 렌더링할 때 더 유리합니다. Open Image Denoise에 대한 더 많은 정보는 `공식 사이트 <https://www.openimagedenoise.org/>`_ 를 참조하세요.
 
 실제 적용
----------
+~~~~~~~~~
 
 .. image:: img/CompositorDenoise.jpg
 

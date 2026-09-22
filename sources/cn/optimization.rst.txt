@@ -36,21 +36,21 @@
 Blender 提供了几种降噪算法，我们重点看下面两种。
 
 Optix
------
+~~~~~
 
 .. image:: img/Optix.jpg
 
 这是 Nvidia 的机器学习降噪算法，可在 RTX 20 系及之后的 Nvidia 显卡上运行。因为它用了专用张量核心，速度非常快，代价是仅限 Nvidia 用户。更多信息见 `NVIDIA 官方页面 <https://developer.nvidia.com/optix-denoiser>`_。
 
 Open Image Denoise
-------------------
+~~~~~~~~~~~~~~~~~~
 
 .. image:: img/OID.jpg
 
 这是另一套机器学习降噪算法，来自 Intel。顾名思义，它开源，能在多种 CPU 型号和架构上运行。速度不如 Optix，但效果非常出色，在带透明度的场景里更有优势，比如渲染聚碳酸酯（PC）键盘。关于 Open Image Denoise 的更多信息见 `官网 <https://www.openimagedenoise.org/>`_。
 
 实际应用
---------
+~~~~~~~~
 
 .. image:: img/CompositorDenoise.jpg
 

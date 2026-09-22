@@ -36,21 +36,21 @@
 Blenderはいくつかのノイズ除去アルゴリズムを提供していますが、ここでは以下の2つに注目します。
 
 Optix
------
+~~~~~
 
 .. image:: img/Optix.jpg
 
 これはNvidiaの機械学習ノイズ除去アルゴリズムで、RTX 20シリーズ以降のNvidiaグラフィックスカードで動作します。専用のテンソルコアを使用するため非常に高速ですが、その代償としてNvidiaユーザーに限定されます。詳細は `NVIDIA公式ページ <https://developer.nvidia.com/optix-denoiser>`_ を参照してください。
 
 Open Image Denoise
-------------------
+~~~~~~~~~~~~~~~~~~
 
 .. image:: img/OID.jpg
 
 これはIntelによるもう一つの機械学習ノイズ除去アルゴリズムです。名前が示すとおりオープンソースで、さまざまなCPUモデルとアーキテクチャで動作します。速度はOptixに劣りますが、効果は非常に優れており、透明部分を含むシーン、たとえばポリカーボネート（PC）キーボードのレンダリングでより有利です。Open Image Denoiseの詳細は `公式サイト <https://www.openimagedenoise.org/>`_ を参照してください。
 
 実践での使用
-------------
+~~~~~~~~~~~~
 
 .. image:: img/CompositorDenoise.jpg
 
