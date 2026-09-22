@@ -138,6 +138,10 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
 .rst-content .headerlink { color: var(--text-muted); }
 .rst-content hr { border-color: var(--border); }
 .rst-content code, .rst-content tt { background: var(--code-bg); border-color: var(--border); color: var(--text); }
+/* The theme paints inline literals red (#e74c3c) with a more specific
+   selector than ours, which fails contrast on both themes; use the accent
+   colour instead (light 4.9:1, dark 8.5:1 on the code background). */
+.rst-content code.literal, .rst-content tt.literal { color: var(--accent-text) !important; }
 .rst-content pre { background: var(--code-bg); border-color: var(--border); color: var(--text); }
 .rst-content .wy-table-responsive table, .rst-content table.docutils { border-color: var(--border); }
 .rst-content table.docutils th { background: var(--code-bg); color: var(--text); border-color: var(--border); }
