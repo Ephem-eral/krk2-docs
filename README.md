@@ -1,5 +1,8 @@
 # Keyboard Render Kit 2 documentation · one HTML file, 6 languages
 
+Author: **E3e** ([@Ephem-eral](https://github.com/Ephem-eral))  
+Unofficial multi-language build of the Keyboard Render Kit 2 documentation.
+
 - `index.html` — the whole site: language cover + all six languages in one document
 - `images/` — 194 shared images
 - `fonts/` — theme icon fonts
