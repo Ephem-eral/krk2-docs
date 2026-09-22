@@ -1,0 +1,93 @@
+Keyboard Render Kit 2 documentation — unofficial multi-language build
+===============================================================================
+
+Short version: the documentation belongs to ImperfectLink, the translations and
+the build additions belong to E3e, and the bundled theme/font assets keep their
+own open-source licences. This repository is not affiliated with ImperfectLink
+or with Blender.
+
+一句话说明：文档内容版权归 ImperfectLink；翻译与构建部分由 E3e 制作；主题与
+字体等第三方素材沿用各自的开源授权。本仓库与原作者及 Blender 官方无关。
+
+
+1. Documentation content and images
+-----------------------------------
+
+The English documentation text, screenshots and other assets are
+© 2022 ImperfectLink, all rights reserved. They were originally published at
+https://keyboardrenderkit.readthedocs.io/ (Keyboard Render Kit 2 v2.0.1).
+
+This repository contains an unofficial, non-commercial mirror of that content
+with community translations added. No ownership of the original content is
+claimed here, and no additional rights to it are granted by this repository.
+All rights remain with ImperfectLink. If the author asks for the mirror to be
+changed or removed, it will be.
+
+
+2. Translations and build additions
+-----------------------------------
+
+© 2026 E3e <https://github.com/Ephem-eral>, released under the MIT licence:
+
+  * the Simplified Chinese hand-proofread edition, the Traditional Chinese
+    conversion and the Japanese / Korean / Russian editions;
+  * the assembly code and output of this multi-page build (language cover,
+    language switcher, sidebar, search wiring, print stylesheet);
+  * the light-green theme and the dark-mode toggle
+    (static/krk2.css, static/krk2.js).
+
+MIT licence text:
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+This MIT grant covers the translations and build additions only. It does not
+extend to the documentation content described in section 1, which stays with
+ImperfectLink.
+
+
+3. Bundled third-party assets
+-----------------------------
+
+These files are redistributed unchanged so the site works offline; each keeps
+its own licence and copyright:
+
+  * Sphinx-generated assets — basic.css, pygments.css, doctools.js,
+    searchtools.js, sphinx_highlight.js,
+    _sphinx_javascript_frameworks_compat.js, language_data.*.js
+    © the Sphinx team, BSD 2-Clause. https://www.sphinx-doc.org/
+  * sphinx_rtd_theme — css/theme.css, css/badge_only.css, js/theme.js,
+    js/badge_only.js © Read the Docs, MIT.
+    https://github.com/readthedocs/sphinx_rtd_theme
+  * jQuery — jquery.js © OpenJS Foundation, MIT. https://jquery.com/
+  * html5shiv — js/html5shiv*.js © Alexander Farkas and contributors, MIT.
+  * Font Awesome 4 — fonts/fontawesome-webfont.* : font files under SIL OFL
+    1.1, CSS under MIT. https://fontawesome.com/v4/license/
+  * Lato — fonts/lato-*.* under SIL OFL 1.1. https://www.latofonts.com/
+  * Roboto Slab — fonts/Roboto-Slab-*.* under the Apache Licence 2.0.
+    https://fonts.google.com/specimen/Roboto+Slab
+
+Full licence texts are available from the project pages listed above.
+
+
+4. Trademarks
+-------------
+
+Keyboard Render Kit, Blender and the names of keyboards, keycap profiles and
+manufacturers shown in the documentation belong to their respective owners and
+are used here for identification only.

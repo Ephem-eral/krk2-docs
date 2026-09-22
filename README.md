@@ -13,4 +13,4 @@ site.
 > **More languages may be added in the future.** / 后续可能上线更多语言 · 後續可能上線更多語言
 
 Unofficial multi-language build by [E3e](https://github.com/Ephem-eral).
-Documentation content © 2022 ImperfectLink.
+Documentation content © 2022 ImperfectLink — see [LICENSE](LICENSE).
