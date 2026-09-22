@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyboard Render Kit 2 · Documentation (6 languages)</title>
+<meta name="description" content="Keyboard Render Kit 2 documentation in English, Simplified Chinese, Traditional Chinese, Japanese, Korean and Russian.">
+<style>
+  :root { --blue: #2980b9; --dark: #1f2d34; --muted: #6b7b83; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Lato", "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Noto Sans KR", system-ui, sans-serif;
+         color: var(--dark); background: #f7f9fa; }
+  header { background: var(--blue); color: #fff; padding: 34px 24px 28px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 27px; letter-spacing: .01em; }
+  header p { margin: 0; opacity: .9; font-size: 14px; }
+  main { max-width: 980px; margin: 0 auto; padding: 28px 20px 60px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  a.card { display: block; background: #fff; border: 1px solid #e1e6e9; border-radius: 6px; padding: 18px 18px 16px;
+           text-decoration: none; color: inherit; transition: .15s; }
+  a.card:hover { border-color: var(--blue); box-shadow: 0 4px 14px rgba(41,128,185,.14); transform: translateY(-1px); }
+  a.card.primary { border-color: var(--blue); background: #f2f8fc; }
+  .card .lang { font-size: 19px; font-weight: 700; }
+  .card .sub { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .badge { display: inline-block; margin-left: 8px; padding: 2px 7px; border-radius: 10px; background: var(--blue);
+           color: #fff; font-size: 11px; vertical-align: 2px; }
+  .card.primary .badge { background: #1f6a98; }
+  h2 { font-size: 16px; margin: 30px 0 12px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  footer { border-top: 1px solid #e1e6e9; margin-top: 34px; padding-top: 16px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+  code { background: #eef2f4; padding: 1px 5px; border-radius: 3px; font-size: 12.5px; }
+  .hint { background: #fff8e6; border: 1px solid #f2e0b5; border-radius: 6px; padding: 12px 14px; font-size: 13.5px; margin-top: 22px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Keyboard Render Kit 2 · Documentation</h1>
+  <p>6 languages · single-page, searchable, printable</p>
+</header>
+<main>
+  <h2 id="all">All languages</h2>
+  <div class="grid">
+    <a class="card primary" href="KRK2-docs-multilingual.html" data-lang="multi">
+      <div class="lang">All languages <span class="badge">switch in page</span></div>
+      <div class="sub">One page with an in-page switcher — English / 简体 / 繁體 / 日本語 / 한국어 / Русский</div>
+    </a>
+  </div>
+
+  <h2 id="single">Single language</h2>
+  <div class="grid">
+    <a class="card" href="KRK2-docs-en.html" data-lang="en"><div class="lang">English</div><div class="sub">Keyboard Render Kit 2 Documentation</div></a>
+    <a class="card" href="KRK2-docs-cn.html" data-lang="zh-CN"><div class="lang">简体中文</div><div class="sub">Keyboard Render Kit 2 中文文档</div></a>
+    <a class="card" href="KRK2-docs-tw.html" data-lang="zh-TW"><div class="lang">繁體中文</div><div class="sub">Keyboard Render Kit 2 繁體中文文件</div></a>
+    <a class="card" href="KRK2-docs-ja.html" data-lang="ja"><div class="lang">日本語</div><div class="sub">Keyboard Render Kit 2 日本語ドキュメント</div></a>
+    <a class="card" href="KRK2-docs-ko.html" data-lang="ko"><div class="lang">한국어</div><div class="sub">Keyboard Render Kit 2 한국어 문서</div></a>
+    <a class="card" href="KRK2-docs-ru.html" data-lang="ru"><div class="lang">Русский</div><div class="sub">Keyboard Render Kit 2 Документация</div></a>
+  </div>
+
+  <div class="hint" id="hint" hidden></div>
+
+  <footer>
+    <p>Each page is a self-contained single-page document: a searchable sidebar (chapters and sections), print / save-as-PDF, and the same chapter position when you switch language. Images and fonts live in <code>images/</code> and <code>fonts/</code>, so the whole folder must be served together.</p>
+    <p>Documentation content © 2022 ImperfectLink (Keyboard Render Kit 2, v2.0.1). This site is an unofficial multi-language build.</p>
+  </footer>
+</main>
+<script>
+(function () {
+  var langs = (navigator.languages || [navigator.language || "en"]).map(function (l) { return String(l).toLowerCase(); });
+  var match = null;
+  for (var i = 0; i < langs.length && !match; i++) {
+    var l = langs[i];
+    if (l.indexOf("zh-tw") === 0 || l.indexOf("zh-hk") === 0 || l.indexOf("zh-hant") === 0) { match = "zh-TW"; }
+    else if (l.indexOf("zh") === 0) { match = "zh-CN"; }
+    else if (l.indexOf("ja") === 0) { match = "ja"; }
+    else if (l.indexOf("ko") === 0) { match = "ko"; }
+    else if (l.indexOf("ru") === 0) { match = "ru"; }
+    else if (l.indexOf("en") === 0) { match = "en"; }
+  }
+  var card = match && document.querySelector('[data-lang="' + match + '"]');
+  if (card) {
+    card.classList.add("primary");
+    card.querySelector(".lang").insertAdjacentHTML("beforeend", ' <span class="badge">your language</span>');
+    var hint = document.getElementById("hint");
+    hint.hidden = false;
+    hint.innerHTML = "Your browser language looks like <b>" + card.querySelector(".lang").textContent.replace("your language", "").trim() +
+      "</b>. <a href=\"" + card.getAttribute("href") + "\">Open it</a>, or use the combined page above to switch languages at any time.";
+  }
+})();
+</script>
+</body>
+</html>
