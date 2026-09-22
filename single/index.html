@@ -49600,6 +49600,31 @@ Blender предлагает несколько алгоритмов шумоп�
   }
 })();
 
+
+  (function () {
+    var burger = document.querySelector('[data-toggle="wy-nav-top"]');
+    var side = document.querySelector('.wy-nav-side');
+    var wrap = document.querySelector('.wy-nav-content-wrap');
+    if (!burger || !side) { return; }
+    function close() {
+      side.classList.remove('shift');
+      if (wrap) { wrap.classList.remove('shift'); }
+    }
+    burger.addEventListener('click', function (e) {
+      e.preventDefault();
+      side.classList.toggle('shift');
+      if (wrap) { wrap.classList.toggle('shift'); }
+    });
+    side.addEventListener('click', function (e) {
+      var el = e.target;
+      while (el && el !== side && !(el.tagName === 'A')) { el = el.parentElement; }
+      if (el && el.tagName === 'A') { close(); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { close(); }
+    });
+  })();
+
 </script>
 </body>
 </html>
