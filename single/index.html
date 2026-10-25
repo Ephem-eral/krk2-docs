@@ -49499,7 +49499,11 @@ Blender предлагает несколько алгоритмов шумоп�
 
   function currentSlug() {
     var li = document.querySelector('.lang-nav[data-lang="' + active + '"] li.current[data-page]');
-    return li ? li.getAttribute('data-page') : null;
+    if (li) {
+      window.__krk2LastPage = li.getAttribute('data-page');
+      return window.__krk2LastPage;
+    }
+    return window.__krk2LastPage || null;
   }
 
   function highlight() {
@@ -49519,6 +49523,7 @@ Blender предлагает несколько алгоритмов шумоп�
     );
     if (best) {
       best.li.classList.add('current');
+      window.__krk2LastPage = best.li.getAttribute('data-page');
       if (crumb) {
         crumb.textContent = best.li.querySelector('a').textContent.replace('Open/close menu', '').trim();
       }
@@ -49561,7 +49566,20 @@ Blender предлагает несколько алгоритмов шумоп�
     try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
     if (slug) {
       var target = document.getElementById(lang + '-p-' + slug);
-      if (target) { target.scrollIntoView(); }
+      if (target) {
+        window.__krk2LastPage = slug;
+        // The mobile theme fixes the content wrapper while the drawer is open,
+        // which resets document scrolling. Close it before jumping so a
+        // language switch keeps the reader in the same chapter.
+        var side = document.querySelector('.wy-nav-side');
+        var wrap = document.querySelector('.wy-nav-content-wrap');
+        if (side) { side.classList.remove('shift'); }
+        if (wrap) { wrap.classList.remove('shift'); }
+        window.requestAnimationFrame(function () {
+          target.scrollIntoView();
+          highlight();
+        });
+      }
     }
     if (search) { search.value = ''; filter(''); }
     highlight();
@@ -49641,12 +49659,24 @@ Blender предлагает несколько алгоритмов шумоп�
     var side = document.querySelector('.wy-nav-side');
     var wrap = document.querySelector('.wy-nav-content-wrap');
     if (!burger || !side) { return; }
+    function rememberChapter() {
+      var button = document.querySelector('.lang-switch button.active');
+      if (!button) { return; }
+      var lang = button.getAttribute('data-switch');
+      var current = document.querySelector(
+        '.lang-nav[data-lang="' + lang + '"] li.current[data-page]'
+      );
+      if (current) {
+        window.__krk2LastPage = current.getAttribute('data-page');
+      }
+    }
     function close() {
       side.classList.remove('shift');
       if (wrap) { wrap.classList.remove('shift'); }
     }
     burger.addEventListener('click', function (e) {
       e.preventDefault();
+      if (!side.classList.contains('shift')) { rememberChapter(); }
       side.classList.toggle('shift');
       if (wrap) { wrap.classList.toggle('shift'); }
     });
