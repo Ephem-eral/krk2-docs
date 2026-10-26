@@ -23,7 +23,7 @@ UV 编辑器
 
 .. image:: img/UI_UV.png
 
-这个面板既能当图像查看器，也能显示键帽上字符的坐标。
+这个面板既能当图像查看器，也能显示键帽上字根的坐标。
 
 `Blender 手册：UV 编辑器 <https://docs.blender.org/manual/zh-hans/latest/editors/uv/introduction.html>`_
 

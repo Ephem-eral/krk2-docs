@@ -17,7 +17,7 @@ Relink 是物体数据管理器，用来快速切换键帽高度、行、尺寸�
 导入 KLE
 ^^^^^^^^
 
-KRK 可以导入 Keyboard Layout Editor 的 JSON 文件。KLE 不给物体命名，所以导入器会根据字符和行（K1-K6）来推断按键，并在能推断的地方放置占位符。可以用这个 KLE 作为示例，或者以它为基础生成你自己的配列：
+KRK 可以导入 Keyboard Layout Editor 的 JSON 文件。KLE 不给物体命名，所以导入器会根据字根和行（K1-K6）来推断按键，并在能推断的地方放置占位符。可以用这个 KLE 作为示例，或者以它为基础生成你自己的配列：
 
 `http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
 

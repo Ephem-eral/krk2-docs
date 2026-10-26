@@ -27,7 +27,7 @@ KRK2 延续了 KRK1 的物体数据替换工作流，并让它更灵活、更独
 |
 `Discord <https://discord.gg/fVkGTunzT3>`_
 |
-`字符资源库 <https://github.com/imperfectlink/KRKLegendsRepo>`_
+`字根资源库 <https://github.com/imperfectlink/KRKLegendsRepo>`_
 
 |
 
@@ -56,7 +56,7 @@ KRK2 延续了 KRK1 的物体数据替换工作流，并让它更灵活、更独
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: 制作字符
+   :caption: 制作字根
 
    leg_inkscape
    leg_illustrator

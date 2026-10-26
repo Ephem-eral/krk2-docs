@@ -4,12 +4,12 @@
 CHE
 ---
 
-在 Endeavour 基础上重新建模的 Cherry 高度（圈内俗称「原厂高度」）。底面使用 -2 扩展，使用 Cherry 字符模板，支持侧刻。
+在 Endeavour 基础上重新建模的 Cherry 高度（圈内俗称「原厂高度」）。底面使用 -2 扩展，使用 Cherry 字根模板，支持侧刻。
 
 DCS
 ---
 
-在 Fooblitzky 基础上重新建模的 DCS 高度。底面使用 -2 扩展，使用 DCS 字符模板，支持侧刻。
+在 Fooblitzky 基础上重新建模的 DCS 高度。底面使用 -2 扩展，使用 DCS 字根模板，支持侧刻。
 
 DSA
 ---
