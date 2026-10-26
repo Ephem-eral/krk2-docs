@@ -21,7 +21,7 @@ KRK 到 Cinema 4D
 
 |
 
-接著在 Cinema 4D 裡匯入 FBX，然後點 Tools > Axis > Reset Scale，以及旁邊的齒輪圖示來應用縮放。
+接著在 Cinema 4D 裡匯入 FBX，然後點 Tools > Axis > Reset Scale，以及旁邊的齒輪圖示來套用縮放。
 
 .. image:: img/MammothC4d.png
 

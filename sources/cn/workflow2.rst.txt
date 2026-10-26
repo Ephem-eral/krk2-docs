@@ -18,7 +18,7 @@
 
 |
 
-.. note:: 如果你不打算对最终图像做任何后期处理（不推荐这样），那至少把色彩管理方案设为 "Standard"，或者把 look 设为 "Medium High Contrast"。
+.. note:: 如果你不打算对最终图像做任何后期处理（不建议这样做），那至少把色彩管理方案设为 "Standard"，或者把 look 设为 "Medium High Contrast"。
 
 |
 

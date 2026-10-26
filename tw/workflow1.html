@@ -162,23 +162,23 @@
 <li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat（鍵帽材質）</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">設定項</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap（鍵帽底色）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（字根）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（字根遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（字根銳化）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（字根粗細）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（副字根）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（副字根遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（副字根銳化）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（副字根粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（字元）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（字元遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（字元銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（字元粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（副字元）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（副字元遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（副字元銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（副字元粗細）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front（側刻）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask（側刻遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front（側刻銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-front">Sharpen Front（側刻銳化）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight（側刻粗細）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness（粗糙度）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale（凹凸比例）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump（頂部凹凸）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump（側面凹凸）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（字根接縫）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（字元接縫）</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">遮罩</a></li>
@@ -186,7 +186,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">製作字根</span></p>
+<p class="caption" role="heading"><span class="caption-text">製作字元</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
@@ -336,14 +336,14 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，並保持該鍵帽為活動物件（高亮顯示）。然後點選 KRK 面板 Data（資料）區域裡的 Copy 按鈕，就能將材質連結到其他鍵帽。這個操作等同於 Ctrl+L，再按 M（連結材質），但會忽略非鍵帽物件。</p>
+<p>從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，並保持該鍵帽為作用中物件（高亮顯示）。然後點選 KRK 面板 Data（資料）區域裡的 Copy 按鈕，就能將材質連結到其他鍵帽。這個操作等同於 Ctrl+L，再按 M（連結材質），但會忽略非鍵帽物件。</p>
 <img alt="../images/copymat.gif" src="../images/copymat.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">備註</p>
-<p>如果你不打算對最終影像做任何後期處理（不推薦這樣），那至少把色彩管理方案設為 「Standard」，或者把 look 設為 「Medium High Contrast」。</p>
+<p>如果你不打算對最終影像做任何後期處理（不建議這樣做），那至少把色彩管理方案設為 「Standard」，或把 look 設為 「Medium High Contrast」。</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -356,16 +356,16 @@
 <p>色板本質上是通用節點組，但預設配置如下：</p>
 <ul class="simple">
 <li><p><strong>A</strong> 鍵帽底色</p></li>
-<li><p><strong>B</strong> 字根顏色</p></li>
-<li><p><strong>C</strong> 副字根顏色（未套用）</p></li>
+<li><p><strong>B</strong> 字元顏色</p></li>
+<li><p><strong>C</strong> 副字元顏色（未套用）</p></li>
 <li><p><strong>D</strong> 側刻顏色（未套用）</p></li>
-<li><p><strong>E</strong> 字根遮罩</p></li>
+<li><p><strong>E</strong> 字元遮罩</p></li>
 </ul>
 <img alt="../images/Palettes.PNG" src="../images/Palettes.PNG" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>拖動鍵帽上的這些滑桿，切換到 custom 後即可調整自訂顏色。調整滿意後，最後選取作為樣本的鍵帽，再點選 Color（顏色）區域裡的 Set，即可將設定應用到所有選取的鍵帽。</p>
+<p>拖動鍵帽上的這些滑桿，切換到 custom 後即可調整自訂顏色。調整滿意後，最後選取作為樣本的鍵帽，再點選 Color（顏色）區域裡的 Set，即可將設定套用到所有選取的鍵帽。</p>
 <img alt="../images/SetColor.gif" src="../images/SetColor.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -376,7 +376,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>用 Palette E 的滑桿，可以把修飾鍵的字根在 Text（文字）、Icon（圖示）或 Text+Icon（文字+圖示）之間切換。</p>
+<p>用 Palette E 的滑桿，可以把修飾鍵的字元在 Text（文字）、Icon（圖示）或 Text+Icon（文字+圖示）之間切換。</p>
 <img alt="../images/PaletteE.gif" src="../images/PaletteE.gif" />
 <div class="line-block">
 <div class="line"><br /></div>

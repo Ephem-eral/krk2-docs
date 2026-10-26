@@ -37,13 +37,13 @@ KRK 預置了多種地面和燈光方案供你起步，不過你可能想換別�
 
 |
 
-要匯入 blend 檔案的內容，得用 Append 或 Link。這裡選擇 append 地面，並且不與原檔案保持連結。在 Blender 裡點選 File > Append，開始匯入 Poly Haven 地面，接著選擇 Object 子分類，找到地面物件，它很可能叫 "Plane"。
+要匯入 blend 檔案的內容，得用 Append 或 Link。這裡選擇 Append 地面，並且不與原檔案保持連結。在 Blender 裡點選 File > Append，開始匯入 Poly Haven 地面，接著選擇 Object 子分類，找到地面物件，它很可能叫 "Plane"。
 
 .. image:: img/PolyHaven_05.jpg
 
 |
 
-它會被追加到大綱視圖裡目前啟用的集合中。地面進場景之後，就可以動手調整了。
+它會被追加到大綱視圖裡目前作用中的集合中。地面進場景之後，就可以動手調整了。
 
 .. image:: img/PolyHaven_06.jpg
 

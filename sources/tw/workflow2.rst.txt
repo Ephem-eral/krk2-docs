@@ -6,7 +6,7 @@
 |
 
 新增一個 KRK2 檔案，在視圖裡按 A 全選，再按 KRK 面板 Relink 區域裡的 Set，把它們設為 Cherry 高度。
-從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 單擊該鍵帽，使其成為活動物件，再點選 KRK 面板 Data 區域裡的 Copy。
+從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 單擊該鍵帽，使其成為作用中物件，再點選 KRK 面板 Data 區域裡的 Copy。
 
 .. image:: img/SetCapsmatCopy.gif
 
@@ -18,7 +18,7 @@
 
 |
 
-.. note:: 如果你不打算對最終影像做任何後期處理（不推薦這樣），那至少把色彩管理方案設為 "Standard"，或者把 look 設為 "Medium High Contrast"。
+.. note:: 如果你不打算對最終影像做任何後期處理（不建議這樣做），那至少把色彩管理方案設為 "Standard"，或把 look 設為 "Medium High Contrast"。
 
 |
 

@@ -4,7 +4,7 @@
 包裝內容
 --------
 
-從下載頁面取得的壓縮包中，包含一個 blend 檔案、一個 txt 檔案，以及字根模板（legend template）所需的 SVG 和其他素材。請將全部內容解壓縮到同一資料夾。這個 txt 檔案是 Blender 資產管理的配套檔案（sidecar），必須與 blend 檔案放在一起。
+從下載頁面取得的壓縮包中，包含一個 blend 檔案、一個 txt 檔案，以及字元模板（legend template）所需的 SVG 和其他素材。請將全部內容解壓縮到同一資料夾。這個 txt 檔案是 Blender 資產管理的配套檔案（sidecar），必須與 blend 檔案放在一起。
 
 .. image:: img/KRK2Files.JPG
 

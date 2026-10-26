@@ -23,7 +23,7 @@ UV 編輯器
 
 .. image:: img/UI_UV.png
 
-這個面板既能當影像檢視器，也能顯示鍵帽上字根的座標。
+這個面板既能當影像檢視器，也能顯示鍵帽上字元的座標。
 
 `Blender 手冊：UV 編輯器 <https://docs.blender.org/manual/zh-hant/latest/editors/uv/introduction.html>`_
 

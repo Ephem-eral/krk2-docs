@@ -37,7 +37,7 @@ KRK 预置了多种地面和灯光方案供你起步，不过你可能想换别�
 
 |
 
-要导入 blend 文件的内容，得用 Append 或 Link。这里选择 append 地面，并且不与原文件保持链接。在 Blender 里点击 File > Append，开始导入 Poly Haven 地面，接着选择 Object 子分类，找到地面物体，它很可能叫 "Plane"。
+要导入 blend 文件的内容，得用 Append 或 Link。这里选择 Append 地面，并且不与原文件保持链接。在 Blender 里点击 File > Append，开始导入 Poly Haven 地面，接着选择 Object 子分类，找到地面物体，它很可能叫 "Plane"。
 
 .. image:: img/PolyHaven_05.jpg
 

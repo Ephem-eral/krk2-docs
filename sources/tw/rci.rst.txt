@@ -28,6 +28,6 @@ Restore Collection Instances 最初只是 Keyboard Render Kit 的一部分，但
 
 |
 
-用法很簡單：按 Ctrl+A，在 apply（應用）選單裡就能找到它。
+用法很簡單：按 Ctrl+A，在 apply（套用）選單裡就能找到它。
 
 .. image:: img/RestoreCollectionInstances.jpg

@@ -162,23 +162,23 @@
 <li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat（鍵帽材質）</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">設定項</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap（鍵帽底色）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（字根）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（字根遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（字根銳化）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（字根粗細）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（副字根）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（副字根遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（副字根銳化）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（副字根粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（字元）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（字元遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（字元銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（字元粗細）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（副字元）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（副字元遮罩）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（副字元銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（副字元粗細）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front（側刻）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask（側刻遮罩）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#shapen-front">Shapen Front（側刻銳化）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-front">Sharpen Front（側刻銳化）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight（側刻粗細）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness（粗糙度）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale（凹凸比例）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump（頂部凹凸）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump（側面凹凸）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（字根接縫）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（字元接縫）</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">遮罩</a></li>
@@ -186,7 +186,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">製作字根</span></p>
+<p class="caption" role="heading"><span class="caption-text">製作字元</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
@@ -339,7 +339,7 @@
 </div>
 <section id="kle">
 <h3>匯入 KLE<a class="headerlink" href="#kle" title="本標頭的永久連結"></a></h3>
-<p>KRK 可以匯入 Keyboard Layout Editor 的 JSON 檔案。KLE 不給物件命名，所以匯入器會根據字根和行（K1-K6）來推斷按鍵，並在能推斷的地方放置佔位符。可以用這個 KLE 作為範例，或者以它為基礎產生你自己的配列：</p>
+<p>KRK 可以匯入 Keyboard Layout Editor 的 JSON 檔案。KLE 不給物件命名，所以匯入器會根據字元和行（K1-K6）來推斷按鍵，並在能推斷的地方放置佔位符。可以用這個 KLE 作為範例，或以它為基礎產生你自己的配列：</p>
 <p><a class="reference external" href="http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a">http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a</a></p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -425,7 +425,7 @@
 <section id="size">
 <h3>Size（尺寸）<a class="headerlink" href="#size" title="本標頭的永久連結"></a></h3>
 <img alt="../images/KRK2ShiftSize.gif" src="../images/KRK2ShiftSize.gif" />
-<p>在輸入框裡填入四位字根的尺寸單位（unit size）就能改變鍵帽尺寸；只要目標幾何體存在，鍵帽就會變成你要的大小。</p>
+<p>在輸入框裡填入四位字元的尺寸單位（unit size）就能改變鍵帽尺寸；只要目標幾何體存在，鍵帽就會變成你要的大小。</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -448,7 +448,7 @@
 </section>
 <section id="link-material">
 <h3>Link Material（連結材質）<a class="headerlink" href="#link-material" title="本標頭的永久連結"></a></h3>
-<p>Link Material 可以把目前已應用的材質帶到目標物件資料上。要開還是要關取決於你想要的結果：比如換成佔位符高度（PLA）時，就該把它關掉，免得 Capsmat 也帶到佔位符上。</p>
+<p>Link Material 可以把目前已套用的材質帶到目標物件資料上。要開還是要關取決於你想要的結果：比如換成佔位符高度（PLA）時，就該把它關掉，免得 Capsmat 也帶到佔位符上。</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -461,7 +461,7 @@
 <div class="line"><br /></div>
 </div>
 <blockquote>
-<div><p>以下區域只顯示目前啟用（高亮）物件對應的選項。</p>
+<div><p>以下區域只顯示目前作用中（高亮）物件對應的選項。</p>
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -489,7 +489,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>這裡的 Copy 會把目前啟用鍵帽上的材質連結到其他所有選取的鍵帽，同時忽略非鍵帽物件。</p>
+<p>這裡的 Copy 會把目前作用中的鍵帽上的材質連結到其他所有選取的鍵帽，同時忽略非鍵帽物件。</p>
 <img alt="../images/MatCopy.gif" src="../images/MatCopy.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -503,7 +503,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Custom/Palette 開關讓你在自訂顏色和色板兩套工作流程之間切換。顏色 A-E 和色板滑桿 A-E 透過色板節點組，讓你逐個物件地控制 Capsmat 的這些部分。選好後按 Set 會應用到所有選取的鍵帽；也可以按各自的複製按鈕，一次只複製一項。底部的 Copy 和 Paste 用來為所有選取物件建立並叫回一套選項記錄。</p>
+<p>Custom/Palette 開關讓你在自訂顏色和色板兩套工作流程之間切換。顏色 A-E 和色板滑桿 A-E 透過色板節點組，讓你逐個物件地控制 Capsmat 的這些部分。選好後按 Set 會套用到所有選取的鍵帽；也可以按各自的複製按鈕，一次只複製一項。底部的 Copy 和 Paste 用來為所有選取物件建立並叫回一套選項記錄。</p>
 <img alt="../images/ColorSetPaste.gif" src="../images/ColorSetPaste.gif" />
 <div class="line-block">
 <div class="line"><br /></div>

@@ -5,19 +5,19 @@ Affinity Designer
 
 |
 
-和 Inkscape 類似，開啟 svg 後，右側的圖層面板裡有字根，也有鍵帽頂部和側面的模板。
+和 Inkscape 類似，開啟 svg 後，右側的圖層面板裡有字元，也有鍵帽頂部和側面的模板。
 
 .. image:: img/AffinityScreen.jpg
 
 |
 
-模板預設開啟，方便你參照鍵帽的手指接觸區域對齊字根和個性圖案。不過記住，最終產出必須是白字黑底的影像。
+模板預設開啟，方便你參照鍵帽的手指接觸區域對齊字元和個性圖案。不過記住，最終產出必須是白字黑底的影像。
 
 .. image:: img/AffinityLegends.jpg
 
 |
 
-新增一個圖層，把字根貼進去。用方向鍵可以微調位置，按住 Shift 步長更大。
+新增一個圖層，把字元貼進去。用方向鍵可以微調位置，按住 Shift 步長更大。
 
 .. image:: img/AffinityLayers.jpg
 
@@ -29,13 +29,13 @@ Affinity Designer
 
 |
 
-字根擺好後，用 File > Export 或 Ctrl+Alt+Shift+S 匯出，把白字黑底（WoB）影像導成 4096x4096 或 8192x8192 的 png。其實解析度和格式都無所謂，只要是正方形影像。
+字元擺好後，用 File > Export 或 Ctrl+Alt+Shift+S 匯出，把白字黑底（WoB）影像導成 4096x4096 或 8192x8192 的 png。其實解析度和格式都無所謂，只要是正方形影像。
 
 .. image:: img/AffinityExport.jpg
 
 |
 
-如果個性圖案或字根是多彩的，就關掉黑色背景，匯出帶透明通道的影像：用 Alpha 通道當遮罩，再把顏色接到字根顏色上。
+如果個性圖案或字元是多彩的，就關掉黑色背景，匯出帶透明通道的影像：用 Alpha 通道當遮罩，再把顏色接到字元顏色上。
 
 |
 

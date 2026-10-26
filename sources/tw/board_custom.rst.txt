@@ -35,7 +35,7 @@
 
 |
 
-現在應用縮放和旋轉：按 Ctrl+A，再按一次 A，選 All Transforms（應用全部變換）。
+現在套用縮放和旋轉：按 Ctrl+A，再按一次 A，選 All Transforms（套用全部變換）。
 
 .. image:: img/Resize3.jpg
 
@@ -59,7 +59,7 @@
 
 |
 
-平面位置正確了，把它縮到比鍵盤底面略大一點（S X，再 S Y），然後應用縮放。
+平面位置正確了，把它縮到比鍵盤底面略大一點（S X，再 S Y），然後套用縮放。
 
 .. image:: img/MoveHandle4.gif
 
@@ -113,7 +113,7 @@
 
 |
 
-選取要移動的佔位符，用軸向約束移動：G X 沿 X 軸，G YY 沿局部 Y 軸，依此類推。Win 鍵要刪掉，Alt 鍵用左側的按鍵關聯複製過來（Ctrl+L 再按 O）。按住 Ctrl，或者點磁鐵圖示開啟吸附，就能用上吸附增量。
+選取要移動的佔位符，用軸向約束移動：G X 沿 X 軸，G YY 沿局部 Y 軸，依此類推。Win 鍵要刪掉，Alt 鍵用左側的按鍵關聯複製過來（Ctrl+L 再按 O）。按住 Ctrl，或點磁鐵圖示開啟吸附，就能用上吸附增量。
 
 .. image:: img/AellaLayoutAjust.gif
 
