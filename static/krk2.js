@@ -52,6 +52,13 @@
       var first = side.querySelector('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])');
       if (first) { first.focus(); }
     }
+    function onViewportChange() {
+      if (mobile && !mobile.matches && side.classList.contains('shift')) {
+        close(false);
+      } else {
+        sync();
+      }
+    }
     burger.addEventListener('click', function (e) {
       e.preventDefault();
       if (side.classList.contains('shift')) { close(false); }
@@ -69,8 +76,8 @@
       }
     });
     if (mobile) {
-      if (mobile.addEventListener) { mobile.addEventListener('change', sync); }
-      else if (mobile.addListener) { mobile.addListener(sync); }
+      if (mobile.addEventListener) { mobile.addEventListener('change', onViewportChange); }
+      else if (mobile.addListener) { mobile.addListener(onViewportChange); }
     }
     window.__krk2CloseMenu = close;
     sync();

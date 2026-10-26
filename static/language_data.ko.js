@@ -200,6 +200,7 @@ var Stemmer = function() {
 
 
 var splitQuery = (query) => {
+  query = query.normalize("NFC");
   const terms = query.match(/[\uAC00-\uD7A3]+|[A-Za-z0-9_]+|[\p{L}\p{N}]+/gu) || [];
   return terms.flatMap((term) => {
     if (/^[\uAC00-\uD7A3]+$/.test(term)) {
