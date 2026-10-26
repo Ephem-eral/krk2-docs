@@ -1,18 +1,18 @@
 你的第一次键盘渲染
 ==================
 
-基础操作你已经会了，现在来渲染一整把键盘，顺便把第一个教程学到的东西扩展一下。
+掌握基础操作后，现在来渲染一整把键盘，并把第一个教程中的方法扩展到完整场景。
 
 |
 
 新建一个 KRK2 文件，在视图里按 A 全选，再按 KRK 面板 Relink 区域里的 Set，把它们设为 Cherry 高度。
-从资产浏览器把 Capsmat 拖到其中一个键帽上，按住 Shift 点一下这个键帽让它成为激活物体，再按 KRK 面板 Data 区域里的 Copy。
+从资产浏览器把 Capsmat 拖到其中一个键帽上，按住 Shift 单击该键帽，使其成为活动对象，再点击 KRK 面板 Data 区域里的 Copy。
 
 .. image:: img/SetCapsmatCopy.gif
 
 |
 
-接着点 KRK 面板 Color 区域里的 Copy，把颜色信息存下来，供后面调用。
+接着点击 KRK 面板 Color 区域里的 Copy，保存颜色信息，供后续调用。
 
 .. image:: img/CopyColors.JPG
 
@@ -36,7 +36,7 @@
 
 .. image:: img/BoardPopulate.gif
 
-点 Color 区域里的 Setup，再按 Paste，就把之前从套件存下的颜色调回来了。
+点击 Color 区域里的 Setup，再点击 Paste，即可恢复之前从套件保存的颜色。
 
 |
 
@@ -57,7 +57,7 @@
 
 |
 
-把视图转到一个好看的角度，然后点 View > Align View > Align Active Camera To View（Ctrl+Alt+小键盘 0），把当前视角设为活动摄像机。
+将视图调整到合适的角度，然后点击 View > Align View > Align Active Camera To View（Ctrl+Alt+小键盘 0），将当前视角设为活动摄像机。
 
 .. image:: img/SetActiveCamera.gif
 

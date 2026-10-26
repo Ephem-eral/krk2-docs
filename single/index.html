@@ -9540,7 +9540,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <h2>包装内容<a class="headerlink" href="#cn-p-gettingstarted-id2" title="此标题的永久链接"></a></h2>
 
 
-<p>在下载页面里，你会拿到一个压缩包，里面包含一个 blend 文件、一个 txt 文件，以及若干与字符模板（legend template）相关的 SVG 和其他素材。请解压到同一个文件夹，让它们放在一起。这个 txt 文件是 Blender 资产管理的配套文件（sidecar），必须和 blend 文件放在一起。</p>
+<p>从下载页面获取的压缩包中，包含一个 blend 文件、一个 txt 文件，以及字符模板（legend template）所需的 SVG 和其他素材。请将全部内容解压到同一文件夹。这个 txt 文件是 Blender 资产管理的配套文件（sidecar），必须与 blend 文件放在一起。</p>
 
 
 <img alt="_images/KRK2Files.JPG" src="../images/KRK2Files.JPG">
@@ -9564,7 +9564,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <h2>开始使用<a class="headerlink" href="#cn-p-gettingstarted-id3" title="此标题的永久链接"></a></h2>
 
 
-<p>KRK2 的上手流程和初代 KRK 一样简单。用 Blender（3.3 或更高版本）打开 blend 文件，你需要的东西全都打包在文件里了。打开时 Blender 会询问是允许还是忽略文件内置的脚本——KRK2 面板依赖这个脚本运行，所以这里选「允许」。</p>
+<p>KRK2 的上手流程和初代 KRK 一样简单。用 Blender（3.3 或更高版本）打开 blend 文件即可，所需内容都已打包其中。打开文件时，Blender 会询问是否允许运行内置脚本；KRK2 面板依赖该脚本，因此请选择「允许」。</p>
 
 
 <img alt="_images/allowscript.jpg" src="../images/allowscript.jpg">
@@ -10278,7 +10278,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>在这里可以快速搜索物体数据，把当前的换成另一个。例如复制或实例化一个键帽，再把副本变成轴体或卫星轴。</p>
+<p>在这里可以快速搜索物体数据，并将当前物体数据替换为另一个。例如复制或实例化一个键帽，再把副本变成轴体或卫星轴。</p>
 
 
 <img alt="_images/ObjectDataSwitch.gif" src="../images/ObjectDataSwitch.gif">
@@ -10293,7 +10293,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>键帽因为复制、导入或粘贴而无法重新链接时，用 Restore Meshes 就能把它和文件里同名的版本重新接上。如果你想以导入进来的那个为基准，就把它的物体数据重命名，去掉结尾的 .001。</p>
+<p>键帽因复制、导入或粘贴而无法重新链接时，使用 Restore Meshes 即可将它重新连接到文件中同名的版本。如果要以导入的版本为准，请重命名其物体数据，并删除末尾的 .001。</p>
 
 
 <img alt="_images/RestoreMesh.gif" src="../images/RestoreMesh.gif">
@@ -10347,7 +10347,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <h2>Color（颜色）<a class="headerlink" href="#cn-p-krkpanel-color" title="此标题的永久链接"></a></h2>
 
 
-<p>Color 是一套颜色与色板管理系统，帮你控制 Capsmat 里和颜色相关的属性，只在颜色属性可用时显示。
+<p>Color 是一套颜色与色板管理系统，用于控制 Capsmat 中与颜色相关的属性；只有在这些属性可用时才会显示。
 
 
 如果选中的键帽没有颜色属性，会出现 Setup 按钮，用来给这个键帽补上所需的全部属性。</p>
@@ -12570,7 +12570,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>框选这些占位符，按 KRK 面板 Relink（重新链接）区域里的 Set 按钮。重新链接会忽略除键帽以外的所有物体，现在你应该得到 Cherry 高度的键帽了；没有对应目标物体数据的键帽同样会被跳过。各高度的前缀可以在 Profile 集合里查到。</p>
+<p>框选这些占位物体，点击 KRK 面板 Relink（重新链接）区域里的 Set 按钮。重新链接只处理键帽，其他物体会被忽略。此时你应该能看到 Cherry 高度的键帽；如果找不到对应的目标物体数据，该键帽也会被跳过。各高度的前缀可以在 Profile 集合里查到。</p>
 
 
 <img alt="_images/setcherry.gif" src="../images/setcherry.gif">
@@ -12585,7 +12585,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>从资产浏览器把 Capsmat 拖到其中一个键帽上，让它保持激活（高亮），再按 KRK 面板 Data（数据）区域里的 Copy 按钮，就能把材质链接到其他键帽。它等同于 Ctrl+L 再按 M（链接材质），但会忽略非键帽物体。</p>
+<p>从资产浏览器把 Capsmat 拖到其中一个键帽上，并保持该键帽为活动对象（高亮显示）。然后点击 KRK 面板 Data（数据）区域里的 Copy 按钮，就能将材质链接到其他键帽。这个操作等同于 Ctrl+L，再按 M（链接材质），但会忽略非键帽物体。</p>
 
 
 <img alt="_images/copymat.gif" src="../images/copymat.gif">
@@ -12672,7 +12672,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>在键帽上拖拖这些滑块，切到 custom 就能调自己的颜色。调到满意后，把那个键帽留作最后选中，再按 Color（颜色）区域里的 Set，就会应用到所有选中的键帽上。</p>
+<p>拖动键帽上的这些滑块，切换到 custom 后即可调整自定义颜色。调整满意后，最后选中作为样本的键帽，再点击 Color（颜色）区域里的 Set，即可将设置应用到所有选中的键帽。</p>
 
 
 <img alt="_images/SetColor.gif" src="../images/SetColor.gif">
@@ -12735,7 +12735,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>点击 Render &gt; Render Image，或按 F12，渲染你的第一张图。</p>
+<p>点击 Render &gt; Render Image，或按 F12，渲染你的第一张图像。</p>
 
 
 <img alt="_images/w1render.jpg" src="../images/w1render.jpg">
@@ -12765,10 +12765,10 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <blockquote>
 
 
-<div><p>加分项：
+<div><p>可选：
 
 
-在场景属性里把摄像机切换到 Camera_Kit_Tilted。</p>
+在场景属性里将摄像机切换为 Camera_Kit_Tilted。</p>
 
 
 </div></blockquote>
@@ -12807,7 +12807,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <h1>你的第一次键盘渲染<a class="headerlink" href="#cn-p-workflow2-id1" title="此标题的永久链接"></a></h1>
 
 
-<p>基础操作你已经会了，现在来渲染一整把键盘，顺便把第一个教程学到的东西扩展一下。</p>
+<p>掌握基础操作后，现在来渲染一整把键盘，并把第一个教程中的方法扩展到完整场景。</p>
 
 
 <div class="line-block">
@@ -12822,7 +12822,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <p>新建一个 KRK2 文件，在视图里按 A 全选，再按 KRK 面板 Relink 区域里的 Set，把它们设为 Cherry 高度。
 
 
-从资产浏览器把 Capsmat 拖到其中一个键帽上，按住 Shift 点一下这个键帽让它成为激活物体，再按 KRK 面板 Data 区域里的 Copy。</p>
+从资产浏览器把 Capsmat 拖到其中一个键帽上，按住 Shift 单击该键帽，使其成为活动对象，再点击 KRK 面板 Data 区域里的 Copy。</p>
 
 
 <img alt="_images/SetCapsmatCopy.gif" src="../images/SetCapsmatCopy.gif">
@@ -12837,7 +12837,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>接着点 KRK 面板 Color 区域里的 Copy，把颜色信息存下来，供后面调用。</p>
+<p>接着点击 KRK 面板 Color 区域里的 Copy，保存颜色信息，供后续调用。</p>
 
 
 <img alt="_images/CopyColors.JPG" src="../images/CopyColors.JPG">
@@ -12900,7 +12900,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <img alt="_images/BoardPopulate.gif" src="../images/BoardPopulate.gif">
 
 
-<p>点 Color 区域里的 Setup，再按 Paste，就把之前从套件存下的颜色调回来了。</p>
+<p>点击 Color 区域里的 Setup，再点击 Paste，即可恢复之前从套件保存的颜色。</p>
 
 
 <div class="line-block">
@@ -12957,7 +12957,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>把视图转到一个好看的角度，然后点 View &gt; Align View &gt; Align Active Camera To View（Ctrl+Alt+小键盘 0），把当前视角设为活动摄像机。</p>
+<p>将视图调整到合适的角度，然后点击 View &gt; Align View &gt; Align Active Camera To View（Ctrl+Alt+小键盘 0），将当前视角设为活动摄像机。</p>
 
 
 <img alt="_images/SetActiveCamera.gif" src="../images/SetActiveCamera.gif">
@@ -13182,7 +13182,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 <img alt="_images/DelAll.gif" src="../images/DelAll.gif">
 
 
-<p>新建 Blender 文件，按 A X D 删掉默认内容（立方体、摄像机、灯光），然后到属性面板的 Scene Properties 标签页把单位设为毫米（millimeters）。</p>
+<p>新建 Blender 文件，按 A X D 删除默认内容（立方体、摄像机、灯光），然后在属性面板的 Scene Properties 标签页将单位设为毫米（millimeters）。</p>
 
 
 <img alt="_images/SetUnitsMM.jpg" src="../images/SetUnitsMM.jpg">
@@ -13227,7 +13227,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>按 S 0.001，把键盘缩到千分之一。缩放后可能就看不见它了，按 Home 键重新框住视图。</p>
+<p>按 S 0.001，将键盘缩放至原来的千分之一。缩放后可能会暂时看不见它，按 Home 键重新框住视图。</p>
 
 
 <img alt="_images/Resize2.jpg" src="../images/Resize2.jpg">
@@ -13317,7 +13317,7 @@ Blender has a couple algorithms for denoising so we’ll focus on those.</p>
 </div>
 
 
-<p>用 Object &gt; Convert &gt; Curve 把它转成曲线。移动手柄就做好了。</p>
+<p>用 Object &gt; Convert &gt; Curve 将它转换为曲线，移动手柄就创建完成了。</p>
 
 
 <img alt="_images/MoveHandle5.jpg" src="../images/MoveHandle5.jpg">
