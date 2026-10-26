@@ -27,7 +27,7 @@ KRK2는 KRK1의 오브젝트 데이터 교체 워크플로를 계승하면서 �
 |
 `Discord <https://discord.gg/fVkGTunzT3>`_
 |
-`레전드 리소스 저장소 <https://github.com/imperfectlink/KRKLegendsRepo>`_
+`각인 리소스 저장소 <https://github.com/imperfectlink/KRKLegendsRepo>`_
 
 |
 
@@ -56,7 +56,7 @@ KRK2는 KRK1의 오브젝트 데이터 교체 워크플로를 계승하면서 �
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: 레전드 제작
+   :caption: 각인 제작
 
    leg_inkscape
    leg_illustrator

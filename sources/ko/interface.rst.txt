@@ -23,7 +23,7 @@ UV 에디터
 
 .. image:: img/UI_UV.png
 
-이 패널은 이미지 뷰어로도 쓸 수 있고, 키캡의 레전드(키캡 각인) 좌표를 표시할 수도 있습니다.
+이 패널은 이미지 뷰어로도 쓸 수 있고, 키캡의 각인(키캡 각인) 좌표를 표시할 수도 있습니다.
 
 `Blender 매뉴얼: UV 에디터 <https://docs.blender.org/manual/ko/latest/editors/uv/introduction.html>`_
 
@@ -34,7 +34,7 @@ UV 에디터
 
 .. image:: img/UI_VP.png
 
-여기에서 키트, 레이아웃(배열), 조명, 카메라 앵글 등을 편집합니다. 사이드바에는 키캡을 제어하는 KRK 패널이 붙어 있습니다.
+여기에서 키트, 배열, 조명, 카메라 앵글 등을 편집합니다. 사이드바에는 키캡을 제어하는 KRK 패널이 붙어 있습니다.
 
 `Blender 매뉴얼: 3D 뷰포트 <https://docs.blender.org/manual/ko/latest/editors/3dview/introduction.html>`_
 
@@ -56,7 +56,7 @@ UV 에디터
 
 .. image:: img/UI_Out.png
 
-여기에는 blend 파일의 계층 구조가 표시됩니다. 키트, 키보드, 레이아웃(배열), 액세서리, 카메라, 조명, 바닥, 키캡 프로파일(높이) 등이 모두 여기에 있으며, 각 항목의 가시성도 제어할 수 있습니다.
+여기에는 blend 파일의 계층 구조가 표시됩니다. 키트, 키보드, 배열, 액세서리, 카메라, 조명, 바닥, 키캡 프로파일(높이) 등이 모두 여기에 있으며, 각 항목의 가시성도 제어할 수 있습니다.
 
 `Blender 매뉴얼: 아웃라이너 <https://docs.blender.org/manual/ko/latest/editors/outliner/introduction.html>`_
 
