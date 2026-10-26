@@ -17557,7 +17557,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <h2>包裝內容<a class="headerlink" href="#tw-p-gettingstarted-id2" title="本標頭的永久連結"></a></h2>
 
 
-<p>在下載頁面裡，你會拿到一個壓縮包，裡面包含一個 blend 檔案、一個 txt 檔案，以及若干與字根模板（legend template）相關的 SVG 和其他素材。請解壓縮到同一個資料夾，讓它們放在一起。這個 txt 檔案是 Blender 資產管理的配套檔案（sidecar），必須和 blend 檔案放在一起。</p>
+<p>從下載頁面取得的壓縮包中，包含一個 blend 檔案、一個 txt 檔案，以及字根模板（legend template）所需的 SVG 和其他素材。請將全部內容解壓縮到同一資料夾。這個 txt 檔案是 Blender 資產管理的配套檔案（sidecar），必須與 blend 檔案放在一起。</p>
 
 
 <img alt="_images/KRK2Files.JPG" src="../images/KRK2Files.JPG">
@@ -17581,7 +17581,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <h2>開始使用<a class="headerlink" href="#tw-p-gettingstarted-id3" title="本標頭的永久連結"></a></h2>
 
 
-<p>KRK2 的上手流程和初代 KRK 一樣簡單。用 Blender（3.3 或更高版本）開啟 blend 檔案，你需要的東西全都打包在檔案裡了。開啟時 Blender 會詢問是允許還是忽略檔案內建的腳本——KRK2 面板依賴這個腳本執行，所以這裡選「允許」。</p>
+<p>KRK2 的上手流程和初代 KRK 一樣簡單。用 Blender（3.3 或更高版本）開啟 blend 檔案即可，所需內容都已打包其中。開啟檔案時，Blender 會詢問是否允許執行內建腳本；KRK2 面板依賴該腳本，因此請選擇「允許」。</p>
 
 
 <img alt="_images/allowscript.jpg" src="../images/allowscript.jpg">
@@ -18295,7 +18295,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>在這裡可以快速搜尋物件資料，把目前的換成另一個。例如複製或實例化一個鍵帽，再把副本變成軸體或衛星軸。</p>
+<p>在這裡可以快速搜尋物件資料，並將目前物件資料替換為另一個。例如複製或實例化一個鍵帽，再把副本變成軸體或衛星軸。</p>
 
 
 <img alt="_images/ObjectDataSwitch.gif" src="../images/ObjectDataSwitch.gif">
@@ -18310,7 +18310,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>鍵帽因為複製、匯入或貼上而無法重新連結時，用 Restore Meshes 就能把它和檔案裡同名的版本重新接上。如果你想以匯入進來的那個為基準，就把它的物件資料重新命名，去掉結尾的 .001。</p>
+<p>鍵帽因複製、匯入或貼上而無法重新連結時，使用 Restore Meshes 即可將它重新連線到檔案中同名的版本。如果要以匯入的版本為準，請重新命名其物件資料，並刪除末尾的 .001。</p>
 
 
 <img alt="_images/RestoreMesh.gif" src="../images/RestoreMesh.gif">
@@ -18364,7 +18364,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <h2>Color（顏色）<a class="headerlink" href="#tw-p-krkpanel-color" title="本標頭的永久連結"></a></h2>
 
 
-<p>Color 是一套顏色與色板管理系統，幫你控制 Capsmat 裡和顏色相關的屬性，只在顏色屬性可用時顯示。
+<p>Color 是一套顏色與色板管理系統，用於控制 Capsmat 中與顏色相關的屬性；只有在這些屬性可用時才會顯示。
 
 
 如果選取的鍵帽沒有顏色屬性，會出現 Setup 按鈕，用來給這個鍵帽補上所需的全部屬性。</p>
@@ -20587,7 +20587,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>框選這些佔位符，按 KRK 面板 Relink（重新連結）區域裡的 Set 按鈕。重新連結會忽略除鍵帽以外的所有物件，現在你應該得到 Cherry 高度的鍵帽了；沒有對應目標物件資料的鍵帽同樣會被跳過。各高度的前綴可以在 Profile 集合裡查到。</p>
+<p>框選這些佔位物件，點選 KRK 面板 Relink（重新連結）區域裡的 Set 按鈕。重新連結只處理鍵帽，其他物件會被忽略。此時你應該能看到 Cherry 高度的鍵帽；如果找不到對應的目標物件資料，該鍵帽也會被跳過。各高度的前綴可以在 Profile 集合裡查到。</p>
 
 
 <img alt="_images/setcherry.gif" src="../images/setcherry.gif">
@@ -20602,7 +20602,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，讓它保持啟用（高亮），再按 KRK 面板 Data（資料）區域裡的 Copy 按鈕，就能把材質連結到其他鍵帽。它等同於 Ctrl+L 再按 M（連結材質），但會忽略非鍵帽物件。</p>
+<p>從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，並保持該鍵帽為活動物件（高亮顯示）。然後點選 KRK 面板 Data（資料）區域裡的 Copy 按鈕，就能將材質連結到其他鍵帽。這個操作等同於 Ctrl+L，再按 M（連結材質），但會忽略非鍵帽物件。</p>
 
 
 <img alt="_images/copymat.gif" src="../images/copymat.gif">
@@ -20689,7 +20689,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>在鍵帽上拖拖這些滑桿，切到 custom 就能調自己的顏色。調到滿意後，把那個鍵帽留作最後選取，再按 Color（顏色）區域裡的 Set，就會應用到所有選取的鍵帽上。</p>
+<p>拖動鍵帽上的這些滑桿，切換到 custom 後即可調整自訂顏色。調整滿意後，最後選取作為樣本的鍵帽，再點選 Color（顏色）區域裡的 Set，即可將設定應用到所有選取的鍵帽。</p>
 
 
 <img alt="_images/SetColor.gif" src="../images/SetColor.gif">
@@ -20752,7 +20752,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>點選 Render &gt; Render Image，或按 F12，渲染你的第一張圖。</p>
+<p>點選 Render &gt; Render Image，或按 F12，渲染你的第一張影像。</p>
 
 
 <img alt="_images/w1render.jpg" src="../images/w1render.jpg">
@@ -20782,10 +20782,10 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <blockquote>
 
 
-<div><p>加分項：
+<div><p>可選：
 
 
-在場景屬性裡把攝影機切換到 Camera_Kit_Tilted。</p>
+在場景屬性裡將攝影機切換為 Camera_Kit_Tilted。</p>
 
 
 </div></blockquote>
@@ -20824,7 +20824,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <h1>你的第一次鍵盤渲染<a class="headerlink" href="#tw-p-workflow2-id1" title="本標頭的永久連結"></a></h1>
 
 
-<p>基礎操作你已經會了，現在來渲染一整把鍵盤，順便把第一個教學學到的東西擴充一下。</p>
+<p>掌握基礎操作後，現在來渲染一整把鍵盤，並把第一個教學中的方法擴充到完整場景。</p>
 
 
 <div class="line-block">
@@ -20839,7 +20839,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <p>新增一個 KRK2 檔案，在視圖裡按 A 全選，再按 KRK 面板 Relink 區域裡的 Set，把它們設為 Cherry 高度。
 
 
-從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 點一下這個鍵帽讓它成為啟用物件，再按 KRK 面板 Data 區域裡的 Copy。</p>
+從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 單擊該鍵帽，使其成為活動物件，再點選 KRK 面板 Data 區域裡的 Copy。</p>
 
 
 <img alt="_images/SetCapsmatCopy.gif" src="../images/SetCapsmatCopy.gif">
@@ -20854,7 +20854,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>接著點 KRK 面板 Color 區域裡的 Copy，把顏色資訊存下來，供之後取用。</p>
+<p>接著點選 KRK 面板 Color 區域裡的 Copy，儲存顏色資訊，供後續呼叫。</p>
 
 
 <img alt="_images/CopyColors.JPG" src="../images/CopyColors.JPG">
@@ -20917,7 +20917,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <img alt="_images/BoardPopulate.gif" src="../images/BoardPopulate.gif">
 
 
-<p>點 Color 區域裡的 Setup，再按 Paste，就把之前從套件存下的顏色調回來了。</p>
+<p>點選 Color 區域裡的 Setup，再點選 Paste，即可還原之前從套件儲存的顏色。</p>
 
 
 <div class="line-block">
@@ -20974,7 +20974,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>把視圖轉到一個好看的角度，然後點 View &gt; Align View &gt; Align Active Camera To View（Ctrl+Alt+小鍵盤 0），把目前視角設為作用中攝影機。</p>
+<p>將視圖調整到合適的角度，然後點選 View &gt; Align View &gt; Align Active Camera To View（Ctrl+Alt+小鍵盤 0），將目前視角設為作用中攝影機。</p>
 
 
 <img alt="_images/SetActiveCamera.gif" src="../images/SetActiveCamera.gif">
@@ -21199,7 +21199,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 <img alt="_images/DelAll.gif" src="../images/DelAll.gif">
 
 
-<p>新增 Blender 檔案，按 A X D 刪掉預設內容（立方體、攝影機、燈光），然後到屬性面板的 Scene Properties 頁籤把單位設為毫米（millimeters）。</p>
+<p>新增 Blender 檔案，按 A X D 刪除預設內容（立方體、攝影機、燈光），然後在屬性面板的 Scene Properties 頁籤將單位設為毫米（millimeters）。</p>
 
 
 <img alt="_images/SetUnitsMM.jpg" src="../images/SetUnitsMM.jpg">
@@ -21244,7 +21244,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>按 S 0.001，把鍵盤縮到千分之一。縮放後可能就看不見它了，按 Home 鍵重新框住視圖。</p>
+<p>按 S 0.001，將鍵盤縮放至原來的千分之一。縮放後可能會暫時看不見它，按 Home 鍵重新框住視圖。</p>
 
 
 <img alt="_images/Resize2.jpg" src="../images/Resize2.jpg">
@@ -21334,7 +21334,7 @@ Blender 提供了几种降噪算法，我们重点看下面两种。</p>
 </div>
 
 
-<p>用 Object &gt; Convert &gt; Curve 把它轉成曲線。移動把手就做好了。</p>
+<p>用 Object &gt; Convert &gt; Curve 將它轉換為曲線，移動把手就建立完成了。</p>
 
 
 <img alt="_images/MoveHandle5.jpg" src="../images/MoveHandle5.jpg">

@@ -1,18 +1,18 @@
 你的第一次鍵盤渲染
 ==================
 
-基礎操作你已經會了，現在來渲染一整把鍵盤，順便把第一個教學學到的東西擴充一下。
+掌握基礎操作後，現在來渲染一整把鍵盤，並把第一個教學中的方法擴充到完整場景。
 
 |
 
 新增一個 KRK2 檔案，在視圖裡按 A 全選，再按 KRK 面板 Relink 區域裡的 Set，把它們設為 Cherry 高度。
-從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 點一下這個鍵帽讓它成為啟用物件，再按 KRK 面板 Data 區域裡的 Copy。
+從資產瀏覽器把 Capsmat 拖到其中一個鍵帽上，按住 Shift 單擊該鍵帽，使其成為活動物件，再點選 KRK 面板 Data 區域裡的 Copy。
 
 .. image:: img/SetCapsmatCopy.gif
 
 |
 
-接著點 KRK 面板 Color 區域裡的 Copy，把顏色資訊存下來，供之後取用。
+接著點選 KRK 面板 Color 區域裡的 Copy，儲存顏色資訊，供後續呼叫。
 
 .. image:: img/CopyColors.JPG
 
@@ -36,7 +36,7 @@
 
 .. image:: img/BoardPopulate.gif
 
-點 Color 區域裡的 Setup，再按 Paste，就把之前從套件存下的顏色調回來了。
+點選 Color 區域裡的 Setup，再點選 Paste，即可還原之前從套件儲存的顏色。
 
 |
 
@@ -57,7 +57,7 @@
 
 |
 
-把視圖轉到一個好看的角度，然後點 View > Align View > Align Active Camera To View（Ctrl+Alt+小鍵盤 0），把目前視角設為作用中攝影機。
+將視圖調整到合適的角度，然後點選 View > Align View > Align Active Camera To View（Ctrl+Alt+小鍵盤 0），將目前視角設為作用中攝影機。
 
 .. image:: img/SetActiveCamera.gif
 
