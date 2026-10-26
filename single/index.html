@@ -1128,6 +1128,11 @@ body { color: var(--text); animation: krk-page-in .32s ease-out both; }
 .wy-side-nav-search > a, .wy-side-nav-search .version { color: var(--sidebar-text) !important; }
 .wy-nav-top { background: var(--nav-top-bg) !important; }
 .wy-nav-top a, .wy-nav-top i { color: var(--nav-top-fg) !important; }
+.wy-nav-top .krk-nav-toggle { float: left; display: inline-flex; align-items: center; justify-content: center;
+  width: 50px; height: 50px; margin: 0; padding: 0; border: 0; border-radius: 0;
+  background: transparent; color: var(--nav-top-fg); font: inherit; cursor: pointer; }
+.wy-nav-top .krk-nav-toggle i { float: none; line-height: 1; font-size: 16px; }
+.krk-nav-toggle:focus-visible, .wy-nav-side :focus-visible { outline: 3px solid #ffd166; outline-offset: 2px; }
 .wy-menu-vertical a, .wy-menu-vertical p.caption { color: var(--sidebar-text); }
 .wy-menu-vertical p.caption { color: var(--sidebar-muted); }
 /* --- sidebar: the current chapter and its section list --------------- */
@@ -1239,7 +1244,7 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
 </head>
 <body class="wy-body-for-nav">
 <div class="wy-grid-for-nav">
-  <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+  <nav id="krk-nav-side" data-toggle="wy-nav-shift" class="wy-nav-side">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="#en-p-index" class="icon icon-home">Keyboard Render Kit</a>
@@ -1306,8 +1311,8 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
     </div>
   </nav>
   <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-    <nav class="wy-nav-top" aria-label="mobile navigation">
-      <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+    <nav class="wy-nav-top" aria-label="Navigation menu">
+      <button type="button" class="krk-nav-toggle" aria-controls="krk-nav-side" aria-expanded="false" aria-label="Navigation menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
       <a href="#en-p-index">Keyboard Render Kit</a>
     </nav>
     <div class="wy-nav-content">
@@ -34683,7 +34688,7 @@ Blenderはいくつかのノイズ除去アルゴリズムを提供していま�
 <p>이미지 텍스처 노드는 좌표가 있어야 2D 이미지를 3D 오브젝트에 어떻게 매핑할지 결정할 수 있습니다. 벡터(Vector) 입력에 아무 좌표도 연결되지 않으면, 현재 활성화된 UV가 사용됩니다.</p>
 
 
-<p>일부 머티리얼에는 음소거된 노드(회색으로 표시됨)가 포함되어 있으며, 렌더링 시 계산에 참여하지 않습니다. 활성화하려면 해당 노드를 좌클릭으로 선택하고 M을 눌러 음소거를 해제하면 됩니다.</p>
+<p>일부 머티리얼에는 비활성화된 노드(회색으로 표시됨)가 포함되어 있으며, 렌더링 시 계산에 참여하지 않습니다. 다시 활성화하려면 해당 노드를 좌클릭으로 선택한 뒤 M 키를 누르면 됩니다.</p>
 
 
 <img alt="_images/UnmuteNode.gif" src="../images/UnmuteNode.gif">
@@ -37995,7 +38000,7 @@ Blender는 몇 가지 노이즈 제거 알고리즘을 제공하는데, 아래 �
 </div>
 
 
-<p>그런 다음 셰이더 에디터에서 왼쪽 상단 드롭다운 메뉴를 클릭해 Object에서 World로 전환합니다. 월드 머티리얼이 이미 구성되어 있습니다. 이미지 노드를 선택하고 M을 눌러 음소거를 해제한 다음, Open을 클릭해 Leadenhall Market 이미지를 불러옵니다.</p>
+<p>그런 다음 셰이더 에디터에서 왼쪽 상단 드롭다운 메뉴를 클릭해 Object에서 World로 전환합니다. 월드 머티리얼이 이미 구성되어 있습니다. 이미지 노드를 선택하고 M 키를 눌러 다시 활성화한 다음, Open을 클릭해 Leadenhall Market 이미지를 불러옵니다.</p>
 
 
 <img alt="_images/PolyHaven_11b.jpg" src="../images/PolyHaven_11b.jpg">
@@ -49531,6 +49536,7 @@ Blender предлагает несколько алгоритмов шумоп�
   if (homeBtn) { homeBtn.addEventListener('click', function (e) { e.preventDefault(); showCover(); }); }
 
   var LANG_TAGS = {'en': 'en', 'cn': 'zh-CN', 'tw': 'zh-TW', 'ja': 'ja', 'ko': 'ko', 'ru': 'ru'};
+  var NAV_LABELS = {"en": "Navigation menu", "cn": "移动版导航菜单", "tw": "行動版導覽選單", "ja": "モバイルナビゲーションメニュー", "ko": "모바일 탐색 메뉴", "ru": "Меню мобильной навигации"};
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.lang-switch button[data-switch]'));
   var navs = Array.prototype.slice.call(document.querySelectorAll('.lang-nav'));
   var bodies = Array.prototype.slice.call(document.querySelectorAll('.lang-body'));
@@ -49624,6 +49630,11 @@ Blender предлагает несколько алгоритмов шумоп�
     });
     buttons.forEach(function (btn) { btn.classList.toggle('active', btn.getAttribute('data-switch') === lang); });
     document.documentElement.setAttribute('lang', LANG_TAGS[lang] || lang);
+    var menuLabel = NAV_LABELS[lang] || NAV_LABELS.en;
+    var menuButton = document.querySelector('.krk-nav-toggle');
+    var mobileNav = document.querySelector('.wy-nav-top');
+    if (menuButton) { menuButton.setAttribute('aria-label', menuLabel); }
+    if (mobileNav) { mobileNav.setAttribute('aria-label', menuLabel); }
     try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
     if (slug) {
       var target = document.getElementById(lang + '-p-' + slug);
@@ -49632,10 +49643,13 @@ Blender предлагает несколько алгоритмов шумоп�
         // The mobile theme fixes the content wrapper while the drawer is open,
         // which resets document scrolling. Close it before jumping so a
         // language switch keeps the reader in the same chapter.
-        var side = document.querySelector('.wy-nav-side');
-        var wrap = document.querySelector('.wy-nav-content-wrap');
-        if (side) { side.classList.remove('shift'); }
-        if (wrap) { wrap.classList.remove('shift'); }
+        if (window.__krk2CloseMenu) { window.__krk2CloseMenu(false); }
+        else {
+          var side = document.querySelector('.wy-nav-side');
+          var wrap = document.querySelector('.wy-nav-content-wrap');
+          if (side) { side.classList.remove('shift'); }
+          if (wrap) { wrap.classList.remove('shift'); }
+        }
         window.requestAnimationFrame(function () {
           target.scrollIntoView();
           highlight();
@@ -49725,10 +49739,12 @@ Blender предлагает несколько алгоритмов шумоп�
 
 
   (function () {
-    var burger = document.querySelector('[data-toggle="wy-nav-top"]');
+    var burger = document.querySelector('.krk-nav-toggle');
     var side = document.querySelector('.wy-nav-side');
     var wrap = document.querySelector('.wy-nav-content-wrap');
     if (!burger || !side) { return; }
+    var mobile = window.matchMedia ? window.matchMedia('(max-width: 768px)') : null;
+
     function rememberChapter() {
       var button = document.querySelector('.lang-switch button.active');
       if (!button) { return; }
@@ -49740,24 +49756,47 @@ Blender предлагает несколько алгоритмов шумоп�
         window.__krk2LastPage = current.getAttribute('data-page');
       }
     }
-    function close() {
+    function sync() {
+      var open = side.classList.contains('shift');
+      burger.setAttribute('aria-expanded', String(open));
+      side.inert = !!(mobile && mobile.matches && !open);
+    }
+    function close(returnFocus) {
       side.classList.remove('shift');
       if (wrap) { wrap.classList.remove('shift'); }
+      sync();
+      if (returnFocus) { burger.focus(); }
+    }
+    function open() {
+      rememberChapter();
+      side.classList.add('shift');
+      if (wrap) { wrap.classList.add('shift'); }
+      sync();
+      var first = side.querySelector('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      if (first) { first.focus(); }
     }
     burger.addEventListener('click', function (e) {
       e.preventDefault();
-      if (!side.classList.contains('shift')) { rememberChapter(); }
-      side.classList.toggle('shift');
-      if (wrap) { wrap.classList.toggle('shift'); }
+      if (side.classList.contains('shift')) { close(false); }
+      else { open(); }
     });
     side.addEventListener('click', function (e) {
       var el = e.target;
       while (el && el !== side && !(el.tagName === 'A')) { el = el.parentElement; }
-      if (el && el.tagName === 'A') { close(); }
+      if (el && el.tagName === 'A') { close(false); }
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') { close(); }
+      if (e.key === 'Escape' && side.classList.contains('shift')) {
+        e.preventDefault();
+        close(true);
+      }
     });
+    if (mobile) {
+      if (mobile.addEventListener) { mobile.addEventListener('change', sync); }
+      else if (mobile.addListener) { mobile.addListener(sync); }
+    }
+    window.__krk2CloseMenu = close;
+    sync();
   })();
 
 </script>

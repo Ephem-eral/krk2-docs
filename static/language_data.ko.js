@@ -197,3 +197,21 @@ var Stemmer = function() {
   }
 }
 
+
+
+var splitQuery = (query) => {
+  const terms = query.match(/[\uAC00-\uD7A3]+|[A-Za-z0-9_]+|[\p{L}\p{N}]+/gu) || [];
+  return terms.flatMap((term) => {
+    if (/^[\uAC00-\uD7A3]+$/.test(term)) {
+      const syllables = Array.from(term);
+      if (syllables.length === 1) return syllables;
+      const bigrams = [];
+      for (let i = 0; i < syllables.length - 1; i++) {
+        bigrams.push(syllables[i] + syllables[i + 1]);
+      }
+      return bigrams;
+    }
+    return [term];
+  });
+};
+

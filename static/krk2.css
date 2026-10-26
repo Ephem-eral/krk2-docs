@@ -95,6 +95,11 @@ body { color: var(--text); animation: krk-page-in .32s ease-out both; }
 .wy-side-nav-search > a, .wy-side-nav-search .version { color: var(--sidebar-text) !important; }
 .wy-nav-top { background: var(--nav-top-bg) !important; }
 .wy-nav-top a, .wy-nav-top i { color: var(--nav-top-fg) !important; }
+.wy-nav-top .krk-nav-toggle { float: left; display: inline-flex; align-items: center; justify-content: center;
+  width: 50px; height: 50px; margin: 0; padding: 0; border: 0; border-radius: 0;
+  background: transparent; color: var(--nav-top-fg); font: inherit; cursor: pointer; }
+.wy-nav-top .krk-nav-toggle i { float: none; line-height: 1; font-size: 16px; }
+.krk-nav-toggle:focus-visible, .wy-nav-side :focus-visible { outline: 3px solid #ffd166; outline-offset: 2px; }
 .wy-menu-vertical a, .wy-menu-vertical p.caption { color: var(--sidebar-text); }
 .wy-menu-vertical p.caption { color: var(--sidebar-muted); }
 /* --- sidebar: the current chapter and its section list --------------- */

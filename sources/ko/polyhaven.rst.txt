@@ -76,7 +76,7 @@ blend 파일의 내용을 가져오려면 Append 또는 Link를 사용해야 합
 
 |
 
-그런 다음 셰이더 에디터에서 왼쪽 상단 드롭다운 메뉴를 클릭해 Object에서 World로 전환합니다. 월드 머티리얼이 이미 구성되어 있습니다. 이미지 노드를 선택하고 M을 눌러 음소거를 해제한 다음, Open을 클릭해 Leadenhall Market 이미지를 불러옵니다.
+그런 다음 셰이더 에디터에서 왼쪽 상단 드롭다운 메뉴를 클릭해 Object에서 World로 전환합니다. 월드 머티리얼이 이미 구성되어 있습니다. 이미지 노드를 선택하고 M 키를 눌러 다시 활성화한 다음, Open을 클릭해 Leadenhall Market 이미지를 불러옵니다.
 
 .. image:: img/PolyHaven_11b.jpg
 

@@ -500,9 +500,10 @@ const Search = {
       // check if all requirements are matched
 
       // as search terms with length < 3 are discarded
-      const filteredTermCount = [...searchTerms].filter(
-        (term) => term.length > 2
-      ).length;
+      const filteredTermCount =
+        DOCUMENTATION_OPTIONS.LANGUAGE === "ko"
+          ? searchTerms.size
+          : [...searchTerms].filter((term) => term.length > 2).length;
       if (
         wordList.length !== searchTerms.size &&
         wordList.length !== filteredTermCount
