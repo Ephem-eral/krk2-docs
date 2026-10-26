@@ -996,9 +996,9 @@ div.math:hover a.headerlink {
   flex: 1 1 30%; text-align: center; padding: 5px 4px; border-radius: 3px; font-size: 12.5px;
   background: var(--chip-bg); color: var(--chip-fg); border: 1px solid var(--chip-border);
   cursor: pointer; text-decoration: none; white-space: nowrap;
-  transition: background-color .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+  transition: background-color .16s ease, border-color .16s ease, color .16s ease, transform .16s ease;
 }
-.lang-switch button:hover, .lang-switch a:hover { background: var(--chip-bg-hover); transform: translateY(-1px); }
+.lang-switch button:hover, .lang-switch a:hover { background: var(--chip-bg-hover); transform: translate3d(0, -1px, 0); }
 .lang-switch button:active, .lang-switch a:active { transform: translateY(0); }
 .lang-switch button:focus-visible, .lang-switch a:focus-visible,
 .sp-theme:focus-visible, .sp-home:focus-visible, .sp-btn:focus-visible,
@@ -1019,9 +1019,9 @@ div.math:hover a.headerlink {
 #sp-cover .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 #sp-cover button.card { display: block; width: 100%; text-align: left; font: inherit; cursor: pointer;
   background: var(--content-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px; color: var(--text);
-  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background-color .2s ease; }
-#sp-cover button.card:hover { border-color: var(--accent); box-shadow: 0 8px 22px rgba(79,158,107,.18); transform: translateY(-3px); }
-#sp-cover button.card:active { transform: translateY(-1px); }
+  transition: transform .18s ease, border-color .18s ease, background-color .18s ease; }
+#sp-cover button.card:hover { border-color: var(--accent); transform: translate3d(0, -2px, 0); }
+#sp-cover button.card:active { transform: translate3d(0, -1px, 0); }
 #sp-cover .card:nth-child(1) { animation: krk-content-in .38s .05s ease-out both; }
 #sp-cover .card:nth-child(2) { animation: krk-content-in .38s .09s ease-out both; }
 #sp-cover .card:nth-child(3) { animation: krk-content-in .38s .13s ease-out both; }
@@ -1033,9 +1033,9 @@ div.math:hover a.headerlink {
 .sp-home { display: block; width: calc(100% - 24px); margin: 6px 12px 0; padding: 7px 12px; border-radius: 3px;
   font: inherit; font-size: 13px; background: var(--chip-bg); color: var(--chip-fg);
   border: 1px solid var(--chip-border); text-align: center; cursor: pointer;
-  transition: background-color .18s ease, border-color .18s ease, transform .18s ease; }
-.sp-home:hover { background: var(--chip-bg-hover); transform: translateY(-1px); }
-.sp-home:active { transform: translateY(0); }
+  transition: background-color .16s ease, border-color .16s ease, transform .16s ease; }
+.sp-home:hover { background: var(--chip-bg-hover); transform: translate3d(0, -1px, 0); }
+.sp-home:active { transform: translate3d(0, 0, 0); }
 #sp-cover .card .lang { font-size: 18px; font-weight: 700; }
 #sp-cover .card .sub { color: var(--text-muted); font-size: 13px; margin-top: 5px; }
 #sp-cover .badge { display: inline-block; margin-left: 8px; padding: 2px 7px; border-radius: 10px;
@@ -1118,7 +1118,7 @@ html[data-theme="dark"] {
 }
 html { scroll-behavior: smooth; }
 html, body { background: var(--page-bg) !important; color: var(--text); }
-body { color: var(--text); animation: krk-page-in .42s ease-out both; }
+body { color: var(--text); animation: krk-page-in .32s ease-out both; }
 .wy-nav-content-wrap { background: var(--page-bg) !important; }
 .wy-nav-content { background: var(--content-bg) !important; transition: background-color .25s ease, color .25s ease; }
 .wy-nav-side { background: var(--sidebar-bg) !important; box-shadow: inset -1px 0 0 var(--border); }
@@ -1201,15 +1201,18 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
 .sp-theme { display: block; width: calc(100% - 24px); margin: 6px 12px 0; padding: 7px 12px;
   border-radius: 3px; font: inherit; font-size: 13px; background: var(--chip-bg); color: var(--chip-fg);
   border: 1px solid var(--chip-border); text-align: center; cursor: pointer;
-  transition: background-color .18s ease, border-color .18s ease, transform .18s ease; }
-.sp-theme:hover { background: var(--chip-bg-hover); transform: translateY(-1px); }
-.sp-theme:active { transform: translateY(0); }
-.wy-menu-vertical li.current > ul { animation: krk-nav-reveal .2s ease-out both; transform-origin: top; }
-.lang-body.krk-active-enter { animation: krk-content-in .34s ease-out both; }
+  transition: background-color .16s ease, border-color .16s ease, transform .16s ease; }
+.sp-theme:hover { background: var(--chip-bg-hover); transform: translate3d(0, -1px, 0); }
+.sp-theme:active { transform: translate3d(0, 0, 0); }
+.wy-menu-vertical li.krk-nav-enter > ul { animation: krk-nav-reveal .16s ease-out both; transform-origin: top; }
+.lang-body.krk-active-enter { animation: krk-content-in .24s ease-out both; }
+.krk-table-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch; }
+.krk-table-scroll table { margin-bottom: 0; }
 @keyframes krk-page-in { from { opacity: 0; } to { opacity: 1; } }
-@keyframes krk-content-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-@keyframes krk-nav-reveal { from { opacity: 0; transform: scaleY(.96); } to { opacity: 1; transform: scaleY(1); } }
-@keyframes krk-cover-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes krk-content-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes krk-nav-reveal { from { opacity: 0; transform: translate3d(0, -3px, 0); } to { opacity: 1; transform: none; } }
+@keyframes krk-cover-in { from { opacity: 0; transform: translate3d(0, 8px, 0); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important;
@@ -49593,6 +49596,17 @@ Blender предлагает несколько алгоритмов шумоп�
     });
   }
 
+  function wrapTables() {
+    Array.prototype.forEach.call(document.querySelectorAll('.rst-content table.docutils'), function (table) {
+      var parent = table.parentElement;
+      if (parent && parent.classList.contains('krk-table-scroll')) { return; }
+      var wrapper = document.createElement('div');
+      wrapper.className = 'krk-table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
   function setLang(lang, keepPosition) {
     if (LANGS.indexOf(lang) < 0) { lang = LANGS[0]; }
     var slug = keepPosition ? currentSlug() : null;
@@ -49640,7 +49654,15 @@ Blender предлагает несколько алгоритмов шумоп�
       e.preventDefault();
       e.stopPropagation();
       var li = btn.closest('li');
-      if (li) { li.classList.toggle('current'); }
+      if (li) {
+        li.classList.toggle('current');
+        li.classList.remove('krk-nav-enter');
+        if (li.classList.contains('current')) {
+          void li.offsetWidth;
+          li.classList.add('krk-nav-enter');
+          window.setTimeout(function () { li.classList.remove('krk-nav-enter'); }, 220);
+        }
+      }
     });
   });
   if (search) {
@@ -49654,6 +49676,7 @@ Blender предлагает несколько алгоритмов шумоп�
       if (first) { window.location.hash = first.getAttribute('href'); }
     });
   }
+  wrapTables();
   var ticking = false;
   window.addEventListener('scroll', function () {
     if (ticking) { return; }
