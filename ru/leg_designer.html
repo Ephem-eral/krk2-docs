@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/leg_designer.html">English</a><a class="" href="../cn/leg_designer.html">简体</a><a class="" href="../tw/leg_designer.html">繁體</a><a class="" href="../ja/leg_designer.html">日本語</a><a class="" href="../ko/leg_designer.html">한국어</a><a class="active" href="../ru/leg_designer.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Affinity Designer</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/leg_designer.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,36 +326,36 @@
 
   <section id="affinity-designer">
 <h1>Affinity Designer<a class="headerlink" href="#affinity-designer" title="Permalink to this heading"></a></h1>
-<p>В дальнейшем для каждой высоты будет отдельный шаблон. В KRK1 все высоты лежали в одном файле, но у кейкапов новой модели другое UV-пространство, поэтому теперь они тоже разнесены по отдельным шаблонам.</p>
+<p>В дальнейшем для каждой высоты будет отдельный шаблон. В KRK1 все высоты лежали в одном файле, но у кейкапов новой модели другое UV-пространство, поэтому теперь они тоже разнесены по отдельным шаблонам.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Как и в Inkscape, после открытия svg на панели слоёв справа есть легенды, а также шаблоны верха и боковых граней кейкапа.</p>
+<p>Как и в Inkscape, после открытия svg на панели слоёв справа есть легенды, а также шаблоны верха и боковых граней кейкапа.</p>
 <img alt="../images/AffinityScreen.jpg" src="../images/AffinityScreen.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Шаблоны по умолчанию включены — так удобнее выравнивать легенды и новелти по зоне контакта пальцев с кейкапом. Но помните: итоговое изображение должно быть белыми легендами на чёрном фоне.</p>
+<p>Шаблоны по умолчанию включены — так удобнее выравнивать легенды и новелти по зоне контакта пальцев с кейкапом. Но помните: итоговое изображение должно быть белыми легендами на чёрном фоне.</p>
 <img alt="../images/AffinityLegends.jpg" src="../images/AffinityLegends.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Создайте новый слой и вставьте в него легенды. Стрелками можно точно подправить положение, а с зажатым Shift шаг будет больше.</p>
+<p>Создайте новый слой и вставьте в него легенды. Стрелками можно точно подправить положение, а с зажатым Shift шаг будет больше.</p>
 <img alt="../images/AffinityLayers.jpg" src="../images/AffinityLayers.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Чтобы выравнивать по отдельным кейкапам инструментами выравнивания, шаблон нужно разобрать: выделите его и нажмите Layer &gt; Geometry &gt; Separate Curves.</p>
+<p>Чтобы выравнивать по отдельным кейкапам инструментами выравнивания, шаблон нужно разобрать: выделите его и нажмите Layer &gt; Geometry &gt; Separate Curves.</p>
 <img alt="../images/AffinitySeparate.jpg" src="../images/AffinitySeparate.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Когда легенды расставлены, экспортируйте через File &gt; Export или Ctrl+Alt+Shift+S, сохранив изображение WoB (белым по чёрному) в png 4096x4096 или 8192x8192. Впрочем, разрешение и формат не важны — главное, чтобы изображение было квадратным.</p>
+<p>Когда легенды расставлены, экспортируйте через File &gt; Export или Ctrl+Alt+Shift+S, сохранив изображение WoB (белым по чёрному) в png 4096x4096 или 8192x8192. Впрочем, разрешение и формат не важны — главное, чтобы изображение было квадратным.</p>
 <img alt="../images/AffinityExport.jpg" src="../images/AffinityExport.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Если новелти или легенды разноцветные, отключите чёрный фон и экспортируйте изображение с альфа-каналом: используйте альфа-канал как маску, а цвет подключите к цвету легенд.</p>
+<p>Если новелти или легенды разноцветные, отключите чёрный фон и экспортируйте изображение с альфа-каналом: используйте альфа-канал как маску, а цвет подключите к цвету легенд.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -376,15 +376,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

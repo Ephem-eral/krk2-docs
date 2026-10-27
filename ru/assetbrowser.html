@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/assetbrowser.html">English</a><a class="" href="../cn/assetbrowser.html">简体</a><a class="" href="../tw/assetbrowser.html">繁體</a><a class="" href="../ja/assetbrowser.html">日本語</a><a class="" href="../ko/assetbrowser.html">한국어</a><a class="active" href="../ru/assetbrowser.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Браузер ассетов</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/assetbrowser.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -328,17 +328,17 @@
 <h1>Браузер ассетов<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
 <section id="id2">
 <h2>Ассеты аксессуаров<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>Аксессуары находятся в категории Accessory (Аксессуары).</p>
+<p>Аксессуары находятся в категории Accessory (Аксессуары).</p>
 <img alt="../images/AccessorySection.jpg" src="../images/AccessorySection.jpg" />
 </section>
 <section id="id3">
 <h2>Ассеты клавиатур<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
-<p>Модели клавиатур находятся в категории Boards (Клавиатуры).</p>
+<p>Модели клавиатур находятся в категории Boards (Клавиатуры).</p>
 <img alt="../images/BoardSection.jpg" src="../images/BoardSection.jpg" />
 </section>
 <section id="id4">
 <h2>Ассеты материалов<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
-<p>В браузере ассетов предустановлено множество полезных материалов, сгруппированных по типу и производителю; их можно перетаскивать прямо на объекты в 3D-вьюпорте.</p>
+<p>В браузере ассетов предустановлено множество полезных материалов, сгруппированных по типу и производителю; их можно перетаскивать прямо на объекты в 3D-вьюпорте.</p>
 <img alt="../images/AssetBrowserMaterial.gif" src="../images/AssetBrowserMaterial.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -347,7 +347,7 @@
 <section id="id5">
 <h2>Инструменты материалов<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <img alt="../images/MaterialUtilities.JPG" src="../images/MaterialUtilities.JPG" />
-<p>При создании собственных материалов эти инструменты можно перетаскивать в редактор шейдеров, чтобы добавить эффекты.</p>
+<p>При создании собственных материалов эти инструменты можно перетаскивать в редактор шейдеров, чтобы добавить эффекты.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -365,15 +365,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

@@ -57,7 +57,7 @@ Palette Eのスライダーを使うと、修飾キーのレジェンドをText�
 
 |
 
-アウトライナーでFloorLightGreyの可視性をオンにすると地面を追加できます。これはScene > Floorsの最初の項目にあります。
+アウトライナーでFloorLightGreyの可視性をオンにすると床を追加できます。これはScene > Floorsの最初の項目にあります。
 
 .. image:: img/floorvis.gif
 

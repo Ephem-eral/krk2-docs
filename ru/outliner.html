@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/outliner.html">English</a><a class="" href="../cn/outliner.html">简体</a><a class="" href="../tw/outliner.html">繁體</a><a class="" href="../ja/outliner.html">日本語</a><a class="" href="../ko/outliner.html">한국어</a><a class="active" href="../ru/outliner.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Структура (Outliner)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/outliner.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,7 +326,7 @@
 
   <section id="outliner">
 <h1>Структура (Outliner)<a class="headerlink" href="#outliner" title="Permalink to this heading"></a></h1>
-<p>Структура (Outliner) содержит все объекты сцены и организует их в коллекции.</p>
+<p>Структура (Outliner) содержит все объекты сцены и организует их в коллекции.</p>
 <img alt="../images/Outliner.jpg" src="../images/Outliner.jpg" />
 <section id="id1">
 <h2>Киты<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
@@ -341,29 +341,29 @@
 <section id="id3">
 <h2>Раскладка<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <img alt="../images/DuplicateLinkedCollection.gif" src="../images/DuplicateLinkedCollection.gif" />
-<p>Это дополнительные раскладки, которые можно использовать для наполнения собственной импортированной клавиатуры. Щёлкните правой кнопкой мыши по раскладке и выберите «Связанное дублирование», чтобы создать связанную коллекцию, затем переместите её в коллекцию вашей клавиатуры.</p>
+<p>Это дополнительные раскладки, которые можно использовать для наполнения собственной импортированной клавиатуры. Щёлкните правой кнопкой мыши по раскладке и выберите «Связанное дублирование», чтобы создать связанную коллекцию, затем переместите её в коллекцию вашей клавиатуры.</p>
 </section>
 <section id="id4">
 <h2>Аксессуары<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
-<p>Здесь перечислены доступные аксессуары, включая модели ковриков, мышь, USB-кабели и подставки под запястья.</p>
+<p>Здесь перечислены доступные аксессуары, включая модели ковриков, мышь, USB-кабели и подставки под запястья.</p>
 </section>
 <section id="id5">
 <h2>Сцена<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <img alt="../images/SceneCollection.jpg" src="../images/SceneCollection.jpg" />
-<p>Здесь доступны элементы сцены, такие как свет, камеры и фон.</p>
+<p>Здесь доступны элементы сцены, такие как свет, камеры и фон.</p>
 <section id="id6">
 <h3>Камера<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
-<p>KRK2 упрощает камеры, но вы можете дублировать их и самостоятельно задавать положение и угол.</p>
+<p>KRK2 упрощает камеры, но вы можете дублировать их и самостоятельно задавать положение и угол.</p>
 </section>
 <section id="id7">
 <h3>Свет<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <img alt="../images/LightsCollection.jpg" src="../images/LightsCollection.jpg" />
-<p>Мы подготовили несколько наборов освещения, которые помогут определить общий вид сцены. Они основаны на популярных студийных HDRI-схемах освещения и обеспечивают большую гибкость: интенсивность и положение можно менять как угодно.</p>
+<p>Мы подготовили несколько наборов освещения, которые помогут определить общий вид сцены. Они основаны на популярных студийных HDRI-схемах освещения и обеспечивают большую гибкость: интенсивность и положение можно менять как угодно.</p>
 </section>
 <section id="id8">
 <h3>Пол<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
 <img alt="../images/FloorsCollection.jpg" src="../images/FloorsCollection.jpg" />
-<p>KRK включает набор интересных полов для быстрого старта. Среди них есть пол ShadowCatcher (ловушка теней) на основе FloorLightGrey, предназначенный для захвата теней при рендере с прозрачным фоном.</p>
+<p>KRK включает набор интересных полов для быстрого старта. Среди них есть пол ShadowCatcher (ловушка теней) на основе FloorLightGrey, предназначенный для захвата теней при рендере с прозрачным фоном.</p>
 </section>
 </section>
 <section id="id9">
@@ -381,7 +381,7 @@
 <section id="id11">
 <h3>Детали<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
 <img alt="../images/PartsCollection.jpg" src="../images/PartsCollection.jpg" />
-<p>Здесь собраны дополнительные детали, которые можно добавить к своей клавиатуре через замену данных объекта.</p>
+<p>Здесь собраны дополнительные детали, которые можно добавить к своей клавиатуре через замену данных объекта.</p>
 </section>
 </section>
 </section>
@@ -397,15 +397,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

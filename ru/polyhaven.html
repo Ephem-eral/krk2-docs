@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/polyhaven.html">English</a><a class="" href="../cn/polyhaven.html">简体</a><a class="" href="../tw/polyhaven.html">繁體</a><a class="" href="../ja/polyhaven.html">日本語</a><a class="" href="../ko/polyhaven.html">한국어</a><a class="active" href="../ru/polyhaven.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul class="current">
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Материалы Poly Haven</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/polyhaven.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,52 +326,52 @@
 
   <section id="poly-haven">
 <h1>Материалы Poly Haven<a class="headerlink" href="#poly-haven" title="Permalink to this heading"></a></h1>
-<p>Клавиатура готова, профиль кейкапов и цветовая схема выбраны, камера выставлена неплохо, но свет и поверхность всё никак не дают нужного результата.</p>
+<p>Клавиатура готова, профиль кейкапов и цветовая схема выбраны, камера выставлена неплохо, но свет и пол всё никак не дают нужного результата.</p>
 <img alt="../images/PolyHaven_01.jpg" src="../images/PolyHaven_01.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>В KRK есть несколько готовых вариантов поверхностей и освещения для старта, но вам может захотеться заменить поверхность и свет, чтобы сделать кадр интереснее. Poly Haven — отличный ресурс как для поверхностей, на которых будет стоять клавиатура, так и для HDRI (изображений с высоким динамическим диапазоном) для освещения сцены. Ниже разобран процесс импорта.</p>
+<p>В KRK есть несколько готовых вариантов пола и освещения, с которых можно начать. Но вы можете выбрать другой пол или свет, чтобы сделать кадр интереснее. Poly Haven — полезный ресурс с поверхностями для рендеринга клавиатур и HDRI (изображениями с высоким динамическим диапазоном) для освещения сцены. Ниже разберём, как их загрузить.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Если у вас уже установлен плагин Poly Haven, большую часть этого процесса можно пропустить; если вы делаете это часто, настоятельно рекомендую его поставить.</p>
+<p>Если у вас уже установлен аддон Poly Haven, большую часть этих шагов можно пропустить. Если вы часто выполняете такую работу, рекомендую установить аддон.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="id1">
-<h2>Поверхность<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<p>Сначала зайдите на сайт Poly Haven (polyhaven.com) и нажмите в верхней панели Assets &gt; Textures.</p>
+<h2>Пол<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p>Сначала зайдите на сайт Poly Haven (polyhaven.com) и нажмите в верхней панели Assets &gt; Textures.</p>
 <img alt="../images/PolyHaven_02.jpg" src="../images/PolyHaven_02.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Там есть несколько категорий; здесь нажмите Floor &gt; Indoor &gt; Man-Made, затем выберите Slab Tiles.</p>
+<p>Здесь есть несколько категорий. Нажмите Floor &gt; Indoor &gt; Man-Made, затем выберите Slab Tiles.</p>
 <img alt="../images/PolyHaven_03.jpg" src="../images/PolyHaven_03.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Нажмите кнопку загрузки, дождитесь окончания загрузки zip-архива и распакуйте его в соответствующую папку. Вы увидите, что в папке есть blend-файл — значит, внутри уже есть настроенный объект, готовый к использованию.</p>
+<p>Нажмите кнопку загрузки, дождитесь окончания загрузки zip-архива и распакуйте его в соответствующую папку. В ней будет blend-файл с уже настроенным объектом, готовым к использованию.</p>
 <img alt="../images/PolyHaven_04.jpg" src="../images/PolyHaven_04.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Чтобы импортировать содержимое blend-файла, нужно использовать Append или Link. Здесь выбираем append поверхности и без сохранения связи с исходным файлом. В Blender нажмите File &gt; Append, начните импорт поверхности Poly Haven, затем выберите подкатегорию Object, найдите объект поверхности — скорее всего, он называется «Plane».</p>
+<p>Чтобы импортировать содержимое blend-файла, используйте Append или Link. В этом примере добавим пол через Append, не связывая его с исходным файлом. В Blender нажмите File &gt; Append, чтобы начать импорт пола Poly Haven. Затем выберите подкатегорию Object и найдите объект пола — скорее всего, он называется «Plane».</p>
 <img alt="../images/PolyHaven_05.jpg" src="../images/PolyHaven_05.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Он будет добавлен в активную коллекцию в структуре (Outliner). После того как поверхность попала в сцену, можно приступать к настройке.</p>
+<p>Объект добавится в активную коллекцию в структуре (Outliner). Когда пол появится в сцене, его можно настроить.</p>
 <img alt="../images/PolyHaven_06.jpg" src="../images/PolyHaven_06.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Стандартной геометрии слишком мало, чтобы смещение (displacement) проработало детали, к тому же масштаб текстуры для этой сцены великоват. Подключите узел Value к параметру масштаба (scale) и задайте 2, чтобы увеличить масштаб вдвое. Под моим углом камеры я ещё сдвинул текстуру на 80mm с помощью узла Mapping. Затем на вкладке модификаторов измените уровень модификатора subdivision на 10, чтобы геометрии хватило плотности для деталей карты смещения.</p>
+<p>Стандартной геометрии слишком мало, чтобы смещение (displacement) проработало детали, к тому же масштаб текстуры для этой сцены великоват. Подключите узел Value к параметру масштаба (scale) и задайте 2, чтобы увеличить масштаб вдвое. Под моим углом камеры я ещё сдвинул текстуру на 80 мм с помощью узла Mapping. Затем на вкладке модификаторов измените уровень модификатора subdivision на 10, чтобы геометрии хватило плотности для деталей карты смещения.</p>
 <img alt="../images/PolyHaven_07.jpg" src="../images/PolyHaven_07.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Раз уж используется смещение, поверхность стоит немного опустить: эту я опустил на 7mm. Теперь поверхность готова к рендеру.</p>
+<p>Раз мы используем смещение, стоит немного опустить и пол. В этом примере я опустил его на 7 мм. Теперь он готов к рендерингу.</p>
 <img alt="../images/PolyHaven_08b.jpg" src="../images/PolyHaven_08b.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -379,22 +379,22 @@
 </section>
 <section id="id2">
 <h2>Окружение<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>Помните: HDRI повышает реалистичность, но влияет на цвет. Для съёмки клавиатуры и сцены это нормально, но для рендеров китов, где важна точность цвета, это не подходит. Чтобы добавить HDRI, зайдите на Poly Haven, нажмите Assets &gt; HDRIs и выберите одну для загрузки. Здесь используется Leadenhall Market — скачивается как файл изображения EXR.</p>
+<p>HDRI повышает реалистичность, но влияет на цвет. Для рендеров клавиатур и сцен это нормально, но для рендеров комплектов клавиатур, где важна точность цвета, такой эффект не подходит. Чтобы добавить HDRI, зайдите на Poly Haven, нажмите Assets &gt; HDRIs и выберите изображение для загрузки. В этом примере используется Leadenhall Market; оно загрузится в формате EXR.</p>
 <img alt="../images/PolyHaven_09.jpg" src="../images/PolyHaven_09.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Отключите коллекцию Lights в структуре (Outliner).</p>
+<p>Отключите коллекцию Lights в структуре (Outliner).</p>
 <img alt="../images/PolyHaven_10.jpg" src="../images/PolyHaven_10.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Затем в редакторе шейдеров нажмите выпадающее меню в левом верхнем углу и переключитесь с Object на World. Мировой материал уже настроен: выберите узел изображения и нажмите M, чтобы снова включить его. Затем нажмите Open, чтобы загрузить изображение Leadenhall Market.</p>
+<p>Затем в редакторе шейдеров нажмите выпадающее меню в левом верхнем углу и переключитесь с Object на World. Материал World уже настроен: выберите узел изображения и нажмите M, чтобы снова включить его. Затем нажмите Open, чтобы загрузить изображение Leadenhall Market.</p>
 <img alt="../images/PolyHaven_11b.jpg" src="../images/PolyHaven_11b.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Чтобы настроить это изображение, можно создать узлы Mapping и Texture Coordinate и соединить их, как показано на рисунке. Здесь я повернул изображение на 52 градуса, чтобы на правом крае клавиатуры появился красивый блик, и вдвое увеличил интенсивность HDRI.</p>
+<p>Чтобы настроить изображение, создайте узлы Mapping и Texture Coordinate и соедините их, как показано на рисунке. Здесь я повернул изображение на 52 градуса, чтобы на правом крае клавиатуры появился блик, и вдвое увеличил интенсивность HDRI.</p>
 <img alt="../images/PolyHaven_12b.jpg" src="../images/PolyHaven_12b.jpg" />
 </section>
 </section>
@@ -410,15 +410,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

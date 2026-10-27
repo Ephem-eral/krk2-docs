@@ -53,17 +53,17 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="ドキュメントを検索" aria-label="ドキュメントを検索" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ 言語一覧に戻る</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ ライトモード" data-label-dark="🌙 ダークモード" type="button">🌙 ダークモード</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/switchesstabs.html">English</a><a class="" href="../cn/switchesstabs.html">简体</a><a class="" href="../tw/switchesstabs.html">繁體</a><a class="active" href="../ja/switchesstabs.html">日本語</a><a class="" href="../ko/switchesstabs.html">한국어</a><a class="" href="../ru/switchesstabs.html">Русский</a></div>
-<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="ナビゲーションメニュー">
               <p class="caption" role="heading"><span class="caption-text">概要</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">クイックスタート</a><ul>
@@ -242,7 +242,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Havenの素材</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">地面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">床</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">環境</a></li>
 </ul>
 </li>
@@ -311,12 +311,12 @@
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="ページナビゲーション">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="ホーム"></a></li>
       <li class="breadcrumb-item active">スイッチとスタビライザーの追加</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../sources/ja/switchesstabs.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../sources/ja/switchesstabs.rst.txt" rel="nofollow"> ページソースを表示</a>
       </li>
   </ul>
   <hr/>
@@ -326,38 +326,38 @@
 
   <section id="id1">
 <h1>スイッチとスタビライザーの追加<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h1>
-<p>レンダリングでスイッチやスタビライザーを見せたいことがある。低いアングルから撮影する場合、キーキャップが透明な場合、あるいはキーキャップを隠してキーボード本体だけを見せたい場合などだ。</p>
-<p>まずキーボードが含まれるコレクションを展開し、キーキャップ／配列のコレクションを「リンク複製」する。この複製が以降スイッチとして扱われる。</p>
+<p>レンダリングでスイッチやスタビライザーを表示したい場合があります。たとえば、低い角度から撮影する場合や、キーキャップが透明な場合、キーキャップを非表示にしてキーボード本体だけを見せる場合です。</p>
+<p>まず、キーボードが入っているコレクションを展開し、キーキャップ／配列のコレクションを「リンク複製」します。この複製を以降、スイッチとして扱います。</p>
 <img alt="../images/DupeLayout.gif" src="../images/DupeLayout.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>元のキーキャップコレクションの可視性をオフにして、スイッチになる部分だけに集中する。</p>
+<p>元のキーキャップコレクションを非表示にし、スイッチにする部分だけが見えるようにします。</p>
 <img alt="../images/LayoutVis.gif" src="../images/LayoutVis.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>この複製コレクションを右クリックし、&quot;select objects&quot;（オブジェクトを選択）を選ぶ。そのうち1つがアクティブ（ハイライト）になっていることを確認し、なっていなければ3Dビューポートで Shift を押しながら左クリックしてアクティブにする。次にオブジェクトデータのドロップダウンメニューに &quot;switch&quot; と入力し、必要に応じて Switch_Simple または Switch_Complex を選択する。</p>
+<p>複製したコレクションを右クリックし、「select objects」（オブジェクトを選択）を選びます。その中の1つがアクティブ（ハイライト表示）になっていることを確認します。なっていない場合は、3DビューポートでShiftを押しながら左クリックしてアクティブにします。次に、Object Dataのドロップダウンメニューに「switch」と入力し、必要に応じてSwitch_SimpleまたはSwitch_Complexを選択します。</p>
 <img alt="../images/SwitchObj.jpg" src="../images/SwitchObj.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>これで1つがスイッチになった。Ctrl+L で Link（リンク）メニューを開き、O で Object Data（オブジェクトデータ）を選ぶと、残りのオブジェクトもすべてスイッチになり、キーボード全体のスイッチが揃う。</p>
+<p>これで1つがスイッチになります。Ctrl+Lを押してLink（リンク）メニューを開き、Oを押してObject Data（オブジェクトデータ）を選択すると、残りのオブジェクトもスイッチになり、キーボード全体に設定されます。</p>
 <img alt="../images/SwitchPop.jpg" src="../images/SwitchPop.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>次にスタビライザーを追加する。スタビライザーが必要なスイッチを1つ選び、Alt+D でリンク複製し、右クリックまたは Esc で移動をキャンセルする。</p>
+<p>次にスタビライザーを追加します。スタビライザーが必要なスイッチを1つ選び、Alt+Dでリンク複製してから、右クリックまたはEscで移動をキャンセルします。</p>
 <img alt="../images/DupeSwitch.gif" src="../images/DupeSwitch.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>新しいスイッチを選択したまま、Object Data（オブジェクトデータ）ドロップダウンメニューを開き、&quot;stab&quot; と入力してスタビライザーを絞り込み、必要に応じてシンプルまたは複雑なモデル、およびスタビライザーのサイズと向きを選択する。</p>
+<p>新しいスイッチを選択したまま、Object Data（オブジェクトデータ）のドロップダウンメニューを開き、「stab」と入力してスタビライザーを絞り込みます。必要に応じて、シンプルまたは複雑なモデルとサイズ、向きを選択します。</p>
 <img alt="../images/StabData.gif" src="../images/StabData.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>残りのスタビライザーも同様に処理すれば完了する。</p>
+<p>残りのスタビライザーも同じ手順で設定すれば完了です。</p>
 <img alt="../images/StabPopulated.jpg" src="../images/StabPopulated.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -367,23 +367,21 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="workflow2.html" class="btn btn-neutral float-left" title="最初のキーボードレンダリング" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="board_custom.html" class="btn btn-neutral float-right" title="カスタムキーボードの準備" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="ページ下部">
+        <a href="workflow2.html" class="btn btn-neutral float-left" title="最初のキーボードレンダリング" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 前へ</a>
+        <a href="board_custom.html" class="btn btn-neutral float-right" title="カスタムキーボードの準備" accesskey="n" rel="next">次へ <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  <a href="https://www.sphinx-doc.org/">Sphinx</a> と <a href="https://readthedocs.org">Read the Docs</a> 提供のテーマを使用しています。
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">多言語版の作成：<a href="https://github.com/Ephem-eral">E3e</a> · ドキュメント内容 © 2022, ImperfectLink · <a href="../LICENSE">ライセンス</a>.</p>
 </footer>
         </div>
       </div>

@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/krk2max.html">English</a><a class="" href="../cn/krk2max.html">简体</a><a class="" href="../tw/krk2max.html">繁體</a><a class="" href="../ja/krk2max.html">日本語</a><a class="" href="../ko/krk2max.html">한국어</a><a class="active" href="../ru/krk2max.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul class="current">
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,8 +313,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">KRK в 3ds Max</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
+      <li class="breadcrumb-item active">KRK в 3ds Max</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/krk2max.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
       </li>
@@ -325,23 +325,23 @@
            <div itemprop="articleBody">
 
   <section id="krk-3ds-max">
-<h1>KRK в 3ds Max<a class="headerlink" href="#krk-3ds-max" title="Permalink to this heading"></a></h1>
-<p>Экспорт в 3D Studio Max довольно прост, но есть несколько моментов, которые стоит учесть заранее: 3ds Max работает с полигонами (N-угольниками) хуже, чем Blender, зато предпочитает треугольники и четырёхугольники — так что дадим ему то, что он хочет.</p>
+<h1>KRK в 3ds Max<a class="headerlink" href="#krk-3ds-max" title="Permalink to this heading"></a></h1>
+<p>Экспорт в 3D Studio Max довольно прост, но есть несколько моментов, которые стоит учесть заранее: 3ds Max работает с полигонами (N-угольниками) хуже, чем Blender, зато предпочитает треугольники и четырёхугольники — так что дадим ему то, что он хочет.</p>
 <img alt="../images/krk2maxstart.jpg" src="../images/krk2maxstart.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Когда клавиатура или кит готовы, скройте все остальные объекты, не участвующие в экспорте — обычно это коллекция сцены, отключите её.</p>
+<p>Когда клавиатура или кит готовы, скройте все остальные объекты, не участвующие в экспорте — обычно это коллекция сцены, отключите её.</p>
 <img alt="../images/TurnOffSceneCollection.gif" src="../images/TurnOffSceneCollection.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Когда видимым останется только он, выберите один из объектов, нажмите A, чтобы выделить всё, затем Tab, чтобы все выделенные объекты вместе перешли в режим редактирования.</p>
+<p>Когда видимым останется только он, выберите один из объектов, нажмите A, чтобы выделить всё, затем Tab, чтобы все выделенные объекты вместе перешли в режим редактирования.</p>
 <img alt="../images/KeyboardVertices.jpg" src="../images/KeyboardVertices.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Нужно находиться в режиме выбора граней, горячая клавиша — 3 на цифровой строке.</p>
+<p>Нужно находиться в режиме выбора граней, горячая клавиша — 3 на цифровой строке.</p>
 <img alt="../images/FaceMode.jpg" src="../images/FaceMode.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -356,12 +356,12 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>В появившейся панели слева внизу установите тип Greater Than (больше).</p>
+<p>В появившейся панели слева внизу установите тип Greater Than (больше).</p>
 <img alt="../images/SelectGreaterThan.jpg" src="../images/SelectGreaterThan.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь все N-угольники (и только они) выделены.</p>
+<p>Теперь все N-угольники (и только они) выделены.</p>
 <img alt="../images/KeyboardNgons.jpg" src="../images/KeyboardNgons.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -371,12 +371,12 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Клавиатура готова к экспорту: нажмите File &gt; Export &gt; FBX, задайте имя файла, установите Path Mode в Copy и не забудьте поставить галочку Limit to Selected Objects (только выделенные объекты).</p>
+<p>Клавиатура готова к экспорту: нажмите File &gt; Export &gt; FBX, задайте имя файла, установите Path Mode в Copy и не забудьте поставить галочку Limit to Selected Objects (только выделенные объекты).</p>
 <img alt="../images/krk2maxexportsettings.png" src="../images/krk2maxexportsettings.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Затем импортируйте этот FBX в Max.</p>
+<p>Затем импортируйте этот FBX в Max.</p>
 <img alt="../images/krk2maximported.png" src="../images/krk2maximported.png" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -394,15 +394,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

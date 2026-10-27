@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/optimization.html">English</a><a class="" href="../cn/optimization.html">简体</a><a class="" href="../tw/optimization.html">繁體</a><a class="" href="../ja/optimization.html">日本語</a><a class="" href="../ko/optimization.html">한국어</a><a class="active" href="../ru/optimization.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul class="current">
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Оптимизация рендера</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/optimization.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,23 +326,23 @@
 
   <section id="id1">
 <h1>Оптимизация рендера<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
-<p>Помимо сложности сцены, на время рендера и качество изображения влияют ещё несколько основных факторов.</p>
+<p>Помимо сложности сцены, на время рендера и качество изображения влияют ещё несколько основных факторов.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="id2">
 <h2>Разрешение<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>Разрешение сильно влияет на время рендера. Слишком низкое приводит к появлению пиксельных блоков, зубчатым краям на диагональных линиях и недостаточной резкости деталей.</p>
+<p>Разрешение сильно влияет на время рендера. Слишком низкое приводит к появлению пиксельных блоков, зубчатым краям на диагональных линиях и недостаточной резкости деталей.</p>
 <img alt="../images/ResLow.png" src="../images/ResLow.png" />
 <img alt="../images/ResHi.png" src="../images/ResHi.png" />
-<p>Пример: если установить ползунок процентов на 200%, разрешение удвоится с 2K до 4K. Качество действительно становится детальнее, но компьютеру приходится обрабатывать в четыре раза больше пикселей. Изображение получается чётче, но ценой значительного увеличения времени рендера.</p>
+<p>Пример: если установить ползунок процентов на 200%, разрешение удвоится с 2K до 4K. Качество действительно становится детальнее, но компьютеру приходится обрабатывать в четыре раза больше пикселей. Изображение получается чётче, но ценой значительного увеличения времени рендера.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="id3">
 <h2>Сэмплы рендера<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
-<p>Количество сэмплов также является ключевым параметром оптимизации рендера. При слишком малом числе сэмплов на изображении появляется шум; как и с разрешением, увеличение сэмплов улучшает качество, но время рендера растёт экспоненциально.</p>
+<p>Количество сэмплов также является ключевым параметром оптимизации рендера. При слишком малом числе сэмплов на изображении появляется шум; как и с разрешением, увеличение сэмплов улучшает качество, но время рендера растёт экспоненциально.</p>
 <img alt="../images/Samples16.png" src="../images/Samples16.png" />
 <img alt="../images/Samples1600.png" src="../images/Samples1600.png" />
 <div class="line-block">
@@ -351,22 +351,22 @@
 </section>
 <section id="id4">
 <h2>Шумоподавление<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
-<p>Потребность в шумоподавлении существует с момента появления цифровых изображений. Независимо от того, является ли материал цифровой фотографией, сканом или полностью сгенерирован компьютером, методы обработки универсальны. В последние годы трассировка путей подтолкнула развитие новых алгоритмов, вплоть до использования машинного обучения.
+<p>Потребность в шумоподавлении существует с момента появления цифровых изображений. Независимо от того, является ли материал цифровой фотографией, сканом или полностью сгенерирован компьютером, методы обработки универсальны. В последние годы трассировка путей подтолкнула развитие новых алгоритмов, вплоть до использования машинного обучения.
 Blender предлагает несколько алгоритмов шумоподавления; рассмотрим два основных.</p>
 <section id="optix">
 <h3>Optix<a class="headerlink" href="#optix" title="Permalink to this heading"></a></h3>
 <img alt="../images/Optix.jpg" src="../images/Optix.jpg" />
-<p>Это алгоритм шумоподавления на основе машинного обучения от Nvidia, работающий на видеокартах Nvidia серии RTX 20 и новее. Благодаря использованию специализированных тензорных ядер он очень быстр, но доступен только пользователям Nvidia. Подробнее см. <a class="reference external" href="https://developer.nvidia.com/optix-denoiser">официальную страницу NVIDIA</a>.</p>
+<p>Это алгоритм шумоподавления на основе машинного обучения от Nvidia, работающий на видеокартах Nvidia серии RTX 20 и новее. Благодаря использованию специализированных тензорных ядер он очень быстр, но доступен только пользователям Nvidia. Подробнее см. <a class="reference external" href="https://developer.nvidia.com/optix-denoiser">официальную страницу NVIDIA</a>.</p>
 </section>
 <section id="open-image-denoise">
 <h3>Open Image Denoise<a class="headerlink" href="#open-image-denoise" title="Permalink to this heading"></a></h3>
 <img alt="../images/OID.jpg" src="../images/OID.jpg" />
-<p>Это ещё один алгоритм шумоподавления на основе машинного обучения от Intel. Как следует из названия, он с открытым исходным кодом и работает на различных моделях и архитектурах CPU. Уступает Optix в скорости, но даёт превосходный результат и имеет преимущество в сценах с прозрачностью, например при рендере клавиатуры из поликарбоната (PC). Подробнее об Open Image Denoise см. на <a class="reference external" href="https://www.openimagedenoise.org/">официальном сайте</a>.</p>
+<p>Это ещё один алгоритм шумоподавления на основе машинного обучения от Intel. Как следует из названия, он с открытым исходным кодом и работает на различных моделях и архитектурах CPU. Уступает Optix в скорости, но даёт превосходный результат и имеет преимущество в сценах с прозрачностью, например при рендере клавиатуры из поликарбоната (PC). Подробнее об Open Image Denoise см. на <a class="reference external" href="https://www.openimagedenoise.org/">официальном сайте</a>.</p>
 </section>
 <section id="id6">
 <h3>Практическое применение<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <img alt="../images/CompositorDenoise.jpg" src="../images/CompositorDenoise.jpg" />
-<p>Оба алгоритма можно включить в настройках для вьюпорта и финального рендера; однако при использовании в композиторе Open Image Denoise работает быстрее. В KRK узлы композитора уже настроены — достаточно включить их с помощью флажка в левом верхнем углу панели композитора.</p>
+<p>Оба алгоритма можно включить в настройках для вьюпорта и финального рендера; однако при использовании в композиторе Open Image Denoise работает быстрее. В KRK узлы композитора уже настроены — достаточно включить их с помощью флажка в левом верхнем углу панели композитора.</p>
 <img alt="../images/Denoised256.png" src="../images/Denoised256.png" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -390,15 +390,13 @@ Blender предлагает несколько алгоритмов шумоп�
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

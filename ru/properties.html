@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/properties.html">English</a><a class="" href="../cn/properties.html">简体</a><a class="" href="../tw/properties.html">繁體</a><a class="" href="../ja/properties.html">日本語</a><a class="" href="../ko/properties.html">한국어</a><a class="active" href="../ru/properties.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Редактор свойств</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/properties.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,7 +326,7 @@
 
   <section id="id1">
 <h1>Редактор свойств<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
-<p>Панель свойств в Blender содержит очень много разделов, здесь рассмотрим лишь несколько наиболее важных.</p>
+<p>Панель свойств в Blender содержит очень много разделов, здесь рассмотрим лишь несколько наиболее важных.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -335,7 +335,7 @@
 <section id="id3">
 <h3>Устройство рендера<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <img alt="../images/RenderDevice.jpg" src="../images/RenderDevice.jpg" />
-<p>Рендер можно ускорить с помощью GPU (видеокарты). Учтите: чтобы это заработало, нужно также настроить вычислительное устройство в настройках.</p>
+<p>Рендер можно ускорить с помощью GPU (видеокарты). Учтите: чтобы это заработало, нужно также настроить вычислительное устройство в настройках.</p>
 <img alt="../images/RenderDevice2.jpg" src="../images/RenderDevice2.jpg" />
 </section>
 <section id="id4">
@@ -344,17 +344,17 @@
 </section>
 <section id="id5">
 <h3>Шумоподавление<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
-<p>Шумоподавление настраивается здесь. Обычно я включаю шумоподавление вьюпорта и ставлю режим «Авто», а начальное число сэмплов — 2 или больше, чтобы вьюпорт оставался отзывчивым. Шумоподавление финального рендера тоже можно выполнить в композиторе.</p>
+<p>Шумоподавление настраивается здесь. Обычно я включаю шумоподавление вьюпорта и ставлю режим «Авто», а начальное число сэмплов — 2 или больше, чтобы вьюпорт оставался отзывчивым. Шумоподавление финального рендера тоже можно выполнить в композиторе.</p>
 </section>
 <section id="id6">
 <h3>Прозрачный фон<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <img alt="../images/FilmTransparent.jpg" src="../images/FilmTransparent.jpg" />
-<p>Чтобы отрендерить изображение с прозрачным фоном, нужно включить Film (Плёнка) &gt; Transparent (Прозрачность).</p>
+<p>Чтобы отрендерить изображение с прозрачным фоном, нужно включить Film (Плёнка) &gt; Transparent (Прозрачность).</p>
 </section>
 <section id="id7">
 <h3>Управление цветом<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <img alt="../images/ColorSF.png" src="../images/ColorSF.png" />
-<p>Этот раздел важен. По умолчанию в управлении цветом Blender используется Filmic; я тоже оставляю его по умолчанию и не применяю look. Некоторые пользователи предпочитают Standard, так как с ним, по их ощущениям, проще согласовывать цвета. Лично я предпочитаю Filmic: переходы в светах мягче, а в сочетании с Medium High Contrast картинка очень близка к Standard, но с лучшей проработкой светотени. Если планируете экспортировать EXR, эти настройки не имеют значения — EXR экспортирует полные данные буфера.</p>
+<p>Этот раздел важен. По умолчанию в управлении цветом Blender используется Filmic; я тоже оставляю его по умолчанию и не применяю look. Некоторые пользователи предпочитают Standard, так как с ним, по их ощущениям, проще согласовывать цвета. Лично я предпочитаю Filmic: переходы в светах мягче, а в сочетании с Medium High Contrast картинка очень близка к Standard, но с лучшей проработкой светотени. Если планируете экспортировать EXR, эти настройки не имеют значения — EXR экспортирует полные данные буфера.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -369,7 +369,7 @@
 <div class="line"><br /></div>
 </div>
 <blockquote>
-<div><p>Совет: если сейчас стоит 2K, а вы хотите 4K, можно просто ввести в поле 200%, а не 100%.</p>
+<div><p>Совет: если сейчас стоит 2K, а вы хотите 4K, можно просто ввести в поле 200%, а не 100%.</p>
 </div></blockquote>
 <img alt="../images/200P.jpg" src="../images/200P.jpg" />
 <div class="line-block">
@@ -393,12 +393,12 @@
 <section id="id13">
 <h3>Данные объекта<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h3>
 <img alt="../images/ObjectDataSwitch2.gif" src="../images/ObjectDataSwitch2.gif" />
-<p>Не пропускайте выпадающее меню Object Data (Данные объекта): выберите пункт — и любой объект можно заменить на другой тип объекта.</p>
+<p>Не пропускайте выпадающее меню Object Data (Данные объекта): выберите пункт — и любой объект можно заменить на другой тип объекта.</p>
 </section>
 <section id="uv">
 <h3>UV-развёртки<a class="headerlink" href="#uv" title="Permalink to this heading"></a></h3>
 <img alt="../images/UVMaps.jpg" src="../images/UVMaps.jpg" />
-<p>Если нужен доступ к UV-развёртке какого-либо объекта, ищите её здесь.</p>
+<p>Если нужен доступ к UV-развёртке какого-либо объекта, ищите её здесь.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -409,7 +409,7 @@
 <section id="id15">
 <h3>Индекс материала<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h3>
 <img alt="../images/MatIndex.jpg" src="../images/MatIndex.jpg" />
-<p>На один объект можно назначить несколько материалов. Например, у кейкапа с окном и кейкапа со сменной легендой есть два слота материалов: материал кейкапа и поликарбонат (PC).</p>
+<p>На один объект можно назначить несколько материалов. Например, у кейкапа с окном и кейкапа со сменной легендой есть два слота материалов: материал кейкапа и поликарбонат (PC).</p>
 </section>
 <section id="id16">
 <h3>Привязка материала<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h3>
@@ -433,15 +433,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

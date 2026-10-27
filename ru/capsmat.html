@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/capsmat.html">English</a><a class="" href="../cn/capsmat.html">简体</a><a class="" href="../tw/capsmat.html">繁體</a><a class="" href="../ja/capsmat.html">日本語</a><a class="" href="../ko/capsmat.html">한국어</a><a class="active" href="../ru/capsmat.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Capsmat (материал кейкапов)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/capsmat.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -331,20 +331,20 @@
 <h2>Настройки<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <section id="cap">
 <h3>Cap (основной цвет кейкапа)<a class="headerlink" href="#cap" title="Permalink to this heading"></a></h3>
-<p>Основной цвет кейкапа. Можно задать напрямую в поле цвета или управлять через палитру (palette).</p>
+<p>Основной цвет кейкапа. Можно задать напрямую в поле цвета или управлять через палитру (palette).</p>
 </section>
 <section id="legend">
 <h3>Legend (легенда)<a class="headerlink" href="#legend" title="Permalink to this heading"></a></h3>
-<p>Цвет легенды. Можно выбрать цвет, управлять через палитру или подключить изображение в слот для полноцветной легенды.</p>
+<p>Цвет легенды. Можно выбрать цвет, управлять через палитру или подключить изображение в слот для полноцветной легенды.</p>
 </section>
 <section id="legend-mask">
 <h3>Legend Mask (маска легенды)<a class="headerlink" href="#legend-mask" title="Permalink to this heading"></a></h3>
-<p>Подключите изображение с белыми символами на чёрном фоне, чтобы смешивать основной цвет кейкапа и цвет легенды.</p>
+<p>Подключите изображение с белыми символами на чёрном фоне, чтобы смешивать основной цвет кейкапа и цвет легенды.</p>
 </section>
 <section id="sharpen-legend">
 <h3>Sharpen Legend (резкость легенды)<a class="headerlink" href="#sharpen-legend" title="Permalink to this heading"></a></h3>
 <img alt="../images/SharpenLegend.gif" src="../images/SharpenLegend.gif" />
-<p>Повышает резкость краёв легенды, создавая эффект легенды двойного литья (doubleshot). По умолчанию выкручено на максимум; можно сдвинуть до 0, чтобы имитировать более близкий вид сублимационной печати (dye sublimation).</p>
+<p>Повышает резкость краёв легенды, создавая эффект легенды двойного литья (doubleshot). По умолчанию установлено максимальное значение; сдвиньте его до 0, чтобы приблизить внешний вид к сублимационной печати (dye sublimation).</p>
 </section>
 <section id="legend-weight">
 <h3>Legend Weight (толщина легенды)<a class="headerlink" href="#legend-weight" title="Permalink to this heading"></a></h3>
@@ -361,11 +361,11 @@
 </section>
 <section id="sharpen-sub">
 <h3>Sharpen Sub (резкость дополнительной легенды)<a class="headerlink" href="#sharpen-sub" title="Permalink to this heading"></a></h3>
-<p>То же, что и резкость легенды, но применяется к дополнительной легенде.</p>
+<p>То же, что и резкость легенды, но применяется к дополнительной легенде.</p>
 </section>
 <section id="sub-weight">
 <h3>Sub Weight (толщина дополнительной легенды)<a class="headerlink" href="#sub-weight" title="Permalink to this heading"></a></h3>
-<p>То же, что и толщина легенды, но применяется к дополнительной легенде.</p>
+<p>То же, что и толщина легенды, но применяется к дополнительной легенде.</p>
 </section>
 <section id="front">
 <h3>Front (легенда на передней грани)<a class="headerlink" href="#front" title="Permalink to this heading"></a></h3>
@@ -377,11 +377,11 @@
 </section>
 <section id="sharpen-front">
 <h3>Sharpen Front (резкость легенды на передней грани)<a class="headerlink" href="#sharpen-front" title="Permalink to this heading"></a></h3>
-<p>То же, что и резкость легенды, но применяется к легенде на передней грани.</p>
+<p>То же, что и резкость легенды, но применяется к легенде на передней грани.</p>
 </section>
 <section id="front-weight">
 <h3>Front Weight (толщина легенды на передней грани)<a class="headerlink" href="#front-weight" title="Permalink to this heading"></a></h3>
-<p>То же, что и толщина легенды, но применяется к легенде на передней грани.</p>
+<p>То же, что и толщина легенды, но применяется к легенде на передней грани.</p>
 </section>
 <section id="roughness">
 <h3>Roughness (шероховатость)<a class="headerlink" href="#roughness" title="Permalink to this heading"></a></h3>
@@ -400,12 +400,12 @@
 </section>
 <section id="side-bump">
 <h3>Side Bump (рельеф сбоку)<a class="headerlink" href="#side-bump" title="Permalink to this heading"></a></h3>
-<p>Интенсивность рельефа на задней, передней и боковых сторонах кейкапа.</p>
+<p>Интенсивность рельефа на задней, передней и боковых сторонах кейкапа.</p>
 </section>
 <section id="legend-seam">
 <h3>Legend Seam (шов легенды)<a class="headerlink" href="#legend-seam" title="Permalink to this heading"></a></h3>
 <img alt="../images/LegendSeam.jpg" src="../images/LegendSeam.jpg" />
-<p>Некоторые технологии двойного литья оставляют более заметный шов между легендой и кейкапом.</p>
+<p>Некоторые технологии двойного литья оставляют более заметный шов между легендой и кейкапом.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -414,27 +414,27 @@
 <section id="id2">
 <h2>Маски<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <img alt="../images/LegendsDemo.jpg" src="../images/LegendsDemo.jpg" />
-<p>Маска — это изображение с белыми символами на чёрном фоне, определяющее, как смешиваются два цвета или два элемента. Можно понимать так: белый — «включено», чёрный — «выключено».</p>
+<p>Маска — это изображение с белыми символами на чёрном фоне, определяющее, как смешиваются два цвета или два элемента. Можно понимать так: белый — «включено», чёрный — «выключено».</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <img alt="../images/LegendMask.JPG" src="../images/LegendMask.JPG" />
-<p>В capsmat маски используются для смешивания основного цвета кейкапа с легендой, дополнительной легендой и легендой на передней грани по отдельности. Если что-то отсутствует, эта часть обрабатывается как чёрная (выключенная).</p>
+<p>В capsmat маски используются для смешивания основного цвета кейкапа с легендой, дополнительной легендой и легендой на передней грани по отдельности. Если что-то отсутствует, эта часть обрабатывается как чёрная (выключенная).</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <img alt="../images/LegendsTemplate.png" src="../images/LegendsTemplate.png" />
-<p>KRK поставляется с шаблонами, которые значительно упрощают создание этих масок.</p>
+<p>KRK поставляется с шаблонами, которые значительно упрощают создание этих масок.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="id3">
-<h2>Рабочий процесс с палитрами<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
-<p>KRK2 представляет новый рабочий процесс, помогающий исследовать цветовые схемы и создавать дизайн. Как вы уже видели ранее, панель KRK позволяет управлять цветом каждого кейкапа по отдельности: можно сначала задать цвет каждому кейкапу отдельно, а затем перетащить эти цвета в палитру, определив собственную цветовую схему.
+<h2>Рабочий процесс с палитрами<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p>KRK2 представляет новый рабочий процесс, помогающий исследовать цветовые схемы и создавать дизайн. Как вы уже видели ранее, панель KRK позволяет управлять цветом каждого кейкапа по отдельности: можно сначала задать цвет каждому кейкапу отдельно, а затем перетащить эти цвета в палитру, определив собственную цветовую схему.
 Группа узлов палитры — другая часть этого рабочего процесса.</p>
 <img alt="../images/Palettes.jpg" src="../images/Palettes.jpg" />
-<p>Палитры от A до E, плюс отдельная палитра для управления цветом в редакторе материалов. В каждой палитре восемь цветовых слотов, а в Palette E — четыре цветовых слота и четыре альфа-слота.</p>
+<p>Палитры от A до E, плюс отдельная палитра для управления цветом в редакторе материалов. В каждой палитре восемь цветовых слотов, а в Palette E — четыре цветовых слота и четыре альфа-слота.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -452,15 +452,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

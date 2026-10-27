@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/cables.html">English</a><a class="" href="../cn/cables.html">简体</a><a class="" href="../tw/cables.html">繁體</a><a class="" href="../ja/cables.html">日本語</a><a class="" href="../ko/cables.html">한국어</a><a class="active" href="../ru/cables.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Кабели USB</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/cables.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,12 +326,12 @@
 
   <section id="usb">
 <span id="cables"></span><h1>Кабели USB<a class="headerlink" href="#usb" title="Permalink to this heading"></a></h1>
-<p>Кабели USB доступны в нескольких различных конфигурациях.</p>
+<p>Кабели USB доступны в нескольких различных конфигурациях.</p>
 <img alt="../images/USBCables.JPG" src="../images/USBCables.JPG" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>С помощью манипулятора придайте кабелю нужную форму.</p>
+<p>С помощью манипулятора придайте кабелю нужную форму.</p>
 <img alt="../images/CableHandle.gif" src="../images/CableHandle.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -341,14 +341,14 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Разъёмы Aviator и LEMO взаимозаменяемы, а также отсоединяются.</p>
+<p>Разъёмы Aviator и LEMO взаимозаменяемы, а также отсоединяются.</p>
 <img alt="../images/CableLEMO.gif" src="../images/CableLEMO.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="id1">
 <h2>Настройки<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<p>Настройки разделены по объектам и по сегментам: каждый сегмент можно настроить отдельно.</p>
+<p>Настройки разделены по объектам и по сегментам: каждый сегмент можно настроить отдельно.</p>
 <img alt="../images/CableProps.JPG" src="../images/CableProps.JPG" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -363,7 +363,7 @@
 </section>
 <section id="color">
 <h3>Color (Цвет)<a class="headerlink" href="#color" title="Permalink to this heading"></a></h3>
-<p>Цвет 1 и Цвет 2 задают основной и акцентный цвет материала соответственно.</p>
+<p>Цвет 1 и Цвет 2 задают основной и акцентный цвет материала соответственно.</p>
 <img alt="../images/CableColor.gif" src="../images/CableColor.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -393,7 +393,7 @@
 </section>
 <section id="id2">
 <h2>Прямой кабель<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>Обычный кабель USB — исключение: он спроектирован так, что его можно бесконечно удлинять, редактируя объект-кривую, подразделяя сегменты и добавляя вершины.</p>
+<p>Обычный кабель USB — исключение: он спроектирован так, что его можно бесконечно удлинять, редактируя объект-кривую, подразделяя сегменты и добавляя вершины.</p>
 <img alt="../images/CableSubdiv.gif" src="../images/CableSubdiv.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -401,7 +401,7 @@
 </section>
 <section id="id3">
 <h2>Материалы<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
-<p>Как и у коврика, для смены материала нужно отредактировать применённый материал либо заменить его через панель модификаторов в свойствах объекта.</p>
+<p>Как и у коврика, для смены материала нужно отредактировать применённый материал либо заменить его через панель модификаторов в свойствах объекта.</p>
 <img alt="../images/CableMaterial.jpg" src="../images/CableMaterial.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -409,12 +409,12 @@
 </section>
 <section id="exportingcables">
 <span id="id4"></span><h2>Экспорт кабелей<a class="headerlink" href="#exportingcables" title="Permalink to this heading"></a></h2>
-<p>Чтобы экспортировать кабель в другое ПО, учтите: у кабеля нет UV-развёртки, её нужно преобразовать из атрибута (attribute). Выделите объект кабеля (кривую), нажмите Ctrl+A и выберите Visual Geometry to Mesh (Преобразовать визуальную геометрию в меш).</p>
+<p>Чтобы экспортировать кабель в другое ПО, учтите: у кабеля нет UV-развёртки, её нужно преобразовать из атрибута (attribute). Выделите объект кабеля (кривую), нажмите Ctrl+A и выберите Visual Geometry to Mesh (Преобразовать визуальную геометрию в меш).</p>
 <img alt="../images/CurveToMesh.gif" src="../images/CurveToMesh.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>После этого в данных объекта появится атрибут; преобразовать его в UV-развёртку можно через выпадающее меню Attributes (Атрибуты) в свойствах данных объекта: задайте режим UV Map и подтвердите.</p>
+<p>После этого в данных объекта появится атрибут; преобразовать его в UV-развёртку можно через выпадающее меню Attributes (Атрибуты) в свойствах данных объекта: задайте режим UV Map и подтвердите.</p>
 <img alt="../images/AttrToUV.gif" src="../images/AttrToUV.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -434,15 +434,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

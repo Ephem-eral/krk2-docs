@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/krkpanel.html">English</a><a class="" href="../cn/krkpanel.html">简体</a><a class="" href="../tw/krkpanel.html">繁體</a><a class="" href="../ja/krkpanel.html">日本語</a><a class="" href="../ko/krkpanel.html">한국어</a><a class="active" href="../ru/krkpanel.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Панель KRK</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/krkpanel.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -327,19 +327,19 @@
   <section id="krk">
 <h1>Панель KRK<a class="headerlink" href="#krk" title="Permalink to this heading"></a></h1>
 <img alt="../images/krkpanel204.jpg" src="../images/krkpanel204.jpg" />
-<p>Панель KRK находится на боковой панели (вызывается клавишей N) и разделена на четыре области: Relink, Data, Color и Properties. Последние две области появляются только тогда, когда доступны соответствующие свойства.</p>
+<p>Панель KRK находится на боковой панели (вызывается клавишей N) и разделена на четыре области: Relink, Data, Color и Properties. Последние две области появляются только тогда, когда доступны соответствующие свойства.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="relink">
 <h2>Relink (перепривязка)<a class="headerlink" href="#relink" title="Permalink to this heading"></a></h2>
-<p>Relink — это менеджер данных объектов, предназначенный для быстрого переключения профиля кейкапа, ряда, размера, типа клавиши и клавиши с тактильной меткой (homing). Все отмеченные флажком опции применяются при нажатии Set.</p>
+<p>Relink — это менеджер данных объектов, предназначенный для быстрого переключения профиля кейкапа, ряда, размера, типа клавиши и клавиши с тактильной меткой (homing). Все отмеченные флажком опции применяются при нажатии Set.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="kle">
 <h3>Импорт KLE<a class="headerlink" href="#kle" title="Permalink to this heading"></a></h3>
-<p>KRK умеет импортировать JSON-файлы Keyboard Layout Editor. KLE не даёт имена объектам, поэтому импортёр определяет клавиши по символам и ряду (K1–K6) и расставляет плейсхолдеры там, где это возможно. Можно использовать этот KLE как пример или взять его за основу для создания собственной раскладки:</p>
+<p>KRK умеет импортировать JSON-файлы Keyboard Layout Editor. KLE не даёт имена объектам, поэтому импортёр определяет клавиши по символам и ряду (K1–K6) и расставляет плейсхолдеры там, где это возможно. Можно использовать этот KLE как пример или взять его за основу для создания собственной раскладки:</p>
 <p><a class="reference external" href="http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a">http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a</a></p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -348,7 +348,7 @@
 <section id="profile">
 <h3>Profile (высота)<a class="headerlink" href="#profile" title="Permalink to this heading"></a></h3>
 <img alt="../images/KRK2ProfileSwitch.gif" src="../images/KRK2ProfileSwitch.gif" />
-<p>Доступные высоты и их префиксы находятся в коллекции Profile в структуре (Outliner); ряд и остальные опции осваиваются после нескольких использований. Введите опцию в соответствующее поле (с учётом регистра), установите флажок и нажмите Set для применения.</p>
+<p>Доступные высоты и их префиксы находятся в коллекции Profile в структуре (Outliner); ряд и остальные опции осваиваются после нескольких использований. Введите опцию в соответствующее поле (с учётом регистра), установите флажок и нажмите Set для применения.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -356,7 +356,7 @@
 <section id="row">
 <h3>Row (ряд)<a class="headerlink" href="#row" title="Permalink to this heading"></a></h3>
 <img alt="../images/KRKRows.jpg" src="../images/KRKRows.jpg" />
-<p>Поскольку разные производители и профили кейкапов используют собственные системы нумерации рядов, KRK вводит свою нумерацию, основанную на фактическом положении клавиш: отсчёт начинается с нижнего ряда.</p>
+<p>Поскольку разные производители и профили кейкапов используют собственные системы нумерации рядов, KRK вводит свою нумерацию, основанную на фактическом положении клавиш: отсчёт начинается с нижнего ряда.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -416,8 +416,8 @@
 </tr>
 </tbody>
 </table>
-<p>У некоторых высот первый и/или последний ряд можно менять местами.</p>
-<p>(Uniform в таблице означает, что все ряды одинаковой высоты; вводится как есть.)</p>
+<p>У некоторых высот первый и/или последний ряд можно менять местами.</p>
+<p>(Uniform в таблице означает, что все ряды одинаковой высоты; вводится как есть.)</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -425,7 +425,7 @@
 <section id="size">
 <h3>Size (размер)<a class="headerlink" href="#size" title="Permalink to this heading"></a></h3>
 <img alt="../images/KRK2ShiftSize.gif" src="../images/KRK2ShiftSize.gif" />
-<p>Введите четырёхзначный размер в единицах (unit size) в поле, чтобы изменить размер кейкапа; если целевая геометрия существует, кейкап примет нужный размер.</p>
+<p>Введите четырёхзначный размер в единицах (unit size) в поле, чтобы изменить размер кейкапа; если целевая геометрия существует, кейкап примет нужный размер.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -433,22 +433,22 @@
 <section id="key">
 <h3>Key (клавиша)<a class="headerlink" href="#key" title="Permalink to this heading"></a></h3>
 <img alt="../images/Releg.jpg" src="../images/Releg.jpg" />
-<p>Введите название кейкапа в поле, чтобы заменить кейкап на другой. Особенно удобно для замены на кейкап со сменной легендой (Releg), кейкап без надписей (Blank) или кейкап с окном (<code class="docutils literal notranslate"><span class="pre">*_WIN</span></code>).</p>
+<p>Введите название кейкапа в поле, чтобы заменить кейкап на другой. Особенно удобно для замены на кейкап со сменной легендой (Releg), кейкап без надписей (Blank) или кейкап с окном (<code class="docutils literal notranslate"><span class="pre">*_WIN</span></code>).</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="homing">
-<h3>Homing (клавиши с тактильной меткой)<a class="headerlink" href="#homing" title="Permalink to this heading"></a></h3>
+<h3>Homing (клавиши с тактильной меткой)<a class="headerlink" href="#homing" title="Permalink to this heading"></a></h3>
 <img alt="../images/KRK2Homing.gif" src="../images/KRK2Homing.gif" />
-<p>В этом выпадающем списке выберите тип тактильной метки на клавише: bar/nub/scoop (планка/бугорок/углубление), затем нажмите Set.</p>
+<p>В этом выпадающем списке выберите тип тактильной метки на клавише: bar/nub/scoop (планка/бугорок/углубление), затем нажмите Set.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="link-material">
 <h3>Link Material (связать материал)<a class="headerlink" href="#link-material" title="Permalink to this heading"></a></h3>
-<p>Link Material переносит текущий применённый материал на данные целевого объекта. Включать или выключать его зависит от желаемого результата: например, при переключении на высоту-плейсхолдер (PLA) его следует отключить, чтобы Capsmat не перенёсся на плейсхолдер.</p>
+<p>Link Material переносит материал, назначенный текущему объекту, на данные целевого объекта. Включать или отключать эту опцию нужно в зависимости от результата. Например, при переходе на профиль-заглушку (PLA) отключите Link Material, чтобы Capsmat не перенёсся на заглушки.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -456,7 +456,7 @@
 <section id="copy-settings">
 <h3>Copy Settings (копировать настройки)<a class="headerlink" href="#copy-settings" title="Permalink to this heading"></a></h3>
 <img alt="../images/CopySettings.jpg" src="../images/CopySettings.jpg" />
-<p>Справа от кнопки Set находится Copy Settings — она копирует имя данных объекта в выпадающий список данных объекта, что упрощает поиск конкретной клавиши.</p>
+<p>Справа от кнопки Set находится Copy Settings — она копирует имя данных объекта в выпадающий список данных объекта, что упрощает поиск конкретной клавиши.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -470,26 +470,26 @@
 </section>
 <section id="data">
 <h2>Data (данные)<a class="headerlink" href="#data" title="Permalink to this heading"></a></h2>
-<p>Data переносит назначение данных объекта и материалов из панели свойств для более удобного доступа.</p>
+<p>Data переносит назначение данных объекта и материалов из панели свойств для более удобного доступа.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Здесь можно быстро искать данные объекта и заменять текущие на другие. Например, скопировать или создать экземпляр кейкапа, а затем превратить копию в свитч (переключатель) или стабилизатор.</p>
+<p>Здесь можно быстро искать данные объекта и заменять текущие на другие. Например, скопировать или создать экземпляр кейкапа, а затем превратить копию в свитч (переключатель) или стабилизатор.</p>
 <img alt="../images/ObjectDataSwitch.gif" src="../images/ObjectDataSwitch.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Если кейкап не удаётся перелинковать из-за копирования, импорта или вставки, используйте Restore Meshes, чтобы заново связать его с одноимённой версией в файле. Если вы хотите взять за основу импортированную версию, переименуйте её данные объекта, убрав окончание .001.</p>
+<p>Если кейкап не удаётся перелинковать из-за копирования, импорта или вставки, используйте Restore Meshes, чтобы заново связать его с одноимённой версией в файле. Если вы хотите взять за основу импортированную версию, переименуйте её данные объекта, убрав окончание .001.</p>
 <img alt="../images/RestoreMesh.gif" src="../images/RestoreMesh.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Restore Collections появляется только при выборе ассета коллекции и служит для восстановления его в редактируемое состояние.</p>
+<p>Restore Collections появляется только при выборе ассета коллекции и служит для восстановления его в редактируемое состояние.</p>
 <img alt="../images/RestoreCollection.jpg" src="../images/RestoreCollection.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Copy здесь связывает материал с текущего активного кейкапа со всеми остальными выбранными кейкапами, игнорируя объекты, не являющиеся кейкапами.</p>
+<p>Copy здесь связывает материал с текущего активного кейкапа со всеми остальными выбранными кейкапами, игнорируя объекты, не являющиеся кейкапами.</p>
 <img alt="../images/MatCopy.gif" src="../images/MatCopy.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -497,13 +497,13 @@
 </section>
 <section id="color">
 <h2>Color (цвет)<a class="headerlink" href="#color" title="Permalink to this heading"></a></h2>
-<p>Color — это система управления цветом и палитрой, помогающая контролировать связанные с цветом свойства Capsmat; отображается только тогда, когда доступны свойства цвета.
-Если у выбранного кейкапа нет свойств цвета, появится кнопка Setup для добавления всех необходимых свойств этому кейкапу.</p>
+<p>Color — это система управления цветом и палитрой, помогающая контролировать связанные с цветом свойства Capsmat; отображается только тогда, когда доступны свойства цвета.
+Если у выбранного кейкапа нет свойств цвета, появится кнопка Setup для добавления всех необходимых свойств этому кейкапу.</p>
 <img alt="../images/ColorSetup.jpg" src="../images/ColorSetup.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Переключатель Custom/Palette позволяет выбирать между рабочими процессами пользовательских цветов и палитры. Цвета A–E и ползунки палитры A–E через группу узлов палитры позволяют управлять этими частями Capsmat для каждого объекта отдельно. После выбора нажатие Set применит их ко всем выбранным кейкапам; также можно нажать отдельные кнопки копирования, чтобы скопировать только один пункт за раз. Кнопки Copy и Paste внизу служат для создания и вызова записи настроек для всех выбранных объектов.</p>
+<p>Переключатель Custom/Palette позволяет выбирать между рабочими процессами пользовательских цветов и палитры. Цвета A–E и ползунки палитры A–E через группу узлов палитры позволяют управлять этими частями Capsmat для каждого объекта отдельно. После выбора нажатие Set применит их ко всем выбранным кейкапам; также можно нажать отдельные кнопки копирования, чтобы скопировать только один пункт за раз. Кнопки Copy и Paste внизу служат для создания и вызова записи настроек для всех выбранных объектов.</p>
 <img alt="../images/ColorSetPaste.gif" src="../images/ColorSetPaste.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -511,7 +511,7 @@
 </section>
 <section id="properties">
 <h2>Properties (свойства)<a class="headerlink" href="#properties" title="Permalink to this heading"></a></h2>
-<p>Properties также отображается только тогда, когда доступны пользовательские свойства: при выборе кабеля USB отображаются опции кабеля, например оплётка/TechFlex и цвет термоусадки разъёма; при выборе коврика отображаются опции размера и окантовки.</p>
+<p>Properties также отображается только тогда, когда доступны пользовательские свойства: при выборе кабеля USB отображаются опции кабеля, например оплётка/TechFlex и цвет термоусадки разъёма; при выборе коврика отображаются опции размера и окантовки.</p>
 <img alt="../images/KRK2PanelProps.gif" src="../images/KRK2PanelProps.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -530,15 +530,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

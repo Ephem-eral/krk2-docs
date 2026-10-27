@@ -1,7 +1,12 @@
 (function () {
   var btn = document.getElementById('sp-theme');
   var KEY = 'krk2-doc-theme';
-  function label(mode) { if (btn) { btn.textContent = mode === 'dark' ? '☀ Light / 淺色' : '🌙 Dark / 深色'; } }
+  function label(mode) {
+    if (!btn) return;
+    var nextMode = mode === 'dark' ? 'light' : 'dark';
+    btn.textContent = btn.getAttribute('data-label-' + nextMode) ||
+      (nextMode === 'light' ? '☀ Light mode' : '🌙 Dark mode');
+  }
   function apply(mode) {
     document.documentElement.setAttribute('data-theme', mode);
     label(mode);

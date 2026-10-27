@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/board_custom.html">English</a><a class="" href="../cn/board_custom.html">简体</a><a class="" href="../tw/board_custom.html">繁體</a><a class="" href="../ja/board_custom.html">日本語</a><a class="" href="../ko/board_custom.html">한국어</a><a class="active" href="../ru/board_custom.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Подготовка кастомной клавиатуры</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/board_custom.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,16 +326,16 @@
 
   <section id="id1">
 <h1>Подготовка кастомной клавиатуры<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
-<p>В этом руководстве не рассматриваются настройки экспорта вашего CAD-софта: сначала экспортируйте дизайн в OBJ или FBX, затем импортируйте в Blender. Альтернативный вариант — использовать плагин Stepper для Blender, который импортирует файлы STEP/STP напрямую.</p>
+<p>В этом руководстве не рассматриваются настройки экспорта вашего CAD-софта: сначала экспортируйте дизайн в OBJ или FBX, затем импортируйте в Blender. Альтернативный вариант — использовать плагин Stepper для Blender, который импортирует файлы STEP/STP напрямую.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Здесь в качестве примера взят файл рендера Alchemist Keyboards Aella, преобразованный в OBJ. <a class="reference external" href="https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj">Правый клик — Сохранить как</a></p>
+<p>Здесь в качестве примера взят файл рендера Alchemist Keyboards Aella, преобразованный в OBJ. <a class="reference external" href="https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj">Правый клик — Сохранить как</a></p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <img alt="../images/DelAll.gif" src="../images/DelAll.gif" />
-<p>Создайте новый файл Blender, нажмите A X D, чтобы удалить содержимое по умолчанию (куб, камеру, свет), затем на вкладке Scene Properties (Свойства сцены) панели свойств установите единицы измерения в миллиметры (millimeters).</p>
+<p>Создайте новый файл Blender, нажмите A X D, чтобы удалить содержимое по умолчанию (куб, камеру, свет), затем на вкладке Scene Properties (Свойства сцены) панели свойств установите единицы измерения в миллиметры (millimeters).</p>
 <img alt="../images/SetUnitsMM.jpg" src="../images/SetUnitsMM.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -350,12 +350,12 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Нажмите S 0.001, чтобы уменьшить клавиатуру в тысячу раз. После масштабирования она может стать невидимой — нажмите Home, чтобы снова вписать её в вид.</p>
+<p>Нажмите S 0.001, чтобы уменьшить клавиатуру в тысячу раз. После масштабирования она может стать невидимой — нажмите Home, чтобы снова вписать её в вид.</p>
 <img alt="../images/Resize2.jpg" src="../images/Resize2.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь примените масштаб и поворот: нажмите Ctrl+A, затем ещё раз A и выберите All Transforms (Применить всё).</p>
+<p>Теперь примените масштаб и поворот: нажмите Ctrl+A, затем ещё раз A и выберите All Transforms (Применить всё).</p>
 <img alt="../images/Resize3.jpg" src="../images/Resize3.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -365,42 +365,42 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Зажмите Shift и кликните по нижней части корпуса клавиатуры, чтобы добавить её в выделение, затем выровняйте плоскость через Object &gt; Transform &gt; Align Objects: в диалоге зажмите Shift и выберите обе оси — X и Y.</p>
+<p>Зажмите Shift и кликните по нижней части корпуса клавиатуры, чтобы добавить её в выделение, затем выровняйте плоскость через Object &gt; Transform &gt; Align Objects: в диалоге зажмите Shift и выберите обе оси — X и Y.</p>
 <img alt="../images/MoveHandle2.jpg" src="../images/MoveHandle2.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Повторите Align Objects ещё раз, на этот раз установив Align Mode в Negative Sides (Отрицательные стороны) и выбрав ось Z.</p>
+<p>Повторите Align Objects ещё раз, на этот раз установив Align Mode в Negative Sides (Отрицательные стороны) и выбрав ось Z.</p>
 <img alt="../images/MoveHandle3.gif" src="../images/MoveHandle3.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Когда плоскость расположена правильно, отмасштабируйте её так, чтобы она была немного больше нижней поверхности клавиатуры (S X, затем S Y), и примените масштаб.</p>
+<p>Когда плоскость расположена правильно, отмасштабируйте её так, чтобы она была немного больше нижней поверхности клавиатуры (S X, затем S Y), и примените масштаб.</p>
 <img alt="../images/MoveHandle4.gif" src="../images/MoveHandle4.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Преобразуйте её в кривую через Object &gt; Convert &gt; Curve. Ручка перемещения готова.</p>
+<p>Преобразуйте её в кривую через Object &gt; Convert &gt; Curve. Ручка перемещения готова.</p>
 <img alt="../images/MoveHandle5.jpg" src="../images/MoveHandle5.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Сделайте все объекты клавиатуры дочерними для этой ручки перемещения: оставив ручку выделенной, нажмите A для выделения всего, затем Ctrl+P &gt; Object (Keep Transform). Теперь при перемещении ручки остальные части будут двигаться вместе с ней. Нажмите Alt+G, чтобы очистить положение и сбросить ручку и все её дочерние объекты в начало мировых координат.</p>
+<p>Сделайте все объекты клавиатуры дочерними для этой ручки перемещения: оставив ручку выделенной, нажмите A для выделения всего, затем Ctrl+P &gt; Object (Keep Transform). Теперь при перемещении ручки остальные части будут двигаться вместе с ней. Нажмите Alt+G, чтобы очистить положение и сбросить ручку и все её дочерние объекты в начало мировых координат.</p>
 <img alt="../images/MoveHandle6.gif" src="../images/MoveHandle6.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь импортируйте раскладку кейкапов, здесь используется раскладка 75%: нажмите File &gt; Append, перейдите к файлу KRK201 и откройте его двойным щелчком (blend-файл ведёт себя как папка), войдите в Collections, найдите 75 и добавьте коллекцию 75.</p>
+<p>Теперь импортируйте раскладку кейкапов, здесь используется раскладка 75%: нажмите File &gt; Append, перейдите к файлу KRK201 и откройте его двойным щелчком (blend-файл ведёт себя как папка), войдите в Collections, найдите 75 и добавьте коллекцию 75.</p>
 <img alt="../images/ImportLayout.jpg" src="../images/ImportLayout.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Возможно, вам также потребуется включить видимость этой коллекции во вьюпорте: в структуре (Outliner) откройте фильтр отключения видимости вьюпорта (viewport disable filter) и поставьте галочку для коллекции 75.</p>
+<p>Возможно, вам также потребуется включить видимость этой коллекции во вьюпорте: в структуре (Outliner) откройте фильтр отключения видимости вьюпорта (viewport disable filter) и поставьте галочку для коллекции 75.</p>
 <img alt="../images/75Vis.gif" src="../images/75Vis.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Выделите ручку перемещения, входящую в раскладку (пустой объект в форме креста), расположите раскладку в нужном месте относительно основной зоны (Alphas), затем поверните её на 7 градусов по оси X (это угол наклона Aella).</p>
+<p>Выделите ручку перемещения, входящую в раскладку (пустой объект в форме креста), расположите раскладку в нужном месте относительно основной зоны (Alphas), затем поверните её на 7 градусов по оси X (это угол наклона Aella).</p>
 <img alt="../images/75MoveLayout.gif" src="../images/75MoveLayout.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -410,7 +410,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Плейсхолдеры нужно перемещать по одному, чтобы выровнять их по раскладке клавиатуры. Введите 0.002381 в grid size (размер сетки), чтобы задать шаг привязки в 1/8 единицы.</p>
+<p>Плейсхолдеры нужно перемещать по одному, чтобы выровнять их по раскладке клавиатуры. Введите 0.002381 в grid size (размер сетки), чтобы задать шаг привязки в 1/8 единицы.</p>
 <img alt="../images/SnapIncrementGrid.jpg" src="../images/SnapIncrementGrid.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -420,12 +420,12 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Выделите плейсхолдеры, которые нужно переместить, и перемещайте их с ограничением по оси: G X — по оси X, G YY — по локальной оси Y, и так далее. Клавишу Win нужно удалить, а клавишу Alt скопировать с левой клавиши через связывание (Ctrl+L, затем O). Зажмите Ctrl или нажмите значок магнита, чтобы включить привязку, — тогда шаг привязки начнёт действовать.</p>
+<p>Выделите плейсхолдеры, которые нужно переместить, и перемещайте их с ограничением по оси: G X — по оси X, G YY — по локальной оси Y, и так далее. Клавишу Win нужно удалить, а клавишу Alt скопировать с левой клавиши через связывание (Ctrl+L, затем O). Зажмите Ctrl или нажмите значок магнита, чтобы включить привязку, — тогда шаг привязки начнёт действовать.</p>
 <img alt="../images/AellaLayoutAjust.gif" src="../images/AellaLayoutAjust.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь клавиатура готова и совместима с KRK2. Сохраните её как сжатый blend-файл для распространения, а затем импортируйте в KRK2.</p>
+<p>Теперь клавиатура готова и совместима с KRK2. Сохраните её как сжатый blend-файл для распространения, а затем импортируйте в KRK2.</p>
 <img alt="../images/AellaExport.jpg" src="../images/AellaExport.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -443,15 +443,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

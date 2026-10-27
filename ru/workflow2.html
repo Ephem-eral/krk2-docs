@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/workflow2.html">English</a><a class="" href="../cn/workflow2.html">简体</a><a class="" href="../tw/workflow2.html">繁體</a><a class="" href="../ja/workflow2.html">日本語</a><a class="" href="../ko/workflow2.html">한국어</a><a class="active" href="../ru/workflow2.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul>
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">Первый рендер клавиатуры</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/workflow2.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -326,38 +326,38 @@
 
   <section id="id1">
 <h1>Первый рендер клавиатуры<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
-<p>Теперь, когда основы освоены, отрендерим целую клавиатуру и закрепим навыки из первого урока.</p>
+<p>Теперь, когда основы освоены, отрендерим целую клавиатуру и закрепим навыки из первого урока.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Создай новый файл KRK2, во вьюпорте нажми A, чтобы выделить всё, затем нажми Set в области Relink панели KRK, чтобы задать им высоту Cherry.
-Перетащи Capsmat из браузера ассетов на один из кейкапов, зажми Shift и щёлкни по этому кейкапу, чтобы сделать его активным объектом, затем нажми Copy в области Data панели KRK.</p>
+<p>Создайте новый файл KRK2, нажмите A во вьюпорте, чтобы выделить всё, затем нажмите Set в области Relink панели KRK, чтобы задать высоту Cherry.
+Перетащите Capsmat из браузера ассетов на один из кейкапов, зажмите Shift и щёлкните по нему, чтобы сделать активным объектом, затем нажмите Copy в области Data панели KRK.</p>
 <img alt="../images/SetCapsmatCopy.gif" src="../images/SetCapsmatCopy.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Затем нажми Copy в области Color панели KRK, чтобы сохранить информацию о цвете для дальнейшего использования.</p>
+<p>Затем нажмите Copy в области Color панели KRK, чтобы сохранить информацию о цвете для дальнейшего использования.</p>
 <img alt="../images/CopyColors.JPG" src="../images/CopyColors.JPG" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
-<p>Если ты не собираешься делать никакой постобработки финального изображения (это не рекомендуется), то хотя бы установи схему управления цветом в «Standard» или задай look «Medium High Contrast».</p>
+<p>Если вы не планируете выполнять постобработку финального изображения (это не рекомендуется), установите хотя бы схему управления цветом «Standard» или задайте look «Medium High Contrast».</p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь скрой коллекцию Kits с помощью параметров видимости в структуре (Outliner).</p>
+<p>Теперь скройте коллекцию Kits с помощью параметров видимости в структуре (Outliner).</p>
 <img alt="../images/TurnOffKits.gif" src="../images/TurnOffKits.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Перетащи клавиатуру Dalco 959 Mini WKL из браузера ассетов, нажми Alt+G, чтобы сбросить положение, затем нажми кнопку Restore Collections, чтобы сделать её редактируемой.</p>
+<p>Перетащите клавиатуру Dalco 959 Mini WKL из браузера ассетов, нажмите Alt+G, чтобы сбросить положение, затем нажмите Restore Collections, чтобы сделать её редактируемой.</p>
 <img alt="../images/DalcoRestore.gif" src="../images/DalcoRestore.gif" />
-<p>На 959 Mini выбери один плейсхолдер, рамкой выдели все плейсхолдеры, затем нажми Set в области Relink панели KRK.</p>
+<p>На 959 Mini выберите один плейсхолдер, рамкой выделите все плейсхолдеры, затем нажмите Set в области Relink панели KRK.</p>
 <img alt="../images/BoardPopulate.gif" src="../images/BoardPopulate.gif" />
-<p>Нажми Setup в области Color, затем Paste — и цвета, сохранённые ранее из набора, вернутся.</p>
+<p>Нажмите Setup в области Color, затем Paste — так вы восстановите цвета, сохранённые ранее из набора.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -365,23 +365,23 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Разверни Lights в коллекции сцены, отключи видимость KitLightingHigh, включи SoftBoxStudio.
-В коллекции Floors включи FloorWood6.</p>
+<p>Разверните Lights в коллекции сцены, отключите видимость KitLightingHigh и включите SoftBoxStudio.
+В коллекции Floors включите FloorWood6.</p>
 <img alt="../images/LightsFloor6.jpg" src="../images/LightsFloor6.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>В свойствах сцены установи камеру Camera_Board2.</p>
+<p>В свойствах сцены установите камеру Camera_Board2.</p>
 <img alt="../images/SetCamera.jpg" src="../images/SetCamera.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Поверни вид под удачным углом, затем нажми View &gt; Align View &gt; Align Active Camera To View (Ctrl+Alt+Num 0), чтобы сделать текущий вид активной камерой.</p>
+<p>Поверните вид под подходящим углом, затем нажмите View &gt; Align View &gt; Align Active Camera To View (Ctrl+Alt+Num 0), чтобы совместить активную камеру с текущим видом.</p>
 <img alt="../images/SetActiveCamera.gif" src="../images/SetActiveCamera.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Теперь отрендери свою сцену.</p>
+<p>Теперь отрендерьте сцену.</p>
 <img alt="../images/TutBoardRender.jpg" src="../images/TutBoardRender.jpg" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -403,15 +403,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>

@@ -59,8 +59,8 @@
   </form>
 </div>
         </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 封面 / Cover</a>
-  <button class="sp-btn" id="sp-theme" type="button">🌙 Dark / 深色</button>
+  <a class="sp-btn" href="../index.html">⌂ К выбору языка</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Светлая тема" data-label-dark="🌙 Тёмная тема" type="button">🌙 Тёмная тема</button>
 </div>
   <div class="lang-switch"><a class="" href="../en/releases.html">English</a><a class="" href="../cn/releases.html">简体</a><a class="" href="../tw/releases.html">繁體</a><a class="" href="../ja/releases.html">日本語</a><a class="" href="../ko/releases.html">한국어</a><a class="active" href="../ru/releases.html">Русский</a></div>
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
@@ -88,7 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row (ряд)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size (размер)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key (клавиша)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing (клавиши с тактильной меткой)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material (связать материал)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings (копировать настройки)</a></li>
 </ul>
@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">Маски</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">Рабочий процесс с палитрами</a></li>
 </ul>
 </li>
 </ul>
@@ -224,9 +224,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workflow1.html">Ваш первый рендер комплекта</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow2.html">Первый рендер клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Добавление свитчей и стабилизаторов</a></li>
 <li class="toctree-l1"><a class="reference internal" href="board_custom.html">Подготовка кастомной клавиатуры</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE в KRK</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Дополнительная информация</span></p>
 <ul>
@@ -242,12 +242,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Материалы Poly Haven</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Поверхность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">Пол</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">Окружение</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK в 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK в Cinema 4D</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Справочник</span></p>
 <ul class="current">
@@ -256,7 +256,7 @@
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Почему Blender предлагает запустить скрипт?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">Куда пропали мои кейкапы?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">Мой браузер ассетов пуст.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">Клавиатура не появилась в браузере ассетов.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">На моих кейкапах нет материалов.</a></li>
 </ul>
 </li>
@@ -313,7 +313,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Главная"></a></li>
       <li class="breadcrumb-item active">История изменений</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../sources/ru/releases.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
@@ -336,19 +336,19 @@
 <p>Добавлено: клавиатура Zoom98</p>
 <p>Добавлено: клавиатура Zoom75</p>
 <p>Добавлено: Switch_Complex_Box</p>
-<p>Добавлено: категория Switch с 12 цветовыми вариантами свитчей</p>
+<p>Добавлено: категория Switch с 12 цветовыми вариантами свитчей</p>
 <p>Добавлено: аксессуар подставка для клавиатуры (базовая модель предоставлена SpikedSynapse)</p>
 <p>Добавлено: Floor_MarbleTile</p>
-<p>Улучшено: в композиторе по умолчанию включено преобразование цвета Filmic → sRGB, а также включено во вьюпорте</p>
+<p>Улучшено: в композиторе по умолчанию включено преобразование цвета Filmic → sRGB, а также включено во вьюпорте</p>
 <p>Улучшено: скорректирован узел AluShimmer, добавлен эффект рельефа (bump)</p>
 <p>Улучшено: незначительно скорректированы цвета палитры</p>
 <p>Улучшено: добавлена геометрия пластины для Event Horizon</p>
 <p>Улучшено: Pheonix45 разделён на 3 варианта</p>
 <p>Улучшено: кейкапы со сменной легендой по умолчанию получили поликарбонат (PC)</p>
-<p>Исправлено: именование кейкапов без надписей для KAT и SA</p>
+<p>Исправлено: именование кейкапов без надписей для KAT и SA</p>
 <p>Исправлено: добавлены клавиши Home, End, Del для CHE K0 (R0)</p>
-<p>Исправлено: добавлены 1.50 Super, 1.00 Alt и Ctrl для CHE K7 (R5)</p>
-<p>Исправлено: добавлен NumLock с окном для высоты CHE</p>
+<p>Исправлено: добавлены 1.50 Super, 1.00 Alt и Ctrl для CHE K7 (R5)</p>
+<p>Исправлено: добавлен NumLock с окном для высоты CHE</p>
 <p>Исправлено: скорректирован материал песка</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -366,11 +366,11 @@
 <p>Добавлено: клавиатура Monsgeek M1</p>
 <p>Добавлено: клавиатура F#</p>
 <p>Улучшено: обновлена таблица KLE для более стабильного импорта KLE (благодарность SpikedSynapse)</p>
-<p>Улучшено: обновлены скрипты KRK для совместимости с 4.x</p>
-<p>Улучшено: вкладка композитора перемещена рядом с вкладкой KRK</p>
-<p>Исправлено: добавлен AOV, исправлена проблема с каналом диффузного цвета</p>
+<p>Улучшено: обновлены скрипты KRK для совместимости с 4.x</p>
+<p>Улучшено: вкладка композитора перемещена рядом с вкладкой KRK</p>
+<p>Исправлено: добавлен AOV, исправлена проблема с каналом диффузного цвета</p>
 <p>Исправлено: обновлён JSON цветов, исправлены дублирующиеся акцентные цвета</p>
-<p>Исправлено: координаты текстуры коврика изменены с Texture на Point</p>
+<p>Исправлено: координаты текстуры коврика изменены с Texture на Point</p>
 <p>Исправлено: модель KAT K3 1.5 Backspace</p>
 <p>Исправлено: нормали пробела Che-2 6.25</p>
 <p>Исправлено: значения по умолчанию для нижнего ряда OGR</p>
@@ -382,7 +382,7 @@
 </section>
 <section id="krk209">
 <h2>KRK209<a class="headerlink" href="#krk209" title="Permalink to this heading"></a></h2>
-<p>Обновление с Blender 3.3 до 3.6</p>
+<p>Обновление с Blender 3.3 до 3.6</p>
 <p>Добавлено: USBCableV3</p>
 <p>Добавлено: DeskmatV3_Leather</p>
 <p>Добавлено: настройка смещения легенды (Legend Offset)</p>
@@ -390,8 +390,8 @@
 <p>Добавлено: Floor_CarbonFibre</p>
 <p>Добавлено: Floor_DiamondPlate</p>
 <p>Улучшено: DeskMatV3 получил больше контроля над окантовкой</p>
-<p>Улучшено: подставка под запястья переработана в V2</p>
-<p>Улучшено: переключатели Custom и Palette разделены, просмотр больше не изменяет режим кейкапов</p>
+<p>Улучшено: подставка под запястья переработана в V2</p>
+<p>Улучшено: переключатели Custom и Palette разделены, просмотр больше не изменяет режим кейкапов</p>
 <p>Исправлено: отключение слоя нижнего ряда W1AT</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -402,19 +402,19 @@
 <p>Добавлено: наклейки</p>
 <p>Добавлено: клавиатура Giga40</p>
 <p>Добавлено: аксессуар Thok Artisan Display</p>
-<p>Добавлено: значение ширины LegendSeam в Capsmat</p>
+<p>Добавлено: значение ширины LegendSeam в Capsmat</p>
 <p>Добавлено: настройка витков (Coil) витого кабеля для контроля плотности</p>
 <p>Улучшено: переработаны материалы кабеля</p>
 <p>Улучшено: обновлён Model Thirteen</p>
-<p>Улучшено: кабель переработан, теперь начинается с сетки, в рамках подготовки к будущим обновлениям</p>
-<p>Улучшено: детализация шума и шероховатость шума группы узлов Alu_Shimmer</p>
+<p>Улучшено: кабель переработан, теперь начинается с сетки, в рамках подготовки к будущим обновлениям</p>
+<p>Улучшено: детализация шума и шероховатость шума группы узлов Alu_Shimmer</p>
 <p>Улучшено: удалены некоторые дублирующиеся группы узлов материалов</p>
 <p>Улучшено: переименованы группы узлов Capsmat</p>
 <p>Улучшено: добавлены пользовательские значения цвета для кейкапов комплекта по умолчанию</p>
-<p>Улучшено: Palette переименован в Palette8, чтобы указать количество слотов</p>
+<p>Улучшено: Palette переименован в Palette8, чтобы указать количество слотов</p>
 <p>Улучшено: переработаны UV Ikki68 Aurora для поддержки узоров</p>
 <p>Улучшено: на кабеле открыто больше настроек</p>
-<p>Исправлено: несовпадение значений палитры LShift в комплекте, из-за чего он не входил в группу по умолчанию</p>
+<p>Исправлено: несовпадение значений палитры LShift в комплекте, из-за чего он не входил в группу по умолчанию</p>
 <p>Исправлено: пол Floor_Stucco был ниже на 1 мм по оси Z</p>
 <p>Исправлено: начало координат съёмника свитчей</p>
 <p>Исправлено: ориентация G305</p>
@@ -433,13 +433,13 @@
 <p>Добавлено: группа узлов Palette_E8</p>
 <p>Добавлено: 1.5U Cherry выпуклый пробел</p>
 <p>Добавлено: выход маски легенды для смешивания шейдеров</p>
-<p>Добавлено: возможность вызывать различные варианты моделей кейкапов с геометрическими легендами</p>
-<p>Добавлено: возможность импорта и экспорта цветовых схем (режим пользовательских цветов)</p>
-<p>Улучшено: Palette_E переименован в Palette_E4A, чтобы указать 4 слота с альфа-каналом</p>
-<p>Улучшено: в коврик добавлена опция пользовательской формы (ищите в модификаторах)</p>
-<p>Улучшено: варианты тактильных меток на кейкапах переименованы в Variation, чтобы поддерживать больше функций</p>
+<p>Добавлено: возможность вызывать различные варианты моделей кейкапов с геометрическими легендами</p>
+<p>Добавлено: возможность импорта и экспорта цветовых схем (режим пользовательских цветов)</p>
+<p>Улучшено: Palette_E переименован в Palette_E4A, чтобы указать 4 слота с альфа-каналом</p>
+<p>Улучшено: в коврик добавлена опция пользовательской формы (ищите в модификаторах)</p>
+<p>Улучшено: варианты тактильных меток на кейкапах переименованы в Variation, чтобы поддерживать больше функций</p>
 <p>Исправлено: отсутствующие кейкапы некоторых высот: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe</p>
-<p>Исправлено: все варианты тактильных меток (F, J, Num5, H, A, U, N, T) в профилях DSA, DSS, KAM, KAT, OEM и SA вынесены из морф-ключей</p>
+<p>Исправлено: все варианты тактильных меток (F, J, Num5, H, A, U, N, T) в профилях DSA, DSS, KAM, KAT, OEM и SA вынесены из морф-ключей</p>
 <p>Исправлено: геометрия SwitchComplex смещена на 0.33 мм по оси Y для лучшего выравнивания со штоком (крестовиной) свитча</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -449,10 +449,10 @@
 <h2>KRK206<a class="headerlink" href="#krk206" title="Permalink to this heading"></a></h2>
 <p>Добавлено: клавиатура Akko ACR75</p>
 <p>Добавлено: клавиатура Akko Alice</p>
-<p>Добавлено: высота SLK в загружаемом контенте</p>
-<p>Добавлено: высота PBS в загружаемом контенте</p>
-<p>Добавлено: высота XDA в загружаемом контенте</p>
-<p>Исправлено: исправлены повреждённые UV USB-кабеля в Blender 3.4</p>
+<p>Добавлено: высота SLK в загружаемом контенте</p>
+<p>Добавлено: высота PBS в загружаемом контенте</p>
+<p>Добавлено: высота XDA в загружаемом контенте</p>
+<p>Исправлено: исправлены повреждённые UV USB-кабеля в Blender 3.4</p>
 <p>Исправлено: исправлена проблема, когда восстановление коллекций нарушало управление USB-кабелем</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -480,11 +480,11 @@
 <p>Добавлено: клавиатура IRON180</p>
 <p>Улучшено: добавлены универсальные клавиши Ctrl+Alt+Super</p>
 <p>Улучшено: Isometria по умолчанию переключена на Iso</p>
-<p>Улучшено: Palette E в панели KRK теперь отображается как Legend</p>
-<p>Улучшено: помимо существующих CtrlL, AltL и т. д. добавлены клавиши с обычными именами Ctrl, Alt, Super</p>
+<p>Улучшено: Palette E в панели KRK теперь отображается как Legend</p>
+<p>Улучшено: помимо существующих CtrlL, AltL и т. д. добавлены клавиши с обычными именами Ctrl, Alt, Super</p>
 <p>Исправлено: перемещены начало координат CapsStepped, BigEnter, EnterIso</p>
-<p>Исправлено: клавиша &gt;&lt; переименована в LessGreater</p>
-<p>Исправлено: FN переименована в Fn</p>
+<p>Исправлено: клавиша &gt;&lt; переименована в LessGreater</p>
+<p>Исправлено: FN переименована в Fn</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -492,12 +492,12 @@
 <section id="krk203">
 <h2>KRK203<a class="headerlink" href="#krk203" title="Permalink to this heading"></a></h2>
 <p>Добавлено: клавиатура NK65</p>
-<p>Улучшено: ассеты клавиатур перемещены в браузер ассетов</p>
-<p>Улучшено: раскладки перемещены в браузер ассетов</p>
-<p>Улучшено: аксессуары перемещены в браузер ассетов</p>
+<p>Улучшено: ассеты клавиатур перемещены в браузер ассетов</p>
+<p>Улучшено: раскладки перемещены в браузер ассетов</p>
+<p>Улучшено: аксессуары перемещены в браузер ассетов</p>
 <p>Улучшено: шейдеры вынесены из Capsmat</p>
-<p>Исправлено: включены освещение сцены и окружение мира для вьюпорта</p>
-<p>Исправлено: некоторые клавиши в комплекте не имели предзагруженной информации о палитре</p>
+<p>Исправлено: включены освещение сцены и окружение мира для вьюпорта</p>
+<p>Исправлено: некоторые клавиши в комплекте не имели предзагруженной информации о палитре</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -505,7 +505,7 @@
 <section id="krk202">
 <h2>KRK202<a class="headerlink" href="#krk202" title="Permalink to this heading"></a></h2>
 <p>Добавлено: аксессуар съёмник кейкапов</p>
-<p>Улучшено: JSON цветов предзагружает тему KRK по умолчанию, можно сразу приступать к клавиатуре</p>
+<p>Улучшено: JSON цветов предзагружает тему KRK по умолчанию, можно сразу приступать к клавиатуре</p>
 <p>Исправлено: неверные номера рядов клавиш ISO Not, 2, 3 для DCS</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -517,11 +517,11 @@
 <p>Добавлено: высота плейсхолдер</p>
 <p>Добавлено: новая модель Cherry</p>
 <p>Добавлено: новая модель DCS</p>
-<p>Добавлено: поддержка боковых легенд в capsmat (для новых Cherry и DCS)</p>
+<p>Добавлено: поддержка боковых легенд в capsmat (для новых Cherry и DCS)</p>
 <p>Добавлено: инструмент материалов палитры</p>
 <p>Добавлено: клавиатура W1-AT</p>
 <p>Добавлено: клавиатура Vector65</p>
-<p>Добавлено: клавиатуры MAN40 и MAN60</p>
+<p>Добавлено: клавиатуры MAN40 и MAN60</p>
 <p>Добавлено: клавиатура Zoom65</p>
 <p>Добавлено: клавиатура Beak 6.5</p>
 <p>Добавлено: клавиатура Piggy</p>
@@ -529,7 +529,7 @@
 <p>Добавлено: клавиатура Austin</p>
 <p>Добавлено: клавиатура Frog</p>
 <p>Добавлено: клавиатура Cake60</p>
-<p>Добавлено: для большинства клавиатур добавлены пластины, а модели изменены для размещения прозрачных свитчей</p>
+<p>Добавлено: для большинства клавиатур добавлены пластины, а модели изменены для размещения прозрачных свитчей</p>
 <p>Добавлено: Switch Complex</p>
 <p>Добавлено: Stab Complex</p>
 <p>Добавлено: Stab Simple 7U</p>
@@ -540,11 +540,11 @@
 <p>Добавлено: разъём USB Micro</p>
 <p>Добавлено: разъём USB Mini</p>
 <p>Улучшено: разделены высоты кейкапов</p>
-<p>Улучшено: упорядочены клавиатуры в структуре (Outliner)</p>
+<p>Улучшено: упорядочены клавиатуры в структуре (Outliner)</p>
 <p>Улучшено: перемоделированы разъёмы Aviator</p>
 <p>Улучшено: коврик переработан для большей универсальности</p>
 <p>Улучшено: USB-кабель переработан для большей универсальности</p>
-<p>Улучшено: материалы G305 и добавлены свойства</p>
+<p>Улучшено: материалы G305 и добавлены свойства</p>
 </section>
 </section>
 
@@ -559,15 +559,13 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
+    <p>&#169; 2022, ImperfectLink.</p>
   </div>
 
-  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
-    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+  Сайт построен с помощью <a href="https://www.sphinx-doc.org/">Sphinx</a> и темы от <a href="https://readthedocs.org">Read the Docs</a>.
 
 
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License / 授權</a>.</p>
+<p class="sp-credit">Многоязычная версия подготовлена <a href="https://github.com/Ephem-eral">E3e</a> · Текст документации © 2022, ImperfectLink · <a href="../LICENSE">Лицензия</a>.</p>
 </footer>
         </div>
       </div>
