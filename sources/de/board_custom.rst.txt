@@ -1,0 +1,126 @@
+Benutzerdefinierte Tastatur Vorbereitung
+========================================
+
+Dieses Tutorial deckt nicht Exporteinstellungen aus Ihrer CAD-Software ab. Exportieren Sie Ihr Design als OBJ oder FBX und importieren Sie es in Blender. Alternativ können Sie das Addon Stepper Blender verwenden, um die STEP/STP-Datei direkt zu importieren.
+
+|
+
+Als Beispiel verwenden wir Alchemist Keyboards Aella Render-Datei in OBJ konvertiert. `Right Click > Save <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
+
+|
+
+.. image:: img/DelAll.gif
+
+Löschen Sie in einer neuen Blender-Datei den Inhalt (Kubik, Kamera, Licht) (A X D) und setzen Sie Ihre Einheiten auf Millimeter im Register Scene Properties des Eigenschaften-Panels.
+
+.. image:: img/SetUnitsMM.jpg
+
+|
+
+Jetzt können Sie die Aella OBJ importieren, indem Sie auf Datei > Import > Wavefront Obj klicken (F4 I W)
+
+.. image:: img/ImportObj.jpg
+
+|
+
+Das erste, was Sie bemerken, ist, dass die Skala falsch ist. In diesem Fall wurden die Millimetereinheiten in Meter gesteckt.
+
+.. image:: img/Resize1.jpg
+
+|
+
+Skalieren Sie die Tastatur auf ein Tausendstel, indem Sie S 0.001 drücken. Sie müssen möglicherweise Ihre Tastatur umrahmen, damit Sie sie mit der Home-Taste sehen können.
+
+.. image:: img/Resize2.jpg
+
+|
+
+Wenden Sie nun die Skala und Drehung durch Drücken von strg+A und dann A erneut an, um alle Transforms anzuwenden.
+
+.. image:: img/Resize3.jpg
+
+|
+
+Jetzt lassen Sie uns einen Move Handle erstellen. Drücken Sie Hinzufügen > Mesh > Flugzeug (Shift+A M P)
+
+.. image:: img/MoveHandle1.jpg
+
+|
+
+Halten Sie Shift gedrückt und klicken Sie auf den unteren Fall Tastatur, um ihn der Auswahl hinzuzufügen. Richten Sie dann die Ebene mit Object > Transform > Align Objects aus und aktivieren Sie X- und Y-Achsen, indem Sie im Dialog auf X und Y wechseln.
+
+.. image:: img/MoveHandle2.jpg
+
+|
+
+Wiederholen Sie nun die Align Objects, dieses Mal mit Align Mode auf Negative Seiten gesetzt und die Z-Achse ausgewählt.
+
+.. image:: img/MoveHandle3.gif
+
+|
+
+Ihr Flugzeug befindet sich jetzt in der richtigen Position, als nächstes muss es etwas größer sein als der Tastatur-Fußabdruck (S X + S Y) und dann die Skala anwenden.
+
+.. image:: img/MoveHandle4.gif
+
+|
+
+Konvertieren Sie es in eine Kurve mit Object > Convert > Curve. Ihr Move Handle ist fertig.
+
+.. image:: img/MoveHandle5.jpg
+
+|
+
+Eltern alle Tastatur-Objekte in den Move-Handle. Drücken Sie A, um alle dann strg+P > Object (Keep Transform) auszuwählen. Wenn Sie nun den Move-Handle verschieben, kommt der Rest mit ihm. Leeren Sie den Ort mit Alt+G, um den Move-Handle und alle seine Kinder auf die Welt 0 zurückzusetzen.
+
+.. image:: img/MoveHandle6.gif
+
+|
+
+Jetzt ist es an der Zeit, Keycap Layout zu importieren. In diesem Fall handelt es sich um die 75% Layout. Datei > Anschließend navigieren Sie zur Datei KRK201 und doppelklicken Sie darauf..blend-Dateien verhalten sich wie Ordner. Geben Sie nun die Sammlungen ein, suchen Sie 75 und fügen Sie die 75-Sammlung an.
+
+.. image:: img/ImportLayout.jpg
+
+|
+
+Möglicherweise müssen Sie die 3D-Viewport Sichtbarkeit für die Sammlung aktivieren. Aktivieren Sie im Outliner 3D-Viewport Filter deaktivieren und aktivieren Sie sie für die 75 Sammlung.
+
+.. image:: img/75Vis.gif
+
+|
+
+Wählen Sie den Layout-Bewegungsgriff (gekreuzt leer) und verschieben Sie die Layout-Position basierend auf dem Alpha-Abschnitt und drehen Sie ihn 7 Grad auf der X-Achse (Typwinkel für Aella).
+
+.. image:: img/75MoveLayout.gif
+
+|
+
+Eltern der Layout Zuggriff zum Tastatur Zuggriff.
+
+.. image:: img/75MoveLayoutParent.gif
+
+|
+
+Die Platzhalter müssen zum Tastatur Layout bewegt werden. Sie können den Snap-Inkrementbetrag auf 1/8 einstellen, indem Sie 0.002381 in die Rastergröße eingeben.
+
+.. image:: img/SnapIncrementGrid.jpg
+
+|
+
+Schalten Sie die Tsangan untere Reihe ein.
+
+.. image:: img/75BottomRow.gif
+
+|
+
+Wählen Sie die Platzhalter, die Sie verschieben möchten, und verwenden Sie die Achsenbeschränkungen, um sie zu bewegen. G X für Bewegung auf X-Achse, G YY für Bewegung auf lokalem Y usw. Die Win-Tasten müssen gelöscht werden und die Alt-Taste muss von der linken Seite verbunden werden (Ctrl+L O). Halten Sie Strg oder schalten Sie das Snapping mit dem Magnet-Icon ein, um Snapping-Schritt zu verwenden.
+
+.. image:: img/AellaLayoutAjust.gif
+
+|
+
+Ihr Tastatur ist jetzt fertig und KRK2 kompatibel. Sparen Sie es als komprimiertes .blend-Datei für die Distribution und den Import in KRK2 aus.
+
+.. image:: img/AellaExport.jpg
+
+|

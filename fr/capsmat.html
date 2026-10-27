@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capsmat &mdash; Documentation Keyboard Render Kit 2</title>
+      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+        <script src="../static/jquery.js"></script>
+        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.fr.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/sphinx_highlight.js"></script>
+        <script src="../static/translations.fr.js"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Encrage" href="leg_inkscape.html" />
+    <link rel="prev" title="Gestion des couleurs" href="colourman.html" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/krk2.css">
+<script>
+(function () {
+  try {
+    var saved = window.localStorage.getItem('krk2-doc-theme');
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+</head>
+
+<body class="wy-body-for-nav">
+  <div class="wy-grid-for-nav">
+    <nav id="krk-nav-side" data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+
+          <a href="index.html" class="icon icon-home">
+            Keyboard Render Kit
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="sp-actions">
+  <a class="sp-btn" href="../index.html">⌂ Retour au choix de la langue</a>
+  <button class="sp-btn" id="sp-theme" data-label-light="☀ Mode clair" data-label-dark="🌙 Mode sombre" type="button">🌙 Mode sombre</button>
+</div>
+  <div class="lang-switch"><a class="" href="../en/capsmat.html">English</a><a class="" href="../cn/capsmat.html">简体</a><a class="" href="../tw/capsmat.html">繁體</a><a class="" href="../de/capsmat.html">Deutsch</a><a class="active" href="../fr/capsmat.html">Français</a><a class="" href="../ja/capsmat.html">日本語</a><a class="" href="../ko/capsmat.html">한국어</a><a class="" href="../ru/capsmat.html">Русский</a></div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Aperçu général</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Premiers pas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#contenu-de-larchive">Contenu de l’archive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#prise-en-main">Prise en main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#obtenir-de-laide">Obtenir de l’aide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#navigateur-dassets">Navigateur d’assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#editeur-uv">Éditeur UV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#vue-3d">vue 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#editeur-de-shaders">Éditeur de shaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#apercu">Aperçu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html#proprietes">Propriétés</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Groupe spécial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relien">Relien</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#importer-kle">Importer KLE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profil">Profil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#ligne">Ligne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#taille">Taille</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#cle">Clé</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#materiel-de-liaison">Matériel de liaison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copier-les-parametres">Copier les paramètres</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#donnees">Données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#couleur">Couleur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#proprietes">Propriétés</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Navigateur d’assets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#ressources-daccessoires">Ressources d’accessoires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#ressources-pour-claviers">Ressources pour claviers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#ressources-de-materiaux">Ressources de matériaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#outils-de-materiaux">Outils de matériaux</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uveditor.html">Éditeur UV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Éditeur de shaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outliner.html">Aperçu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#kits">Kits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#claviers">Claviers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#plans-cadres">Plans-cadres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#accessoires">Accessoires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#scene">Scène</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#cameras">Caméras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#lumieres">Lumières</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#planchers">Planchers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="outliner.html#batiment">Bâtiment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#profils">Profils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#installation-uv">Installation UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outliner.html#pieces">Pièces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Éditeur de propriétés</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#proprietes-du-rendu">Propriétés du rendu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#peripherique-de-rendu">Périphérique de rendu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#echantillonnage">Échantillonnage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#denoise">Denoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#film-transparent">Film transparent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#gestion-des-couleurs">Gestion des couleurs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#proprietes-de-sortie">Propriétés de sortie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#resolution">Résolution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#proprietes-de-la-scene">Propriétés de la scène</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#camera-active">Caméra active</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#donnees-dobjet-proprietes">Données d’objet Propriétés</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#donnees-dobjet">Données d’objet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#cartes-uv">Cartes UV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="properties.html#proprietes-du-materiau">Propriétés du matériau</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#indice-des-materiaux">Indice des matériaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="properties.html#lien-materiel">Lien matériel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colourman.html">Gestion des couleurs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Matériaux</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capsmat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parametres">Paramètres</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#casquette">Casquette</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legende">Légende</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legende-masque">Légende Masque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aiguille-legende">Aiguille Légende</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legende-poids">Légende Poids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sous">Sous</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sous-masque">Sous-Masque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#epurer-le-sous-groupe">Épurer le sous-groupe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sous-poids">Sous-poids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#avant">Avant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#masque-avant">Masque avant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#affinez-le-front">Affinez le front</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#poids-avant">Poids avant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rugosite">Rugosité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#echelle-de-bosse">Échelle de bosse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#haut-de-la-page">Haut de la page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bump-lateral">Bump latéral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legende-seam">Légende Seam</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#masques">Masques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#le-flux-de-travail-de-la-palette">Le flux de travail de la palette</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Création de légendes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Encrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Créateur d’affinité</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Accessoires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Tapis de bureau</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#dimensions">Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#fabrication-dans-laquelle-la-valeur-de-toutes-les-matieres-utilisees-n-excede-pas-50-du-prix-depart-usine-du-produit">Fabrication dans laquelle la valeur de toutes les matières utilisées n’excède pas 50 % du prix départ usine du produit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#imprime-du-bord">Imprimé du bord</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#couleur-du-bord">Couleur du bord</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#materiau">Matériau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deskmat.html#exportations">Exportations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Ajouter votre propre design de table de bureau</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cables.html">Câbles USB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#parametres">Paramètres</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#prise">Prise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#couleur">Couleur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#flip">Flip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#miroir">Miroir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cables.html#technologie-flex">Technologie Flex</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#cable-droit">Câble droit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#materiau">Matériau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cables.html#exportation-de-cables">Exportation de câbles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Souris</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Votre premier kit Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Votre premier Clavier Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Ajouter Switches et Stabilisateurs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Préparation personnalisée Clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE À KRK</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Informations supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimiser votre rendu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#resolution">Résolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#echantillons-rendus">Échantillons rendus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimization.html#denonciation">Dénonciation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="optimization.html#demande">Demande</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Assets de Poly Haven</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#plancher">Plancher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#environnement">Environnement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK à 3ds Max</a></li>
+<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK au cinéma 4d</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Référence</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#comment-puis-je-installer-keyboard-render-kit">Comment puis-je installer Keyboard Render Kit?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#pourquoi-blender-me-demande-t-il-d-executer-un-script">Pourquoi Blender me demande-t-il d’exécuter un script?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#ou-sont-mes-touches">Où sont mes touches?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#mon-navigateur-dassets-est-vide">Mon navigateur d’assets est vide.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#les-claviers-napparaissent-pas-dans-le-navigateur-dassets">Les claviers n’apparaissent pas dans le navigateur d’assets.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#mon-touches-n-a-rien-sur-eux">Mon touches n’a rien sur eux.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.html">Touche Recettes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html#profils-supplementaires">Profils supplémentaires</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#lieu">LIEU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">Claviers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Journaux de publication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rci.html">Restaurer les instances de recouvrement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navigation" >
+          <button type="button" class="krk-nav-toggle" aria-controls="krk-nav-side" aria-expanded="false" aria-label="Menu de navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <a href="index.html">Keyboard Render Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navigation des pages">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Accueil"></a></li>
+      <li class="breadcrumb-item active">Capsmat</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../sources/fr/capsmat.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+
+  <section id="capsmat">
+<h1>Capsmat<a class="headerlink" href="#capsmat" title="Lien permanent vers cette rubrique"></a></h1>
+<img alt="../images/Capsmat.jpg" src="../images/Capsmat.jpg" />
+<section id="parametres">
+<h2>Paramètres<a class="headerlink" href="#parametres" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="casquette">
+<h3>Casquette<a class="headerlink" href="#casquette" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est la couleur de base du touche qui peut être contrôlée par le champ de couleur de l’utilisation de la socket avec une palette.</p>
+</section>
+<section id="legende">
+<h3>Légende<a class="headerlink" href="#legende" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Il s’agit de la couleur légende. Vous pouvez choisir une couleur, brancher une palette pour contrôler la couleur ou même brancher une image dans la prise pour les légendes pleine couleur.</p>
+</section>
+<section id="legende-masque">
+<h3>Légende Masque<a class="headerlink" href="#legende-masque" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Une image blanche sur noir est branchée dans cette prise pour mélanger la couleur du capuchon et la couleur légende.</p>
+</section>
+<section id="aiguille-legende">
+<h3>Aiguille Légende<a class="headerlink" href="#aiguille-legende" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/SharpenLegend.gif" src="../images/SharpenLegend.gif" />
+<p>Ceci est utilisé pour aiguiser le bord du légende pour apparaître comme un double injection légende. Il est réglé à plein par défaut mais vous pouvez le glisser à zéro pour simuler plus d’un teint sublimé look.</p>
+</section>
+<section id="legende-poids">
+<h3>Légende Poids<a class="headerlink" href="#legende-poids" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/LegendWeight.gif" src="../images/LegendWeight.gif" />
+<p>En raison de la façon dont fonctionne l’affûtage légende, vous pouvez également vouloir compenser le poids pour endosser le légende. Un nombre plus petit signifie un bolder légende.</p>
+</section>
+<section id="sous">
+<h3>Sous<a class="headerlink" href="#sous" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est la couleur du légendes secondaires.</p>
+</section>
+<section id="sous-masque">
+<h3>Sous-Masque<a class="headerlink" href="#sous-masque" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est la socket que vous pouvez brancher dans vos fichiers légende secondaire.</p>
+</section>
+<section id="epurer-le-sous-groupe">
+<h3>Épurer le sous-groupe<a class="headerlink" href="#epurer-le-sous-groupe" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Comme Sharpen Légende, cela fait la même chose pour légendes secondaires.</p>
+</section>
+<section id="sous-poids">
+<h3>Sous-poids<a class="headerlink" href="#sous-poids" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Même chose que Légende Poids, mais pour légendes secondaires.</p>
+</section>
+<section id="avant">
+<h3>Avant<a class="headerlink" href="#avant" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est la couleur pour le légendes frontales.</p>
+</section>
+<section id="masque-avant">
+<h3>Masque avant<a class="headerlink" href="#masque-avant" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est la prise pour le masque légende frontale.</p>
+</section>
+<section id="affinez-le-front">
+<h3>Affinez le front<a class="headerlink" href="#affinez-le-front" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Comme Sharpen Légende mais pour légendes frontales.</p>
+</section>
+<section id="poids-avant">
+<h3>Poids avant<a class="headerlink" href="#poids-avant" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est le même que Légende Poids mais pour légendes frontales.</p>
+</section>
+<section id="rugosite">
+<h3>Rugosité<a class="headerlink" href="#rugosite" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/Roughness.jpg" src="../images/Roughness.jpg" />
+<p>C’est l’ensemble rugosité ou brillant pour le matériau touche. Cela variera selon le type de plastique ou de finition que vous visez. Par exemple, PBT aura généralement un rugosité plus élevé que l’ABS.</p>
+</section>
+<section id="echelle-de-bosse">
+<h3>Échelle de bosse<a class="headerlink" href="#echelle-de-bosse" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/BumpScale.jpg" src="../images/BumpScale.jpg" />
+<p>C’est l’échelle ou le grain du bruit de bosse. Pensez-y la même chose que le grain pour le papier de sable en ce qu’un plus grand nombre représente une densité plus élevée.</p>
+</section>
+<section id="haut-de-la-page">
+<h3>Haut de la page<a class="headerlink" href="#haut-de-la-page" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/KeycapBump.JPG" src="../images/KeycapBump.JPG" />
+<p>C’est l’intensité de la bosse au sommet du touche.</p>
+</section>
+<section id="bump-lateral">
+<h3>Bump latéral<a class="headerlink" href="#bump-lateral" title="Lien permanent vers cette rubrique"></a></h3>
+<p>C’est l’intensité de la bosse à l’arrière, à l’avant et aux côtés du touche.</p>
+</section>
+<section id="legende-seam">
+<h3>Légende Seam<a class="headerlink" href="#legende-seam" title="Lien permanent vers cette rubrique"></a></h3>
+<img alt="../images/LegendSeam.jpg" src="../images/LegendSeam.jpg" />
+<p>Certains processus double injection se traduisent par une séparation plus prononcée entre légende et touche.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="masques">
+<h2>Masques<a class="headerlink" href="#masques" title="Lien permanent vers cette rubrique"></a></h2>
+<img alt="../images/LegendsDemo.jpg" src="../images/LegendsDemo.jpg" />
+<p>Un masque est un blanc sur l’image noire qui définit comment mélanger deux couleurs ou éléments ensemble. Considérez le blanc comme étant ON et le noir comme OFF.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/LegendMask.JPG" src="../images/LegendMask.JPG" />
+<p>Dans le chapeau, on utilise des masques pour mélanger le chapeau avec le légende, le chapeau avec le légende secondaire et le chapeau avec le légende frontale. Si l’un d’eux n’est pas présent, il prendra en considération le noir ou le noir pour cette portion.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/LegendsTemplate.png" src="../images/LegendsTemplate.png" />
+<p>KRK est livré avec des modèles pour rendre la génération de ces masques plus simple.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="le-flux-de-travail-de-la-palette">
+<h2>Le flux de travail de la palette<a class="headerlink" href="#le-flux-de-travail-de-la-palette" title="Lien permanent vers cette rubrique"></a></h2>
+<p>KRK2 introduit un nouveau flux de travail pour aider à l’exploration et au design des couleurs. Comme vous l’avez déjà vu, le panneau KRK vous permet de contrôler la couleur du touches sur une base individuelle. Vous pouvez commencer par une couleur personnalisée par touche et ensuite glisser ces couleurs dans une palette pour définir votre colorway.
+Les groupes de nœuds de palette sont l’autre composant de ce workflow.</p>
+<img alt="../images/Palettes.jpg" src="../images/Palettes.jpg" />
+<p>Les palettes vont de A-E ainsi qu’une palette autonome pour conduire l’éditeur de matériaux. Ils ont huit fentes pour les couleurs tandis que Palette E a quatre pour les couleurs et quatre autres pour les alphas.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="colourman.html" class="btn btn-neutral float-left" title="Gestion des couleurs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="leg_inkscape.html" class="btn btn-neutral float-right" title="Encrage" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ImperfectLink.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+
+
+<p class="sp-credit">Version multilingue par <a href="https://github.com/Ephem-eral">E3e</a> · Contenu de la documentation © 2022, ImperfectLink · <a href="../LICENSE">Licence</a>.</p>
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+<script src="../static/krk2.js"></script>
+</body>
+</html>

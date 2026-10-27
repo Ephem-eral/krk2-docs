@@ -1,0 +1,49 @@
+FAQ
+~~~~
+
+|
+
+Wie kann ich Keyboard Render Kit installieren?
+----------------------------------------------
+
+
+Keyboard Render Kit ist alle in die .blend-Datei gepackt, auf die Sie zugreifen können, indem Sie einfach die Datei in Blender öffnen.
+
+|
+
+Warum bittet mich Blender, ein Skript zu führen?
+------------------------------------------------
+
+
+KRK2 hat einen Addon-Teil des Kits und installiert dies kostenlos, indem ein registriertes Skript ausgeführt wird.
+
+|
+
+Wo sind meine Keycaps?
+----------------------
+
+
+KRK2 hat einen neuen Workflow, der Platzhalter nutzt und sie durch das Keycap-Profil Ihrer Wahl über das KRK Panel ersetzt.
+
+|
+
+Mein Asset-Browser ist leer.
+----------------------------
+
+Blender benötigt eine Begleitdatei, in der festgelegt ist, welche Elemente im Asset-Browser in welchen Kategorien erscheinen. Die ZIP-Datei enthält eine TXT-Datei; diese muss sich im selben Ordner wie die .blend-Datei befinden.
+
+|
+
+Tastaturen werden im Asset-Browser nicht angezeigt.
+---------------------------------------------------
+
+Die Unterstützung für Collection-Assets kam mit Blender 3.2. Verwenden Sie daher Blender 3.2 oder neuer.
+
+|
+
+Meine Keycaps haben kein Material.
+------------------------------------
+
+Keycaps Modelle in KRK2 kommen standardmäßig ohne Material. Dies ist also der Keycaps und der Capsmat kann unabhängig aktualisiert werden.
+
+|

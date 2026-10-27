@@ -1,0 +1,46 @@
+Inkscape
+~~~~~~~~
+
+Die Beschriftung-Dateien werden in Inkscape erstellt, die hier kostenlos heruntergeladen werden können:
+
+`Inkscape <https://inkscape.org/>`_
+
+In Zukunft wird jedes Profil eine eigene Vorlage haben. KRK1 hatte eine Datei für alle Profile, aber die neu modellierten Keycaps haben einen anderen UV-Raum, so dass sie nun auch in ihre eigenen Vorlagen ausgebrochen sind.
+
+|
+
+Beim Öffnen der svg-Datei sehen Sie auf der rechten Seite ein Layer-Panel, das die Legenden sowie die Vorlagen für die Tops und Fronten der Keycaps enthält. Wenn das Layer-Panel nicht sichtbar ist, können Sie es durch Klicken auf Layer > Layer und Objekte oder Drücken Sie Shift+Ctrl+L aufrufen.
+
+.. image:: img/InkscapeScreen.jpg
+
+|
+
+Die Vorlage ist eingeschaltet, damit Sie Ihre Legenden und Neuheiten in Bezug auf den Touch-Bereich des Keycaps ausrichten können. Denken Sie daran, dass das Endergebnis ein weißes auf schwarzem Bild enthalten muss.
+
+.. image:: img/LegendsDemo.jpg
+
+|
+
+Erstellen Sie eine neue Ebene und fügen Sie Ihre Legenden in die neue Ebene ein. Sie können die Legenden mit den Cursor-Tasten auf Ihrer Tastatur, die Shift für größere Schritte und Alt für kleinere Schritte halten, um zu verhindern, dass fehlerhafte Auswahl.
+
+.. image:: img/InkscapeLayers.jpg
+
+|
+
+Wenn Sie das Align-Tool verwenden möchten, um auf einzelne Keycaps auszurichten, muss die Vorlage in Teile zerlegt werden. Sie können dies tun, indem Sie es auswählen und Pfad > Apart oder Ctrl+Shift+K drücken.
+
+.. image:: img/InkscapeAlign.jpg
+
+|
+
+Exportieren Sie mit File > Export oder Ctrl+Shift+E Ihre Legenden. Exportieren Sie Ihr WoB-Bild als png 4096x4096 Auflösung oder 8192x8192. Wirklich die Auflösung und der Dateityp sind egal, solange es ein quadratisches Bild ist.
+
+.. image:: img/InkscapeExport.jpg
+
+|
+
+Wenn Ihre Neuheiten oder Legenden mehrfarbig sind, schalten Sie den schwarzen Hintergrund aus und exportieren Sie als Bild mit Transparenz. Sie können den Alpha-Kanal als Maske verwenden und die Farbe in die Beschriftung-Farbe stecken.
+
+.. image:: img/InkscapeFullColor.jpg
+
+|

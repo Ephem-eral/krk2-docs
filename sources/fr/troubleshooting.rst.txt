@@ -1,0 +1,49 @@
+FAQ
+~~~~
+
+|
+
+Comment puis-je installer Keyboard Render Kit?
+----------------------------------------------
+
+
+Keyboard Render Kit est tous emballés dans le fichier .blend auquel vous pouvez accéder en ouvrant simplement le fichier dans Blender.
+
+|
+
+Pourquoi Blender me demande-t-il d'exécuter un script?
+------------------------------------------------------
+
+
+KRK2 possède une partie addon du kit et l'installation est gratuite en exécutant un script enregistré.
+
+|
+
+Où sont mes touches?
+---------------------
+
+
+KRK2 a un nouveau workflow qui utilise des placeholders et les remplace par le profil de touches de votre choix via le KRK Panel].
+
+|
+
+Mon navigateur d’assets est vide.
+---------------------------------
+
+Blender a besoin d’un fichier annexe qui indique quels éléments apparaissent dans le navigateur d’assets et dans quelles catégories. Le fichier ZIP contient un fichier TXT : placez-le dans le même dossier que le fichier .blend.
+
+|
+
+Les claviers n’apparaissent pas dans le navigateur d’assets.
+------------------------------------------------------------
+
+La prise en charge des assets de collection est arrivée avec Blender 3.2 ; utilisez donc Blender 3.2 ou une version ultérieure.
+
+|
+
+Mon touches n'a rien sur eux.
+------------------------------------
+
+Touches modèles dans KRK2 viennent sans un matériau par défaut. C'est ainsi que le touches et le capsmat peuvent être mis à jour indépendamment.
+
+|

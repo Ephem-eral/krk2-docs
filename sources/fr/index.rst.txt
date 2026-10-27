@@ -1,0 +1,111 @@
+
+Bienvenue sur Keyboard Render Kit !
+===================================
+
+.. image:: img/KRK2Banner.png
+
+Bienvenue à Keyboard Render Kit 2 et merci pour votre soutien!
+
+KRK2 reprend le processus d’échange des données d’objet de KRK1 en le rendant plus flexible, plus autonome et plus modulaire. Les profils de touches ne dépendent plus de la géométrie des autres claviers. Les claviers sont facilement transférables, et chaque élément peut être mis à jour indépendamment d’une version à l’autre.
+
+|
+
+Configuration requise
+~~~~~~~~~~~~~~~~~~~~~
+**Blender 3.3 ou version ultérieure**
+
+**Ordinateur compatible avec Blender Cycles**
+
+Liens
+~~~~~
+`Gumroad <https://imperfectlink.gumroad.com/l/KRK2>`_
+|
+`BlenderMarket <https://blendermarket.com/products/krk2>`_
+|
+`Instagram <https://www.instagram.com/keyboardrenderkit/>`_
+|
+`Discord <https://discord.gg/fVkGTunzT3>`_
+|
+`Legends Repo <https://github.com/imperfectlink/KRKLegendsRepo>`_
+
+|
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Aperçu général
+
+   gettingstarted
+   interface
+   krkpanel
+   assetbrowser
+   uveditor
+   materials
+   outliner
+   properties
+   colourman
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Matériaux
+
+   capsmat
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Création de légendes
+
+   leg_inkscape
+   leg_illustrator
+   leg_designer
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Accessoires
+
+   deskmat
+   deskmat_custom
+   cables
+   mouse
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Tutoriels
+
+   workflow1
+   workflow2
+   switchesstabs
+   board_custom
+   kle2krk
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Informations supplémentaires
+
+   optimization
+   polyhaven
+   krk2max
+   krk2c4d
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Référence
+
+   troubleshooting
+   recipes
+   profiles
+   boards
+   releases
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Ressources
+
+   rci

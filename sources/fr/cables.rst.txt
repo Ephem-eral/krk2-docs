@@ -1,0 +1,109 @@
+.. _cables:
+
+Câbles USB
+==========
+Il y a quelques configurations de câble USB disponibles.
+
+.. image:: img/USBCables.JPG
+
+|
+
+Utilisez les poignées pour poser le câble comme vous le souhaitez.
+
+.. image:: img/CableHandle.gif
+
+|
+
+Les têtes USB sont interchangeables avec d'autres types à travers données d’objet.
+
+.. image:: img/CableHeads.gif
+
+|
+
+Aviator et Lemo sont interchangeables et peuvent se débrancher.
+
+.. image:: img/CableLEMO.gif
+
+|
+
+Paramètres
+~~~~~~~~~~
+Les paramètres sont séparés par objet et par segment de câble.
+
+.. image:: img/CableProps.JPG
+
+|
+
+Prise
+-----
+Ce réglage relie le Lemo ou Aviator.
+
+.. image:: img/CablePlug.gif
+
+|
+
+Couleur
+-------
+Couleurs 1 et 2 fournit le matériau avec la couleur et la couleur de l'accent.
+
+.. image:: img/CableColor.gif
+
+|
+
+Flip
+----
+Ce réglage retourne la bobine verticalement.
+
+.. image:: img/CableFlip.gif
+
+|
+
+Miroir
+------
+Ce réglage reflète le câble horizontalement.
+
+.. image:: img/CableMirror.gif
+
+Technologie Flex
+----------------
+Ce réglage change le câble d'une tresse à Tech Flex.
+
+.. image:: img/CableTechFlex.gif
+
+|
+
+Câble droit
+~~~~~~~~~~~~~~
+Le câble simple USB est une exception en ce sens qu'il est conçu pour s'étendre infiniment en éditant l'objet courbe et en ajoutant des sommets en subdivisant les segments.
+
+.. image:: img/CableSubdiv.gif
+
+|
+
+Matériau
+~~~~~~~~
+
+Comme pour le dukmat, pour modifier le matériel, vous devrez modifier les matériaux appliqués ou les remplacer via la section modificateurs des propriétés de l'objet.
+
+.. image:: img/CableMaterial.jpg
+
+|
+
+.. _ExportingCables:
+
+Exportation de câbles
+~~~~~~~~~~~~~~~~~~~~~
+
+Si vous exportez le câble vers un autre logiciel, le câble n'aura pas de UV map et devra être converti à partir d'un attribut. Sélectionnez l'objet câble (fil) et appuyez sur ctrl+A puis choisissez la géométrie visuelle en Mesh.
+
+.. image:: img/CurveToMesh.gif
+
+|
+
+Une fois cela fait, il y aura un attribut dans les données de l'objet qui peut être converti en un UV map en utilisant le menu déroulant dans Attributs dans Données d’objet Propriétés. Définissez le mode en UV map et appuyez sur OK.
+
+.. image:: img/AttrToUV.gif
+
+|
+
+Votre câble est maintenant prêt à être exporté.

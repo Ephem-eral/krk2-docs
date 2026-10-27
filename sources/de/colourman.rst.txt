@@ -1,0 +1,24 @@
+Farbmanagement
+=================
+
+.. image:: img/AGX_F2sRGB.jpg
+
+Farbmanagement in Blender befindet sich im linearen Farbraum mit der auf AGX (oder Filmic vor 4.0) eingestellten Ansichtstransformation. Während diese Ansichtstransformationen einen weiten Dynamikbereich enthalten, wird dies dazu führen, dass die gewählten Farben "gewaschen" oder niedriger Kontrast erscheinen, wenn keine Prost-Verarbeitung angewendet wird.
+
+.. image:: img/ColourManagement.jpg
+
+|
+
+Dieser Workflow geht davon aus, dass Sie eine Nachbearbeitung durchführen, um die Farbe zu einem treueren Ergebnis einzustufen. Da nicht viele Menschen (insbesondere neuere Nutzer) dies tun, KRK (ab KRK211) auf Filmic mit mittlerem hohen Kontrast und dann in der Post (dem Compositor) eingestellt ist, wird eine Konvertierung von Filmic in sRGB vorgenommen, um ein erwarteteres Ergebnis zu erzielen.
+
+.. image:: img/Compositor_Filmic2sRGB.jpg
+
+|
+
+Die Ansichtsfenster sind so eingestellt, dass das, was Sie sehen, durch den Compositor-Prozess geht. Wenn Sie eine neue 3D-Ansicht erstellen, denken Sie daran, das Compositing auf "Immer" zu schalten, damit die Farbe korrekt reproduziert wird.
+
+.. image:: img/ViewportComp.jpg
+
+|
+
+Denken Sie daran, Ihre Augen haben das letzte Wort. Immer mit einer physischen Referenz vergleichen.

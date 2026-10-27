@@ -1,0 +1,63 @@
+Deskmat
+-------
+Das Deskmat-Modell wird prozedural mit verfahrenstechnisch generierten Kantennaht gefertigt.
+
+.. image:: img/DeskmatStitching.gif
+
+|
+
+Abmessungen
+~~~~~~~~~~~
+
+Es verfügt über benutzerdefinierte Bedienelemente in der KRK-Panel und unterstützt Abmessungen bis zu 1m x 1m, Eckfilets bis zu 500mm und eine Dicke bis zu 1cm.
+
+.. image:: img/DeskmatDims.gif
+
+|
+
+Auslagerungen
+~~~~~~~~~~~~~
+
+.. image:: img/DeskmatEdging.gif
+
+Diese Option schaltet die Kantennähte komplett aus.
+
+Kantendruck
+~~~~~~~~~~~
+
+.. image:: img/DeskmatEdgePrint.gif
+
+Verwenden Sie diese Option, um den Kantendruck auszuschalten und eine feste Farbe für die Kantenkante zu verwenden.
+
+|
+
+Randfarbe
+~~~~~~~~~~
+
+.. image:: img/DeskmatEdgeColor.gif
+
+Dies ist, wo Sie die Farbe für die Kante, wenn es eine feste Farbe.
+
+|
+
+Werkstoff
+~~~~~~~~~
+
+Um das Material zu ändern, müssen Sie die verwendeten Materialien bearbeiten, die Sie in den Materialeigenschaften auswählen und in der Shader-Editor bearbeiten können.
+
+.. image:: img/DeskmatMats.gif
+
+Sie können das angewendete Material ersetzen und ein anderes Material im Abschnitt Modifier der Eigenschaften des Objekts auswählen.
+
+.. image:: img/DeskmatModiMat.gif
+
+|
+
+Ausfuhr
+~~~~~~~~~
+
+Wenn Sie das Deskmat in eine andere Software exportieren, muss die Nähte für das Deskmat konvertiert und das UV-Attribut in eine UV-Map umgewandelt werden. Siehe Exportabschnitt der Seite USB-Kabel, um diesen Prozess zu erlernen.
+
+:ref:`Exporting Cables <ExportingCables>`
+
+|

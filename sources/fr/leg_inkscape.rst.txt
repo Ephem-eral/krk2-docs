@@ -1,0 +1,46 @@
+Encrage
+~~~~~~~~
+
+Les fichiers légende sont créés dans Inkscape et peuvent être téléchargés gratuitement ici:
+
+`Inkscape <https://inkscape.org/>`_
+
+À l'avenir, chaque profil aura son propre modèle. KRK1 avait un fichier pour tous les profils, mais les touches nouvellement modélisés ont un espace UV différent, de sorte qu'ils sont maintenant décomposés dans leurs propres modèles aussi.
+
+|
+
+En ouvrant le fichier svg, vous verrez un panneau de calques sur le côté droit qui contient les légendes ainsi que les modèles pour les sommets et les façades du touches. Si le panneau de calques n'est pas visible, vous pouvez le faire apparaître en cliquant sur Calque > Calques et Objets ou en appuyant sur Shift+Ctrl+L.
+
+.. image:: img/InkscapeScreen.jpg
+
+|
+
+Le modèle est activé pour vous aider à aligner vos légendes et nouveautés par rapport à la zone tactile du touches. Gardez à l'esprit que le résultat final doit inclure un blanc sur l'image noire.
+
+.. image:: img/LegendsDemo.jpg
+
+|
+
+Créez un nouveau calque et collez vos légendes dans le nouveau calque. Vous pouvez déplacer les légendes autour en utilisant les touches de curseur de votre clavier tenant Maj pour les étapes plus grandes et Alt pour les étapes plus petites. Le calque de gabarit est verrouillé par défaut pour empêcher les sélections erronées.
+
+.. image:: img/InkscapeLayers.jpg
+
+|
+
+Si vous souhaitez utiliser l'outil d'alignement pour vous aligner sur l'individu touches, le modèle doit être divisé en parties. Vous pouvez le faire en le sélectionnant et en appuyant sur Path > Break Apart ou Ctrl+Shift+K.
+
+.. image:: img/InkscapeAlign.jpg
+
+|
+
+Une fois que vous avez vos légendes en place, exportez avec Fichier > Exporter ou Ctrl+Shift+E. Exportez votre image WoB comme une résolution png 4096x4096 ou 8192x8192. La résolution et le type de fichier n'ont pas d'importance tant qu'il s'agit d'une image carrée.
+
+.. image:: img/InkscapeExport.jpg
+
+|
+
+Si vos nouveautés ou légendes sont multicolores, éteignez le fond noir et exportez en tant qu'image avec transparence. Vous pouvez utiliser le canal Alpha comme masque et brancher la couleur dans la couleur légende.
+
+.. image:: img/InkscapeFullColor.jpg
+
+|

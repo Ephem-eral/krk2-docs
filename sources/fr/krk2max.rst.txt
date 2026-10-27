@@ -1,0 +1,67 @@
+KRK à 3ds Max
+==============
+Exporter vers 3d Studio Max est assez simple. Cependant, il y a quelques choses que nous devons faire à l'avance. 3ds Max ne gère pas les ngons aussi bien que Blender ne mais il aime les triangles et les quads. Alors donnons-lui ce qu'il veut.
+
+.. image:: img/krk2maxstart.jpg
+
+|
+
+Une fois que votre clavier ou votre kit est prêt, cachez tous les autres objets que vous ne voulez pas faire partie de l'exportation. Il est probable que cela inclurait la collection de scènes alors éteignez-la.
+
+.. image:: img/TurnOffSceneCollection.gif
+
+|
+
+Une fois que c'est la seule chose qui est visible, sélectionnez l'un des objets puis sélectionnez tout en appuyant sur A sur votre clavier. Appuyez ensuite sur l'onglet pour entrer dans le mode d'édition sur tous les objets sélectionnés.
+
+.. image:: img/KeyboardVertices.jpg
+
+|
+
+Vous devez être en mode face select. Le raccourci est 3 sur votre ligne de nombre.
+
+.. image:: img/FaceMode.jpg
+
+|
+
+Désélectionnez tout en appuyant sur A deux fois de suite ou Alt+A.
+
+.. image:: img/KeyboardFaces.jpg
+
+|
+
+Allez maintenant dans Select > Select By Trait > Faces By Sides.
+
+.. image:: img/FaceBySides.gif
+
+|
+
+Utilisez le popup en bas à gauche pour définir le type à Greater Than.
+
+.. image:: img/SelectGreaterThan.jpg
+
+|
+
+Maintenant tous les Ngons et seuls les Ngons sont sélectionnés.
+
+.. image:: img/KeyboardNgons.jpg
+
+|
+
+Cliquez ensuite sur Face > Triangula Faces ou Ctrl+T puis appuyez sur Tab pour quitter le mode d'édition.
+
+.. image:: img/KeyboardTriangulate.gif
+
+|
+
+Votre clavier est maintenant prêt à l'exportation. Cliquez sur Fichier > Exporter > FBX. Donnez à votre fichier un nom, définissez le mode de chemin à copier et n'oubliez pas de vous assurer que Limit to Selected Objects est cochée.
+
+.. image:: img/krk2maxexportsettings.png
+
+|
+
+Maintenant, à Max, importez votre fbx.
+
+.. image:: img/krk2maximported.png
+
+|

@@ -1,0 +1,33 @@
+Restaurer les instances de recouvrement
+=======================================
+
+.. image:: img/RCI_Banner.jpg
+
+
+Restore Collection Instances est un module complémentaire simple qui comble une lacune de Blender : les assets de collection ne sont pas correctement restaurés par la fonction standard « Make Instances Real ». Blender ne conserve pas la hiérarchie de collection d’origine, même si la hiérarchie des objets parents peut être préservée.
+
+|
+
+Comparer les résultats de Make Instances Real avec l'option de maintien de la hiérarchie activée par vs. Restore Collection Instances.
+
+.. image:: img/RCIvsMIR.jpg
+
+Dans cet exemple, l’asset de collection d’origine contenait 176 objets, dont certains paramètres de visibilité étaient désactivés. Make Instances Real n’en a restauré que 161 et a perdu les collections, leur organisation et leurs couleurs.
+
+|
+
+.. image:: img/KRK2Divider.jpg
+
+|
+
+Bien que Restore Collection Instances ait été développé à l'origine dans le cadre de Keyboard Render Kit, nous avons rapidement réalisé que cela serait utile en tant qu'outil d'usage général.
+
+|
+
+.. image:: img/KRK2Divider2.jpg
+
+|
+
+Pour utiliser l'outil, appuyez simplement sur ctrl+A et trouvez-le dans le menu d'application.
+
+.. image:: img/RestoreCollectionInstances.jpg

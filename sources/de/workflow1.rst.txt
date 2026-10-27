@@ -1,0 +1,79 @@
+Ihr erstes Kit Render
+=====================
+
+Das erste, was Sie bemerken, wenn Sie beginnen, ist, dass es keine Keycaps. Stattdessen gibt es viele Flugzeuge in der 3D-Viewport. Dies sind Platzhalter, die durch Keycaps ersetzt werden können.
+
+.. image:: img/Placeholders.PNG
+
+|
+
+Wählen Sie die Platzhalter durch Ziehen einer Boxauswahl und drücken Sie dann die Schaltfläche Setzen im Relink-Bereich des KRK-Panels. Der Relink-Prozess ignoriert alle Keycap-Objekte und Sie sollten nun Cherry-Profil Keycaps haben. Relink ignoriert auch Keycaps, die kein Ziel haben Objektdaten. Profilpräfixe finden Sie in der Profilsammlung.
+
+.. image:: img/setcherry.gif
+
+|
+
+Ziehen Sie die Capsmat aus dem Asset-Browser auf eines der Keycaps. Mit dem Keycap als aktives Objekt (hervorgehoben) können Sie das Material mit dem anderen Keycaps verknüpfen, indem Sie die Schaltfläche Kopieren im Datenbereich des KRK-Panels drücken. Dies macht dasselbe wie Ctrl+L, dann M (Linkmaterial), aber es ignoriert nicht-Keycap-Objekte.
+
+.. image:: img/copymat.gif
+
+|
+
+.. note:: If you do not plan to do any post processing to your final image (not recommended), at least set the colour management profile to "Standard" or set the look to "Medium High Contrast".
+
+|
+
+Das Palettensystem ist so konzipiert, dass die Farbexploration erleichtert wird. Sie können mit benutzerdefinierten Farben pro Objekt beginnen und später mit definierten Paletten im Materialeditor einen starreren Ansatz verfolgen.
+
+.. image:: img/CustomPalette.gif
+
+|
+
+Die Paletten sind allgemeine Node-Gruppen, sind aber standardmäßig auf:
+
+- **A** Kappenfarbe
+- **B** Beschriftung Farbe
+- **C** Zusatzbeschriftung Farbe (nicht angewendet)
+- **D** Frontbeschriftung Farbe (nicht angewendet)
+- **E** Beschriftung Masken
+
+.. image:: img/Palettes.PNG
+
+|
+
+Testen Sie die Schieberegler auf einem Keycap und drehen Sie um, um Ihre eigenen benutzerdefinierten Farben zu setzen. Sobald Sie etwas haben, das Ihnen gefällt, können Sie es auf alle anderen ausgewählten Keycaps einstellen, indem Sie die Schaltfläche Setzen im Farbabschnitt mit dem zuletzt ausgewählten Keycap drücken.
+
+.. image:: img/SetColor.gif
+
+|
+
+   Keycap Farben können nun eher auf dem Objekt als nur auf dem Material gespeichert werden. Sie können den traditionellen Workflow trotzdem verwenden, wenn Sie die Paletten bevorzugen und aus dem Material entfernen.
+
+|
+
+Verwenden Sie den Schieberegler für Palette E, um die Beschriftung eines Modifierschlüssels zwischen Text, Icon oder Text+Icon zu ändern.
+
+.. image:: img/PaletteE.gif
+
+|
+
+Fügen Sie einen Boden hinzu, indem Sie die Sichtbarkeitsoptionen für FloorLightGrey im Outliner einschalten. Er kann als erstes Element in Scene>Floors gefunden werden.
+
+.. image:: img/floorvis.gif
+
+|
+
+Klicken Sie auf Render>Render Image oder drücken Sie F12, um Ihr erstes Bild zu rendern.
+
+.. image:: img/w1render.jpg
+
+|
+
+Sie haben gerade das Beispiel-Workflow-Tutorial 1 abgeschlossen.
+
+|
+
+   Bonuspunkte:
+   Ändern Sie die Kamera in Camera_Kit_Tilted in den Szeneneigenschaften.
+
+|

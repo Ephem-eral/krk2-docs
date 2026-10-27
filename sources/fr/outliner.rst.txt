@@ -1,0 +1,79 @@
+Aperçu
+========
+L'esquisseur conserve tous les objets de votre scène organisés en collections.
+
+.. image:: img/Outliner.jpg
+
+Kits
+~~~~
+
+.. image:: img/KitsCollection.jpg
+
+La collection Kits est activée par défaut
+
+Claviers
+~~~~~~~~
+
+.. image:: img/BoardCollection.jpg
+
+Claviers sont organisés par taille, puis alphabétiques. Utilisez le triangle pour creuser dans les sous-collections, puis dans les clavier disposition options telles que le cadenas à marche ou la rangée inférieure de Tsangan.
+
+Plans-cadres
+~~~~~~~~~~~~
+
+.. image:: img/DuplicateLinkedCollection.gif
+
+Ce sont des mises en page supplémentaires que vous pouvez utiliser pour remplir une clavier personnalisée que vous avez importée. Faites un clic droit sur disposition et duplicata liés pour créer une collection liée puis déplacez-la vers la collection de clavier.
+
+Accessoires
+~~~~~~~~~~~
+Les accessoires disponibles sont énumérés ici et comprennent un modèle de matelas de bureau, une souris, des câbles USB et un repose-bracelet.
+
+Scène
+~~~~~
+
+.. image:: img/SceneCollection.jpg
+
+C'est là que vous accéderez à vos éléments de scène tels que les caméras de lumière et les fonds.
+
+Caméras
+-------
+Les caméras ont été nettoyées dans KRK2 mais vous pouvez les reproduire pour définir vos propres angles, etc.
+
+Lumières
+--------
+
+.. image:: img/LightsCollection.jpg
+
+Différentes configurations de lumière ont été créées pour aider à décider d'un look général pour votre scène. Elles sont basées sur des configurations HDRI populaires d'éclairage de studio, mais offrent plus de liberté et de réglage. N'hésitez pas à ajuster les intensités et le positionnement de ces lumières.
+
+Planchers
+---------
+
+.. image:: img/FloorsCollection.jpg
+
+Un ensemble d'étages intéressants viennent avec KRK pour vous faire démarrer. Cela inclut un plancher ShadowCatcher qui est basé sur FloorLightGrey mais capture l'ombre pour des rendus transparents de fond.
+
+Bâtiment
+~~~~~~~~~~~~
+
+Profils
+--------
+
+.. image:: img/ProfilesCollection.jpg
+
+Tous les profils de touches vivent ici.
+
+Installation UV
+---------------
+
+.. image:: img/UVSetup.jpg
+
+Cette collection contient tout ce qui est nécessaire pour faire des projections UV pour le touches.
+
+Pièces
+------
+
+.. image:: img/PartsCollection.jpg
+
+Cette collection contient les pièces supplémentaires que vous pouvez données d’objet échanger pour ajouter des éléments à votre claviers.

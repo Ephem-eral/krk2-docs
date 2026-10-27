@@ -1,0 +1,45 @@
+
+Affinitäts-Designer
+~~~~~~~~~~~~~~~~~~~
+
+In Zukunft wird jedes Profil eine eigene Vorlage haben. KRK1 hatte eine Datei für alle Profile, aber die neu modellierten Keycaps haben einen anderen UV-Raum, so dass sie nun auch in ihre eigenen Vorlagen ausgebrochen sind.
+
+|
+
+Ähnlich wie Inkscape sieht man beim Öffnen der svg-Datei auf der rechten Seite ein Lagen-Panel, das die Legenden sowie die Vorlagen für die Tops und Fronten der Keycaps enthält.
+
+.. image:: img/AffinityScreen.jpg
+
+|
+
+Die Vorlage ist eingeschaltet, damit Sie Ihre Legenden und Neuheiten in Bezug auf den Touch-Bereich des Keycaps ausrichten können. Denken Sie daran, dass das Endergebnis ein weißes auf schwarzem Bild enthalten muss.
+
+.. image:: img/AffinityLegends.jpg
+
+|
+
+Erstellen Sie eine neue Ebene und fügen Sie Ihre Legenden in die neue Ebene ein. Sie können die Legenden mit den Cursor-Tasten auf Ihrer Tastatur für größere Schritte verschieben.
+
+.. image:: img/AffinityLayers.jpg
+
+|
+
+Wenn Sie mit dem Align Tool auf einzelne Keycaps ausrichten möchten, muss die Vorlage in Teile zerlegt werden. Sie können dies tun, indem Sie Layer > Geometrie > Separate Kurven auswählen.
+
+.. image:: img/AffinitySeparate.jpg
+
+|
+
+Exportieren Sie mit File > Export oder Ctrl+Alt+Shift+S Ihre Legenden. Exportieren Sie Ihr WoB-Bild als png 4096x4096 Auflösung oder 8192x8192. Wirklich die Auflösung und der Dateityp sind egal, solange es ein quadratisches Bild ist.
+
+.. image:: img/AffinityExport.jpg
+
+|
+
+Wenn Ihre Neuheiten oder Legenden mehrfarbig sind, schalten Sie den schwarzen Hintergrund aus und exportieren Sie als Bild mit Transparenz. Sie können den Alpha-Kanal als Maske verwenden und die Farbe in die Beschriftung-Farbe stecken.
+
+|
+
+.. image:: img/AffinityColor.jpg
+
+|

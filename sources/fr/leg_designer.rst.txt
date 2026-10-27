@@ -1,0 +1,45 @@
+
+Créateur d'affinité
+~~~~~~~~~~~~~~~~~~~
+
+À l'avenir, chaque profil aura son propre modèle. KRK1 avait un fichier pour tous les profils, mais les touches nouvellement modélisés ont un espace UV différent, de sorte qu'ils sont maintenant décomposés dans leurs propres modèles aussi.
+
+|
+
+Tout comme Inkscape, lors de l'ouverture du fichier svg, vous verrez un panneau de calques sur le côté droit qui contient les légendes ainsi que les modèles pour les sommets et les façades du touches.
+
+.. image:: img/AffinityScreen.jpg
+
+|
+
+Le modèle est activé pour vous aider à aligner vos légendes et nouveautés par rapport à la zone tactile du touches. Gardez à l'esprit que le résultat final doit inclure un blanc sur l'image noire.
+
+.. image:: img/AffinityLegends.jpg
+
+|
+
+Créez un nouveau calque et collez vos légendes dans le nouveau calque. Vous pouvez déplacer les légendes autour en utilisant les touches de curseur sur votre clavier tenant Maj pour des étapes plus grandes.
+
+.. image:: img/AffinityLayers.jpg
+
+|
+
+Si vous souhaitez utiliser l'outil d'alignement pour s'aligner sur l'individu touches, le modèle doit être divisé en parties. Vous pouvez le faire en le sélectionnant et en appuyant sur Calque > Géométrie > Courbes séparées.
+
+.. image:: img/AffinitySeparate.jpg
+
+|
+
+Une fois que vous avez vos légendes en place, exportez avec Fichier > Exporter ou Ctrl+Alt+Shift+S. Exportez votre image WoB comme une résolution png 4096x4096 ou 8192x8192. La résolution et le type de fichier n'ont pas d'importance tant qu'il s'agit d'une image carrée.
+
+.. image:: img/AffinityExport.jpg
+
+|
+
+Si vos nouveautés ou légendes sont multicolores, éteignez le fond noir et exportez en tant qu'image avec transparence. Vous pouvez utiliser le canal Alpha comme masque et brancher la couleur dans la couleur légende.
+
+|
+
+.. image:: img/AffinityColor.jpg
+
+|

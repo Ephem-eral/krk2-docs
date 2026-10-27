@@ -1,0 +1,33 @@
+KRK au cinéma 4d
+================
+Exporter vers Cinema 4d est simple.
+
+Une fois que votre clavier ou votre kit est prêt, cachez ou éteignez tous les autres objets que vous ne voulez pas exporter.
+
+.. image:: img/MammothBlender.jpg
+
+|
+
+Appuyez sur A sur votre clavier pour tout sélectionner.
+
+.. image:: img/MammothBlenderSelection.jpg
+
+|
+
+Cliquez sur Fichier > Exporter > FBX. Donnez un nom à votre fichier et n'oubliez pas de vous assurer que Limit to Selected Objects est cochée.
+
+.. image:: img/MammothExport.jpg
+
+|
+
+Maintenant dans Cinema 4d Importez votre FBX puis appliquez l'échelle en cliquant sur Outils > Axis > Reset Scale et le cog pour les options.
+
+.. image:: img/MammothC4d.png
+
+|
+
+Pour les options, activez les deux cases à cocher.
+
+.. image:: img/MammothC4dOption.png
+
+|

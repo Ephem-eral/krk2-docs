@@ -1,0 +1,34 @@
+Ajouter votre propre design de table de bureau
+==============================================
+
+Vous pouvez ajouter votre propre conception de tapis de bureau au tapis de bureau en éditant trois matériaux, Deskmat_Mat, Deskmat_Edging et Deskmat_Stitching. Vous pouvez les trouver dans le panneau Propriétés du matériel.
+
+.. image:: img/Deskmat_Slots.jpg
+
+|
+
+Trouvez le nœud de texture d'image dans chacun des matériaux et chargez votre propre image dans le nœud.
+
+.. image:: img/Deskmat_Thoughts.jpg
+
+|
+
+Par défaut, la table de bureau est capable de monter à 1mx1m pour que votre conception soit positionnée sur un carré de 1mx1m.
+
+.. image:: img/Deskmat_Square.jpg
+
+|
+
+Si vous préférez utiliser une autre image de taille, assurez-vous de régler la position dans le nœud de cartographie à la moitié de la taille du matelas de bureau et de l'échelle à la taille en mètres.
+
+.. figure:: img/Deskmat_Image.jpg
+
+Image: Voie lactée par métalbender et l'espacey
+
+|
+
+Vous pouvez également remplacer le nœud de texture d'image par un motif.
+
+.. image:: img/Deskmat_Pattern.jpg
+
+|

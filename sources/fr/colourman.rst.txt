@@ -1,0 +1,24 @@
+Gestion des couleurs
+====================
+
+.. image:: img/AGX_F2sRGB.jpg
+
+Gestion des couleurs dans Blender est dans l'espace de couleur linéaire avec le View Transform set à AGX (ou Filmic avant 4.0). Bien que ces transformations de vue comprennent une large gamme dynamique, il fera apparaître vos couleurs choisies "lavées" ou à faible contraste quand aucun traitement de prost n'est appliqué.
+
+.. image:: img/ColourManagement.jpg
+
+|
+
+Ce flux de travail suppose que vous allez faire un traitement post-traitement pour classifier la couleur en un résultat plus fidèle. Comme peu de gens (surtout les nouveaux utilisateurs) le font, KRK (à partir de KRK211) est réglé à Filmic avec Medium High Contrast puis à la suite (le compositeur), est en train de se convertir de Filmic en sRGB pour produire un résultat plus attendu.
+
+.. image:: img/Compositor_Filmic2sRGB.jpg
+
+|
+
+Si vous créez un nouveau vue 3D, n'oubliez pas d'allumer le composant à « Toujours » pour que la couleur soit correctement reproduite.
+
+.. image:: img/ViewportComp.jpg
+
+|
+
+Rappelez-vous, vos yeux ont le dernier mot. Toujours comparer à une référence physique.

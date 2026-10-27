@@ -1,0 +1,33 @@
+Éditeur de shaders
+==================
+Après avoir sélectionné un objet, le matériel qui y est appliqué sera disponible dans l'éditeur de matériel. Ceci n'est valable que pour l'objet actif ou surligné.
+
+.. image:: img/SelectMat.gif
+
+|
+
+La liste déroulante vous permettra de sélectionner et d'appliquer un autre matériau à l'objet.
+
+.. image:: img/MatDropdown.gif
+
+|
+
+Si vous souhaitez dupliquer un matériau afin qu'il n'affecte pas le matériau sur d'autres objets, vous pouvez cliquer sur le nombre (ce qui signifie combien d'objets portent ce matériau) et un duplicata sera fait. Vous pouvez également cliquer sur le bouton ajouter du nouveau matériel au même effet.
+
+.. image:: img/DupeMat.gif
+
+|
+
+Les nœuds de texture d'image nécessitent des coordonnées pour savoir comment utiliser une image 2d sur un objet 3d. Si aucune coordonnées n'est branchée dans l'entrée vectorielle, l'UV actif sera utilisé.
+
+Certains matériaux contiennent des nœuds désactivés ou grisés. Ils ne sont pas pris en compte au rendu. Pour les activer, sélectionnez le nœud d’un clic gauche, puis appuyez sur M.
+
+.. image:: img/UnmuteNode.gif
+
+|
+
+Le matériel mondial est également accessible à partir de l'éditeur de matériel. En haut à gauche, cliquez sur le menu déroulant qui dit actuellement Objet et choisissez Monde.
+
+.. image:: img/ObjWorld.gif
+
+|

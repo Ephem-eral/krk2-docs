@@ -1,0 +1,52 @@
+Profils
+========
+CHE
+~~~~
+Profil remodelé Cherry basé sur Endeavour. Utilisation-2 extension pour les dessous. Utilisation Cherry légende template. Comprend légende frontale support.
+
+DCS
+~~~~
+Profil DCS remodelé basé sur Fooblitzky. Utilisez-2 extension pour les dessous. Utilisez le modèle DCS légende. Comprend légende frontale support.
+
+DSA
+~~~~
+Modèle KRK1 DSA. Utilisez un modificateur de subdivision pour lisser les côtés.
+
+DSS
+~~~~
+Modèle KRK1 DSS. Utilisez un modificateur de subdivision pour lisser les côtés.
+
+KAM
+~~~~
+Modèle KRK1 KAM. Utilisez un modificateur de subdivision pour lisser les côtés.
+
+KAT
+~~~~
+Modèle KRK1 KAT. Utilisez un modificateur de subdivision pour lisser les côtés.
+
+OEM
+~~~~
+Modèle KRK1 OEM.
+
+SA
+~~~~
+Modèle KRK1 SA. Utilisez un modificateur de subdivision pour lisser les côtés.
+
+Profils supplémentaires
+=======================
+
+KRK
+~~~~
+KRK1 touche modèles comprenant switch UI. Doit être importé.
+
+PBS
+~~~~
+PBS profil, avec tiges. Doit être importé.
+
+LIEU
+~~~~
+Objet substituable profil.
+
+SLK
+~~~~
+SLK Profil, avec tiges. Doit être importé.

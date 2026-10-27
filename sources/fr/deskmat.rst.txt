@@ -1,0 +1,63 @@
+Tapis de bureau
+===============
+Le modèle de table de bureau est construit de façon procédurale avec des coutures de bord générées de façon procédurale.
+
+.. image:: img/DeskmatStitching.gif
+
+|
+
+Dimensions
+~~~~~~~~~~
+
+Il a des commandes personnalisées dans le panneau KRK et supporte des dimensions jusqu'à 1m x 1m, des filets d'angle jusqu'à 500mm et une épaisseur jusqu'à 1cm.
+
+.. image:: img/DeskmatDims.gif
+
+|
+
+Fabrication dans laquelle la valeur de toutes les matières utilisées n'excède pas 50 % du prix départ usine du produit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/DeskmatEdging.gif
+
+Cette option coupe complètement les coutures de bord.
+
+Imprimé du bord
+~~~~~~~~~~~~~~~
+
+.. image:: img/DeskmatEdgePrint.gif
+
+Utilisez cette option pour désactiver l'impression des bords et utiliser une couleur solide pour le rebord.
+
+|
+
+Couleur du bord
+~~~~~~~~~~~~~~~
+
+.. image:: img/DeskmatEdgeColor.gif
+
+C'est là que vous définissez la couleur pour le rebord quand il s'agit d'une couleur solide.
+
+|
+
+Matériau
+~~~~~~~~
+
+Pour modifier le matériel, vous devrez modifier les matériaux appliqués que vous pouvez sélectionner dans les Propriétés du matériel et modifier dans le Éditeur de shaders.
+
+.. image:: img/DeskmatMats.gif
+
+Vous pouvez remplacer le matériau appliqué et sélectionner un autre matériau dans la section des modificateurs des propriétés de l'objet.
+
+.. image:: img/DeskmatModiMat.gif
+
+|
+
+Exportations
+~~~~~~~~~~~~
+
+Si vous exportez le deskmat vers d'autres logiciels, la couture du deskmat doit être convertie et l'attribut UV converti en UV map. Voir la section d'exportation de la page Câbles USB pour apprendre ce processus.
+
+:ref:`Exporting Cables <ExportingCables>`
+
+|

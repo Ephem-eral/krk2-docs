@@ -1,0 +1,12 @@
+UV-Editor
+~~~~~~~~~
+Der UV-Editor ist ein kombinierter Bildbetrachter und UV-Koordinateneditor. Dies gibt Ihnen eine Vorstellung davon, wie sich das 2d-Bild als Beschriftung im 3D-Raum verhält.
+
+.. image:: img/UVs.jpg
+
+|
+
+Weitere Informationen zu den UV-Koordinaten in Blender, `read the Blender manual page on UVs. <https://docs.blender.org/manual/en/latest/editors/uv/introduction.html#uvs-explained>`_
+
+
+|

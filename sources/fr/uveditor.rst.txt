@@ -1,0 +1,12 @@
+Éditeur UV
+~~~~~~~~~~
+L'éditeur UV est un visionneur d'images combiné et l'éditeur de coordonnées UV. Cela vous donnera une idée de la façon dont l'image 2d se comportera comme un légende dans l'espace 3d.
+
+.. image:: img/UVs.jpg
+
+|
+
+Pour plus d'informations sur les coordonnées UV dans Blender, `read the Blender manual page on UVs. <https://docs.blender.org/manual/en/latest/editors/uv/introduction.html#uvs-explained>`_
+
+
+|

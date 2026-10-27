@@ -1,0 +1,79 @@
+Votre premier kit Render
+========================
+
+La première chose que vous remarquerez lorsque vous commencerez est qu'il n'y a pas de touches. Au lieu de cela, il y a beaucoup d'avions dans vue 3D. Ce sont des détenteurs de place qui peuvent être remplacés par touches.
+
+.. image:: img/Placeholders.PNG
+
+|
+
+Sélectionnez les détenteurs de place en faisant glisser une sélection de boîte, puis appuyez sur le bouton Définir dans la section Relien du panneau KRK. Le processus de relink ignore tous les objets touche et vous devriez maintenant avoir Cherry profil touches. Relink ignorera également touches qui n'ont pas de destination données d’objet. Les préfixes de profil peuvent être trouvés dans la collection Profil.
+
+.. image:: img/setcherry.gif
+
+|
+
+Faites glisser le Capsmat du Navigateur d’assets sur l'un des touches. Avec ce touche comme objet actif (en évidence), vous pouvez relier le matériel à l'autre [touches en appuyant sur le bouton Copier dans la section Données du panneau KRK. Cela fait la même chose que Ctrl+L puis M (matériel de liaison) mais il ignore les objets nontouche.
+
+.. image:: img/copymat.gif
+
+|
+
+.. note:: If you do not plan to do any post processing to your final image (not recommended), at least set the colour management profile to "Standard" or set the look to "Medium High Contrast".
+
+|
+
+Le système de palettes est conçu pour faciliter l'exploration des couleurs. Vous pouvez commencer par des couleurs personnalisées par objet et ensuite adopter une approche plus rigide en utilisant des palettes définies dans l'éditeur de matériaux.
+
+.. image:: img/CustomPalette.gif
+
+|
+
+Les palettes sont des groupes de nœuds d'usage général, mais par défaut elles sont définies comme suit:
+
+- **A** Couleur du capuchon
+- **B** Légende couleur
+- **C** Légende secondaire couleur (non appliquée)
+- **D** Légende frontale couleur (non appliquée)
+- **E** Légende masques
+
+.. image:: img/Palettes.PNG
+
+|
+
+Testez les curseurs sur un touche et retournez-vous sur mesure pour définir vos propres couleurs personnalisées. Une fois que vous avez quelque chose que vous aimez, vous pouvez le régler sur tous les autres touches sélectionnés en appuyant sur le bouton Set dans la section Couleur avec ce touche sélectionné en dernier.
+
+.. image:: img/SetColor.gif
+
+|
+
+   Les couleurs Touche peuvent désormais être stockées sur l'objet plutôt que simplement sur le matériau. Vous pouvez toujours utiliser le workflow traditionnel si vous préférez et supprimer les palettes du matériau.
+
+|
+
+Utilisez le curseur pour Palette E pour modifier le légende d'une touche de modification entre Texte, Icône ou Text+Icône.
+
+.. image:: img/PaletteE.gif
+
+|
+
+Ajoutez un plancher en activant les options de visibilité pour FloorLightGrey dans le cadre. Il peut être trouvé comme le premier élément dans Scene>Floors.
+
+.. image:: img/floorvis.gif
+
+|
+
+Cliquez sur Render>Render Image ou appuyez sur F12 pour rendre votre première image.
+
+.. image:: img/w1render.jpg
+
+|
+
+Vous venez de terminer le tutoriel d'exemple de workflow 1.
+
+|
+
+   Points bonus & #160;:
+   Changez la caméra en Camera_Kit_Tilted dans les propriétés de la scène.
+
+|

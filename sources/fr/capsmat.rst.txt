@@ -1,0 +1,131 @@
+Capsmat
+-------
+
+.. image:: img/Capsmat.jpg
+
+Paramètres
+~~~~~~~~~~
+Casquette
+^^^^^^^^^
+C'est la couleur de base du touche qui peut être contrôlée par le champ de couleur de l'utilisation de la socket avec une palette.
+
+Légende
+^^^^^^^
+Il s'agit de la couleur légende. Vous pouvez choisir une couleur, brancher une palette pour contrôler la couleur ou même brancher une image dans la prise pour les légendes pleine couleur.
+
+Légende Masque
+^^^^^^^^^^^^^^
+Une image blanche sur noir est branchée dans cette prise pour mélanger la couleur du capuchon et la couleur légende.
+
+Aiguille Légende
+^^^^^^^^^^^^^^^^
+
+.. image:: img/SharpenLegend.gif
+
+Ceci est utilisé pour aiguiser le bord du légende pour apparaître comme un double injection légende. Il est réglé à plein par défaut mais vous pouvez le glisser à zéro pour simuler plus d'un teint sublimé look.
+
+Légende Poids
+^^^^^^^^^^^^^
+
+.. image:: img/LegendWeight.gif
+
+En raison de la façon dont fonctionne l'affûtage légende, vous pouvez également vouloir compenser le poids pour endosser le légende. Un nombre plus petit signifie un bolder légende.
+
+Sous
+^^^^
+C'est la couleur du légendes secondaires.
+
+Sous-Masque
+^^^^^^^^^^^
+C'est la socket que vous pouvez brancher dans vos fichiers légende secondaire.
+
+Épurer le sous-groupe
+^^^^^^^^^^^^^^^^^^^^^
+Comme Sharpen Légende, cela fait la même chose pour légendes secondaires.
+
+Sous-poids
+^^^^^^^^^^
+Même chose que Légende Poids, mais pour légendes secondaires.
+
+Avant
+^^^^^
+C'est la couleur pour le légendes frontales.
+
+Masque avant
+^^^^^^^^^^^^
+C'est la prise pour le masque légende frontale.
+
+Affinez le front
+^^^^^^^^^^^^^^^^
+Comme Sharpen Légende mais pour légendes frontales.
+
+Poids avant
+^^^^^^^^^^^^
+C'est le même que Légende Poids mais pour légendes frontales.
+
+Rugosité
+^^^^^^^^^
+
+.. image:: img/Roughness.jpg
+
+C'est l'ensemble rugosité ou brillant pour le matériau touche. Cela variera selon le type de plastique ou de finition que vous visez. Par exemple, PBT aura généralement un rugosité plus élevé que l'ABS.
+
+Échelle de bosse
+^^^^^^^^^^^^^^^^
+
+.. image:: img/BumpScale.jpg
+
+C'est l'échelle ou le grain du bruit de bosse. Pensez-y la même chose que le grain pour le papier de sable en ce qu'un plus grand nombre représente une densité plus élevée.
+
+Haut de la page
+^^^^^^^^^^^^^^^
+
+.. image:: img/KeycapBump.JPG
+
+C'est l'intensité de la bosse au sommet du touche.
+
+Bump latéral
+^^^^^^^^^^^^
+C'est l'intensité de la bosse à l'arrière, à l'avant et aux côtés du touche.
+
+Légende Seam
+^^^^^^^^^^^^
+
+.. image:: img/LegendSeam.jpg
+
+Certains processus double injection se traduisent par une séparation plus prononcée entre légende et touche.
+
+|
+
+Masques
+~~~~~~~
+
+.. image:: img/LegendsDemo.jpg
+
+Un masque est un blanc sur l'image noire qui définit comment mélanger deux couleurs ou éléments ensemble. Considérez le blanc comme étant ON et le noir comme OFF.
+
+|
+
+.. image:: img/LegendMask.JPG
+
+Dans le chapeau, on utilise des masques pour mélanger le chapeau avec le légende, le chapeau avec le légende secondaire et le chapeau avec le légende frontale. Si l'un d'eux n'est pas présent, il prendra en considération le noir ou le noir pour cette portion.
+
+|
+
+.. image:: img/LegendsTemplate.png
+
+KRK est livré avec des modèles pour rendre la génération de ces masques plus simple.
+
+|
+
+Le flux de travail de la palette
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+KRK2 introduit un nouveau flux de travail pour aider à l'exploration et au design des couleurs. Comme vous l'avez déjà vu, le panneau KRK vous permet de contrôler la couleur du touches sur une base individuelle. Vous pouvez commencer par une couleur personnalisée par touche et ensuite glisser ces couleurs dans une palette pour définir votre colorway.
+Les groupes de nœuds de palette sont l'autre composant de ce workflow.
+
+.. image:: img/Palettes.jpg
+
+Les palettes vont de A-E ainsi qu'une palette autonome pour conduire l'éditeur de matériaux. Ils ont huit fentes pour les couleurs tandis que Palette E a quatre pour les couleurs et quatre autres pour les alphas.
+
+|

@@ -1,0 +1,3 @@
+Désemballage Légende Fichiers de Blender.
+=========================================
+Parfois, vous pouvez vouloir décompresser les fichiers de masque légende du fichier .blend.

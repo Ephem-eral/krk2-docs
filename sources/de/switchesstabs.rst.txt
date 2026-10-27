@@ -1,0 +1,46 @@
+Hinzufügen Switches & Stabilisatoren
+====================================
+
+Gelegentlich möchten Sie sichtbar Switches und Stabilisatoren in Ihrem Render haben. Dies kann daran liegen, dass Sie in einem niedrigen Winkel rendern oder transparent Keycaps haben oder einfach die Keycaps aus Altogger schalten möchten, um die Tastatur anzuzeigen.
+
+Beginnen Sie mit dem Öffnen der Sammlung, in der sich die Tastatur befindet, und duplizieren (verknüpft) die Keycap/Layout Sammlung. Diese werden unsere Switches werden.
+
+.. image:: img/DupeLayout.gif
+
+|
+
+Schalten Sie die Sichtbarkeit für die Original-Sammlung Keycaps aus, damit wir uns auf das konzentrieren können, was unsere Switches werden wird.
+
+.. image:: img/LayoutVis.gif
+
+|
+
+Klicken Sie mit der rechten Maustaste auf die Switch-Sammlung und wählen Sie „Select Objects". Stellen Sie sicher, dass Sie eines davon aktiv haben (auffällig), falls nicht, verschieben Sie einen von ihnen in der 3D-Ansicht, um ihn aktiv zu machen. Geben Sie nun das Wort »Switch« in den Dropdown Objektdaten ein und wählen Sie je nach Bedarf entweder Switch_Simple oder Switch_Complex.
+
+.. image:: img/SwitchObj.jpg
+
+|
+
+Einer von ihnen wurde in einen Switch umgewandelt. Sie können nun alle zu Switches machen, indem Sie Strg+L drücken, um den Link-Dialog dann O für Objektdaten aufzurufen. Sie sollten jetzt einen vollen Tastatur von Switches haben.
+
+.. image:: img/SwitchPop.jpg
+
+|
+
+Nun lassen Sie uns die Stabilisatoren hinzufügen. Wählen Sie eine Switch, die eine Stabilisator begleiten und mit Alt+D verknüpft duplizieren muss.
+
+.. image:: img/DupeSwitch.gif
+
+|
+
+Mit diesem neuen Switch ausgewählt, öffnen Sie den Objektdaten Dropdown und geben Sie 'stab' ein, um auf Stabilisatoren zu filtern. Wählen Sie erneut aus, ob es das einfache oder komplexe Modell und die Größe und Ausrichtung des Stabilisator sein soll.
+
+.. image:: img/StabData.gif
+
+|
+
+Tu das für den Rest der Stabilisatoren und du bist fertig.
+
+.. image:: img/StabPopulated.jpg
+
+|

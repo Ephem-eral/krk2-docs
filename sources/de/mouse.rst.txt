@@ -1,0 +1,6 @@
+Maus
+~~~~~
+
+.. image:: img/KRKMouse.jpg
+
+Die KRK Maus hat Optionen für die Fallfarbe, die Logofarbe und die Möglichkeit, das Logo auszublenden.

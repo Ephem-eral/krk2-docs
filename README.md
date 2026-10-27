@@ -1,11 +1,11 @@
-# KRK2 documentation · multi-page, 6 languages
+# KRK2 documentation · multi-page, 8 languages
 
-Keyboard Render Kit 2 (v2.0.1) documentation in six languages, published with
+Keyboard Render Kit 2 (v2.0.1) documentation in eight languages, published with
 GitHub Pages. Each chapter is its own HTML page, like the original Read the Docs
 site.
 
 - `index.html` — language cover
-- `en/ cn/ tw/ ja/ ko/ ru/` — one folder per language, one page per chapter
+- `en/ cn/ tw/ de/ fr/ ja/ ko/ ru/` — one folder per language, one page per chapter
 - `single/index.html` — the single-page build (all languages in one file)
 - `static/` — shared theme assets, light-green theme and dark mode
 - `images/`, `fonts/` — shared images and fonts

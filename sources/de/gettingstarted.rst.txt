@@ -1,0 +1,27 @@
+Erste Schritte
+==============
+
+Lieferumfang
+~~~~~~~~~~~~~~~~~
+Im Download-Bereich finden Sie eine ZIP-Datei mit einer .blend-Datei, einer TXT-Datei, SVG-Dateien und weiteren Ressourcen für die Legenden-Vorlage. Entpacken Sie die ZIP-Datei in einen Ordner, damit alle Dateien zusammenliegen. Die TXT-Datei dient Blender als Begleitdatei für die Asset-Verwaltung in der .blend-Datei.
+
+.. image:: img/KRK2Files.JPG
+
+|
+
+Erste Schritte
+~~~~~~~~~~~~~~~
+Der Einstieg in KRK2 ist genauso einfach wie beim ursprünglichen KRK. Öffnen Sie die .blend-Datei mit Blender 3.3 oder neuer; alles, was Sie benötigen, ist bereits darin enthalten. Beim Öffnen fragt Blender, ob das in die Datei eingebettete Skript ausgeführt oder ignoriert werden soll. Das KRK2-Panel funktioniert nur, wenn das Skript ausgeführt wird. Wählen Sie daher „Ausführen“.
+
+.. image:: img/allowscript.jpg
+
+|
+
+Hilfe erhalten
+~~~~~~~~~~~~~~
+Treten Sie unserer Gemeinschaft bei:
+`Discord <https://discord.gg/fVkGTunzT3>`_
+
+Lesen Sie auch die `Blender Manual <https://docs.blender.org/manual/en/latest/index.html>`_
+
+|

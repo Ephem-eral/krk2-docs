@@ -1,0 +1,87 @@
+Assets von Poly Haven
+=====================
+
+Okay, Sie haben Ihre Tastatur eingerichtet, und haben Ihre Keycap-Profil und Farbe. Die Kamera rahmt das Thema schön, aber die Beleuchtung und der Boden sind einfach nicht, was Sie wollen.
+
+.. image:: img/PolyHaven_01.jpg
+
+|
+
+KRK kommt vorgeladen mit verschiedenen Böden und Licht-Setups, um Sie beginnen, aber Sie möchten vielleicht versuchen, alternative Böden und Beleuchtung, um mehr Vielfalt hinzuzufügen. Polyhaven ist eine große Ressource für Oberflächen, um Ihre Tastaturen auf sowie HDRIs (High Dynamic Range Image) zu machen, um Ihre Szene zu beleuchten. Lassen Sie uns den Prozess des Ladens in gehen.
+
+
+|
+
+Ein Großteil dieses Prozesses kann übersprungen werden, wenn Sie das Poly Haven Addon besitzen. Wenn Sie das oft tun, empfehle ich es sehr.
+
+|
+
+Boden
+~~~~~
+
+Besuchen Sie zuerst die Poly Haven Website (polyhaven.com) und klicken Sie auf Assets>Texturen in der oberen Leiste.
+
+.. image:: img/PolyHaven_02.jpg
+
+|
+
+Es gibt mehrere Kategorien zur Auswahl. Für dieses Beispiel klicken Sie auf die Floor>Indoor>Man-Made Kategorie und wählen Sie Slab Fliesen.
+
+.. image:: img/PolyHaven_03.jpg
+
+|
+
+Klicken Sie auf den Download-Button und lassen Sie die Zip-Datei herunterladen. Durchsuchen Sie den Download-Standort und extrahieren Sie die Zip-Datei in den jeweiligen Ordner. Sie werden feststellen, dass es im Ordner eine .blend-Datei gibt. Dies bedeutet, dass dort bereits ein Objekt vorhanden ist, das bereits zur Verwendung eingerichtet ist.
+
+.. image:: img/PolyHaven_04.jpg
+
+|
+
+Um .blend-Datei-Inhalte zu importieren, müssen Sie die Funktion Append oder Link verwenden, um sie einzubringen. Für diesen Prozess werden wir den Boden anhängen und keinen Link zum Original halten. Klicken Sie in Blender auf Datei>Anhängen, um den Import des Poly Haven-Bodens zu initiieren. Wählen Sie von hier aus die Unterkategorie Objekt und finden Sie den Boden, der wahrscheinlich "Plane" genannt wird.
+
+.. image:: img/PolyHaven_05.jpg
+
+|
+
+Es fügt sich in jede Sammlung, die Sie aktiv im Outliner haben. Mit dem Boden in Ihrer Szene können Sie nun Änderungen an ihm vornehmen.
+
+.. image:: img/PolyHaven_06.jpg
+
+|
+
+Standardmäßig gibt es nicht genug Geometrie für die Verschiebung zu schieben und die Skala der Textur fühlt sich zu groß für den Kontext. Ändern Sie dies, indem Sie einen Wertknoten in die Skala und setzen Sie diese auf 2, um die Skala zu verdoppeln. Basierend auf meinem Kamerawinkel, habe ich auch den Mapping-Knoten verwendet, um die Textur 80mm zu bewegen. In der Registerkarte Modifier finden Sie den Unterteilungsmodifikator und ändern Sie die Unterteilungsebene auf 10, um mehr Geometrie zu haben, um das Detail des Verschiebungsbildes zu unterstützen.
+
+.. image:: img/PolyHaven_07.jpg
+
+|
+
+Da es eine Verschiebung gibt, ist es auch eine gute Idee, das Bodenobjekt nach unten zu bewegen. Dieses wurde 7mm bewegt.
+
+.. image:: img/PolyHaven_08b.jpg
+
+|
+
+Umwelt
+~~~~~~~~~~~
+
+Denken Sie daran, dass HDRI-Beleuchtung zwar einen Grad an Realismus hinzufügt, sie aber auch Farbe beeinflusst, was für Tastatur in Ordnung ist, und Szenerendern, aber nicht für Kits, bei denen die Farbgenauigkeit kritisch ist. Um eine hinzuzufügen, gehen Sie zu Poly Haven und klicken Sie auf Assets>HDRIs und wählen Sie ein zum Herunterladen. In diesem Beispiel verwenden wir Leadenhall Market, das als EXR-Bilddatei herunterlädt.
+
+.. image:: img/PolyHaven_09.jpg
+
+|
+
+Deaktivieren Sie die Lights-Kollektion im Outliner.
+
+.. image:: img/PolyHaven_10.jpg
+
+|
+
+Klicken Sie dann im Material Editor auf den Dropdown oben links und Switch von Object to World. Es ist bereits eine Welt eingerichtet. Wieder aktivieren den Bildknoten durch Auswahl und Drücken von M, dann klicken Sie auf Öffnen, um im Leadenhall Market Image zu laden.
+
+.. image:: img/PolyHaven_11b.jpg
+
+|
+
+Vielleicht möchten Sie das Bild manipulieren, so erstellen Sie einen Mapping-Knoten und Textur-Koordinate und verbinden Sie es wie im Bild gesehen. Hier habe ich das Bild 52 Grad gedreht, um ein interessantes Highlight am rechten Rand der Tastatur zu finden und auch die Intensität der HDRI verdoppelt.
+
+.. image:: img/PolyHaven_12b.jpg

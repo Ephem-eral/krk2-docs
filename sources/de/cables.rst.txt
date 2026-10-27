@@ -1,0 +1,109 @@
+.. _cables:
+
+USB-Kabel
+==========
+Es stehen einige Konfigurationen von USB-Kabeln zur Verfügung.
+
+.. image:: img/USBCables.JPG
+
+|
+
+Verwenden Sie die Griffe, um das Kabel zu posieren, wie Sie wollen.
+
+.. image:: img/CableHandle.gif
+
+|
+
+USB-Köpfe sind mit anderen Typen durch Objektdaten austauschbar.
+
+.. image:: img/CableHeads.gif
+
+|
+
+Aviator und Lemo sind austauschbar und können ausstecken.
+
+.. image:: img/CableLEMO.gif
+
+|
+
+Einstellungen
+~~~~~~~~~~~~~
+Die Einstellungen sind pro Objekt und pro Kabelsegment getrennt.
+
+.. image:: img/CableProps.JPG
+
+|
+
+Stecker
+-------
+Diese Einstellung steckt den Lemo oder Aviator wieder zusammen.
+
+.. image:: img/CablePlug.gif
+
+|
+
+Farbe
+-----
+Die Farben 1 und 2 liefern das Material mit Farbe und Akzentfarbe.
+
+.. image:: img/CableColor.gif
+
+|
+
+Drehen
+------
+Diese Einstellung dreht die Spule vertikal.
+
+.. image:: img/CableFlip.gif
+
+|
+
+Spiegel
+-------
+Diese Einstellung spiegelt das Kabel horizontal.
+
+.. image:: img/CableMirror.gif
+
+Tech Flex
+---------
+Diese Einstellung ändert das Kabel von einem Zopf zu Tech Flex.
+
+.. image:: img/CableTechFlex.gif
+
+|
+
+Gerades Kabel
+~~~~~~~~~~~~~~
+Das einfache USB-Kabel ist eine Ausnahme darin, dass es durch das Bearbeiten des Kurvenobjekts und das Hinzufügen von Eckpunkten durch Unterteilung der Segmente unendlich verlängert wird.
+
+.. image:: img/CableSubdiv.gif
+
+|
+
+Werkstoff
+~~~~~~~~~
+
+Um das Material zu ändern, müssen Sie die verwendeten Materialien bearbeiten oder über den Modifier-Abschnitt der Eigenschaften des Objekts ersetzen.
+
+.. image:: img/CableMaterial.jpg
+
+|
+
+.. _ExportingCables:
+
+Kabel exportieren
+~~~~~~~~~~~~~~~~~
+
+Wenn Sie das Kabel in eine andere Software exportieren, hat das Kabel keine UV-Map und muss aus einem Attribut konvertiert werden. Wählen Sie das Kabel (Draht) Objekt aus und drücken Sie strg+A und wählen Sie dann Visual Geometry to Mesh.
+
+.. image:: img/CurveToMesh.gif
+
+|
+
+Sobald dies getan ist, gibt es ein Attribut in den Daten des Objekts, das in UV-Map umgewandelt werden kann, indem der Dropdown in Attributen in Objektdaten Eigenschaften verwendet wird. Setzt den Modus auf UV-Map und drückt okay.
+
+.. image:: img/AttrToUV.gif
+
+|
+
+Ihr Kabel ist jetzt zum Export bereit.

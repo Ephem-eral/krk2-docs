@@ -1,0 +1,33 @@
+Shader-Editor
+=============
+Nachdem Sie ein Objekt ausgewählt haben, steht das Material, das darauf angewendet wird, im Materialeditor zur Bearbeitung zur Verfügung. Dies gilt nur für das aktive oder markierte Objekt.
+
+.. image:: img/SelectMat.gif
+
+|
+
+Mit dem Dropdown können Sie ein anderes Material auswählen und auf das Objekt anwenden.
+
+.. image:: img/MatDropdown.gif
+
+|
+
+Wenn Sie ein Material duplizieren möchten, so dass es das Material auf andere Objekte nicht beeinflusst, können Sie auf die Zahl klicken (die bedeutet, wie viele Objekte dieses Material tragen) und ein Duplikat erstellt werden. Sie können auch auf die Schaltfläche Neues Material hinzufügen, um den gleichen Effekt.
+
+.. image:: img/DupeMat.gif
+
+|
+
+Bildtexturknoten erfordern Koordinaten, um zu wissen, wie man ein 2D-Bild auf einem 3D-Objekt verwendet. Wenn keine Koordinaten an den Vektoreingang angeschlossen werden, wird der aktive UV verwendet.
+
+Einige Materialien enthalten deaktivierte oder graue Nodes. Diese werden beim Rendern nicht berücksichtigt. Um sie wieder zu aktivieren, wählen Sie den Node mit einem Linksklick aus und drücken Sie M.
+
+.. image:: img/UnmuteNode.gif
+
+|
+
+Das Weltmaterial ist auch vom Materialeditor zugänglich. Klicken Sie oben links auf den Dropdown, der derzeit Objekt sagt und wählen Sie Welt.
+
+.. image:: img/ObjWorld.gif
+
+|

@@ -1,0 +1,27 @@
+Premiers pas
+============
+
+Contenu de l’archive
+~~~~~~~~~~~~~~~~~~~~
+Dans la section de téléchargement, vous trouverez une archive ZIP contenant un fichier .blend, un fichier .txt, des SVG et d’autres ressources liées au modèle de légendes. Extrayez l’archive dans un dossier unique pour garder tous les éléments ensemble. Le fichier .txt accompagne le fichier .blend et permet à Blender de gérer les ressources qu’il contient.
+
+.. image:: img/KRK2Files.JPG
+
+|
+
+Prise en main
+~~~~~~~~~~~~~~~
+Pour commencer avec KRK2, la procédure est aussi simple qu’avec le KRK d’origine. Ouvrez le fichier .blend avec Blender 3.3 ou une version ultérieure : tout le nécessaire est déjà inclus. À l’ouverture, Blender vous demande d’autoriser ou d’ignorer l’exécution du script intégré au fichier. Le panneau KRK2 a besoin de ce script pour fonctionner ; autorisez donc son exécution.
+
+.. image:: img/allowscript.jpg
+
+|
+
+Obtenir de l’aide
+~~~~~~~~~~~~~~~~~
+Rejoignez notre communauté:
+`Discord <https://discord.gg/fVkGTunzT3>`_
+
+Lire aussi le `Blender Manual <https://docs.blender.org/manual/en/latest/index.html>`_
+
+|

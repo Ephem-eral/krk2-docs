@@ -1,0 +1,69 @@
+Interface
+=========
+
+.. image:: img/UIOverview.PNG
+
+Le KRK2 UI disposition est le plus semblable à Blender Shading disposition avec la colonne de gauche changée du navigateur de fichiers et l'éditeur d'image commuté en navigateur d’assets et l'éditeur UV avec un onglet KRK ajouté dans la barre latérale.
+
+|
+
+Navigateur d’assets
+~~~~~~~~~~~~~~~~~~~
+.. image:: img/UI_Asset.png
+
+Le navigateur d’assets regroupe plusieurs matériaux utiles, classés par type et par fabricant.
+
+`Blender manual page on the Asset Browser. <https://docs.blender.org/manual/en/latest/editors/asset_browser.html>`_
+
+|
+
+Éditeur UV
+~~~~~~~~~~
+.. image:: img/UI_UV.png
+
+Ce panneau peut être utilisé comme visionneur d'images et aussi vous montrer les coordonnées de votre légende sur le touche.
+
+`Blender manual page on the UV Editor. <https://docs.blender.org/manual/en/latest/editors/uv/introduction.html>`_
+
+|
+
+vue 3D
+~~~~~~~~~~~
+.. image:: img/UI_VP.png
+
+C'est là que vous éditerez vos kits, mises en page, éclairage, angles de caméra, etc. Il a également le KRK Panel attaché à la barre latérale où vous contrôlerez votre touches.
+
+`Blender manual page on the 3d Viewport. <https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html>`_
+
+|
+
+Éditeur de shaders
+~~~~~~~~~~~~~~~~~~
+.. image:: img/UI_Mats.png
+
+C'est là que vous contrôlerez l'apparence et les propriétés de vos matériaux.
+
+`Blender manual page on the Shader Editor. <https://docs.blender.org/manual/en/latest/editors/shader_editor.html>`_
+
+|
+
+Aperçu
+~~~~~~~~
+.. image:: img/UI_Out.png
+
+Ce panneau contient une hiérarchie de votre fichier .blend. Ici vous trouverez Kits, Claviers, Mises en page, Accessoires, Caméras, Lumières, Planchers, Profils etc. ainsi que des options de visibilité pour eux.
+
+`Blender manual page on the Outliner. <https://docs.blender.org/manual/en/latest/editors/outliner/introduction.html>`_
+
+|
+
+Propriétés
+~~~~~~~~~~
+.. image:: img/UI_Props.png
+
+La plupart des autres propriétés vivent ici dans l'un des différents onglets.
+
+`Blender manual page on the Property Editor. <https://docs.blender.org/manual/en/latest/editors/properties_editor.html>`_
+
+
+|

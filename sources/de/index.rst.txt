@@ -1,0 +1,111 @@
+
+Willkommen bei Keyboard Render Kit!
+===================================
+
+.. image:: img/KRK2Banner.png
+
+Willkommen bei Keyboard Render Kit 2 und danke für Ihre Unterstützung!
+
+KRK2 baut auf dem Workflow zum Austausch von Objektdaten aus KRK1 auf und macht ihn flexibler, unabhängiger und modularer. Keycap-Profile hängen nicht mehr von der Geometrie anderer Tastaturen ab. Tastaturen lassen sich übertragen, und alle Bestandteile können unabhängig voneinander aktualisiert werden.
+
+|
+
+Systemanforderungen
+~~~~~~~~~~~~~~~~~~~
+**Blender 3.3 oder neuer**
+
+**Rechner mit Unterstützung für Blender Cycles**
+
+Verknüpfungen
+~~~~~~~~~~~~~
+`Gumroad <https://imperfectlink.gumroad.com/l/KRK2>`_
+|
+`BlenderMarket <https://blendermarket.com/products/krk2>`_
+|
+`Instagram <https://www.instagram.com/keyboardrenderkit/>`_
+|
+`Discord <https://discord.gg/fVkGTunzT3>`_
+|
+`Legends Repo <https://github.com/imperfectlink/KRKLegendsRepo>`_
+
+|
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Überblick
+
+   gettingstarted
+   interface
+   krkpanel
+   assetbrowser
+   uveditor
+   materials
+   outliner
+   properties
+   colourman
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Werkstoffe
+
+   capsmat
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Legenden erstellen
+
+   leg_inkscape
+   leg_illustrator
+   leg_designer
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Zubehör
+
+   deskmat
+   deskmat_custom
+   cables
+   mouse
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Tutorials
+
+   workflow1
+   workflow2
+   switchesstabs
+   board_custom
+   kle2krk
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Weitere Informationen
+
+   optimization
+   polyhaven
+   krk2max
+   krk2c4d
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Sachgebietsnummer
+
+   troubleshooting
+   recipes
+   profiles
+   boards
+   releases
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Aufkommen
+
+   rci

@@ -1,0 +1,79 @@
+Ausleger
+========
+Der Outliner enthält alle Gegenstände in Ihrer Szene, die in Sammlungen organisiert sind.
+
+.. image:: img/Outliner.jpg
+
+Bausätze
+~~~~~~~~
+
+.. image:: img/KitsCollection.jpg
+
+Die Kits-Sammlung ist standardmäßig eingeschaltet
+
+Tastaturen
+~~~~~~~~~~
+
+.. image:: img/BoardCollection.jpg
+
+Tastaturen sind nach Größe geordnet und dann alphabetisch. Verwenden Sie das Dreieck, um in die Untersammlungen zu graben und dann in die Tastatur Layout-Optionen wie gestuftes Capslock oder Tsangan untere Reihe.
+
+Layouts
+~~~~~~~
+
+.. image:: img/DuplicateLinkedCollection.gif
+
+Dies sind zusätzliche Layouts, die Sie verwenden können, um eine benutzerdefinierte Tastatur zu bevölkern, die Sie importiert haben. Rechtsklicken Sie auf die Layout und duplizieren Sie, um eine verknüpfte Sammlung zu erstellen, dann verschieben Sie sie in Ihre Tastatur Sammlung.
+
+Zubehör
+~~~~~~~~~~~
+Das verfügbare Zubehör ist hier aufgeführt und umfasst ein Deskmat-Modell, eine Maus, USB-Kabel und eine Handgelenksruhe.
+
+Szene
+~~~~~
+
+.. image:: img/SceneCollection.jpg
+
+Hier greifen Sie auf Ihre Szeneelemente wie Lichterkameras und Kulissen zu.
+
+Kameras
+-------
+Kameras wurden in KRK2 abgeglichen, aber Sie können sie duplizieren, um Ihre eigenen Winkel usw. einzustellen.
+
+Lichter
+-------
+
+.. image:: img/LightsCollection.jpg
+
+Verschiedene Licht-Setups wurden erstellt, um zu entscheiden, ein allgemeines Aussehen für Ihre Szene. Sie basieren auf beliebten Studiobeleuchtung HDRI-Setups, sondern bieten mehr Freiheit und Anpassung. Fühlen Sie sich frei, die Intensitäten und Positionierung dieser Lichter anzupassen.
+
+Fußböden
+--------
+
+.. image:: img/FloorsCollection.jpg
+
+Eine Reihe von interessanten Etagen kommen mit KRK, um Sie zu starten. Dazu gehört ein ShadowCatcher Boden, der auf FloorLightGrey basiert, aber den Schatten für transparente Hintergrundrendern erfasst.
+
+Baugewerbe
+~~~~~~~~~~~~
+
+Profile
+--------
+
+.. image:: img/ProfilesCollection.jpg
+
+Alle Keycap-Profile leben hier.
+
+UV-Einrichtung
+--------------
+
+.. image:: img/UVSetup.jpg
+
+Diese Sammlung enthält alles, was benötigt wird, um UV-Projektionen für die Keycaps zu tun.
+
+Teile
+-----
+
+.. image:: img/PartsCollection.jpg
+
+Diese Sammlung enthält die zusätzlichen Teile, die Sie Objektdaten tauschen können, um Elemente zu Ihrem Tastaturen hinzuzufügen.

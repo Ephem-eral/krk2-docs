@@ -1,0 +1,24 @@
+KLE À KRK
+==========
+
+Bien que le clavier Disposition Editor ne nomme pas ses objets, le nommage est un attribut requis pour que les deux Blender et Keyboard Render Kit fonctionnent correctement. Blender nomme ses objets et les données d’objet qu'ils contiennent. Keyboard Render Kit ignore largement les noms d'objets, mais il compte beaucoup sur les noms données d’objet. Une fois que cela est compris, le chemin entre KLE et KRK est assez fiable.
+
+|
+
+Que pouvez-vous espérer traduire en KRK? Le traducteur prend en considération la taille, légende, la ligne, la couleur (cap et légende), la position et la rotation. Vous pouvez modifier les trois derniers sans répercussion, mais sachez qu'un touche ne peut pas importer si vous modifiez les trois premiers et qu'il n'y a pas de destination données d’objet.
+
+|
+
+`Keyboard Layout Editor Example <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
+
+|
+
+Ce disposition est le terrain d'essai pour KLE à KRK traduction et se charge dans KRK et sert de référence. Si vous n'avez pas encore commencé votre disposition, c'est un bon endroit pour commencer. Il peut sembler familier et c'est parce que c'est le disposition qui est utilisé pour touche UV et textures dans KRK.
+
+|
+
+.. image:: img/KLEKRK2.jpg
+
+|
+
+Prenez note des désignations légende et des lignes puisque ce sont celles qui sont utilisées pour la traduction en KRK. Si vous apportez des modifications, elles peuvent ne pas traduire du tout. Rappelez-vous que les légendes elles-mêmes ne sont pas traduites et qu'elles servent seulement de nom touche. Une fois que vous êtes dans Blender le touche peut avoir des légende sur lui à travers légende masques.

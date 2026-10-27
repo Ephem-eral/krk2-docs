@@ -1,0 +1,103 @@
+Éditeur de propriétés
+=====================
+
+La section des propriétés de l'interface utilisateur Blender est massive, donc je vais seulement appeler quelques-uns des domaines les plus pertinents.
+
+|
+
+Propriétés du rendu
+~~~~~~~~~~~~~~~~~~~
+Périphérique de rendu
+---------------------
+
+.. image:: img/RenderDevice.jpg
+
+Vous pouvez choisir d'accélérer votre rendu en utilisant le GPU (carte graphique). Gardez à l'esprit que vous devez également configurer l'appareil de calcul dans les préférences pour que cela fonctionne.
+
+.. image:: img/RenderDevice2.jpg
+
+Échantillonnage
+---------------
+L'échantillonnage par défaut est réglé à 32 dans le vue 3D et à 256 au moment du rendu. Si vous produisez du polycarbonate, je vous recommande fortement de choisir au moins 512 échantillons.
+
+Denoise
+-------
+Je vérifie habituellement la denoise sur vue 3D et je la règle automatiquement. Définissez l'échantillon de départ à 2 ou plus pour garder votre vue 3D responsive. Denoising pour le rendu final est également disponible dans le compositeur.
+
+Film transparent
+----------------
+
+.. image:: img/FilmTransparent.jpg
+
+Si vous rendez des images d'arrière-plan transparentes, vous devez activer Film>Transparent.
+
+Gestion des couleurs
+--------------------
+
+.. image:: img/ColorSF.png
+
+Il s'agit d'une section importante. Blender's par défaut setting for gestion des couleurs is Filmic que j'ai laissé ici sans aucun look appliqué. Certains utilisateurs préfèrent régler cela à Standard parce qu'il semble qu'il est plus facile de correspondre aux couleurs. Je préfère généralement Filmic à cause du rolloff léger et réglé à un Medium High Contrast pour obtenir une sensation très similaire à Standard mais avec une meilleure ombrage. Si vous envisagez d'exporter vers EXR, le choix que vous faites n'a pas d'importance. Il va juste exporter le tampon complet.
+
+|
+
+Propriétés de sortie
+~~~~~~~~~~~~~~~~~~~~
+Résolution
+----------
+
+C'est là que vous définissez la résolution de l'image de sortie. Cette résolution est également importante lorsque vous faites des choses liées aux UV comme les projections.
+
+|
+
+   Astuce: Si vous voulez définir 4k quand il est actuellement à la résolution 2k, vous pouvez taper un 200% dans le champ au lieu de 100%.
+
+.. image:: img/200P.jpg
+
+|
+
+Propriétés de la scène
+~~~~~~~~~~~~~~~~~~~~~~
+Caméra active
+-------------
+
+.. image:: img/SetActiveCamera.jpg
+
+C'est là que vous définissez la caméra active que Blender utilisera lorsque vous appuyez sur rendu.
+
+|
+
+Données d’objet Propriétés
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Données d’objet
+---------------
+
+.. image:: img/ObjectDataSwitch2.gif
+
+Ne sautez pas sur la liste déroulante Données d’objet car elle vous permet de transformer n'importe quel objet en un autre objet en le choisissant dans la liste déroulante.
+
+Cartes UV
+---------
+
+.. image:: img/UVMaps.jpg
+
+Si vous avez besoin d'accéder à un objet UV map, c'est là que vous le trouverez.
+
+|
+
+Propriétés du matériau
+~~~~~~~~~~~~~~~~~~~~~~
+Indice des matériaux
+--------------------
+
+.. image:: img/MatIndex.jpg
+
+Les objets peuvent avoir plus d'un matériau attaché à eux. Par exemple, le touches touches a 2 fentes de matériau pour le touche matériel et le polycarbonate.
+
+Lien matériel
+-------------
+
+.. image:: img/MatObjectData.gif
+
+Vous pouvez indiquer Blender s'il faut utiliser le matériel attaché au données d’objet ou l'objet sur une base par objet.
+
+|

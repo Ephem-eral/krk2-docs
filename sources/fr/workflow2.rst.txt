@@ -1,0 +1,73 @@
+Votre premier Clavier Render
+============================
+Maintenant que vous connaissez les bases, rendons un clavier. Nous allons développer ce que nous avons appris dans le premier tutoriel.
+
+|
+
+Dans un nouveau fichier KRK2, appuyez sur A dans le vue 3D pour tout sélectionner, puis appuyez sur le bouton Définir dans la section Relien du panneau KRK pour les régler sur le profil Cherry.
+Faites glisser le Capsmat du navigateur d’assets sur l'un des touches. Cliquez sur le même touche pour en faire l'objet actif et appuyez sur le bouton Copier dans la section Données du panneau KRK.
+
+.. image:: img/SetCapsmatCopy.gif
+
+|
+
+Cliquez maintenant sur Copier dans la section Couleur du panneau KRK. Ceci stocke les informations de couleur à rappeler plus tard.
+
+.. image:: img/CopyColors.JPG
+
+|
+
+.. note:: If you do not plan to do any post processing to your final image (not recommended), at least set the colour management profile to "Standard" or set the look to "Medium High Contrast".
+
+|
+
+Maintenant masquez la collection Kits en utilisant les options de visibilité dans le Outliner.
+
+.. image:: img/TurnOffKits.gif
+
+|
+
+Faites glisser le Dalco 959 Mini WKL clavier hors du Navigateur d’assets et réinitialisez sa position en appuyant sur Alt+G, puis appuyez sur le bouton Restore Collections pour le rendre modifiable.
+
+.. image:: img/DalcoRestore.gif
+
+Sélectionnez l'un des supports sur le 959 Mini, puis sélectionnez la boîte sur tous et appuyez sur Set dans la section Relink du panneau KRK.
+
+.. image:: img/BoardPopulate.gif
+
+Cliquez sur Configuration dans la section Couleur puis appuyez sur le bouton Coller dans la section Couleur. Ceci rappelle les couleurs qui ont été stockées dans le kit.
+
+|
+
+Montons une scène.
+
+|
+
+Plongez dans la collection Scene en lumières, éteignez les options de visibilité pour KitLightingHigh et allumez SoftBoxStudio.
+Allumez FloorWood6 dans la collection Floors.
+
+.. image:: img/LightsFloor6.jpg
+
+|
+
+Dans Scene Properties, réglez la caméra sur Camera_Board2.
+
+.. image:: img/SetCamera.jpg
+
+|
+
+Faites pivoter le vue 3D vers un angle intéressant et réglez l'appareil photo actif pour le visualiser en cliquant sur Affichage > Alignez la vue > Alignez l'appareil photo actif à la vue (Ctrl+Alt+Numpad0).
+
+.. image:: img/SetActiveCamera.gif
+
+|
+
+Maintenant rends ta scène.
+
+.. image:: img/TutBoardRender.jpg
+
+|
+
+Ce tutoriel complète un exemple de workflow 2.
+
+|

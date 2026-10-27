@@ -1,0 +1,3 @@
+Auspacken Beschriftung Dateien aus Blender.
+===========================================
+Manchmal sollten Sie die Beschriftung-Maskendateien aus der .blend-Datei auspacken.
