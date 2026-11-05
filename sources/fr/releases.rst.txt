@@ -1,303 +1,303 @@
-Journaux de publication
-=======================
+Journal des versions
+====================
 
 KRK211
 ~~~~~~
 
-Ajouté: KitLighting_005 comme nouveau kit d'éclairage par défaut
+Ajout : KitLighting_005 comme nouvel éclairage de kit par défaut
 
-Ajouté: F1-8X WKL clavier
+Ajout : clavier F1-8X WKL
 
-Ajouté: F1-8X WK clavier
+Ajout : clavier F1-8X WK
 
-Ajouté: Vanquish65 clavier
+Ajout : clavier Vanquish65
 
-Ajouté: Serendipity clavier
+Ajout : clavier Serendipity
 
-Ajouté: Zoom98 clavier
+Ajout : clavier Zoom98
 
-Ajouté: Zoom75 clavier
+Ajout : clavier Zoom75
 
-Ajouté: Switch_Complex_Box
+Ajout : Switch_Complex_Box
 
-Ajouté: Switch catégorie avec switch 12 couleurs
+Ajout : catégorie Switch avec 12 coloris de switch
 
-Ajouté: Accessoire porte-clés (merci SpikedSynapse pour modèle de base)
+Ajout : accessoire Keyboard Stand (merci à SpikedSynapse pour le modèle de base)
 
-Ajouté: Floor_MarbleTile
+Ajout : Floor_MarbleTile
 
-Amélioration: conversion de couleur de Filmic à sRGB par défaut dans le compositor et activée dans vue 3D
+Amélioration : conversion des couleurs de Filmic vers sRGB par défaut dans le compositeur et activée dans la vue 3D
 
-Amélioration: Noeud AluShimmer ajusté pour ajouter un effet de bosse
+Amélioration : ajustement du nœud AluShimmer pour ajouter un effet de relief
 
-Amélioration: couleurs de palettes ajustées
+Amélioration : ajustement des couleurs de la palette
 
-Amélioration: Ajout de la géométrie des plaques à l'événement Horizon
+Amélioration : ajout de la géométrie de plaque à Event Horizon
 
-Amélioration: Phéonix45 séparé en 3 variations
+Amélioration : séparation de Pheonix45 en 3 variations
 
-Amélioration: Ajout de polycarbe aux relégendables par défaut
+Amélioration : ajout du polycarbonate (PC) aux touches à légende interchangeable par défaut
 
-Fixé:Name pour Blanks sur KAT et SA
+Correction : nommage des touches vierges sur KAT et SA
 
-Correction: Ajout des touches CHE K0 (R0) Home, End, Del
+Correction : ajout des touches CHE K0 (R0) Home, End, Del
 
-Correction: ajout de CHE K7 (R5) 1,50 Super, 1,00 Alt et Ctrl
+Correction : ajout des touches CHE K7 (R5) 1.50 Super, 1.00 Alt et Ctrl
 
-Correction: Ajout d'un numlock fenêtré au profil CHE
+Correction : ajout du numlock à fenêtre au profil CHE
 
-Fixe: Matériaux de sable ajustés
+Correction : ajustement du matériau sable
 
 |
 
 KRK210
 ~~~~~~
 
-Déplacer vers Blender 4.0
+Passage à Blender 4.0
 
-Ajouté:ISOGR clavier
+Ajout : clavier ISOGR
 
-Ajouté: Événement Horizon clavier
+Ajout : clavier Event Horizon
 
-Ajouté: Bakeneko-60 clavier
+Ajout : clavier Bakeneko-60
 
-Ajouté: Bakeneko-60PLA clavier
+Ajout : clavier Bakeneko-60PLA
 
-Ajouté: Bakeneko-65 clavier
+Ajout : clavier Bakeneko-65
 
-Ajouté: Bakeneko-65_PLA clavier
+Ajout : clavier Bakeneko-65_PLA
 
-Ajouté: Monsgeek M1 clavier
+Ajout : clavier Monsgeek M1
 
-Ajouté: F# clavier
+Ajout : clavier F#
 
-Amélioration: Mise à jour de la table KLE pour rendre KLE plus robuste (merci SpikedSynapse)
+Amélioration : mise à jour du tableau KLE pour rendre l'import KLE plus robuste (merci à SpikedSynapse)
 
-Amélioration: script KRK mis à jour pour compatibilité 4.+
+Amélioration : mise à jour du script KRK pour la compatibilité 4.+
 
-Amélioration: l'onglet Compositeur déplacé doit être à côté de l'onglet KRK
+Amélioration : déplacement de l'onglet compositeur à côté de l'onglet KRK
 
-Correction: Ajout d'AOV pour corriger le problème de couleur diffuse
+Correction : ajout d'un AOV pour corriger le problème de passe de couleur diffuse
 
-Correction: Mise à jour de la couleur JSON pour corriger les accents copiés
+Correction : mise à jour du JSON de couleurs pour corriger les accents copiés
 
-Correction: la texture de bureau coordonnée passe à la texture à partir du point
+Correction : coordonnées de texture du tapis de bureau basculées de Point vers Texture
 
-Correction: KAT K3 1.5 Modèle backspace
+Correction : modèle de Backspace KAT K3 1.5
 
-Correction: Normales sur la barre d'espace Che-2 6.25
+Correction : normales sur la barre d'espace Che-2 6.25
 
-Correction: par défaut de la ligne inférieure de l'OGR
+Correction : rangée inférieure par défaut de OGR
 
-Correction: UV avant sur CHE-2 Question était en mauvaise position
+Correction : l'UV frontale de CHE-2 Question était mal positionnée
 
-Fixé: Switch position par rapport à la tige CHE-2
+Correction : position du switch par rapport à la tige du CHE-2
 
 |
 
 KRK209
 ~~~~~~
 
-Passer à Blender 3.6 à partir de 3.3
+Passage de Blender 3.3 à 3.6
 
-Ajouté: USBCableV3
+Ajout : USBCableV3
 
-Ajouté: DeskmatV3_Leather
+Ajout : DeskmatV3_Leather
 
-Ajouté: Légende Paramètres offset
+Ajout : paramètres Legend Offset
 
-Ajouté: Floor_TechPanel
+Ajout : Floor_TechPanel
 
-Ajouté: Floor_CarbonFibre
+Ajout : Floor_CarbonFibre
 
-Ajouté: Floor_DiamondPlate
+Ajout : Floor_DiamondPlate
 
-Amélioration: DeskMatV3 avec plus de contrôle de montage
+Amélioration : DeskMatV3 avec plus de contrôle sur la bordure
 
-Amélioration: le dossier est retravaillé en V2
+Amélioration : refonte du repose-poignets en V2
 
-Amélioration: Personnalisé séparé et la palette basculent de sorte que les modes de chapeau ne sont pas modifiés lorsque vous les voyez
+Amélioration : séparation des bascules Custom et Palette afin que les modes de touche ne changent pas lors de leur affichage
 
-Correction: la couche de la rangée inférieure W1AT est désactivée
+Correction : couche de la rangée inférieure de W1AT désactivée
 
 |
 
 KRK208
 ~~~~~~
 
-Ajouté: Stickers
+Ajout : autocollants
 
-Ajouté: Clavier Giga40
+Ajout : clavier Giga40
 
-Ajouté: Accessoire Thok Artisan Display
+Ajout : accessoire Thok Artisan Display
 
-Ajouté: Valeur de la largeur du cordon à Capsmat
+Ajout : valeur LegendSeam Width à Capsmat
 
-Ajouté: Réglage des bobines sur les câbles enroulés pour contrôler l'étanchéité
+Ajout : paramètre Coil aux câbles spiralés pour régler le serrage des spires
 
-Amélioration: Matériaux de câbles retravaillés
+Amélioration : refonte des matériaux de câble
 
-Amélioration: Mise à jour du modèle Treize
+Amélioration : mise à jour de Model Thirteen
 
-Amélioration: Câbles retravaillés pour commencer comme lignes de mailles dans la préparation pour la mise à jour future
+Amélioration : refonte des câbles pour démarrer en lignes de maillage en préparation d'une future mise à jour
 
-Amélioration: Détail du bruit et bruit Rugosité sur Alu_Shimmer nodegroup
+Amélioration : Noise Detail et Noise Roughness sur le groupe de nœuds Alu_Shimmer
 
-Amélioration: Supprimé certains groupes de nœuds de matériaux dupliqués
+Amélioration : suppression de certains groupes de nœuds de matériau en double
 
-Amélioration: Renommé Capsmat groupes de nœuds
+Amélioration : renommage des groupes de nœuds Capsmat
 
-Amélioration: Ajout de valeurs de couleur personnalisées au kit par défaut touches
+Amélioration : ajout de valeurs de couleur personnalisées aux touches du kit par défaut
 
-Amélioration: Renommé Palette à Palette8 pour indiquer le nombre de slots
+Amélioration : renommage de Palette en Palette8 pour indiquer le nombre d'emplacements
 
-Amélioration: Retravaillé UV sur l'Ikki68 Aurora pour permettre des graphismes
+Amélioration : refonte de l'UV sur l'Ikki68 Aurora pour permettre des graphismes
 
-Amélioration: Exposé de certains réglages sur les câbles
+Amélioration : exposition de certains paramètres sur les câbles
 
-Correction: LShift dans kits avait une valeur de palette différente et par conséquent ne faisait pas partie du groupe de sélection par défaut
+Correction : LShift dans les kits avait une valeur de palette différente et ne faisait donc pas partie du groupe de sélection par défaut
 
-Fixe: Le plancher de stuc était de-1mm dans l'axe Z
+Correction : le sol Stucco était à -1 mm sur l'axe Z
 
-Fixé: Extracteur de switch origine
+Correction : origine de l'extracteur de switch
 
-Fixé: G305 orientation de la face
+Correction : orientation des faces du G305
 
 |
 
 KRK207
 ~~~~~~
 
-Ajouté: Modèle Treize clavier
+Ajout : clavier Model Thirteen
 
-Ajouté: Akuma clavier
+Ajout : clavier Akuma
 
-Ajouté: Floor_Stucco
+Ajout : Floor_Stucco
 
-Ajouté: Floor_HexTile
+Ajout : Floor_HexTile
 
-Ajouté: Palette16 nodegroup
+Ajout : groupe de nœuds Palette16
 
-Ajouté: Palette_E4 nodegroup (maintenant par défaut pour les légendes)
+Ajout : groupe de nœuds Palette_E4 (désormais par défaut pour les légendes)
 
-Ajouté: Palette_E8 nodegroup
+Ajout : groupe de nœuds Palette_E8
 
-Ajouté: 1.5U Cherry Space Convex
+Ajout : Space Convex Cherry 1.5U
 
-Ajouté: Legends Mask sortie pour le mélange de shader
+Ajout : sortie Legends Mask pour le mélange de shaders
 
-Ajouté: Possibilité de faire appel à des variations pour les modèles de calottes légendaires de géométrie
+Ajout : possibilité d'appeler des variations pour les modèles de touches à légende géométrique
 
-Ajout: Capacité d'importer et d'exporter des schémas de couleurs (mode couleur personnalisé)
+Ajout : possibilité d'importer et d'exporter des schémas de couleurs (mode couleur personnalisée)
 
-Amélioration: Renommé Palette_E en Palette_E4A pour indiquer 4 fentes avec alphas
+Amélioration : renommage de Palette_E en Palette_E4A pour indiquer 4 emplacements avec alphas
 
-Amélioration: Ajout d'une option de forme personnalisée à la table de bureau (trouver dans les modificateurs)
+Amélioration : ajout d'une option de forme personnalisée au tapis de bureau (disponible dans les modificateurs)
 
-Amélioration: Touche des options d'hooming rebaptisées en Variation pour ajouter des fonctionnalités
+Amélioration : les options de repère des touches sont désormais renommées Variation pour ajouter des fonctionnalités
 
-Correction: Certains profils manquaient touches: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe
+Correction : certaines touches manquaient dans certains profils : K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe
 
-Correction: Séparé toutes les variantes Homing (F,J,Num5,H,A,U,N,T) des shapekeys dans les profils DSA, DSS, KAM, KAT, OEM, SA
+Correction : séparation de toutes les variantes de repère (F, J, Num5, H, A, U, N, T) des shapekeys dans les profils DSA, DSS, KAM, KAT, OEM, SA
 
-Correction: Commutateur déplacéComplexe géométrie 0.33mm sur l'axe Y pour mieux s'aligner avec les tiges
+Correction : déplacement de la géométrie SwitchComplex de 0,33 mm sur l'axe Y pour mieux s'aligner avec les tiges
 
 |
 
 KRK206
 ~~~~~~
 
-Ajouté: Akko ACR75 clavier
+Ajout : clavier Akko ACR75
 
-Ajouté: Akko Alice clavier
+Ajout : clavier Akko Alice
 
-Ajouté: SLK Profil dans les téléchargements
+Ajout : profil SLK dans les téléchargements
 
-Ajouté: PBS Profil dans les téléchargements
+Ajout : profil PBS dans les téléchargements
 
-Ajouté: XDA profil dans les téléchargements
+Ajout : profil XDA dans les téléchargements
 
-Fixe: Câble USB fixe UV en rupture Blender 3.4
+Correction : correction de la rupture de l'UV du câble USB dans Blender 3.4
 
-Correction: régression fixe où le rétablissement de la collection briserait les commandes du câble USB
+Correction : correction d'une régression où la restauration de collection cassait les contrôles du câble USB
 
 |
 
 KRK205
 ~~~~~~
 
-Ajouté: Werk One clavier
+Ajout : clavier Werk One
 
-Ajouté: Kailh Choc V1 Switch
+Ajout : switch Kailh Choc V1
 
-Ajouté: Kailh Choc Touche Blank
+Ajout : touche vierge Kailh Choc
 
-Ajouté: MBK Touche Blank
+Ajout : touche vierge MBK
 
-Amélioration: Ajout de la couleur Gloss au polycarbonate2
+Amélioration : ajout de la couleur de brillance à Polycarbonate2
 
-Amélioration: Améliorations pour rétablir les recouvrements
+Amélioration : améliorations de la restauration des collections
 
 |
 
 KRK204
 ~~~~~~
 
-Ajouté: KLE importateur
+Ajout : importateur KLE
 
-Ajouté: modèle de bouchon de grille
+Ajout : modèle Grid Cap
 
-Ajouté: 1U Caps
+Ajout : touches 1U
 
-Ajouté: IRON165 R2 clavier
+Ajout : clavier IRON165 R2
 
-Ajouté: IRON165 FE clavier
+Ajout : clavier IRON165 FE
 
-Ajouté: IRON180 clavier
+Ajout : clavier IRON180
 
-Amélioration:Ajout des touches générales Ctrl+Alt+Super
+Amélioration : ajout des touches générales Ctrl+Alt+Super
 
-Amélioré: A commuté Isometria à Iso par défaut
+Amélioration : Isometria passe à Iso par défaut
 
-Amélioration: Palette E dit maintenant Légende dans KRK Panel
+Amélioration : Palette E indique désormais Legend dans le panneau KRK
 
-Amélioration: Ajout des touches Ctrl, Alt, Super ainsi que des touches CtrlL, AltL existantes, etc.
+Amélioration : ajout des touches nommées standard Ctrl, Alt, Super en plus des CtrlL, AltL, etc. existantes
 
-Fixé:origines modifiées pour CapsStepped, BigEnter, EnterIso
+Correction : déplacement des origines pour CapsStepped, BigEnter, EnterIso
 
-Correction: Renommé >< clé pour LessGreater
+Correction : renommage de la touche >< en LessGreater
 
-Correction: Renommé FN en Fn
+Correction : renommage de FN en Fn
 
 |
 
 KRK203
 ~~~~~~
 
-Ajouté: NK65 Clavier
+Ajout : clavier NK65
 
-Amélioration : les assets de clavier ont été déplacés vers le navigateur d’assets
+Amélioration : déplacement des assets de claviers vers le navigateur d'assets
 
-Amélioration : la catégorie Layouts a été déplacée vers le navigateur d’assets
+Amélioration : déplacement des dispositions vers le navigateur d'assets
 
-Amélioration : les accessoires ont été déplacés vers le navigateur d’assets
+Amélioration : déplacement des accessoires vers le navigateur d'assets
 
-Amélioration: un shader déplacé sort de Capsmat
+Amélioration : déplacement du shader hors de Capsmat
 
-Correction: Lumières de scène activées et monde pour vue 3D
+Correction : activation des lumières de scène et du monde pour la vue 3D
 
-Correction: Certaines clés dans les kits n'avaient pas d'info de palette préchargée
+Correction : certaines touches des kits n'avaient pas d'informations de palette préchargées
 
 |
 
 KRK202
 ~~~~~~
 
-Ajouté:Extracteur de touches Accessoire
+Ajout : accessoire extracteur de touches
 
-Amélioration: Couleur préchargée JSON avec thème par défaut KRK pour que vous puissiez sauter directement sur claviers
+Amélioration : préchargement du JSON de couleurs avec le thème KRK par défaut pour accéder directement aux claviers
 
-Correction:DCS ISO Not,2,3 touches de la mauvaise ligne
+Correction : touches DCS ISO Not, 2, 3 sur la mauvaise rangée
 
 
 |
@@ -305,66 +305,66 @@ Correction:DCS ISO Not,2,3 touches de la mauvaise ligne
 KRK201
 ~~~~~~
 
-Ajouté: Nouveau KRK Panel
+Ajout : nouveau panneau KRK
 
-Ajouté: Objet substituable profil
+Ajout : profil Placeholder
 
-Ajouté: Nouveaux modèles Cherry
+Ajout : nouveaux modèles Cherry
 
-Ajouté: Nouveaux modèles DCS
+Ajout : nouveaux modèles DCS
 
-Ajouté: Légende frontale support au cappsmat (Pour nouvelles cerises et dcs)
+Ajout : prise en charge des légendes frontales dans Capsmat (pour les nouveaux Cherry et DCS)
 
-Ajouté: Palette matériel utilitaires
+Ajout : utilitaires de matériau de palette
 
-Ajouté: W1-AT clavier
+Ajout : clavier W1-AT
 
-Ajouté: Vector65 clavier
+Ajout : clavier Vector65
 
-Ajouté: MAN40 et MAN60 clavier
+Ajout : claviers MAN40 et MAN60
 
-Ajouté: Zoom65 clavier
+Ajout : clavier Zoom65
 
-Ajouté: Beak 6.5 clavier
+Ajout : clavier Beak 6.5
 
-Ajouté: Piggy clavier
+Ajout : clavier Piggy
 
-Ajouté: Mammoth75 clavier
+Ajout : clavier Mammoth75
 
-Ajouté: Austin clavier
+Ajout : clavier Austin
 
-Ajouté: grenouille clavier
+Ajout : clavier Frog
 
-Ajouté: Cake60 clavier
+Ajout : clavier Cake60
 
-Ajouté: Plaques à la plupart des claviers et modèles modifiés pour accomoder transparent switches
+Ajout : plaques pour la plupart des claviers et modèles modifiés pour accueillir des switches transparents
 
-Ajouté: Switch Complexe
+Ajout : Switch Complex
 
-Ajouté: Complexe Stab
+Ajout : Stab Complex
 
-Ajouté: Stab Simple 7U
+Ajout : Stab Simple 7U
 
-Ajouté: Extracteur de switch Accessoire
+Ajout : accessoire extracteur de switch
 
-Ajouté: groupe de matériaux Polycarb2
+Ajout : groupe de matériaux Polycarb2
 
-Ajouté: Plus de variations de câbles
+Ajout : davantage de variations de câbles
 
-Ajouté: Connecteurs Lemo
+Ajout : connecteurs LEMO
 
-Ajouté: Microconnecteur USB
+Ajout : microconnecteur USB
 
-Ajouté: Mini connecteur USB
+Ajout : mini connecteur USB
 
-Amélioration: Séparé profils de touches
+Amélioration : séparation des profils de touches
 
-Amélioration: organisé claviers en esquisseur
+Amélioration : organisation des claviers dans l'Outliner
 
-Amélioration: Connecteur remodelé Aviator
+Amélioration : remodelage du connecteur Aviator
 
-Amélioration: Reconstruire le Deskmat pour être plus polyvalent
+Amélioration : refonte du tapis de bureau pour plus de polyvalence
 
-Amélioration: Reconstruire le câble USB pour être plus polyvalent
+Amélioration : refonte du câble USB pour plus de polyvalence
 
-Amélioration: matériaux G305 et propriétés ajoutées
+Amélioration : matériau du G305 et ajout de propriétés

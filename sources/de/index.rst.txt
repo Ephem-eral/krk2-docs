@@ -1,23 +1,22 @@
-
-Willkommen bei Keyboard Render Kit!
-===================================
+Willkommen beim Keyboard Render Kit!
+====================================
 
 .. image:: img/KRK2Banner.png
 
-Willkommen bei Keyboard Render Kit 2 und danke für Ihre Unterstützung!
+Willkommen beim Keyboard Render Kit 2 und vielen Dank für Ihre Unterstützung!
 
-KRK2 baut auf dem Workflow zum Austausch von Objektdaten aus KRK1 auf und macht ihn flexibler, unabhängiger und modularer. Keycap-Profile hängen nicht mehr von der Geometrie anderer Tastaturen ab. Tastaturen lassen sich übertragen, und alle Bestandteile können unabhängig voneinander aktualisiert werden.
+KRK2 baut auf dem Workflow von KRK1 zum Austauschen von Objektdaten auf und macht dabei alles flexibler, unabhängiger und feiner abgestuft. Keycap-Profile hängen nicht mehr von der Geometrie eines anderen Profils ab, Tastaturen sind portabel, und alles lässt sich unabhängig voneinander von einer Version zur nächsten aktualisieren.
 
 |
 
-Systemanforderungen
-~~~~~~~~~~~~~~~~~~~
+Voraussetzungen
+~~~~~~~~~~~~~~~
 **Blender 3.3 oder neuer**
 
-**Rechner mit Unterstützung für Blender Cycles**
+**Ein Rechner, der Blender Cycles ausführen kann**
 
-Verknüpfungen
-~~~~~~~~~~~~~
+Links
+~~~~~
 `Gumroad <https://imperfectlink.gumroad.com/l/KRK2>`_
 |
 `BlenderMarket <https://blendermarket.com/products/krk2>`_
@@ -33,7 +32,7 @@ Verknüpfungen
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Überblick
+   :caption: Übersicht
 
    gettingstarted
    interface
@@ -48,15 +47,15 @@ Verknüpfungen
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Werkstoffe
-
+   :caption: Materialien
+   
    capsmat
 
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Legenden erstellen
-
+   :caption: Beschriftungen erstellen
+   
    leg_inkscape
    leg_illustrator
    leg_designer
@@ -65,7 +64,7 @@ Verknüpfungen
    :maxdepth: 4
    :hidden:
    :caption: Zubehör
-
+   
    deskmat
    deskmat_custom
    cables
@@ -75,37 +74,37 @@ Verknüpfungen
    :maxdepth: 4
    :hidden:
    :caption: Tutorials
-
+   
    workflow1
    workflow2
    switchesstabs
    board_custom
    kle2krk
-
+   
 .. toctree::
    :maxdepth: 4
    :hidden:
    :caption: Weitere Informationen
-
+   
    optimization
    polyhaven
    krk2max
    krk2c4d
-
+   
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Sachgebietsnummer
-
+   :caption: Referenz
+   
    troubleshooting
    recipes
    profiles
    boards
    releases
-
+   
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Aufkommen
-
+   :caption: Ressourcen
+   
    rci

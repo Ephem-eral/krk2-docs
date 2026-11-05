@@ -1,49 +1,46 @@
 FAQ
-~~~~
+~~~
 
 |
 
-Comment puis-je installer Keyboard Render Kit?
-----------------------------------------------
+Comment installer Keyboard Render Kit ?
+---------------------------------------
 
-
-Keyboard Render Kit est tous emballés dans le fichier .blend auquel vous pouvez accéder en ouvrant simplement le fichier dans Blender.
-
-|
-
-Pourquoi Blender me demande-t-il d'exécuter un script?
-------------------------------------------------------
-
-
-KRK2 possède une partie addon du kit et l'installation est gratuite en exécutant un script enregistré.
+Keyboard Render Kit est entièrement contenu dans le fichier blend, auquel vous accédez en ouvrant simplement le fichier dans Blender.
 
 |
 
-Où sont mes touches?
+Pourquoi Blender me demande-t-il d'exécuter un script ?
+-------------------------------------------------------
+
+KRK2 comprend un module complémentaire qui fonctionne sans installation séparée grâce à l'exécution d'un script enregistré.
+
+|
+
+Où sont mes touches ?
 ---------------------
 
-
-KRK2 a un nouveau workflow qui utilise des placeholders et les remplace par le profil de touches de votre choix via le KRK Panel].
+KRK2 propose un nouveau flux de travail qui utilise des objets substituables et les remplace par le profil de touches de votre choix via le panneau KRK.
 
 |
 
-Mon navigateur d’assets est vide.
+Mon navigateur d'assets est vide.
 ---------------------------------
 
-Blender a besoin d’un fichier annexe qui indique quels éléments apparaissent dans le navigateur d’assets et dans quelles catégories. Le fichier ZIP contient un fichier TXT : placez-le dans le même dossier que le fichier .blend.
+Blender a besoin d'un fichier annexe pour spécifier quels éléments peuplent le navigateur d'assets et dans quelles catégories. Vous remarquerez qu'un fichier txt se trouve dans le fichier zip ; il doit accompagner le fichier blend dans le dossier où il se trouve.
 
 |
 
-Les claviers n’apparaissent pas dans le navigateur d’assets.
+Les claviers n'apparaissent pas dans le navigateur d'assets.
 ------------------------------------------------------------
 
-La prise en charge des assets de collection est arrivée avec Blender 3.2 ; utilisez donc Blender 3.2 ou une version ultérieure.
+La prise en charge des assets de collection est arrivée avec Blender 3.2 ; vous devez donc vous assurer d'utiliser Blender 3.2 ou une version plus récente.
 
 |
 
-Mon touches n'a rien sur eux.
-------------------------------------
+Mes touches n'ont aucun matériau.
+---------------------------------
 
-Touches modèles dans KRK2 viennent sans un matériau par défaut. C'est ainsi que le touches et le capsmat peuvent être mis à jour indépendamment.
+Les modèles de touches de KRK2 sont fournis sans matériau par défaut. Ainsi, les touches et le capsmat peuvent être mis à jour indépendamment.
 
 |

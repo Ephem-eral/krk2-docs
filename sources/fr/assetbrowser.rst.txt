@@ -1,30 +1,31 @@
-Navigateur d’assets
-===================
-Ressources d’accessoires
-~~~~~~~~~~~~~~~~~~~~~~~~
-Les accessoires se trouvent dans la catégorie « Accessory ».
+Navigateur d'assets
+=====================
+
+Assets d'accessoires
+~~~~~~~~~~~~~~~~~~~~
+Les accessoires se trouvent dans la section Accessory.
 
 .. image:: img/AccessorySection.jpg
 
-Ressources pour claviers
-~~~~~~~~~~~~~~~~~~~~~~~~
-Les modèles de clavier se trouvent dans la catégorie « Boards ».
+Assets de claviers
+~~~~~~~~~~~~~~~~~~
+Les modèles de claviers se trouvent dans la section Boards.
 
 .. image:: img/BoardSection.jpg
 
-Ressources de matériaux
-~~~~~~~~~~~~~~~~~~~~~~~
-Le navigateur d’assets contient plusieurs matériaux utiles, classés par type et par fabricant. Faites-les glisser sur vos objets dans la vue 3D.
+Assets de matériaux
+~~~~~~~~~~~~~~~~~~~
+Le navigateur d'assets est préchargé avec plusieurs matériaux utiles, classés par type et par fabricant. Vous pouvez les glisser-déposer sur vos objets dans la vue 3D.
 
 .. image:: img/AssetBrowserMaterial.gif
 
 |
 
-Outils de matériaux
-~~~~~~~~~~~~~~~~~~~
+Utilitaires de matériaux
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/MaterialUtilities.JPG
 
-Vous pouvez faire glisser les outils de matériaux dans l’Éditeur de matériaux pour ajouter des effets à vos créations.
+Les utilitaires de matériaux peuvent être glissés dans l'éditeur de shaders pour ajouter des effets lorsque vous créez vos propres matériaux.
 
 |

@@ -1,99 +1,99 @@
 Capsmat
--------
+=======
 
 .. image:: img/Capsmat.jpg
 
 Einstellungen
 ~~~~~~~~~~~~~
-Kappe
-^^^^^
-Dies ist die Grundfarbe der Keycap, die durch das Farbfeld gesteuert werden kann, indem man den Socket mit einer Palette verwendet.
+Cap
+^^^
+Dies ist die Grundfarbe des Keycaps, die über das Farbfeld oder über den Socket mit einer Palette gesteuert werden kann.
 
 Beschriftung
 ^^^^^^^^^^^^
-Dies ist die Beschriftung-Farbe. Sie können eine Farbe wählen, eine Palette einstecken, um die Farbe zu steuern oder sogar ein Bild in den Sockel für volle Farblegenden einstecken.
+Dies ist die Farbe der Beschriftung. Sie können eine Farbe wählen, eine Palette anschließen, um die Farbe zu steuern, oder sogar ein Bild in den Socket stecken, um vollfarbige Beschriftungen zu erhalten.
 
-Beschriftung Maske
+Beschriftungsmaske
 ^^^^^^^^^^^^^^^^^^
-Ein weißes auf schwarzem Bild wird in diesen Sockel gesteckt, um zwischen der Kappenfarbe und der Beschriftung-Farbe zu mischen.
+Ein weißes Bild auf schwarzem Grund wird in diesen Socket gesteckt, um zwischen der Cap-Farbe und der Beschriftungsfarbe zu mischen.
 
-Beschriftung
-^^^^^^^^^^^^^^
+Beschriftung schärfen
+^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: img/SharpenLegend.gif
 
-Dies wird verwendet, um die Kante des Beschriftung zu schärfen, um als Doubleshot-Spritzguss Beschriftung zu erscheinen. Dies ist standardmäßig auf voll eingestellt, aber Sie können es auf Null schieben, um mehr von einem Farbstoff sublimierten Look zu simulieren.
+Dies wird verwendet, um die Kante der Beschriftung zu schärfen, damit sie wie eine Doubleshot-Beschriftung wirkt. Standardmäßig ist dieser Wert auf Maximum gesetzt, Sie können ihn jedoch auf null schieben, um eher den Look einer Farbsublimation zu simulieren.
 
-Beschriftung Gewicht
-^^^^^^^^^^^^^^^^^^^^
+Beschriftungsstärke
+^^^^^^^^^^^^^^^^^^^
 
 .. image:: img/LegendWeight.gif
 
-Aufgrund der Art und Weise, wie die Beschriftung-Schärfung funktioniert, können Sie auch das Gewicht kompensieren möchten, um die Beschriftung. Eine kleinere Zahl bedeutet ein fetter Beschriftung.
+Aufgrund der Funktionsweise der Beschriftungsschärfung kann es sinnvoll sein, die Stärke zu verschieben, um die Beschriftung fetter zu machen. Eine kleinere Zahl bedeutet eine fette Beschriftung.
 
-Unter
-^^^^^
-Das ist die Farbe der Zusatzbeschriftungen.
+Sub
+^^^^
+Dies ist die Farbe der Zusatzbeschriftungen.
 
-Untermaske
-^^^^^^^^^^
-Dies ist der Socket, den Sie in Ihre Zusatzbeschriftung Dateien einstecken können.
+SubMask
+^^^^^^^
+Dies ist der Socket, in den Sie Ihre Zusatzbeschriftungsdateien stecken können.
 
 Sub schärfen
 ^^^^^^^^^^^^
-Wie Sharpen Beschriftung, tut das dasselbe für Zusatzbeschriftungen.
+Wie „Beschriftung schärfen“, jedoch für Zusatzbeschriftungen.
 
-Untergewicht
-^^^^^^^^^^^^
-Wie Beschriftung Gewicht aber für Zusatzbeschriftungen.
-
-Vorderseite
-^^^^^^^^^^^
-Das ist die Farbe für die Frontbeschriftungen.
-
-Maske vorn
+Sub-Stärke
 ^^^^^^^^^^
-Dies ist der Sockel für die Frontbeschriftung Maske.
+Wie „Beschriftungsstärke“, jedoch für Zusatzbeschriftungen.
 
-Vorne schärfen
+Front
+^^^^^
+Dies ist die Farbe für die Frontbeschriftungen.
+
+Frontmaske
+^^^^^^^^^^
+Dies ist der Socket für die Frontbeschriftungsmaske.
+
+Front schärfen
 ^^^^^^^^^^^^^^
-Genau wie Sharpen Beschriftung, aber für Frontbeschriftungen.
+Wie „Beschriftung schärfen“, jedoch für Frontbeschriftungen.
 
-Vordergewicht
-^^^^^^^^^^^^^
-Dies ist das gleiche wie Beschriftung Gewicht, aber für Frontbeschriftungen.
+Front-Stärke
+^^^^^^^^^^^^
+Dies ist dasselbe wie „Beschriftungsstärke“, jedoch für Frontbeschriftungen.
 
 Rauheit
-^^^^^^^^^
+^^^^^^^
 
 .. image:: img/Roughness.jpg
 
-Dies ist die Gesamt Rauheit oder Glossigkeit für das Keycap Material. Dies wird je nach Art des Kunststoffs oder Finishs variieren, nach dem Sie streben. Zum Beispiel wird PBT in der Regel eine höhere Rauheit als ABS haben.
+Dies ist die Gesamtrauheit bzw. der Glanzgrad des Keycap-Materials. Sie variiert je nach Kunststoffsorte oder Oberflächenfinish, das Sie anstreben. PBT hat beispielsweise in der Regel eine höhere Rauheit als ABS.
 
-Bump Scale
-^^^^^^^^^^
+Bump-Skalierung
+^^^^^^^^^^^^^^^
 
 .. image:: img/BumpScale.jpg
 
-Dies ist die Skala oder das Korn des Stoßgeräuschs. Denken Sie daran, das gleiche wie Grit für Sandpapier in, dass eine größere Zahl eine höhere Dichte darstellt.
+Dies ist die Skalierung bzw. Körnung des Bump-Rauschens. Stellen Sie es sich wie die Körnung von Schleifpapier vor: Eine größere Zahl steht für eine höhere Dichte.
 
-Top-Pumpe
+Bump oben
 ^^^^^^^^^
 
 .. image:: img/KeycapBump.JPG
 
-Dies ist die Intensität der Beule an der Spitze der Keycap.
+Dies ist die Intensität des Bumps auf der Oberseite des Keycaps.
 
-Seitenstumpf
-^^^^^^^^^^^^
-Dies ist die Intensität der Beule an der Rückseite, vorn und an den Seiten der Keycap.
+Bump seitlich
+^^^^^^^^^^^^^
+Dies ist die Intensität des Bumps an der Rückseite, der Vorderseite und den Seiten des Keycaps.
 
-Beschriftung Naht
+Beschriftungsnaht
 ^^^^^^^^^^^^^^^^^
 
 .. image:: img/LegendSeam.jpg
 
-Einige Doubleshot-Spritzguss-Prozesse führen zu einer ausgeprägteren Naht zwischen Beschriftung und Keycap.
+Bei einigen Doubleshot-Verfahren entsteht eine deutlichere Naht zwischen der Beschriftung und dem Keycap.
 
 |
 
@@ -102,30 +102,30 @@ Masken
 
 .. image:: img/LegendsDemo.jpg
 
-Eine Maske ist ein weißes auf schwarzem Bild, das definiert, wie man zwei Farben oder Elemente zusammen mischen. Betrachten Sie, weiß zu sein ON und schwarz zu sein OFF.
+Eine Maske ist ein weißes Bild auf schwarzem Grund, das definiert, wie zwei Farben oder Elemente miteinander gemischt werden. Weiß bedeutet AN und Schwarz bedeutet AUS.
 
 |
 
 .. image:: img/LegendMask.JPG
 
-Im Capsmat werden Masken verwendet, um die Kappe mit der Beschriftung, der Kappe mit der Zusatzbeschriftung und der Kappe mit der Frontbeschriftung zu mischen. Sind diese nicht vorhanden, wird sie für diesen Teil schwarz oder aus.
+Im Capsmat werden Masken verwendet, um das Cap mit der Beschriftung, das Cap mit der Zusatzbeschriftung und das Cap mit der Frontbeschriftung zu mischen. Wenn eine dieser Masken nicht vorhanden ist, wird für diesen Teil Schwarz bzw. AUS angenommen.
 
 |
 
 .. image:: img/LegendsTemplate.png
 
-KRK kommt mit Vorlagen, um die Generierung dieser Masken einfacher zu machen.
+KRK enthält Vorlagen, um das Erstellen dieser Masken zu vereinfachen.
 
 |
 
-Der Paletten-Workflow
-~~~~~~~~~~~~~~~~~~~~~
+Der Palette-Workflow
+~~~~~~~~~~~~~~~~~~~~
 
-KRK2 führt einen neuen Workflow ein, der bei der Farberkundung und dem Design hilft. Wie Sie inzwischen gesehen haben, können Sie mit dem KRK-Panel die Farbe der Keycaps individuell steuern. Sie können mit einer benutzerdefinierten Farbe pro Keycap beginnen und diese Farben dann in eine Palette ziehen, um Ihre Farbgebung zu definieren.
-Die Paletten-Node-Gruppen sind die andere Komponente dieses Workflows.
+KRK2 führt einen neuen Workflow ein, der Ihnen bei der Farberkundung und beim Design hilft. Wie Sie inzwischen gesehen haben, können Sie im KRK-Panel die Farbe der Keycaps einzeln steuern. Sie können mit einer individuellen Farbe pro Keycap beginnen und diese Farben dann in eine Palette ziehen, um Ihr Farbschema zu definieren.
+Die Palette-Node-Gruppen sind die andere Komponente dieses Workflows.
 
 .. image:: img/Palettes.jpg
 
-Die Paletten reichen sowohl von A-E als auch von einer eigenständigen Palette zum Antrieb des Materialeditors. Sie verfügen über acht Steckplätze für Farben, während Palette E vier für Farbe und vier weitere für Alphas hat.
+Die Paletten reichen von A bis E sowie eine eigenständige Palette, die vom Material-Editor aus gesteuert wird. Sie haben acht Plätze für Farben, während Palette E vier für Farbe und vier weitere für Alphas hat.
 
 |

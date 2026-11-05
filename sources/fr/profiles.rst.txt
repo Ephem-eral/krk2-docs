@@ -2,51 +2,51 @@ Profils
 ========
 CHE
 ~~~~
-Profil remodelé Cherry basé sur Endeavour. Utilisation-2 extension pour les dessous. Utilisation Cherry légende template. Comprend légende frontale support.
+Profil Cherry remodelé d'après Endeavour. Utilisez l'extension -2 pour les dessous. Utilisez le modèle de légende Cherry. Inclut la prise en charge de la légende frontale.
 
 DCS
 ~~~~
-Profil DCS remodelé basé sur Fooblitzky. Utilisez-2 extension pour les dessous. Utilisez le modèle DCS légende. Comprend légende frontale support.
+Profil DCS remodelé d'après Fooblitzky. Utilisez l'extension -2 pour les dessous. Utilisez le modèle de légende DCS. Inclut la prise en charge de la légende frontale.
 
 DSA
 ~~~~
-Modèle KRK1 DSA. Utilisez un modificateur de subdivision pour lisser les côtés.
+Dérivé du modèle DSA de KRK1. Utilisez le modificateur subdivision pour lisser les côtés.
 
 DSS
 ~~~~
-Modèle KRK1 DSS. Utilisez un modificateur de subdivision pour lisser les côtés.
+Dérivé du modèle DSS de KRK1. Utilisez le modificateur subdivision pour lisser les côtés.
 
 KAM
 ~~~~
-Modèle KRK1 KAM. Utilisez un modificateur de subdivision pour lisser les côtés.
+Dérivé du modèle KAM de KRK1. Utilisez le modificateur subdivision pour lisser les côtés.
 
 KAT
 ~~~~
-Modèle KRK1 KAT. Utilisez un modificateur de subdivision pour lisser les côtés.
+Dérivé du modèle KAT de KRK1. Utilisez le modificateur subdivision pour lisser les côtés.
 
 OEM
 ~~~~
-Modèle KRK1 OEM.
+Dérivé du modèle OEM de KRK1.
 
 SA
 ~~~~
-Modèle KRK1 SA. Utilisez un modificateur de subdivision pour lisser les côtés.
+Dérivé du modèle SA de KRK1. Utilisez le modificateur subdivision pour lisser les côtés.
 
 Profils supplémentaires
 =======================
 
 KRK
 ~~~~
-KRK1 touche modèles comprenant switch UI. Doit être importé.
+Modèles de touches KRK1 incluant l'interface de switch. Doivent être importés.
 
 PBS
 ~~~~
-PBS profil, avec tiges. Doit être importé.
+Profil PBS, avec tiges. Doit être importé.
 
-LIEU
+PLA
 ~~~~
-Objet substituable profil.
+Profil substituable.
 
 SLK
 ~~~~
-SLK Profil, avec tiges. Doit être importé.
+Profil SLK, avec tiges. Doit être importé.

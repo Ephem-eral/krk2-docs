@@ -1,27 +1,27 @@
 Premiers pas
-============
+=============
 
-Contenu de l’archive
+Contenu de l'archive
 ~~~~~~~~~~~~~~~~~~~~
-Dans la section de téléchargement, vous trouverez une archive ZIP contenant un fichier .blend, un fichier .txt, des SVG et d’autres ressources liées au modèle de légendes. Extrayez l’archive dans un dossier unique pour garder tous les éléments ensemble. Le fichier .txt accompagne le fichier .blend et permet à Blender de gérer les ressources qu’il contient.
+Dans votre section de téléchargement, vous trouverez un fichier zip contenant un fichier blend et un fichier txt, ainsi que des SVG et d'autres ressources liées aux modèles de légendes. Téléchargez et extrayez le fichier zip dans un dossier afin que tout son contenu soit regroupé. Le fichier txt sert de fichier annexe pour la gestion des assets de Blender au sein du fichier blend.
 
 .. image:: img/KRK2Files.JPG
 
 |
 
 Prise en main
-~~~~~~~~~~~~~~~
-Pour commencer avec KRK2, la procédure est aussi simple qu’avec le KRK d’origine. Ouvrez le fichier .blend avec Blender 3.3 ou une version ultérieure : tout le nécessaire est déjà inclus. À l’ouverture, Blender vous demande d’autoriser ou d’ignorer l’exécution du script intégré au fichier. Le panneau KRK2 a besoin de ce script pour fonctionner ; autorisez donc son exécution.
+~~~~~~~~~~~~~
+La prise en main de KRK2 est aussi simple que celle du KRK original. À l'aide de Blender (3.3 ou version ultérieure), ouvrez le fichier blend : tout ce dont vous avez besoin pour commencer est intégré au fichier. À l'ouverture du fichier blend, il vous sera demandé d'autoriser ou d'ignorer le script intégré au fichier. Le panneau KRK2 nécessite que le script soit exécuté pour fonctionner, choisissez donc de l'autoriser ici.
 
 .. image:: img/allowscript.jpg
 
 |
 
-Obtenir de l’aide
+Obtenir de l'aide
 ~~~~~~~~~~~~~~~~~
-Rejoignez notre communauté:
+Rejoignez notre communauté :
 `Discord <https://discord.gg/fVkGTunzT3>`_
 
-Lire aussi le `Blender Manual <https://docs.blender.org/manual/en/latest/index.html>`_
+Consultez également le `Blender Manual <https://docs.blender.org/manual/en/latest/index.html>`_
 
 |

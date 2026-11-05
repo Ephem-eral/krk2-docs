@@ -1,24 +1,24 @@
 Farbmanagement
-=================
+===============
 
 .. image:: img/AGX_F2sRGB.jpg
 
-Farbmanagement in Blender befindet sich im linearen Farbraum mit der auf AGX (oder Filmic vor 4.0) eingestellten Ansichtstransformation. Während diese Ansichtstransformationen einen weiten Dynamikbereich enthalten, wird dies dazu führen, dass die gewählten Farben "gewaschen" oder niedriger Kontrast erscheinen, wenn keine Prost-Verarbeitung angewendet wird.
+Das Farbmanagement in Blender arbeitet im linearen Farbraum mit der Ansichts-Transformation AGX (bzw. Filmic vor 4.0). Diese Ansichts-Transformationen decken zwar einen großen Dynamikbereich ab, führen jedoch dazu, dass Ihre gewählten Farben ohne Nachbearbeitung „ausgewaschen“ oder kontrastarm erscheinen.
 
 .. image:: img/ColourManagement.jpg
 
 |
 
-Dieser Workflow geht davon aus, dass Sie eine Nachbearbeitung durchführen, um die Farbe zu einem treueren Ergebnis einzustufen. Da nicht viele Menschen (insbesondere neuere Nutzer) dies tun, KRK (ab KRK211) auf Filmic mit mittlerem hohen Kontrast und dann in der Post (dem Compositor) eingestellt ist, wird eine Konvertierung von Filmic in sRGB vorgenommen, um ein erwarteteres Ergebnis zu erzielen.
+Dieser Workflow geht davon aus, dass Sie eine Nachbearbeitung durchführen, um die Farben in ein naturgetreueres Ergebnis zu überführen. Da dies nicht viele Nutzer tun (insbesondere neue Anwender), ist KRK (ab KRK211) auf Filmic mit Medium High Contrast eingestellt und durchläuft anschließend in der Nachbearbeitung (dem Compositor) eine Konvertierung von Filmic nach sRGB, um ein eher erwartetes Ergebnis zu erzielen.
 
 .. image:: img/Compositor_Filmic2sRGB.jpg
 
 |
 
-Die Ansichtsfenster sind so eingestellt, dass das, was Sie sehen, durch den Compositor-Prozess geht. Wenn Sie eine neue 3D-Ansicht erstellen, denken Sie daran, das Compositing auf "Immer" zu schalten, damit die Farbe korrekt reproduziert wird.
+Die 3D-Viewports sind so eingestellt, dass das, was Sie sehen, den Compositor-Prozess durchläuft. Wenn Sie einen neuen 3D-Viewport erstellen, denken Sie daran, das Compositing auf „Always“ zu stellen, damit die Farbe korrekt wiedergegeben wird.
 
 .. image:: img/ViewportComp.jpg
 
 |
 
-Denken Sie daran, Ihre Augen haben das letzte Wort. Immer mit einer physischen Referenz vergleichen.
+Denken Sie daran: Ihre Augen entscheiden letztlich. Vergleichen Sie immer mit einer physischen Referenz.

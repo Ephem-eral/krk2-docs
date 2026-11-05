@@ -1,45 +1,45 @@
-Hinzufügen Switches & Stabilisatoren
-====================================
+Switches & Stabilisatoren hinzufügen
+=====================================
 
-Gelegentlich möchten Sie sichtbar Switches und Stabilisatoren in Ihrem Render haben. Dies kann daran liegen, dass Sie in einem niedrigen Winkel rendern oder transparent Keycaps haben oder einfach die Keycaps aus Altogger schalten möchten, um die Tastatur anzuzeigen.
+Gelegentlich möchten Sie sichtbare Switches und Stabilisatoren in Ihrem Rendering haben. Das kann daran liegen, dass Sie aus einem flachen Winkel rendern oder transparente Keycaps verwenden – oder Sie möchten die Keycaps einfach ganz weglassen, um die Tastatur zu präsentieren.
 
-Beginnen Sie mit dem Öffnen der Sammlung, in der sich die Tastatur befindet, und duplizieren (verknüpft) die Keycap/Layout Sammlung. Diese werden unsere Switches werden.
+Öffnen Sie zunächst die Sammlung, in der sich die Tastatur befindet, und duplizieren Sie die Keycap-/Layout-Sammlung als verknüpfte Duplikate. Aus dieser werden unsere Switches.
 
 .. image:: img/DupeLayout.gif
 
 |
 
-Schalten Sie die Sichtbarkeit für die Original-Sammlung Keycaps aus, damit wir uns auf das konzentrieren können, was unsere Switches werden wird.
+Blenden Sie die ursprüngliche Keycap-Sammlung aus, damit wir uns auf das konzentrieren können, woraus unsere Switches entstehen.
 
 .. image:: img/LayoutVis.gif
 
 |
 
-Klicken Sie mit der rechten Maustaste auf die Switch-Sammlung und wählen Sie „Select Objects". Stellen Sie sicher, dass Sie eines davon aktiv haben (auffällig), falls nicht, verschieben Sie einen von ihnen in der 3D-Ansicht, um ihn aktiv zu machen. Geben Sie nun das Wort »Switch« in den Dropdown Objektdaten ein und wählen Sie je nach Bedarf entweder Switch_Simple oder Switch_Complex.
+Klicken Sie mit der rechten Maustaste auf die Switch-Sammlung und wählen Sie „Objekte auswählen“. Stellen Sie sicher, dass eines der Objekte aktiv (hervorgehoben) ist; falls nicht, klicken Sie mit Umschalt+Klick auf eines davon im 3D-Viewport, um es zu aktivieren. Geben Sie nun das Wort „switch“ in das Dropdown-Menü für die Objektdaten ein und wählen Sie je nach Bedarf Switch_Simple oder Switch_Complex.
 
 .. image:: img/SwitchObj.jpg
 
 |
 
-Einer von ihnen wurde in einen Switch umgewandelt. Sie können nun alle zu Switches machen, indem Sie Strg+L drücken, um den Link-Dialog dann O für Objektdaten aufzurufen. Sie sollten jetzt einen vollen Tastatur von Switches haben.
+Eines der Objekte wurde in einen Switch umgewandelt. Sie können nun alle in Switches umwandeln, indem Sie Strg+L drücken, um den Link-Dialog aufzurufen, und dann O für Objektdaten. Sie sollten nun eine vollständige Tastatur mit Switches haben.
 
 .. image:: img/SwitchPop.jpg
 
 |
 
-Nun lassen Sie uns die Stabilisatoren hinzufügen. Wählen Sie eine Switch, die eine Stabilisator begleiten und mit Alt+D verknüpft duplizieren muss.
+Fügen wir nun die Stabilisatoren hinzu. Wählen Sie einen Switch aus, der einen Stabilisator benötigt, und duplizieren Sie ihn verknüpft mit Alt+D. Klicken Sie mit der rechten Maustaste oder drücken Sie Escape, um die Bewegung abzubrechen.
 
 .. image:: img/DupeSwitch.gif
 
 |
 
-Mit diesem neuen Switch ausgewählt, öffnen Sie den Objektdaten Dropdown und geben Sie 'stab' ein, um auf Stabilisatoren zu filtern. Wählen Sie erneut aus, ob es das einfache oder komplexe Modell und die Größe und Ausrichtung des Stabilisator sein soll.
+Öffnen Sie mit dem neu ausgewählten Switch das Dropdown-Menü für die Objektdaten und geben Sie „stab“ ein, um nach den Stabilisatoren zu filtern. Wählen Sie erneut, ob Sie das einfache oder komplexe Modell sowie die Größe und Ausrichtung des Stabilisators benötigen.
 
 .. image:: img/StabData.gif
 
 |
 
-Tu das für den Rest der Stabilisatoren und du bist fertig.
+Wiederholen Sie dies für die übrigen Stabilisatoren, und Sie sind fertig.
 
 .. image:: img/StabPopulated.jpg
 

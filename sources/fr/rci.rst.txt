@@ -1,18 +1,18 @@
-Restaurer les instances de recouvrement
-=======================================
+Restore Collection Instances
+======================================
 
 .. image:: img/RCI_Banner.jpg
 
 
-Restore Collection Instances est un module complémentaire simple qui comble une lacune de Blender : les assets de collection ne sont pas correctement restaurés par la fonction standard « Make Instances Real ». Blender ne conserve pas la hiérarchie de collection d’origine, même si la hiérarchie des objets parents peut être préservée.
+Restore Collection Instances est un addon simple, développé pour combler une lacune de Blender : les assets de collection ne sont pas correctement restaurés par la fonction « Make Instances Real » native de Blender. Blender ne conserve pas la hiérarchie de collection d'origine, même si la hiérarchie parentale, elle, peut être maintenue.
 
 |
 
-Comparer les résultats de Make Instances Real avec l'option de maintien de la hiérarchie activée par vs. Restore Collection Instances.
+Comparez les résultats de Make Instances Real avec l'option de maintien de la hiérarchie activée, puis avec Restore Collection Instances.
 
 .. image:: img/RCIvsMIR.jpg
 
-Dans cet exemple, l’asset de collection d’origine contenait 176 objets, dont certains paramètres de visibilité étaient désactivés. Make Instances Real n’en a restauré que 161 et a perdu les collections, leur organisation et leurs couleurs.
+Dans cet exemple, l'asset de collection d'origine contenait 176 objets, dont certains étaient masqués par les options de visibilité. La fonction Make Instances Real n'en a restauré que 161 et a perdu toutes les collections, l'organisation et les couleurs.
 
 |
 
@@ -20,7 +20,7 @@ Dans cet exemple, l’asset de collection d’origine contenait 176 objets, dont
 
 |
 
-Bien que Restore Collection Instances ait été développé à l'origine dans le cadre de Keyboard Render Kit, nous avons rapidement réalisé que cela serait utile en tant qu'outil d'usage général.
+Bien que Restore Collection Instances ait été développé à l'origine dans le cadre de Keyboard Render Kit, nous avons rapidement réalisé que cet outil serait utile de manière générale.
 
 |
 
@@ -28,6 +28,6 @@ Bien que Restore Collection Instances ait été développé à l'origine dans le
 
 |
 
-Pour utiliser l'outil, appuyez simplement sur ctrl+A et trouvez-le dans le menu d'application.
+Pour utiliser l'outil, appuyez simplement sur ctrl+A et sélectionnez Restore Collection Instances dans le menu Apply.
 
 .. image:: img/RestoreCollectionInstances.jpg

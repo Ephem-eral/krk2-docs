@@ -1,18 +1,18 @@
-Wiedereinzugsinstanzen
-============================
+Restore Collection Instances
+====================================
 
 .. image:: img/RCI_Banner.jpg
 
 
-Restore Collection Instances ist ein einfaches Add-on, das eine Lücke in Blender schließt: Collection-Assets werden mit der Standardfunktion „Make Instances Real“ nicht korrekt wiederhergestellt. Blender übernimmt die ursprüngliche Collection-Hierarchie nicht, auch wenn die Hierarchie der übergeordneten Objekte erhalten bleiben kann.
+Restore Collection Instances ist ein einfaches Add-on, das eine Lücke in der Blender-Funktionalität schließt: Sammlungs-Assets werden mit Blenders Standardfunktion „Make Instances Real“ nicht korrekt wiederhergestellt. Blender behält die ursprüngliche Sammlungshierarchie nicht bei, obwohl die Eltern-Hierarchie beibehalten werden kann.
 
 |
 
-Vergleichen Sie die Ergebnisse von Make Instances Real mit der beibehaltenen Hierarchie-Option aktiviert vs. Restore Collection Instances.
+Vergleichen Sie die Ergebnisse von Make Instances Real mit aktivierter Option zur Beibehaltung der Hierarchie mit denen von Restore Collection Instances.
 
 .. image:: img/RCIvsMIR.jpg
 
-In diesem Beispiel umfasste das ursprüngliche Collection-Asset 176 Objekte, bei denen einige Sichtbarkeitseinstellungen deaktiviert waren. Make Instances Real stellte nur 161 davon wieder her; die Collections, ihre Organisation und ihre Farben gingen verloren.
+In diesem Beispiel enthielt das ursprüngliche Sammlungs-Asset 176 Objekte, wobei einige Sichtbarkeitsoptionen deaktiviert waren. Die Funktion Make Instances Real brachte nur 161 davon zurück und verlor alle Sammlungen, die Organisation und die Farbe.
 
 |
 
@@ -20,7 +20,7 @@ In diesem Beispiel umfasste das ursprüngliche Collection-Asset 176 Objekte, bei
 
 |
 
-Obwohl Restore Collection Instances ursprünglich als Teil von Keyboard Render Kit entwickelt wurde, erkannten wir schnell, dass dies als allgemeines Werkzeug nützlich sein würde.
+Obwohl Restore Collection Instances ursprünglich als Teil des Keyboard Render Kit entwickelt wurde, erkannten wir schnell, dass es sich auch als allgemeines Werkzeug eignet.
 
 |
 
@@ -28,6 +28,6 @@ Obwohl Restore Collection Instances ursprünglich als Teil von Keyboard Render K
 
 |
 
-Um das Tool zu verwenden, drücken Sie einfach strg+A und finden Sie es im Menü apply.
+Um das Werkzeug zu verwenden, drücken Sie einfach Strg+A und wählen Sie Restore Collection Instances im Menü Apply aus.
 
 .. image:: img/RestoreCollectionInstances.jpg

@@ -1,3 +1,5 @@
-Auspacken Beschriftung Dateien aus Blender.
+:orphan:
+
+Beschriftungsdateien aus Blender entpacken.
 ===========================================
-Manchmal sollten Sie die Beschriftung-Maskendateien aus der .blend-Datei auspacken.
+Manchmal möchten Sie die Beschriftungs-Maskendateien aus der Blend-Datei entpacken.

@@ -2,25 +2,25 @@
 
 Câbles USB
 ==========
-Il y a quelques configurations de câble USB disponibles.
+Plusieurs configurations de câble USB sont disponibles.
 
 .. image:: img/USBCables.JPG
 
 |
 
-Utilisez les poignées pour poser le câble comme vous le souhaitez.
+Utilisez les poignées pour orienter le câble comme vous le souhaitez.
 
 .. image:: img/CableHandle.gif
 
 |
 
-Les têtes USB sont interchangeables avec d'autres types à travers données d’objet.
+Les embouts USB sont interchangeables avec d'autres types via les données d'objet.
 
 .. image:: img/CableHeads.gif
 
 |
 
-Aviator et Lemo sont interchangeables et peuvent se débrancher.
+Les connecteurs Aviator et LEMO sont interchangeables et peuvent être débranchés.
 
 .. image:: img/CableLEMO.gif
 
@@ -28,15 +28,15 @@ Aviator et Lemo sont interchangeables et peuvent se débrancher.
 
 Paramètres
 ~~~~~~~~~~
-Les paramètres sont séparés par objet et par segment de câble.
+Les paramètres sont distincts pour chaque objet et chaque segment de câble.
 
 .. image:: img/CableProps.JPG
 
 |
 
-Prise
------
-Ce réglage relie le Lemo ou Aviator.
+Plug
+----
+Ce paramètre reconnecte le connecteur LEMO ou Aviator.
 
 .. image:: img/CablePlug.gif
 
@@ -44,15 +44,15 @@ Ce réglage relie le Lemo ou Aviator.
 
 Couleur
 -------
-Couleurs 1 et 2 fournit le matériau avec la couleur et la couleur de l'accent.
+Les couleurs 1 et 2 fournissent au matériau la couleur et la couleur d'accentuation.
 
 .. image:: img/CableColor.gif
 
 |
 
-Flip
-----
-Ce réglage retourne la bobine verticalement.
+Retourner
+---------
+Ce paramètre retourne la spirale verticalement.
 
 .. image:: img/CableFlip.gif
 
@@ -60,21 +60,21 @@ Ce réglage retourne la bobine verticalement.
 
 Miroir
 ------
-Ce réglage reflète le câble horizontalement.
+Ce paramètre applique un miroir horizontal au câble.
 
 .. image:: img/CableMirror.gif
 
-Technologie Flex
-----------------
-Ce réglage change le câble d'une tresse à Tech Flex.
+Tech Flex
+---------
+Ce paramètre fait passer le câble d'une tresse à une gaine Tech Flex.
 
 .. image:: img/CableTechFlex.gif
 
 |
 
 Câble droit
-~~~~~~~~~~~~~~
-Le câble simple USB est une exception en ce sens qu'il est conçu pour s'étendre infiniment en éditant l'objet courbe et en ajoutant des sommets en subdivisant les segments.
+~~~~~~~~~~~
+Le câble USB simple fait exception : il est conçu pour s'étendre à l'infini en modifiant l'objet courbe et en ajoutant des sommets par subdivision des segments.
 
 .. image:: img/CableSubdiv.gif
 
@@ -83,7 +83,7 @@ Le câble simple USB est une exception en ce sens qu'il est conçu pour s'étend
 Matériau
 ~~~~~~~~
 
-Comme pour le dukmat, pour modifier le matériel, vous devrez modifier les matériaux appliqués ou les remplacer via la section modificateurs des propriétés de l'objet.
+Comme pour le tapis de bureau, pour changer le matériau, vous devez modifier les matériaux appliqués ou les remplacer via la section des modificateurs dans les propriétés de l'objet.
 
 .. image:: img/CableMaterial.jpg
 
@@ -91,16 +91,16 @@ Comme pour le dukmat, pour modifier le matériel, vous devrez modifier les maté
 
 .. _ExportingCables:
 
-Exportation de câbles
-~~~~~~~~~~~~~~~~~~~~~
+Exportation des câbles
+~~~~~~~~~~~~~~~~~~~~~~
 
-Si vous exportez le câble vers un autre logiciel, le câble n'aura pas de UV map et devra être converti à partir d'un attribut. Sélectionnez l'objet câble (fil) et appuyez sur ctrl+A puis choisissez la géométrie visuelle en Mesh.
+Pour exporter le câble vers un autre logiciel, vous devez créer une UV map à partir d'un attribut. Sélectionnez d'abord l'objet câble (wire) et appuyez sur ctrl+A, puis choisissez Visual Geometry to Mesh.
 
 .. image:: img/CurveToMesh.gif
 
 |
 
-Une fois cela fait, il y aura un attribut dans les données de l'objet qui peut être converti en un UV map en utilisant le menu déroulant dans Attributs dans Données d’objet Propriétés. Définissez le mode en UV map et appuyez sur OK.
+Une fois cela fait, un attribut sera présent dans les données de l'objet et pourra être converti en UV map via le menu déroulant dans Attributes des propriétés des données d'objet. Réglez le mode sur UV Map et validez.
 
 .. image:: img/AttrToUV.gif
 

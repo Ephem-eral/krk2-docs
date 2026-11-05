@@ -1,6 +1,6 @@
 Deskmat
--------
-Das Deskmat-Modell wird prozedural mit verfahrenstechnisch generierten Kantennaht gefertigt.
+=======
+Das Deskmat-Modell wird prozedural aufgebaut, die Randnaht wird dabei prozedural erzeugt.
 
 .. image:: img/DeskmatStitching.gif
 
@@ -9,54 +9,54 @@ Das Deskmat-Modell wird prozedural mit verfahrenstechnisch generierten Kantennah
 Abmessungen
 ~~~~~~~~~~~
 
-Es verfügt über benutzerdefinierte Bedienelemente in der KRK-Panel und unterstützt Abmessungen bis zu 1m x 1m, Eckfilets bis zu 500mm und eine Dicke bis zu 1cm.
+Das Deskmat verfügt über eigene Steuerelemente im KRK-Panel und unterstützt Abmessungen bis 1 m x 1 m, Eckenrundungen bis 500 mm und eine Dicke bis 1 cm.
 
 .. image:: img/DeskmatDims.gif
 
 |
 
-Auslagerungen
-~~~~~~~~~~~~~
+Randeinfassung
+~~~~~~~~~~~~~~
 
 .. image:: img/DeskmatEdging.gif
 
-Diese Option schaltet die Kantennähte komplett aus.
+Diese Option schaltet die Randnaht vollständig aus.
 
-Kantendruck
-~~~~~~~~~~~
+Randdruck
+~~~~~~~~~
 
 .. image:: img/DeskmatEdgePrint.gif
 
-Verwenden Sie diese Option, um den Kantendruck auszuschalten und eine feste Farbe für die Kantenkante zu verwenden.
+Mit dieser Option schalten Sie den Randdruck aus und verwenden eine Volltonfarbe für die Randeinfassung.
 
 |
 
 Randfarbe
-~~~~~~~~~~
+~~~~~~~~~
 
 .. image:: img/DeskmatEdgeColor.gif
 
-Dies ist, wo Sie die Farbe für die Kante, wenn es eine feste Farbe.
+Hier legen Sie die Farbe für die Randeinfassung fest, wenn diese eine Volltonfarbe hat.
 
 |
 
-Werkstoff
-~~~~~~~~~
+Material
+~~~~~~~~
 
-Um das Material zu ändern, müssen Sie die verwendeten Materialien bearbeiten, die Sie in den Materialeigenschaften auswählen und in der Shader-Editor bearbeiten können.
+Um das Material zu ändern, müssen Sie die zugewiesenen Materialien bearbeiten. Sie können diese in den Material-Eigenschaften auswählen und im Shader-Editor bearbeiten.
 
 .. image:: img/DeskmatMats.gif
 
-Sie können das angewendete Material ersetzen und ein anderes Material im Abschnitt Modifier der Eigenschaften des Objekts auswählen.
+Sie können das zugewiesene Material ersetzen und im Modifikator-Bereich der Objekteigenschaften ein anderes Material auswählen.
 
 .. image:: img/DeskmatModiMat.gif
 
 |
 
-Ausfuhr
-~~~~~~~~~
+Exportieren
+~~~~~~~~~~~
 
-Wenn Sie das Deskmat in eine andere Software exportieren, muss die Nähte für das Deskmat konvertiert und das UV-Attribut in eine UV-Map umgewandelt werden. Siehe Exportabschnitt der Seite USB-Kabel, um diesen Prozess zu erlernen.
+Wenn Sie das Deskmat in andere Software exportieren, muss die Naht des Deskmats konvertiert und das UV-Attribut in eine UV-Map umgewandelt werden. Wie Sie dabei vorgehen, erfahren Sie im Export-Abschnitt der Seite USB Cables.
 
 :ref:`Exporting Cables <ExportingCables>`
 

@@ -1,3 +1,5 @@
-Désemballage Légende Fichiers de Blender.
-=========================================
-Parfois, vous pouvez vouloir décompresser les fichiers de masque légende du fichier .blend.
+:orphan:
+
+Extraire les fichiers de légendes de Blender.
+=====================================================
+Il peut parfois être utile d'extraire du fichier blend les fichiers de masque des légendes.

@@ -1,0 +1,2 @@
+# Sphinx source snapshots retain their original RST formatting.
+sources/**/*.rst.txt text eol=lf conflict-marker-size=256 whitespace=-blank-at-eol,-blank-at-eof

@@ -1,24 +1,24 @@
-Optimieren Sie Ihren Render
-===========================
-Neben der Gesamt-Szene Komplexität, gibt es ein paar wichtige Faktoren, die Ihre Render Zeit und Qualität beeinflussen.
+Rendering optimieren
+====================
+Neben der allgemeinen Szenenkomplexität gibt es einige wesentliche Faktoren, die Ihre Renderzeit und -qualität beeinflussen.
 
 |
 
-Entschließung
-~~~~~~~~~~~~~
-Bildauflösung spielt eine große Rolle in der Zeit, die es braucht, um ein Bild zu rendern. Wenn eine Auflösung zu niedrig ist, manifestiert sich als "pixeliertes" Bild. Diagonale Linien erscheinen gezackt und feine Details können die gewünschte Definition fehlen.
+Auflösung
+~~~~~~~~~
+Die Bildauflösung hat großen Einfluss auf die Zeit, die zum Rendern eines Bildes benötigt wird. Eine zu niedrige Auflösung äußert sich in einem „verpixelten“ Bild. Diagonale Linien erscheinen gezackt und feine Details verlieren möglicherweise die gewünschte Schärfe.
 
 .. image:: img/ResLow.png
 
 .. image:: img/ResHi.png
 
-Wenn Sie beispielsweise die Bildtreue erhöhen, indem Sie die Auflösung von 2k auf 4k verdoppeln, indem Sie den Prozent-Slider auf 200% einstellen, muss Ihr Computer jetzt viermal die Anzahl der Pixel verarbeiten. Dies kann zu viel knackigeren Bildern auf Kosten viel größerer Renderzeiten führen.
+Wenn Sie beispielsweise die Wiedergabetreue Ihres Bildes erhöhen, indem Sie die Auflösung von 2k auf 4k verdoppeln und den Prozentregler auf 200 % setzen, muss Ihr Computer nun die vierfache Anzahl an Pixeln verarbeiten. Das kann zu deutlich schärferen Bildern führen, allerdings zu Lasten deutlich längerer Renderzeiten.
 
 |
 
-Rendern von Proben
-~~~~~~~~~~~~~~~~~~
-Die Anzahl der verwendeten Proben ist auch ein wichtiger Punkt bei der Optimierung Ihrer Render. Mit zu wenigen Proben manifestiert sich als lautes Bild. Wie Bildauflösung, die Erhöhung der Proben wird die visuelle Treue zu verbessern, sondern auch die Renderzeiten exponentiell erhöhen.
+Render-Samples
+~~~~~~~~~~~~~~
+Die Anzahl der verwendeten Samples ist ebenfalls ein entscheidender Punkt bei der Optimierung Ihres Renderings. Zu wenige Samples äußern sich in einem verrauschten Bild. Wie bei der Bildauflösung verbessert eine Erhöhung der Samples die visuelle Wiedergabetreue, erhöht aber auch die Renderzeiten exponentiell.
 
 .. image:: img/Samples16.png
 
@@ -26,37 +26,37 @@ Die Anzahl der verwendeten Proben ist auch ein wichtiger Punkt bei der Optimieru
 
 |
 
-Verärgerung
+Entrauschen
 ~~~~~~~~~~~
-So lange die digitale Bildgebung existiert hat, so hat auch die Notwendigkeit der Lärmreduzierung. Ob es sich um eine digitale Fotografie, einen Scan oder einen vollständig generierten Computer handelt, es gelten die Methoden. In jüngerer Zeit hat die pfadverfolgte Rendering die Entwicklung neuer Algorithmen und sogar den Einsatz von maschinellem Lernen zur Lösung des Problems vorangetrieben.
-Blender hat ein paar Algorithmen zum Verärgern, damit wir uns auf diese konzentrieren.
+Seit es digitale Bildverarbeitung gibt, besteht auch der Bedarf an Rauschunterdrückung. Ob die Quelle ein digitales Foto, ein Scan oder vollständig computergeneriert ist, die Methoden bleiben dieselben. In jüngerer Zeit hat das Path-Tracing-Rendering die Entwicklung neuer Algorithmen und sogar den Einsatz von maschinellem Lernen zur Lösung dieses Problems vorangetrieben.
+Blender bietet einige Algorithmen zum Entrauschen, daher konzentrieren wir uns auf diese.
 
 Optix
 -----
 
 .. image:: img/Optix.jpg
 
-Dies ist ein Computer-Lern-Denoise-Algorithmus von Nvidia. Es läuft auf Nvidia Grafikkarten aus der RTX 20**Serie weiter. Als Folge der Verwendung von dedizierten Tensorkernen ist es sehr schnell mit dem Vorbehalt, exklusiv für Nvidia-Benutzer zu sein. Weitere Informationen finden Sie unter `NVIDIA's OptiX page <https://developer.nvidia.com/optix-denoiser>`_.
+Dies ist ein Entrauschungsalgorithmus auf Basis maschinellen Lernens von Nvidia. Er läuft auf Nvidia-Grafikkarten ab der RTX 20**-Serie. Durch die Nutzung dedizierter Tensor-Cores ist er sehr schnell, mit der Einschränkung, dass er ausschließlich Nvidia-Nutzern zur Verfügung steht. Weitere Informationen finden Sie auf der `NVIDIA's OptiX page <https://developer.nvidia.com/optix-denoiser>`_.
 
 Open Image Denoise
 ------------------
 
 .. image:: img/OID.jpg
 
-Dies ist ein weiterer Computer-Lern-Denoise-Algorithmus, diesmal aus der Info. Wie der Name schon sagt, ist er offen und wird auf einer Vielzahl von Cpu-Modellen und Architekturen laufen. Es ist nicht so schnell wie mit Optix, aber es ist sehr gut, was es tut und hat den Rand in Szenen, die eine Form von Transparenz. Zum Beispiel beim Rendering Polycarbonat Tastaturen. Mehr Informationen ist auf der `Open Image Denoise site <https://www.openimagedenoise.org/>`_.
+Dies ist ein weiterer Entrauschungsalgorithmus auf Basis maschinellen Lernens, diesmal von Intel. Wie der Name vermuten lässt, ist er offen und läuft auf einer Vielzahl von CPU-Modellen und -Architekturen. Er ist nicht so schnell wie Optix, erfüllt seine Aufgabe aber sehr gut und hat Vorteile in Szenen, die eine Form von Transparenz enthalten. Zum Beispiel beim Rendern von Tastaturen aus Polycarbonat (PC). Weitere Informationen finden Sie auf der `Open Image Denoise site <https://www.openimagedenoise.org/>`_.
 
 Anwendung
------------
+---------
 
 .. image:: img/CompositorDenoise.jpg
 
-Beide Algorithmen können in der 3D-Viewport und finalen Render verwendet werden, indem sie in den Optionen aktiviert werden. OID ist jedoch schneller, wenn sie im Compositor verwendet wird. In KRK ist der Compositor bereits erstellt und alles, was noch zu tun ist, um Knoten mit dem Kontrollkästchen oben links des Compositor-Panels zu aktivieren.
+Beide Algorithmen können im 3D-Viewport und im finalen Rendering verwendet werden, indem Sie sie in den Optionen aktivieren. OID ist jedoch schneller, wenn er im Compositor verwendet wird. In KRK ist das Compositor-Setup bereits erstellt, und Sie müssen nur noch die Nodes über das Kontrollkästchen oben links im Compositor-Panel aktivieren.
 
 .. image:: img/Denoised256.png
 
 |
 
-Weitere Informationen zum Denoisieren finden Sie im `Blender manual page on denoising. <https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html>`_
+Weitere Informationen zum Entrauschen finden Sie auf der `Blender manual page on denoising. <https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html>`_
 
 
 |

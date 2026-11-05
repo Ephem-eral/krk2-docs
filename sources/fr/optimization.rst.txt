@@ -1,24 +1,25 @@
 Optimiser votre rendu
-======================
-Outre la complexité globale de la scène, il y a quelques facteurs majeurs qui affectent votre temps de rendu et la qualité.
+=======================
+
+Outre la complexité globale de la scène, plusieurs facteurs majeurs influencent le temps et la qualité de votre rendu.
 
 |
 
 Résolution
 ~~~~~~~~~~
-La résolution d'image joue un rôle important dans le temps qu'il faut pour rendre une image. Avoir une résolution trop basse se manifestera comme une image « pixelisée ».
+La résolution de l'image joue un rôle important dans le temps nécessaire au rendu d'une image. Une résolution trop faible se traduira par une image « pixelisée ». Les lignes diagonales apparaîtront crénelées et les détails fins pourront manquer de la définition souhaitée.
 
 .. image:: img/ResLow.png
 
 .. image:: img/ResHi.png
 
-Si par exemple vous augmentez la fidélité de votre image en doublant la résolution de 2k à 4k en réglant le pourcentage de curseur à 200%, votre ordinateur doit maintenant traiter quatre fois le nombre de pixels. Cela peut conduire à des images beaucoup plus nettes au prix de temps de rendu beaucoup plus importants.
+Si, par exemple, vous augmentez la fidélité de votre image en doublant la résolution de 2k à 4k en réglant le curseur de pourcentage sur 200 %, votre ordinateur doit alors traiter quatre fois plus de pixels. Cela peut produire des images bien plus nettes au prix de temps de rendu nettement plus longs.
 
 |
 
-Échantillons rendus
-~~~~~~~~~~~~~~~~~~~
-Le nombre d'échantillons utilisés est également un point clé dans l'optimisation de votre rendu. Avoir trop peu d'échantillons se manifestera comme une image bruyante. Comme la résolution d'image, l'augmentation des échantillons améliorera la fidélité visuelle mais aussi augmentera les temps de rendu exponentiellement.
+Échantillons de rendu
+~~~~~~~~~~~~~~~~~~~~~
+Le nombre d'échantillons utilisé est également un point clé pour optimiser votre rendu. Un nombre trop faible d'échantillons se traduira par une image bruitée. Comme pour la résolution de l'image, augmenter les échantillons améliore la fidélité visuelle mais augmente aussi les temps de rendu de façon exponentielle.
 
 .. image:: img/Samples16.png
 
@@ -26,37 +27,37 @@ Le nombre d'échantillons utilisés est également un point clé dans l'optimisa
 
 |
 
-Dénonciation
-~~~~~~~~~~~~
-Tant que l'imagerie numérique existe, il est nécessaire de réduire le bruit. Qu'il s'agisse d'une photographie numérique, d'un scan ou d'un ordinateur, les méthodes sont toujours d'application. Plus récemment, le rendu tracé du chemin a poussé le développement de nouveaux algorithmes et même l'utilisation de l'apprentissage automatique pour résoudre le problème.
-Blender a quelques algorithmes pour dénouer, donc nous allons nous concentrer sur ceux-là.
+Débruitage
+~~~~~~~~~~
+Depuis l'existence de l'imagerie numérique, le besoin de réduction du bruit existe aussi. Que la source soit une photographie numérique, un scan ou entièrement générée par ordinateur, les méthodes restent les mêmes. Plus récemment, le rendu par lancer de rayons a stimulé le développement de nouveaux algorithmes et même le recours à l'apprentissage automatique pour résoudre le problème.
+Blender propose plusieurs algorithmes de débruitage ; nous nous concentrerons sur ceux-ci.
 
 Optix
 -----
 
 .. image:: img/Optix.jpg
 
-Il fonctionne sur les cartes graphiques de Nvidia de la série RTX 20**. Grâce à l'utilisation de tenseurs dédiés, il est très rapide avec la mise en garde d'être exclusif aux utilisateurs de Nvidia. Plus d'informations est sur `NVIDIA's OptiX page <https://developer.nvidia.com/optix-denoiser>`_.
+Il s'agit d'un algorithme de débruitage par apprentissage automatique de Nvidia. Il fonctionne sur les cartes graphiques Nvidia à partir de la série RTX 20**. Grâce à l'utilisation de cœurs tensoriels dédiés, il est très rapide, avec la contrepartie d'être réservé aux utilisateurs de Nvidia. Vous trouverez plus d'informations sur la `page OptiX de NVIDIA <https://developer.nvidia.com/optix-denoiser>`_.
 
 Open Image Denoise
 ------------------
 
 .. image:: img/OID.jpg
 
-Il s'agit d'un autre algorithme denoise d'apprentissage automatique, cette fois de l'intel. Comme son nom l'indique, il est ouvert et fonctionnera sur une variété de modèles et d'architectures cpu. Il n'est pas aussi rapide qu'utiliser Optix mais il est très bon à ce qu'il fait et a le bord dans les scènes qui incluent une certaine forme de transparence. Par exemple dans le rendu des claviers polycarbonates. Plus d'informations est sur le `Open Image Denoise site <https://www.openimagedenoise.org/>`_.
+Il s'agit d'un autre algorithme de débruitage par apprentissage automatique, cette fois d'Intel. Comme son nom l'indique, il est ouvert et fonctionne sur divers modèles et architectures de processeurs. Il n'est pas aussi rapide qu'Optix mais il s'acquitte très bien de sa tâche et a l'avantage dans les scènes comportant une forme de transparence. Par exemple pour le rendu de claviers en polycarbonate (PC). Vous trouverez plus d'informations sur le `site Open Image Denoise <https://www.openimagedenoise.org/>`_.
 
-Demande
+Application
 -----------
 
 .. image:: img/CompositorDenoise.jpg
 
-Ces deux algorithmes peuvent être utilisés dans le vue 3D et le rendu final en les activant dans les options. Cependant, l'OID est plus rapide lorsqu'il est utilisé dans le compositor. Dans KRK, la configuration du compositor est déjà créée et tout ce qu'il reste à faire est d'activer les nœuds en utilisant la case à cocher située en haut à gauche du panneau du compositor.
+Ces deux algorithmes peuvent être utilisés dans la vue 3D et pour le rendu final en les activant dans les options. Cependant, OID est plus rapide lorsqu'il est utilisé dans le compositeur. Dans KRK, la configuration du compositeur est déjà créée et il ne reste plus qu'à activer les nœuds à l'aide de la case à cocher en haut à gauche du panneau du compositeur.
 
 .. image:: img/Denoised256.png
 
 |
 
-Pour plus d'informations sur la dénomination, visitez le `Blender manual page on denoising. <https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html>`_
+Pour plus d'informations sur le débruitage, consultez la `page du manuel Blender consacrée au débruitage. <https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html>`_
 
 
 |

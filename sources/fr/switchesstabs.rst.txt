@@ -1,45 +1,45 @@
-Ajouter Switches et Stabilisateurs
-==================================
+Ajouter des switches et des stabilisateurs
+=============================================
 
-Parfois, vous pouvez vouloir avoir visible switches et stabilisateurs dans votre rendu. Cela peut être parce que vous faites un rendu à un angle bas ou que vous avez transparent touches ou simplement que vous voulez éteindre le touches altogther pour afficher le clavier.
+Il peut arriver que vous souhaitiez afficher des switches et des stabilisateurs visibles dans votre rendu. Cela peut être parce que vous effectuez un rendu sous un angle faible, que vous utilisez des touches transparentes, ou simplement parce que vous voulez désactiver entièrement les touches pour mettre le clavier en valeur.
 
-Commencez par ouvrir la collection que le clavier est dans et dupliquer (lié) la touche/disposition collection. Ils vont devenir notre switches.
+Commencez par ouvrir la collection dans laquelle se trouve le clavier et dupliquez (en lien) la collection des touches/disposition. Celles-ci vont devenir nos switches.
 
 .. image:: img/DupeLayout.gif
 
 |
 
-Éteignez la visibilité de la collection originale touches afin que nous puissions nous concentrer sur ce qui deviendra notre switches.
+Désactivez la visibilité de la collection de touches d'origine afin de nous concentrer sur ce qui va devenir nos switches.
 
 .. image:: img/LayoutVis.gif
 
 |
 
-Faites un clic droit sur la collection switch et choisissez "choisir des objets". Assurez-vous d'avoir l'un d'eux actif (en surbrillance), sinon, déplacez+cliquez sur l'un d'eux dans le vue 3D pour le rendre actif. Saisissez maintenant le mot 'switch' dans la liste déroulante données d’objet et choisissez Switch_Simple ou Switch_Complex en fonction de vos besoins.
+Faites un clic droit sur la collection de switches et choisissez « select objects ». Assurez-vous que l'un d'eux est actif (surligné) ; sinon, faites shift+clic sur l'un d'eux dans la vue 3D pour le rendre actif. Tapez maintenant le mot « switch » dans la liste déroulante des données d'objet et choisissez Switch_Simple ou Switch_Complex selon vos besoins.
 
 .. image:: img/SwitchObj.jpg
 
 |
 
-L'un d'eux s'est transformé en switch. Vous pouvez maintenant tous les faire en switches en appuyant sur ctrl+L pour faire monter le dialogue Link puis O pour Données d’objet. Vous devriez maintenant avoir un clavier complet de switches.
+L'un d'eux s'est transformé en switch. Vous pouvez maintenant les transformer tous en switches en appuyant sur ctrl+L pour ouvrir la boîte de dialogue Link, puis sur O pour Object Data. Vous devriez maintenant avoir un clavier complet de switches.
 
 .. image:: img/SwitchPop.jpg
 
 |
 
-Maintenant, ajoutons le stabilisateurs. Sélectionnez un switch qui doit avoir un stabilisateur qui l'accompagne et un duplicata lié en utilisant Alt+D.
+Ajoutons maintenant les stabilisateurs. Sélectionnez un switch qui doit être accompagné d'un stabilisateur et dupliquez-le en lien avec Alt+D. Faites un clic droit ou appuyez sur échap pour annuler le déplacement.
 
 .. image:: img/DupeSwitch.gif
 
 |
 
-Avec ce nouveau switch sélectionné, ouvrez le menu déroulant Données d’objet et tapez 'stab' pour filtrer vers le stabilisateurs. Là encore, choisissez si vous en avez besoin pour être le modèle simple ou complexe et la taille et l'orientation du stabilisateur.
+Ce nouveau switch étant sélectionné, ouvrez la liste déroulante des données d'objet et tapez « stab » pour filtrer les stabilisateurs. Là encore, choisissez le modèle simple ou complexe ainsi que la taille et l'orientation du stabilisateur.
 
 .. image:: img/StabData.gif
 
 |
 
-Faites-le pour le reste du stabilisateurs et vous avez fini.
+Répétez l'opération pour les autres stabilisateurs et vous avez terminé.
 
 .. image:: img/StabPopulated.jpg
 

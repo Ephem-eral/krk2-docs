@@ -1,24 +1,24 @@
 Gestion des couleurs
-====================
+=====================
 
 .. image:: img/AGX_F2sRGB.jpg
 
-Gestion des couleurs dans Blender est dans l'espace de couleur linéaire avec le View Transform set à AGX (ou Filmic avant 4.0). Bien que ces transformations de vue comprennent une large gamme dynamique, il fera apparaître vos couleurs choisies "lavées" ou à faible contraste quand aucun traitement de prost n'est appliqué.
+Dans Blender, la gestion des couleurs s'effectue en espace colorimétrique linéaire, avec la transformation d'affichage réglée sur AGX (ou Filmic avant 4.0). Bien que ces transformations d'affichage couvrent une large plage dynamique, elles font apparaître les couleurs choisies comme « délavées » ou peu contrastées lorsqu'aucun post-traitement n'est appliqué.
 
 .. image:: img/ColourManagement.jpg
 
 |
 
-Ce flux de travail suppose que vous allez faire un traitement post-traitement pour classifier la couleur en un résultat plus fidèle. Comme peu de gens (surtout les nouveaux utilisateurs) le font, KRK (à partir de KRK211) est réglé à Filmic avec Medium High Contrast puis à la suite (le compositeur), est en train de se convertir de Filmic en sRGB pour produire un résultat plus attendu.
+Ce flux de travail suppose que vous effectuerez un post-traitement pour étalonner les couleurs vers un résultat plus fidèle. Comme peu d'utilisateurs (en particulier les nouveaux) procèdent ainsi, KRK (à partir de KRK211) est réglé sur Filmic avec Medium High Contrast, puis, en post-traitement (dans le compositeur), subit une conversion de Filmic vers sRGB afin de produire un résultat plus conforme aux attentes.
 
 .. image:: img/Compositor_Filmic2sRGB.jpg
 
 |
 
-Si vous créez un nouveau vue 3D, n'oubliez pas d'allumer le composant à « Toujours » pour que la couleur soit correctement reproduite.
+Les vues 3D sont configurées de sorte que ce que vous voyez passe par le processus du compositeur. Si vous créez une nouvelle vue 3D, pensez à activer la composition sur « Always » pour que les couleurs soient correctement reproduites.
 
 .. image:: img/ViewportComp.jpg
 
 |
 
-Rappelez-vous, vos yeux ont le dernier mot. Toujours comparer à une référence physique.
+N'oubliez pas que vos yeux ont le dernier mot. Comparez toujours à une référence physique.

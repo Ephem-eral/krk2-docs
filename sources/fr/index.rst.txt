@@ -1,20 +1,19 @@
-
-Bienvenue sur Keyboard Render Kit !
-===================================
+Bienvenue dans Keyboard Render Kit !
+====================================
 
 .. image:: img/KRK2Banner.png
 
-Bienvenue à Keyboard Render Kit 2 et merci pour votre soutien!
+Bienvenue dans Keyboard Render Kit 2 et merci pour votre soutien !
 
-KRK2 reprend le processus d’échange des données d’objet de KRK1 en le rendant plus flexible, plus autonome et plus modulaire. Les profils de touches ne dépendent plus de la géométrie des autres claviers. Les claviers sont facilement transférables, et chaque élément peut être mis à jour indépendamment d’une version à l’autre.
+KRK2 s'appuie sur le workflow d'échange de données d'objet de KRK1 tout en rendant l'ensemble plus flexible, indépendant et granulaire. Les profils de touches ne dépendent plus de la géométrie d'un autre profil, les claviers sont portables et tout peut être mis à jour indépendamment d'une version à l'autre.
 
 |
 
-Configuration requise
-~~~~~~~~~~~~~~~~~~~~~
+Prérequis
+~~~~~~~~~
 **Blender 3.3 ou version ultérieure**
 
-**Ordinateur compatible avec Blender Cycles**
+**Machine compatible avec Blender Cycles**
 
 Liens
 ~~~~~
@@ -33,7 +32,7 @@ Liens
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Aperçu général
+   :caption: Vue d'ensemble
 
    gettingstarted
    interface
@@ -85,7 +84,7 @@ Liens
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Informations supplémentaires
+   :caption: Informations complémentaires
 
    optimization
    polyhaven

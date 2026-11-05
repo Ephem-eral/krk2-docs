@@ -1,10 +1,10 @@
-Protokolle freigeben
-====================
+Versionsprotokolle
+==================
 
 KRK211
 ~~~~~~
 
-Hinzugefügt: KitLighting_005 als neues Standard-Kit Beleuchtung
+Hinzugefügt: KitLighting_005 als neue Standard-Kit-Beleuchtung
 
 Hinzugefügt: F1-8X WKL Tastatur
 
@@ -20,40 +20,40 @@ Hinzugefügt: Zoom75 Tastatur
 
 Hinzugefügt: Switch_Complex_Box
 
-Hinzugefügt: Switch Kategorie mit Switch 12 Farbvarianten
+Hinzugefügt: Switch-Kategorie mit Switches in 12 Farbvarianten
 
-Hinzugefügt: Tastaturständer Zubehör (dank SpikedSynapse für Basismodell)
+Hinzugefügt: Keyboard Stand Zubehör (Dank an SpikedSynapse für das Basismodell)
 
 Hinzugefügt: Floor_MarbleTile
 
-Verbessert: Farbkonvertierung von Filmic in sRGB standardmäßig im Compositor und aktiviert in 3D-Viewport
+Verbessert: Farbkonvertierung von Filmic zu sRGB standardmäßig im Compositor und im 3D-Viewport aktiviert
 
-Verbessert: Tweaked AluShimmer Knoten, um Bump-Effekt hinzuzufügen
+Verbessert: AluShimmer-Node angepasst, um einen Bump-Effekt hinzuzufügen
 
-Verbessert: Tweaked Palettenfarben
+Verbessert: Palettenfarben angepasst
 
-Verbessert: Plattengeometrie zu Event Horizon hinzugefügt
+Verbessert: Plate-Geometrie zu Event Horizon hinzugefügt
 
-Verbessert: Getrennt Pheonix45 in 3 Variationen
+Verbessert: Pheonix45 in 3 Variationen aufgeteilt
 
-Verbessert: Polycarb wurde standardmäßig zu Relegendables hinzugefügt
+Verbessert: Polycarb standardmäßig zu Keycaps mit austauschbarer Beschriftung hinzugefügt
 
-Behoben:Naming für Blanks auf KAT und SA
+Behoben: Benennung für unbeschriftete Keycaps bei KAT und SA
 
-Behoben: CHE K0 (R0) Startseite, Ende, Del-Tasten hinzugefügt
+Behoben: CHE K0 (R0) Home-, End- und Del-Tasten hinzugefügt
 
-Behoben: CHE K7 (R5) 1.50 Super, 1.00 Alt und Strg hinzugefügt
+Behoben: CHE K7 (R5) 1.50 Super, 1.00 Alt und Ctrl hinzugefügt
 
 Behoben: Fenster-Numlock zum CHE-Profil hinzugefügt
 
-Fest: Adjustiertes Sandmaterial
+Behoben: Sandmaterial angepasst
 
 |
 
 KRK210
 ~~~~~~
 
-Wechsel zu Blender 4.0
+Umstellung auf Blender 4.0
 
 Hinzugefügt: ISOGR Tastatur
 
@@ -71,40 +71,40 @@ Hinzugefügt: Monsgeek M1 Tastatur
 
 Hinzugefügt: F# Tastatur
 
-Verbessert: Aktualisierte KLE-Tabelle, um KLE-Import robuster zu machen (dank SpikedSynapse)
+Verbessert: KLE-Tabelle aktualisiert, um den KLE-Import robuster zu machen (Dank an SpikedSynapse)
 
-Verbessert: Aktualisiertes KRK-Skript für 4.+-Kompatibilität
+Verbessert: KRK-Skript für Kompatibilität mit 4.+ aktualisiert
 
-Verbessert: Verschieben Sie die Registerkarte Compositor, um neben der Registerkarte KRK zu sein
+Verbessert: Compositor-Tab neben den KRK-Tab verschoben
 
-Behoben: AOV hinzugefügt, um diffuses Farbpass-Problem zu beheben
+Behoben: AOV hinzugefügt, um das Problem mit dem Diffuse-Color-Pass zu beheben
 
-Behoben: Aktualisierte Farbe JSON, um die kopierten Akzente zu beheben
+Behoben: Color JSON aktualisiert, um die kopierten Akzente zu korrigieren
 
-Behoben: Deskmat Textur koordiniert auf Textur von Punkt umgeschaltet
+Behoben: Deskmat-Texturkoordinaten von Point auf Texture umgestellt
 
-Behoben: KAT K3 1.5 Backspace-Modell
+Behoben: KAT K3 1.5 Backspace Modell
 
-Behoben: Normale auf Che-2 6.25 Leertaste
+Behoben: Normalen auf Che-2 6.25 Leertaste
 
-Behoben: Standardeinstellung der OGR untere Zeile
+Behoben: OGR untere Zeile Standard
 
-Behoben: Front UV auf CHE-2 Frage war in falscher Position
+Behoben: Front-UV auf CHE-2 Question war an falscher Position
 
-Behoben: Switch Position im Verhältnis zum CHE-2-Stängel
+Behoben: Switch-Position relativ zum Stem des CHE-2-Keycaps
 
 |
 
 KRK209
 ~~~~~~
 
-Blender 3.6 von 3.3
+Umstellung auf Blender 3.6 von 3.3
 
 Hinzugefügt: USBCableV3
 
-Hinzugefügt: DeskmatV3_Leder
+Hinzugefügt: DeskmatV3_Leather
 
-Hinzugefügt: Beschriftung Offset-Einstellungen
+Hinzugefügt: Legend Offset Einstellungen
 
 Hinzugefügt: Floor_TechPanel
 
@@ -112,95 +112,95 @@ Hinzugefügt: Floor_CarbonFibre
 
 Hinzugefügt: Floor_DiamondPlate
 
-Verbessert: DeskMatV3 mit mehr Kantenkontrolle
+Verbessert: DeskMatV3 mit mehr Kontrolle über die Randeinfassung
 
-Verbessert: Wristrest überarbeitet auf V2
+Verbessert: Handballenauflage zu V2 überarbeitet
 
-Verbessert: Getrennt Benutzerdefinierte und Palette umschalten, so dass Cap-Modi nicht geändert werden, wenn Sie sie sehen
+Verbessert: Custom- und Palette-Umschalter getrennt, sodass die Keycap-Modi nicht geändert werden, wenn Sie sie anzeigen
 
-Behoben: W1AT untere Zeile ausgeschaltet
+Behoben: W1AT untere Zeile Layer ausgeschaltet
 
 |
 
 KRK208
 ~~~~~~
 
-Hinzugefügt: Aufkleber
+Hinzugefügt: Stickers
 
 Hinzugefügt: Giga40 Tastatur
 
 Hinzugefügt: Thok Artisan Display Zubehör
 
-Hinzugefügt: LegendSeam Breite Wert zu Capsmat
+Hinzugefügt: LegendSeam Width Wert zu Capsmat
 
-Hinzugefügt: Spuleneinstellung auf gewickelte Kabel zur Kontrolle der Dichtheit
+Hinzugefügt: Coil-Einstellung zu Spiralkabeln zur Steuerung der Dichte
 
-Verbessert: überarbeitete Kabelmaterialien
+Verbessert: Kabelmaterialien überarbeitet
 
-Verbessert: Aktualisiertes Modell Dreizehn
+Verbessert: Model Thirteen aktualisiert
 
-Verbessert: Reworked Kabel, um als Mesh-Linien in Vorbereitung für zukünftiges Update zu starten
+Verbessert: Kabel überarbeitet, sodass sie als Mesh-Linien starten, als Vorbereitung für ein zukünftiges Update
 
-Verbessert: Noise Detail und Noise Rauheit auf Alu_Shimmer Knotengruppe
+Verbessert: Noise Detail und Noise Roughness auf Alu_Shimmer Nodegroup
 
-Verbessert: Einige duplizierte Material-Node-Gruppen entfernt
+Verbessert: Einige doppelte Material-Nodegroups entfernt
 
-Verbessert: Umbenennte Capsmat Knotengruppen
+Verbessert: Capsmat-Nodegroups umbenannt
 
-Verbessert: Benutzerdefinierte Farbwerte zum Standardkit hinzugefügt Keycaps
+Verbessert: Benutzerdefinierte Farbwerte zu Standard-Kit-Keycaps hinzugefügt
 
-Verbessert: Umbenennen von Palette zu Palette8, um die Anzahl der Slots zu bezeichnen
+Verbessert: Palette zu Palette8 umbenannt, um die Anzahl der Slots zu kennzeichnen
 
-Verbessert: Reworked UV auf dem Ikki68 Aurora für Grafiken
+Verbessert: UV auf der Ikki68 Aurora überarbeitet, um Grafiken zu ermöglichen
 
-Verbessert: Einige Einstellungen auf den Kabeln
+Verbessert: Einige Einstellungen an den Kabeln freigelegt
 
-Behoben: LShift in Kits hatte einen anderen Palettenwert und war daher nicht Teil der Standardauswahlgruppe
+Behoben: LShift in Kits hatte einen anderen Palettenwert und war daher nicht Teil der Standard-Auswahlgruppe
 
-Fixiert: Stuckboden war-1mm in der Z-Achse
+Behoben: Stucco-Boden war -1mm in der Z-Achse
 
-Behoben: Switch-Puller Ursprung
+Behoben: Switch-Puller-Ursprung
 
-Behoben: G305 Gesichtsausrichtung
+Behoben: G305 Flächenausrichtung
 
 |
 
 KRK207
 ~~~~~~
 
-Hinzugefügt: Modell Dreizehn Tastatur
+Hinzugefügt: Model Thirteen Tastatur
 
 Hinzugefügt: Akuma Tastatur
 
-Hinzugefügt: Floor_Stuck
+Hinzugefügt: Floor_Stucco
 
-Hinzugefügt: Floor_Hextile
+Hinzugefügt: Floor_HexTile
 
-Hinzugefügt: Palette16 nodegroup
+Hinzugefügt: Palette16 Nodegroup
 
-Hinzugefügt: Palette_E4-Nodegroup (jetzt Standard für Legenden)
+Hinzugefügt: Palette_E4 Nodegroup (jetzt Standard für Beschriftungen)
 
-Hinzugefügt: Palette_E8-Nodegroup
+Hinzugefügt: Palette_E8 Nodegroup
 
 Hinzugefügt: 1.5U Cherry Space Convex
 
-Hinzugefügt: Legenden Maske Ausgabe für Shader Mischen
+Hinzugefügt: Legends Mask Ausgabe für Shader-Mixing
 
-Hinzugefügt: Möglichkeit, Variationen für geometrische Legended Cap-Modelle aufzurufen
+Hinzugefügt: Möglichkeit, Variationen für Keycap-Modelle mit Geometrie-Beschriftung aufzurufen
 
-Hinzugefügt: Fähigkeit zum Import und Export von Farbschemata (individueller Farbmodus)
+Hinzugefügt: Möglichkeit, Farbschemata zu importieren und zu exportieren (benutzerdefinierter Farbmodus)
 
-Verbessert: Umbenennen von Palette_E in Palette_E4A, um 4 Slots mit Alphas zu kennzeichnen
+Verbessert: Palette_E zu Palette_E4A umbenannt, um 4 Slots mit Alphas zu kennzeichnen
 
-Verbessert: Benutzerdefinierte Form-Option für deskmat hinzugefügt (finden Sie es in Modifikatoren)
+Verbessert: Benutzerdefinierte Formoption zu Deskmat hinzugefügt (zu finden in den Modifikatoren)
 
-Verbessert: Keycap Homing-Optionen jetzt in Variante umbenannt, um Funktionalität hinzuzufügen
+Verbessert: Keycap-Homing-Optionen jetzt zu Variation umbenannt, um Funktionalität hinzuzufügen
 
-Behoben: Einige Profile fehlten Keycaps: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe
+Behoben: Einigen Profilen fehlten Keycaps: K2 PgDn, K3 PgUp, K3 NumMinus, K4 End, K6 Fn, K3 1.5 Del, K4 1.5 Caps, K4 Pipe, K3 Pipe
 
-Behoben: Getrennt von allen Homing-Varianten (F,J,Num5,H,A,U,N,T) von Formschlüsseln in Profilen DSA, DSS, KAM, KAT, OEM, SA
+Behoben: Alle Homing-Varianten (F,J,Num5,H,A,U,N,T) von Shapekeys in den Profilen DSA, DSS, KAM, KAT, OEM, SA getrennt
 
-Behoben: Moved SwitchKomplexe Geometrie 0.33mm auf der Y-Achse, um besser mit Stängeln auszurichten
+Behoben: SwitchComplex-Geometrie um 0,33 mm auf der Y-Achse verschoben, um sie besser an den Stems auszurichten
 
 |
 
@@ -211,15 +211,15 @@ Hinzugefügt: Akko ACR75 Tastatur
 
 Hinzugefügt: Akko Alice Tastatur
 
-Hinzugefügt: SLK Profil in Downloads
+Hinzugefügt: SLK-Profil in Downloads
 
-Hinzugefügt: PBS Profil in Downloads
+Hinzugefügt: PBS-Profil in Downloads
 
-Hinzugefügt: XDA Profil in Downloads
+Hinzugefügt: XDA-Profil in Downloads
 
-Behoben: Fixes USB-Kabel UV-Bremsen in Blender 3.4
+Behoben: USB-Kabel-UV-Bruch in Blender 3.4 behoben
 
-Behoben: Behobene Regression, bei der die Sammlung Wiederherstellung die USB-Kabelsteuerungen brechen würde
+Behoben: Regression behoben, bei der die Collection Restore die USB-Kabel-Steuerung beeinträchtigte
 
 |
 
@@ -230,20 +230,20 @@ Hinzugefügt: Werk One Tastatur
 
 Hinzugefügt: Kailh Choc V1 Switch
 
-Hinzugefügt: Kailh Choc Keycap Blank
+Hinzugefügt: Kailh Choc unbeschrifteter Keycap
 
-Hinzugefügt: MBK Keycap Leer
+Hinzugefügt: MBK unbeschrifteter Keycap
 
-Verbessert: Mehr Glanzfarbe für Polycarbonat2
+Verbessert: Gloss Colour zu Polycarbonate2 hinzugefügt
 
-Verbessert: Verbesserungen zur Wiederherstellung von Sammlungen
+Verbessert: Verbesserungen an Restore Collections
 
 |
 
 KRK204
 ~~~~~~
 
-Hinzugefügt: KLE Importeur
+Hinzugefügt: KLE-Importer
 
 Hinzugefügt: Grid Cap Modell
 
@@ -257,17 +257,17 @@ Hinzugefügt: IRON180 Tastatur
 
 Verbessert: Allgemeine Ctrl+Alt+Super Tasten hinzugefügt
 
-Verbessert: Standardmäßig auf Iso umgestellt
+Verbessert: Isometria standardmäßig auf Iso umgestellt
 
-Verbessert: Palette E sagt jetzt Beschriftung in KRK Panel
+Verbessert: Palette E zeigt jetzt Legend im KRK-Panel an
 
-Verbessert: Ergänzt werden regelmäßig die Tasten Strg, Alt, Super sowie die vorhandenen StrgL, AltL etc.
+Verbessert: Regulär benannte Ctrl-, Alt- und Super-Tasten sowie die bestehenden CtrlL, AltL usw. hinzugefügt
 
-Behoben:Veränderte Ursprünge für CapsStepped, BigEnter, EnterIso
+Behoben: Ursprünge für CapsStepped, BigEnter, EnterIso verschoben
 
-Behoben: Umbenennen > < Schlüssel zu WenigerGreater
+Behoben: >< Taste zu LessGreater umbenannt
 
-Behoben: Umbenennen von FN nach Fn
+Behoben: FN zu Fn umbenannt
 
 |
 
@@ -284,20 +284,20 @@ Verbessert: Zubehör in den Asset-Browser verschoben
 
 Verbessert: Shader aus Capsmat verschoben
 
-Behoben: Aktivierte Szenelichter und Welt für 3D-Viewport
+Behoben: Szenenlichter und Welt für 3D-Viewport aktiviert
 
-Behoben: Einige Tasten in Kits hatten keine Paletteninformationen vorinstalliert
+Behoben: Einige Tasten in Kits hatten keine vorab geladenen Paletteninformationen
 
 |
 
 KRK202
 ~~~~~~
 
-Hinzugefügt:Keycap-Puller Zubehör
+Hinzugefügt: Keycap-Puller Zubehör
 
-Verbessert: Vorgeladene Farbe JSON mit Standard KRK-Theme, so dass Sie direkt zu Tastaturen springen können
+Verbessert: Farb-JSON mit Standard-KRK-Theme vorab geladen, sodass Sie direkt zu den Tastaturen springen können
 
-Behoben: DCS ISO Not,2,3 Schlüssel falsche Zeile
+Behoben: DCS ISO Not,2,3 Tasten falsche Zeile
 
 
 |
@@ -305,17 +305,17 @@ Behoben: DCS ISO Not,2,3 Schlüssel falsche Zeile
 KRK201
 ~~~~~~
 
-Hinzugefügt: Neues KRK Panel
+Hinzugefügt: Neues KRK-Panel
 
-Hinzugefügt: Platzhalter Profil
+Hinzugefügt: Platzhalter-Profil
 
-Hinzugefügt: Neue Cherry Modelle
+Hinzugefügt: Neue Cherry-Modelle
 
 Hinzugefügt: Neue DCS-Modelle
 
-Hinzugefügt: Frontbeschriftung Unterstützung für Capsmat (Für neue Kirsche und dcs)
+Hinzugefügt: Frontbeschriftungs-Unterstützung zu Capsmat (für neue Cherry und DCS)
 
-Hinzugefügt: Palette Material Utilities
+Hinzugefügt: Palette-Materialwerkzeuge
 
 Hinzugefügt: W1-AT Tastatur
 
@@ -327,19 +327,19 @@ Hinzugefügt: Zoom65 Tastatur
 
 Hinzugefügt: Beak 6.5 Tastatur
 
-Hinzugefügt: Schwein Tastatur
+Hinzugefügt: Piggy Tastatur
 
 Hinzugefügt: Mammoth75 Tastatur
 
 Hinzugefügt: Austin Tastatur
 
-Hinzugefügt: Frosch Tastatur
+Hinzugefügt: Frog Tastatur
 
-Hinzugefügt: Kuchen60 Tastatur
+Hinzugefügt: Cake60 Tastatur
 
-Hinzugefügt: Platten zu den meisten Tastaturen und modifizierte Modelle, um transparent zu empfangen Switches
+Hinzugefügt: Plates zu den meisten Tastaturen und Modelle angepasst, um transparente Switches zu ermöglichen
 
-Hinzugefügt: Switch Komplex
+Hinzugefügt: Switch Complex
 
 Hinzugefügt: Stab Complex
 
@@ -349,22 +349,22 @@ Hinzugefügt: Switch-Puller Zubehör
 
 Hinzugefügt: Polycarb2 Materialgruppe
 
-Hinzugefügt: Weitere Kabelvarianten
+Hinzugefügt: Weitere Kabelvariationen
 
-Hinzugefügt: Lemo-Steckverbinder
+Hinzugefügt: LEMO-Steckverbinder
 
-Hinzugefügt: USB Microconnector
+Hinzugefügt: USB-Micro-Steckverbinder
 
-Hinzugefügt: USB Mini-Anschluss
+Hinzugefügt: USB-Mini-Steckverbinder
 
-Verbessert: Getrennt Keycap-Profile
+Verbessert: Keycap-Profile getrennt
 
-Verbessert: Organisiert Tastaturen im Outliner
+Verbessert: Tastaturen im Outliner organisiert
 
-Verbessert: Renovierter Aviator-Anschluss
+Verbessert: Aviator-Steckverbinder neu modelliert
 
-Verbessert: Rebuilt Deskmat um vielseitiger zu sein
+Verbessert: Deskmat neu erstellt, um vielseitiger zu sein
 
-Verbessert: Neugebautes USB-Kabel, um vielseitiger zu sein
+Verbessert: USB-Kabel neu erstellt, um vielseitiger zu sein
 
-Verbessert: G305 Material und zusätzliche Eigenschaften
+Verbessert: G305 Material und hinzugefügte Eigenschaften

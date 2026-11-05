@@ -2,51 +2,51 @@ Profile
 ========
 CHE
 ~~~~
-Remodeled Cherry Profil basierend auf Endeavour. Verwenden Sie-2 Erweiterung für Unterseiten. Verwenden Sie Cherry Beschriftung Vorlage. Enthält Frontbeschriftung Unterstützung.
+Neu modelliertes Cherry-Profil auf Basis von Endeavour. Verwenden Sie die -2-Erweiterung für die Unterseiten. Verwenden Sie die Cherry-Beschriftungsvorlage. Enthält Unterstützung für Frontbeschriftung.
 
-Gleichstrom-Gleichstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Gleichstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechsel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Renoviertes DCS-Profil basierend auf Fooblitzky. Verwenden Sie-2 Erweiterung für Unterseiten. Verwenden Sie DCS Beschriftung Vorlage. Enthält Frontbeschriftung Unterstützung.
+DCS
+~~~~
+Neu modelliertes DCS-Profil auf Basis von Fooblitzky. Verwenden Sie die -2-Erweiterung für die Unterseiten. Verwenden Sie die DCS-Beschriftungsvorlage. Enthält Unterstützung für Frontbeschriftung.
 
 DSA
 ~~~~
-Geschmiedet von KRK1 DSA Modell. Verwenden Sie Unterteilungsmodifikator, um die Seiten zu glätten.
+Abgeleitet vom DSA-Modell aus KRK1. Verwenden Sie den Unterteilungs-Modifikator, um die Seiten zu glätten.
 
 DSS
 ~~~~
-Geschmiedet von KRK1 DSS Modell. Verwenden Sie Unterteilungsmodifikator, um die Seiten zu glätten.
+Abgeleitet vom DSS-Modell aus KRK1. Verwenden Sie den Unterteilungs-Modifikator, um die Seiten zu glätten.
 
 KAM
 ~~~~
-Geschmiedet von KRK1 KAM Modell. Verwenden Sie Unterteilungsmodifikator, um die Seiten zu glätten.
+Abgeleitet vom KAM-Modell aus KRK1. Verwenden Sie den Unterteilungs-Modifikator, um die Seiten zu glätten.
 
 KAT
 ~~~~
-Geschmiedet von KRK1 KAT Modell. Verwenden Sie Unterteilungsmodifikator, um die Seiten zu glätten.
+Abgeleitet vom KAT-Modell aus KRK1. Verwenden Sie den Unterteilungs-Modifikator, um die Seiten zu glätten.
 
 OEM
 ~~~~
-Geschmiedet vom KRK1 OEM-Modell.
+Abgeleitet vom OEM-Modell aus KRK1.
 
 SA
 ~~~~
-Geschmiedet von KRK1 SA Modell. Verwenden Sie Unterteilungsmodifikator, um die Seiten zu glätten.
+Abgeleitet vom SA-Modell aus KRK1. Verwenden Sie den Unterteilungs-Modifikator, um die Seiten zu glätten.
 
 Zusätzliche Profile
 ===================
 
 KRK
 ~~~~
-KRK1 Keycap Modelle einschließlich Switch UI. Muss importiert werden.
+KRK1-Keycap-Modelle inklusive Switch-UI. Muss importiert werden.
 
 PBS
 ~~~~
-PBS Profil, mit Stängeln. Muss importiert werden.
+PBS-Profil mit Keycap-Stems. Muss importiert werden.
 
-PLATZ
-~~~~~
-Platzhalter Profil.
+PLA
+~~~~
+Platzhalter-Profil.
 
 SLK
 ~~~~
-SLK Profil, mit Stängeln. Muss importiert werden.
+SLK-Profil mit Keycap-Stems. Muss importiert werden.

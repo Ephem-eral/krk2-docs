@@ -3,17 +3,17 @@ Interface
 
 .. image:: img/UIOverview.PNG
 
-Le KRK2 UI disposition est le plus semblable à Blender Shading disposition avec la colonne de gauche changée du navigateur de fichiers et l'éditeur d'image commuté en navigateur d’assets et l'éditeur UV avec un onglet KRK ajouté dans la barre latérale.
+La disposition de l'interface de KRK2 est très proche de celle de l'espace de travail Shading de Blender : la colonne de gauche, qui accueille le navigateur de fichiers et l'éditeur d'images, est remplacée par le navigateur d'assets et l'éditeur UV, et un onglet KRK est ajouté dans la barre latérale.
 
 |
 
-Navigateur d’assets
+Navigateur d'assets
 ~~~~~~~~~~~~~~~~~~~
 .. image:: img/UI_Asset.png
 
-Le navigateur d’assets regroupe plusieurs matériaux utiles, classés par type et par fabricant.
+Le navigateur d'assets regroupe de nombreux matériaux utiles, classés par type et par fabricant.
 
-`Blender manual page on the Asset Browser. <https://docs.blender.org/manual/en/latest/editors/asset_browser.html>`_
+`Page du manuel Blender consacrée au navigateur d'assets. <https://docs.blender.org/manual/en/latest/editors/asset_browser.html>`_
 
 |
 
@@ -21,19 +21,19 @@ Le navigateur d’assets regroupe plusieurs matériaux utiles, classés par type
 ~~~~~~~~~~
 .. image:: img/UI_UV.png
 
-Ce panneau peut être utilisé comme visionneur d'images et aussi vous montrer les coordonnées de votre légende sur le touche.
+Ce panneau peut servir de visionneuse d'images et affiche également les coordonnées de votre légende sur la touche.
 
-`Blender manual page on the UV Editor. <https://docs.blender.org/manual/en/latest/editors/uv/introduction.html>`_
+`Page du manuel Blender consacrée à l'éditeur UV. <https://docs.blender.org/manual/en/latest/editors/uv/introduction.html>`_
 
 |
 
-vue 3D
-~~~~~~~~~~~
+Vue 3D
+~~~~~~
 .. image:: img/UI_VP.png
 
-C'est là que vous éditerez vos kits, mises en page, éclairage, angles de caméra, etc. Il a également le KRK Panel attaché à la barre latérale où vous contrôlerez votre touches.
+C'est ici que vous modifierez vos kits, vos dispositions, votre éclairage, vos angles de caméra, etc. Le panneau KRK est également rattaché à la barre latérale, pour vous permettre de contrôler vos touches.
 
-`Blender manual page on the 3d Viewport. <https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html>`_
+`Page du manuel Blender consacrée à la vue 3D. <https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html>`_
 
 |
 
@@ -41,19 +41,19 @@ C'est là que vous éditerez vos kits, mises en page, éclairage, angles de cam�
 ~~~~~~~~~~~~~~~~~~
 .. image:: img/UI_Mats.png
 
-C'est là que vous contrôlerez l'apparence et les propriétés de vos matériaux.
+C'est ici que vous contrôlerez l'apparence et les propriétés de vos matériaux.
 
-`Blender manual page on the Shader Editor. <https://docs.blender.org/manual/en/latest/editors/shader_editor.html>`_
+`Page du manuel Blender consacrée à l'éditeur de shaders. <https://docs.blender.org/manual/en/latest/editors/shader_editor.html>`_
 
 |
 
-Aperçu
+Outliner
 ~~~~~~~~
 .. image:: img/UI_Out.png
 
-Ce panneau contient une hiérarchie de votre fichier .blend. Ici vous trouverez Kits, Claviers, Mises en page, Accessoires, Caméras, Lumières, Planchers, Profils etc. ainsi que des options de visibilité pour eux.
+Ce panneau contient la hiérarchie de votre fichier blend. Vous y trouverez les kits, les claviers, les dispositions, les accessoires, les caméras, les lumières, les sols, les profils, etc., ainsi que leurs options de visibilité.
 
-`Blender manual page on the Outliner. <https://docs.blender.org/manual/en/latest/editors/outliner/introduction.html>`_
+`Page du manuel Blender consacrée à l'Outliner. <https://docs.blender.org/manual/en/latest/editors/outliner/introduction.html>`_
 
 |
 
@@ -61,9 +61,9 @@ Propriétés
 ~~~~~~~~~~
 .. image:: img/UI_Props.png
 
-La plupart des autres propriétés vivent ici dans l'un des différents onglets.
+La plupart des autres propriétés se trouvent ici, dans l'un des différents onglets.
 
-`Blender manual page on the Property Editor. <https://docs.blender.org/manual/en/latest/editors/properties_editor.html>`_
+`Page du manuel Blender consacrée à l'éditeur de propriétés. <https://docs.blender.org/manual/en/latest/editors/properties_editor.html>`_
 
 
 |

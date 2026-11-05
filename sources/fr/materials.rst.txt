@@ -1,32 +1,32 @@
 Éditeur de shaders
-==================
-Après avoir sélectionné un objet, le matériel qui y est appliqué sera disponible dans l'éditeur de matériel. Ceci n'est valable que pour l'objet actif ou surligné.
+===================
+Après avoir sélectionné un objet, le matériau qui lui est appliqué devient modifiable dans l'éditeur de matériaux. Cela ne concerne que l'objet actif ou sélectionné.
 
 .. image:: img/SelectMat.gif
 
 |
 
-La liste déroulante vous permettra de sélectionner et d'appliquer un autre matériau à l'objet.
+La liste déroulante vous permet de sélectionner et d'appliquer un autre matériau à l'objet.
 
 .. image:: img/MatDropdown.gif
 
 |
 
-Si vous souhaitez dupliquer un matériau afin qu'il n'affecte pas le matériau sur d'autres objets, vous pouvez cliquer sur le nombre (ce qui signifie combien d'objets portent ce matériau) et un duplicata sera fait. Vous pouvez également cliquer sur le bouton ajouter du nouveau matériel au même effet.
+Si vous souhaitez dupliquer un matériau afin qu'il n'affecte pas le matériau des autres objets, vous pouvez cliquer sur le nombre (qui indique combien d'objets portent ce matériau) et une copie sera créée. Vous pouvez également cliquer sur le bouton d'ajout d'un nouveau matériau pour obtenir le même résultat.
 
 .. image:: img/DupeMat.gif
 
 |
 
-Les nœuds de texture d'image nécessitent des coordonnées pour savoir comment utiliser une image 2d sur un objet 3d. Si aucune coordonnées n'est branchée dans l'entrée vectorielle, l'UV actif sera utilisé.
+Les nœuds de texture d'image nécessitent des coordonnées pour savoir comment utiliser une image 2D sur un objet 3D. Si aucune coordonnée n'est connectée à l'entrée vectorielle, l'UV map active sera utilisée.
 
-Certains matériaux contiennent des nœuds désactivés ou grisés. Ils ne sont pas pris en compte au rendu. Pour les activer, sélectionnez le nœud d’un clic gauche, puis appuyez sur M.
+Certains matériaux contiennent des nœuds désactivés ou grisés. Ils ne sont pas pris en compte lors du rendu. Pour activer ces nœuds, vous pouvez sélectionner le nœud en cliquant dessus avec le bouton gauche et appuyer sur M pour le réactiver.
 
 .. image:: img/UnmuteNode.gif
 
 |
 
-Le matériel mondial est également accessible à partir de l'éditeur de matériel. En haut à gauche, cliquez sur le menu déroulant qui dit actuellement Objet et choisissez Monde.
+Le matériau du monde est également accessible depuis l'éditeur de matériaux. En haut à gauche, cliquez sur la liste déroulante qui indique actuellement Object et choisissez World.
 
 .. image:: img/ObjWorld.gif
 

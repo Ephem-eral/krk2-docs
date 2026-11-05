@@ -1,30 +1,30 @@
 Asset-Browser
-=============
+==============
 Zubehör-Assets
-~~~~~~~~~~~~~~~~
-Das Zubehör finden Sie in der Kategorie „Accessory“.
+~~~~~~~~~~~~~~
+Zubehör finden Sie im Bereich „Accessory“.
 
 .. image:: img/AccessorySection.jpg
 
 Tastatur-Assets
 ~~~~~~~~~~~~~~~
-Tastaturmodelle finden Sie in der Kategorie „Boards“.
+Tastaturmodelle finden Sie im Bereich „Boards“.
 
 .. image:: img/BoardSection.jpg
 
 Material-Assets
 ~~~~~~~~~~~~~~~
-Der Asset-Browser enthält mehrere nützliche Materialien, sortiert nach Typ und Hersteller. Ziehen Sie sie in die 3D-Ansicht, um sie auf Ihre Objekte anzuwenden.
+Der Asset-Browser ist mit einer Auswahl nützlicher Materialien vorbefüllt, die nach Typ und Hersteller kategorisiert sind. Sie können diese per Drag and Drop im 3D-Viewport auf Ihre Objekte ziehen.
 
 .. image:: img/AssetBrowserMaterial.gif
 
 |
 
-Materialwerkzeuge
+Material-Werkzeuge
 ~~~~~~~~~~~~~~~~~~
 
 .. image:: img/MaterialUtilities.JPG
 
-Die Materialwerkzeuge können in den Material-Editor gezogen werden und bieten zusätzliche Effekte beim Erstellen eigener Materialien.
+Die Material-Werkzeuge können in den Shader-Editor gezogen werden, um Effekte hinzuzufügen, während Sie Ihre eigenen Materialien erstellen.
 
 |

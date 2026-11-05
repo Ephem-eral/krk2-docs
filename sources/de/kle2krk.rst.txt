@@ -1,19 +1,19 @@
-KLE Auf KRK
-===========
+KLE zu KRK
+==========
 
-Während Keyboard Layout Editor seine Objekte nicht benennt, ist die Benennung ein erforderliches Attribut für Blender und Keyboard Render Kit, um korrekt zu funktionieren. Blender benennt sowohl seine Objekte als auch die Objektdaten, die sie enthalten. Keyboard Render Kit ignoriert weitgehend Objektnamen, setzt aber stark auf Objektdaten Namen. Sobald dies verstanden wird, ist der Pfad zwischen KLE und KRK ziemlich zuverlässig.
-
-|
-
-Was können Sie erwarten, in KRK übersetzen? Der Übersetzer berücksichtigt Größe, Beschriftung, Zeile, Farbe (Cap und Beschriftung), Position und Rotation. Sie können die letzten drei ohne Wiederholung ändern, aber wissen, dass ein Keycap nicht importieren darf, wenn Sie die ersten drei ändern und es kein Ziel Objektdaten gibt.
+Der Keyboard Layout Editor benennt seine Objekte nicht, doch Blender und Keyboard Render Kit benötigen Namen, um ordnungsgemäß zu funktionieren. Blender benennt sowohl Objekte als auch die darin enthaltenen Objektdaten. KRK berücksichtigt Objektnamen nur am Rande, stützt sich für seine Funktion jedoch stark auf die Namen der Objektdaten. Ist dieses Prinzip einmal verstanden, erweist sich der Weg von KLE zu KRK als sehr zuverlässig.
 
 |
 
-`Keyboard Layout Editor Example <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
+Was wird nach KRK übertragen? Der Import berücksichtigt Größe, Beschriftung, Zeile, Farbe (Keycap und Beschriftung), Position und Ausrichtung. Die letzten drei Parameter können Sie ohne Folgen ändern. Beachten Sie jedoch, dass eine Taste möglicherweise nicht importiert wird, wenn Sie einen der ersten drei Parameter ändern und keine passenden Ziel-Objektdaten vorhanden sind.
 
 |
 
-Diese Layout ist der Testplatz für KLE zu KRK Übersetzung und lädt in KRK und dient als gute Referenz. Wenn Sie Ihre Layout noch nicht gestartet haben, ist dies ein guter Anfang. Es mag bekannt aussehen und das ist, weil es Layout ist, die für Keycap UV und Texturen in KRK verwendet wird.
+`Keyboard Layout Editor Beispiel <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
+
+|
+
+Dieses Layout dient als Testfall für den Import von KLE nach KRK und lässt sich als verlässliche Referenz in KRK importieren. Wenn Sie noch kein Layout erstellt haben, ist es ein guter Ausgangspunkt. Es dürfte Ihnen bekannt vorkommen, denn es entspricht genau dem Layout, das KRK für UV-Projektionen und Texturen der Keycaps verwendet.
 
 |
 
@@ -21,4 +21,4 @@ Diese Layout ist der Testplatz für KLE zu KRK Übersetzung und lädt in KRK und
 
 |
 
-Beachten Sie die Beschriftung und Zeilenbezeichnungen, da diese für die Übersetzung in KRK verwendet werden. Wenn Sie Änderungen vornehmen, können sie überhaupt nicht übersetzen. Denken Sie daran, die Legenden selbst werden nicht übersetzt und sie dienen nur als Keycap Name. Sobald Sie in Blender sind, können die Keycap haben alle Beschriftung darauf durch Beschriftung Masken.
+Achten Sie auf Beschriftung und Zeilenbezeichnung, da sie beim Import nach KRK ausgewertet werden. Änderungen daran können dazu führen, dass eine Taste nicht mehr zugeordnet werden kann. Die Beschriftungen selbst werden nicht übersetzt, sondern dienen nur als Name der Taste. In Blender kann die sichtbare Beschriftung anschließend über Beschriftungsmasken frei festgelegt werden.

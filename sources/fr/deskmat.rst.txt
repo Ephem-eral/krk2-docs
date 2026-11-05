@@ -1,6 +1,6 @@
 Tapis de bureau
 ===============
-Le modèle de table de bureau est construit de façon procédurale avec des coutures de bord générées de façon procédurale.
+Le modèle de tapis de bureau est construit de manière procédurale, avec une couture de bordure elle aussi générée de manière procédurale.
 
 .. image:: img/DeskmatStitching.gif
 
@@ -9,41 +9,41 @@ Le modèle de table de bureau est construit de façon procédurale avec des cout
 Dimensions
 ~~~~~~~~~~
 
-Il a des commandes personnalisées dans le panneau KRK et supporte des dimensions jusqu'à 1m x 1m, des filets d'angle jusqu'à 500mm et une épaisseur jusqu'à 1cm.
+Il dispose de contrôles personnalisés dans le panneau KRK et prend en charge des dimensions allant jusqu'à 1 m x 1 m, des congés de coin allant jusqu'à 500 mm et une épaisseur allant jusqu'à 1 cm.
 
 .. image:: img/DeskmatDims.gif
 
 |
 
-Fabrication dans laquelle la valeur de toutes les matières utilisées n'excède pas 50 % du prix départ usine du produit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bordure
+~~~~~~~
 
 .. image:: img/DeskmatEdging.gif
 
-Cette option coupe complètement les coutures de bord.
+Cette option désactive complètement la couture de bordure.
 
-Imprimé du bord
-~~~~~~~~~~~~~~~
+Impression de bordure
+~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/DeskmatEdgePrint.gif
 
-Utilisez cette option pour désactiver l'impression des bords et utiliser une couleur solide pour le rebord.
+Utilisez cette option pour désactiver l'impression de bordure et utiliser une couleur unie pour la bordure.
 
 |
 
-Couleur du bord
-~~~~~~~~~~~~~~~
+Couleur de bordure
+~~~~~~~~~~~~~~~~~~
 
 .. image:: img/DeskmatEdgeColor.gif
 
-C'est là que vous définissez la couleur pour le rebord quand il s'agit d'une couleur solide.
+C'est ici que vous définissez la couleur de la bordure lorsqu'elle est unie.
 
 |
 
 Matériau
 ~~~~~~~~
 
-Pour modifier le matériel, vous devrez modifier les matériaux appliqués que vous pouvez sélectionner dans les Propriétés du matériel et modifier dans le Éditeur de shaders.
+Pour modifier le matériau, vous devez modifier les matériaux appliqués, que vous pouvez sélectionner dans les propriétés du matériau et modifier dans l'éditeur de shaders.
 
 .. image:: img/DeskmatMats.gif
 
@@ -53,11 +53,11 @@ Vous pouvez remplacer le matériau appliqué et sélectionner un autre matériau
 
 |
 
-Exportations
-~~~~~~~~~~~~
+Exportation
+~~~~~~~~~~~
 
-Si vous exportez le deskmat vers d'autres logiciels, la couture du deskmat doit être convertie et l'attribut UV converti en UV map. Voir la section d'exportation de la page Câbles USB pour apprendre ce processus.
+Si vous exportez le tapis de bureau vers un autre logiciel, la couture du tapis de bureau doit être convertie et l'attribut UV converti en UV map. Consultez la section exportation de la page Câbles USB pour apprendre cette procédure.
 
-:ref:`Exporting Cables <ExportingCables>`
+:ref:`Exportation des câbles <ExportingCables>`
 
 |

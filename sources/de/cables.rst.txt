@@ -1,26 +1,26 @@
 .. _cables:
 
 USB-Kabel
-==========
-Es stehen einige Konfigurationen von USB-Kabeln zur Verfügung.
+=========
+Es gibt mehrere Ausführungen von USB-Kabeln.
 
 .. image:: img/USBCables.JPG
 
 |
 
-Verwenden Sie die Griffe, um das Kabel zu posieren, wie Sie wollen.
+Verwenden Sie die Griffe, um das Kabel nach Wunsch zu positionieren.
 
 .. image:: img/CableHandle.gif
 
 |
 
-USB-Köpfe sind mit anderen Typen durch Objektdaten austauschbar.
+Die USB-Stecker lassen sich über die Objektdaten gegen andere Typen austauschen.
 
 .. image:: img/CableHeads.gif
 
 |
 
-Aviator und Lemo sind austauschbar und können ausstecken.
+Aviator-Steckverbinder und LEMO-Steckverbinder sind austauschbar und lassen sich abziehen.
 
 .. image:: img/CableLEMO.gif
 
@@ -28,62 +28,62 @@ Aviator und Lemo sind austauschbar und können ausstecken.
 
 Einstellungen
 ~~~~~~~~~~~~~
-Die Einstellungen sind pro Objekt und pro Kabelsegment getrennt.
+Die Einstellungen gelten separat pro Objekt und pro Kabelabschnitt.
 
 .. image:: img/CableProps.JPG
 
 |
 
-Stecker
--------
-Diese Einstellung steckt den Lemo oder Aviator wieder zusammen.
+Plug
+----
+Diese Einstellung steckt den LEMO- oder Aviator-Steckverbinder wieder zusammen.
 
 .. image:: img/CablePlug.gif
 
 |
 
-Farbe
+Color
 -----
-Die Farben 1 und 2 liefern das Material mit Farbe und Akzentfarbe.
+Farbe 1 und 2 versorgen das Material mit Farbe und Akzentfarbe.
 
 .. image:: img/CableColor.gif
 
 |
 
-Drehen
-------
-Diese Einstellung dreht die Spule vertikal.
+Flip
+----
+Diese Einstellung kippt die Spirale vertikal.
 
 .. image:: img/CableFlip.gif
 
 |
 
-Spiegel
--------
+Mirror
+------
 Diese Einstellung spiegelt das Kabel horizontal.
 
 .. image:: img/CableMirror.gif
 
 Tech Flex
 ---------
-Diese Einstellung ändert das Kabel von einem Zopf zu Tech Flex.
+Diese Einstellung stellt das Kabel von einem Geflecht auf Tech Flex um.
 
 .. image:: img/CableTechFlex.gif
 
 |
 
-Gerades Kabel
+Straight Cable
 ~~~~~~~~~~~~~~
-Das einfache USB-Kabel ist eine Ausnahme darin, dass es durch das Bearbeiten des Kurvenobjekts und das Hinzufügen von Eckpunkten durch Unterteilung der Segmente unendlich verlängert wird.
+Das einfache USB-Kabel ist insofern eine Ausnahme, als es dafür ausgelegt ist, sich durch Bearbeiten des Kurvenobjekts und Hinzufügen von Vertices durch Unterteilen der Segmente beliebig zu verlängern.
 
 .. image:: img/CableSubdiv.gif
 
 |
 
-Werkstoff
-~~~~~~~~~
+Material
+~~~~~~~~
 
-Um das Material zu ändern, müssen Sie die verwendeten Materialien bearbeiten oder über den Modifier-Abschnitt der Eigenschaften des Objekts ersetzen.
+Wie bei der Deskmat müssen Sie, um das Material zu ändern, die zugewiesenen Materialien bearbeiten oder sie über den Bereich Modifikatoren in den Objekteigenschaften ersetzen.
 
 .. image:: img/CableMaterial.jpg
 
@@ -94,16 +94,16 @@ Um das Material zu ändern, müssen Sie die verwendeten Materialien bearbeiten o
 Kabel exportieren
 ~~~~~~~~~~~~~~~~~
 
-Wenn Sie das Kabel in eine andere Software exportieren, hat das Kabel keine UV-Map und muss aus einem Attribut konvertiert werden. Wählen Sie das Kabel (Draht) Objekt aus und drücken Sie strg+A und wählen Sie dann Visual Geometry to Mesh.
+Beim Export in eine andere Software verfügt das Kabel noch nicht über eine UV-Map; diese muss aus einem Attribut erzeugt werden. Wählen Sie zunächst das Kabelobjekt (Wire) aus, drücken Sie ctrl+A und wählen Sie Visual Geometry to Mesh.
 
 .. image:: img/CurveToMesh.gif
 
 |
 
-Sobald dies getan ist, gibt es ein Attribut in den Daten des Objekts, das in UV-Map umgewandelt werden kann, indem der Dropdown in Attributen in Objektdaten Eigenschaften verwendet wird. Setzt den Modus auf UV-Map und drückt okay.
+Danach gibt es in den Objektdaten ein Attribut, das über das Dropdown-Menü unter Attribute in den Objektdaten-Eigenschaften in eine UV-Map konvertiert werden kann. Stellen Sie den Modus auf UV Map und bestätigen Sie mit OK.
 
 .. image:: img/AttrToUV.gif
 
 |
 
-Ihr Kabel ist jetzt zum Export bereit.
+Ihr Kabel ist nun für den Export bereit.

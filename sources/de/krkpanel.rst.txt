@@ -1,32 +1,32 @@
-KRK
-=========
+KRK-Panel
+==========
 
 .. image:: img/krkpanel204.jpg
 
-Das KRK-Panel befindet sich in der Seitenleiste (N) und ist in vier Abschnitte unterteilt: Relink, Daten, Farbe und Eigenschaften. Die letzten beiden sind nur sichtbar, wenn die entsprechenden Eigenschaften verfügbar sind.
+Das KRK-Panel befindet sich in der Seitenleiste (N) und ist in vier Bereiche unterteilt: Relink, Data, Color und Properties. Die letzten beiden sind nur sichtbar, wenn die entsprechenden Eigenschaften verfügbar sind.
 
 |
 
-Relinken
-~~~~~~~~
-Relink ist ein Objektdaten-Manager, der entwickelt wurde, um schnell zwischen Keycap-Profile, Zeilen, Größen, Tasten und Homing-Optionen zu wechseln. Jede Option, die das Kontrollkästchen aktiviert hat, wird berücksichtigt, wenn Sie die Schaltfläche Setzen drücken.
+Relink
+~~~~~~
+Relink ist ein Objektdaten-Manager, mit dem Sie schnell zwischen Keycap-Profilen, Zeilen, Größen, Tasten und Homing-Optionen wechseln können. Jede Option, bei der das Kontrollkästchen aktiviert ist, wird berücksichtigt, wenn Sie auf die Schaltfläche Set klicken.
 
 |
 
-Importieren KLE
----------------
-KRK hat die Möglichkeit, Keyboard Layout Editor JSON-Dateien zu importieren. KLE nennt seine Objekte nicht, so dass der Importeur versucht, die Tasten basierend auf den Beschriftung und der Zeile (K1-K6) zu interpretieren und setzt einen Platzhalter, der es kann. Verwenden Sie diese KLE als Beispiel oder als Grundlage, um Ihr eigenes zu generieren:
+Import KLE
+----------
+KRK kann JSON-Dateien des Keyboard Layout Editor importieren. KLE benennt seine Objekte nicht, daher versucht der Importer, die Tasten anhand der Beschriftung und der Zeile (K1-K6) zu interpretieren, und setzt wo möglich einen Platzhalter. Verwenden Sie dieses KLE als Beispiel oder als Grundlage, um Ihr eigenes zu erstellen:
 
 `http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a <http://www.keyboard-layout-editor.com/#/gists/f7528ebe1348daab7abc45bc2f662c8a>`_
 
 |
 
-Profil
+Profile
 -------
 
 .. image:: img/KRK2ProfileSwitch.gif
 
-Verfügbare Profile und deren Präfixe werden in der Profilsammlung im Outliner aufgelistet, während Zeilen und andere Optionen, für die Sie eine Intuition entwickeln. Geben Sie die Option in das entsprechende Feld (case sensitive) mit dem Kontrollkästchen aktiviert und drücken Sie Set, um die Option einzustellen.
+Die verfügbaren Profile und ihre Präfixe sind in der Sammlung Profile im Outliner aufgeführt; für Zeilen und andere Optionen entwickeln Sie mit der Zeit ein Gefühl. Geben Sie die Option in das entsprechende Feld ein (Groß-/Kleinschreibung beachten), aktivieren Sie das Kontrollkästchen und klicken Sie auf Set, um die Option zu setzen.
 
 |
 
@@ -35,53 +35,53 @@ Zeile
 
 .. image:: img/KRKRows.jpg
 
-Aufgrund der Tatsache, dass verschiedene Hersteller und Keycap-Profile unterschiedliche Zeilennummerierungssysteme verwenden, führt KRK eine weitere, basierend auf der tatsächlichen Position auf der Tastatur ab der Rückseite.
+Da verschiedene Hersteller und Keycap-Profile unterschiedliche Zeilennummerierungssysteme verwenden, führt KRK ein weiteres ein, das auf der tatsächlichen Position auf der Tastatur von hinten ausgehend basiert.
 
 |
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| Profil                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Fakultativ | Zeilen      | Fakultativ |
-+=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+============+=============+============+
-| KRK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 0          | 1-2-3-4-5-6 | 7          |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| Cherry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 0          | 1-1-2-3-4-4 | 5          |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| Gleichstrom-Gleichstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Gleichstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechselstrom-Wechsel | 5          | 1-1-2-3-4-4 |            |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| DSA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |            | Einheitlich |            |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| DSS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |            | 1-1-2-3-4-3 | 4          |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| KAM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |            | Einheitlich |            |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| KAT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 5          | 4-4-3-2-1-1 |            |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| OEM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |            | 1-1-2-3-4-4 |            |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
-| SA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |            | 1-1-2-3-4-3 | 4          |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+------------+
++---------+----------+-------------+----------+
+| Profile | Optional | Zeilen      | Optional |
++=========+==========+=============+==========+
+| KRK     | 0        | 1-2-3-4-5-6 | 7        |
++---------+----------+-------------+----------+
+| Cherry  | 0        | 1-1-2-3-4-4 | 5        |
++---------+----------+-------------+----------+
+| DCS     | 5        | 1-1-2-3-4-4 |          |
++---------+----------+-------------+----------+
+| DSA     |          | Uniform     |          |
++---------+----------+-------------+----------+
+| DSS     |          | 1-1-2-3-4-3 | 4        |
++---------+----------+-------------+----------+
+| KAM     |          | Uniform     |          |
++---------+----------+-------------+----------+
+| KAT     | 5        | 4-4-3-2-1-1 |          |
++---------+----------+-------------+----------+
+| OEM     |          | 1-1-2-3-4-4 |          |
++---------+----------+-------------+----------+
+| SA      |          | 1-1-2-3-4-3 | 4        |
++---------+----------+-------------+----------+
 
-Einige Profile haben eine auswechselbare erste und/oder letzte Reihe.
+Bei einigen Profilen sind die erste und/oder letzte Zeile austauschbar.
 
-(Einheitlich in der Tabelle bedeutet, dass alle Zeilen die gleiche Höhe haben; geben Sie sie ein wie-ist.)
+(Uniform in der Tabelle bedeutet, dass alle Zeilen die gleiche Höhe haben; geben Sie es unverändert ein.)
 
 |
 
-Größe
------
+Size
+----
 
 .. image:: img/KRK2ShiftSize.gif
 
-Sie können die Größe einer Keycap ändern, indem Sie die Größe der vier Zeicheneinheiten in das Feld eingeben. Wenn die Zielgeometrie verfügbar ist, ändert sie sich in die gewünschte Größe.
+Sie können die Größe eines Keycaps ändern, indem Sie die vierstellige Einheitengröße in das Feld eingeben. Wenn die Zielgeometrie verfügbar ist, wird sie auf die gewünschte Größe geändert.
 
 |
 
-Schlüssel
----------
+Key
+----
 
 .. image:: img/Releg.jpg
 
-Geben Sie den Keycap-Namen in das Feld ein, um Keycaps zu einem anderen Keycap zu wechseln. Dies ist praktisch, um auf ein relegierbares (Releg), ein leeres Keycap (Blank) oder Fenster (``*_WIN``) zu wechseln.
+Geben Sie den Keycap-Namen in das Feld ein, um Keycaps gegen einen anderen Keycap auszutauschen. Dies ist praktisch, um zu einem Keycap mit austauschbarer Beschriftung (Releg), einem unbeschrifteten Keycap (Blank) oder einem mit Fenster (``*_WIN``) zu wechseln.
 
 |
 
@@ -90,80 +90,80 @@ Homing
 
 .. image:: img/KRK2Homing.gif
 
-Sie können den Typ des Homing-Schlüssels zwischen bar/nub/scoop ändern, indem Sie diesen Dropdown verwenden und auf Set klicken.
+Sie können den Typ der Homing-Taste zwischen Bar/Nub/Scoop ändern, indem Sie dieses Dropdown-Menü verwenden und auf Set klicken.
 
 |
 
-Verbindungsmaterial
--------------------
-Link Material ist eine Option, die es Ihnen erlaubt, das aktuell angewendete Material an das Ziel Objektdaten zu übertragen. Sie möchten dies möglicherweise ein- oder ausschalten, je nachdem, was das gewünschte Ergebnis ist. Wenn Sie zum Beispiel auf das Platzhalter-Profil (PLA) gewechselt haben, möchten Sie, dass die Option Link Material ausgeschaltet wird, damit die Capsmat nicht auf die Platzhalter übertragen wird.
+Link Material
+-------------
+Link Material ist eine Option, mit der Sie das aktuell angewendete Material auf die Ziel-Objektdaten übertragen können. Je nach gewünschtem Ergebnis möchten Sie diese Option möglicherweise ein- oder ausschalten. Wenn Sie beispielsweise zum Platzhalter-Profil (PLA) wechseln, sollten Sie die Option Link Material ausschalten, damit das Capsmat nicht auf die Platzhalter übertragen wird.
 
 |
 
-Einstellungen kopieren
-----------------------
+Copy Settings
+-------------
 
 .. image:: img/CopySettings.jpg
 
-Auf der rechten Seite der Schaltfläche Set befindet sich die Schaltfläche Einstellungen kopieren, die Ihnen hilft, den Objektdaten-Namen in den Objektdaten-Dropdown zu kopieren, um bei der Suche nach einem bestimmten Schlüssel zu helfen.
+Rechts neben der Schaltfläche Set befindet sich die Schaltfläche Copy Settings. Sie hilft Ihnen, den Namen der Objektdaten in das Dropdown-Menü für Objektdaten zu kopieren, um die Suche nach einer bestimmten Taste zu erleichtern.
 
 |
 
-   In den folgenden Abschnitten werden nur Optionen für das aktive (Highlighted) Objekt angezeigt.
+   Die folgenden Bereiche zeigen nur Optionen für das aktive (hervorgehobene) Objekt an.
 
 |
 
-Daten
-~~~~~
+Data
+~~~~
 
-Die Daten spiegeln die Objektdaten und Materialzuweisungsabschnitte aus dem Eigenschaften-Panel wider, um sie leichter zugänglich zu machen.
+Data spiegelt die Bereiche für Objektdaten und Materialzuweisung aus dem Eigenschaften-Panel wider, um den Zugriff zu erleichtern.
 
 |
 
-Suchen Sie einfach durch Objektdaten, um das aktive Objektdaten durch ein anderes zu ersetzen. Z.B. Duplikat oder Instanz ein Keycap und machen Sie die Kopie zu einem Switch oder Stabilisator.
+Durchsuchen Sie die Objektdaten einfach, um die aktiven Objektdaten durch andere zu ersetzen. Z. B. duplizieren oder instanziieren Sie einen Keycap und machen Sie die Kopie zu einem Switch oder Stabilisator.
 
 .. image:: img/ObjectDataSwitch.gif
 
 |
 
-Restore Meshes können verwendet werden, wenn ein Keycap nicht wiederverknüpft werden kann, weil es dupliziert, importiert oder eingefügt wurde. Es verbindet es mit der ähnlich genannten Version, die bereits in der Datei ist. Wenn Sie den importierten als Basis verwenden möchten, dann benennen Sie seine Objektdaten um, um.001 am Ende nicht zu haben.
+Restore Meshes kann verwendet werden, wenn ein Keycap nicht neu verknüpft werden kann, weil es dupliziert, importiert oder eingefügt wurde. Es verbindet es mit der gleichnamigen Version wieder, die bereits in der Datei vorhanden ist. Wenn Sie das importierte als Basis verwenden möchten, benennen Sie dessen Objektdaten so um, dass am Ende nicht .001 steht.
 
 .. image:: img/RestoreMesh.gif
 
 |
 
-Restore Collections erscheint nur, wenn Sie ein Collection-Asset ausgewählt haben. Dies ermöglicht es, es in einen editierbaren Zustand wiederherzustellen.
+Restore Collections erscheint nur, wenn ein Sammlungs-Asset ausgewählt ist. Damit können Sie es in einen bearbeitbaren Zustand zurückversetzen.
 
 .. image:: img/RestoreCollection.jpg
 
 |
 
-Die Schaltfläche Kopieren verbindet hier das Material aus dem aktiven Keycap-Objekt mit allen anderen ausgewählten Keycaps-Objekten und ignoriert dabei nicht-Keycap-Objekten.
+Die Schaltfläche Copy hier verknüpft das Material vom aktiven Keycap-Objekt mit allen anderen ausgewählten Keycaps und ignoriert dabei Nicht-Keycap-Objekte.
 
 .. image:: img/MatCopy.gif
 
 |
 
-Farbe
+Color
 ~~~~~
 
-Farbe ist ein Farb- und Palettenverwaltungssystem, das Ihnen hilft, die Farbaspekte Ihrer Capsmat zu kontrollieren. Es wird nur angezeigt, wenn Farbeigenschaften verfügbar sind.
-Wenn Sie ein Keycap ausgewählt haben, das keine Farbeigenschaften enthält, steht die Einrichtungstaste zur Verfügung, um alle notwendigen Eigenschaften auf das Objekt Keycap anzuwenden.
+Color ist ein Farb- und Palettenverwaltungssystem, mit dem Sie die Farbaspekte Ihres Capsmats steuern können. Es wird nur angezeigt, wenn Farb-Eigenschaften verfügbar sind.
+Wenn Sie einen Keycap ausgewählt haben, der keine Farb-Eigenschaften enthält, ist die Schaltfläche Setup verfügbar, um alle erforderlichen Eigenschaften auf das Keycap-Objekt anzuwenden.
 
 .. image:: img/ColorSetup.jpg
 
 |
 
-Mit dem Custom/Palette-Switcher können Sie Switch zwischen den benutzerdefinierten Farb- und Paletten-Workflows wählen. Mit den Farben A-E und Paletten-Slidern A-E können Sie diese Aspekte der Capsmat pro Objekt über die Paletten-Node-Gruppen steuern. Wählen Sie Ihre Optionen und drücken Sie Set, um sie auf alle ausgewählten Keycap-Objekte zu übertragen oder drücken Sie die einzelnen Kopiertasten, um sie auf eine Option zu begrenzen. Kopieren und Einfügen-Buttons sind unten, um einen Index von Optionen für alle ausgewählten Objekte zu erstellen und zurückzurufen.
+Mit dem Umschalter Custom/Palette können Sie zwischen den Workflows für benutzerdefinierte Farben und Paletten wechseln. Die Farben A-E und die Palette-Regler A-E ermöglichen es Ihnen, diese Aspekte des Capsmats objektbezogen über die Palette-Node-Gruppen zu steuern. Wählen Sie Ihre Optionen und drücken Sie Set, um sie auf alle ausgewählten Keycap-Objekte zu übertragen, oder drücken Sie die einzelnen Kopierschaltflächen, um es auf jeweils eine Option zu beschränken. Die Schaltflächen Copy und Paste befinden sich unten, um einen Index von Optionen für alle ausgewählten Objekte zu erstellen und abzurufen.
 
 .. image:: img/ColorSetPaste.gif
 
 |
 
-Eigenschaften
-~~~~~~~~~~~~~
+Properties
+~~~~~~~~~~
 
-Eigenschaften sind auch nur sichtbar, wenn benutzerdefinierte Eigenschaften verfügbar sind. Für die USB-Kabel zeigt es die Kabeloptionen wie z.B. Flecht-/Techflex- und Heatshrink-Farbe für die Köpfe an. Wenn das Deskmat ausgewählt ist, wird stattdessen die Dimensions- und Einfassungsoptionen angezeigt.
+Properties ist ebenfalls nur sichtbar, wenn benutzerdefinierte Eigenschaften verfügbar sind. Bei den USB-Kabeln werden die Kabeloptionen wie Braid/Techflex und die Schrumpfschlauchfarbe für die Enden angezeigt. Wenn die Deskmat ausgewählt ist, werden stattdessen die Abmessungs- und Randeinfassungsoptionen angezeigt.
 
 .. image:: img/KRK2PanelProps.gif
 

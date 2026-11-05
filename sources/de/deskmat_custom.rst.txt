@@ -1,33 +1,33 @@
-Hinzufügen Ihrer eigenen Deskmat Design
-=======================================
+Eigenes Deskmat-Design hinzufügen
+==================================
 
-Sie können Ihr eigenes Deskmat-Design zum Deskmat hinzufügen, indem Sie drei Materialien bearbeiten: Deskmat_Mat, Deskmat_Edging und Deskmat_Stitching. Diese finden Sie im Panel Materialeigenschaften.
+Sie können ein eigenes Deskmat-Design hinzufügen, indem Sie drei Materialien bearbeiten: Deskmat_Mat, Deskmat_Edging und Deskmat_Stitching. Diese finden Sie im Panel „Materialeigenschaften“.
 
 .. image:: img/Deskmat_Slots.jpg
 
 |
 
-Finden Sie den Bildtexturknoten in jedem der Materialien und laden Sie Ihr eigenes Bild in den Knoten.
+Suchen Sie in jedem der Materialien den Bildtextur-Node und laden Sie Ihr eigenes Bild in den Node.
 
 .. image:: img/Deskmat_Thoughts.jpg
 
 |
 
-Standardmäßig ist das Deskmat in der Lage, auf 1mx1m zu skalieren, so dass Ihr Design auf einem 1mx1m Quadrat positioniert werden sollte.
+Standardmäßig lässt sich das Deskmat auf 1 m × 1 m skalieren, daher sollte Ihr Design auf einem Quadrat von 1 m × 1 m positioniert sein.
 
 .. image:: img/Deskmat_Square.jpg
 
 |
 
-Wenn Sie ein anderes Bild verwenden möchten, stellen Sie sicher, dass die Position im Mapping-Knoten auf die Hälfte der Deskmat-Größe und die Skala auf die Größe in Metern eingestellt wird.
+Wenn Sie lieber ein Bild in einer anderen Größe verwenden möchten, stellen Sie im Mapping-Node die Position auf die halbe Deskmat-Größe und die Skalierung auf die Größe in Metern ein.
 
 .. figure:: img/Deskmat_Image.jpg
 
-Bild: Milchstraße von Metallbender und dem Raumigen
+Image: Milky Way by metalbender and the spacey 
 
 |
 
-Sie können den Bildtexturknoten auch durch ein Muster ersetzen.
+Sie können den Bildtextur-Node auch durch ein Muster ersetzen.
 
 .. image:: img/Deskmat_Pattern.jpg
 

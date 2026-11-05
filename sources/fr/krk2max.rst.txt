@@ -1,30 +1,30 @@
-KRK à 3ds Max
-==============
-Exporter vers 3d Studio Max est assez simple. Cependant, il y a quelques choses que nous devons faire à l'avance. 3ds Max ne gère pas les ngons aussi bien que Blender ne mais il aime les triangles et les quads. Alors donnons-lui ce qu'il veut.
+KRK vers 3ds Max
+================
+L'exportation vers 3ds Max est assez simple. Cependant, quelques opérations préalables sont nécessaires. 3ds Max ne gère pas aussi bien les ngones que Blender, mais il adore les triangles et les quads. Donnons-lui donc ce qu'il attend.
 
 .. image:: img/krk2maxstart.jpg
 
 |
 
-Une fois que votre clavier ou votre kit est prêt, cachez tous les autres objets que vous ne voulez pas faire partie de l'exportation. Il est probable que cela inclurait la collection de scènes alors éteignez-la.
+Une fois votre clavier ou kit prêt, masquez tous les autres objets qui ne doivent pas faire partie de l'exportation. Il s'agira probablement de la collection de la scène, désactivez-la donc.
 
 .. image:: img/TurnOffSceneCollection.gif
 
 |
 
-Une fois que c'est la seule chose qui est visible, sélectionnez l'un des objets puis sélectionnez tout en appuyant sur A sur votre clavier. Appuyez ensuite sur l'onglet pour entrer dans le mode d'édition sur tous les objets sélectionnés.
+Une fois que seuls les éléments de votre clavier ou de votre kit sont visibles, sélectionnez l'un de ces objets puis sélectionnez tout en appuyant sur A au clavier. Appuyez ensuite sur Tab pour passer en mode édition sur tous les objets sélectionnés.
 
 .. image:: img/KeyboardVertices.jpg
 
 |
 
-Vous devez être en mode face select. Le raccourci est 3 sur votre ligne de nombre.
+Vous devez être en mode sélection de faces. Le raccourci est 3 sur la rangée de chiffres.
 
 .. image:: img/FaceMode.jpg
 
 |
 
-Désélectionnez tout en appuyant sur A deux fois de suite ou Alt+A.
+Désélectionnez tout en appuyant deux fois de suite sur A ou sur Alt+A.
 
 .. image:: img/KeyboardFaces.jpg
 
@@ -36,31 +36,31 @@ Allez maintenant dans Select > Select By Trait > Faces By Sides.
 
 |
 
-Utilisez le popup en bas à gauche pour définir le type à Greater Than.
+Utilisez la fenêtre contextuelle en bas à gauche pour définir le type sur Greater Than.
 
 .. image:: img/SelectGreaterThan.jpg
 
 |
 
-Maintenant tous les Ngons et seuls les Ngons sont sélectionnés.
+Tous les ngones, et uniquement les ngones, sont maintenant sélectionnés.
 
 .. image:: img/KeyboardNgons.jpg
 
 |
 
-Cliquez ensuite sur Face > Triangula Faces ou Ctrl+T puis appuyez sur Tab pour quitter le mode d'édition.
+Cliquez ensuite sur Face > Triangulate Faces ou sur Ctrl+T, puis appuyez sur Tab pour quitter le mode édition.
 
 .. image:: img/KeyboardTriangulate.gif
 
 |
 
-Votre clavier est maintenant prêt à l'exportation. Cliquez sur Fichier > Exporter > FBX. Donnez à votre fichier un nom, définissez le mode de chemin à copier et n'oubliez pas de vous assurer que Limit to Selected Objects est cochée.
+Votre clavier est maintenant prêt pour l'exportation. Cliquez sur File > Export > FBX. Donnez un nom à votre fichier, réglez Path Mode sur Copy et n'oubliez pas de vérifier que Limit to Selected Objects est bien coché.
 
 .. image:: img/krk2maxexportsettings.png
 
 |
 
-Maintenant, à Max, importez votre fbx.
+Maintenant, dans Max, importez votre fbx.
 
 .. image:: img/krk2maximported.png
 

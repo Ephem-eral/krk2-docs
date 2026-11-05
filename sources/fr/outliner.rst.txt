@@ -1,6 +1,6 @@
-Aperçu
+Outliner
 ========
-L'esquisseur conserve tous les objets de votre scène organisés en collections.
+L'Outliner contient tous les éléments de votre scène, organisés en collections.
 
 .. image:: img/Outliner.jpg
 
@@ -16,64 +16,64 @@ Claviers
 
 .. image:: img/BoardCollection.jpg
 
-Claviers sont organisés par taille, puis alphabétiques. Utilisez le triangle pour creuser dans les sous-collections, puis dans les clavier disposition options telles que le cadenas à marche ou la rangée inférieure de Tsangan.
+Les claviers sont organisés par taille, puis par ordre alphabétique. Utilisez le triangle pour parcourir les sous-collections, puis les options de disposition du clavier, comme la variante de touche « stepped Caps Lock » ou la rangée inférieure Tsangan.
 
-Plans-cadres
+Dispositions
 ~~~~~~~~~~~~
 
 .. image:: img/DuplicateLinkedCollection.gif
 
-Ce sont des mises en page supplémentaires que vous pouvez utiliser pour remplir une clavier personnalisée que vous avez importée. Faites un clic droit sur disposition et duplicata liés pour créer une collection liée puis déplacez-la vers la collection de clavier.
+Il s'agit de dispositions supplémentaires que vous pouvez utiliser pour peupler un clavier personnalisé que vous avez importé. Faites un clic droit sur la disposition et choisissez Dupliquer lié pour créer une collection liée, puis déplacez-la dans la collection de votre clavier.
 
 Accessoires
 ~~~~~~~~~~~
-Les accessoires disponibles sont énumérés ici et comprennent un modèle de matelas de bureau, une souris, des câbles USB et un repose-bracelet.
+Les accessoires disponibles sont listés ici : un modèle de tapis de bureau, une souris, des câbles USB et un repose-poignets.
 
 Scène
 ~~~~~
 
 .. image:: img/SceneCollection.jpg
 
-C'est là que vous accéderez à vos éléments de scène tels que les caméras de lumière et les fonds.
+C'est ici que vous accéderez aux éléments de votre scène, tels que les lumières, les caméras et les arrière-plans.
 
 Caméras
 -------
-Les caméras ont été nettoyées dans KRK2 mais vous pouvez les reproduire pour définir vos propres angles, etc.
+Les caméras ont été réduites dans KRK2, mais vous pouvez les dupliquer pour définir vos propres angles, etc.
 
 Lumières
 --------
 
 .. image:: img/LightsCollection.jpg
 
-Différentes configurations de lumière ont été créées pour aider à décider d'un look général pour votre scène. Elles sont basées sur des configurations HDRI populaires d'éclairage de studio, mais offrent plus de liberté et de réglage. N'hésitez pas à ajuster les intensités et le positionnement de ces lumières.
+Différents éclairages ont été créés pour vous aider à définir l'aspect général de votre scène. Ils sont basés sur des configurations HDRI de studio populaires, mais offrent plus de liberté et de réglages. N'hésitez pas à ajuster l'intensité et le positionnement de ces lumières.
 
-Planchers
----------
+Sols
+----
 
 .. image:: img/FloorsCollection.jpg
 
-Un ensemble d'étages intéressants viennent avec KRK pour vous faire démarrer. Cela inclut un plancher ShadowCatcher qui est basé sur FloorLightGrey mais capture l'ombre pour des rendus transparents de fond.
+KRK est livré avec un ensemble de sols intéressants pour vous aider à démarrer. Cela inclut un sol ShadowCatcher basé sur FloorLightGrey, qui capture l'ombre pour les rendus sur fond transparent.
 
-Bâtiment
+Construction
 ~~~~~~~~~~~~
 
 Profils
---------
+-------
 
 .. image:: img/ProfilesCollection.jpg
 
-Tous les profils de touches vivent ici.
+Tous les profils de touches se trouvent ici.
 
-Installation UV
----------------
+Configuration UV
+----------------
 
 .. image:: img/UVSetup.jpg
 
-Cette collection contient tout ce qui est nécessaire pour faire des projections UV pour le touches.
+Cette collection contient tout ce qui est nécessaire pour réaliser les projections UV des touches.
 
 Pièces
 ------
 
 .. image:: img/PartsCollection.jpg
 
-Cette collection contient les pièces supplémentaires que vous pouvez données d’objet échanger pour ajouter des éléments à votre claviers.
+Cette collection contient les pièces supplémentaires dont vous pouvez échanger les données d'objet pour ajouter des éléments à vos claviers.

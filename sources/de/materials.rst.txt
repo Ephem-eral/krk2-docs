@@ -1,32 +1,32 @@
 Shader-Editor
-=============
-Nachdem Sie ein Objekt ausgewählt haben, steht das Material, das darauf angewendet wird, im Materialeditor zur Bearbeitung zur Verfügung. Dies gilt nur für das aktive oder markierte Objekt.
+===============
+Nachdem Sie ein Objekt ausgewählt haben, können Sie das darauf angewendete Material im Material-Editor bearbeiten. Dies gilt nur für das aktive oder hervorgehobene Objekt.
 
 .. image:: img/SelectMat.gif
 
 |
 
-Mit dem Dropdown können Sie ein anderes Material auswählen und auf das Objekt anwenden.
+Über das Dropdown-Menü können Sie ein anderes Material auswählen und auf das Objekt anwenden.
 
 .. image:: img/MatDropdown.gif
 
 |
 
-Wenn Sie ein Material duplizieren möchten, so dass es das Material auf andere Objekte nicht beeinflusst, können Sie auf die Zahl klicken (die bedeutet, wie viele Objekte dieses Material tragen) und ein Duplikat erstellt werden. Sie können auch auf die Schaltfläche Neues Material hinzufügen, um den gleichen Effekt.
+Wenn Sie ein Material duplizieren möchten, ohne dass sich die Änderungen auf das Material anderer Objekte auswirken, können Sie auf die Zahl klicken (sie gibt an, wie viele Objekte dieses Material verwenden); dabei wird eine Kopie erstellt. Sie können auch auf die Schaltfläche zum Hinzufügen eines neuen Materials klicken, um dasselbe zu erreichen.
 
 .. image:: img/DupeMat.gif
 
 |
 
-Bildtexturknoten erfordern Koordinaten, um zu wissen, wie man ein 2D-Bild auf einem 3D-Objekt verwendet. Wenn keine Koordinaten an den Vektoreingang angeschlossen werden, wird der aktive UV verwendet.
+Bildtextur-Nodes benötigen Koordinaten, damit sie wissen, wie ein 2D-Bild auf einem 3D-Objekt verwendet wird. Wenn keine Koordinaten mit dem Vektor-Eingang verbunden sind, wird die aktive UV-Map verwendet.
 
-Einige Materialien enthalten deaktivierte oder graue Nodes. Diese werden beim Rendern nicht berücksichtigt. Um sie wieder zu aktivieren, wählen Sie den Node mit einem Linksklick aus und drücken Sie M.
+Einige Materialien enthalten deaktivierte Nodes oder graue Nodes. Diese werden beim Rendering nicht berücksichtigt. Um diese Nodes zu aktivieren, können Sie den Node per Linksklick auswählen und M drücken, um ihn wieder zu aktivieren.
 
 .. image:: img/UnmuteNode.gif
 
 |
 
-Das Weltmaterial ist auch vom Materialeditor zugänglich. Klicken Sie oben links auf den Dropdown, der derzeit Objekt sagt und wählen Sie Welt.
+Das Weltmaterial ist ebenfalls über den Material-Editor erreichbar. Klicken Sie oben links auf das Dropdown-Menü, das derzeit Object anzeigt, und wählen Sie World.
 
 .. image:: img/ObjWorld.gif
 

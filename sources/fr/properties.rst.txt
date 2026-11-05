@@ -1,42 +1,42 @@
 Éditeur de propriétés
-=====================
+======================
 
-La section des propriétés de l'interface utilisateur Blender est massive, donc je vais seulement appeler quelques-uns des domaines les plus pertinents.
+La section des propriétés de l'interface de Blender est immense, je ne vais donc mentionner que quelques-unes des zones les plus pertinentes.
 
 |
 
-Propriétés du rendu
+Propriétés de rendu
 ~~~~~~~~~~~~~~~~~~~
 Périphérique de rendu
 ---------------------
 
 .. image:: img/RenderDevice.jpg
 
-Vous pouvez choisir d'accélérer votre rendu en utilisant le GPU (carte graphique). Gardez à l'esprit que vous devez également configurer l'appareil de calcul dans les préférences pour que cela fonctionne.
+Vous pouvez accélérer votre rendu en utilisant le GPU (carte graphique). Gardez à l'esprit que vous devez également configurer le périphérique de calcul dans les préférences pour que cela fonctionne.
 
 .. image:: img/RenderDevice2.jpg
 
 Échantillonnage
 ---------------
-L'échantillonnage par défaut est réglé à 32 dans le vue 3D et à 256 au moment du rendu. Si vous produisez du polycarbonate, je vous recommande fortement de choisir au moins 512 échantillons.
+L'échantillonnage par défaut est réglé sur 32 dans la vue 3D et sur 256 au moment du rendu. Si vous effectuez un rendu de polycarbonate, je vous recommande vivement de choisir au moins 512 échantillons.
 
-Denoise
--------
-Je vérifie habituellement la denoise sur vue 3D et je la règle automatiquement. Définissez l'échantillon de départ à 2 ou plus pour garder votre vue 3D responsive. Denoising pour le rendu final est également disponible dans le compositeur.
+Débruitage
+----------
+Le débruitage peut être configuré ici. Je coche généralement le débruitage pour la vue 3D et le règle sur automatique. Réglez l'échantillon de départ sur 2 ou plus pour garder votre vue 3D réactive. Le débruitage pour le rendu final est également disponible dans le compositeur.
 
 Film transparent
 ----------------
 
 .. image:: img/FilmTransparent.jpg
 
-Si vous rendez des images d'arrière-plan transparentes, vous devez activer Film>Transparent.
+Si vous effectuez le rendu d'images à fond transparent, vous devez activer Film>Transparent.
 
 Gestion des couleurs
 --------------------
 
 .. image:: img/ColorSF.png
 
-Il s'agit d'une section importante. Blender's par défaut setting for gestion des couleurs is Filmic que j'ai laissé ici sans aucun look appliqué. Certains utilisateurs préfèrent régler cela à Standard parce qu'il semble qu'il est plus facile de correspondre aux couleurs. Je préfère généralement Filmic à cause du rolloff léger et réglé à un Medium High Contrast pour obtenir une sensation très similaire à Standard mais avec une meilleure ombrage. Si vous envisagez d'exporter vers EXR, le choix que vous faites n'a pas d'importance. Il va juste exporter le tampon complet.
+Il s'agit d'une section importante. Le réglage par défaut de la gestion des couleurs dans Blender est Filmic, que j'ai laissé ici sans look appliqué. Certains utilisateurs préfèrent le régler sur Standard car ils ont l'impression qu'il est plus facile d'obtenir une correspondance de couleurs. Je préfère généralement Filmic en raison de l'atténuation de la lumière et je le règle sur Medium High Contrast pour obtenir une sensation très similaire à Standard mais avec un meilleur ombrage. Si vous prévoyez d'exporter en EXR, le choix que vous faites n'a pas d'importance. Le tampon complet sera simplement exporté.
 
 |
 
@@ -45,12 +45,12 @@ Propriétés de sortie
 Résolution
 ----------
 
-C'est là que vous définissez la résolution de l'image de sortie. Cette résolution est également importante lorsque vous faites des choses liées aux UV comme les projections.
+C'est ici que vous définissez la résolution de l'image de sortie. Cette résolution compte également lorsque vous effectuez des opérations liées aux UV, telles que les projections.
 
 |
 
-   Astuce: Si vous voulez définir 4k quand il est actuellement à la résolution 2k, vous pouvez taper un 200% dans le champ au lieu de 100%.
-
+   Astuce : si vous souhaitez passer en 4k alors que la résolution actuelle est de 2k, vous pouvez saisir 200% dans le champ au lieu de 100%.
+   
 .. image:: img/200P.jpg
 
 |
@@ -62,42 +62,42 @@ Caméra active
 
 .. image:: img/SetActiveCamera.jpg
 
-C'est là que vous définissez la caméra active que Blender utilisera lorsque vous appuyez sur rendu.
+C'est ici que vous définissez la caméra active que Blender utilisera lorsque vous lancerez le rendu.
 
 |
 
-Données d’objet Propriétés
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-Données d’objet
+Propriétés des données d'objet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Données d'objet
 ---------------
 
 .. image:: img/ObjectDataSwitch2.gif
 
-Ne sautez pas sur la liste déroulante Données d’objet car elle vous permet de transformer n'importe quel objet en un autre objet en le choisissant dans la liste déroulante.
+Ne négligez pas le menu déroulant Données d'objet, car il vous permet de transformer n'importe quel objet en n'importe quel autre objet en le sélectionnant dans le menu déroulant.
 
-Cartes UV
----------
+UV maps
+-------
 
 .. image:: img/UVMaps.jpg
 
-Si vous avez besoin d'accéder à un objet UV map, c'est là que vous le trouverez.
+Si vous avez besoin d'accéder à l'UV map d'un objet, c'est ici que vous la trouverez.
 
 |
 
 Propriétés du matériau
 ~~~~~~~~~~~~~~~~~~~~~~
-Indice des matériaux
---------------------
+Index de matériau
+-----------------
 
 .. image:: img/MatIndex.jpg
 
-Les objets peuvent avoir plus d'un matériau attaché à eux. Par exemple, le touches touches a 2 fentes de matériau pour le touche matériel et le polycarbonate.
+Les objets peuvent avoir plus d'un matériau attaché. Par exemple, les touches à fenêtre et les touches à légende interchangeable ont 2 emplacements de matériau pour le matériau de la touche et le polycarbonate.
 
-Lien matériel
--------------
+Lien de matériau
+----------------
 
 .. image:: img/MatObjectData.gif
 
-Vous pouvez indiquer Blender s'il faut utiliser le matériel attaché au données d’objet ou l'objet sur une base par objet.
+Vous pouvez indiquer à Blender d'utiliser le matériau attaché aux données d'objet ou à l'objet, individuellement pour chaque objet.
 
 |

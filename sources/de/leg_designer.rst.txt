@@ -1,42 +1,41 @@
+Affinity Designer
+~~~~~~~~~~~~~~~~~
 
-Affinitäts-Designer
-~~~~~~~~~~~~~~~~~~~
-
-In Zukunft wird jedes Profil eine eigene Vorlage haben. KRK1 hatte eine Datei für alle Profile, aber die neu modellierten Keycaps haben einen anderen UV-Raum, so dass sie nun auch in ihre eigenen Vorlagen ausgebrochen sind.
+Künftig erhält jedes Profil eine eigene Vorlage. KRK1 hatte eine Datei für alle Profile, doch die neu modellierten Keycaps nutzen einen anderen UV-Raum und sind daher jetzt ebenfalls in eigene Vorlagen aufgeteilt.
 
 |
 
-Ähnlich wie Inkscape sieht man beim Öffnen der svg-Datei auf der rechten Seite ein Lagen-Panel, das die Legenden sowie die Vorlagen für die Tops und Fronten der Keycaps enthält.
+Ähnlich wie in Inkscape sehen Sie beim Öffnen der SVG-Datei rechts ein Ebenen-Bedienfeld, das die Beschriftungen sowie die Vorlagen für die Oberseiten und Frontseiten der Keycaps enthält.
 
 .. image:: img/AffinityScreen.jpg
 
 |
 
-Die Vorlage ist eingeschaltet, damit Sie Ihre Legenden und Neuheiten in Bezug auf den Touch-Bereich des Keycaps ausrichten können. Denken Sie daran, dass das Endergebnis ein weißes auf schwarzem Bild enthalten muss.
+Die Vorlage ist eingeblendet, damit Sie Ihre Beschriftungen und Novelty-Keycaps leichter an der Tastenfläche der Keycaps ausrichten können. Beachten Sie jedoch, dass das Endergebnis ein Weiß-auf-Schwarz-Bild sein muss.
 
 .. image:: img/AffinityLegends.jpg
 
 |
 
-Erstellen Sie eine neue Ebene und fügen Sie Ihre Legenden in die neue Ebene ein. Sie können die Legenden mit den Cursor-Tasten auf Ihrer Tastatur für größere Schritte verschieben.
+Erstellen Sie eine neue Ebene und fügen Sie Ihre Beschriftungen in diese neue Ebene ein. Sie können die Beschriftungen mit den Cursortasten Ihrer Tastatur verschieben; halten Sie dabei die Umschalttaste gedrückt, um größere Schritte zu machen.
 
 .. image:: img/AffinityLayers.jpg
 
 |
 
-Wenn Sie mit dem Align Tool auf einzelne Keycaps ausrichten möchten, muss die Vorlage in Teile zerlegt werden. Sie können dies tun, indem Sie Layer > Geometrie > Separate Kurven auswählen.
+Wenn Sie das Ausrichten-Werkzeug verwenden möchten, um an einzelnen Keycaps auszurichten, muss die Vorlage in Teile zerlegt werden. Wählen Sie sie dazu aus und klicken Sie auf Ebene > Geometrie > Kurven trennen.
 
 .. image:: img/AffinitySeparate.jpg
 
 |
 
-Exportieren Sie mit File > Export oder Ctrl+Alt+Shift+S Ihre Legenden. Exportieren Sie Ihr WoB-Bild als png 4096x4096 Auflösung oder 8192x8192. Wirklich die Auflösung und der Dateityp sind egal, solange es ein quadratisches Bild ist.
+Sobald Ihre Beschriftungen platziert sind, exportieren Sie mit Datei > Exportieren oder Strg+Alt+Umschalt+S. Exportieren Sie Ihr WoB-Bild als png mit 4096x4096 oder 8192x8192 Auflösung. Tatsächlich spielen Auflösung und Dateityp keine Rolle, solange es sich um ein quadratisches Bild handelt.
 
 .. image:: img/AffinityExport.jpg
 
 |
 
-Wenn Ihre Neuheiten oder Legenden mehrfarbig sind, schalten Sie den schwarzen Hintergrund aus und exportieren Sie als Bild mit Transparenz. Sie können den Alpha-Kanal als Maske verwenden und die Farbe in die Beschriftung-Farbe stecken.
+Wenn Ihre Novelty-Keycaps oder Beschriftungen mehrfarbig sind, deaktivieren Sie den schwarzen Hintergrund und exportieren Sie als Bild mit Transparenz. Sie können den Alpha-Kanal als Maske verwenden und die Farbe in die Beschriftungsfarbe einspeisen.
 
 |
 

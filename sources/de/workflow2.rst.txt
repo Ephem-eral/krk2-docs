@@ -1,73 +1,73 @@
-Dein erstes Tastatur Render
-===========================
-Nun, da Sie die Grundlagen kennen, lassen Sie uns eine Tastatur rendern. Wir erweitern auf, was wir in der ersten Anleitung gelernt haben.
+Ihr erstes Tastatur-Rendering
+==============================
+Nachdem Sie nun die Grundlagen kennen, wollen wir eine Tastatur rendern. Wir bauen auf dem auf, was wir im ersten Tutorial gelernt haben.
 
 |
 
-In einer frischen KRK2-Datei drücken Sie A in der 3D-Viewport, um alle auszuwählen und drücken Sie dann die Schaltfläche Setzen im Abschnitt Relink des KRK-Panels, um sie auf Cherry-Profil zu setzen.
-Ziehen Sie die Capsmat aus dem Asset-Browser auf einen der Keycaps. Schalten Sie auf dasselbe Keycap, um es zum aktiven Objekt zu machen und drücken Sie die Schaltfläche Kopieren im Datenbereich des KRK-Panels.
+Drücken Sie in einer frischen KRK2-Datei im 3D-Viewport A, um alles auszuwählen, und drücken Sie dann im KRK-Panel im Bereich Relink auf die Schaltfläche Set, um alles auf das Cherry-Profil zu setzen.
+Ziehen Sie das Capsmat aus dem Asset-Browser auf einen der Keycaps. Klicken Sie bei gedrückter Umschalttaste auf denselben Keycap, um ihn zum aktiven Objekt zu machen, und drücken Sie im KRK-Panel im Bereich Data auf die Schaltfläche Copy.
 
 .. image:: img/SetCapsmatCopy.gif
 
 |
 
-Klicken Sie nun auf Kopieren im Farbbereich des KRK-Panels. Dadurch werden die Farbinformationen gespeichert, die später abgerufen werden sollen.
+Klicken Sie nun im KRK-Panel im Bereich Color auf Copy. Damit werden die Farbinformationen gespeichert, um sie später wieder abzurufen.
 
 .. image:: img/CopyColors.JPG
 
 |
 
-.. note:: If you do not plan to do any post processing to your final image (not recommended), at least set the colour management profile to "Standard" or set the look to "Medium High Contrast".
+.. note:: Wenn Sie keine Nachbearbeitung Ihres finalen Bildes planen (nicht empfohlen), setzen Sie zumindest das Farbmanagement-Profil auf „Standard“ oder stellen Sie den Look auf „Medium High Contrast“.
 
 |
 
-Verstecken Sie nun die Kits-Sammlung mit den Sichtbarkeitsoptionen im Outliner.
+Blenden Sie nun die Sammlung Kits über die Sichtbarkeitsoptionen im Outliner aus.
 
 .. image:: img/TurnOffKits.gif
 
 |
 
-Ziehen Sie den Dalco 959 Mini WKL Tastatur aus dem Asset-Browser und stellen Sie seine Position zurück, indem Sie Alt+G drücken, dann drücken Sie die Schaltfläche Restore Collections, um ihn editierbar zu machen.
+Ziehen Sie die Tastatur Dalco 959 Mini WKL aus dem Asset-Browser und setzen Sie ihre Position zurück, indem Sie Alt+G drücken. Drücken Sie dann die Schaltfläche Restore Collections, um sie bearbeitbar zu machen.
 
 .. image:: img/DalcoRestore.gif
 
-Wählen Sie einen der Platzhalter auf dem 959 Mini aus und wählen Sie dann alle aus und drücken Sie im Bereich Relink des KRK-Panels auf Set.
+Wählen Sie einen der Platzhalter auf der 959 Mini aus, wählen Sie dann per Rahmenauswahl alle aus und drücken Sie im KRK-Panel im Bereich Relink auf Set.
 
 .. image:: img/BoardPopulate.gif
 
-Klicken Sie im Abschnitt Farbe auf Setup und drücken Sie anschließend die Schaltfläche Einfügen im Abschnitt Farbe. Dies erinnert an die Farben, die aus dem Kit gespeichert wurden.
+Klicken Sie im Bereich Color auf Setup und drücken Sie dann im Bereich Color auf die Schaltfläche Paste. Damit werden die Farben abgerufen, die aus dem Kit gespeichert wurden.
 
 |
 
-Machen wir eine Szene.
+Richten wir eine Szene ein.
 
 |
 
-Tauchen Sie ein in die Szenesammlung in Lights, schalten Sie die Sichtbarkeitsoptionen für KitLightingHigh aus und schalten Sie SoftBoxStudio ein.
-Aktivieren Sie FloorWood6 in der Floors Kollektion.
+Öffnen Sie in der Sammlung Scene die Sammlung Lights, deaktivieren Sie die Sichtbarkeitsoptionen für KitLightingHigh und aktivieren Sie SoftBoxStudio.
+Aktivieren Sie FloorWood6 in der Sammlung Floors.
 
 .. image:: img/LightsFloor6.jpg
 
 |
 
-Legen Sie in Scene Properties die Kamera auf Camera_Board2 fest.
+Legen Sie in den Scene Properties die Kamera auf Camera_Board2 fest.
 
 .. image:: img/SetCamera.jpg
 
 |
 
-Drehen Sie die 3D-Viewport auf einen interessanten Winkel und setzen Sie die aktive Kamera auf Ansicht, indem Sie auf Ansicht > Ansicht ausrichten > Aktive Kamera auf Ansicht ausrichten (Ctrl+Alt+Numpad0) klicken.
+Drehen Sie den 3D-Viewport in einen interessanten Winkel und richten Sie die aktive Kamera an der Ansicht aus, indem Sie auf View > Align View > Align Active Camera To View klicken (Ctrl+Alt+Numpad0).
 
 .. image:: img/SetActiveCamera.gif
 
 |
 
-Jetzt rendern Sie Ihre Szene.
+Rendern Sie nun Ihre Szene.
 
 .. image:: img/TutBoardRender.jpg
 
 |
 
-Dies vervollständigt Beispiel-Workflow-Tutorial 2.
+Damit ist Beispiel-Workflow-Tutorial 2 abgeschlossen.
 
 |

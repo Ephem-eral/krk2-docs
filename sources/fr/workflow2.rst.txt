@@ -1,73 +1,73 @@
-Votre premier Clavier Render
-============================
-Maintenant que vous connaissez les bases, rendons un clavier. Nous allons développer ce que nous avons appris dans le premier tutoriel.
+Premier rendu de clavier
+=========================
+Maintenant que vous connaissez les bases, effectuons le rendu d'un clavier. Nous allons approfondir ce que nous avons appris dans le premier tutoriel.
 
 |
 
-Dans un nouveau fichier KRK2, appuyez sur A dans le vue 3D pour tout sélectionner, puis appuyez sur le bouton Définir dans la section Relien du panneau KRK pour les régler sur le profil Cherry.
-Faites glisser le Capsmat du navigateur d’assets sur l'un des touches. Cliquez sur le même touche pour en faire l'objet actif et appuyez sur le bouton Copier dans la section Données du panneau KRK.
+Dans un nouveau fichier KRK2, appuyez sur A dans la vue 3D pour tout sélectionner, puis appuyez sur le bouton Set dans la section Relink du panneau KRK pour leur attribuer le profil Cherry.
+Faites glisser le Capsmat depuis le navigateur d'assets sur l'une des touches. Faites un clic avec Maj sur la même touche pour en faire l'objet actif et appuyez sur le bouton Copy dans la section Data du panneau KRK.
 
 .. image:: img/SetCapsmatCopy.gif
 
 |
 
-Cliquez maintenant sur Copier dans la section Couleur du panneau KRK. Ceci stocke les informations de couleur à rappeler plus tard.
+Cliquez maintenant sur Copy dans la section Color du panneau KRK. Cela enregistre les informations de couleur pour les rappeler ultérieurement.
 
 .. image:: img/CopyColors.JPG
 
 |
 
-.. note:: If you do not plan to do any post processing to your final image (not recommended), at least set the colour management profile to "Standard" or set the look to "Medium High Contrast".
+.. note:: Si vous ne prévoyez pas de post-traitement sur votre image finale (non recommandé), réglez au moins le profil de gestion des couleurs sur « Standard » ou réglez le look sur « Medium High Contrast ».
 
 |
 
-Maintenant masquez la collection Kits en utilisant les options de visibilité dans le Outliner.
+Masquez maintenant la collection Kits à l'aide des options de visibilité dans l'Outliner.
 
 .. image:: img/TurnOffKits.gif
 
 |
 
-Faites glisser le Dalco 959 Mini WKL clavier hors du Navigateur d’assets et réinitialisez sa position en appuyant sur Alt+G, puis appuyez sur le bouton Restore Collections pour le rendre modifiable.
+Faites glisser le clavier Dalco 959 Mini WKL depuis le navigateur d'assets et réinitialisez sa position en appuyant sur Alt+G, puis appuyez sur le bouton Restore Collections pour le rendre modifiable.
 
 .. image:: img/DalcoRestore.gif
 
-Sélectionnez l'un des supports sur le 959 Mini, puis sélectionnez la boîte sur tous et appuyez sur Set dans la section Relink du panneau KRK.
+Sélectionnez l'un des objets substituables sur le 959 Mini, puis effectuez une sélection par rectangle sur tous et appuyez sur Set dans la section Relink du panneau KRK.
 
 .. image:: img/BoardPopulate.gif
 
-Cliquez sur Configuration dans la section Couleur puis appuyez sur le bouton Coller dans la section Couleur. Ceci rappelle les couleurs qui ont été stockées dans le kit.
+Cliquez sur Setup dans la section Color, puis appuyez sur le bouton Paste dans la section Color. Cela rappelle les couleurs enregistrées depuis le kit.
 
 |
 
-Montons une scène.
+Configurons une scène.
 
 |
 
-Plongez dans la collection Scene en lumières, éteignez les options de visibilité pour KitLightingHigh et allumez SoftBoxStudio.
-Allumez FloorWood6 dans la collection Floors.
+Dépliez la collection Scene jusqu'à Lights, désactivez les options de visibilité de KitLightingHigh et activez SoftBoxStudio.
+Activez FloorWood6 dans la collection Floors.
 
 .. image:: img/LightsFloor6.jpg
 
 |
 
-Dans Scene Properties, réglez la caméra sur Camera_Board2.
+Dans les propriétés de la scène, définissez la caméra sur Camera_Board2.
 
 .. image:: img/SetCamera.jpg
 
 |
 
-Faites pivoter le vue 3D vers un angle intéressant et réglez l'appareil photo actif pour le visualiser en cliquant sur Affichage > Alignez la vue > Alignez l'appareil photo actif à la vue (Ctrl+Alt+Numpad0).
+Faites pivoter la vue 3D vers un angle intéressant et alignez la caméra active sur la vue en cliquant sur View > Align View > Align Active Camera To View (Ctrl+Alt+Numpad0).
 
 .. image:: img/SetActiveCamera.gif
 
 |
 
-Maintenant rends ta scène.
+Effectuez maintenant le rendu de votre scène.
 
 .. image:: img/TutBoardRender.jpg
 
 |
 
-Ce tutoriel complète un exemple de workflow 2.
+Ceci conclut le deuxième tutoriel de workflow d'exemple.
 
 |

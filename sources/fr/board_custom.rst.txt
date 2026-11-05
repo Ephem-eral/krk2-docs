@@ -1,125 +1,125 @@
-Préparation personnalisée Clavier
-=================================
+Préparation d'un clavier personnalisé
+======================================
 
-Ce tutoriel ne couvrira pas les paramètres d'exportation de votre logiciel CAO. Exportez votre design en tant qu'OBJ ou FBX et importez-le dans Blender. Vous pouvez également utiliser le addon Stepper Blender pour importer directement le fichier STEP/STP.
+Ce tutoriel ne couvre pas les paramètres d'export de votre logiciel de CAO. Exportez votre conception au format OBJ ou FBX et importez-la dans Blender. Vous pouvez également utiliser l'addon Blender Stepper pour importer directement le fichier STEP/STP.
 
 |
 
-À titre d'exemple, utilisons les claviers Alchemist Aella rendus fichier converti en OBJ. `Right Click > Save <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
+À titre d'exemple, utilisons le fichier de rendu du Aella d'Alchemist Keyboards converti en OBJ. `Right Click > Save <https://github.com/imperfectlink/KeyboardRenderKit/raw/main/docs/source/files/AKB_Aella.obj>`_
 
 |
 
 .. image:: img/DelAll.gif
 
-Dans un nouveau fichier Blender, supprimez le contenu (cube, appareil photo, lumière) (A X D) et placez vos unités à des millimètres dans l'onglet Propriétés de la scène du panneau des propriétés.
+Dans un nouveau fichier Blender, supprimez le contenu (cube, caméra, lumière) (A X D) et réglez vos unités sur millimètres dans l'onglet Scene Properties du panneau Properties.
 
 .. image:: img/SetUnitsMM.jpg
 
 |
 
-Maintenant, vous pouvez importer l'Aella OBJ en cliquant sur Fichier > Import > Wavefront Obj (F4 I W)
+Vous pouvez maintenant importer l'OBJ Aella en cliquant sur File > Import > Wavefront Obj (F4 I W)
 
 .. image:: img/ImportObj.jpg
 
 |
 
-La première chose que vous remarquerez est que l'échelle est incorrecte. Dans ce cas, les unités de millimètre ont été branchées en mètres.
+La première chose que vous remarquerez est que l'échelle est incorrecte. Dans ce cas, les unités millimétriques ont été interprétées comme des mètres.
 
 .. image:: img/Resize1.jpg
 
 |
 
-Échellez le clavier à un millième en appuyant sur S 0,001. Vous devrez peut-être recadrer votre clavier pour que vous puissiez le voir à l'aide de la touche Accueil.
+Mettez le clavier à l'échelle d'un millième en appuyant sur S 0.001 . Vous devrez peut-être recadrer votre clavier pour le voir à l'aide de la touche Home.
 
 .. image:: img/Resize2.jpg
 
 |
 
-Maintenant, appliquez l'échelle et la rotation en appuyant sur ctrl+A puis A pour appliquer toutes les transformations.
+Appliquez maintenant l'échelle et la rotation en appuyant sur ctrl+A puis à nouveau sur A pour appliquer All Transforms.
 
 .. image:: img/Resize3.jpg
 
 |
 
-Maintenant, créons une poignée de mouvement. Appuyez sur Ajouter > Mesh > Plane (Shift+A M P)
+Créons maintenant une poignée de déplacement. Appuyez sur Add > Mesh > Plane (Shift+A M P)
 
 .. image:: img/MoveHandle1.jpg
 
 |
 
-Maintenez Maj et cliquez sur la case inférieure de clavier pour l'ajouter à la sélection. Alignez ensuite le plan en utilisant Objet > Transformer > Aligner les objets et activer les axes X et Y en cliquant sur X et Y dans le dialogue.
+Maintenez Shift et cliquez sur la partie inférieure du boîtier du clavier pour l'ajouter à la sélection. Alignez ensuite le plan à l'aide de Object > Transform > Align Objects et activez les axes X et Y en cliquant avec Shift sur X et Y dans la boîte de dialogue.
 
 .. image:: img/MoveHandle2.jpg
 
 |
 
-Maintenant, répétez les objets d'alignement, cette fois avec le mode d'alignement défini aux côtés négatifs et l'axe Z sélectionné.
+Répétez maintenant Align Objects, cette fois avec Align Mode réglé sur Negative Sides et l'axe Z sélectionné.
 
 .. image:: img/MoveHandle3.gif
 
 |
 
-Votre avion est maintenant dans la bonne position, ensuite il doit être écalé pour être un peu plus grand que l'empreinte clavier (S X + S Y) puis appliquer l'échelle.
+Votre plan est maintenant à la bonne position ; il faut ensuite le mettre à l'échelle pour qu'il soit un peu plus grand que l'empreinte du clavier (S X + S Y) puis appliquer l'échelle.
 
 .. image:: img/MoveHandle4.gif
 
 |
 
-Convertissez-le en courbe en utilisant Object > Convert > Curve. Votre poignée de déplacement est faite.
+Convertissez-le en courbe à l'aide de Object > Convert > Curve. Votre poignée de déplacement est prête.
 
 .. image:: img/MoveHandle5.jpg
 
 |
 
-Parenter tous les objets clavier à la poignée de déplacement. Avec elle sélectionnée, appuyez sur A pour sélectionner tous les objets ctrl+P > (Keep Transform). Maintenant, lorsque vous déplacez la poignée de déplacement, le reste viendra avec elle. Effacer l'emplacement avec Alt+G pour réinitialiser la poignée de déplacement et tous ses enfants dans le monde 0.
+Parentez tous les objets du clavier à la poignée de déplacement. Celle-ci sélectionnée, appuyez sur A pour tout sélectionner puis ctrl+P > Object (Keep Transform). Désormais, lorsque vous déplacez la poignée de déplacement, le reste suit. Effacez la position avec Alt+G pour réinitialiser la poignée de déplacement et tous ses enfants à l'origine du monde.
 
 .. image:: img/MoveHandle6.gif
 
 |
 
-Maintenant, il est temps d'importer le touche disposition. Dans ce cas, c'est le 75% disposition. Fichier > Ajouter puis naviguer vers le fichier KRK201 et double-cliquez dessus. Fichiers .blend se comporter comme des dossiers. Maintenant, entrez les collections, recherchez 75 et ajoutez la collection 75.
+Il est maintenant temps d'importer la disposition des touches. Dans ce cas, il s'agit de la disposition 75%. File > Append puis naviguez jusqu'au fichier KRK201 et double-cliquez dessus. Les fichiers blend se comportent comme des dossiers. Entrez maintenant dans les Collections, recherchez 75 et ajoutez la collection 75.
 
 .. image:: img/ImportLayout.jpg
 
 |
 
-Vous devrez peut-être activer la visibilité vue 3D pour la collection. Dans l'esquisseur, activer vue 3D désactiver le filtre et l'activer pour la collection 75.
+Vous devrez peut-être activer la visibilité dans la vue 3D pour la collection. Dans l'Outliner, activez le filtre de désactivation de la vue 3D et activez-le pour la collection 75.
 
 .. image:: img/75Vis.gif
 
 |
 
-Sélectionnez la poignée de déplacement disposition (en forme de croix vide) et déplacez la disposition en position basée sur la section Alphas et faites pivoter celle-ci de 7 degrés sur l'axe X (angle type pour Aella).
+Sélectionnez la poignée de déplacement de la disposition (empty en forme de croix) et positionnez la disposition en vous basant sur la section Alphas, puis faites-la pivoter de 7 degrés sur l'axe X (angle à saisir pour le Aella).
 
 .. image:: img/75MoveLayout.gif
 
 |
 
-Parenter la poignée de déplacement disposition à la poignée de déplacement clavier.
+Parentez la poignée de déplacement de la disposition à la poignée de déplacement du clavier.
 
 .. image:: img/75MoveLayoutParent.gif
 
 |
 
-Les placeholders devront être déplacés autour pour correspondre au clavier disposition. Vous pouvez définir l'accroissement de snap à 1/8ème unité en entrant 0.002381 dans la taille de la grille.
+Les objets substituables devront être déplacés pour correspondre à la disposition du clavier. Vous pouvez régler l'incrément d'accrochage sur 1/8 d'unité en saisissant 0.002381 dans la taille de la grille.
 
 .. image:: img/SnapIncrementGrid.jpg
 
 |
 
-Allumez le rang inférieur de Tsangan.
+Activez la rangée inférieure Tsangan.
 
 .. image:: img/75BottomRow.gif
 
 |
 
-Sélectionnez les porte-places que vous voulez déplacer et utilisez les contraintes d'axe pour les déplacer autour. G X pour déplacer sur l'axe X, G YY pour se déplacer sur local Y etc. Les touches Win doivent être supprimées et la touche Alt doit être liée du côté gauche (Ctrl+L O).
+Sélectionnez les objets substituables que vous souhaitez déplacer et utilisez les contraintes d'axe pour les déplacer. G X pour un déplacement sur l'axe X, G YY pour un déplacement sur l'axe Y local, etc. Les touches Win doivent être supprimées et la touche Alt doit être liée depuis la gauche (Ctrl+L O). Maintenez Ctrl ou activez l'accrochage avec l'icône d'aimant pour utiliser l'incrément d'accrochage.
 
 .. image:: img/AellaLayoutAjust.gif
 
 |
 
-Votre clavier est maintenant prêt et compatible avec KRK2. Enregistrez-le sous forme de fichier .blend comprimé] pour distribution et importation dans KRK2.
+Votre clavier est maintenant prêt et compatible KRK2. Enregistrez-le en tant que fichier blend compressé pour la distribution et l'import dans KRK2.
 
 .. image:: img/AellaExport.jpg
 
