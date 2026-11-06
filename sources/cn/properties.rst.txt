@@ -39,7 +39,7 @@ Blender 的属性面板内容极多，这里只挑几个最相关的部分讲。
 
 .. image:: img/ColorSF.png
 
-这一节很重要。Blender 色彩管理默认是 Filmic，我这里也保持默认、不套用 look。有些用户更喜欢设为 Standard，因为感觉更容易对齐颜色。我个人更偏好 Filmic：高光过渡更柔和，再配合 Medium High Contrast，观感非常接近 Standard，但明暗层次更好。如果打算导出 EXR，这里的选项无所谓——EXR 导出的就是完整缓冲区数据。
+这一节很重要。Blender 4.0 将新文件的默认视图变换由 Filmic 改为 AgX。这里展示的设置使用 Filmic，未套用 look。有些用户更喜欢设为 Standard，因为感觉更容易对齐颜色。我个人更偏好 Filmic。高光过渡更柔和，再配合 Medium High Contrast，观感非常接近 Standard，但明暗层次更好。如果打算导出 EXR，这里的选项无所谓——EXR 导出的就是完整缓冲区数据。
 
 |
 

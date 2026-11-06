@@ -14,6 +14,8 @@
 .lang-switch .active { background: var(--chip-active-bg); color: var(--chip-active-fg); font-weight: 700; }
 [hidden] { display: none !important; }
 .nav-search-hidden { display: none !important; }
+.wy-menu-vertical li.nav-search-open > ul { display: block; }
+.wy-menu-vertical li.nav-search-open > a button.toctree-expand:before { content: "\f147"; }
 
 :root {
   --accent: #4f9e6b;
@@ -100,6 +102,9 @@ body { color: var(--text); animation: krk-page-in .32s ease-out both; }
   background: transparent; color: var(--nav-top-fg); font: inherit; cursor: pointer; }
 .wy-nav-top .krk-nav-toggle i { float: none; line-height: 1; font-size: 16px; }
 .krk-nav-toggle:focus-visible, .wy-nav-side :focus-visible { outline: 3px solid #ffd166; outline-offset: 2px; }
+@media (max-width: 768px) {
+  .wy-nav-top { position: sticky; top: 0; z-index: 250; }
+}
 .wy-menu-vertical a, .wy-menu-vertical p.caption { color: var(--sidebar-text); }
 .wy-menu-vertical p.caption { color: var(--sidebar-muted); }
 /* --- sidebar: the current chapter and its section list --------------- */

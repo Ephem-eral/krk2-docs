@@ -36,7 +36,7 @@ Gestion des couleurs
 
 .. image:: img/ColorSF.png
 
-Il s'agit d'une section importante. Le réglage par défaut de la gestion des couleurs dans Blender est Filmic, que j'ai laissé ici sans look appliqué. Certains utilisateurs préfèrent le régler sur Standard car ils ont l'impression qu'il est plus facile d'obtenir une correspondance de couleurs. Je préfère généralement Filmic en raison de l'atténuation de la lumière et je le règle sur Medium High Contrast pour obtenir une sensation très similaire à Standard mais avec un meilleur ombrage. Si vous prévoyez d'exporter en EXR, le choix que vous faites n'a pas d'importance. Le tampon complet sera simplement exporté.
+Il s'agit d'une section importante. Depuis Blender 4.0, AgX remplace Filmic comme transformation de vue par défaut pour les nouveaux fichiers. La configuration présentée ici utilise Filmic sans look appliqué. Certains utilisateurs préfèrent le régler sur Standard car ils ont l'impression qu'il est plus facile d'obtenir une correspondance de couleurs. Je préfère généralement Filmic en raison de la transition progressive des hautes lumières et je le règle sur Medium High Contrast pour obtenir une sensation très similaire à Standard mais avec un meilleur ombrage. Si vous prévoyez d'exporter en EXR, le choix que vous faites n'a pas d'importance. Le tampon complet sera simplement exporté.
 
 |
 

@@ -36,7 +36,7 @@ Farbmanagement
 
 .. image:: img/ColorSF.png
 
-Dies ist ein wichtiger Bereich. Blenders Standardeinstellung für das Farbmanagement ist Filmic, was ich hier ohne angewendeten Look belassen habe. Einige Benutzer ziehen es vor, dies auf Standard zu setzen, da es einfacher erscheint, Farben anzupassen. Ich bevorzuge im Allgemeinen Filmic wegen des weichen Lichtabfalls und stelle es auf Medium High Contrast ein, um ein sehr ähnliches Ergebnis wie bei Standard, aber mit besserer Schattierung zu erzielen. Wenn Sie einen Export nach EXR planen, spielt Ihre Wahl keine Rolle. Es wird einfach der volle Puffer exportiert.
+Dies ist ein wichtiger Bereich. Blender 4.0 hat Filmic als Standard-Ansichtstransformation für neue Dateien durch AgX ersetzt. Die hier gezeigte Konfiguration verwendet Filmic ohne angewendeten Look. Einige Benutzer ziehen es vor, dies auf Standard zu setzen, da es einfacher erscheint, Farben anzupassen. Ich bevorzuge im Allgemeinen Filmic wegen der weichen Übergänge in den Lichtern und stelle es auf Medium High Contrast ein, um ein sehr ähnliches Ergebnis wie bei Standard, aber mit besserer Schattierung zu erzielen. Wenn Sie einen Export nach EXR planen, spielt Ihre Wahl keine Rolle. Es wird einfach der volle Puffer exportiert.
 
 |
 
