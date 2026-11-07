@@ -1243,7 +1243,6 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
 @media print {
   .wy-nav-side, .wy-breadcrumbs, #sp-top { display: none !important; }
   .wy-nav-content-wrap { margin: 0 !important; }
-  #sp-cover { display: none !important; }
 }
 </style>
 </head>
@@ -1262,14 +1261,14 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
 <button type="button" class="sp-home" id="sp-home">⌂ Language home</button>
 <button type="button" class="sp-theme" id="sp-theme">🌙 Dark mode</button>
         <div class="lang-switch">
-          <button type="button" data-switch="en">English</button>
-          <button type="button" data-switch="cn">简体</button>
-          <button type="button" data-switch="tw">繁體</button>
-          <button type="button" data-switch="de">Deutsch</button>
-          <button type="button" data-switch="fr">Français</button>
-          <button type="button" data-switch="ja">日本語</button>
-          <button type="button" data-switch="ko">한국어</button>
-          <button type="button" data-switch="ru">Русский</button>
+          <button type="button" data-switch="en" lang="en">English</button>
+          <button type="button" data-switch="cn" lang="zh-CN">简体</button>
+          <button type="button" data-switch="tw" lang="zh-TW">繁體</button>
+          <button type="button" data-switch="de" lang="de">Deutsch</button>
+          <button type="button" data-switch="fr" lang="fr">Français</button>
+          <button type="button" data-switch="ja" lang="ja">日本語</button>
+          <button type="button" data-switch="ko" lang="ko">한국어</button>
+          <button type="button" data-switch="ru" lang="ru">Русский</button>
         </div>
 
       </div>
@@ -1326,26 +1325,26 @@ html[data-theme="dark"] .wy-menu-vertical li.current > a button.toctree-expand {
         </div>
         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
           <div itemprop="articleBody">
-        <section id="sp-cover">
+        <section id="sp-cover" lang="en">
           <header>
             <h1>Keyboard Render Kit 2 · Documentation</h1>
             <p>8 languages · single-page, searchable, printable</p>
           </header>
-          <p class="sp-back"><a href="../index.html">← 返回语言选择 / Back to languages</a> · <b>单页版</b>（本页）</p>
+          <p class="sp-back" lang="zh-CN"><a href="../index.html">← 返回语言选择 / <span lang="en">Back to languages</span></a> · <b>单页版</b>（本页）</p>
           <h2>Choose a language</h2>
           <div class="grid">
-            <button type="button" class="card primary" data-open="0">
+            <button type="button" class="card primary" data-open="0" lang="en">
               <div class="lang">All languages <span class="badge">switch anytime</span></div>
               <div class="sub">Open the docs, then switch language from the sidebar — English / 简体 / 繁體 / Deutsch / Français / 日本語 / 한국어 / Русский</div>
             </button>
-            <button type="button" class="card" data-open="en"><div class="lang">English</div><div class="sub">Keyboard Render Kit 2 Documentation</div></button>
-            <button type="button" class="card" data-open="cn"><div class="lang">简体中文</div><div class="sub">Keyboard Render Kit 2 中文文档</div></button>
-            <button type="button" class="card" data-open="tw"><div class="lang">繁體中文</div><div class="sub">Keyboard Render Kit 2 繁體中文文件</div></button>
-            <button type="button" class="card" data-open="de"><div class="lang">Deutsch</div><div class="sub">Keyboard Render Kit 2 Dokumentation</div></button>
-            <button type="button" class="card" data-open="fr"><div class="lang">Français</div><div class="sub">Documentation Keyboard Render Kit 2</div></button>
-            <button type="button" class="card" data-open="ja"><div class="lang">日本語</div><div class="sub">Keyboard Render Kit 2 日本語ドキュメント</div></button>
-            <button type="button" class="card" data-open="ko"><div class="lang">한국어</div><div class="sub">Keyboard Render Kit 2 한국어 문서</div></button>
-            <button type="button" class="card" data-open="ru"><div class="lang">Русский</div><div class="sub">Keyboard Render Kit 2 Документация</div></button>
+            <button type="button" class="card" data-open="en" lang="en"><div class="lang">English</div><div class="sub">Keyboard Render Kit 2 Documentation</div></button>
+            <button type="button" class="card" data-open="cn" lang="zh-CN"><div class="lang">简体中文</div><div class="sub">Keyboard Render Kit 2 中文文档</div></button>
+            <button type="button" class="card" data-open="tw" lang="zh-TW"><div class="lang">繁體中文</div><div class="sub">Keyboard Render Kit 2 繁體中文文件</div></button>
+            <button type="button" class="card" data-open="de" lang="de"><div class="lang">Deutsch</div><div class="sub">Keyboard Render Kit 2 Dokumentation</div></button>
+            <button type="button" class="card" data-open="fr" lang="fr"><div class="lang">Français</div><div class="sub">Documentation Keyboard Render Kit 2</div></button>
+            <button type="button" class="card" data-open="ja" lang="ja"><div class="lang">日本語</div><div class="sub">Keyboard Render Kit 2 日本語ドキュメント</div></button>
+            <button type="button" class="card" data-open="ko" lang="ko"><div class="lang">한국어</div><div class="sub">Keyboard Render Kit 2 한국어 문서</div></button>
+            <button type="button" class="card" data-open="ru" lang="ru"><div class="lang">Русский</div><div class="sub">Keyboard Render Kit 2 Документация</div></button>
           </div>
           <p class="sp-more">
             <b>More languages may be added in the future.</b>
@@ -44338,6 +44337,8 @@ Blender предлагает несколько алгоритмов шумоп�
       e.preventDefault();
       var v = a.getAttribute('data-open');
       openLang(v === '0' ? LANGS[0] : v);
+      var heading = docRoot && docRoot.querySelector('.lang-body:not([hidden]) h1');
+      if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
     });
   });
   if (homeBtn) { homeBtn.addEventListener('click', function (e) { e.preventDefault(); showCover(); }); }
