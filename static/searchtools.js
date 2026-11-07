@@ -91,13 +91,13 @@ const _displayItem = (item, searchTerms) => {
       " (" + descr + ")";
   else if (showSearchSummary)
     fetch(requestUrl)
-      .then((responseData) => responseData.text())
+      .then((responseData) => responseData.ok ? responseData.text() : "")
       .then((data) => {
-        if (data)
-          listItem.appendChild(
-            Search.makeSearchSummary(data, searchTerms)
-          );
-      });
+        if (!data) return;
+        const summary = Search.makeSearchSummary(data, searchTerms);
+        if (summary) listItem.appendChild(summary);
+      })
+      .catch(() => { /* Summary loading is optional. */ });
   Search.output.appendChild(listItem);
 };
 const _finishSearch = (resultCount) => {
@@ -156,7 +156,7 @@ const Search = {
     const htmlElement = new DOMParser().parseFromString(htmlString, 'text/html');
     htmlElement.querySelectorAll(".headerlink").forEach((el) => { el.remove() });
     const docContent = htmlElement.querySelector('[role="main"]');
-    if (docContent !== undefined) return docContent.textContent;
+    if (docContent) return docContent.textContent;
     console.warn(
       "Content block not found. Sphinx search tries to obtain it via '[role=main]'. Could you check your theme or template."
     );
@@ -261,6 +261,12 @@ const Search = {
 
       // stem the word
       let word = stemmer.stemWord(queryTermLower);
+      // Match the index filter for short hiragana and stemmed stopwords.
+      const firstCodePoint = word.codePointAt(0);
+      if (
+        (word.length < 3 && firstCodePoint > 0x3041 && firstCodePoint < 0x3094) ||
+        (firstCodePoint < 256 && stopwords.indexOf(word) !== -1)
+      ) return;
       // select the correct list
       if (word[0] === "-") excludedTerms.add(word.substr(1));
       else {
@@ -490,7 +496,7 @@ const Search = {
       });
 
       // create the mapping
-      files.forEach((file) => {
+      new Set(files).forEach((file) => {
         if (fileMap.has(file) && fileMap.get(file).indexOf(word) === -1)
           fileMap.get(file).push(word);
         else fileMap.set(file, [word]);
@@ -502,16 +508,7 @@ const Search = {
     for (const [file, wordList] of fileMap) {
       // check if all requirements are matched
 
-      // as search terms with length < 3 are discarded
-      const filteredTermCount =
-        DOCUMENTATION_OPTIONS.LANGUAGE === "ko"
-          ? searchTerms.size
-          : [...searchTerms].filter((term) => term.length > 2).length;
-      if (
-        wordList.length !== searchTerms.size &&
-        wordList.length !== filteredTermCount
-      )
-        continue;
+      if (wordList.length !== searchTerms.size) continue;
 
       // ensure that none of the excluded terms is in the search result
       if (
