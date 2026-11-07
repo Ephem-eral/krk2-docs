@@ -235,6 +235,7 @@ const Search = {
    * execute search (requires search index to be loaded)
    */
   query: (query) => {
+    query = query.normalize("NFKC");
     const filenames = Search._index.filenames;
     const docNames = Search._index.docnames;
     const titles = Search._index.titles;
@@ -269,7 +270,9 @@ const Search = {
     });
 
     if (SPHINX_HIGHLIGHT_ENABLED) {  // set in sphinx_highlight.js
-      localStorage.setItem("sphinx_highlight_terms", [...highlightTerms].join(" "))
+      try {
+        localStorage.setItem("sphinx_highlight_terms", [...highlightTerms].join(" "));
+      } catch (e) { /* Highlight persistence is optional. */ }
     }
 
     // console.debug("SEARCH: searching for:");

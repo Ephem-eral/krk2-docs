@@ -77,11 +77,11 @@ const SphinxHighlight = {
 
     // get and clear terms from localstorage
     const url = new URL(window.location);
-    const highlight =
-        localStorage.getItem("sphinx_highlight_terms")
-        || url.searchParams.get("highlight")
-        || "";
-    localStorage.removeItem("sphinx_highlight_terms")
+    let highlight = url.searchParams.get("highlight") || "";
+    try {
+      highlight = localStorage.getItem("sphinx_highlight_terms") || highlight;
+      localStorage.removeItem("sphinx_highlight_terms");
+    } catch (e) { /* URL highlighting also works without persistent storage. */ }
     url.searchParams.delete("highlight");
     window.history.replaceState({}, "", url);
 
