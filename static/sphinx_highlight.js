@@ -79,7 +79,7 @@ const SphinxHighlight = {
     const url = new URL(window.location);
     let highlight = url.searchParams.get("highlight") || "";
     try {
-      highlight = localStorage.getItem("sphinx_highlight_terms") || highlight;
+      highlight = highlight || localStorage.getItem("sphinx_highlight_terms") || "";
       localStorage.removeItem("sphinx_highlight_terms");
     } catch (e) { /* URL highlighting also works without persistent storage. */ }
     url.searchParams.delete("highlight");
@@ -120,7 +120,9 @@ const SphinxHighlight = {
     document
       .querySelectorAll("span.highlighted")
       .forEach((el) => el.classList.remove("highlighted"));
-    localStorage.removeItem("sphinx_highlight_terms")
+    try {
+      localStorage.removeItem("sphinx_highlight_terms");
+    } catch (e) { /* Removing highlights also works without persistent storage. */ }
   },
 
   initEscapeListener: () => {
