@@ -13,7 +13,7 @@ Wählen Sie die Platzhalter mit einer Rahmenauswahl aus und drücken Sie anschli
 
 |
 
-Ziehen Sie das Capsmat aus dem Asset-Browser auf eines der Keycaps. Mit diesem Keycap als aktivem Objekt (hervorgehoben) können Sie das Material auf die anderen Keycaps übertragen, indem Sie die Schaltfläche Copy im Bereich Data des KRK-Panels drücken. Dies entspricht Ctrl+L und anschließend M (Material verknüpfen), ignoriert jedoch Objekte, die keine Keycaps sind.
+Ziehen Sie das Capsmat aus dem Asset-Browser auf eines der Keycaps. Mit diesem Keycap als aktivem Objekt (hervorgehoben) können Sie das Material mit den anderen Keycaps verknüpfen, indem Sie die Schaltfläche Copy im Bereich Data des KRK-Panels drücken. Dies entspricht Ctrl+L und anschließend M (Material verknüpfen), ignoriert jedoch Objekte, die keine Keycaps sind.
 
 .. image:: img/copymat.gif
 

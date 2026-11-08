@@ -35,7 +35,7 @@ Skalieren Sie die Tastatur auf ein Tausendstel, indem Sie S 0.001 drücken. Mög
 
 |
 
-Wenden Sie nun den Maßstab und die Rotation an, indem Sie Strg+A und dann erneut A drücken, um Alle Transformationen anzuwenden.
+Wenden Sie nun den Maßstab und die Rotation an, indem Sie Ctrl+A und dann erneut A drücken, um All Transforms anzuwenden.
 
 .. image:: img/Resize3.jpg
 
@@ -71,7 +71,7 @@ Konvertieren Sie sie mit Object > Convert > Curve in eine Kurve. Ihr Bewegungsgr
 
 |
 
-Machen Sie alle Objekte der Tastatur zum Kind des Bewegungsgriffs. Wählen Sie ihn aus, drücken Sie A, um alles auszuwählen, und dann Strg+P > Object (Keep Transform). Wenn Sie nun den Bewegungsgriff bewegen, folgt der Rest mit. Setzen Sie die Position mit Alt+G zurück, um den Bewegungsgriff und alle seine Kindobjekte auf Welt 0 zurückzusetzen.
+Machen Sie alle Objekte der Tastatur zum Kind des Bewegungsgriffs. Wählen Sie ihn aus, drücken Sie A, um alles auszuwählen, und dann Ctrl+P > Object (Keep Transform). Wenn Sie nun den Bewegungsgriff bewegen, folgt der Rest mit. Setzen Sie die Position mit Alt+G zurück, um den Bewegungsgriff und alle seine Kindobjekte auf Welt 0 zurückzusetzen.
 
 .. image:: img/MoveHandle6.gif
 
@@ -113,7 +113,7 @@ Aktivieren Sie die Tsangan-Unterreihe.
 
 |
 
-Wählen Sie die Platzhalter aus, die Sie verschieben möchten, und verwenden Sie Achsenbeschränkungen, um sie zu bewegen. G X zum Verschieben auf der X-Achse, G YY zum Verschieben auf der lokalen Y-Achse usw. Die Win-Tasten müssen gelöscht werden, und die Alt-Taste muss von der linken Seite verlinkt werden (Ctrl+L O). Halten Sie Strg gedrückt oder aktivieren Sie das Einrasten mit dem Magnetsymbol, um das Snap-Inkrement zu verwenden.
+Wählen Sie die Platzhalter aus, die Sie verschieben möchten, und verwenden Sie Achsenbeschränkungen, um sie zu bewegen. G X zum Verschieben auf der X-Achse, G YY zum Verschieben auf der lokalen Y-Achse usw. Die Win-Tasten müssen gelöscht werden, und die Alt-Taste muss von der linken Seite verlinkt werden (Ctrl+L O). Halten Sie Ctrl gedrückt oder aktivieren Sie das Einrasten mit dem Magnetsymbol, um das Snap-Inkrement zu verwenden.
 
 .. image:: img/AellaLayoutAjust.gif
 

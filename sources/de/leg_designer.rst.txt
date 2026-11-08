@@ -17,7 +17,7 @@ Die Vorlage ist eingeblendet, damit Sie Ihre Beschriftungen und Novelty-Keycaps 
 
 |
 
-Erstellen Sie eine neue Ebene und fügen Sie Ihre Beschriftungen in diese neue Ebene ein. Sie können die Beschriftungen mit den Cursortasten Ihrer Tastatur verschieben; halten Sie dabei die Umschalttaste gedrückt, um größere Schritte zu machen.
+Erstellen Sie eine neue Ebene und fügen Sie Ihre Beschriftungen in diese neue Ebene ein. Sie können die Beschriftungen mit den Cursortasten Ihrer Tastatur verschieben; halten Sie dabei die Shift-Taste gedrückt, um größere Schritte zu machen.
 
 .. image:: img/AffinityLayers.jpg
 
@@ -29,7 +29,7 @@ Wenn Sie das Ausrichten-Werkzeug verwenden möchten, um an einzelnen Keycaps aus
 
 |
 
-Sobald Ihre Beschriftungen platziert sind, exportieren Sie mit Datei > Exportieren oder Strg+Alt+Umschalt+S. Exportieren Sie Ihr WoB-Bild als png mit 4096x4096 oder 8192x8192 Auflösung. Tatsächlich spielen Auflösung und Dateityp keine Rolle, solange es sich um ein quadratisches Bild handelt.
+Sobald Ihre Beschriftungen platziert sind, exportieren Sie mit File > Export oder Ctrl+Alt+Shift+S. Exportieren Sie Ihr WoB-Bild als png mit 4096x4096 oder 8192x8192 Auflösung. Tatsächlich spielen Auflösung und Dateityp keine Rolle, solange es sich um ein quadratisches Bild handelt.
 
 .. image:: img/AffinityExport.jpg
 

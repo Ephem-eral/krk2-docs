@@ -57,7 +57,7 @@
 
 |
 
-将视图调整到合适的角度，然后点击 View > Align View > Align Active Camera To View（Ctrl+Alt+小键盘 0），将当前视角设为活动摄像机。
+将视图调整到合适的角度，然后点击 View > Align View > Align Active Camera To View（Ctrl+Alt+Numpad0），使活动摄像机对齐当前视图。
 
 .. image:: img/SetActiveCamera.gif
 

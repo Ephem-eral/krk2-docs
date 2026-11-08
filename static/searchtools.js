@@ -149,6 +149,8 @@ if (typeof splitQuery === "undefined") {
  */
 const Search = {
   _index: null,
+  _index_load_failed: false,
+  _pulse_timer: null,
   _queued_query: null,
   _pulse_status: -1,
 
@@ -171,11 +173,33 @@ const Search = {
     if (query) Search.performSearch(query);
   },
 
-  loadIndex: (url) =>
-    (document.body.appendChild(document.createElement("script")).src = url),
+  indexLoadError: () => {
+    if (Search.hasIndex()) return;
+    Search._index_load_failed = true;
+    Search.stopPulse();
+    _removeChildren(document.getElementById("search-progress"));
+    if (!Search.status) return;
+    const copy = typeof window.__krk2GetUi === "function" ? window.__krk2GetUi() : {
+      search_error_title: "Search index loading failed",
+      search_error_message: "Reload the page to try again."
+    };
+    Search.title.textContent = copy.search_error_title;
+    Search.status.setAttribute("role", "status");
+    Search.status.textContent = copy.search_error_message;
+  },
+
+  loadIndex: (url) => {
+    Search._index_load_failed = false;
+    const script = document.createElement("script");
+    script.onerror = Search.indexLoadError;
+    script.onload = () => { if (!Search.hasIndex()) Search.indexLoadError(); };
+    script.src = url;
+    document.body.appendChild(script);
+  },
 
   setIndex: (index) => {
     Search._index = index;
+    Search._index_load_failed = false;
     if (Search._queued_query !== null) {
       const query = Search._queued_query;
       Search._queued_query = null;
@@ -187,7 +211,11 @@ const Search = {
 
   deferQuery: (query) => (Search._queued_query = query),
 
-  stopPulse: () => (Search._pulse_status = -1),
+  stopPulse: () => {
+    window.clearTimeout(Search._pulse_timer);
+    Search._pulse_timer = null;
+    Search._pulse_status = -1;
+  },
 
   startPulse: () => {
     if (Search._pulse_status >= 0) return;
@@ -195,7 +223,7 @@ const Search = {
     const pulse = () => {
       Search._pulse_status = (Search._pulse_status + 1) % 4;
       Search.dots.innerText = ".".repeat(Search._pulse_status);
-      if (Search._pulse_status >= 0) window.setTimeout(pulse, 500);
+      if (Search._pulse_status >= 0) Search._pulse_timer = window.setTimeout(pulse, 500);
     };
     pulse();
   },
@@ -227,7 +255,10 @@ const Search = {
     Search.startPulse();
 
     // index already loaded, the browser was quick!
-    if (Search.hasIndex()) Search.query(query);
+    if (Search._index_load_failed) {
+      Search.deferQuery(query);
+      Search.indexLoadError();
+    } else if (Search.hasIndex()) Search.query(query);
     else Search.deferQuery(query);
   },
 

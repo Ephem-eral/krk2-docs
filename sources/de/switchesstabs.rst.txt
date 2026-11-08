@@ -15,13 +15,13 @@ Blenden Sie die ursprüngliche Keycap-Sammlung aus, damit wir uns auf das konzen
 
 |
 
-Klicken Sie mit der rechten Maustaste auf die Switch-Sammlung und wählen Sie „Objekte auswählen“. Stellen Sie sicher, dass eines der Objekte aktiv (hervorgehoben) ist; falls nicht, klicken Sie mit Umschalt+Klick auf eines davon im 3D-Viewport, um es zu aktivieren. Geben Sie nun das Wort „switch“ in das Dropdown-Menü für die Objektdaten ein und wählen Sie je nach Bedarf Switch_Simple oder Switch_Complex.
+Klicken Sie mit der rechten Maustaste auf die Switch-Sammlung und wählen Sie „select objects“ (Objekte auswählen). Stellen Sie sicher, dass eines der Objekte aktiv (hervorgehoben) ist. Falls nicht, halten Sie Shift gedrückt und klicken Sie im 3D-Viewport auf eines davon, um es zum aktiven Objekt zu machen. Geben Sie nun „switch“ in das Dropdown-Menü für die Objektdaten ein und wählen Sie je nach Bedarf Switch_Simple oder Switch_Complex.
 
 .. image:: img/SwitchObj.jpg
 
 |
 
-Eines der Objekte wurde in einen Switch umgewandelt. Sie können nun alle in Switches umwandeln, indem Sie Strg+L drücken, um den Link-Dialog aufzurufen, und dann O für Objektdaten. Sie sollten nun eine vollständige Tastatur mit Switches haben.
+Eines der Objekte wurde in einen Switch umgewandelt. Sie können nun alle in Switches umwandeln, indem Sie Ctrl+L drücken, um den Link-Dialog aufzurufen, und dann O für Object Data (Objektdaten). Sie sollten nun eine vollständige Tastatur mit Switches haben.
 
 .. image:: img/SwitchPop.jpg
 

@@ -57,7 +57,7 @@
 
 |
 
-Поверните вид под подходящим углом, затем нажмите View > Align View > Align Active Camera To View (Ctrl+Alt+Num 0), чтобы совместить активную камеру с текущим видом.
+Поверните вид под подходящим углом, затем нажмите View > Align View > Align Active Camera To View (Ctrl+Alt+Numpad0), чтобы совместить активную камеру с текущим видом.
 
 .. image:: img/SetActiveCamera.gif
 

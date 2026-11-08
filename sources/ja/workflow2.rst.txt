@@ -57,7 +57,7 @@ Floors コレクション内の FloorWood6 をオンにします。
 
 |
 
-ビューを見栄えの良い角度に回し、View > Align View > Align Active Camera To View（Ctrl+Alt+テンキー 0）をクリックして、現在の視点をアクティブカメラに設定します。
+ビューを見栄えの良い角度に回し、View > Align View > Align Active Camera To View（Ctrl+Alt+Numpad0）をクリックして、アクティブカメラを現在のビューに合わせます。
 
 .. image:: img/SetActiveCamera.gif
 

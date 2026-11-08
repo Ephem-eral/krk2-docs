@@ -109,7 +109,7 @@ Copy Settings
 
 |
 
-   Les sections suivantes n'affichent des options que pour l'objet actif (sélectionné).
+   Les sections suivantes n'affichent des options que pour l'objet actif (mis en surbrillance).
 
 |
 

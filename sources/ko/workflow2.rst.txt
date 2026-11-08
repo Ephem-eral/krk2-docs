@@ -57,7 +57,7 @@ Floors 컬렉션에서 FloorWood6을 켭니다.
 
 |
 
-뷰포트를 보기 좋은 각도로 돌린 뒤 View > Align View > Align Active Camera To View(Ctrl+Alt+넘패드 0)를 눌러 현재 시점을 활성 카메라로 설정합니다.
+뷰포트를 보기 좋은 각도로 돌린 뒤 View > Align View > Align Active Camera To View(Ctrl+Alt+Numpad0)를 눌러 활성 카메라를 현재 뷰에 맞춥니다.
 
 .. image:: img/SetActiveCamera.gif
 

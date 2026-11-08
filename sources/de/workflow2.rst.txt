@@ -5,7 +5,7 @@ Nachdem Sie nun die Grundlagen kennen, wollen wir eine Tastatur rendern. Wir bau
 |
 
 Drücken Sie in einer frischen KRK2-Datei im 3D-Viewport A, um alles auszuwählen, und drücken Sie dann im KRK-Panel im Bereich Relink auf die Schaltfläche Set, um alles auf das Cherry-Profil zu setzen.
-Ziehen Sie das Capsmat aus dem Asset-Browser auf einen der Keycaps. Klicken Sie bei gedrückter Umschalttaste auf denselben Keycap, um ihn zum aktiven Objekt zu machen, und drücken Sie im KRK-Panel im Bereich Data auf die Schaltfläche Copy.
+Ziehen Sie das Capsmat aus dem Asset-Browser auf einen der Keycaps. Klicken Sie bei gedrückter Shift-Taste auf denselben Keycap, um ihn zum aktiven Objekt zu machen, und drücken Sie im KRK-Panel im Bereich Data auf die Schaltfläche Copy.
 
 .. image:: img/SetCapsmatCopy.gif
 

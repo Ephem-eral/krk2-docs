@@ -28,6 +28,6 @@ Obwohl Restore Collection Instances ursprünglich als Teil des Keyboard Render K
 
 |
 
-Um das Werkzeug zu verwenden, drücken Sie einfach Strg+A und wählen Sie Restore Collection Instances im Menü Apply aus.
+Um das Werkzeug zu verwenden, drücken Sie einfach Ctrl+A und wählen Sie Restore Collection Instances im Menü Apply aus.
 
 .. image:: img/RestoreCollectionInstances.jpg

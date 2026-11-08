@@ -48,13 +48,13 @@ Jetzt sind alle Ngons und nur die Ngons ausgewählt.
 
 |
 
-Klicken Sie dann auf Fläche > Flächen triangulieren oder drücken Sie Strg+T und anschließend Tab, um den Bearbeitungsmodus zu verlassen.
+Klicken Sie dann auf Face > Triangulate Faces oder drücken Sie Ctrl+T und anschließend Tab, um den Bearbeitungsmodus zu verlassen.
 
 .. image:: img/KeyboardTriangulate.gif
 
 |
 
-Ihre Tastatur ist nun für den Export bereit. Klicken Sie auf Datei > Exportieren > FBX. Geben Sie Ihrer Datei einen Namen, stellen Sie den Pfadmodus auf Kopieren und achten Sie darauf, dass Auf ausgewählte Objekte beschränken aktiviert ist.
+Ihre Tastatur ist nun für den Export bereit. Klicken Sie auf File > Export > FBX. Geben Sie Ihrer Datei einen Namen, stellen Sie Path Mode auf Copy und achten Sie darauf, dass Limit to Selected Objects aktiviert ist.
 
 .. image:: img/krk2maxexportsettings.png
 
