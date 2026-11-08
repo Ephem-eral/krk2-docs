@@ -170,12 +170,26 @@
 })();
 
 (function () {
+  var searchPage = window.location.pathname.endsWith('/search.html');
+  var links = document.querySelectorAll('.lang-switch a[href]');
+  if (searchPage) {
+    var query = new URLSearchParams(window.location.search).get('q');
+    if (query !== null) {
+      Array.prototype.forEach.call(links, function (link) {
+        var target = new URL(link.href, window.location.href);
+        if (target.pathname.endsWith('/search.html')) {
+          target.searchParams.set('q', query);
+          link.setAttribute('href', target.href);
+        }
+      });
+    }
+  }
   var root = document.querySelector('.document [itemprop="articleBody"]');
   var reading = window.__krk2Reading;
   if (!root || !reading) { return; }
   var KEY = 'krk2-doc-reading';
   window.__krk2CaptureReading = function () { return reading.capture(root); };
-  Array.prototype.forEach.call(document.querySelectorAll('.lang-switch a[href]'), function (link) {
+  Array.prototype.forEach.call(links, function (link) {
     link.addEventListener('click', function (event) {
       if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) { return; }
       if (link.classList.contains('active')) {
@@ -183,6 +197,7 @@
         if (window.__krk2CloseMenu) { window.__krk2CloseMenu(false); }
         return;
       }
+      if (searchPage) { return; }
       var target = new URL(link.href, window.location.href);
       if (target.pathname.split('/').pop() !== window.location.pathname.split('/').pop()) { return; }
       var position = window.__krk2MenuReading || reading.capture(root);
@@ -194,7 +209,7 @@
   try {
     var saved = JSON.parse(window.sessionStorage.getItem(KEY));
     window.sessionStorage.removeItem(KEY);
-    if (saved && saved.path === window.location.pathname && Date.now() - saved.saved < 60000) {
+    if (!searchPage && saved && saved.path === window.location.pathname && Date.now() - saved.saved < 60000) {
       reading.settle(function () { reading.restore(root, saved.position); });
     }
   } catch (e) {}
