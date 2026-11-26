@@ -1,7 +1,7 @@
 /* ==========================================================================
-   OPERATION style — an original take on a "tactical briefing" collage look:
-   sprayed grayscale grain, cobalt / crimson pixel mosaics, white organic
-   branch lines, compass gizmos, numbered markers and hexagon node labels.
+   OPERATION style — an original take on a "tactical briefing" look:
+   grayscale grain, a cobalt / crimson pixel strip on each chapter, a line-art
+   keyboard on the home page, hexagon node labels and square-cut panels.
    Everything is scoped to :root[data-style="op"]; the modern style is untouched.
    ========================================================================== */
 
@@ -36,7 +36,6 @@
   --font-head: "Bahnschrift", "DIN Alternate", "DIN Condensed", "Roboto Condensed", "Arial Narrow", var(--font-cjk), sans-serif;
   --font-serif: "Times New Roman", "Noto Serif", Georgia, serif;
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 -.62'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --halftone: none;
 }
 
 :root[data-style="op"][data-theme="dark"] {
@@ -61,7 +60,6 @@
   --glass: rgb(14 15 17 / .82);
   --img-bg: #1d1e22;
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.6 -.7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --halftone: none;
 }
 
 /* ------------------------------------------------- sprayed backdrop */
@@ -116,7 +114,7 @@
   font-family: var(--font-head); font-size: .7rem; letter-spacing: .14em; color: var(--muted);
 }
 :root[data-style="op"] .nav-group summary .gicon { color: var(--accent); }
-:root[data-style="op"].text-cjk .nav-group summary, :root[data-style="op"] .text-cjk .nav-group summary { font-size: .76rem; letter-spacing: .06em; }
+:root[data-style="op"] .text-cjk .nav-group summary { font-size: .76rem; letter-spacing: .06em; }
 :root[data-style="op"] .sidebar a { border-radius: 0; }
 :root[data-style="op"] .op-num {
   display: inline-block; flex: none; width: 1.3rem;
@@ -179,20 +177,12 @@
   display: flex; flex-direction: column; justify-content: center;
   min-width: 10rem; margin-left: -1.2rem; padding: .3rem 1.4rem .32rem 1.7rem;
   background: var(--paper);
-  background-image: var(--halftone); background-size: 7px 7px; background-position: right top;
   box-shadow: inset -4px 0 0 var(--accent), 0 0 0 1px var(--line);
   line-height: 1.1;
 }
 :root[data-style="op"] .op-node-label b { order: 1; font: 700 1.4rem/1 var(--font-head); letter-spacing: .01em; color: var(--text); }
 :root[data-style="op"] .op-node-label small { order: 2; margin-top: .2rem; padding-top: .18rem; border-top: 1px solid var(--line-strong); font: 600 .62rem/1 var(--font-head); letter-spacing: .22em; color: var(--muted); }
 
-:root[data-style="op"] .op-dot {
-  display: inline-grid; place-items: center;
-  width: 1.6rem; height: 1.6rem; border-radius: 50%;
-  background: var(--ink); color: var(--paper);
-  font: 700 .72rem/1 var(--font-head);
-  box-shadow: 0 0 0 2px var(--paper);
-}
 
 /* doc meta row */
 :root[data-style="op"] .chip {
@@ -235,7 +225,6 @@
 :root[data-style="op"] .body blockquote {
   border: 1px solid var(--line); border-left: 3px solid var(--accent);
   background: var(--paper);
-  background-image: var(--halftone); background-size: 7px 7px; background-position: right top;
   border-radius: 0;
 }
 :root[data-style="op"] .body .admonition {
@@ -330,7 +319,6 @@
 :root[data-style="op"] .hero-tagline {
   display: inline-block; max-width: 34rem; margin-top: 1.2rem; padding: .5rem 1.2rem .55rem 1.4rem;
   background: var(--paper); color: var(--text);
-  background-image: var(--halftone); background-size: 7px 7px; background-position: right top;
   box-shadow: inset -4px 0 0 var(--accent), 0 0 0 1px var(--line);
   font-size: 1rem;
 }
@@ -369,7 +357,6 @@
 :root[data-style="op"] .chapter-card ul { position: relative; padding: .2rem .9rem 0 .9rem; }
 :root[data-style="op"] .chapter-card li + li { border-top: 1px solid var(--line); }
 :root[data-style="op"] .chapter-card a { position: relative; justify-content: flex-start; gap: 0; padding: .36rem 0; color: var(--text); }
-:root[data-style="op"] .chapter-card .op-hex { display: none; }
 :root[data-style="op"] .op-node-text {
   flex: 1; min-width: 0;
   display: flex; flex-direction: row; align-items: baseline; gap: .7rem;
@@ -377,7 +364,7 @@
   background: none;
   box-shadow: none;
   line-height: 1.25;
-  transition: box-shadow .15s, transform .15s;
+  transition: transform .15s;
 }
 :root[data-style="op"] .op-code { display: block; flex: none; width: 3.4rem; font: 700 .62rem/1.2 var(--font-head); letter-spacing: .12em; color: var(--muted); }
 :root[data-style="op"] .chapter-card a:hover .op-node-text { color: var(--accent); transform: translateX(2px); }

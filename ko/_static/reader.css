@@ -597,6 +597,8 @@ svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-
 #search-results ul.search li::marker { content: none; }
 #search-results p.context { margin: .4rem 0 0; color: var(--text-soft); font-size: .88rem; line-height: 1.65; }
 .is-search .body h1 { font-size: 1.9rem; }
+#search-progress.search-error { color: #c2410c; font-weight: 600; }
+:root[data-theme="dark"] #search-progress.search-error { color: #fb923c; }
 
 /* =============================================================== palette */
 .palette {
