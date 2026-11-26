@@ -1,5 +1,0 @@
-:orphan:
-
-Extraire les fichiers de légendes de Blender.
-=====================================================
-Il peut parfois être utile d'extraire du fichier blend les fichiers de masque des légendes.

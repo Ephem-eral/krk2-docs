@@ -1,6 +1,0 @@
-Souris
-~~~~~~
-
-.. image:: img/KRKMouse.jpg
-
-La souris KRK propose des options pour la couleur du boîtier, la couleur du logo et la possibilité de faire disparaître le logo en fondu.

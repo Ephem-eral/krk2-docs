@@ -1,6 +1,0 @@
-Maus
-~~~~
-
-.. image:: img/KRKMouse.jpg
-
-Die KRK-Maus bietet Optionen für die Gehäusefarbe, die Logofarbe sowie die Möglichkeit, das Logo auszublenden.

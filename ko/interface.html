@@ -1,339 +1,190 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ko" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인터페이스 &mdash; Keyboard Render Kit 2 한국어 문서</title>
-      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<html lang="ko" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="../static/jquery.js"></script>
-        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.ko.js"></script>
-        <script src="../static/doctools.js"></script>
-        <script src="../static/sphinx_highlight.js"></script>
-        <script src="../static/translations.ko.js"></script>
-    <script src="../static/js/theme.js"></script>
-    <link rel="index" title="색인" href="genindex.html" />
+    <title>인터페이스 · KRK2 문서</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="_static/reader.css?v=447086d6" />
+    <link rel="stylesheet" type="text/css" href="_static/style-op.css?v=2ade984b" />
+    <script src="_static/documentation_options.js?v=2a3f4ffb"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=afa94a99"></script>
     <link rel="search" title="검색" href="search.html" />
     <link rel="next" title="KRK 패널" href="krkpanel.html" />
     <link rel="prev" title="빠른 시작" href="gettingstarted.html" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/krk2.css">
-<script>
-(function () {
-  try {
-    var saved = window.localStorage.getItem('krk2-doc-theme');
-    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
-  } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-})();
-</script>
-</head>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)" />
+    <script>
+      (function () {
+        var d = document.documentElement, s = window.localStorage;
+        try {
+          d.dataset.theme = s.getItem('krk-theme') || 'light';
+          d.dataset.style = s.getItem('krk-style') || 'op';
+          var f = s.getItem('krk-font');
+          if (f && f !== '0') d.dataset.font = f;
+          s.setItem('krk-lang', 'ko');
+        } catch (e) { d.dataset.theme = 'light'; }
+      })();
+    </script>
+    <script src="_static/reader.js?v=8448b5fd20" defer></script>
+  </head><body class="lang-ko text-cjk">
+<div class="progress" aria-hidden="true"><span></span></div>
+<a class="skip-link" href="#main">읽기 시작</a>
+<header class="topbar">
+  <button class="icon-btn nav-toggle" type="button" aria-label="목차" aria-controls="sidebar" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+  <a class="brand" href="index.html">
+    <span class="keycap brand-mark" aria-hidden="true"><span>K</span></span>
+    <span class="brand-text">KRK2 문서</span>
+  </a>
+  <a class="search-trigger" href="search.html" role="button" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+    <span class="search-label">문서 검색</span>
+    <span class="search-keys" aria-hidden="true"><kbd>Ctrl</kbd><kbd>K</kbd></span>
+  </a>
+  <div class="tools">
+    <details class="lang-menu">
+      <summary class="icon-btn" aria-label="언어" title="언어">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.6 2.6 14.4 0 17M12 3.5c-2.6 2.6-2.6 14.4 0 17"/></svg>
+        <span class="lang-code">KO</span>
+      </summary>
+      <ul>
+        <li><a href="../en/interface.html" hreflang="en">English</a></li>
+        <li><a href="../cn/interface.html" hreflang="cn">简体中文</a></li>
+        <li><a href="../tw/interface.html" hreflang="tw">繁體中文</a></li>
+        <li><a href="../de/interface.html" hreflang="de">Deutsch</a></li>
+        <li><a href="../fr/interface.html" hreflang="fr">Français</a></li>
+        <li><a href="../ja/interface.html" hreflang="ja">日本語</a></li>
+        <li><a href="../ko/interface.html" hreflang="ko" aria-current="true">한국어<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></a></li>
+        <li><a href="../ru/interface.html" hreflang="ru">Русский</a></li>
+        <li class="sep"><a href="../index.html?pick">모든 언어</a></li>
+      </ul>
+    </details>
+    <div class="font-size" role="group">
+      <button class="icon-btn" type="button" data-font-step="-1" aria-label="글자 작게" title="글자 작게"><span class="a-small">A</span></button>
+      <button class="icon-btn" type="button" data-font-step="1" aria-label="글자 크게" title="글자 크게"><span class="a-large">A</span></button>
+    </div>
+    <button class="icon-btn style-toggle" type="button" aria-label="시각 스타일 전환" title="시각 스타일 전환">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 19.6 7.6v8.8L12 20.8 4.4 16.4V7.6z"/><path d="M12 8.2 15.3 10v4L12 15.8 8.7 14v-4z"/></svg>
+    </button>
+    <button class="icon-btn theme-toggle" type="button" aria-label="라이트/다크 전환" title="라이트/다크 전환">
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></svg>
+    </button>
+  </div>
+</header>
+<div class="shell">
+  <nav class="sidebar" id="sidebar" aria-label="장">
+    <div class="sidebar-inner">
+      <a class="nav-home" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>홈
+      </a>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg><span>개요</span></summary>
+        <ul>
+          <li><a href="gettingstarted.html"><span class="op-num" aria-hidden="true">01</span><span class="nav-title">빠른 시작</span></a></li>
+          <li><a href="#" class="current" aria-current="page"><span class="op-num" aria-hidden="true">02</span><span class="nav-title">인터페이스</span></a></li>
+          <li><a href="krkpanel.html"><span class="op-num" aria-hidden="true">03</span><span class="nav-title">KRK 패널</span></a></li>
+          <li><a href="assetbrowser.html"><span class="op-num" aria-hidden="true">04</span><span class="nav-title">에셋 브라우저</span></a></li>
+          <li><a href="uveditor.html"><span class="op-num" aria-hidden="true">05</span><span class="nav-title">UV 에디터</span></a></li>
+          <li><a href="materials.html"><span class="op-num" aria-hidden="true">06</span><span class="nav-title">셰이더 에디터</span></a></li>
+          <li><a href="outliner.html"><span class="op-num" aria-hidden="true">07</span><span class="nav-title">아웃라이너</span></a></li>
+          <li><a href="properties.html"><span class="op-num" aria-hidden="true">08</span><span class="nav-title">속성 에디터</span></a></li>
+          <li><a href="colourman.html"><span class="op-num" aria-hidden="true">09</span><span class="nav-title">색 관리</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3 4 5.5 6.8 5.5 10a5.5 5.5 0 0 1-11 0c0-3.2 2.5-6 5.5-10z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><span>재질</span></summary>
+        <ul>
+          <li><a href="capsmat.html"><span class="op-num" aria-hidden="true">10</span><span class="nav-title">Capsmat(키캡 재질)</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 19.5l3.8-.9L18.6 8.3a2.1 2.1 0 0 0-3-3L5.4 15.7z"/><path d="M13.8 7l3.2 3.2"/></svg><span>각인 제작</span></summary>
+        <ul>
+          <li><a href="leg_inkscape.html"><span class="op-num" aria-hidden="true">11</span><span class="nav-title">Inkscape</span></a></li>
+          <li><a href="leg_illustrator.html"><span class="op-num" aria-hidden="true">12</span><span class="nav-title">Adobe Illustrator</span></a></li>
+          <li><a href="leg_designer.html"><span class="op-num" aria-hidden="true">13</span><span class="nav-title">Affinity Designer</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3.5" width="10" height="17" rx="5"/><path d="M12 7v3"/></svg><span>액세서리</span></summary>
+        <ul>
+          <li><a href="deskmat.html"><span class="op-num" aria-hidden="true">14</span><span class="nav-title">데스크매트</span></a></li>
+          <li><a href="deskmat_custom.html"><span class="op-num" aria-hidden="true">15</span><span class="nav-title">데스크매트에 나만의 디자인 추가하기</span></a></li>
+          <li><a href="cables.html"><span class="op-num" aria-hidden="true">16</span><span class="nav-title">USB 케이블</span></a></li>
+          <li><a href="mouse.html"><span class="op-num" aria-hidden="true">17</span><span class="nav-title">마우스</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8z"/></svg><span>튜토리얼</span></summary>
+        <ul>
+          <li><a href="workflow1.html"><span class="op-num" aria-hidden="true">18</span><span class="nav-title">첫 번째 키트 렌더링</span></a></li>
+          <li><a href="workflow2.html"><span class="op-num" aria-hidden="true">19</span><span class="nav-title">첫 번째 키보드 렌더링</span></a></li>
+          <li><a href="switchesstabs.html"><span class="op-num" aria-hidden="true">20</span><span class="nav-title">스위치와 스태빌라이저 추가하기</span></a></li>
+          <li><a href="board_custom.html"><span class="op-num" aria-hidden="true">21</span><span class="nav-title">커스텀 키보드 준비</span></a></li>
+          <li><a href="kle2krk.html"><span class="op-num" aria-hidden="true">22</span><span class="nav-title">KLE에서 KRK로</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>고급 정보</span></summary>
+        <ul>
+          <li><a href="optimization.html"><span class="op-num" aria-hidden="true">23</span><span class="nav-title">렌더링 최적화</span></a></li>
+          <li><a href="polyhaven.html"><span class="op-num" aria-hidden="true">24</span><span class="nav-title">Poly Haven 에셋</span></a></li>
+          <li><a href="krk2max.html"><span class="op-num" aria-hidden="true">25</span><span class="nav-title">KRK에서 3ds Max로</span></a></li>
+          <li><a href="krk2c4d.html"><span class="op-num" aria-hidden="true">26</span><span class="nav-title">KRK에서 Cinema 4D로 내보내기</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5A2 2 0 0 1 7 3.5h11.5v14H7a2 2 0 0 0-2 2z"/><path d="M5 19.5a2 2 0 0 0 2 2h11.5v-4"/></svg><span>참고</span></summary>
+        <ul>
+          <li><a href="troubleshooting.html"><span class="op-num" aria-hidden="true">27</span><span class="nav-title">자주 묻는 질문(FAQ)</span></a></li>
+          <li><a href="recipes.html"><span class="op-num" aria-hidden="true">28</span><span class="nav-title">키캡 레시피</span></a></li>
+          <li><a href="profiles.html"><span class="op-num" aria-hidden="true">29</span><span class="nav-title">키캡 높이</span></a></li>
+          <li><a href="boards.html"><span class="op-num" aria-hidden="true">30</span><span class="nav-title">키보드</span></a></li>
+          <li><a href="releases.html"><span class="op-num" aria-hidden="true">31</span><span class="nav-title">변경 로그</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg><span>리소스</span></summary>
+        <ul>
+          <li><a href="rci.html"><span class="op-num" aria-hidden="true">32</span><span class="nav-title">컬렉션 인스턴스 복원</span></a></li>
+        </ul>
+      </details>
+    </div>
+  </nav>
+  <div class="scrim" hidden></div>
 
-<body class="wy-body-for-nav">
-  <div class="wy-grid-for-nav">
-    <nav id="krk-nav-side" data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <main class="main" id="main">
 
-
-
-          <a href="index.html" class="icon icon-home">
-            Keyboard Render Kit
-          </a>
-              <div class="version">
-                2.0.1
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="문서 검색" aria-label="문서 검색" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 언어 선택으로</a>
-  <button class="sp-btn" id="sp-theme" data-label-light="☀ 밝은 테마" data-label-dark="🌙 어두운 테마" type="button">🌙 어두운 테마</button>
-</div>
-  <div class="lang-switch"><a class="" href="../en/interface.html" lang="en">English</a><a class="" href="../cn/interface.html" lang="zh-CN">简体</a><a class="" href="../tw/interface.html" lang="zh-TW">繁體</a><a class="" href="../de/interface.html" lang="de">Deutsch</a><a class="" href="../fr/interface.html" lang="fr">Français</a><a class="" href="../ja/interface.html" lang="ja">日本語</a><a class="active" href="../ko/interface.html" lang="ko">한국어</a><a class="" href="../ru/interface.html" lang="ru">Русский</a></div>
-<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="탐색 메뉴">
-              <p class="caption" role="heading"><span class="caption-text">개요</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">빠른 시작</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">패키지 내용물</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">시작하기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">도움말</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">인터페이스</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">에셋 브라우저</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uv">UV 에디터</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d">3D 뷰포트</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">셰이더 에디터</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">아웃라이너</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">속성</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK 패널</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink(재링크)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">KLE 가져오기</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile(높이)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row(행)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size(크기)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key(키)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing(홈 키)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material(재질 링크)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings(설정 복사)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data(데이터)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color(색상)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties(속성)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">에셋 브라우저</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">액세서리 에셋</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">키보드 에셋</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">머티리얼 에셋</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">머티리얼 도구</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV 에디터</a></li>
-<li class="toctree-l1"><a class="reference internal" href="materials.html">셰이더 에디터</a></li>
-<li class="toctree-l1"><a class="reference internal" href="outliner.html">아웃라이너</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">키트</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">키보드</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">배열</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">액세서리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">씬</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id7">카메라</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id8">조명</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id9">바닥</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">구조</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id11">키캡 프로파일(높이)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#uv">UV 설정</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id12">부품</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="properties.html">속성 에디터</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">렌더 속성</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">렌더 장치</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">샘플 수</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">노이즈 제거</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">필름 투명</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">색 관리</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">출력 속성</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">해상도</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">씬 속성</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">활성 카메라</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">오브젝트 데이터 속성</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">오브젝트 데이터</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UV 맵</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">재질 속성</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">재질 인덱스</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">재질 링크</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="colourman.html">색 관리</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">재질</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat(키캡 재질)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">설정 항목</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap(키캡 바탕색)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend(각인)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask(각인 마스크)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend(각인 선명도)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight(각인 굵기)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub(보조 각인)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask(보조 각인 마스크)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub(보조 각인 선명도)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight(보조 각인 굵기)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front(측면 각인)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask(측면 각인 마스크)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-front">Sharpen Front(측면 각인 선명도)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight(측면 각인 굵기)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness(러프니스)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale(범프 비율)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump(상단 범프)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump(측면 범프)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam(각인 이음새)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">마스크</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">팔레트 워크플로</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">각인 제작</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">액세서리</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="deskmat.html">데스크매트</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">치수</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">가장자리 마감</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">가장자리 인쇄</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">가장자리 마감 색상</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">재질</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">내보내기</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">데스크매트에 나만의 디자인 추가하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cables.html">USB 케이블</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">설정</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#plug">Plug(연결)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#color">Color(색상)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#flip">Flip(뒤집기)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#mirror">Mirror(미러)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#tech-flex">Tech Flex(슬리브)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">직선 케이블</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">머티리얼</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">케이블 내보내기</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="mouse.html">마우스</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">튜토리얼</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="workflow1.html">첫 번째 키트 렌더링</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow2.html">첫 번째 키보드 렌더링</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">스위치와 스태빌라이저 추가하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="board_custom.html">커스텀 키보드 준비</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE에서 KRK로</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">고급 정보</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="optimization.html">렌더링 최적화</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">해상도</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">샘플 수</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">노이즈 제거</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#id6">실제 적용</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven 에셋</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">바닥</a></li>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">환경</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK에서 3ds Max로</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK에서 Cinema 4D로 내보내기</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">참고</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">자주 묻는 질문(FAQ)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">Keyboard Render Kit은 어떻게 설치하나요?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">Blender가 스크립트를 실행하라고 하는 이유는 무엇인가요?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">제 키캡은 어디로 갔나요?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">제 에셋 브라우저가 비어 있습니다.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">키보드가 에셋 브라우저에 나타나지 않습니다.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">제 키캡에 머티리얼이 없습니다.</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="recipes.html">키캡 레시피</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html">키캡 높이</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">추가 프로파일</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="boards.html">키보드</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">변경 로그</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">리소스</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="rci.html">컬렉션 인스턴스 복원</a></li>
-</ul>
-
-        </div>
+    <article class="doc">
+      <div class="op-head" aria-hidden="true">
+        <div class="op-mosaic op-mosaic-strip" data-cols="40" data-rows="5"></div>
+        <span class="op-node"><span class="op-hex"></span><span class="op-node-label"><small>OPERATION</small><b>KRK-02</b></span></span>
       </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="모바일 탐색 메뉴" >
-          <button type="button" class="krk-nav-toggle" aria-controls="krk-nav-side" aria-expanded="false" aria-label="모바일 탐색 메뉴"><i class="fa fa-bars" aria-hidden="true"></i></button>
-          <a href="index.html">Keyboard Render Kit</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="페이지 탐색">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="홈"></a></li>
-      <li class="breadcrumb-item active">인터페이스</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../sources/ko/interface.rst.txt" rel="nofollow"> 페이지 소스 보기</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-
+      <div class="doc-meta">
+        <span class="chip"><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg>개요</span>
+        <span class="meta-item">32장 중 2장</span>
+        <span class="meta-item read-time" hidden></span>
+      </div>
+      <div class="body" role="main">
+        
   <section id="id1">
-<h1>인터페이스<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h1>
-<img alt="../images/UIOverview.PNG" src="../images/UIOverview.PNG" />
+<h1>인터페이스<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<img width="2000" height="1085" loading="lazy" decoding="async" alt="인터페이스" src="../_images/UIOverview.PNG.webp" />
 <p>KRK2의 인터페이스 레이아웃은 Blender의 「셰이딩」(Shading) 작업 공간과 가장 비슷합니다. 다른 점은 왼쪽 패널이 파일 브라우저와 이미지 에디터 대신 에셋 브라우저와 UV 에디터로 바뀌고, 사이드바에 KRK 탭이 하나 더 추가된다는 것입니다.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="id2">
-<h2>에셋 브라우저<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_Asset.png" src="../images/UI_Asset.png" />
+<h2>에셋 브라우저<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="에셋 브라우저" src="../_images/UI_Asset.png.webp" />
 <p>에셋 브라우저에는 유형과 제조사별로 분류된 다양한 실용적인 머티리얼이 들어 있습니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/asset_browser.html">Blender 매뉴얼: 에셋 브라우저</a></p>
 <div class="line-block">
@@ -341,8 +192,8 @@
 </div>
 </section>
 <section id="uv">
-<h2>UV 에디터<a class="headerlink" href="#uv" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_UV.png" src="../images/UI_UV.png" />
+<h2>UV 에디터<a class="headerlink" href="#uv" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="UV 에디터" src="../_images/UI_UV.png.webp" />
 <p>이 패널은 이미지 뷰어로도 쓸 수 있고, 키캡의 각인(키캡 각인) 좌표를 표시할 수도 있습니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/uv/introduction.html">Blender 매뉴얼: UV 에디터</a></p>
 <div class="line-block">
@@ -350,8 +201,8 @@
 </div>
 </section>
 <section id="d">
-<h2>3D 뷰포트<a class="headerlink" href="#d" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_VP.png" src="../images/UI_VP.png" />
+<h2>3D 뷰포트<a class="headerlink" href="#d" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="3D 뷰포트" src="../_images/UI_VP.png.webp" />
 <p>여기에서 키트, 배열, 조명, 카메라 앵글 등을 편집합니다. 사이드바에는 키캡을 제어하는 KRK 패널이 붙어 있습니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/3dview/introduction.html">Blender 매뉴얼: 3D 뷰포트</a></p>
 <div class="line-block">
@@ -359,8 +210,8 @@
 </div>
 </section>
 <section id="id3">
-<h2>셰이더 에디터<a class="headerlink" href="#id3" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_Mats.png" src="../images/UI_Mats.png" />
+<h2>셰이더 에디터<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="셰이더 에디터" src="../_images/UI_Mats.png.webp" />
 <p>여기에서 머티리얼의 외관과 속성을 제어합니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/shader_editor.html">Blender 매뉴얼: 셰이더 에디터</a></p>
 <div class="line-block">
@@ -368,8 +219,8 @@
 </div>
 </section>
 <section id="id5">
-<h2>아웃라이너<a class="headerlink" href="#id5" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_Out.png" src="../images/UI_Out.png" />
+<h2>아웃라이너<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="아웃라이너" src="../_images/UI_Out.png.webp" />
 <p>여기에는 blend 파일의 계층 구조가 표시됩니다. 키트, 키보드, 배열, 액세서리, 카메라, 조명, 바닥, 키캡 프로파일(높이) 등이 모두 여기에 있으며, 각 항목의 가시성도 제어할 수 있습니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/outliner/introduction.html">Blender 매뉴얼: 아웃라이너</a></p>
 <div class="line-block">
@@ -377,8 +228,8 @@
 </div>
 </section>
 <section id="id7">
-<h2>속성<a class="headerlink" href="#id7" title="이 제목에 대한 퍼머링크"></a></h2>
-<img alt="../images/UI_Props.png" src="../images/UI_Props.png" />
+<h2>속성<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="속성" src="../_images/UI_Props.png.webp" />
 <p>나머지 속성은 대부분 각 탭에 나누어져 있습니다.</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ko/latest/editors/properties_editor.html">Blender 매뉴얼: 속성 에디터</a></p>
 <div class="line-block">
@@ -388,34 +239,73 @@
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="페이지 하단">
-        <a href="gettingstarted.html" class="btn btn-neutral float-left" title="빠른 시작" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 이전</a>
-        <a href="krkpanel.html" class="btn btn-neutral float-right" title="KRK 패널" accesskey="n" rel="next">다음 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; 저작권 2022, ImperfectLink.</p>
-  </div>
-
-  <a href="https://www.sphinx-doc.org/">Sphinx</a>와 <a href="https://readthedocs.org">Read the Docs</a>가 제공하는 테마로 만들었습니다.
-
-
-<p class="sp-credit">다국어판 제작: <a href="https://github.com/Ephem-eral">E3e</a> · 문서 내용 © 2022, ImperfectLink · <a href="../LICENSE">라이선스</a>.</p>
-</footer>
-        </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
+      <nav class="pager" aria-label="장">
+        <a class="pager-prev" href="gettingstarted.html" rel="prev">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span><small>이전</small><strong>빠른 시작</strong></span>
+        </a>
+        <a class="pager-next" href="krkpanel.html" rel="next">
+          <span><small>다음</small><strong>KRK 패널</strong></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </article>
+    <aside class="page-toc" aria-label="이 페이지 목차">
+      <p class="page-toc-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg>이 페이지 목차</p>
+      <ul>
+<li><a class="reference internal" href="#">인터페이스</a><ul>
+<li><a class="reference internal" href="#id2">에셋 브라우저</a></li>
+<li><a class="reference internal" href="#uv">UV 에디터</a></li>
+<li><a class="reference internal" href="#d">3D 뷰포트</a></li>
+<li><a class="reference internal" href="#id3">셰이더 에디터</a></li>
+<li><a class="reference internal" href="#id5">아웃라이너</a></li>
+<li><a class="reference internal" href="#id7">속성</a></li>
+</ul>
+</li>
+</ul>
 
-<script src="../static/krk2.js"></script>
-</body>
+    </aside>
+  </main>
+</div>
+
+<button class="to-top" type="button" aria-label="맨 위로" title="맨 위로" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="클릭하여 확대">
+  <button class="icon-btn lightbox-close" type="button" aria-label="닫기">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <img loading="lazy" decoding="async" alt="" />
+</div>
+
+<div class="palette" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="palette-panel">
+    <div class="palette-input">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input type="text" placeholder="페이지나 섹션으로 이동…" aria-label="검색" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="palette-list" />
+      <kbd>Esc</kbd>
+    </div>
+    <ul class="palette-list" id="palette-list" role="listbox"></ul>
+    <div class="palette-foot">↑↓ 선택 · Enter 열기 · Esc 닫기</div>
+  </div>
+</div>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+  window.KRK_UI = {"all_languages": "\ubaa8\ub4e0 \uc5b8\uc5b4", "back_to_top": "\ub9e8 \uc704\ub85c", "chapter_n": "{n}\uc7a5 \uc911 {i}\uc7a5", "chapters": "\uc7a5", "close": "\ub2eb\uae30", "copied": "\ub9c1\ud06c\uac00 \ubcf5\uc0ac\ub418\uc5c8\uc2b5\ub2c8\ub2e4", "copy_link": "\uc774 \uc139\uc158 \ub9c1\ud06c \ubcf5\uc0ac", "font_larger": "\uae00\uc790 \ud06c\uac8c", "font_smaller": "\uae00\uc790 \uc791\uac8c", "home": "\ud648", "language": "\uc5b8\uc5b4", "links": "\uad00\ub828 \ub9c1\ud06c", "menu": "\ubaa9\ucc28", "min_read": "\uc57d {n}\ubd84", "next": "\ub2e4\uc74c", "on_this_page": "\uc774 \ud398\uc774\uc9c0 \ubaa9\ucc28", "pages": "\ud398\uc774\uc9c0", "palette_empty": "\uc77c\uce58\ud558\ub294 \uc81c\ubaa9\uc774 \uc5c6\uc2b5\ub2c8\ub2e4", "palette_fulltext": "\u0027{q}\u0027 \uc804\uccb4 \ud14d\uc2a4\ud2b8 \uac80\uc0c9", "palette_hint": "\u2191\u2193 \uc120\ud0dd \u00b7 Enter \uc5f4\uae30 \u00b7 Esc \ub2eb\uae30", "palette_placeholder": "\ud398\uc774\uc9c0\ub098 \uc139\uc158\uc73c\ub85c \uc774\ub3d9\u2026", "prev": "\uc774\uc804", "requirements": "\uc694\uad6c \uc0ac\ud56d", "s_found_many": "\uac80\uc0c9 \uc644\ub8cc: \uc77c\uce58\ud558\ub294 \ud398\uc774\uc9c0 ${resultCount}\uac1c\ub97c \ucc3e\uc558\uc2b5\ub2c8\ub2e4.", "s_found_one": "\uac80\uc0c9 \uc644\ub8cc: \uc77c\uce58\ud558\ub294 \ud398\uc774\uc9c0 1\uac1c\ub97c \ucc3e\uc558\uc2b5\ub2c8\ub2e4.", "s_none": "\uc77c\uce58\ud558\ub294 \ud398\uc774\uc9c0\uac00 \uc5c6\uc2b5\ub2c8\ub2e4. \ucca0\uc790\ub97c \ud655\uc778\ud558\uac70\ub098 \ub2e4\ub978 \uac80\uc0c9\uc5b4\ub97c \uc0ac\uc6a9\ud574 \ubcf4\uc138\uc694.", "s_preparing": "\uac80\uc0c9 \uc900\ube44 \uc911\u2026", "s_results": "\uac80\uc0c9 \uacb0\uacfc", "s_searching": "\uac80\uc0c9 \uc911", "search": "\uac80\uc0c9", "search_placeholder": "\ubb38\uc11c \uac80\uc0c9", "sections": "\uc139\uc158", "start": "\uc77d\uae30 \uc2dc\uc791", "style": "\uc2dc\uac01 \uc2a4\ud0c0\uc77c \uc804\ud658", "tagline": "Blender\uc5d0\uc11c \ud0a4\ubcf4\ub4dc\uc640 \ud0a4\ucea1 \uceec\ub7ec\uc6e8\uc774\ub97c \ub80c\ub354\ub9c1\ud558\ub294 \uc644\ubcbd \uac00\uc774\ub4dc.", "theme": "\ub77c\uc774\ud2b8/\ub2e4\ud06c \uc804\ud658", "zoom_hint": "\ud074\ub9ad\ud558\uc5ec \ud655\ub300"};
+  window.KRK_SEARCH_URL = "search.html";
+  window.KRK_INDEX_URL = "searchindex.js?v=d605897804";
+  window.KRK_GROUPS = {"assetbrowser": "\uac1c\uc694", "board_custom": "\ud29c\ud1a0\ub9ac\uc5bc", "boards": "\ucc38\uace0", "cables": "\uc561\uc138\uc11c\ub9ac", "capsmat": "\uc7ac\uc9c8", "colourman": "\uac1c\uc694", "deskmat": "\uc561\uc138\uc11c\ub9ac", "deskmat_custom": "\uc561\uc138\uc11c\ub9ac", "gettingstarted": "\uac1c\uc694", "interface": "\uac1c\uc694", "kle2krk": "\ud29c\ud1a0\ub9ac\uc5bc", "krk2c4d": "\uace0\uae09 \uc815\ubcf4", "krk2max": "\uace0\uae09 \uc815\ubcf4", "krkpanel": "\uac1c\uc694", "leg_designer": "\uac01\uc778 \uc81c\uc791", "leg_illustrator": "\uac01\uc778 \uc81c\uc791", "leg_inkscape": "\uac01\uc778 \uc81c\uc791", "materials": "\uac1c\uc694", "mouse": "\uc561\uc138\uc11c\ub9ac", "optimization": "\uace0\uae09 \uc815\ubcf4", "outliner": "\uac1c\uc694", "polyhaven": "\uace0\uae09 \uc815\ubcf4", "profiles": "\ucc38\uace0", "properties": "\uac1c\uc694", "rci": "\ub9ac\uc18c\uc2a4", "recipes": "\ucc38\uace0", "releases": "\ucc38\uace0", "switchesstabs": "\ud29c\ud1a0\ub9ac\uc5bc", "troubleshooting": "\ucc38\uace0", "uveditor": "\uac1c\uc694", "workflow1": "\ud29c\ud1a0\ub9ac\uc5bc", "workflow2": "\ud29c\ud1a0\ub9ac\uc5bc"};
+</script>
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="index.html"><span class="keycap brand-mark small" aria-hidden="true"><span>K</span></span>Keyboard Render Kit 2.0.1</a>
+    <p class="footer-links"><a href="https://imperfectlink.gumroad.com/l/KRK2" rel="noopener">Gumroad</a><a href="https://blendermarket.com/products/krk2" rel="noopener">BlenderMarket</a><a href="https://discord.gg/fVkGTunzT3" rel="noopener">Discord</a><a href="https://www.instagram.com/keyboardrenderkit/" rel="noopener">Instagram</a>
+    </p>
+    <p class="muted">© 2022, ImperfectLink</p>
+  </div>
+</footer>
+  </body>
 </html>

@@ -1,339 +1,190 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>インターフェース &mdash; Keyboard Render Kit 2 日本語ドキュメント</title>
-      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<html lang="ja" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="../static/jquery.js"></script>
-        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.ja.js"></script>
-        <script src="../static/doctools.js"></script>
-        <script src="../static/sphinx_highlight.js"></script>
-        <script src="../static/translations.ja.js"></script>
-    <script src="../static/js/theme.js"></script>
-    <link rel="index" title="索引" href="genindex.html" />
+    <title>インターフェース · KRK2 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="_static/reader.css?v=447086d6" />
+    <link rel="stylesheet" type="text/css" href="_static/style-op.css?v=2ade984b" />
+    <script src="_static/documentation_options.js?v=8ea0cac8"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=4755f45a"></script>
     <link rel="search" title="検索" href="search.html" />
     <link rel="next" title="KRKパネル" href="krkpanel.html" />
     <link rel="prev" title="クイックスタート" href="gettingstarted.html" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/krk2.css">
-<script>
-(function () {
-  try {
-    var saved = window.localStorage.getItem('krk2-doc-theme');
-    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
-  } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-})();
-</script>
-</head>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)" />
+    <script>
+      (function () {
+        var d = document.documentElement, s = window.localStorage;
+        try {
+          d.dataset.theme = s.getItem('krk-theme') || 'light';
+          d.dataset.style = s.getItem('krk-style') || 'op';
+          var f = s.getItem('krk-font');
+          if (f && f !== '0') d.dataset.font = f;
+          s.setItem('krk-lang', 'ja');
+        } catch (e) { d.dataset.theme = 'light'; }
+      })();
+    </script>
+    <script src="_static/reader.js?v=8448b5fd20" defer></script>
+  </head><body class="lang-ja text-cjk">
+<div class="progress" aria-hidden="true"><span></span></div>
+<a class="skip-link" href="#main">読み始める</a>
+<header class="topbar">
+  <button class="icon-btn nav-toggle" type="button" aria-label="目次" aria-controls="sidebar" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+  <a class="brand" href="index.html">
+    <span class="keycap brand-mark" aria-hidden="true"><span>K</span></span>
+    <span class="brand-text">KRK2 ドキュメント</span>
+  </a>
+  <a class="search-trigger" href="search.html" role="button" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+    <span class="search-label">ドキュメントを検索</span>
+    <span class="search-keys" aria-hidden="true"><kbd>Ctrl</kbd><kbd>K</kbd></span>
+  </a>
+  <div class="tools">
+    <details class="lang-menu">
+      <summary class="icon-btn" aria-label="言語" title="言語">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.6 2.6 14.4 0 17M12 3.5c-2.6 2.6-2.6 14.4 0 17"/></svg>
+        <span class="lang-code">JA</span>
+      </summary>
+      <ul>
+        <li><a href="../en/interface.html" hreflang="en">English</a></li>
+        <li><a href="../cn/interface.html" hreflang="cn">简体中文</a></li>
+        <li><a href="../tw/interface.html" hreflang="tw">繁體中文</a></li>
+        <li><a href="../de/interface.html" hreflang="de">Deutsch</a></li>
+        <li><a href="../fr/interface.html" hreflang="fr">Français</a></li>
+        <li><a href="../ja/interface.html" hreflang="ja" aria-current="true">日本語<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></a></li>
+        <li><a href="../ko/interface.html" hreflang="ko">한국어</a></li>
+        <li><a href="../ru/interface.html" hreflang="ru">Русский</a></li>
+        <li class="sep"><a href="../index.html?pick">すべての言語</a></li>
+      </ul>
+    </details>
+    <div class="font-size" role="group">
+      <button class="icon-btn" type="button" data-font-step="-1" aria-label="文字を小さく" title="文字を小さく"><span class="a-small">A</span></button>
+      <button class="icon-btn" type="button" data-font-step="1" aria-label="文字を大きく" title="文字を大きく"><span class="a-large">A</span></button>
+    </div>
+    <button class="icon-btn style-toggle" type="button" aria-label="表示スタイルを切替" title="表示スタイルを切替">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 19.6 7.6v8.8L12 20.8 4.4 16.4V7.6z"/><path d="M12 8.2 15.3 10v4L12 15.8 8.7 14v-4z"/></svg>
+    </button>
+    <button class="icon-btn theme-toggle" type="button" aria-label="ライト／ダーク切替" title="ライト／ダーク切替">
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></svg>
+    </button>
+  </div>
+</header>
+<div class="shell">
+  <nav class="sidebar" id="sidebar" aria-label="章">
+    <div class="sidebar-inner">
+      <a class="nav-home" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>ホーム
+      </a>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg><span>概要</span></summary>
+        <ul>
+          <li><a href="gettingstarted.html"><span class="op-num" aria-hidden="true">01</span><span class="nav-title">クイックスタート</span></a></li>
+          <li><a href="#" class="current" aria-current="page"><span class="op-num" aria-hidden="true">02</span><span class="nav-title">インターフェース</span></a></li>
+          <li><a href="krkpanel.html"><span class="op-num" aria-hidden="true">03</span><span class="nav-title">KRKパネル</span></a></li>
+          <li><a href="assetbrowser.html"><span class="op-num" aria-hidden="true">04</span><span class="nav-title">アセットブラウザー</span></a></li>
+          <li><a href="uveditor.html"><span class="op-num" aria-hidden="true">05</span><span class="nav-title">UVエディター</span></a></li>
+          <li><a href="materials.html"><span class="op-num" aria-hidden="true">06</span><span class="nav-title">シェーダーエディター</span></a></li>
+          <li><a href="outliner.html"><span class="op-num" aria-hidden="true">07</span><span class="nav-title">アウトライナー</span></a></li>
+          <li><a href="properties.html"><span class="op-num" aria-hidden="true">08</span><span class="nav-title">プロパティエディター</span></a></li>
+          <li><a href="colourman.html"><span class="op-num" aria-hidden="true">09</span><span class="nav-title">カラーマネジメント</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3 4 5.5 6.8 5.5 10a5.5 5.5 0 0 1-11 0c0-3.2 2.5-6 5.5-10z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><span>マテリアル</span></summary>
+        <ul>
+          <li><a href="capsmat.html"><span class="op-num" aria-hidden="true">10</span><span class="nav-title">Capsmat（キーキャップマテリアル）</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 19.5l3.8-.9L18.6 8.3a2.1 2.1 0 0 0-3-3L5.4 15.7z"/><path d="M13.8 7l3.2 3.2"/></svg><span>レジェンドの作成</span></summary>
+        <ul>
+          <li><a href="leg_inkscape.html"><span class="op-num" aria-hidden="true">11</span><span class="nav-title">Inkscape</span></a></li>
+          <li><a href="leg_illustrator.html"><span class="op-num" aria-hidden="true">12</span><span class="nav-title">Adobe Illustrator</span></a></li>
+          <li><a href="leg_designer.html"><span class="op-num" aria-hidden="true">13</span><span class="nav-title">Affinity Designer</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3.5" width="10" height="17" rx="5"/><path d="M12 7v3"/></svg><span>アクセサリー</span></summary>
+        <ul>
+          <li><a href="deskmat.html"><span class="op-num" aria-hidden="true">14</span><span class="nav-title">デスクマット</span></a></li>
+          <li><a href="deskmat_custom.html"><span class="op-num" aria-hidden="true">15</span><span class="nav-title">自分のデスクマットデザインを追加する</span></a></li>
+          <li><a href="cables.html"><span class="op-num" aria-hidden="true">16</span><span class="nav-title">USBケーブル</span></a></li>
+          <li><a href="mouse.html"><span class="op-num" aria-hidden="true">17</span><span class="nav-title">マウス</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8z"/></svg><span>チュートリアル</span></summary>
+        <ul>
+          <li><a href="workflow1.html"><span class="op-num" aria-hidden="true">18</span><span class="nav-title">初めてのキットレンダリング</span></a></li>
+          <li><a href="workflow2.html"><span class="op-num" aria-hidden="true">19</span><span class="nav-title">最初のキーボードレンダリング</span></a></li>
+          <li><a href="switchesstabs.html"><span class="op-num" aria-hidden="true">20</span><span class="nav-title">スイッチとスタビライザーの追加</span></a></li>
+          <li><a href="board_custom.html"><span class="op-num" aria-hidden="true">21</span><span class="nav-title">カスタムキーボードの準備</span></a></li>
+          <li><a href="kle2krk.html"><span class="op-num" aria-hidden="true">22</span><span class="nav-title">KLE から KRK へ</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>詳細情報</span></summary>
+        <ul>
+          <li><a href="optimization.html"><span class="op-num" aria-hidden="true">23</span><span class="nav-title">レンダリングを最適化する</span></a></li>
+          <li><a href="polyhaven.html"><span class="op-num" aria-hidden="true">24</span><span class="nav-title">Poly Havenの素材</span></a></li>
+          <li><a href="krk2max.html"><span class="op-num" aria-hidden="true">25</span><span class="nav-title">KRK から 3ds Max へ</span></a></li>
+          <li><a href="krk2c4d.html"><span class="op-num" aria-hidden="true">26</span><span class="nav-title">KRK から Cinema 4D へ</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5A2 2 0 0 1 7 3.5h11.5v14H7a2 2 0 0 0-2 2z"/><path d="M5 19.5a2 2 0 0 0 2 2h11.5v-4"/></svg><span>リファレンス</span></summary>
+        <ul>
+          <li><a href="troubleshooting.html"><span class="op-num" aria-hidden="true">27</span><span class="nav-title">よくある質問（FAQ）</span></a></li>
+          <li><a href="recipes.html"><span class="op-num" aria-hidden="true">28</span><span class="nav-title">キーキャップレシピ</span></a></li>
+          <li><a href="profiles.html"><span class="op-num" aria-hidden="true">29</span><span class="nav-title">キーキャップの高さ（プロファイル）</span></a></li>
+          <li><a href="boards.html"><span class="op-num" aria-hidden="true">30</span><span class="nav-title">キーボード</span></a></li>
+          <li><a href="releases.html"><span class="op-num" aria-hidden="true">31</span><span class="nav-title">更新履歴</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg><span>リソース</span></summary>
+        <ul>
+          <li><a href="rci.html"><span class="op-num" aria-hidden="true">32</span><span class="nav-title">コレクションインスタンスを復元</span></a></li>
+        </ul>
+      </details>
+    </div>
+  </nav>
+  <div class="scrim" hidden></div>
 
-<body class="wy-body-for-nav">
-  <div class="wy-grid-for-nav">
-    <nav id="krk-nav-side" data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <main class="main" id="main">
 
-
-
-          <a href="index.html" class="icon icon-home">
-            Keyboard Render Kit
-          </a>
-              <div class="version">
-                2.0.1
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="ドキュメントを検索" aria-label="ドキュメントを検索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ 言語一覧に戻る</a>
-  <button class="sp-btn" id="sp-theme" data-label-light="☀ ライトモード" data-label-dark="🌙 ダークモード" type="button">🌙 ダークモード</button>
-</div>
-  <div class="lang-switch"><a class="" href="../en/interface.html" lang="en">English</a><a class="" href="../cn/interface.html" lang="zh-CN">简体</a><a class="" href="../tw/interface.html" lang="zh-TW">繁體</a><a class="" href="../de/interface.html" lang="de">Deutsch</a><a class="" href="../fr/interface.html" lang="fr">Français</a><a class="active" href="../ja/interface.html" lang="ja">日本語</a><a class="" href="../ko/interface.html" lang="ko">한국어</a><a class="" href="../ru/interface.html" lang="ru">Русский</a></div>
-<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="ナビゲーションメニュー">
-              <p class="caption" role="heading"><span class="caption-text">概要</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">クイックスタート</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id2">パッケージ内容</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id3">使い始める</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#id4">ヘルプの入手</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">インターフェース</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">アセットブラウザー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uv">UV エディター</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d">3D ビューポート</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">シェーダーエディター</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">アウトライナー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">プロパティ</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRKパネル</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink（再リンク）</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#kle">KLEのインポート</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile（高さ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row（行）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size（サイズ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key（キー）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing（ホーミングキー）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material（マテリアルをリンク）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings（設定をコピー）</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data（データ）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color（カラー）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties（プロパティ）</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">アセットブラウザー</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id2">アクセサリーアセット</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id3">キーボードアセット</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id4">マテリアルアセット</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#id5">マテリアルツール</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UVエディター</a></li>
-<li class="toctree-l1"><a class="reference internal" href="materials.html">シェーダーエディター</a></li>
-<li class="toctree-l1"><a class="reference internal" href="outliner.html">アウトライナー</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id2">キット</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id3">キーボード</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id4">配列</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id5">アクセサリー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id6">シーン</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id7">カメラ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id8">ライト</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id9">床</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#id10">構造</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id11">キーキャップの高さ（プロファイル）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#uv">UV設定</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#id12">パーツ</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="properties.html">プロパティエディター</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id2">レンダープロパティ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id3">レンダーデバイス</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id4">サンプル数</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id5">ノイズ除去</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id6">フィルム透明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id7">カラーマネジメント</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id8">出力プロパティ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id9">解像度</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id10">シーンプロパティ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id11">アクティブカメラ</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id12">オブジェクトデータプロパティ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id13">オブジェクトデータ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#uv">UVマップ</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#id14">マテリアルプロパティ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id15">マテリアルインデックス</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#id16">マテリアルリンク</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="colourman.html">カラーマネジメント</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">マテリアル</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat（キーキャップマテリアル）</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id1">設定項目</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap（キーキャップのベースカラー）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend（レジェンド）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask（レジェンドマスク）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend（レジェンドシャープ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight（レジェンドの太さ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub（サブレジェンド）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask（サブレジェンドマスク）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub（サブレジェンドシャープ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight（サブレジェンドの太さ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front（側面レジェンド）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask（側面レジェンドマスク）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-front">Sharpen Front（側面レジェンドシャープ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight（側面レジェンドの太さ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness（ラフネス）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale（バンプスケール）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump（上面バンプ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump（側面バンプ）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam（レジェンドの継ぎ目）</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id2">マスク</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#id3">パレットワークフロー</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">レジェンドの作成</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">アクセサリー</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="deskmat.html">デスクマット</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id2">サイズ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id3">縁処理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id4">縁の印刷</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id5">縁の色</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id6">マテリアル</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#id7">エクスポート</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">自分のデスクマットデザインを追加する</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cables.html">USBケーブル</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id1">設定</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#plug">Plug（接合）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#color">Color（カラー）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#flip">Flip（反転）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#mirror">Mirror（ミラー）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cables.html#tech-flex">Tech Flex（編組スリーブ）</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id2">ストレートケーブル</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#id3">マテリアル</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cables.html#exportingcables">ケーブルのエクスポート</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="mouse.html">マウス</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">チュートリアル</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="workflow1.html">初めてのキットレンダリング</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow2.html">最初のキーボードレンダリング</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">スイッチとスタビライザーの追加</a></li>
-<li class="toctree-l1"><a class="reference internal" href="board_custom.html">カスタムキーボードの準備</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE から KRK へ</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">詳細情報</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="optimization.html">レンダリングを最適化する</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id2">解像度</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id3">レンダリングサンプル数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#id4">ノイズ除去</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#id6">実践での使用</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Havenの素材</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id1">床</a></li>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#id2">環境</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK から 3ds Max へ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK から Cinema 4D へ</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">リファレンス</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">よくある質問（FAQ）</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboard-render-kit">Keyboard Render Kit のインストール方法は？</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#blender">なぜ Blender がスクリプトの実行を求めてくるのですか？</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id1">キーキャップはどこへ行ったのですか？</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">アセットブラウザーが空です。</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">キーボードがアセットブラウザーに表示されません。</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id4">キーキャップにマテリアルがありません。</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="recipes.html">キーキャップレシピ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html">キーキャップの高さ（プロファイル）</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html#id2">その他のプロファイル</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="boards.html">キーボード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">更新履歴</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">リソース</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="rci.html">コレクションインスタンスを復元</a></li>
-</ul>
-
-        </div>
+    <article class="doc">
+      <div class="op-head" aria-hidden="true">
+        <div class="op-mosaic op-mosaic-strip" data-cols="40" data-rows="5"></div>
+        <span class="op-node"><span class="op-hex"></span><span class="op-node-label"><small>OPERATION</small><b>KRK-02</b></span></span>
       </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="モバイルナビゲーションメニュー" >
-          <button type="button" class="krk-nav-toggle" aria-controls="krk-nav-side" aria-expanded="false" aria-label="モバイルナビゲーションメニュー"><i class="fa fa-bars" aria-hidden="true"></i></button>
-          <a href="index.html">Keyboard Render Kit</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="ページナビゲーション">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="ホーム"></a></li>
-      <li class="breadcrumb-item active">インターフェース</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../sources/ja/interface.rst.txt" rel="nofollow"> ページソースを表示</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-
+      <div class="doc-meta">
+        <span class="chip"><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg>概要</span>
+        <span class="meta-item">全 32 章中 第 2 章</span>
+        <span class="meta-item read-time" hidden></span>
+      </div>
+      <div class="body" role="main">
+        
   <section id="id1">
-<h1>インターフェース<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h1>
-<img alt="../images/UIOverview.PNG" src="../images/UIOverview.PNG" />
+<h1>インターフェース<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<img width="2000" height="1085" loading="lazy" decoding="async" alt="インターフェース" src="../_images/UIOverview.PNG.webp" />
 <p>KRK2 のインターフェースレイアウトは Blender の「シェーディング」（Shading）ワークスペースに最も近く、左カラムがファイルブラウザーと画像エディターからアセットブラウザーと UV エディターに置き換わり、サイドバーに KRK タブが追加されている点が異なります。</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="id2">
-<h2>アセットブラウザー<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_Asset.png" src="../images/UI_Asset.png" />
+<h2>アセットブラウザー<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="アセットブラウザー" src="../_images/UI_Asset.png.webp" />
 <p>アセットブラウザーには多数の実用的なマテリアルが収録されており、種類とメーカー別に分類されています。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/asset_browser.html">Blender マニュアル：アセットブラウザー</a></p>
 <div class="line-block">
@@ -341,8 +192,8 @@
 </div>
 </section>
 <section id="uv">
-<h2>UV エディター<a class="headerlink" href="#uv" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_UV.png" src="../images/UI_UV.png" />
+<h2>UV エディター<a class="headerlink" href="#uv" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="UV エディター" src="../_images/UI_UV.png.webp" />
 <p>このパネルは画像ビューアーとしても、キーキャップ上のレジェンドの座標を表示するためにも使用できます。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/uv/introduction.html">Blender マニュアル：UV エディター</a></p>
 <div class="line-block">
@@ -350,8 +201,8 @@
 </div>
 </section>
 <section id="d">
-<h2>3D ビューポート<a class="headerlink" href="#d" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_VP.png" src="../images/UI_VP.png" />
+<h2>3D ビューポート<a class="headerlink" href="#d" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="3D ビューポート" src="../_images/UI_VP.png.webp" />
 <p>ここではキット、配列、ライト、カメラアングルなどを編集します。サイドバーにはキーキャップを制御する KRK パネルがあります。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/3dview/introduction.html">Blender マニュアル：3D ビューポート</a></p>
 <div class="line-block">
@@ -359,8 +210,8 @@
 </div>
 </section>
 <section id="id3">
-<h2>シェーダーエディター<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_Mats.png" src="../images/UI_Mats.png" />
+<h2>シェーダーエディター<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="シェーダーエディター" src="../_images/UI_Mats.png.webp" />
 <p>ここではマテリアルの外観とプロパティを制御します。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/shader_editor.html">Blender マニュアル：シェーダーエディター</a></p>
 <div class="line-block">
@@ -368,8 +219,8 @@
 </div>
 </section>
 <section id="id5">
-<h2>アウトライナー<a class="headerlink" href="#id5" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_Out.png" src="../images/UI_Out.png" />
+<h2>アウトライナー<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="アウトライナー" src="../_images/UI_Out.png.webp" />
 <p>ここには blend ファイルの階層構造が表示されます。キット、キーボード、配列、アクセサリー、カメラ、ライト、床、キーキャップの高さ（プロファイル）などがここにあり、それらの可視性も制御できます。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/outliner/introduction.html">Blender マニュアル：アウトライナー</a></p>
 <div class="line-block">
@@ -377,8 +228,8 @@
 </div>
 </section>
 <section id="id7">
-<h2>プロパティ<a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h2>
-<img alt="../images/UI_Props.png" src="../images/UI_Props.png" />
+<h2>プロパティ<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<img width="800" height="434" loading="lazy" decoding="async" alt="プロパティ" src="../_images/UI_Props.png.webp" />
 <p>残りのほとんどのプロパティは各タブに分散しています。</p>
 <p><a class="reference external" href="https://docs.blender.org/manual/ja/latest/editors/properties_editor.html">Blender マニュアル：プロパティエディター</a></p>
 <div class="line-block">
@@ -388,34 +239,73 @@
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="ページ下部">
-        <a href="gettingstarted.html" class="btn btn-neutral float-left" title="クイックスタート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 前へ</a>
-        <a href="krkpanel.html" class="btn btn-neutral float-right" title="KRKパネル" accesskey="n" rel="next">次へ <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; 2022, ImperfectLink.</p>
-  </div>
-
-  <a href="https://www.sphinx-doc.org/">Sphinx</a> と <a href="https://readthedocs.org">Read the Docs</a> 提供のテーマを使用しています。
-
-
-<p class="sp-credit">多言語版の作成：<a href="https://github.com/Ephem-eral">E3e</a> · ドキュメント内容 © 2022, ImperfectLink · <a href="../LICENSE">ライセンス</a>.</p>
-</footer>
-        </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
+      <nav class="pager" aria-label="章">
+        <a class="pager-prev" href="gettingstarted.html" rel="prev">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span><small>前へ</small><strong>クイックスタート</strong></span>
+        </a>
+        <a class="pager-next" href="krkpanel.html" rel="next">
+          <span><small>次へ</small><strong>KRKパネル</strong></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </article>
+    <aside class="page-toc" aria-label="このページの目次">
+      <p class="page-toc-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg>このページの目次</p>
+      <ul>
+<li><a class="reference internal" href="#">インターフェース</a><ul>
+<li><a class="reference internal" href="#id2">アセットブラウザー</a></li>
+<li><a class="reference internal" href="#uv">UV エディター</a></li>
+<li><a class="reference internal" href="#d">3D ビューポート</a></li>
+<li><a class="reference internal" href="#id3">シェーダーエディター</a></li>
+<li><a class="reference internal" href="#id5">アウトライナー</a></li>
+<li><a class="reference internal" href="#id7">プロパティ</a></li>
+</ul>
+</li>
+</ul>
 
-<script src="../static/krk2.js"></script>
-</body>
+    </aside>
+  </main>
+</div>
+
+<button class="to-top" type="button" aria-label="ページの先頭へ" title="ページの先頭へ" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="クリックで拡大">
+  <button class="icon-btn lightbox-close" type="button" aria-label="閉じる">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <img loading="lazy" decoding="async" alt="" />
+</div>
+
+<div class="palette" hidden role="dialog" aria-modal="true" aria-label="検索">
+  <div class="palette-panel">
+    <div class="palette-input">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input type="text" placeholder="ページや節へ移動…" aria-label="検索" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="palette-list" />
+      <kbd>Esc</kbd>
+    </div>
+    <ul class="palette-list" id="palette-list" role="listbox"></ul>
+    <div class="palette-foot">↑↓ 選択 · Enter 開く · Esc 閉じる</div>
+  </div>
+</div>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+  window.KRK_UI = {"all_languages": "\u3059\u3079\u3066\u306e\u8a00\u8a9e", "back_to_top": "\u30da\u30fc\u30b8\u306e\u5148\u982d\u3078", "chapter_n": "\u5168 {n} \u7ae0\u4e2d \u7b2c {i} \u7ae0", "chapters": "\u7ae0", "close": "\u9589\u3058\u308b", "copied": "\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "copy_link": "\u3053\u306e\u7bc0\u3078\u306e\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc", "font_larger": "\u6587\u5b57\u3092\u5927\u304d\u304f", "font_smaller": "\u6587\u5b57\u3092\u5c0f\u3055\u304f", "home": "\u30db\u30fc\u30e0", "language": "\u8a00\u8a9e", "links": "\u95a2\u9023\u30ea\u30f3\u30af", "menu": "\u76ee\u6b21", "min_read": "\u7d04 {n} \u5206", "next": "\u6b21\u3078", "on_this_page": "\u3053\u306e\u30da\u30fc\u30b8\u306e\u76ee\u6b21", "pages": "\u30da\u30fc\u30b8", "palette_empty": "\u4e00\u81f4\u3059\u308b\u30bf\u30a4\u30c8\u30eb\u306f\u3042\u308a\u307e\u305b\u3093", "palette_fulltext": "\u300c{q}\u300d\u3092\u5168\u6587\u691c\u7d22", "palette_hint": "\u2191\u2193 \u9078\u629e \u00b7 Enter \u958b\u304f \u00b7 Esc \u9589\u3058\u308b", "palette_placeholder": "\u30da\u30fc\u30b8\u3084\u7bc0\u3078\u79fb\u52d5\u2026", "prev": "\u524d\u3078", "requirements": "\u52d5\u4f5c\u74b0\u5883", "s_found_many": "\u691c\u7d22\u5b8c\u4e86\uff1a${resultCount} \u4ef6\u306e\u30da\u30fc\u30b8\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002", "s_found_one": "\u691c\u7d22\u5b8c\u4e86\uff1a1 \u4ef6\u306e\u30da\u30fc\u30b8\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002", "s_none": "\u4e00\u81f4\u3059\u308b\u30da\u30fc\u30b8\u306f\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u7db4\u308a\u3092\u78ba\u8a8d\u3059\u308b\u304b\u3001\u5225\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002", "s_preparing": "\u691c\u7d22\u306e\u6e96\u5099\u4e2d\u2026", "s_results": "\u691c\u7d22\u7d50\u679c", "s_searching": "\u691c\u7d22\u4e2d", "search": "\u691c\u7d22", "search_placeholder": "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3092\u691c\u7d22", "sections": "\u7bc0", "start": "\u8aad\u307f\u59cb\u3081\u308b", "style": "\u8868\u793a\u30b9\u30bf\u30a4\u30eb\u3092\u5207\u66ff", "tagline": "Blender \u3067\u30ad\u30fc\u30dc\u30fc\u30c9\u3068\u30ad\u30fc\u30ad\u30e3\u30c3\u30d7\u306e\u914d\u8272\u3092\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0\u3059\u308b\u305f\u3081\u306e\u5b8c\u5168\u30ac\u30a4\u30c9\u3002", "theme": "\u30e9\u30a4\u30c8\uff0f\u30c0\u30fc\u30af\u5207\u66ff", "zoom_hint": "\u30af\u30ea\u30c3\u30af\u3067\u62e1\u5927"};
+  window.KRK_SEARCH_URL = "search.html";
+  window.KRK_INDEX_URL = "searchindex.js?v=396a3c1c9c";
+  window.KRK_GROUPS = {"assetbrowser": "\u6982\u8981", "board_custom": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb", "boards": "\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9", "cables": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc", "capsmat": "\u30de\u30c6\u30ea\u30a2\u30eb", "colourman": "\u6982\u8981", "deskmat": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc", "deskmat_custom": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc", "gettingstarted": "\u6982\u8981", "interface": "\u6982\u8981", "kle2krk": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb", "krk2c4d": "\u8a73\u7d30\u60c5\u5831", "krk2max": "\u8a73\u7d30\u60c5\u5831", "krkpanel": "\u6982\u8981", "leg_designer": "\u30ec\u30b8\u30a7\u30f3\u30c9\u306e\u4f5c\u6210", "leg_illustrator": "\u30ec\u30b8\u30a7\u30f3\u30c9\u306e\u4f5c\u6210", "leg_inkscape": "\u30ec\u30b8\u30a7\u30f3\u30c9\u306e\u4f5c\u6210", "materials": "\u6982\u8981", "mouse": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc", "optimization": "\u8a73\u7d30\u60c5\u5831", "outliner": "\u6982\u8981", "polyhaven": "\u8a73\u7d30\u60c5\u5831", "profiles": "\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9", "properties": "\u6982\u8981", "rci": "\u30ea\u30bd\u30fc\u30b9", "recipes": "\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9", "releases": "\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9", "switchesstabs": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb", "troubleshooting": "\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9", "uveditor": "\u6982\u8981", "workflow1": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb", "workflow2": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb"};
+</script>
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="index.html"><span class="keycap brand-mark small" aria-hidden="true"><span>K</span></span>Keyboard Render Kit 2.0.1</a>
+    <p class="footer-links"><a href="https://imperfectlink.gumroad.com/l/KRK2" rel="noopener">Gumroad</a><a href="https://blendermarket.com/products/krk2" rel="noopener">BlenderMarket</a><a href="https://discord.gg/fVkGTunzT3" rel="noopener">Discord</a><a href="https://www.instagram.com/keyboardrenderkit/" rel="noopener">Instagram</a>
+    </p>
+    <p class="muted">© 2022, ImperfectLink</p>
+  </div>
+</footer>
+  </body>
 </html>

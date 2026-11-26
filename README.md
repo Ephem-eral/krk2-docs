@@ -1,27 +1,23 @@
-# KRK2 documentation · multi-page, 8 languages
+# KRK2 documentation · reader edition, 8 languages
 
 Keyboard Render Kit 2 (v2.0.1) documentation in eight languages, published with
-GitHub Pages. Each chapter is its own HTML page, like the original Read the Docs
-site.
+GitHub Pages: <https://ephem-eral.github.io/krk2-docs/>
 
-- `index.html` — language cover
+- `index.html` — language picker (remembers the last language you read)
 - `en/ cn/ tw/ de/ fr/ ja/ ko/ ru/` — one folder per language, one page per chapter
-- `single/index.html` — the single-page build (all languages in one file)
-- `static/` — shared theme assets, light-green theme and dark mode
-- `images/`, `fonts/` — shared images and fonts
+- `_images/` — screenshots shared by all languages (stills served as WebP)
+
+The reader edition has a reading-first layout: chapter navigation, an on-page
+outline, a Ctrl K quick-jump palette, full-text search (with Chinese and Korean
+word handling), light/dark modes and two visual styles.
 
 ## Maintenance notes
 
-This repository contains generated GitHub Pages output. The editable source and
-build scripts live in the sibling `KeyboardRenderKit-main` project; do not edit
-the HTML pages directly. `sources/` is a generated, per-language snapshot used
-by the “View source” links and is refreshed during each build.
+This repository only contains generated GitHub Pages output. The source and
+build scripts are kept outside this repository; do not edit the HTML pages
+directly.
 
-The font files appear both in `fonts/` and `static/css/fonts/` intentionally:
-the single-page bundle and the Sphinx multi-page theme use different relative
-paths. Removing either copy can break one of the two site layouts.
-
-> **More languages may be added in the future.** / 后续可能上线更多语言 · 後續可能上線更多語言
+The single-page build that used to live in `single/` is not part of this edition.
 
 Unofficial multi-language build by [E3e](https://github.com/Ephem-eral).
 Documentation content © 2022 ImperfectLink — see [LICENSE](LICENSE).

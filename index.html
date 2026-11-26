@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="E3e">
-<meta name="description" content="Keyboard Render Kit 2 documentation (v2.0.1) in 8 languages.">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
 <title>Keyboard Render Kit 2 · Documentation</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="static/krk2.css">
 <script>
 (function () {
-  try {
-    var saved = window.localStorage.getItem('krk2-doc-theme');
-    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
-  } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
+  var d = document.documentElement, t = null, l = null;
+  try { t = localStorage.getItem('krk-theme'); l = localStorage.getItem('krk-lang'); } catch (e) {}
+  d.dataset.theme = t || 'light';
+  if (l && location.search.indexOf('pick') === -1) location.replace(l + '/index.html');
 })();
 </script>
+<style>
+:root { --bg:#fbf9f4; --card:#fff; --text:#24221e; --muted:#7a756b; --line:#e6e0d4; --accent:#1b6670; --soft:#e3efee; }
+:root[data-theme=dark] { --bg:#15171a; --card:#1c1f23; --text:#e6e3dc; --muted:#8f8a80; --line:#2b2f35; --accent:#6cc2c8; --soft:#1d3336; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; display:grid; place-items:center; padding:3rem 1.25rem; background:var(--bg); color:var(--text);
+  font:17px/1.6 "Inter","Segoe UI",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+main { width:min(46rem,100%); }
+.mark { display:grid; place-items:center; width:3rem; height:3rem; border-radius:12px; background:var(--text); color:var(--bg); font-weight:800; font-size:1.4rem; box-shadow:inset 0 -4px 0 rgb(0 0 0/.25); }
+h1 { margin:1.2rem 0 .3rem; font-size:2rem; letter-spacing:-.02em; line-height:1.2; }
+p { margin:0 0 2rem; color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(13rem,1fr)); gap:.75rem; }
+.lang { display:flex; flex-direction:column; gap:.15rem; padding:1rem 1.15rem; border:1px solid var(--line); border-radius:12px; background:var(--card); color:var(--text); text-decoration:none; transition:border-color .15s, transform .15s; }
+.lang:hover, .lang.suggested { border-color:var(--accent); }
+.lang:hover { transform:translateY(-1px); }
+.lang.suggested { box-shadow:0 0 0 3px var(--soft); }
+.lang strong { font-size:1.05rem; }
+.lang span { font-size:.8rem; color:var(--muted); }
+</style>
 </head>
-<body class="wy-body-for-nav sp-cover-page">
-<div class="wy-grid-for-nav"><div class="wy-nav-content-wrap"><div class="wy-nav-content"><div class="rst-content">
-<section id="sp-cover" lang="en">
-  <header>
-    <h1>Keyboard Render Kit 2 · Documentation</h1>
-    <p>8 languages · one page per chapter</p>
-  </header>
-  <button class="sp-btn sp-cover-theme" id="sp-theme" data-label-light="☀ Light mode" data-label-dark="🌙 Dark mode" type="button">🌙 Dark mode</button>
-  <h2>Choose a language</h2>
-  <div class="grid">
-            <a class="card" href="en/index.html" lang="en"><span class="lang">English</span><span class="sub">Keyboard Render Kit 2 Documentation</span></a>
-            <a class="card" href="cn/index.html" lang="zh-CN"><span class="lang">简体中文</span><span class="sub">Keyboard Render Kit 2 中文文档</span></a>
-            <a class="card" href="tw/index.html" lang="zh-TW"><span class="lang">繁體中文</span><span class="sub">Keyboard Render Kit 2 繁體中文文件</span></a>
-            <a class="card" href="de/index.html" lang="de"><span class="lang">Deutsch</span><span class="sub">Keyboard Render Kit 2 Dokumentation</span></a>
-            <a class="card" href="fr/index.html" lang="fr"><span class="lang">Français</span><span class="sub">Documentation Keyboard Render Kit 2</span></a>
-            <a class="card" href="ja/index.html" lang="ja"><span class="lang">日本語</span><span class="sub">Keyboard Render Kit 2 日本語ドキュメント</span></a>
-            <a class="card" href="ko/index.html" lang="ko"><span class="lang">한국어</span><span class="sub">Keyboard Render Kit 2 한국어 문서</span></a>
-            <a class="card" href="ru/index.html" lang="ru"><span class="lang">Русский</span><span class="sub">Keyboard Render Kit 2 Документация</span></a>
-            <a class="card" href="single/index.html"><span class="lang">Single-page version <span class="badge">one file</span></span><span class="sub" lang="zh-CN">全部语言在同一页 · 适合搜索、打印与离线保存</span></a>
-  </div>
-  <p class="sp-more">
-    <b>More languages may be added in the future.</b>
-    <span class="langs">后续可能上线更多语言 · 後續可能上線更多語言 · Weitere Sprachen könnten später hinzukommen · D’autres langues pourront être ajoutées par la suite · 今後さらに言語を追加する可能性があります · 추후 더 많은 언어가 추가될 수 있습니다 · В будущем могут появиться и другие языки.</span>
-  </p>
-  <footer>
-    <p>Each language is a normal multi-page documentation site: one HTML page per chapter, with the searchable sidebar.</p>
-    <p>Unofficial multi-language build by <b><a href="https://github.com/Ephem-eral">E3e</a></b>. Documentation content © 2022 ImperfectLink (Keyboard Render Kit 2 v2.0.1); English text is the upstream documentation, Chinese versions were proof-read by hand, and the Japanese, Korean and Russian versions are machine translations with terminology and structure review. German and French are machine-translated drafts: RST structure is verified, terminology has received a limited review, and native-language review is still needed. See <a href="LICENSE">LICENSE</a> for the full breakdown.</p>
-  </footer>
-</section>
-</div></div></div></div>
-<script src="static/krk2.js"></script>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">K</div>
+  <h1>Keyboard Render Kit 2</h1>
+  <p>Documentation · Dokumentation · 文档 · ドキュメント · 문서 · Документация</p>
+  <nav class="grid" aria-label="Languages">
+    <a class="lang" href="en/index.html" hreflang="en" lang="en" data-code="en"><strong>English</strong><span>Keyboard Render Kit 2 Documentation</span></a><a class="lang" href="cn/index.html" hreflang="zh-CN" lang="zh-CN" data-code="cn"><strong>简体中文</strong><span>Keyboard Render Kit 2 中文文档</span></a><a class="lang" href="tw/index.html" hreflang="zh-TW" lang="zh-TW" data-code="tw"><strong>繁體中文</strong><span>Keyboard Render Kit 2 中文文件</span></a><a class="lang" href="de/index.html" hreflang="de" lang="de" data-code="de"><strong>Deutsch</strong><span>Keyboard Render Kit 2 – Dokumentation</span></a><a class="lang" href="fr/index.html" hreflang="fr" lang="fr" data-code="fr"><strong>Français</strong><span>Documentation Keyboard Render Kit 2</span></a><a class="lang" href="ja/index.html" hreflang="ja" lang="ja" data-code="ja"><strong>日本語</strong><span>Keyboard Render Kit 2 ドキュメント</span></a><a class="lang" href="ko/index.html" hreflang="ko" lang="ko" data-code="ko"><strong>한국어</strong><span>Keyboard Render Kit 2 문서</span></a><a class="lang" href="ru/index.html" hreflang="ru" lang="ru" data-code="ru"><strong>Русский</strong><span>Документация Keyboard Render Kit 2</span></a>
+  </nav>
+</main>
+<script>
+(function () {
+  var map = {"zh-tw": "tw", "zh-hk": "tw", "zh-mo": "tw", "zh": "cn", "en": "en", "de": "de", "fr": "fr", "ja": "ja", "ko": "ko", "ru": "ru"};
+  var langs = (navigator.languages || [navigator.language || 'en']).map(function (s) { return s.toLowerCase(); });
+  for (var i = 0; i < langs.length; i++) {
+    var code = map[langs[i]] || map[langs[i].split('-')[0]];
+    if (code) {
+      var el = document.querySelector('[data-code="' + code + '"]');
+      if (el) { el.classList.add('suggested'); }
+      break;
+    }
+  }
+  document.querySelectorAll('.lang').forEach(function (a) {
+    a.addEventListener('click', function () { try { localStorage.setItem('krk-lang', a.dataset.code); } catch (e) {} });
+  });
+})();
+</script>
 </body>
 </html>

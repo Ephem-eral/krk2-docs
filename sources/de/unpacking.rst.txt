@@ -1,5 +1,0 @@
-:orphan:
-
-Beschriftungsdateien aus Blender entpacken.
-===========================================
-Manchmal möchten Sie die Beschriftungs-Maskendateien aus der Blend-Datei entpacken.

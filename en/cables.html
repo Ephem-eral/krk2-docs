@@ -1,420 +1,271 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USB Cables &mdash; Keyboard Render Kit 2 Documentation</title>
-      <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="../static/jquery.js"></script>
-        <script src="../static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="../static/documentation_options.en.js"></script>
-        <script src="../static/doctools.js"></script>
-        <script src="../static/sphinx_highlight.js"></script>
-    <script src="../static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
+    <title>USB Cables · KRK2 Docs</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="_static/reader.css?v=447086d6" />
+    <link rel="stylesheet" type="text/css" href="_static/style-op.css?v=2ade984b" />
+    <script src="_static/documentation_options.js?v=bf575e9c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mouse" href="mouse.html" />
     <link rel="prev" title="Adding Your Own Deskmat Design" href="deskmat_custom.html" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7a4d'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/krk2.css">
-<script>
-(function () {
-  try {
-    var saved = window.localStorage.getItem('krk2-doc-theme');
-    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
-  } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-})();
-</script>
-</head>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)" />
+    <script>
+      (function () {
+        var d = document.documentElement, s = window.localStorage;
+        try {
+          d.dataset.theme = s.getItem('krk-theme') || 'light';
+          d.dataset.style = s.getItem('krk-style') || 'op';
+          var f = s.getItem('krk-font');
+          if (f && f !== '0') d.dataset.font = f;
+          s.setItem('krk-lang', 'en');
+        } catch (e) { d.dataset.theme = 'light'; }
+      })();
+    </script>
+    <script src="_static/reader.js?v=8448b5fd20" defer></script>
+  </head><body class="lang-en text-latin">
+<div class="progress" aria-hidden="true"><span></span></div>
+<a class="skip-link" href="#main">Start reading</a>
+<header class="topbar">
+  <button class="icon-btn nav-toggle" type="button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+  <a class="brand" href="index.html">
+    <span class="keycap brand-mark" aria-hidden="true"><span>K</span></span>
+    <span class="brand-text">KRK2 Docs</span>
+  </a>
+  <a class="search-trigger" href="search.html" role="button" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+    <span class="search-label">Search the docs</span>
+    <span class="search-keys" aria-hidden="true"><kbd>Ctrl</kbd><kbd>K</kbd></span>
+  </a>
+  <div class="tools">
+    <details class="lang-menu">
+      <summary class="icon-btn" aria-label="Language" title="Language">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.6 2.6 14.4 0 17M12 3.5c-2.6 2.6-2.6 14.4 0 17"/></svg>
+        <span class="lang-code">EN</span>
+      </summary>
+      <ul>
+        <li><a href="../en/cables.html" hreflang="en" aria-current="true">English<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></a></li>
+        <li><a href="../cn/cables.html" hreflang="cn">简体中文</a></li>
+        <li><a href="../tw/cables.html" hreflang="tw">繁體中文</a></li>
+        <li><a href="../de/cables.html" hreflang="de">Deutsch</a></li>
+        <li><a href="../fr/cables.html" hreflang="fr">Français</a></li>
+        <li><a href="../ja/cables.html" hreflang="ja">日本語</a></li>
+        <li><a href="../ko/cables.html" hreflang="ko">한국어</a></li>
+        <li><a href="../ru/cables.html" hreflang="ru">Русский</a></li>
+        <li class="sep"><a href="../index.html?pick">All languages</a></li>
+      </ul>
+    </details>
+    <div class="font-size" role="group">
+      <button class="icon-btn" type="button" data-font-step="-1" aria-label="Smaller text" title="Smaller text"><span class="a-small">A</span></button>
+      <button class="icon-btn" type="button" data-font-step="1" aria-label="Larger text" title="Larger text"><span class="a-large">A</span></button>
+    </div>
+    <button class="icon-btn style-toggle" type="button" aria-label="Switch visual style" title="Switch visual style">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 19.6 7.6v8.8L12 20.8 4.4 16.4V7.6z"/><path d="M12 8.2 15.3 10v4L12 15.8 8.7 14v-4z"/></svg>
+    </button>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light / dark" title="Toggle light / dark">
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></svg>
+    </button>
+  </div>
+</header>
+<div class="shell">
+  <nav class="sidebar" id="sidebar" aria-label="Chapters">
+    <div class="sidebar-inner">
+      <a class="nav-home" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>Home
+      </a>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg><span>Overview</span></summary>
+        <ul>
+          <li><a href="gettingstarted.html"><span class="op-num" aria-hidden="true">01</span><span class="nav-title">First Steps</span></a></li>
+          <li><a href="interface.html"><span class="op-num" aria-hidden="true">02</span><span class="nav-title">Interface</span></a></li>
+          <li><a href="krkpanel.html"><span class="op-num" aria-hidden="true">03</span><span class="nav-title">KRK Panel</span></a></li>
+          <li><a href="assetbrowser.html"><span class="op-num" aria-hidden="true">04</span><span class="nav-title">Asset Browser</span></a></li>
+          <li><a href="uveditor.html"><span class="op-num" aria-hidden="true">05</span><span class="nav-title">UV Editor</span></a></li>
+          <li><a href="materials.html"><span class="op-num" aria-hidden="true">06</span><span class="nav-title">Shader Editor</span></a></li>
+          <li><a href="outliner.html"><span class="op-num" aria-hidden="true">07</span><span class="nav-title">Outliner</span></a></li>
+          <li><a href="properties.html"><span class="op-num" aria-hidden="true">08</span><span class="nav-title">Property Editor</span></a></li>
+          <li><a href="colourman.html"><span class="op-num" aria-hidden="true">09</span><span class="nav-title">Colour Management</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3 4 5.5 6.8 5.5 10a5.5 5.5 0 0 1-11 0c0-3.2 2.5-6 5.5-10z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><span>Materials</span></summary>
+        <ul>
+          <li><a href="capsmat.html"><span class="op-num" aria-hidden="true">10</span><span class="nav-title">Capsmat</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 19.5l3.8-.9L18.6 8.3a2.1 2.1 0 0 0-3-3L5.4 15.7z"/><path d="M13.8 7l3.2 3.2"/></svg><span>Creating Legends</span></summary>
+        <ul>
+          <li><a href="leg_inkscape.html"><span class="op-num" aria-hidden="true">11</span><span class="nav-title">Inkscape</span></a></li>
+          <li><a href="leg_illustrator.html"><span class="op-num" aria-hidden="true">12</span><span class="nav-title">Adobe Illustrator</span></a></li>
+          <li><a href="leg_designer.html"><span class="op-num" aria-hidden="true">13</span><span class="nav-title">Affinity Designer</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3.5" width="10" height="17" rx="5"/><path d="M12 7v3"/></svg><span>Accessories</span></summary>
+        <ul>
+          <li><a href="deskmat.html"><span class="op-num" aria-hidden="true">14</span><span class="nav-title">Deskmat</span></a></li>
+          <li><a href="deskmat_custom.html"><span class="op-num" aria-hidden="true">15</span><span class="nav-title">Adding Your Own Deskmat Design</span></a></li>
+          <li><a href="#" class="current" aria-current="page"><span class="op-num" aria-hidden="true">16</span><span class="nav-title">USB Cables</span></a></li>
+          <li><a href="mouse.html"><span class="op-num" aria-hidden="true">17</span><span class="nav-title">Mouse</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8z"/></svg><span>Tutorials</span></summary>
+        <ul>
+          <li><a href="workflow1.html"><span class="op-num" aria-hidden="true">18</span><span class="nav-title">Your First Kit Render</span></a></li>
+          <li><a href="workflow2.html"><span class="op-num" aria-hidden="true">19</span><span class="nav-title">Your First Board Render</span></a></li>
+          <li><a href="switchesstabs.html"><span class="op-num" aria-hidden="true">20</span><span class="nav-title">Add Switches & Stabilizers</span></a></li>
+          <li><a href="board_custom.html"><span class="op-num" aria-hidden="true">21</span><span class="nav-title">Custom Board Preparation</span></a></li>
+          <li><a href="kle2krk.html"><span class="op-num" aria-hidden="true">22</span><span class="nav-title">KLE To KRK</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>Further Information</span></summary>
+        <ul>
+          <li><a href="optimization.html"><span class="op-num" aria-hidden="true">23</span><span class="nav-title">Optimizing Your Render</span></a></li>
+          <li><a href="polyhaven.html"><span class="op-num" aria-hidden="true">24</span><span class="nav-title">Poly Haven Assets</span></a></li>
+          <li><a href="krk2max.html"><span class="op-num" aria-hidden="true">25</span><span class="nav-title">KRK to 3ds Max</span></a></li>
+          <li><a href="krk2c4d.html"><span class="op-num" aria-hidden="true">26</span><span class="nav-title">KRK to Cinema 4d</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5A2 2 0 0 1 7 3.5h11.5v14H7a2 2 0 0 0-2 2z"/><path d="M5 19.5a2 2 0 0 0 2 2h11.5v-4"/></svg><span>Reference</span></summary>
+        <ul>
+          <li><a href="troubleshooting.html"><span class="op-num" aria-hidden="true">27</span><span class="nav-title">FAQ</span></a></li>
+          <li><a href="recipes.html"><span class="op-num" aria-hidden="true">28</span><span class="nav-title">Keycap Recipes</span></a></li>
+          <li><a href="profiles.html"><span class="op-num" aria-hidden="true">29</span><span class="nav-title">Profiles</span></a></li>
+          <li><a href="boards.html"><span class="op-num" aria-hidden="true">30</span><span class="nav-title">Boards</span></a></li>
+          <li><a href="releases.html"><span class="op-num" aria-hidden="true">31</span><span class="nav-title">Release Logs</span></a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg><span>Resources</span></summary>
+        <ul>
+          <li><a href="rci.html"><span class="op-num" aria-hidden="true">32</span><span class="nav-title">Restore Collection Instances</span></a></li>
+        </ul>
+      </details>
+    </div>
+  </nav>
+  <div class="scrim" hidden></div>
 
-<body class="wy-body-for-nav">
-  <div class="wy-grid-for-nav">
-    <nav id="krk-nav-side" data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <main class="main" id="main">
 
-
-
-          <a href="index.html" class="icon icon-home">
-            Keyboard Render Kit
-          </a>
-              <div class="version">
-                2.0.1
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="sp-actions">
-  <a class="sp-btn" href="../index.html">⌂ Language home</a>
-  <button class="sp-btn" id="sp-theme" data-label-light="☀ Light mode" data-label-dark="🌙 Dark mode" type="button">🌙 Dark mode</button>
-</div>
-  <div class="lang-switch"><a class="active" href="../en/cables.html" lang="en">English</a><a class="" href="../cn/cables.html" lang="zh-CN">简体</a><a class="" href="../tw/cables.html" lang="zh-TW">繁體</a><a class="" href="../de/cables.html" lang="de">Deutsch</a><a class="" href="../fr/cables.html" lang="fr">Français</a><a class="" href="../ja/cables.html" lang="ja">日本語</a><a class="" href="../ko/cables.html" lang="ko">한국어</a><a class="" href="../ru/cables.html" lang="ru">Русский</a></div>
-<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">First Steps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#what-s-in-the-box">What’s In The Box</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#getting-started">Getting Started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#getting-help">Getting Help</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#asset-browser">Asset Browser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#uv-editor">UV Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#d-viewport">3d Viewport</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#shader-editor">Shader Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#outliner">Outliner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interface.html#properties">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krkpanel.html">KRK Panel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#relink">Relink</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#import-kle">Import KLE</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#profile">Profile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#row">Row</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#size">Size</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#key">Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#homing">Homing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#link-material">Link Material</a></li>
-<li class="toctree-l3"><a class="reference internal" href="krkpanel.html#copy-settings">Copy Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#data">Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#color">Color</a></li>
-<li class="toctree-l2"><a class="reference internal" href="krkpanel.html#properties">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="assetbrowser.html">Asset Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#accessory-assets">Accessory Assets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#boards-assets">Boards Assets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#material-assets">Material Assets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assetbrowser.html#material-utilities">Material Utilities</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="uveditor.html">UV Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="materials.html">Shader Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="outliner.html">Outliner</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#kits">Kits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#boards">Boards</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#layouts">Layouts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#accessories">Accessories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#scene">Scene</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#cameras">Cameras</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#lights">Lights</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#floors">Floors</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="outliner.html#construction">Construction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#profiles">Profiles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#uv-setup">UV Setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="outliner.html#parts">Parts</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="properties.html">Property Editor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#render-properties">Render Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#render-device">Render Device</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#sampling">Sampling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#denoise">Denoise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#film-transparent">Film Transparent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#color-management">Color Management</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#output-properties">Output Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#resolution">Resolution</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#scene-properties">Scene Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#active-camera">Active Camera</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#object-data-properties">Object Data Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#object-data">Object Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#uv-maps">UV Maps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="properties.html#material-properties">Material Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#material-index">Material Index</a></li>
-<li class="toctree-l3"><a class="reference internal" href="properties.html#material-link">Material Link</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="colourman.html">Colour Management</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Materials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="capsmat.html">Capsmat</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#settings">Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#cap">Cap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend">Legend</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-mask">Legend Mask</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-legend">Sharpen Legend</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-weight">Legend Weight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub">Sub</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#submask">SubMask</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-sub">Sharpen Sub</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sub-weight">Sub Weight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front">Front</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-mask">Front Mask</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#sharpen-front">Sharpen Front</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#front-weight">Front Weight</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#roughness">Roughness</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#bump-scale">Bump Scale</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#top-bump">Top Bump</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#side-bump">Side Bump</a></li>
-<li class="toctree-l3"><a class="reference internal" href="capsmat.html#legend-seam">Legend Seam</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#masks">Masks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capsmat.html#the-palette-workflow">The Palette Workflow</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Creating Legends</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="leg_inkscape.html">Inkscape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_illustrator.html">Adobe Illustrator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="leg_designer.html">Affinity Designer</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Accessories</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="deskmat.html">Deskmat</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#dimensions">Dimensions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#edging">Edging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#edge-print">Edge Print</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#edge-color">Edge Color</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#material">Material</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deskmat.html#exporting">Exporting</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="deskmat_custom.html">Adding Your Own Deskmat Design</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">USB Cables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#plug">Plug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#color">Color</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#flip">Flip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mirror">Mirror</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tech-flex">Tech Flex</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#straight-cable">Straight Cable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#material">Material</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exporting-cables">Exporting Cables</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="workflow1.html">Your First Kit Render</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow2.html">Your First Board Render</a></li>
-<li class="toctree-l1"><a class="reference internal" href="switchesstabs.html">Add Switches &amp; Stabilizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="board_custom.html">Custom Board Preparation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kle2krk.html">KLE To KRK</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Further Information</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="optimization.html">Optimizing Your Render</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#resolution">Resolution</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#render-samples">Render Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optimization.html#denoising">Denoising</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#optix">Optix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#open-image-denoise">Open Image Denoise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="optimization.html#application">Application</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="polyhaven.html">Poly Haven Assets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#floor">Floor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="polyhaven.html#environment">Environment</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="krk2max.html">KRK to 3ds Max</a></li>
-<li class="toctree-l1"><a class="reference internal" href="krk2c4d.html">KRK to Cinema 4d</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">FAQ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#how-do-i-install-keyboard-render-kit">How do I install Keyboard Render Kit?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#why-is-blender-asking-me-to-run-a-script">Why is Blender asking me to run a script?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#where-are-my-keycaps">Where are my keycaps?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#my-asset-browser-is-empty">My asset browser is empty.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#keyboards-not-appearing-in-the-asset-browser">Keyboards not appearing in the asset browser.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#my-keycaps-have-no-material-on-them">My keycaps have no material on them.</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="recipes.html">Keycap Recipes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html">Profiles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#che">CHE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dcs">DCS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dsa">DSA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#dss">DSS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kam">KAM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#kat">KAT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#oem">OEM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#sa">SA</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="profiles.html#additional-profiles">Additional Profiles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#krk">KRK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pbs">PBS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#pla">PLA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiles.html#slk">SLK</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="boards.html">Boards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">Release Logs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk211">KRK211</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk210">KRK210</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk209">KRK209</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk208">KRK208</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk207">KRK207</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk206">KRK206</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk205">KRK205</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk204">KRK204</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk203">KRK203</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk202">KRK202</a></li>
-<li class="toctree-l2"><a class="reference internal" href="releases.html#krk201">KRK201</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="rci.html">Restore Collection Instances</a></li>
-</ul>
-
-        </div>
+    <article class="doc">
+      <div class="op-head" aria-hidden="true">
+        <div class="op-mosaic op-mosaic-strip" data-cols="40" data-rows="5"></div>
+        <span class="op-node"><span class="op-hex"></span><span class="op-node-label"><small>OPERATION</small><b>KRK-16</b></span></span>
       </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Navigation menu" >
-          <button type="button" class="krk-nav-toggle" aria-controls="krk-nav-side" aria-expanded="false" aria-label="Navigation menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
-          <a href="index.html">Keyboard Render Kit</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">USB Cables</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../sources/en/cables.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-
+      <div class="doc-meta">
+        <span class="chip"><svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3.5" width="10" height="17" rx="5"/><path d="M12 7v3"/></svg>Accessories</span>
+        <span class="meta-item">Chapter 16 of 32</span>
+        <span class="meta-item read-time" hidden></span>
+      </div>
+      <div class="body" role="main">
+        
   <section id="usb-cables">
-<span id="cables"></span><h1>USB Cables<a class="headerlink" href="#usb-cables" title="Permalink to this heading"></a></h1>
+<span id="cables"></span><h1>USB Cables<a class="headerlink" href="#usb-cables" title="Link to this heading">#</a></h1>
 <p>There are a few configurations of USB cable available.</p>
-<img alt="../images/USBCables.JPG" src="../images/USBCables.JPG" />
+<img width="2000" height="1562" loading="lazy" decoding="async" alt="USB Cables" src="../_images/USBCables.JPG.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Use the handles to pose the cable as you wish.</p>
-<img alt="../images/CableHandle.gif" src="../images/CableHandle.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="USB Cables" src="../_images/CableHandle.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>USB heads are interchangeable with other types through object data.</p>
-<img alt="../images/CableHeads.gif" src="../images/CableHeads.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="USB Cables" src="../_images/CableHeads.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Aviator and Lemo are interchangeable and can unplug.</p>
-<img alt="../images/CableLEMO.gif" src="../images/CableLEMO.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="USB Cables" src="../_images/CableLEMO.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="settings">
-<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
+<h2>Settings<a class="headerlink" href="#settings" title="Link to this heading">#</a></h2>
 <p>Settings are separate per object and per segment of cable.</p>
-<img alt="../images/CableProps.JPG" src="../images/CableProps.JPG" />
+<img width="435" height="248" loading="lazy" decoding="async" alt="Settings" src="../_images/CableProps.JPG.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="plug">
-<h3>Plug<a class="headerlink" href="#plug" title="Permalink to this heading"></a></h3>
+<h3>Plug<a class="headerlink" href="#plug" title="Link to this heading">#</a></h3>
 <p>This setting plugs the Lemo or Aviator back together.</p>
-<img alt="../images/CablePlug.gif" src="../images/CablePlug.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="Plug" src="../_images/CablePlug.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="color">
-<h3>Color<a class="headerlink" href="#color" title="Permalink to this heading"></a></h3>
+<h3>Color<a class="headerlink" href="#color" title="Link to this heading">#</a></h3>
 <p>Colors 1 and 2 supplies the material with color and accent color.</p>
-<img alt="../images/CableColor.gif" src="../images/CableColor.gif" />
+<img width="600" height="400" loading="lazy" decoding="async" alt="Color" src="../_images/CableColor.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="flip">
-<h3>Flip<a class="headerlink" href="#flip" title="Permalink to this heading"></a></h3>
+<h3>Flip<a class="headerlink" href="#flip" title="Link to this heading">#</a></h3>
 <p>This setting flips the coil vertically.</p>
-<img alt="../images/CableFlip.gif" src="../images/CableFlip.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="Flip" src="../_images/CableFlip.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="mirror">
-<h3>Mirror<a class="headerlink" href="#mirror" title="Permalink to this heading"></a></h3>
+<h3>Mirror<a class="headerlink" href="#mirror" title="Link to this heading">#</a></h3>
 <p>This setting mirrors the cable horizontally.</p>
-<img alt="../images/CableMirror.gif" src="../images/CableMirror.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="Mirror" src="../_images/CableMirror.gif" />
 </section>
 <section id="tech-flex">
-<h3>Tech Flex<a class="headerlink" href="#tech-flex" title="Permalink to this heading"></a></h3>
+<h3>Tech Flex<a class="headerlink" href="#tech-flex" title="Link to this heading">#</a></h3>
 <p>This setting changes the cable over from a braid to Tech Flex.</p>
-<img alt="../images/CableTechFlex.gif" src="../images/CableTechFlex.gif" />
+<img width="900" height="600" loading="lazy" decoding="async" alt="Tech Flex" src="../_images/CableTechFlex.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 </section>
 <section id="straight-cable">
-<h2>Straight Cable<a class="headerlink" href="#straight-cable" title="Permalink to this heading"></a></h2>
+<h2>Straight Cable<a class="headerlink" href="#straight-cable" title="Link to this heading">#</a></h2>
 <p>The plain USB cable is an exception in that it is designed to infinitely extend through editing the curve object and adding vertices by subdividing the segments.</p>
-<img alt="../images/CableSubdiv.gif" src="../images/CableSubdiv.gif" />
+<img width="900" height="901" loading="lazy" decoding="async" alt="Straight Cable" src="../_images/CableSubdiv.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="material">
-<h2>Material<a class="headerlink" href="#material" title="Permalink to this heading"></a></h2>
+<h2>Material<a class="headerlink" href="#material" title="Link to this heading">#</a></h2>
 <p>As with the deskmat, to change the material you will need to edit the applied materials or replace them via the modifiers section of the object’s properties.</p>
-<img alt="../images/CableMaterial.jpg" src="../images/CableMaterial.jpg" />
+<img width="670" height="580" loading="lazy" decoding="async" alt="Material" src="../_images/CableMaterial.jpg.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="exporting-cables">
-<span id="exportingcables"></span><h2>Exporting Cables<a class="headerlink" href="#exporting-cables" title="Permalink to this heading"></a></h2>
+<span id="exportingcables"></span><h2>Exporting Cables<a class="headerlink" href="#exporting-cables" title="Link to this heading">#</a></h2>
 <p>If you are exporting the cable to another software, the cable will not have a UV map and will need to be converted from an attribute. Select the cable (wire) object and press ctrl+A then choose Visual Geometry to Mesh.</p>
-<img alt="../images/CurveToMesh.gif" src="../images/CurveToMesh.gif" />
+<img width="600" height="400" loading="lazy" decoding="async" alt="Exporting Cables" src="../_images/CurveToMesh.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Once that is done, there will be an attribute in the object’s data that can be converted to a UV map by using the dropdown in Attributes in Object Data Properties. Set the mode to UV Map and press okay.</p>
-<img alt="../images/AttrToUV.gif" src="../images/AttrToUV.gif" />
+<img width="650" height="501" loading="lazy" decoding="async" alt="Exporting Cables" src="../_images/AttrToUV.gif" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -423,36 +274,78 @@
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="deskmat_custom.html" class="btn btn-neutral float-left" title="Adding Your Own Deskmat Design" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mouse.html" class="btn btn-neutral float-right" title="Mouse" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, ImperfectLink.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-
-
-<p class="sp-credit">Multi-language build by <a href="https://github.com/Ephem-eral">E3e</a> · documentation content © 2022, ImperfectLink · <a href="../LICENSE">License</a>.</p>
-</footer>
-        </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
+      <nav class="pager" aria-label="Chapters">
+        <a class="pager-prev" href="deskmat_custom.html" rel="prev">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span><small>Previous</small><strong>Adding Your Own Deskmat Design</strong></span>
+        </a>
+        <a class="pager-next" href="mouse.html" rel="next">
+          <span><small>Next</small><strong>Mouse</strong></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </article>
+    <aside class="page-toc" aria-label="On this page">
+      <p class="page-toc-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg>On this page</p>
+      <ul>
+<li><a class="reference internal" href="#">USB Cables</a><ul>
+<li><a class="reference internal" href="#settings">Settings</a><ul>
+<li><a class="reference internal" href="#plug">Plug</a></li>
+<li><a class="reference internal" href="#color">Color</a></li>
+<li><a class="reference internal" href="#flip">Flip</a></li>
+<li><a class="reference internal" href="#mirror">Mirror</a></li>
+<li><a class="reference internal" href="#tech-flex">Tech Flex</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#straight-cable">Straight Cable</a></li>
+<li><a class="reference internal" href="#material">Material</a></li>
+<li><a class="reference internal" href="#exporting-cables">Exporting Cables</a></li>
+</ul>
+</li>
+</ul>
 
-<script src="../static/krk2.js"></script>
-</body>
+    </aside>
+  </main>
+</div>
+
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Click to enlarge">
+  <button class="icon-btn lightbox-close" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <img loading="lazy" decoding="async" alt="" />
+</div>
+
+<div class="palette" hidden role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette-panel">
+    <div class="palette-input">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input type="text" placeholder="Jump to a page or section…" aria-label="Search" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="palette-list" />
+      <kbd>Esc</kbd>
+    </div>
+    <ul class="palette-list" id="palette-list" role="listbox"></ul>
+    <div class="palette-foot">↑↓ navigate · Enter open · Esc close</div>
+  </div>
+</div>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+  window.KRK_UI = {"all_languages": "All languages", "back_to_top": "Back to top", "chapter_n": "Chapter {i} of {n}", "chapters": "Chapters", "close": "Close", "copied": "Link copied", "copy_link": "Copy link to this section", "font_larger": "Larger text", "font_smaller": "Smaller text", "home": "Home", "language": "Language", "links": "Links", "menu": "Menu", "min_read": "{n} min read", "next": "Next", "on_this_page": "On this page", "pages": "Pages", "palette_empty": "No matching titles", "palette_fulltext": "Search full text for \u201c{q}\u201d", "palette_hint": "\u2191\u2193 navigate \u00b7 Enter open \u00b7 Esc close", "palette_placeholder": "Jump to a page or section\u2026", "prev": "Previous", "requirements": "Requirements", "s_found_many": "Search finished, found ${resultCount} pages.", "s_found_one": "Search finished, found 1 page.", "s_none": "No pages matched. Check the spelling or try other words.", "s_preparing": "Preparing search\u2026", "s_results": "Search Results", "s_searching": "Searching", "search": "Search", "search_placeholder": "Search the docs", "sections": "Sections", "start": "Start reading", "style": "Switch visual style", "tagline": "The complete guide to rendering keyboards and keycap colorways in Blender.", "theme": "Toggle light / dark", "zoom_hint": "Click to enlarge"};
+  window.KRK_SEARCH_URL = "search.html";
+  window.KRK_INDEX_URL = "searchindex.js?v=94f313a07d";
+  window.KRK_GROUPS = {"assetbrowser": "Overview", "board_custom": "Tutorials", "boards": "Reference", "cables": "Accessories", "capsmat": "Materials", "colourman": "Overview", "deskmat": "Accessories", "deskmat_custom": "Accessories", "gettingstarted": "Overview", "interface": "Overview", "kle2krk": "Tutorials", "krk2c4d": "Further Information", "krk2max": "Further Information", "krkpanel": "Overview", "leg_designer": "Creating Legends", "leg_illustrator": "Creating Legends", "leg_inkscape": "Creating Legends", "materials": "Overview", "mouse": "Accessories", "optimization": "Further Information", "outliner": "Overview", "polyhaven": "Further Information", "profiles": "Reference", "properties": "Overview", "rci": "Resources", "recipes": "Reference", "releases": "Reference", "switchesstabs": "Tutorials", "troubleshooting": "Reference", "uveditor": "Overview", "workflow1": "Tutorials", "workflow2": "Tutorials"};
+</script>
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="index.html"><span class="keycap brand-mark small" aria-hidden="true"><span>K</span></span>Keyboard Render Kit 2.0.1</a>
+    <p class="footer-links"><a href="https://imperfectlink.gumroad.com/l/KRK2" rel="noopener">Gumroad</a><a href="https://blendermarket.com/products/krk2" rel="noopener">BlenderMarket</a><a href="https://discord.gg/fVkGTunzT3" rel="noopener">Discord</a><a href="https://www.instagram.com/keyboardrenderkit/" rel="noopener">Instagram</a>
+    </p>
+    <p class="muted">© 2022, ImperfectLink</p>
+  </div>
+</footer>
+  </body>
 </html>
