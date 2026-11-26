@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # Keyboard Render Kit 2 · Documentation in 8 languages
 
 Unofficial multi-language reader edition of the
@@ -6,9 +8,7 @@ documentation, a Blender kit for rendering keyboards and keycap colorways.
 
 **Read it online: <https://ephem-eral.github.io/krk2-docs/>**
 
-非官方的 Keyboard Render Kit 2（v2.0.1）多语言阅读版文档。KRK2 是一套用 Blender 渲染键盘与键帽配色的工具包。
-
-## Languages · 语言
+## Languages
 
 | Language | Start reading | Translation status |
 | --- | --- | --- |
@@ -27,9 +27,7 @@ Corrections are very welcome — please
 [open an issue](https://github.com/Ephem-eral/krk2-docs/issues) with the page
 and the sentence.
 
-所有译文都与英文原文做过结构对照，但还没有经过完整的母语审校。发现翻译问题欢迎[提交 Issue](https://github.com/Ephem-eral/krk2-docs/issues)，注明页面和原句即可。
-
-## Features · 功能
+## Features
 
 - Chapter navigation and an on-page outline that follows your scroll position
 - <kbd>Ctrl</kbd> <kbd>K</kbd> (or <kbd>/</kbd>) quick-jump to any chapter or section
@@ -38,7 +36,7 @@ and the sentence.
 - Light and dark modes, adjustable text size, and two visual styles
 - Switch language on any page and stay on the same chapter
 
-## Repository contents · 仓库内容
+## Repository contents
 
 This repository holds only the generated GitHub Pages site; the source and
 build scripts are kept separately. Please don't edit the HTML here directly.
@@ -50,7 +48,7 @@ build scripts are kept separately. Please don't edit the HTML here directly.
 Chapter URLs are the same as in earlier versions of this site. The old
 single-page build (`single/`) is no longer published.
 
-## AI assistance · AI 协作说明
+## AI assistance
 
 The reader edition was built by E3e together with
 [Claude](https://www.anthropic.com/claude) (Anthropic's AI assistant, via
@@ -70,9 +68,7 @@ every change; Claude did the following hands-on work:
   screenshots, cache-busting, bug fixes from testing and code review, and the
   cleanup of this repository, README and LICENSE.
 
-阅读版由 E3e 与 Anthropic 的 AI 助手 [Claude](https://www.anthropic.com/claude)（通过 Claude Code）协作完成：方向、设计取舍和每次修改的确认由 E3e 负责；Claude 负责译文核查与修正（此前的译文并非 Claude 所译）、阅读版主题与交互、中韩文搜索优化、多语言构建与发布，以及测试中发现的问题修复和仓库整理。
-
-## Credits & licence · 致谢与授权
+## Credits & licence
 
 Documentation content and screenshots © 2022 ImperfectLink — all rights
 reserved, mirrored here non-commercially. Translations and the reader theme by
