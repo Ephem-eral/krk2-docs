@@ -61,6 +61,11 @@ MIT licence text:
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
 
+The reader theme, the translation corrections and the build were produced with
+the help of Claude, an AI assistant by Anthropic, under E3e's direction and
+review (see "AI assistance" in README.md). This does not change the licensing
+described here.
+
 This MIT grant covers the translations and the reader theme only. It does not
 extend to the documentation content described in section 1, which stays with
 ImperfectLink.

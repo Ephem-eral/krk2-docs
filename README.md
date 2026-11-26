@@ -50,6 +50,28 @@ build scripts are kept separately. Please don't edit the HTML here directly.
 Chapter URLs are the same as in earlier versions of this site. The old
 single-page build (`single/`) is no longer published.
 
+## AI assistance · AI 协作说明
+
+The reader edition was built by E3e together with
+[Claude](https://www.anthropic.com/claude) (Anthropic's AI assistant, via
+Claude Code). E3e set the direction, made the design decisions and approved
+every change; Claude did the following hands-on work:
+
+- **Translation QA** — compared all eight editions with the English source and
+  fixed meaning errors it found (e.g. the row-numbering direction in Japanese,
+  Korean and Russian, and mistranslated terms in Japanese, Korean, Russian and
+  German). The earlier translations themselves were not produced by Claude.
+- **Reader theme** — page templates, both visual styles (`reader.css`,
+  `style-op.css`) and `reader.js`: navigation, on-page outline, quick-jump
+  palette, keycap rendering of shortcuts, image zoom, light/dark mode.
+- **Search** — the Chinese domain dictionary and query segmentation, Korean
+  particle handling, and localized search messages for all eight languages.
+- **Build & publishing** — the multi-language build script, WebP conversion of
+  screenshots, cache-busting, bug fixes from testing and code review, and the
+  cleanup of this repository, README and LICENSE.
+
+阅读版由 E3e 与 Anthropic 的 AI 助手 [Claude](https://www.anthropic.com/claude)（通过 Claude Code）协作完成：方向、设计取舍和每次修改的确认由 E3e 负责；Claude 负责译文核查与修正（此前的译文并非 Claude 所译）、阅读版主题与交互、中韩文搜索优化、多语言构建与发布，以及测试中发现的问题修复和仓库整理。
+
 ## Credits & licence · 致谢与授权
 
 Documentation content and screenshots © 2022 ImperfectLink — all rights
